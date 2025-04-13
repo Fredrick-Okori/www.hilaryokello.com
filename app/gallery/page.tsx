@@ -186,10 +186,9 @@ export default function Gallery() {
             fadeIn ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div
+          <button
             ref={modalRef}
             className="relative max-w-6xl w-full h-[85vh] mx-auto px-4"
-            role="button"
             tabIndex={0}
             onClick={(e) => e.stopPropagation()}
             onKeyDown={(e) => {
@@ -243,7 +242,7 @@ export default function Gallery() {
             >
               <ChevronRight className="h-6 w-6" />
             </button>
-          </div>
+          </button>
         </div>
       )}
     </div>
