@@ -1,12 +1,11 @@
 "use client"
 import { useState, useEffect, useRef } from "react"
 import type React from "react"
-
 import Image from "next/image"
+import Link from "next/link"
+import { ChevronRight, ChevronLeft } from "lucide-react"
 
 import { Button } from "@heroui/button"
-import { ChevronRight, ChevronLeft } from "lucide-react"
-import Link from "next/link"
 
 // Define the type for the images array elements
 interface ImageType {
@@ -47,7 +46,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   // Update carousel position on index or resize
   useEffect(() => {
     if (carouselRef.current && carouselRef.current.children[0]) {
-      slideWidthRef.current = carouselRef.current.children[0].offsetWidth
+      // Cast the element to HTMLElement to access offsetWidth
+      const firstChild = carouselRef.current.children[0] as HTMLElement
+      slideWidthRef.current = firstChild.offsetWidth
       carouselRef.current.style.transform = `translateX(-${slideIndex * slideWidthRef.current}px)`
     }
   }, [slideIndex, itemsPerView])
@@ -61,6 +62,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
       (prev) => (prev - 1 + Math.ceil(images.length / itemsPerView)) % Math.ceil(images.length / itemsPerView),
     )
   }
+
+  // For debugging - log the images array
+  console.log("Images array:", images)
 
   return (
     <>
@@ -88,19 +92,28 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
             transform: `translateX(-${slideIndex * slideWidthRef.current}px)`,
           }}
         >
-          {images.map((image, index) => (
-            <div key={index} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
-              <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96">
-                <Image
-                  fill
-                  alt={`Carousel Image ${index + 1}`}
-                  className="rounded-2xl"
-                  src={image.url || "/placeholder.svg"}
-                  style={{ objectFit: "cover" }}
-                />
+          {images && images.length > 0 ? (
+            images.map((image, index) => (
+              <div key={index} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
+                <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96">
+                  <Image
+                    fill
+                    alt={`Carousel Image ${index + 1}`}
+                    className="rounded-2xl object-cover"
+                    src={image.url || "/placeholder.svg"}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={index === 0}
+                  />
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className="flex-shrink-0 w-full p-2">
+              <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 flex items-center justify-center bg-gray-100 rounded-2xl">
+                <p>No images available</p>
               </div>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </>
