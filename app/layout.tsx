@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
-import type React from "react"; // Added import for React
-
+import React from "react"; // Corrected import for React
 import { Comfortaa } from "next/font/google";
+import Script from "next/script";
 
 import { MenuBar } from "@/components/theme-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -16,6 +16,23 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Hilary Okello's personal website" name="description" />
+      </head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-36J4TDZWT9"
+      />
+    <Script id="google-analytics">
+  {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-36J4TDZWT9');`}
+</Script>
+
       <body
         className={comfortaa.className}
         style={{ backgroundColor: "black" }}
