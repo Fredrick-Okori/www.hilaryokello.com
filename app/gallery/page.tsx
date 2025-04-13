@@ -92,7 +92,7 @@ export default function Gallery() {
       );
 
       setFadeIn(true);
-    }, 300);
+    });
   };
 
   const handlePrev = () => {
@@ -104,7 +104,7 @@ export default function Gallery() {
           ((prev === null ? 0 : prev) - 1 + images.length) % images.length,
       );
       setFadeIn(true);
-    }, 300);
+    });
   };
 
   const closeModal = () => {

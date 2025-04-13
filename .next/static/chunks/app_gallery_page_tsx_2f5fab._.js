@@ -111,7 +111,7 @@ function Gallery() {
         setTimeout(()=>{
             setSelectedIndex((prev)=>prev !== null ? (prev + 1) % images.length : 0);
             setFadeIn(true);
-        }, 300);
+        });
     };
     const handlePrev = ()=>{
         if (selectedIndex === null) return;
@@ -119,7 +119,7 @@ function Gallery() {
         setTimeout(()=>{
             setSelectedIndex((prev)=>((prev === null ? 0 : prev) - 1 + images.length) % images.length);
             setFadeIn(true);
-        }, 300);
+        });
     };
     const closeModal = ()=>{
         setFadeIn(false);
@@ -270,7 +270,7 @@ function Gallery() {
                                 priority: true,
                                 alt: `Modal image ${selectedIndex + 1}`,
                                 className: "object-contain",
-                                quality: 90,
+                                quality: 70,
                                 src: images[selectedIndex]
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
