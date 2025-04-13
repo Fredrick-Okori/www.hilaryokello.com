@@ -11,10 +11,12 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/button/dist/chunk-KCYYJJH4.mjs [app-client] (ecmascript) <export button_default as Button>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
-'use client';
+"use client";
+;
 ;
 ;
 ;
@@ -36,7 +38,7 @@ function Partners() {
                 }
             }["Partners.useEffect.handleResize"];
             handleResize(); // Initial setup
-            window.addEventListener('resize', handleResize);
+            window.addEventListener("resize", handleResize);
             // Auto-scrolling functionality
             const interval = setInterval({
                 "Partners.useEffect.interval": ()=>{
@@ -47,7 +49,7 @@ function Partners() {
             }["Partners.useEffect.interval"], autoScrollInterval);
             return ({
                 "Partners.useEffect": ()=>{
-                    window.removeEventListener('resize', handleResize);
+                    window.removeEventListener("resize", handleResize);
                     clearInterval(interval);
                 }
             })["Partners.useEffect"];
@@ -63,13 +65,13 @@ function Partners() {
     };
     // Example partner logos
     const partnerLogos = [
-        '/partners/ciu-logo.png',
-        '/partners/images.jpeg',
-        '/partners/jico_league.jpg',
-        '/partners/kbadge.jpg',
-        '/partners/laughing_maraboustork.webp',
-        '/partners/logo-top.png',
-        '/partners/uganda_comedians_association.jpg'
+        "/partners/ciu-logo.png",
+        "/partners/images.jpeg",
+        "/partners/jico_league.jpg",
+        "/partners/kbadge.jpg",
+        "/partners/laughing_maraboustork.webp",
+        "/partners/logo-top.png",
+        "/partners/uganda_comedians_association.jpg"
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
@@ -79,8 +81,8 @@ function Partners() {
                 children: "Our Partners"
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 57,
-                columnNumber: 13
+                lineNumber: 69,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative w-full overflow-hidden",
@@ -93,97 +95,83 @@ function Partners() {
                     children: partnerLogos.map((logo, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "inline-block w-1/3 p-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                src: logo,
                                 alt: `Partner Logo ${index + 1}`,
-                                width: 150,
+                                className: "w-full h-auto object-contain",
                                 height: 100,
-                                className: "w-full h-auto object-contain"
+                                src: logo,
+                                width: 150
                             }, void 0, false, {
                                 fileName: "[project]/components/partners.tsx",
-                                lineNumber: 68,
-                                columnNumber: 29
+                                lineNumber: 82,
+                                columnNumber: 15
                             }, this)
                         }, index, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 67,
-                            columnNumber: 25
+                            lineNumber: 81,
+                            columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/partners.tsx",
-                    lineNumber: 61,
-                    columnNumber: 17
+                    lineNumber: 73,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 60,
-                columnNumber: 13
+                lineNumber: 72,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex justify-center mt-4 space-x-4",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Button, {
-                        variant: "bordered",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
                         className: "rounded-full text-white px-2 py-2",
+                        variant: "bordered",
                         onClick: handlePrev,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaArrowLeft"], {
                             size: 24
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 85,
-                            columnNumber: 21
+                            lineNumber: 99,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 80,
-                        columnNumber: 17
+                        lineNumber: 94,
+                        columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Button, {
-                        variant: "bordered",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
                         className: "rounded-full text-white px-2 py-2",
+                        variant: "bordered",
                         onClick: handleNext,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaArrowRight"], {
                             size: 24
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 92,
-                            columnNumber: 21
+                            lineNumber: 106,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 87,
-                        columnNumber: 17
+                        lineNumber: 101,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 79,
-                columnNumber: 13
+                lineNumber: 93,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/partners.tsx",
-        lineNumber: 56,
-        columnNumber: 9
+        lineNumber: 68,
+        columnNumber: 5
     }, this);
 }
 _s(Partners, "NyQMpEZEPrNlCf+n5AvCZ4d9eBA=");
 _c = Partners;
-// Example Button component if not already defined
-const Button = ({ variant, className, onClick, children })=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-        className: `border ${className}`,
-        onClick: onClick,
-        children: children
-    }, void 0, false, {
-        fileName: "[project]/components/partners.tsx",
-        lineNumber: 102,
-        columnNumber: 9
-    }, this);
-};
-_c1 = Button;
-var _c, _c1;
+var _c;
 __turbopack_refresh__.register(_c, "Partners");
-__turbopack_refresh__.register(_c1, "Button");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }

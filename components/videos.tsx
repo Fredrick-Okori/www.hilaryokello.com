@@ -5,6 +5,7 @@ import { Play } from "lucide-react";
 import ReactPlayer from "react-player/youtube";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface Video {
   id: string;
@@ -48,7 +49,7 @@ export function VideoSection({
   };
 
   return (
-    <section  id="clips" className={cn("py-12", className)}>
+    <section className={cn("py-12", className)} id="clips">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tight text-white mb-8">
           {title}
@@ -70,6 +71,7 @@ export function VideoSection({
               ) : (
                 <div
                   className="relative w-full h-full cursor-pointer"
+                  role="button"
                   onClick={playVideo}
                 >
                   <img
@@ -118,7 +120,7 @@ export function VideoSection({
                   onClick={() => selectVideo(video)}
                 >
                   <div className="relative flex-shrink-0 w-40 h-24 overflow-hidden rounded-lg bg-muted">
-                    <img
+                    <Image
                       alt={`Thumbnail for ${video.title}`}
                       className="object-cover w-full h-full"
                       src={

@@ -1,5 +1,4 @@
 import { HeroSection } from "@/components/hero-section";
-
 import ImageCarousel from "@/components/home.carousel";
 import UpcomingShows from "@/components/upcoming.show";
 import { VideoSection } from "@/components/videos";
@@ -34,37 +33,36 @@ export default function Page() {
       youtubeId: "uKznySp_XbE", // Placeholder ID
       views: "28K",
       uploadedAt: "1 month ago",
-      
     },
     {
       id: "4",
-      title: "Uganda Fire Brigade are never in a hurry - Comedian Hilary Okello",
+      title:
+        "Uganda Fire Brigade are never in a hurry - Comedian Hilary Okello",
       duration: "10:35",
       youtubeId: "CT0VkRUdrtk", // Placeholder ID
       views: "14K",
       uploadedAt: "7 years ago",
-     
     },
     {
       id: "5",
-      title: "Ugandan Comedian thrills Rwanda with his hilarious, electrifying Comedy performance!",
+      title:
+        "Ugandan Comedian thrills Rwanda with his hilarious, electrifying Comedy performance!",
       duration: "19:30",
       youtubeId: "ZrCm1CfKqoo", // Placeholder ID
       views: "540K",
       uploadedAt: "6 months ago",
-     
     },
   ];
 
   const images = [
-    '/gallery/bg_booking.webp',
-    '/gallery/crowd.png',
-    '/gallerypage/DSC_9170.webp',
-    '/gallerypage/DSC_1041.webp',
-    '/gallerypage/DSC_8976.webp',
-    '/gallerypage/DSC_2148.webp',
-   '/gallerypage/DSC_8799.webp',
-   '/gallerypage/DSC_9161.webp'
+    "/gallery/bg_booking.webp",
+    "/gallery/crowd.png",
+    "/gallerypage/DSC_9170.webp",
+    "/gallerypage/DSC_1041.webp",
+    "/gallerypage/DSC_8976.webp",
+    "/gallerypage/DSC_2148.webp",
+    "/gallerypage/DSC_8799.webp",
+    "/gallerypage/DSC_9161.webp",
   ];
 
   return (
@@ -75,7 +73,7 @@ export default function Page() {
           <HeroSection />
         </div>
 
-<UpcomingShows/>
+        <UpcomingShows />
         {/* Video Section */}
         <div className="bg-black py-16">
           <div className="max-w-7xl mx-auto px-4">
@@ -89,11 +87,9 @@ export default function Page() {
 
         {/* Gallery Glimpse */}
         <div className="bg-black py-16">
-<div className="max-w-7xl mx-auto px-4">
-
-        <ImageCarousel images={images} />
-</div>
-        
+          <div className="max-w-7xl mx-auto px-4">
+            <ImageCarousel images={images} />
+          </div>
         </div>
       </div>
     </>

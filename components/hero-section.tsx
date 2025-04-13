@@ -61,20 +61,18 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <Button
-         as={Link}
-         href="/booking"
+            as={Link}
             className="text-white rounded-full"
-           
+            href="/booking"
             size="lg"
             variant="bordered"
-           
           >
             <Mic className="mr-2 h-5 w-5" /> Book Now
           </Button>
           <Button
+            as={Link}
             className="text-white rounded-full"
             href="/gallery"
-            as={Link}
             size="lg"
             variant="bordered"
           >

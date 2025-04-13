@@ -109,12 +109,11 @@ export default function MenuBar() {
         variants={navGlowVariants}
       />
       <ul className="flex items-center gap-2 relative z-10">
-        {menuItems.map((item, index) => (
+        {menuItems.map((item) => (
           <motion.li key={item.label} className="relative">
             <motion.div
               className="block rounded-xl overflow-visible group relative"
               initial="initial"
-             
               whileHover="hover"
             >
               <motion.div

@@ -7,7 +7,7 @@
   "chunks": [
     "static/chunks/node_modules_47535c._.js",
     "static/chunks/app_biography_page_tsx_279035._.js",
-    "static/chunks/node_modules_@heroui_dom-animation_dist_index_mjs_86dce9._.js"
+    "static/chunks/node_modules_@heroui_dom-animation_dist_index_mjs_d5935e._.js"
   ],
   "source": "dynamic"
 });
