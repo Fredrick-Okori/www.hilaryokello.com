@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, Maximize } from "lucide-react";
 
@@ -50,10 +51,12 @@ const images = [
 ];
 
 export default function Gallery() {
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [fadeIn, setFadeIn] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [hoverIndex, setHoverIndex] = useState(null);
-  const [fadeIn, setFadeIn] = useState(false);
+
+  const modalRef = useRef(null);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -117,6 +120,21 @@ export default function Gallery() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedIndex]);
 
+  // Handle clicks outside the modal
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [modalRef]);
+
   return (
     <div className="px-6 py-20 max-w-7xl mx-auto bg-black min-h-screen">
       <h1
@@ -132,6 +150,7 @@ export default function Gallery() {
             className={`relative rounded-xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 transform ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
+            role="button"
             style={{
               transitionDelay: `${idx * 50}ms`,
               height: "300px",
@@ -162,13 +181,15 @@ export default function Gallery() {
       {/* Modal */}
       {selectedIndex !== null && (
         <div
+          aria-label="Close modal"
           className={`fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex items-center justify-center transition-opacity duration-300 ${
             fadeIn ? "opacity-100" : "opacity-0"
           }`}
-          onClick={closeModal}
         >
           <div
+            ref={modalRef}
             className="relative max-w-6xl w-full h-[85vh] mx-auto px-4"
+            role="dialog"
             onClick={(e) => e.stopPropagation()}
           >
             <div
@@ -192,7 +213,7 @@ export default function Gallery() {
             {/* Close Button */}
             <button
               aria-label="Close gallery"
-              className="absolute top-10  right-8 bg-black/30 hover:bg-black/60 backdrop-blur-sm p-2 rounded-full text-white transition-all duration-300"
+              className="absolute top-10 right-8 bg-black/30 hover:bg-black/60 backdrop-blur-sm p-2 rounded-full text-white transition-all duration-300"
               onClick={closeModal}
             >
               <X className="h-6 w-6" />
