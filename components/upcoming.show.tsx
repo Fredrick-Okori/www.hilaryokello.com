@@ -7,7 +7,7 @@ const UpcomingShows = () => {
 
   // Example ticket booking information for the first show
   const ticketInfo1 = {
-    date: "2023-12-25",
+    date: "18th April 2025",
     time: "7:30 PM - 10:30 PM",
     location: "Donels Bistro & Lounge",
     ticketsAvailable: "50 seats",
