@@ -190,7 +190,14 @@ export default function Gallery() {
             ref={modalRef}
             className="relative max-w-6xl w-full h-[85vh] mx-auto px-4"
             role="button"
+            tabIndex={0}
             onClick={(e) => e.stopPropagation()}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault(); // prevent scrolling with space
+                e.stopPropagation();
+              }
+            }}
           >
             <div
               className={`relative h-full transition-opacity duration-500 ${fadeIn ? "opacity-100" : "opacity-0"}`}
