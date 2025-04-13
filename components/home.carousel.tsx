@@ -76,10 +76,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
       </div>
 
       <div className="top-0 right-0 flex py-10 justify-end space-x-2 z-10">
-        <Button className="text-white rounded-full" size="icon" variant="bordered" onClick={handlePrev}>
+        <Button className="text-white rounded-full" size="sm" variant="bordered" onClick={handlePrev}>
           <ChevronLeft />
         </Button>
-        <Button className="text-white rounded-full" size="icon" variant="bordered" onClick={handleNext}>
+        <Button className="text-white rounded-full" size="sm" variant="bordered" onClick={handleNext}>
           <ChevronRight />
         </Button>
       </div>
