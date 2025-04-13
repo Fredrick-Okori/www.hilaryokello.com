@@ -6,8 +6,7 @@
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: require } = __turbopack_context__;
 {
 /* eslint-disable jsx-a11y/click-events-have-key-events */ __turbopack_esm__({
-    "default": (()=>Gallery),
-    "images": (()=>images)
+    "default": (()=>Gallery)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
@@ -23,174 +22,48 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 const images = [
-    {
-        url: "/bg_hero.webp",
-        caption: "Hero Background"
-    },
-    {
-        url: "/gallery/crowd.png",
-        caption: "Crowd"
-    },
-    {
-        url: "/gallerypage/DSC_0808.webp",
-        caption: "Event Photo 0808"
-    },
-    {
-        url: "/gallerypage/DSC_0809.webp",
-        caption: "Event Photo 0809"
-    },
-    {
-        url: "/gallerypage/DSC_0854.webp",
-        caption: "Event Photo 0854"
-    },
-    {
-        url: "/gallerypage/DSC_0913.webp",
-        caption: "Event Photo 0913"
-    },
-    {
-        url: "/gallerypage/DSC_0934.webp",
-        caption: "Event Photo 0934"
-    },
-    {
-        url: "/gallerypage/DSC_1041.webp",
-        caption: "Event Photo 1041"
-    },
-    {
-        url: "/gallerypage/DSC_9107.webp",
-        caption: "Event Photo 9107"
-    },
-    {
-        url: "/gallerypage/DSC_9137.webp",
-        caption: "Event Photo 9137"
-    },
-    {
-        url: "/gallerypage/DSC_9161.webp",
-        caption: "Event Photo 9161"
-    },
-    {
-        url: "/gallerypage/DSC_9170.webp",
-        caption: "Event Photo 9170"
-    },
-    {
-        url: "/gallerypage/DSC_9173.webp",
-        caption: "Event Photo 9173"
-    },
-    {
-        url: "/gallerypage/DSC_8796.webp",
-        caption: "Event Photo 8796"
-    },
-    {
-        url: "/gallerypage/DSC_8799.webp",
-        caption: "Event Photo 8799"
-    },
-    {
-        url: "/gallerypage/DSC_8883.webp",
-        caption: "Event Photo 8883"
-    },
-    {
-        url: "/gallerypage/DSC_8976.webp",
-        caption: "Event Photo 8976"
-    },
-    {
-        url: "/gallerypage/DSC_9022.webp",
-        caption: "Event Photo 9022"
-    },
-    {
-        url: "/gallerypage/DSC_9060.webp",
-        caption: "Event Photo 9060"
-    },
-    {
-        url: "/gallerypage/DSC_1439.webp",
-        caption: "Event Photo 1439"
-    },
-    {
-        url: "/gallerypage/DSC_1443.webp",
-        caption: "Event Photo 1443"
-    },
-    {
-        url: "/gallerypage/DSC_1462.webp",
-        caption: "Event Photo 1462"
-    },
-    {
-        url: "/gallerypage/DSC_1499.webp",
-        caption: "Event Photo 1499"
-    },
-    {
-        url: "/gallerypage/DSC_9178.webp",
-        caption: "Event Photo 9178"
-    },
-    {
-        url: "/gallerypage/DSC_9186.webp",
-        caption: "Event Photo 9186"
-    },
-    {
-        url: "/gallerypage/DSC_9197.webp",
-        caption: "Event Photo 9197"
-    },
-    {
-        url: "/gallerypage/DSC_9202.webp",
-        caption: "Event Photo 9202"
-    },
-    {
-        url: "/gallerypage/DSC_9205.webp",
-        caption: "Event Photo 9205"
-    },
-    {
-        url: "/gallerypage/DSC_9210.webp",
-        caption: "Event Photo 9210"
-    },
-    {
-        url: "/gallerypage/DSC_9264.webp",
-        caption: "Event Photo 9264"
-    },
-    {
-        url: "/gallerypage/DSC_9291.webp",
-        caption: "Event Photo 9291"
-    },
-    {
-        url: "/gallerypage/DSC_9304.webp",
-        caption: "Event Photo 9304"
-    },
-    {
-        url: "/gallerypage/DSC_9316.webp",
-        caption: "Event Photo 9316"
-    },
-    {
-        url: "/gallerypage/DSC_1501.webp",
-        caption: "Event Photo 1501"
-    },
-    {
-        url: "/gallerypage/DSC_1536.webp",
-        caption: "Event Photo 1536"
-    },
-    {
-        url: "/gallerypage/DSC_2131.webp",
-        caption: "Event Photo 2131"
-    },
-    {
-        url: "/gallerypage/DSC_2132.webp",
-        caption: "Event Photo 2132"
-    },
-    {
-        url: "/gallerypage/DSC_2137.webp",
-        caption: "Event Photo 2137"
-    },
-    {
-        url: "/gallerypage/DSC_2148.webp",
-        caption: "Event Photo 2148"
-    },
-    {
-        url: "/gallerypage/DSC_2151.webp",
-        caption: "Event Photo 2151"
-    },
-    {
-        url: "/gallerypage/DSC_5225.webp",
-        caption: "Event Photo 5225"
-    },
-    {
-        url: "/gallerypage/DSC_5228.webp",
-        caption: "Event Photo 5228"
-    }
+    "/bg_hero.webp",
+    "/gallery/crowd.png",
+    "/gallerypage/DSC_0808.webp",
+    "/gallerypage/DSC_0809.webp",
+    "/gallerypage/DSC_0854.webp",
+    "/gallerypage/DSC_0913.webp",
+    "/gallerypage/DSC_0934.webp",
+    "/gallerypage/DSC_1041.webp",
+    "/gallerypage/DSC_9107.webp",
+    "/gallerypage/DSC_9137.webp",
+    "/gallerypage/DSC_9161.webp",
+    "/gallerypage/DSC_9170.webp",
+    "/gallerypage/DSC_9173.webp",
+    "/gallerypage/DSC_8796.webp",
+    "/gallerypage/DSC_8799.webp",
+    "/gallerypage/DSC_8883.webp",
+    "/gallerypage/DSC_8976.webp",
+    "/gallerypage/DSC_9022.webp",
+    "/gallerypage/DSC_9060.webp",
+    "/gallerypage/DSC_1439.webp",
+    "/gallerypage/DSC_1443.webp",
+    "/gallerypage/DSC_1462.webp",
+    "/gallerypage/DSC_1499.webp",
+    "/gallerypage/DSC_9178.webp",
+    "/gallerypage/DSC_9186.webp",
+    "/gallerypage/DSC_9197.webp",
+    "/gallerypage/DSC_9202.webp",
+    "/gallerypage/DSC_9205.webp",
+    "/gallerypage/DSC_9210.webp",
+    "/gallerypage/DSC_9264.webp",
+    "/gallerypage/DSC_9291.webp",
+    "/gallerypage/DSC_9304.webp",
+    "/gallerypage/DSC_9316.webp",
+    "/gallerypage/DSC_1501.webp",
+    "/gallerypage/DSC_1536.webp",
+    "/gallerypage/DSC_2131.webp",
+    "/gallerypage/DSC_2132.webp",
+    "/gallerypage/DSC_2137.webp",
+    "/gallerypage/DSC_2148.webp",
+    "/gallerypage/DSC_2151.webp",
+    "/gallerypage/DSC_5225.webp",
+    "/gallerypage/DSC_5228.webp"
 ];
 function Gallery() {
     _s();
@@ -295,7 +168,7 @@ function Gallery() {
                 children: "Viewing Gallery"
             }, void 0, false, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 147,
+                lineNumber: 146,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -323,7 +196,7 @@ function Gallery() {
                                 src: src
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 171,
+                                lineNumber: 170,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -334,28 +207,28 @@ function Gallery() {
                                         className: "text-white h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/app/gallery/page.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 181,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/gallery/page.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 180,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 180,
+                                lineNumber: 179,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, idx, true, {
                         fileName: "[project]/app/gallery/page.tsx",
-                        lineNumber: 155,
+                        lineNumber: 154,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 153,
+                lineNumber: 152,
                 columnNumber: 7
             }, this),
             selectedIndex !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -384,12 +257,12 @@ function Gallery() {
                                 src: images[selectedIndex]
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 212,
+                                lineNumber: 211,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/page.tsx",
-                            lineNumber: 209,
+                            lineNumber: 208,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -401,7 +274,7 @@ function Gallery() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/gallery/page.tsx",
-                            lineNumber: 223,
+                            lineNumber: 222,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -412,12 +285,12 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 233,
+                                lineNumber: 232,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/page.tsx",
-                            lineNumber: 228,
+                            lineNumber: 227,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -428,12 +301,12 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 242,
+                                lineNumber: 241,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/page.tsx",
-                            lineNumber: 237,
+                            lineNumber: 236,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -444,29 +317,29 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/page.tsx",
-                                lineNumber: 251,
+                                lineNumber: 250,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/page.tsx",
-                            lineNumber: 246,
+                            lineNumber: 245,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/gallery/page.tsx",
-                    lineNumber: 197,
+                    lineNumber: 196,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/gallery/page.tsx",
-                lineNumber: 191,
+                lineNumber: 190,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/gallery/page.tsx",
-        lineNumber: 146,
+        lineNumber: 145,
         columnNumber: 5
     }, this);
 }

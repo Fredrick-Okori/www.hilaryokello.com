@@ -2,14 +2,14 @@
   "pages": {
     "/gallery/page": [
       "static/chunks/[root of the server]__49471b._.css",
-      "static/chunks/node_modules_3a22d4._.js",
+      "static/chunks/node_modules_bc4075._.js",
       "static/chunks/_358722._.js",
       "static/chunks/app_layout_tsx_d96937._.js",
       "static/chunks/app_error_tsx_6c72c3._.js",
-      "static/chunks/app_error_tsx_2727ef._.js",
+      "static/chunks/app_error_tsx_3cde7b._.js",
       "static/chunks/node_modules_6598d1._.js",
       "static/chunks/app_gallery_page_tsx_2f5fab._.js",
-      "static/chunks/app_gallery_page_tsx_2727ef._.js",
+      "static/chunks/app_gallery_page_tsx_3cde7b._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
       "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
       "static/chunks/node_modules_next_dist_client_9bb038._.js",

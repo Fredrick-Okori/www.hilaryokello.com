@@ -14,7 +14,7 @@ export default function Footer() {
             <FaTwitter className="hover:text-blue-400" size={24} />
           </a>
           <a
-            href="https://www.youtube.com/channel/UCDrHilaryOkello"
+            href="https://www.youtube.com/@drhilaryokello"
             rel="noopener noreferrer"
             target="_blank"
           >

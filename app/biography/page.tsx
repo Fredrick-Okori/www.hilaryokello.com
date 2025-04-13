@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@heroui/button";
-import { Badge } from "@heroui/react";
-import { Mic, Instagram, Twitter, Youtube, Mail } from "lucide-react";
+import { Mic, Instagram, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FaTiktok } from "react-icons/fa";
 
 export default function ComedianBio() {
   return (
@@ -20,14 +20,14 @@ export default function ComedianBio() {
           src="/gallerypage/DSC_9170.webp"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-        <motion.h1
-          animate={{ opacity: 1, y: 0 }}
-          className="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-md"
-          initial={{ opacity: 0, y: 30 }}
-          transition={{ duration: 0.8 }}
-        >
-          Uganda&apos;s Top Comedian
-        </motion.h1>
+          <motion.h1
+            animate={{ opacity: 1, y: 0 }}
+            className="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-md"
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.8 }}
+          >
+            Uganda&apos;s Top Comedian
+          </motion.h1>
           <p className="text-xl md:text-2xl font-medium max-w-2xl mb-8 mt-4">
             Making the world laugh, one awkward truth at a time
           </p>
@@ -76,7 +76,6 @@ export default function ComedianBio() {
           </div>
 
           <div className="w-full md:w-2/3">
-           
             <h2 className="text-4xl text-left font-bold mb-6 text-white">
               About Dr. Hilary Okello
             </h2>
@@ -152,30 +151,49 @@ export default function ComedianBio() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-           
             <Button
+              as={Link}
               className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              href="https://www.instagram.com/drhilaryokello/"
               size="lg"
+              target="_blank"
               variant="bordered"
             >
               <Instagram className="mr-2 h-5 w-5" />
               Instagram
             </Button>
             <Button
+              as={Link}
               className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              href="https://twitter.com/DrHilaryOkello"
               size="lg"
+              target="_blank"
               variant="bordered"
             >
               <Twitter className="mr-2 h-5 w-5" />
               Twitter
             </Button>
             <Button
+              as={Link}
               className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              href="https://www.youtube.com/@drhilaryokello"
               size="lg"
+              target="_blank"
               variant="bordered"
             >
               <Youtube className="mr-2 h-5 w-5" />
               YouTube
+            </Button>
+            <Button
+              as={Link}
+              className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              href="https://www.tiktok.com/@drhilaryokello"
+              size="lg"
+              target="_blank"
+              variant="bordered"
+            >
+              <FaTiktok className="mr-2 h-5 w-5" />
+              TikTok
             </Button>
           </div>
         </div>
