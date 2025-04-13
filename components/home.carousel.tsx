@@ -1,16 +1,21 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Button } from "@heroui/button";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import Link from "next/link";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import PropTypes from "prop-types";
 
-const ImageCarousel = ({ images }) => {
+// Define the type for the images array elements using TypeScript
+interface ImageType {
+  url: string;
+  caption?: string;
+}
+
+const ImageCarousel: React.FC<{ images: ImageType[] }> = ({ images }) => {
   const [slideIndex, setSlideIndex] = useState(0);
-  const carouselRef = useRef(null);
-  const slideWidthRef = useRef(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const slideWidthRef = useRef<number>(0);
   const [itemsPerView, setItemsPerView] = useState(2); // Default for larger screens
 
   // Dynamically adjust items per view based on screen width
@@ -58,7 +63,10 @@ const ImageCarousel = ({ images }) => {
   // Define PropTypes to match the type of images array elements
   ImageCarousel.propTypes = {
     images: PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+      PropTypes.shape({
+        url: PropTypes.string.isRequired,
+        caption: PropTypes.string,
+      }),
     ).isRequired,
   };
 
@@ -102,10 +110,10 @@ const ImageCarousel = ({ images }) => {
           ref={carouselRef}
           className="flex transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(-${slideIndex * (slideWidthRef.current || 0)}px)`,
+            transform: `translateX(-${slideIndex * slideWidthRef.current}px)`,
           }}
         >
-          {images.map((image: string | StaticImport, index: number) => (
+          {images.map((image: ImageType, index: number) => (
             <div
               key={index}
               className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2"
@@ -115,7 +123,7 @@ const ImageCarousel = ({ images }) => {
                   fill
                   alt={`Carousel Image ${index + 1}`}
                   className="rounded-2xl"
-                  src={image}
+                  src={image.url as unknown as StaticImageData} // Ensure src is a StaticImageData or a string
                   style={{ objectFit: "cover" }}
                 />
               </div>
