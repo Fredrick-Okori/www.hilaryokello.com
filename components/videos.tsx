@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import ReactPlayer from "react-player/youtube";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 interface Video {
   id: string;
@@ -123,6 +123,9 @@ export function VideoSection({
                     <Image
                       alt={`Thumbnail for ${video.title}`}
                       className="object-cover w-full h-full"
+                      height={240}
+                      width={400}
+                      layout="responsive"
                       src={
                         getYouTubeThumbnail(video.youtubeId) ||
                         "/placeholder.svg"
