@@ -5,6 +5,8 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, Maximize } from "lucide-react";
 
+import { Skeleton } from "@heroui/react";
+
 const images = [
   "/bg_hero.webp",
   "/gallery/crowd.png",
@@ -59,7 +61,12 @@ export default function Gallery() {
   const modalRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    setIsLoaded(true);
+    // Simulate image loading delay
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 1500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -85,7 +92,7 @@ export default function Gallery() {
       );
 
       setFadeIn(true);
-    });
+    }, 300);
   };
 
   const handlePrev = () => {
@@ -97,7 +104,7 @@ export default function Gallery() {
           ((prev === null ? 0 : prev) - 1 + images.length) % images.length,
       );
       setFadeIn(true);
-    });
+    }, 300);
   };
 
   const closeModal = () => {
@@ -167,18 +174,25 @@ export default function Gallery() {
             onMouseEnter={() => setHoverIndex(idx)}
             onMouseLeave={() => setHoverIndex(null)}
           >
-            <Image
-              fill
-              alt={`Gallery image ${idx + 1}`}
-              className="object-cover transition-transform duration-700 group-hover:scale-110"
-              loading="lazy"
-              quality={70}
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-              src={src}
-            />
+            {!isLoaded && (
+              <Skeleton className="h-full w-full" />
+            )}
+            {isLoaded && (
+              <Image
+                fill
+                alt={`Gallery image ${idx + 1}`}
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+                quality={70}
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                src={src}
+              />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
               <div className="p-4 w-full flex justify-between items-center">
-                <Maximize className="text-white h-5 w-5" />
+                {hoverIndex === idx && (
+                  <Maximize className="text-white h-5 w-5" />
+                )}
               </div>
             </div>
           </div>

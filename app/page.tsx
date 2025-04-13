@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/hero-section";
 import ImageCarousel from "@/components/home.carousel";
 import UpcomingShows from "@/components/upcoming.show";
 import { VideoSection } from "@/components/videos";
+import Head from "next/head";
 
 export default function Page() {
   // Featured video - Dr. Hilary Okello's comedy
@@ -54,7 +55,7 @@ export default function Page() {
     },
   ];
 
-   const images = [
+  const images = [
     { url: "/gallery/bg_booking.webp", caption: "Booking Background" },
     { url: "/gallery/crowd.png", caption: "Crowd" },
     { url: "/gallerypage/DSC_9170.webp", caption: "Event Photo 9170" },
@@ -63,10 +64,27 @@ export default function Page() {
     { url: "/gallerypage/DSC_2148.webp", caption: "Event Photo 2148" },
     { url: "/gallerypage/DSC_8799.webp", caption: "Event Photo 8799" },
     { url: "/gallerypage/DSC_9161.webp", caption: "Event Photo 9161" },
-  ]
+  ];
 
   return (
     <>
+      <Head>
+        <title>Hilary Okello - Uganda&apos;s Top Comedian</title>
+        <meta
+          name="description"
+          content="Discover Hilary Okello's upcoming shows and watch his featured comedy videos on his official website."
+        />
+        <meta name="keywords" content="Hilary Okello, comedy, upcoming shows, videos, performances" />
+        <meta name="author" content="Hilary Okello" />
+        <meta property="og:title" content="Hilary Okello - Upcoming Shows and Featured Videos" />
+        <meta property="og:description" content="Discover Hilary Okello's upcoming shows and watch his featured comedy videos on his official website." />
+        <meta property="og:image" content="/liveatthestork.jpeg" />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Hilary Okello - Upcoming Shows and Featured Videos" />
+        <meta name="twitter:description" content="Discover Hilary Okello's upcoming shows and watch his featured comedy videos on his official website." />
+        <meta name="twitter:image" content="/liveatthestork.jpeg" />
+      </Head>
       <div className="">
         {/* Full screen background */}
         <div className="min-h-screen overflow-hidden relative">

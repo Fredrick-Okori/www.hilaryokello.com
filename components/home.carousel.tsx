@@ -6,6 +6,7 @@ import Link from "next/link"
 import { ChevronRight, ChevronLeft } from "lucide-react"
 
 import { Button } from "@heroui/button"
+import { Skeleton } from "@heroui/react" // Import the Skeleton component
 
 // Define the type for the images array elements
 interface ImageType {
@@ -22,6 +23,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   const carouselRef = useRef<HTMLDivElement>(null)
   const slideWidthRef = useRef<number>(0)
   const [itemsPerView, setItemsPerView] = useState(2) // Default for larger screens
+  const [isLoading, setIsLoading] = useState(true) // State to track loading status
 
   // Dynamically adjust items per view based on screen width
   useEffect(() => {
@@ -53,6 +55,15 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     }
   }, [slideIndex, itemsPerView])
 
+  // Simulate image loading
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1500) // 1.5 second delay to simulate loading
+
+    return () => clearTimeout(timer)
+  }, [])
+
   const handleNext = () => {
     setSlideIndex((prev) => (prev + 1) % Math.ceil(images.length / itemsPerView))
   }
@@ -70,16 +81,16 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     <>
       <div>
         <h4 className="text-left text-4xl text-white font-bold">From the Lenses</h4>
-        <Button  className="rounded-full text-white px-4 py-2 mt-4" variant="bordered">
+        <Button className="rounded-full text-white px-4 py-2 mt-4" variant="bordered">
           <Link href="/gallery">More Pictures</Link>
         </Button>
       </div>
 
       <div className="top-0 right-0 flex py-10 justify-end space-x-2 z-10">
-        <Button className="text-white rounded-full" size="sm" variant="bordered" onClick={handlePrev}>
+        <Button className="text-white rounded-full" size="sm" variant="bordered" onClick={handlePrev} disabled={isLoading}>
           <ChevronLeft />
         </Button>
-        <Button className="text-white rounded-full" size="sm" variant="bordered" onClick={handleNext}>
+        <Button className="text-white rounded-full" size="sm" variant="bordered" onClick={handleNext} disabled={isLoading}>
           <ChevronRight />
         </Button>
       </div>
@@ -96,14 +107,19 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
             images.map((image, index) => (
               <div key={index} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
                 <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96">
-                  <Image
-                    fill
-                    alt={`Carousel Image ${index + 1}`}
-                    className="rounded-2xl object-cover"
-                    src={image.url || "/placeholder.svg"}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority={index === 0}
-                  />
+                  {isLoading ? (
+                    <Skeleton className="w-full h-full rounded-2xl" />
+                  ) : (
+                    <Image
+                      fill
+                      alt={`Carousel Image ${index + 1}`}
+                      className="rounded-2xl object-cover"
+                      src={image.url || "/placeholder.svg"}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      priority={index === 0}
+                      quality={70}
+                    />
+                  )}
                 </div>
               </div>
             ))

@@ -244,9 +244,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/button/dist/chunk-KCYYJJH4.mjs [app-client] (ecmascript) <export button_default as Button>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-client] (ecmascript) <export default as ChevronLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$skeleton$2f$dist$2f$chunk$2d$TLYTI3QM$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__skeleton_default__as__Skeleton$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/skeleton/dist/chunk-TLYTI3QM.mjs [app-client] (ecmascript) <export skeleton_default as Skeleton>"); // Import the Skeleton component
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -258,6 +260,8 @@ const ImageCarousel = ({ images })=>{
     const carouselRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const slideWidthRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(0);
     const [itemsPerView, setItemsPerView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(2) // Default for larger screens
+    ;
+    const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true) // State to track loading status
     ;
     // Dynamically adjust items per view based on screen width
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -296,6 +300,20 @@ const ImageCarousel = ({ images })=>{
         slideIndex,
         itemsPerView
     ]);
+    // Simulate image loading
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "ImageCarousel.useEffect": ()=>{
+            const timer = setTimeout({
+                "ImageCarousel.useEffect.timer": ()=>{
+                    setIsLoading(false);
+                }
+            }["ImageCarousel.useEffect.timer"], 1500) // 1.5 second delay to simulate loading
+            ;
+            return ({
+                "ImageCarousel.useEffect": ()=>clearTimeout(timer)
+            })["ImageCarousel.useEffect"];
+        }
+    }["ImageCarousel.useEffect"], []);
     const handleNext = ()=>{
         setSlideIndex((prev)=>(prev + 1) % Math.ceil(images.length / itemsPerView));
     };
@@ -313,7 +331,7 @@ const ImageCarousel = ({ images })=>{
                         children: "From the Lenses"
                     }, void 0, false, {
                         fileName: "[project]/components/home.carousel.tsx",
-                        lineNumber: 72,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
@@ -324,18 +342,18 @@ const ImageCarousel = ({ images })=>{
                             children: "More Pictures"
                         }, void 0, false, {
                             fileName: "[project]/components/home.carousel.tsx",
-                            lineNumber: 74,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/home.carousel.tsx",
-                        lineNumber: 73,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/home.carousel.tsx",
-                lineNumber: 71,
+                lineNumber: 82,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -346,14 +364,15 @@ const ImageCarousel = ({ images })=>{
                         size: "sm",
                         variant: "bordered",
                         onClick: handlePrev,
+                        disabled: isLoading,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {}, void 0, false, {
                             fileName: "[project]/components/home.carousel.tsx",
-                            lineNumber: 80,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/home.carousel.tsx",
-                        lineNumber: 79,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
@@ -361,20 +380,21 @@ const ImageCarousel = ({ images })=>{
                         size: "sm",
                         variant: "bordered",
                         onClick: handleNext,
+                        disabled: isLoading,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {}, void 0, false, {
                             fileName: "[project]/components/home.carousel.tsx",
-                            lineNumber: 83,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/home.carousel.tsx",
-                        lineNumber: 82,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/home.carousel.tsx",
-                lineNumber: 78,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -389,26 +409,33 @@ const ImageCarousel = ({ images })=>{
                             className: "flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "relative w-full h-64 sm:h-72 md:h-80 lg:h-96",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                children: isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$skeleton$2f$dist$2f$chunk$2d$TLYTI3QM$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__skeleton_default__as__Skeleton$3e$__["Skeleton"], {
+                                    className: "w-full h-full rounded-2xl"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/home.carousel.tsx",
+                                    lineNumber: 111,
+                                    columnNumber: 21
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     fill: true,
                                     alt: `Carousel Image ${index + 1}`,
                                     className: "rounded-2xl object-cover",
                                     src: image.url || "/placeholder.svg",
                                     sizes: "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw",
-                                    priority: index === 0
+                                    priority: index === 0,
+                                    quality: 70
                                 }, void 0, false, {
                                     fileName: "[project]/components/home.carousel.tsx",
-                                    lineNumber: 99,
-                                    columnNumber: 19
+                                    lineNumber: 113,
+                                    columnNumber: 21
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/home.carousel.tsx",
-                                lineNumber: 98,
+                                lineNumber: 109,
                                 columnNumber: 17
                             }, this)
                         }, index, false, {
                             fileName: "[project]/components/home.carousel.tsx",
-                            lineNumber: 97,
+                            lineNumber: 108,
                             columnNumber: 15
                         }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex-shrink-0 w-full p-2",
@@ -418,33 +445,33 @@ const ImageCarousel = ({ images })=>{
                                 children: "No images available"
                             }, void 0, false, {
                                 fileName: "[project]/components/home.carousel.tsx",
-                                lineNumber: 113,
+                                lineNumber: 129,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/home.carousel.tsx",
-                            lineNumber: 112,
+                            lineNumber: 128,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/home.carousel.tsx",
-                        lineNumber: 111,
+                        lineNumber: 127,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/home.carousel.tsx",
-                    lineNumber: 88,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/home.carousel.tsx",
-                lineNumber: 87,
+                lineNumber: 98,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 };
-_s(ImageCarousel, "MgpzKtctVVnSwlDj0smefphgPSw=");
+_s(ImageCarousel, "HARm6FRFtgrjqVeScI1wCIOiSMc=");
 _c = ImageCarousel;
 const __TURBOPACK__default__export__ = ImageCarousel;
 var _c;
