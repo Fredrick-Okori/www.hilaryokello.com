@@ -156,6 +156,7 @@ export default function Gallery() {
               height: "300px",
               width: "400px",
             }}
+            tabIndex={0}
             onClick={() => setSelectedIndex(idx)}
             onMouseEnter={() => setHoverIndex(idx)}
             onMouseLeave={() => setHoverIndex(null)}

@@ -129,77 +129,77 @@ function Footer() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "https://twitter.com/DrHilaryOkello",
-                            target: "_blank",
                             rel: "noopener noreferrer",
+                            target: "_blank",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaTwitter"], {
-                                size: 24,
-                                className: "hover:text-blue-400"
+                                className: "hover:text-blue-400",
+                                size: 24
                             }, void 0, false, {
                                 fileName: "[project]/components/footer.tsx",
-                                lineNumber: 10,
-                                columnNumber: 25
+                                lineNumber: 14,
+                                columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/footer.tsx",
                             lineNumber: 9,
-                            columnNumber: 21
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "https://www.youtube.com/channel/UCDrHilaryOkello",
-                            target: "_blank",
                             rel: "noopener noreferrer",
+                            target: "_blank",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaYoutube"], {
-                                size: 24,
-                                className: "hover:text-red-600"
+                                className: "hover:text-red-600",
+                                size: 24
                             }, void 0, false, {
                                 fileName: "[project]/components/footer.tsx",
-                                lineNumber: 13,
-                                columnNumber: 25
+                                lineNumber: 21,
+                                columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/footer.tsx",
-                            lineNumber: 12,
-                            columnNumber: 21
+                            lineNumber: 16,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "https://www.tiktok.com/@drhilaryokello",
-                            target: "_blank",
                             rel: "noopener noreferrer",
+                            target: "_blank",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaTiktok"], {
-                                size: 24,
-                                className: "hover:text-pink-600"
+                                className: "hover:text-pink-600",
+                                size: 24
                             }, void 0, false, {
                                 fileName: "[project]/components/footer.tsx",
-                                lineNumber: 16,
-                                columnNumber: 25
+                                lineNumber: 28,
+                                columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/footer.tsx",
-                            lineNumber: 15,
-                            columnNumber: 21
+                            lineNumber: 23,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "https://www.instagram.com/drhilaryokello/",
-                            target: "_blank",
                             rel: "noopener noreferrer",
+                            target: "_blank",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaInstagram"], {
-                                size: 24,
-                                className: "hover:text-purple-600"
+                                className: "hover:text-purple-600",
+                                size: 24
                             }, void 0, false, {
                                 fileName: "[project]/components/footer.tsx",
-                                lineNumber: 19,
-                                columnNumber: 25
+                                lineNumber: 35,
+                                columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/footer.tsx",
-                            lineNumber: 18,
-                            columnNumber: 21
+                            lineNumber: 30,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/footer.tsx",
                     lineNumber: 8,
-                    columnNumber: 17
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "text-center text-sm",
@@ -210,19 +210,19 @@ function Footer() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/footer.tsx",
-                    lineNumber: 22,
-                    columnNumber: 17
+                    lineNumber: 38,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/footer.tsx",
             lineNumber: 7,
-            columnNumber: 13
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/footer.tsx",
         lineNumber: 6,
-        columnNumber: 9
+        columnNumber: 5
     }, this);
 }
 }}),

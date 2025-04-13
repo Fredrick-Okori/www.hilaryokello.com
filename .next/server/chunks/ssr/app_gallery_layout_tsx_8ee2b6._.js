@@ -19,12 +19,12 @@ function GalleryLayout({ children }) {
         }, void 0, false, {
             fileName: "[project]/app/gallery/layout.tsx",
             lineNumber: 8,
-            columnNumber: 9
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/gallery/layout.tsx",
         lineNumber: 7,
-        columnNumber: 7
+        columnNumber: 5
     }, this);
 }
 }}),
