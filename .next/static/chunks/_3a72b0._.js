@@ -20,6 +20,16 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
+// Example partner logos - moved outside component to prevent unnecessary re-renders
+const partnerLogos = [
+    "/partners/ciu-logo.png",
+    "/partners/images.jpeg",
+    "/partners/jico_league.jpg",
+    "/partners/kbadge.jpg",
+    "/partners/laughing_maraboustork.webp",
+    "/partners/logo-top.png",
+    "/partners/uganda_comedians_association.jpg"
+];
 function Partners() {
     _s();
     const [slideIndex, setSlideIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -32,7 +42,9 @@ function Partners() {
             const handleResize = {
                 "Partners.useEffect.handleResize": ()=>{
                     if (carouselRef.current && carouselRef.current.children[0]) {
-                        slideWidthRef.current = carouselRef.current.children[0].offsetWidth;
+                        // Type assertion to HTMLElement
+                        const firstChild = carouselRef.current.children[0];
+                        slideWidthRef.current = firstChild.offsetWidth;
                         carouselRef.current.style.transform = `translateX(-${slideIndex * slideWidthRef.current * itemsPerView}px)`;
                     }
                 }
@@ -63,16 +75,6 @@ function Partners() {
     const handlePrev = ()=>{
         setSlideIndex((prevIndex)=>(prevIndex - 1 + Math.ceil(partnerLogos.length / itemsPerView)) % Math.ceil(partnerLogos.length / itemsPerView));
     };
-    // Example partner logos
-    const partnerLogos = [
-        "/partners/ciu-logo.png",
-        "/partners/images.jpeg",
-        "/partners/jico_league.jpg",
-        "/partners/kbadge.jpg",
-        "/partners/laughing_maraboustork.webp",
-        "/partners/logo-top.png",
-        "/partners/uganda_comedians_association.jpg"
-    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
         children: [
@@ -81,7 +83,7 @@ function Partners() {
                 children: "Our Partners"
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 69,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -94,77 +96,86 @@ function Partners() {
                     },
                     children: partnerLogos.map((logo, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "inline-block w-1/3 p-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                alt: `Partner Logo ${index + 1}`,
-                                className: "w-full h-auto object-contain",
-                                height: 100,
-                                src: logo,
-                                width: 150
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative h-[100px] w-[150px] mx-auto",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    fill: true,
+                                    alt: `Partner Logo ${index + 1}`,
+                                    className: "object-contain",
+                                    sizes: "150px",
+                                    src: logo || "/placeholder.svg"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/partners.tsx",
+                                    lineNumber: 85,
+                                    columnNumber: 17
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/partners.tsx",
-                                lineNumber: 82,
+                                lineNumber: 84,
                                 columnNumber: 15
                             }, this)
                         }, index, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 81,
+                            lineNumber: 83,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/partners.tsx",
-                    lineNumber: 73,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 72,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex justify-center mt-4 space-x-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                        className: "rounded-full text-white px-2 py-2",
+                        className: "rounded-full text-white",
+                        size: "sm",
                         variant: "bordered",
                         onClick: handlePrev,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaArrowLeft"], {
-                            size: 24
+                            className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 99,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 94,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                        className: "rounded-full text-white px-2 py-2",
+                        className: "rounded-full text-white",
+                        size: "sm",
                         variant: "bordered",
                         onClick: handleNext,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaArrowRight"], {
-                            size: 24
+                            className: "h-4 w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 106,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 101,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 93,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/partners.tsx",
-        lineNumber: 68,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }

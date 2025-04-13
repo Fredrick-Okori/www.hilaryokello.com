@@ -1081,6 +1081,10 @@ img, video {
   height: 100vh;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .max-h-\[20rem\] {
   max-height: 20rem;
 }
@@ -1305,6 +1309,10 @@ img, video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .min-w-10 {
