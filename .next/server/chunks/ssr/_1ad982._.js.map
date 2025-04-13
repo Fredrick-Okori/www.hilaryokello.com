@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/graphics/hilaryokello/components/primitives.ts"],"sourcesContent":["// primitives.tsx\nimport React from \"react\";\n\nexport const title = (props: { color?: string }) => {\n  const { color = \"default\" } = props;\n  return `text-${color} font-bold text-3xl md:text-4xl`;\n};\n\nexport const subtitle = (props: { class?: string }) => {\n  const { class: className = \"\" } = props;\n  return `font-normal text-lg md:text-xl ${className}`;\n};\n"],"names":[],"mappings":"AAAA,iBAAiB;;;;;AAGV,MAAM,QAAQ,CAAC;IACpB,MAAM,EAAE,QAAQ,SAAS,EAAE,GAAG;IAC9B,OAAO,CAAC,KAAK,EAAE,MAAM,+BAA+B,CAAC;AACvD;AAEO,MAAM,WAAW,CAAC;IACvB,MAAM,EAAE,OAAO,YAAY,EAAE,EAAE,GAAG;IAClC,OAAO,CAAC,+BAA+B,EAAE,WAAW;AACtD"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

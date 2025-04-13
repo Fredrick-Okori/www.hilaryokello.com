@@ -1,0 +1,4359 @@
+module.exports = {
+
+"[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "ProviderContext": (()=>ProviderContext),
+    "useProviderContext": (()=>useProviderContext)
+});
+// src/provider-context.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$3XT5V4LF$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-3XT5V4LF.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+var [ProviderContext, useProviderContext] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$3XT5V4LF$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])({
+    name: "ProviderContext",
+    strict: false
+});
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-OKNU54ZL.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "HeroUIProvider": (()=>HeroUIProvider)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/openLink.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$GlobalConfig$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/utils/GlobalConfig.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+// src/provider.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$i18n$2f$dist$2f$context$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/i18n/dist/context.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$MotionConfig$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/components/MotionConfig/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useModal$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/overlays/dist/useModal.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+var HeroUIProvider = ({ children, navigate, disableAnimation, useHref, disableRipple = false, skipFramerMotionAnimations = disableAnimation, reducedMotion = "never", validationBehavior, locale = "en-US", labelPlacement, // if minDate / maxDate are not specified in `defaultDates`
+// then they will be set in `use-date-input.ts` or `use-calendar-base.ts`
+defaultDates, createCalendar, spinnerVariant, ...otherProps })=>{
+    let contents = children;
+    if (navigate) {
+        contents = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RouterProvider"], {
+            navigate,
+            useHref,
+            children: contents
+        });
+    }
+    const context = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (disableAnimation && skipFramerMotionAnimations) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$GlobalConfig$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].skipAnimations = true;
+        }
+        return {
+            createCalendar,
+            defaultDates,
+            disableAnimation,
+            disableRipple,
+            validationBehavior,
+            labelPlacement,
+            spinnerVariant
+        };
+    }, [
+        createCalendar,
+        defaultDates == null ? void 0 : defaultDates.maxDate,
+        defaultDates == null ? void 0 : defaultDates.minDate,
+        disableAnimation,
+        disableRipple,
+        validationBehavior,
+        labelPlacement,
+        spinnerVariant
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ProviderContext"], {
+        value: context,
+        children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$i18n$2f$dist$2f$context$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["I18nProvider"], {
+            locale,
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$MotionConfig$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MotionConfig"], {
+                reducedMotion,
+                children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useModal$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["OverlayProvider"], {
+                    ...otherProps,
+                    children: contents
+                })
+            })
+        })
+    });
+};
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-2BFF5KFD.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useLabelPlacement": (()=>useLabelPlacement)
+});
+// src/hooks/use-label-placement.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+function useLabelPlacement(props) {
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const globalLabelPlacement = globalContext == null ? void 0 : globalContext.labelPlacement;
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        var _a, _b;
+        const labelPlacement = (_b = (_a = props.labelPlacement) != null ? _a : globalLabelPlacement) != null ? _b : "inside";
+        if (labelPlacement === "inside" && !props.label) {
+            return "outside";
+        }
+        return labelPlacement;
+    }, [
+        props.labelPlacement,
+        globalLabelPlacement,
+        props.label
+    ]);
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "HeroUIProvider": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$OKNU54ZL$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["HeroUIProvider"]),
+    "ProviderContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ProviderContext"]),
+    "extendVariants": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$Z7BOKSG7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["extendVariants"]),
+    "forwardRef": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]),
+    "isHeroUIEl": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isHeroUIEl"]),
+    "mapPropsVariants": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariants"]),
+    "mapPropsVariantsWithCommon": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariantsWithCommon"]),
+    "toIterator": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toIterator"]),
+    "useLabelPlacement": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$2BFF5KFD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLabelPlacement"]),
+    "useProviderContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$OKNU54ZL$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-OKNU54ZL.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$Z7BOKSG7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-Z7BOKSG7.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$2BFF5KFD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-2BFF5KFD.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "HeroUIProvider": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["HeroUIProvider"]),
+    "ProviderContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["ProviderContext"]),
+    "extendVariants": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["extendVariants"]),
+    "forwardRef": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["forwardRef"]),
+    "isHeroUIEl": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["isHeroUIEl"]),
+    "mapPropsVariants": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["mapPropsVariants"]),
+    "mapPropsVariantsWithCommon": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["mapPropsVariantsWithCommon"]),
+    "toIterator": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["toIterator"]),
+    "useLabelPlacement": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useLabelPlacement"]),
+    "useProviderContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useProviderContext"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/use-aria-button/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+// src/index.ts
+__turbopack_esm__({
+    "useAriaButton": (()=>useAriaButton)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/platform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/usePress.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/filterDOMProps.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+function useAriaButton(props, ref) {
+    let { elementType = "button", isDisabled, onPress, onPressStart, onPressEnd, onPressChange, // @ts-ignore - undocumented
+    preventFocusOnPress, // @ts-ignore - undocumented
+    allowFocusWhenDisabled, // @ts-ignore
+    onClick: deprecatedOnClick, href, target, rel, type = "button", allowTextSelectionOnPress, role } = props;
+    let additionalProps;
+    if (elementType === "button") {
+        additionalProps = {
+            type,
+            disabled: isDisabled
+        };
+    } else {
+        additionalProps = {
+            role: "button",
+            href: elementType === "a" && !isDisabled ? href : void 0,
+            target: elementType === "a" ? target : void 0,
+            type: elementType === "input" ? type : void 0,
+            disabled: elementType === "input" ? isDisabled : void 0,
+            "aria-disabled": !isDisabled || elementType === "input" ? void 0 : isDisabled,
+            rel: elementType === "a" ? rel : void 0
+        };
+    }
+    let isMobile = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isIOS"])() || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAndroid"])();
+    if (deprecatedOnClick && typeof deprecatedOnClick === "function" && // bypass since onClick is passed from <Link as={Button} /> internally
+    role !== "link" && // bypass since onClick is passed from useDisclosure's `getButtonProps` internally
+    !(props.hasOwnProperty("aria-expanded") && props.hasOwnProperty("aria-controls"))) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warn"])("onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292", "useButton");
+    }
+    const handlePress = (e)=>{
+        if (isMobile) {
+            deprecatedOnClick == null ? void 0 : deprecatedOnClick(e);
+        }
+        onPress == null ? void 0 : onPress(e);
+    };
+    let { pressProps, isPressed } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePress"])({
+        onPressStart,
+        onPressEnd,
+        onPressChange,
+        onPress: handlePress,
+        isDisabled,
+        preventFocusOnPress,
+        allowTextSelectionOnPress,
+        ref
+    });
+    let { focusableProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusable"])(props, ref);
+    if (allowFocusWhenDisabled) {
+        focusableProps.tabIndex = isDisabled ? -1 : focusableProps.tabIndex;
+    }
+    let buttonProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(focusableProps, pressProps, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(props, {
+        labelable: true
+    }));
+    return {
+        isPressed,
+        // Used to indicate press state for visual
+        buttonProps: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(additionalProps, buttonProps, {
+            "aria-haspopup": props["aria-haspopup"],
+            "aria-expanded": props["aria-expanded"],
+            "aria-controls": props["aria-controls"],
+            "aria-pressed": props["aria-pressed"],
+            "aria-current": props["aria-current"],
+            onClick: (e)=>{
+                if (type === "button" && isMobile) {
+                    return;
+                }
+                deprecatedOnClick == null ? void 0 : deprecatedOnClick(e);
+            }
+        })
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/chunk-54L3M2TC.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "ResizablePanel": (()=>ResizablePanel)
+});
+// src/resizable-panel.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$measure$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/use-measure/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/components/LazyMotion/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$features$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/dom/features-animation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/m/proxy.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+var ResizablePanel = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((originalProps, ref)=>{
+    const { children, ...props } = originalProps;
+    let [measureRef, bounds] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$measure$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMeasure"])();
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LazyMotion"], {
+        features: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$features$2d$animation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["domAnimation"],
+        children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["m"].div, {
+            ref,
+            animate: {
+                width: bounds.width && (bounds == null ? void 0 : bounds.width) > 0 ? bounds.width : "auto",
+                height: bounds.height && bounds.height > 0 ? bounds.height : "auto"
+            },
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                ref: measureRef,
+                ...props,
+                children
+            })
+        })
+    });
+});
+ResizablePanel.displayName = "HeroUI - ResizablePanel";
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/chunk-736YWA4T.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "TRANSITION_DEFAULTS": (()=>TRANSITION_DEFAULTS),
+    "TRANSITION_EASINGS": (()=>TRANSITION_EASINGS),
+    "TRANSITION_VARIANTS": (()=>TRANSITION_VARIANTS)
+});
+"use client";
+// src/transition-utils.ts
+var TRANSITION_EASINGS = {
+    ease: [
+        0.36,
+        0.66,
+        0.4,
+        1
+    ],
+    easeIn: [
+        0.4,
+        0,
+        1,
+        1
+    ],
+    easeOut: [
+        0,
+        0,
+        0.2,
+        1
+    ],
+    easeInOut: [
+        0.4,
+        0,
+        0.2,
+        1
+    ],
+    spring: [
+        0.155,
+        1.105,
+        0.295,
+        1.12
+    ],
+    springOut: [
+        0.57,
+        -0.15,
+        0.62,
+        0.07
+    ],
+    softSpring: [
+        0.16,
+        1.11,
+        0.3,
+        1.02
+    ]
+};
+var TRANSITION_DEFAULTS = {
+    enter: {
+        duration: 0.2,
+        ease: TRANSITION_EASINGS.easeOut
+    },
+    exit: {
+        duration: 0.1,
+        ease: TRANSITION_EASINGS.easeIn
+    }
+};
+var TRANSITION_VARIANTS = {
+    scaleSpring: {
+        enter: {
+            transform: "scale(1)",
+            opacity: 1,
+            transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 0.2
+            }
+        },
+        exit: {
+            transform: "scale(0.85)",
+            opacity: 0,
+            transition: {
+                type: "easeOut",
+                duration: 0.15
+            }
+        }
+    },
+    scaleSpringOpacity: {
+        initial: {
+            opacity: 0,
+            transform: "scale(0.8)"
+        },
+        enter: {
+            opacity: 1,
+            transform: "scale(1)",
+            transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 0.3
+            }
+        },
+        exit: {
+            opacity: 0,
+            transform: "scale(0.96)",
+            transition: {
+                type: "easeOut",
+                bounce: 0,
+                duration: 0.15
+            }
+        }
+    },
+    scale: {
+        enter: {
+            scale: 1
+        },
+        exit: {
+            scale: 0.95
+        }
+    },
+    scaleFadeIn: {
+        enter: {
+            transform: "scale(1)",
+            opacity: 1,
+            transition: {
+                duration: 0.25,
+                ease: TRANSITION_EASINGS.easeIn
+            }
+        },
+        exit: {
+            transform: "scale(0.95)",
+            opacity: 0,
+            transition: {
+                duration: 0.2,
+                ease: TRANSITION_EASINGS.easeOut
+            }
+        }
+    },
+    scaleInOut: {
+        enter: {
+            transform: "scale(1)",
+            opacity: 1,
+            transition: {
+                duration: 0.4,
+                ease: TRANSITION_EASINGS.ease
+            }
+        },
+        exit: {
+            transform: "scale(1.03)",
+            opacity: 0,
+            transition: {
+                duration: 0.3,
+                ease: TRANSITION_EASINGS.ease
+            }
+        }
+    },
+    fade: {
+        enter: {
+            opacity: 1,
+            transition: {
+                duration: 0.4,
+                ease: TRANSITION_EASINGS.ease
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 0.3,
+                ease: TRANSITION_EASINGS.ease
+            }
+        }
+    },
+    collapse: {
+        enter: {
+            opacity: 1,
+            height: "auto",
+            transition: {
+                height: {
+                    type: "spring",
+                    bounce: 0,
+                    duration: 0.3
+                },
+                opacity: {
+                    easings: "ease",
+                    duration: 0.4
+                }
+            }
+        },
+        exit: {
+            opacity: 0,
+            height: 0,
+            transition: {
+                easings: "ease",
+                duration: 0.3
+            }
+        }
+    }
+};
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "ResizablePanel": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$54L3M2TC$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ResizablePanel"]),
+    "TRANSITION_DEFAULTS": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TRANSITION_DEFAULTS"]),
+    "TRANSITION_EASINGS": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TRANSITION_EASINGS"]),
+    "TRANSITION_VARIANTS": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TRANSITION_VARIANTS"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$54L3M2TC$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/chunk-54L3M2TC.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/chunk-736YWA4T.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "ResizablePanel": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["ResizablePanel"]),
+    "TRANSITION_DEFAULTS": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["TRANSITION_DEFAULTS"]),
+    "TRANSITION_EASINGS": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["TRANSITION_EASINGS"]),
+    "TRANSITION_VARIANTS": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["TRANSITION_VARIANTS"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/button/dist/useButton.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useButton": (()=>$701a24aa0da5b062$export$ea18c227d4417cc3)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/usePress.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/filterDOMProps.mjs [app-ssr] (ecmascript)");
+;
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $701a24aa0da5b062$export$ea18c227d4417cc3(props, ref) {
+    let { elementType: elementType = 'button', isDisabled: isDisabled, onPress: onPress, onPressStart: onPressStart, onPressEnd: onPressEnd, onPressUp: onPressUp, onPressChange: onPressChange, preventFocusOnPress: preventFocusOnPress, allowFocusWhenDisabled: allowFocusWhenDisabled, onClick: deprecatedOnClick, href: href, target: target, rel: rel, type: type = 'button' } = props;
+    let additionalProps;
+    if (elementType === 'button') additionalProps = {
+        type: type,
+        disabled: isDisabled
+    };
+    else additionalProps = {
+        role: 'button',
+        href: elementType === 'a' && !isDisabled ? href : undefined,
+        target: elementType === 'a' ? target : undefined,
+        type: elementType === 'input' ? type : undefined,
+        disabled: elementType === 'input' ? isDisabled : undefined,
+        'aria-disabled': !isDisabled || elementType === 'input' ? undefined : isDisabled,
+        rel: elementType === 'a' ? rel : undefined
+    };
+    let { pressProps: pressProps, isPressed: isPressed } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePress"])({
+        onPressStart: onPressStart,
+        onPressEnd: onPressEnd,
+        onPressChange: onPressChange,
+        onPress: onPress,
+        onPressUp: onPressUp,
+        isDisabled: isDisabled,
+        preventFocusOnPress: preventFocusOnPress,
+        ref: ref
+    });
+    let { focusableProps: focusableProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusable"])(props, ref);
+    if (allowFocusWhenDisabled) focusableProps.tabIndex = isDisabled ? -1 : focusableProps.tabIndex;
+    let buttonProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(focusableProps, pressProps, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(props, {
+        labelable: true
+    }));
+    return {
+        isPressed: isPressed,
+        buttonProps: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(additionalProps, buttonProps, {
+            'aria-haspopup': props['aria-haspopup'],
+            'aria-expanded': props['aria-expanded'],
+            'aria-controls': props['aria-controls'],
+            'aria-pressed': props['aria-pressed'],
+            'aria-current': props['aria-current'],
+            onClick: (e)=>{
+                if (deprecatedOnClick) {
+                    deprecatedOnClick(e);
+                    console.warn('onClick is deprecated, please use onPress');
+                }
+            }
+        })
+    };
+}
+;
+ //# sourceMappingURL=useButton.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/button/dist/useToggleButton.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useToggleButton": (()=>$55f54f7887471b58$export$51e84d46ca0bc451)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$button$2f$dist$2f$useButton$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/button/dist/useButton.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/chain.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+;
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $55f54f7887471b58$export$51e84d46ca0bc451(props, state, ref) {
+    const { isSelected: isSelected } = state;
+    const { isPressed: isPressed, buttonProps: buttonProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$button$2f$dist$2f$useButton$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useButton"])({
+        ...props,
+        onPress: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["chain"])(state.toggle, props.onPress)
+    }, ref);
+    return {
+        isPressed: isPressed,
+        isSelected: isSelected,
+        isDisabled: props.isDisabled || false,
+        buttonProps: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(buttonProps, {
+            'aria-pressed': isSelected
+        })
+    };
+}
+;
+ //# sourceMappingURL=useToggleButton.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-BSTJ7ZCN.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "DEFAULT_SLOT": (()=>DEFAULT_SLOT),
+    "useContextProps": (()=>useContextProps),
+    "useSlottedContext": (()=>useSlottedContext)
+});
+// src/utils.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useObjectRef$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/useObjectRef.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeRefs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeRefs.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+var DEFAULT_SLOT = Symbol("default");
+function useSlottedContext(context, slot) {
+    let ctx = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(context);
+    if (slot === null) {
+        return null;
+    }
+    if (ctx && typeof ctx === "object" && "slots" in ctx && ctx.slots) {
+        let availableSlots = new Intl.ListFormat().format(Object.keys(ctx.slots).map((p)=>`"${p}"`));
+        if (!slot && !ctx.slots[DEFAULT_SLOT]) {
+            throw new Error(`A slot prop is required. Valid slot names are ${availableSlots}.`);
+        }
+        let slotKey = slot || DEFAULT_SLOT;
+        if (!ctx.slots[slotKey]) {
+            throw new Error(`Invalid slot "${slot}". Valid slot names are ${availableSlots}.`);
+        }
+        return ctx.slots[slotKey];
+    }
+    return ctx;
+}
+function useContextProps(props, ref, context) {
+    let ctx = useSlottedContext(context, props.slot) || {};
+    let { ref: contextRef, ...contextProps } = ctx;
+    let mergedRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useObjectRef$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useObjectRef"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeRefs$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeRefs"])(ref, contextRef), [
+        ref,
+        contextRef
+    ]));
+    let mergedProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(contextProps, props);
+    if ("style" in contextProps && contextProps.style && "style" in props && props.style) {
+        if (typeof contextProps.style === "function" || typeof props.style === "function") {
+            mergedProps.style = (renderProps)=>{
+                let contextStyle = typeof contextProps.style === "function" ? contextProps.style(renderProps) : contextProps.style;
+                let defaultStyle = {
+                    ...renderProps.defaultStyle,
+                    ...contextStyle
+                };
+                let style = typeof props.style === "function" ? props.style({
+                    ...renderProps,
+                    defaultStyle
+                }) : props.style;
+                return {
+                    ...defaultStyle,
+                    ...style
+                };
+            };
+        } else {
+            mergedProps.style = {
+                ...contextProps.style,
+                ...props.style
+            };
+        }
+    }
+    return [
+        mergedProps,
+        mergedRef
+    ];
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-SLABUSGS.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Form": (()=>Form),
+    "FormContext": (()=>FormContext)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$BSTJ7ZCN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-BSTJ7ZCN.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$E257OVH3$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-E257OVH3.mjs [app-ssr] (ecmascript)");
+// src/base-form.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$form$2f$dist$2f$useFormValidationState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/form/dist/useFormValidationState.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var FormContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])(null);
+var Form = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(function Form2(props, ref) {
+    [props, ref] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$BSTJ7ZCN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContextProps"])(props, ref, FormContext);
+    let { validationErrors, validationBehavior = "native", children, className, ...domProps } = props;
+    const styles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$E257OVH3$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["form"])({
+            className
+        }), [
+        className
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("form", {
+        noValidate: validationBehavior !== "native",
+        ...domProps,
+        ref,
+        className: styles,
+        children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(FormContext.Provider, {
+            value: {
+                ...props,
+                validationBehavior
+            },
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$form$2f$dist$2f$useFormValidationState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormValidationContext"].Provider, {
+                value: validationErrors != null ? validationErrors : {},
+                children
+            })
+        })
+    });
+});
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-LAX3QLKM.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Form": (()=>Form2)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/form.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$SLABUSGS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-SLABUSGS.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+var Form2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(function Form3(props, ref) {
+    var _a, _b;
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const validationBehavior = (_b = (_a = props.validationBehavior) != null ? _a : globalContext == null ? void 0 : globalContext.validationBehavior) != null ? _b : "native";
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$SLABUSGS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Form"], {
+        ...props,
+        ref,
+        validationBehavior
+    });
+});
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Form": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$LAX3QLKM$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Form"]),
+    "FormContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$SLABUSGS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormContext"]),
+    "useSlottedContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$BSTJ7ZCN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSlottedContext"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$LAX3QLKM$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-LAX3QLKM.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$SLABUSGS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-SLABUSGS.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$BSTJ7ZCN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-BSTJ7ZCN.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Form": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Form"]),
+    "FormContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["FormContext"]),
+    "useSlottedContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useSlottedContext"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/chunk-SGLWUJCW.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useLink": (()=>useLink)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+// src/use-link.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$EDY2644Y$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-EDY2644Y.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$use$2d$aria$2d$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/use-aria-link/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/focus/dist/useFocusRing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+function useLink(originalProps) {
+    var _a, _b, _c, _d;
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const [props, variantProps] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariants"])(originalProps, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$EDY2644Y$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["link"].variantKeys);
+    const { ref, as, children, anchorIcon, isExternal = false, showAnchorIcon = false, autoFocus = false, className, onPress, onPressStart, onPressEnd, onClick, ...otherProps } = props;
+    const Component = as || "a";
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const disableAnimation = (_b = (_a = originalProps == null ? void 0 : originalProps.disableAnimation) != null ? _a : globalContext == null ? void 0 : globalContext.disableAnimation) != null ? _b : false;
+    const { linkProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$use$2d$aria$2d$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAriaLink"])({
+        ...otherProps,
+        onPress,
+        onPressStart,
+        onPressEnd,
+        // @ts-ignore React Aria Link does accept onClick as a prop but it's not in the types
+        onClick,
+        isDisabled: originalProps.isDisabled,
+        elementType: `${as}`
+    }, domRef);
+    const { isFocused, isFocusVisible, focusProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusRing"])({
+        autoFocus
+    });
+    if (isExternal) {
+        otherProps.rel = (_c = otherProps.rel) != null ? _c : "noopener noreferrer";
+        otherProps.target = (_d = otherProps.target) != null ? _d : "_blank";
+    }
+    const styles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$EDY2644Y$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["link"])({
+            ...variantProps,
+            disableAnimation,
+            className
+        }), [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["objectToDeps"])(variantProps),
+        disableAnimation,
+        className
+    ]);
+    const getLinkProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        return {
+            ref: domRef,
+            className: styles,
+            "data-focus": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocused),
+            "data-disabled": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(originalProps.isDisabled),
+            "data-focus-visible": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocusVisible),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(focusProps, linkProps, otherProps)
+        };
+    }, [
+        styles,
+        isFocused,
+        isFocusVisible,
+        focusProps,
+        linkProps,
+        otherProps
+    ]);
+    return {
+        Component,
+        children,
+        anchorIcon,
+        showAnchorIcon,
+        getLinkProps
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/chunk-T45N425O.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "link_default": (()=>link_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/link.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$MQHFHAHG$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-icons/dist/chunk-MQHFHAHG.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$EDY2644Y$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-EDY2644Y.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$SGLWUJCW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/chunk-SGLWUJCW.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var Link = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    const { Component, children, showAnchorIcon, anchorIcon = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$MQHFHAHG$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LinkIcon"], {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$EDY2644Y$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["linkAnchorClasses"]
+    }), getLinkProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$SGLWUJCW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLink"])({
+        ref,
+        ...props
+    });
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Component, {
+        ...getLinkProps(),
+        children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                children,
+                showAnchorIcon && anchorIcon
+            ]
+        })
+    });
+});
+Link.displayName = "HeroUI.Link";
+var link_default = Link;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/chunk-7LH7ZARU.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "LinkIcon": (()=>LinkIcon)
+});
+// src/link-icon.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+var LinkIcon = ()=>/* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("svg", {
+        "aria-hidden": "true",
+        className: "flex mx-1 text-current self-center",
+        fill: "none",
+        height: "1em",
+        shapeRendering: "geometricPrecision",
+        stroke: "currentColor",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: "1.5",
+        viewBox: "0 0 24 24",
+        width: "1em",
+        children: [
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("path", {
+                d: "M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+            }),
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("path", {
+                d: "M15 3h6v6"
+            }),
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("path", {
+                d: "M10 14L21 3"
+            })
+        ]
+    });
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Link": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$T45N425O$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["link_default"]),
+    "LinkIcon": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$7LH7ZARU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LinkIcon"]),
+    "useLink": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$SGLWUJCW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLink"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$T45N425O$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/chunk-T45N425O.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$7LH7ZARU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/chunk-7LH7ZARU.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$chunk$2d$SGLWUJCW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/chunk-SGLWUJCW.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Link": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Link"]),
+    "LinkIcon": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["LinkIcon"]),
+    "useLink": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useLink"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$link$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/link/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/use-aria-link/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+// src/index.ts
+__turbopack_esm__({
+    "useAriaLink": (()=>useAriaLink)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/platform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/usePress.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/filterDOMProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/openLink.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+function useAriaLink(props, ref) {
+    let { elementType = "a", onPress, onPressStart, onPressEnd, // @ts-ignore
+    onClick: deprecatedOnClick, role, isDisabled, type, ...otherProps } = props;
+    let linkProps = {};
+    if (elementType !== "a") {
+        linkProps = {
+            role: "link",
+            tabIndex: !isDisabled ? 0 : void 0
+        };
+    }
+    let isMobile = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isIOS"])() || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isAndroid"])();
+    if (deprecatedOnClick && typeof deprecatedOnClick === "function" && // bypass since onClick is passed from <Link as="button" /> internally
+    type !== "button" && // bypass since onClick is passed from <Button as={Link} /> internally
+    role !== "button") {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warn"])("onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292", "useLink");
+    }
+    const handlePress = (e)=>{
+        if (isMobile) {
+            deprecatedOnClick == null ? void 0 : deprecatedOnClick(e);
+        }
+        onPress == null ? void 0 : onPress(e);
+    };
+    let { focusableProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusable"])(props, ref);
+    let { pressProps, isPressed } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePress"])({
+        onPress: handlePress,
+        onPressStart,
+        onPressEnd,
+        isDisabled,
+        ref
+    });
+    let domProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(otherProps, {
+        labelable: true,
+        isLink: elementType === "a"
+    });
+    let interactionHandlers = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(focusableProps, pressProps);
+    let router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    let routerLinkProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLinkProps"])(props);
+    return {
+        isPressed,
+        // Used to indicate press state for visual
+        linkProps: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(domProps, routerLinkProps, {
+            ...interactionHandlers,
+            ...linkProps,
+            "aria-disabled": isDisabled || void 0,
+            "aria-current": props["aria-current"],
+            onClick: (e)=>{
+                var _a;
+                (_a = pressProps.onClick) == null ? void 0 : _a.call(pressProps, e);
+                if (!isMobile && deprecatedOnClick) {
+                    deprecatedOnClick(e);
+                }
+                if (!router.isNative && e.currentTarget instanceof HTMLAnchorElement && e.currentTarget.href && // If props are applied to a router Link component, it may have already prevented default.
+                !e.isDefaultPrevented() && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["shouldClientNavigate"])(e.currentTarget, e) && props.href) {
+                    e.preventDefault();
+                    router.open(e.currentTarget, e, props.href, props.routerOptions);
+                }
+            }
+        })
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/chunk-UD35SZSW.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useSnippet": (()=>useSnippet)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+// src/use-snippet.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$I4U4HIPM$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-I4U4HIPM.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$clipboard$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/use-clipboard/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/focus/dist/useFocusRing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$rsc$2d$utils$2f$dist$2f$chunk$2d$RJKRL3AU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-rsc-utils/dist/chunk-RJKRL3AU.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+function useSnippet(originalProps) {
+    var _a, _b, _c, _d;
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const [props, variantProps] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariants"])(originalProps, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$I4U4HIPM$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["snippet"].variantKeys);
+    const { ref, as, children, symbol = "$", classNames, timeout, copyIcon, checkIcon, codeString, disableCopy = false, disableTooltip = false, hideCopyButton = false, autoFocus = false, hideSymbol = false, onCopy: onCopyProp, tooltipProps: userTooltipProps = {}, copyButtonProps: userButtonProps = {}, className, ...otherProps } = props;
+    const Component = as || "div";
+    const shouldFilterDOMProps = typeof Component === "string";
+    const disableAnimation = (_b = (_a = originalProps == null ? void 0 : originalProps.disableAnimation) != null ? _a : globalContext == null ? void 0 : globalContext.disableAnimation) != null ? _b : false;
+    const tooltipProps = {
+        offset: 15,
+        delay: 1e3,
+        content: "Copy to clipboard",
+        color: (_d = originalProps == null ? void 0 : originalProps.color) != null ? _d : (_c = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$I4U4HIPM$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["snippet"].defaultVariants) == null ? void 0 : _c.color,
+        isDisabled: props.disableCopy,
+        ...userTooltipProps
+    };
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const preRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const { copy, copied } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$clipboard$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useClipboard"])({
+        timeout
+    });
+    const isMultiLine = children && Array.isArray(children);
+    const { isFocusVisible, isFocused, focusProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusRing"])({
+        autoFocus
+    });
+    const slots = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$I4U4HIPM$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["snippet"])({
+            ...variantProps,
+            disableAnimation
+        }), [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["objectToDeps"])(variantProps),
+        disableAnimation
+    ]);
+    const symbolBefore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (!symbol || typeof symbol !== "string") return symbol;
+        const str = symbol.trim();
+        return str ? `${str} ` : "";
+    }, [
+        symbol
+    ]);
+    const baseStyles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.base, className);
+    const getSnippetProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>({
+            className: slots.base({
+                class: baseStyles
+            }),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$rsc$2d$utils$2f$dist$2f$chunk$2d$RJKRL3AU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(otherProps, {
+                enabled: shouldFilterDOMProps
+            })
+        }), [
+        slots,
+        baseStyles,
+        isMultiLine,
+        otherProps
+    ]);
+    const onCopy = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        var _a2;
+        if (disableCopy) {
+            return;
+        }
+        let stringValue = "";
+        if (typeof children === "string") {
+            stringValue = children;
+        } else if (Array.isArray(children)) {
+            children.forEach((child)=>{
+                var _a3, _b2;
+                const childString = typeof child === "string" ? child : (_b2 = (_a3 = child == null ? void 0 : child.props) == null ? void 0 : _a3.children) == null ? void 0 : _b2.toString();
+                if (childString) {
+                    stringValue += childString + "\n";
+                }
+            });
+        }
+        const valueToCopy = codeString || stringValue || ((_a2 = preRef.current) == null ? void 0 : _a2.textContent) || "";
+        copy(valueToCopy);
+        onCopyProp == null ? void 0 : onCopyProp(valueToCopy);
+    }, [
+        copy,
+        codeString,
+        disableCopy,
+        onCopyProp,
+        children
+    ]);
+    const copyButtonProps = {
+        "aria-label": typeof tooltipProps.content === "string" ? tooltipProps.content : "Copy to clipboard",
+        size: "sm",
+        variant: "light",
+        isDisabled: disableCopy,
+        onPress: onCopy,
+        isIconOnly: true,
+        ...userButtonProps
+    };
+    const getCopyButtonProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>({
+            ...copyButtonProps,
+            "data-copied": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(copied),
+            className: slots.copyButton({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.copyButton)
+            })
+        }), [
+        slots,
+        isFocusVisible,
+        isFocused,
+        disableCopy,
+        classNames == null ? void 0 : classNames.copyButton,
+        copyButtonProps,
+        focusProps
+    ]);
+    return {
+        Component,
+        as,
+        domRef,
+        preRef,
+        children,
+        slots,
+        classNames,
+        copied,
+        onCopy,
+        copyIcon,
+        checkIcon,
+        symbolBefore,
+        isMultiLine,
+        isFocusVisible,
+        hideCopyButton,
+        disableCopy,
+        disableTooltip,
+        hideSymbol,
+        tooltipProps,
+        getSnippetProps,
+        getCopyButtonProps
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/chunk-VHMYBPCH.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "snippet_default": (()=>snippet_default)
+});
+// src/snippet.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$W5SCNTSN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-icons/dist/chunk-W5SCNTSN.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$6O2NYG7W$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-icons/dist/chunk-6O2NYG7W.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$chunk$2d$UD35SZSW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/chunk-UD35SZSW.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$CSXHODZI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__tooltip_default__as__Tooltip$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-CSXHODZI.mjs [app-ssr] (ecmascript) <export tooltip_default as Tooltip>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/button/dist/chunk-KCYYJJH4.mjs [app-ssr] (ecmascript) <export button_default as Button>");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+var Snippet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    const { Component, domRef, preRef, children, slots, classNames, copied, copyIcon = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$W5SCNTSN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CopyLinearIcon"], {}), checkIcon = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$6O2NYG7W$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CheckLinearIcon"], {}), symbolBefore, disableCopy, disableTooltip, hideSymbol, hideCopyButton, tooltipProps, isMultiLine, onCopy, getSnippetProps, getCopyButtonProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$chunk$2d$UD35SZSW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSnippet"])({
+        ...props,
+        ref
+    });
+    const TooltipContent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(({ children: children2 })=>/* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$CSXHODZI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__tooltip_default__as__Tooltip$3e$__["Tooltip"], {
+            ...tooltipProps,
+            isDisabled: copied || tooltipProps.isDisabled,
+            children: children2
+        }), [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["objectToDeps"])(tooltipProps)
+    ]);
+    const contents = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (hideCopyButton) {
+            return null;
+        }
+        const clonedCheckIcon = checkIcon && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"])(checkIcon, {
+            className: slots.checkIcon()
+        });
+        const clonedCopyIcon = copyIcon && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"])(copyIcon, {
+            className: slots.copyIcon()
+        });
+        const copyButton = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
+            ...getCopyButtonProps(),
+            children: [
+                clonedCheckIcon,
+                clonedCopyIcon
+            ]
+        });
+        if (disableTooltip) {
+            return copyButton;
+        }
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(TooltipContent, {
+            children: copyButton
+        });
+    }, [
+        slots,
+        classNames == null ? void 0 : classNames.copyButton,
+        copied,
+        checkIcon,
+        copyIcon,
+        onCopy,
+        TooltipContent,
+        disableCopy,
+        disableTooltip,
+        hideCopyButton
+    ]);
+    const preContent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (isMultiLine && children && Array.isArray(children)) {
+            return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                className: slots.content({
+                    class: classNames == null ? void 0 : classNames.content
+                }),
+                children: children.map((t, index)=>/* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("pre", {
+                        className: slots.pre({
+                            class: classNames == null ? void 0 : classNames.pre
+                        }),
+                        children: [
+                            !hideSymbol && /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("span", {
+                                className: slots.symbol({
+                                    class: classNames == null ? void 0 : classNames.symbol
+                                }),
+                                children: symbolBefore
+                            }),
+                            t
+                        ]
+                    }, `${index}-${t}`))
+            });
+        }
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("pre", {
+            ref: preRef,
+            className: slots.pre({
+                class: classNames == null ? void 0 : classNames.pre
+            }),
+            children: [
+                !hideSymbol && /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("span", {
+                    className: slots.symbol({
+                        class: classNames == null ? void 0 : classNames.symbol
+                    }),
+                    children: symbolBefore
+                }),
+                children
+            ]
+        });
+    }, [
+        children,
+        hideSymbol,
+        isMultiLine,
+        symbolBefore,
+        classNames == null ? void 0 : classNames.pre,
+        slots
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(Component, {
+        ref: domRef,
+        ...getSnippetProps(),
+        children: [
+            preContent,
+            contents
+        ]
+    });
+});
+Snippet.displayName = "HeroUI.Snippet";
+var snippet_default = Snippet;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Snippet": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$chunk$2d$VHMYBPCH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["snippet_default"]),
+    "useSnippet": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$chunk$2d$UD35SZSW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSnippet"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$chunk$2d$VHMYBPCH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/chunk-VHMYBPCH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$chunk$2d$UD35SZSW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/chunk-UD35SZSW.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Snippet": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Snippet"]),
+    "useSnippet": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useSnippet"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$snippet$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/snippet/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/tooltip/dist/useTooltipTrigger.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useTooltipTrigger": (()=>$4e1b34546679e357$export$a6da6c504e4bba8b)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/useId.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusVisible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusVisible.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useHover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $4e1b34546679e357$export$a6da6c504e4bba8b(props, state, ref) {
+    let { isDisabled: isDisabled, trigger: trigger } = props;
+    let tooltipId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])();
+    let isHovered = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
+    let isFocused = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
+    let handleShow = ()=>{
+        if (isHovered.current || isFocused.current) state.open(isFocused.current);
+    };
+    let handleHide = (immediate)=>{
+        if (!isHovered.current && !isFocused.current) state.close(immediate);
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        let onKeyDown = (e)=>{
+            if (ref && ref.current) // dismiss tooltip on esc key press
+            {
+                if (e.key === 'Escape') {
+                    e.stopPropagation();
+                    state.close(true);
+                }
+            }
+        };
+        if (state.isOpen) {
+            document.addEventListener('keydown', onKeyDown, true);
+            return ()=>{
+                document.removeEventListener('keydown', onKeyDown, true);
+            };
+        }
+    }, [
+        ref,
+        state
+    ]);
+    let onHoverStart = ()=>{
+        if (trigger === 'focus') return;
+        // In chrome, if you hover a trigger, then another element obscures it, due to keyboard
+        // interactions for example, hover will end. When hover is restored after that element disappears,
+        // focus moves on for example, then the tooltip will reopen. We check the modality to know if the hover
+        // is the result of moving the mouse.
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusVisible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getInteractionModality"])() === 'pointer') isHovered.current = true;
+        else isHovered.current = false;
+        handleShow();
+    };
+    let onHoverEnd = ()=>{
+        if (trigger === 'focus') return;
+        // no matter how the trigger is left, we should close the tooltip
+        isFocused.current = false;
+        isHovered.current = false;
+        handleHide();
+    };
+    let onPressStart = ()=>{
+        // no matter how the trigger is pressed, we should close the tooltip
+        isFocused.current = false;
+        isHovered.current = false;
+        handleHide(true);
+    };
+    let onFocus = ()=>{
+        let isVisible = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusVisible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isFocusVisible"])();
+        if (isVisible) {
+            isFocused.current = true;
+            handleShow();
+        }
+    };
+    let onBlur = ()=>{
+        isFocused.current = false;
+        isHovered.current = false;
+        handleHide(true);
+    };
+    let { hoverProps: hoverProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useHover"])({
+        isDisabled: isDisabled,
+        onHoverStart: onHoverStart,
+        onHoverEnd: onHoverEnd
+    });
+    let { focusableProps: focusableProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusable"])({
+        isDisabled: isDisabled,
+        onFocus: onFocus,
+        onBlur: onBlur
+    }, ref);
+    return {
+        triggerProps: {
+            'aria-describedby': state.isOpen ? tooltipId : undefined,
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(focusableProps, hoverProps, {
+                onPointerDown: onPressStart,
+                onKeyDown: onPressStart,
+                tabIndex: undefined
+            })
+        },
+        tooltipProps: {
+            id: tooltipId
+        }
+    };
+}
+;
+ //# sourceMappingURL=useTooltipTrigger.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/tooltip/dist/useTooltip.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useTooltip": (()=>$326e436e94273fe1$export$1c4b08e0eca38426)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/filterDOMProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useHover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+;
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $326e436e94273fe1$export$1c4b08e0eca38426(props, state) {
+    let domProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(props, {
+        labelable: true
+    });
+    let { hoverProps: hoverProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useHover"])({
+        onHoverStart: ()=>state === null || state === void 0 ? void 0 : state.open(true),
+        onHoverEnd: ()=>state === null || state === void 0 ? void 0 : state.close()
+    });
+    return {
+        tooltipProps: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(domProps, hoverProps, {
+            role: 'tooltip'
+        })
+    };
+}
+;
+ //# sourceMappingURL=useTooltip.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/aria-utils/dist/chunk-WQVQ7P2I.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "getArrowPlacement": (()=>getArrowPlacement),
+    "getShouldUseAxisPlacement": (()=>getShouldUseAxisPlacement),
+    "getTransformOrigins": (()=>getTransformOrigins),
+    "toOverlayPlacement": (()=>toOverlayPlacement),
+    "toReactAriaPlacement": (()=>toReactAriaPlacement)
+});
+"use client";
+// src/overlays/utils.ts
+var getTransformOrigins = (placement)=>{
+    const origins = {
+        top: {
+            originY: 1
+        },
+        bottom: {
+            originY: 0
+        },
+        left: {
+            originX: 1
+        },
+        right: {
+            originX: 0
+        },
+        "top-start": {
+            originX: 0,
+            originY: 1
+        },
+        "top-end": {
+            originX: 1,
+            originY: 1
+        },
+        "bottom-start": {
+            originX: 0,
+            originY: 0
+        },
+        "bottom-end": {
+            originX: 1,
+            originY: 0
+        },
+        "right-start": {
+            originX: 0,
+            originY: 0
+        },
+        "right-end": {
+            originX: 0,
+            originY: 1
+        },
+        "left-start": {
+            originX: 1,
+            originY: 0
+        },
+        "left-end": {
+            originX: 1,
+            originY: 1
+        }
+    };
+    return (origins == null ? void 0 : origins[placement]) || {};
+};
+var toReactAriaPlacement = (placement)=>{
+    const mapPositions = {
+        top: "top",
+        bottom: "bottom",
+        left: "left",
+        right: "right",
+        "top-start": "top start",
+        "top-end": "top end",
+        "bottom-start": "bottom start",
+        "bottom-end": "bottom end",
+        "left-start": "left top",
+        "left-end": "left bottom",
+        "right-start": "right top",
+        "right-end": "right bottom"
+    };
+    return mapPositions[placement];
+};
+var toOverlayPlacement = (placement)=>{
+    const mapPositions = {
+        top: "top",
+        bottom: "bottom",
+        left: "left",
+        right: "right",
+        center: "top"
+    };
+    return mapPositions[placement];
+};
+var getShouldUseAxisPlacement = (axisPlacement, overlayPlacement)=>{
+    if (overlayPlacement.includes("-")) {
+        const [position] = overlayPlacement.split("-");
+        if (position.includes(axisPlacement)) {
+            return false;
+        }
+    }
+    return true;
+};
+var getArrowPlacement = (dynamicPlacement, placement)=>{
+    if (placement.includes("-")) {
+        const [, position] = placement.split("-");
+        return `${dynamicPlacement}-${position}`;
+    }
+    return dynamicPlacement;
+};
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-O2IDE4PL.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useTooltip": (()=>useTooltip)
+});
+// src/use-tooltip.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$3CSBIGJH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-3CSBIGJH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$tooltip$2f$dist$2f$useTooltipTriggerState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/tooltip/dist/useTooltipTriggerState.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$tooltip$2f$dist$2f$useTooltipTrigger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/tooltip/dist/useTooltipTrigger.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$tooltip$2f$dist$2f$useTooltip$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/tooltip/dist/useTooltip.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useOverlayPosition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/overlays/dist/useOverlayPosition.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$aria$2d$utils$2f$dist$2f$chunk$2d$WQVQ7P2I$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/aria-utils/dist/chunk-WQVQ7P2I.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$safe$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/use-safe-layout-effect/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useOverlay$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/overlays/dist/useOverlay.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OTWYT2HS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OTWYT2HS.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function useTooltip(originalProps) {
+    var _a, _b;
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const [props, variantProps] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariants"])(originalProps, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$3CSBIGJH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["popover"].variantKeys);
+    const { ref, as, isOpen: isOpenProp, content, children, defaultOpen, onOpenChange, isDisabled, trigger: triggerAction, shouldFlip = true, containerPadding = 12, placement: placementProp = "top", delay = 0, closeDelay = 500, showArrow = false, offset = 7, crossOffset = 0, isDismissable, shouldCloseOnBlur = true, portalContainer, isKeyboardDismissDisabled = false, updatePositionDeps = [], shouldCloseOnInteractOutside, className, onClose, motionProps, classNames, ...otherProps } = props;
+    const Component = as || "div";
+    const disableAnimation = (_b = (_a = originalProps == null ? void 0 : originalProps.disableAnimation) != null ? _a : globalContext == null ? void 0 : globalContext.disableAnimation) != null ? _b : false;
+    const state = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$tooltip$2f$dist$2f$useTooltipTriggerState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTooltipTriggerState"])({
+        delay,
+        closeDelay,
+        isDisabled,
+        defaultOpen,
+        isOpen: isOpenProp,
+        onOpenChange: (isOpen2)=>{
+            onOpenChange == null ? void 0 : onOpenChange(isOpen2);
+            if (!isOpen2) {
+                onClose == null ? void 0 : onClose();
+            }
+        }
+    });
+    const triggerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const overlayRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const tooltipId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])();
+    const isOpen = state.isOpen && !isDisabled;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useImperativeHandle"])(ref, ()=>// @ts-ignore
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createDOMRef"])(overlayRef));
+    const { triggerProps, tooltipProps: triggerTooltipProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$tooltip$2f$dist$2f$useTooltipTrigger$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTooltipTrigger"])({
+        isDisabled,
+        trigger: triggerAction
+    }, state, triggerRef);
+    const { tooltipProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$tooltip$2f$dist$2f$useTooltip$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTooltip"])({
+        isOpen,
+        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(props, triggerTooltipProps)
+    }, state);
+    const { overlayProps: positionProps, placement, updatePosition } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useOverlayPosition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useOverlayPosition"])({
+        isOpen,
+        targetRef: triggerRef,
+        placement: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$aria$2d$utils$2f$dist$2f$chunk$2d$WQVQ7P2I$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toReactAriaPlacement"])(placementProp),
+        overlayRef,
+        offset: showArrow ? offset + 3 : offset,
+        crossOffset,
+        shouldFlip,
+        containerPadding
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$safe$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSafeLayoutEffect"])(()=>{
+        if (!updatePositionDeps.length) return;
+        updatePosition();
+    }, updatePositionDeps);
+    const { overlayProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useOverlay$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useOverlay"])({
+        isOpen,
+        onClose: state.close,
+        isDismissable,
+        shouldCloseOnBlur,
+        isKeyboardDismissDisabled,
+        shouldCloseOnInteractOutside
+    }, overlayRef);
+    const slots = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        var _a2, _b2, _c;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$3CSBIGJH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["popover"])({
+            ...variantProps,
+            disableAnimation,
+            radius: (_a2 = originalProps == null ? void 0 : originalProps.radius) != null ? _a2 : "md",
+            size: (_b2 = originalProps == null ? void 0 : originalProps.size) != null ? _b2 : "md",
+            shadow: (_c = originalProps == null ? void 0 : originalProps.shadow) != null ? _c : "sm"
+        });
+    }, [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["objectToDeps"])(variantProps),
+        disableAnimation,
+        originalProps == null ? void 0 : originalProps.radius,
+        originalProps == null ? void 0 : originalProps.size,
+        originalProps == null ? void 0 : originalProps.shadow
+    ]);
+    const getTriggerProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {}, _ref = null)=>({
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(triggerProps, props2),
+            ref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OTWYT2HS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeRefs"])(_ref, triggerRef),
+            "aria-describedby": isOpen ? tooltipId : void 0
+        }), [
+        triggerProps,
+        isOpen,
+        tooltipId,
+        state
+    ]);
+    const getTooltipProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>({
+            ref: overlayRef,
+            "data-slot": "base",
+            "data-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isOpen),
+            "data-arrow": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(showArrow),
+            "data-disabled": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isDisabled),
+            "data-placement": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$aria$2d$utils$2f$dist$2f$chunk$2d$WQVQ7P2I$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getArrowPlacement"])(placement || "top", placementProp),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(tooltipProps, overlayProps, otherProps),
+            style: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(positionProps.style, otherProps.style, props.style),
+            className: slots.base({
+                class: classNames == null ? void 0 : classNames.base
+            }),
+            id: tooltipId
+        }), [
+        slots,
+        isOpen,
+        showArrow,
+        isDisabled,
+        placement,
+        placementProp,
+        tooltipProps,
+        overlayProps,
+        otherProps,
+        positionProps,
+        props,
+        tooltipId
+    ]);
+    const getTooltipContentProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>({
+            "data-slot": "content",
+            "data-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isOpen),
+            "data-arrow": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(showArrow),
+            "data-disabled": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isDisabled),
+            "data-placement": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$aria$2d$utils$2f$dist$2f$chunk$2d$WQVQ7P2I$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getArrowPlacement"])(placement || "top", placementProp),
+            className: slots.content({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.content, className)
+            })
+        }), [
+        slots,
+        isOpen,
+        showArrow,
+        isDisabled,
+        placement,
+        placementProp,
+        classNames
+    ]);
+    return {
+        Component,
+        content,
+        children,
+        isOpen,
+        triggerRef,
+        showArrow,
+        portalContainer,
+        placement: placementProp,
+        disableAnimation,
+        isDisabled,
+        motionProps,
+        getTooltipContentProps,
+        getTriggerProps,
+        getTooltipProps
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-CSXHODZI.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "tooltip_default": (()=>tooltip_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/tooltip.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$O2IDE4PL$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-O2IDE4PL.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/m/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/chunk-736YWA4T.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$aria$2d$utils$2f$dist$2f$chunk$2d$WQVQ7P2I$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/aria-utils/dist/chunk-WQVQ7P2I.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/components/LazyMotion/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useModal$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/overlays/dist/useModal.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+var domAnimation = ()=>__turbopack_require__("[project]/node_modules/@heroui/dom-animation/dist/index.mjs [app-ssr] (ecmascript, async loader)")(__turbopack_import__).then((res)=>res.default);
+var Tooltip = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    var _a;
+    const { Component, children, content, isOpen, portalContainer, placement, disableAnimation, motionProps, getTriggerProps, getTooltipProps, getTooltipContentProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$O2IDE4PL$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTooltip"])({
+        ...props,
+        ref
+    });
+    let trigger;
+    try {
+        const childrenNum = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].count(children);
+        if (childrenNum !== 1) throw new Error();
+        if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isValidElement"])(children)) {
+            trigger = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("p", {
+                ...getTriggerProps(),
+                children
+            });
+        } else {
+            const child = children;
+            const childRef = (_a = child.props.ref) != null ? _a : child.ref;
+            trigger = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"])(child, getTriggerProps(child.props, childRef));
+        }
+    } catch (error) {
+        trigger = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("span", {});
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["warn"])("Tooltip must have only one child node. Please, check your code.");
+    }
+    const { ref: tooltipRef, id, style, ...otherTooltipProps } = getTooltipProps();
+    const animatedContent = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+        ref: tooltipRef,
+        id,
+        style,
+        children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["m"].div, {
+            animate: "enter",
+            exit: "exit",
+            initial: "exit",
+            variants: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TRANSITION_VARIANTS"].scaleSpring,
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(motionProps, otherTooltipProps),
+            style: {
+                ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$aria$2d$utils$2f$dist$2f$chunk$2d$WQVQ7P2I$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getTransformOrigins"])(placement)
+            },
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Component, {
+                ...getTooltipContentProps(),
+                children: content
+            })
+        }, `${id}-tooltip-inner`)
+    }, `${id}-tooltip-content`);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            trigger,
+            disableAnimation ? isOpen && /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useModal$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["OverlayContainer"], {
+                portalContainer,
+                children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                    ref: tooltipRef,
+                    id,
+                    style,
+                    ...otherTooltipProps,
+                    children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Component, {
+                        ...getTooltipContentProps(),
+                        children: content
+                    })
+                })
+            }) : /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LazyMotion"], {
+                features: domAnimation,
+                children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                    children: isOpen && /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$useModal$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["OverlayContainer"], {
+                        portalContainer,
+                        children: animatedContent
+                    })
+                })
+            })
+        ]
+    });
+});
+Tooltip.displayName = "HeroUI.Tooltip";
+var tooltip_default = Tooltip;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-CSXHODZI.mjs [app-ssr] (ecmascript) <export tooltip_default as Tooltip>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Tooltip": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$CSXHODZI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["tooltip_default"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$CSXHODZI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-CSXHODZI.mjs [app-ssr] (ecmascript)");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Tooltip": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$CSXHODZI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["tooltip_default"]),
+    "useTooltip": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$O2IDE4PL$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTooltip"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$CSXHODZI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-CSXHODZI.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$chunk$2d$O2IDE4PL$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/chunk-O2IDE4PL.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Tooltip": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Tooltip"]),
+    "useTooltip": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useTooltip"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$tooltip$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/tooltip/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/chunk-K534ZJ2B.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useSwitch": (()=>useSwitch)
+});
+// src/use-switch.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$UAUH5UKD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-UAUH5UKD.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$toggle$2f$dist$2f$useToggleState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/toggle/dist/useToggleState.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$safe$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/use-safe-layout-effect/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$switch$2f$dist$2f$useSwitch$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/switch/dist/useSwitch.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/focus/dist/useFocusRing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useHover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OTWYT2HS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OTWYT2HS.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/chain.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function useSwitch(originalProps = {}) {
+    var _a, _b;
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const [props, variantProps] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariants"])(originalProps, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$UAUH5UKD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toggle"].variantKeys);
+    const { ref, as, name, value = "", isReadOnly: isReadOnlyProp = false, autoFocus = false, startContent, endContent, defaultSelected, isSelected: isSelectedProp, children, thumbIcon, className, classNames, onChange, onValueChange, ...otherProps } = props;
+    const Component = as || "label";
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const inputRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const disableAnimation = (_b = (_a = originalProps.disableAnimation) != null ? _a : globalContext == null ? void 0 : globalContext.disableAnimation) != null ? _b : false;
+    const labelId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])();
+    const ariaSwitchProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        const ariaLabel = otherProps["aria-label"] || typeof children === "string" ? children : void 0;
+        return {
+            name,
+            value,
+            children,
+            autoFocus,
+            defaultSelected,
+            isSelected: isSelectedProp,
+            isDisabled: !!originalProps.isDisabled,
+            isReadOnly: isReadOnlyProp,
+            "aria-label": ariaLabel,
+            "aria-labelledby": otherProps["aria-labelledby"] || labelId,
+            onChange: onValueChange
+        };
+    }, [
+        value,
+        name,
+        labelId,
+        children,
+        autoFocus,
+        isReadOnlyProp,
+        isSelectedProp,
+        defaultSelected,
+        originalProps.isDisabled,
+        otherProps["aria-label"],
+        otherProps["aria-labelledby"],
+        onValueChange
+    ]);
+    const state = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$toggle$2f$dist$2f$useToggleState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToggleState"])(ariaSwitchProps);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$safe$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSafeLayoutEffect"])(()=>{
+        if (!inputRef.current) return;
+        const isInputRefChecked = !!inputRef.current.checked;
+        state.setSelected(isInputRefChecked);
+    }, [
+        inputRef.current
+    ]);
+    const { inputProps, isPressed, isReadOnly } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$switch$2f$dist$2f$useSwitch$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSwitch"])(ariaSwitchProps, state, inputRef);
+    const { focusProps, isFocused, isFocusVisible } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusRing"])({
+        autoFocus: inputProps.autoFocus
+    });
+    const { hoverProps, isHovered } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useHover"])({
+        isDisabled: inputProps.disabled
+    });
+    const isInteractionDisabled = ariaSwitchProps.isDisabled || isReadOnly;
+    const pressed = isInteractionDisabled ? false : isPressed;
+    const isSelected = inputProps.checked;
+    const isDisabled = inputProps.disabled;
+    const slots = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$UAUH5UKD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toggle"])({
+            ...variantProps,
+            disableAnimation
+        }), [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["objectToDeps"])(variantProps),
+        disableAnimation
+    ]);
+    const baseStyles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.base, className);
+    const getBaseProps = (props2)=>{
+        return {
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(hoverProps, otherProps, props2),
+            ref: domRef,
+            className: slots.base({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(baseStyles, props2 == null ? void 0 : props2.className)
+            }),
+            "data-disabled": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isDisabled),
+            "data-selected": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isSelected),
+            "data-readonly": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isReadOnly),
+            "data-focus": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocused),
+            "data-focus-visible": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocusVisible),
+            "data-hover": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isHovered),
+            "data-pressed": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(pressed)
+        };
+    };
+    const getWrapperProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ...props2,
+            "aria-hidden": true,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(slots.wrapper({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.wrapper, props2 == null ? void 0 : props2.className)
+            }))
+        };
+    }, [
+        slots,
+        classNames == null ? void 0 : classNames.wrapper
+    ]);
+    const getInputProps = (props2 = {})=>{
+        return {
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(inputProps, focusProps, props2),
+            ref: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OTWYT2HS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeRefs"])(inputRef, ref),
+            id: inputProps.id,
+            className: slots.hiddenInput({
+                class: classNames == null ? void 0 : classNames.hiddenInput
+            }),
+            onChange: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["chain"])(onChange, inputProps.onChange)
+        };
+    };
+    const getThumbProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>({
+            ...props2,
+            className: slots.thumb({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.thumb, props2 == null ? void 0 : props2.className)
+            })
+        }), [
+        slots,
+        classNames == null ? void 0 : classNames.thumb
+    ]);
+    const getLabelProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>({
+            ...props2,
+            id: labelId,
+            className: slots.label({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.label, props2 == null ? void 0 : props2.className)
+            })
+        }), [
+        slots,
+        classNames == null ? void 0 : classNames.label,
+        isDisabled,
+        isSelected
+    ]);
+    const getThumbIconProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {
+        includeStateProps: false
+    })=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])({
+            width: "1em",
+            height: "1em",
+            className: slots.thumbIcon({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.thumbIcon)
+            })
+        }, props2.includeStateProps ? {
+            isSelected
+        } : {}), [
+        slots,
+        classNames == null ? void 0 : classNames.thumbIcon,
+        isSelected
+    ]);
+    const getStartContentProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>({
+            width: "1em",
+            height: "1em",
+            ...props2,
+            className: slots.startContent({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.startContent, props2 == null ? void 0 : props2.className)
+            })
+        }), [
+        slots,
+        classNames == null ? void 0 : classNames.startContent,
+        isSelected
+    ]);
+    const getEndContentProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>({
+            width: "1em",
+            height: "1em",
+            ...props2,
+            className: slots.endContent({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.endContent, props2 == null ? void 0 : props2.className)
+            })
+        }), [
+        slots,
+        classNames == null ? void 0 : classNames.endContent,
+        isSelected
+    ]);
+    return {
+        Component,
+        slots,
+        classNames,
+        domRef,
+        children,
+        thumbIcon,
+        startContent,
+        endContent,
+        isHovered,
+        isSelected,
+        isPressed: pressed,
+        isFocused,
+        isFocusVisible,
+        isDisabled,
+        getBaseProps,
+        getWrapperProps,
+        getInputProps,
+        getLabelProps,
+        getThumbProps,
+        getThumbIconProps,
+        getStartContentProps,
+        getEndContentProps
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/chunk-ECZ3LCTI.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "switch_default": (()=>switch_default)
+});
+// src/switch.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$chunk$2d$K534ZJ2B$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/chunk-K534ZJ2B.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+var Switch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    const { Component, children, startContent, endContent, thumbIcon, getBaseProps, getInputProps, getWrapperProps, getThumbProps, getThumbIconProps, getLabelProps, getStartContentProps, getEndContentProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$chunk$2d$K534ZJ2B$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSwitch"])({
+        ...props,
+        ref
+    });
+    const clonedThumbIcon = typeof thumbIcon === "function" ? thumbIcon(getThumbIconProps({
+        includeStateProps: true
+    })) : thumbIcon && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"])(thumbIcon, getThumbIconProps());
+    const clonedStartContent = startContent && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"])(startContent, getStartContentProps());
+    const clonedEndContent = endContent && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"])(endContent, getEndContentProps());
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(Component, {
+        ...getBaseProps(),
+        children: [
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("input", {
+                ...getInputProps()
+            }),
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("span", {
+                ...getWrapperProps(),
+                children: [
+                    startContent && clonedStartContent,
+                    /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("span", {
+                        ...getThumbProps(),
+                        children: thumbIcon && clonedThumbIcon
+                    }),
+                    endContent && clonedEndContent
+                ]
+            }),
+            children && /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("span", {
+                ...getLabelProps(),
+                children
+            })
+        ]
+    });
+});
+Switch.displayName = "HeroUI.Switch";
+var switch_default = Switch;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Switch": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$chunk$2d$ECZ3LCTI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["switch_default"]),
+    "useSwitch": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$chunk$2d$K534ZJ2B$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSwitch"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$chunk$2d$ECZ3LCTI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/chunk-ECZ3LCTI.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$chunk$2d$K534ZJ2B$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/chunk-K534ZJ2B.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Switch": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Switch"]),
+    "useSwitch": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useSwitch"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$switch$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/switch/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/switch/dist/useSwitch.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useSwitch": (()=>$b418ec0c85c52f27$export$d853f7095ae95f88)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$toggle$2f$dist$2f$useToggle$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-aria/toggle/dist/useToggle.mjs [app-ssr] (ecmascript)");
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $b418ec0c85c52f27$export$d853f7095ae95f88(props, state, ref) {
+    let { labelProps: labelProps, inputProps: inputProps, isSelected: isSelected, isPressed: isPressed, isDisabled: isDisabled, isReadOnly: isReadOnly } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$toggle$2f$dist$2f$useToggle$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToggle"])(props, state, ref);
+    return {
+        labelProps: labelProps,
+        inputProps: {
+            ...inputProps,
+            role: 'switch',
+            checked: isSelected
+        },
+        isSelected: isSelected,
+        isPressed: isPressed,
+        isDisabled: isDisabled,
+        isReadOnly: isReadOnly
+    };
+}
+;
+ //# sourceMappingURL=useSwitch.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-K6DFORPN.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useInput": (()=>useInput)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+// src/use-input.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$BSTJ7ZCN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-BSTJ7ZCN.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$SLABUSGS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/form/dist/chunk-SLABUSGS.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$YVOWNNAA$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-YVOWNNAA.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$utils$2f$dist$2f$useControlledState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/utils/dist/useControlledState.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$safe$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/use-safe-layout-effect/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$textfield$2f$dist$2f$useTextField$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/textfield/dist/useTextField.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/focus/dist/useFocusRing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useHover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusWithin$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusWithin.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/usePress.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$2BFF5KFD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-2BFF5KFD.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$rsc$2d$utils$2f$dist$2f$chunk$2d$RJKRL3AU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-rsc-utils/dist/chunk-RJKRL3AU.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/chain.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function useInput(originalProps) {
+    var _a, _b, _c, _d, _e, _f, _g;
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const { validationBehavior: formValidationBehavior } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$BSTJ7ZCN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSlottedContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$form$2f$dist$2f$chunk$2d$SLABUSGS$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormContext"]) || {};
+    const [props, variantProps] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariants"])(originalProps, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$YVOWNNAA$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["input"].variantKeys);
+    const { ref, as, type, label, baseRef, wrapperRef, description, className, classNames, autoFocus, startContent, endContent, onClear, onChange, validationState, validationBehavior = (_a = formValidationBehavior != null ? formValidationBehavior : globalContext == null ? void 0 : globalContext.validationBehavior) != null ? _a : "native", innerWrapperRef: innerWrapperRefProp, onValueChange = ()=>{}, ...otherProps } = props;
+    const handleValueChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((value)=>{
+        onValueChange(value != null ? value : "");
+    }, [
+        onValueChange
+    ]);
+    const [isFocusWithin, setFocusWithin] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const Component = as || "div";
+    const disableAnimation = (_c = (_b = originalProps.disableAnimation) != null ? _b : globalContext == null ? void 0 : globalContext.disableAnimation) != null ? _c : false;
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const baseDomRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(baseRef);
+    const inputWrapperRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(wrapperRef);
+    const innerWrapperRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(innerWrapperRefProp);
+    const [inputValue, setInputValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$utils$2f$dist$2f$useControlledState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useControlledState"])(props.value, (_d = props.defaultValue) != null ? _d : "", handleValueChange);
+    const isFileTypeInput = type === "file";
+    const hasUploadedFiles = ((_g = (_f = (_e = domRef == null ? void 0 : domRef.current) == null ? void 0 : _e.files) == null ? void 0 : _f.length) != null ? _g : 0) > 0;
+    const isFilledByDefault = [
+        "date",
+        "time",
+        "month",
+        "week",
+        "range"
+    ].includes(type);
+    const isFilled = !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isEmpty"])(inputValue) || isFilledByDefault || hasUploadedFiles;
+    const isFilledWithin = isFilled || isFocusWithin;
+    const isHiddenType = type === "hidden";
+    const isMultiline = originalProps.isMultiline;
+    const baseStyles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.base, className, isFilled ? "is-filled" : "");
+    const handleClear = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
+        var _a2;
+        if (isFileTypeInput) {
+            domRef.current.value = "";
+        } else {
+            setInputValue("");
+        }
+        onClear == null ? void 0 : onClear();
+        (_a2 = domRef.current) == null ? void 0 : _a2.focus();
+    }, [
+        setInputValue,
+        onClear,
+        isFileTypeInput
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$safe$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSafeLayoutEffect"])(()=>{
+        if (!domRef.current) return;
+        setInputValue(domRef.current.value);
+    }, [
+        domRef.current
+    ]);
+    const { labelProps, inputProps, isInvalid: isAriaInvalid, validationErrors, validationDetails, descriptionProps, errorMessageProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$textfield$2f$dist$2f$useTextField$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTextField"])({
+        ...originalProps,
+        validationBehavior,
+        autoCapitalize: originalProps.autoCapitalize,
+        value: inputValue,
+        "aria-label": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["safeAriaLabel"])(originalProps["aria-label"], originalProps.label, originalProps.placeholder),
+        inputElementType: isMultiline ? "textarea" : "input",
+        onChange: setInputValue
+    }, domRef);
+    if (isFileTypeInput) {
+        delete inputProps.value;
+        delete inputProps.onChange;
+    }
+    const { isFocusVisible, isFocused, focusProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusRing"])({
+        autoFocus,
+        isTextInput: true
+    });
+    const { isHovered, hoverProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useHover"])({
+        isDisabled: !!(originalProps == null ? void 0 : originalProps.isDisabled)
+    });
+    const { isHovered: isLabelHovered, hoverProps: labelHoverProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useHover"])({
+        isDisabled: !!(originalProps == null ? void 0 : originalProps.isDisabled)
+    });
+    const { focusProps: clearFocusProps, isFocusVisible: isClearButtonFocusVisible } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusRing"])();
+    const { focusWithinProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusWithin$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusWithin"])({
+        onFocusWithinChange: setFocusWithin
+    });
+    const { pressProps: clearPressProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$usePress$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePress"])({
+        isDisabled: !!(originalProps == null ? void 0 : originalProps.isDisabled) || !!(originalProps == null ? void 0 : originalProps.isReadOnly),
+        onPress: handleClear
+    });
+    const isInvalid = validationState === "invalid" || isAriaInvalid;
+    const labelPlacement = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$2BFF5KFD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLabelPlacement"])({
+        labelPlacement: originalProps.labelPlacement,
+        label
+    });
+    const errorMessage = typeof props.errorMessage === "function" ? props.errorMessage({
+        isInvalid,
+        validationErrors,
+        validationDetails
+    }) : props.errorMessage || (validationErrors == null ? void 0 : validationErrors.join(" "));
+    const isClearable = !!onClear || originalProps.isClearable;
+    const hasElements = !!label || !!description || !!errorMessage;
+    const hasPlaceholder = !!props.placeholder;
+    const hasLabel = !!label;
+    const hasHelper = !!description || !!errorMessage;
+    const shouldLabelBeOutside = labelPlacement === "outside" || labelPlacement === "outside-left";
+    const shouldLabelBeInside = labelPlacement === "inside";
+    const isPlaceholderShown = domRef.current ? (!domRef.current.value || domRef.current.value === "" || !inputValue || inputValue === "") && hasPlaceholder : false;
+    const isOutsideLeft = labelPlacement === "outside-left";
+    const hasStartContent = !!startContent;
+    const isLabelOutside = shouldLabelBeOutside ? labelPlacement === "outside-left" || hasPlaceholder || labelPlacement === "outside" && hasStartContent : false;
+    const isLabelOutsideAsPlaceholder = labelPlacement === "outside" && !hasPlaceholder && !hasStartContent;
+    const slots = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$YVOWNNAA$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["input"])({
+            ...variantProps,
+            isInvalid,
+            labelPlacement,
+            isClearable,
+            disableAnimation
+        }), [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["objectToDeps"])(variantProps),
+        isInvalid,
+        labelPlacement,
+        isClearable,
+        hasStartContent,
+        disableAnimation
+    ]);
+    const getBaseProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ref: baseDomRef,
+            className: slots.base({
+                class: baseStyles
+            }),
+            "data-slot": "base",
+            "data-filled": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFilled || hasPlaceholder || hasStartContent || isPlaceholderShown || isFileTypeInput),
+            "data-filled-within": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFilledWithin || hasPlaceholder || hasStartContent || isPlaceholderShown || isFileTypeInput),
+            "data-focus-within": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocusWithin),
+            "data-focus-visible": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocusVisible),
+            "data-readonly": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(originalProps.isReadOnly),
+            "data-focus": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocused),
+            "data-hover": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isHovered || isLabelHovered),
+            "data-required": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(originalProps.isRequired),
+            "data-invalid": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isInvalid),
+            "data-disabled": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(originalProps.isDisabled),
+            "data-has-elements": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(hasElements),
+            "data-has-helper": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(hasHelper),
+            "data-has-label": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(hasLabel),
+            "data-has-value": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(!isPlaceholderShown),
+            "data-hidden": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isHiddenType),
+            ...focusWithinProps,
+            ...props2
+        };
+    }, [
+        slots,
+        baseStyles,
+        isFilled,
+        isFocused,
+        isHovered,
+        isLabelHovered,
+        isInvalid,
+        hasHelper,
+        hasLabel,
+        hasElements,
+        isPlaceholderShown,
+        hasStartContent,
+        isFocusWithin,
+        isFocusVisible,
+        isFilledWithin,
+        hasPlaceholder,
+        focusWithinProps,
+        isHiddenType,
+        originalProps.isReadOnly,
+        originalProps.isRequired,
+        originalProps.isDisabled
+    ]);
+    const getLabelProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            "data-slot": "label",
+            className: slots.label({
+                class: classNames == null ? void 0 : classNames.label
+            }),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(labelProps, labelHoverProps, props2)
+        };
+    }, [
+        slots,
+        isLabelHovered,
+        labelProps,
+        classNames == null ? void 0 : classNames.label
+    ]);
+    const handleKeyDown = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((e)=>{
+        if (e.key === "Escape" && inputValue && (isClearable || onClear) && !originalProps.isReadOnly) {
+            setInputValue("");
+            onClear == null ? void 0 : onClear();
+        }
+    }, [
+        inputValue,
+        setInputValue,
+        onClear,
+        isClearable,
+        originalProps.isReadOnly
+    ]);
+    const getInputProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            "data-slot": "input",
+            "data-filled": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFilled),
+            "data-filled-within": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFilledWithin),
+            "data-has-start-content": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(hasStartContent),
+            "data-has-end-content": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(!!endContent),
+            "data-type": type,
+            className: slots.input({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.input, isFilled ? "is-filled" : "", isMultiline ? "pe-0" : "", type === "password" ? "[&::-ms-reveal]:hidden" : "")
+            }),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(focusProps, inputProps, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$rsc$2d$utils$2f$dist$2f$chunk$2d$RJKRL3AU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(otherProps, {
+                enabled: true,
+                labelable: true,
+                omitEventNames: new Set(Object.keys(inputProps))
+            }), props2),
+            "aria-readonly": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(originalProps.isReadOnly),
+            onChange: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["chain"])(inputProps.onChange, onChange),
+            onKeyDown: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["chain"])(inputProps.onKeyDown, props2.onKeyDown, handleKeyDown),
+            ref: domRef
+        };
+    }, [
+        slots,
+        inputValue,
+        focusProps,
+        inputProps,
+        otherProps,
+        isFilled,
+        isFilledWithin,
+        hasStartContent,
+        endContent,
+        classNames == null ? void 0 : classNames.input,
+        originalProps.isReadOnly,
+        originalProps.isRequired,
+        onChange,
+        handleKeyDown
+    ]);
+    const getInputWrapperProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ref: inputWrapperRef,
+            "data-slot": "input-wrapper",
+            "data-hover": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isHovered || isLabelHovered),
+            "data-focus-visible": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocusVisible),
+            "data-focus": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocused),
+            className: slots.inputWrapper({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.inputWrapper, isFilled ? "is-filled" : "")
+            }),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(props2, hoverProps),
+            onClick: (e)=>{
+                if (domRef.current && e.currentTarget === e.target) {
+                    domRef.current.focus();
+                }
+            },
+            style: {
+                cursor: "text",
+                ...props2.style
+            }
+        };
+    }, [
+        slots,
+        isHovered,
+        isLabelHovered,
+        isFocusVisible,
+        isFocused,
+        inputValue,
+        classNames == null ? void 0 : classNames.inputWrapper
+    ]);
+    const getInnerWrapperProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ...props2,
+            ref: innerWrapperRef,
+            "data-slot": "inner-wrapper",
+            onClick: (e)=>{
+                if (domRef.current && e.currentTarget === e.target) {
+                    domRef.current.focus();
+                }
+            },
+            className: slots.innerWrapper({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.innerWrapper, props2 == null ? void 0 : props2.className)
+            })
+        };
+    }, [
+        slots,
+        classNames == null ? void 0 : classNames.innerWrapper
+    ]);
+    const getMainWrapperProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ...props2,
+            "data-slot": "main-wrapper",
+            className: slots.mainWrapper({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.mainWrapper, props2 == null ? void 0 : props2.className)
+            })
+        };
+    }, [
+        slots,
+        classNames == null ? void 0 : classNames.mainWrapper
+    ]);
+    const getHelperWrapperProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ...props2,
+            "data-slot": "helper-wrapper",
+            className: slots.helperWrapper({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.helperWrapper, props2 == null ? void 0 : props2.className)
+            })
+        };
+    }, [
+        slots,
+        classNames == null ? void 0 : classNames.helperWrapper
+    ]);
+    const getDescriptionProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ...props2,
+            ...descriptionProps,
+            "data-slot": "description",
+            className: slots.description({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.description, props2 == null ? void 0 : props2.className)
+            })
+        };
+    }, [
+        slots,
+        classNames == null ? void 0 : classNames.description
+    ]);
+    const getErrorMessageProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ...props2,
+            ...errorMessageProps,
+            "data-slot": "error-message",
+            className: slots.errorMessage({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.errorMessage, props2 == null ? void 0 : props2.className)
+            })
+        };
+    }, [
+        slots,
+        errorMessageProps,
+        classNames == null ? void 0 : classNames.errorMessage
+    ]);
+    const getClearButtonProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((props2 = {})=>{
+        return {
+            ...props2,
+            type: "button",
+            tabIndex: -1,
+            disabled: originalProps.isDisabled,
+            "aria-label": "clear input",
+            "data-slot": "clear-button",
+            "data-focus-visible": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isClearButtonFocusVisible),
+            className: slots.clearButton({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.clearButton, props2 == null ? void 0 : props2.className)
+            }),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(clearPressProps, clearFocusProps)
+        };
+    }, [
+        slots,
+        isClearButtonFocusVisible,
+        clearPressProps,
+        clearFocusProps,
+        classNames == null ? void 0 : classNames.clearButton
+    ]);
+    return {
+        Component,
+        classNames,
+        domRef,
+        label,
+        description,
+        startContent,
+        endContent,
+        labelPlacement,
+        isClearable,
+        hasHelper,
+        hasStartContent,
+        isLabelOutside,
+        isOutsideLeft,
+        isLabelOutsideAsPlaceholder,
+        shouldLabelBeOutside,
+        shouldLabelBeInside,
+        hasPlaceholder,
+        isInvalid,
+        errorMessage,
+        getBaseProps,
+        getLabelProps,
+        getInputProps,
+        getMainWrapperProps,
+        getInputWrapperProps,
+        getInnerWrapperProps,
+        getHelperWrapperProps,
+        getDescriptionProps,
+        getErrorMessageProps,
+        getClearButtonProps
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-HJTJQZF3.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "input_default": (()=>input_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$K6DFORPN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-K6DFORPN.mjs [app-ssr] (ecmascript)");
+// src/input.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$M3MASYO7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-icons/dist/chunk-M3MASYO7.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var Input = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    const { Component, label, description, isClearable, startContent, endContent, labelPlacement, hasHelper, isOutsideLeft, shouldLabelBeOutside, errorMessage, isInvalid, getBaseProps, getLabelProps, getInputProps, getInnerWrapperProps, getInputWrapperProps, getMainWrapperProps, getHelperWrapperProps, getDescriptionProps, getErrorMessageProps, getClearButtonProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$K6DFORPN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useInput"])({
+        ...props,
+        ref
+    });
+    const labelContent = label ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("label", {
+        ...getLabelProps(),
+        children: label
+    }) : null;
+    const end = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (isClearable) {
+            return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("button", {
+                ...getClearButtonProps(),
+                children: endContent || /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$M3MASYO7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CloseFilledIcon"], {})
+            });
+        }
+        return endContent;
+    }, [
+        isClearable,
+        getClearButtonProps
+    ]);
+    const helperWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        const shouldShowError = isInvalid && errorMessage;
+        const hasContent = shouldShowError || description;
+        if (!hasHelper || !hasContent) return null;
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+            ...getHelperWrapperProps(),
+            children: shouldShowError ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                ...getErrorMessageProps(),
+                children: errorMessage
+            }) : /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                ...getDescriptionProps(),
+                children: description
+            })
+        });
+    }, [
+        hasHelper,
+        isInvalid,
+        errorMessage,
+        description,
+        getHelperWrapperProps,
+        getErrorMessageProps,
+        getDescriptionProps
+    ]);
+    const innerWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("div", {
+            ...getInnerWrapperProps(),
+            children: [
+                startContent,
+                /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("input", {
+                    ...getInputProps()
+                }),
+                end
+            ]
+        });
+    }, [
+        startContent,
+        end,
+        getInputProps,
+        getInnerWrapperProps
+    ]);
+    const mainWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (shouldLabelBeOutside) {
+            return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("div", {
+                ...getMainWrapperProps(),
+                children: [
+                    /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("div", {
+                        ...getInputWrapperProps(),
+                        children: [
+                            !isOutsideLeft ? labelContent : null,
+                            innerWrapper
+                        ]
+                    }),
+                    helperWrapper
+                ]
+            });
+        }
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("div", {
+                    ...getInputWrapperProps(),
+                    children: [
+                        labelContent,
+                        innerWrapper
+                    ]
+                }),
+                helperWrapper
+            ]
+        });
+    }, [
+        labelPlacement,
+        helperWrapper,
+        shouldLabelBeOutside,
+        labelContent,
+        innerWrapper,
+        errorMessage,
+        description,
+        getMainWrapperProps,
+        getInputWrapperProps,
+        getErrorMessageProps,
+        getDescriptionProps
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(Component, {
+        ...getBaseProps(),
+        children: [
+            isOutsideLeft ? labelContent : null,
+            mainWrapper
+        ]
+    });
+});
+Input.displayName = "HeroUI.Input";
+var input_default = Input;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-ORPGD37S.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "textarea_default": (()=>textarea_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$K6DFORPN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-K6DFORPN.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$textarea$2d$autosize$2f$dist$2f$react$2d$textarea$2d$autosize$2e$development$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-textarea-autosize/dist/react-textarea-autosize.development.esm.js [app-ssr] (ecmascript)");
+// src/textarea.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$M3MASYO7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-icons/dist/chunk-M3MASYO7.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+var Textarea = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ style, minRows = 3, maxRows = 8, cacheMeasurements = false, disableAutosize = false, onHeightChange, ...otherProps }, ref)=>{
+    const { Component, label, description, startContent, endContent, hasHelper, shouldLabelBeOutside, shouldLabelBeInside, isInvalid, errorMessage, getBaseProps, getLabelProps, getInputProps, getInnerWrapperProps, getInputWrapperProps, getHelperWrapperProps, getDescriptionProps, getErrorMessageProps, isClearable, getClearButtonProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$K6DFORPN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useInput"])({
+        ...otherProps,
+        ref,
+        isMultiline: true
+    });
+    const [hasMultipleRows, setIsHasMultipleRows] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(minRows > 1);
+    const [isLimitReached, setIsLimitReached] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const labelContent = label ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("label", {
+        ...getLabelProps(),
+        children: label
+    }) : null;
+    const inputProps = getInputProps();
+    const handleHeightChange = (height, meta)=>{
+        if (minRows === 1) {
+            setIsHasMultipleRows(height >= meta.rowHeight * 2);
+        }
+        if (maxRows > minRows) {
+            const limitReached = height >= maxRows * meta.rowHeight;
+            setIsLimitReached(limitReached);
+        }
+        onHeightChange == null ? void 0 : onHeightChange(height, meta);
+    };
+    const content = disableAutosize ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("textarea", {
+        ...inputProps,
+        style: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(inputProps.style, style != null ? style : {})
+    }) : /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$textarea$2d$autosize$2f$dist$2f$react$2d$textarea$2d$autosize$2e$development$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+        ...inputProps,
+        cacheMeasurements,
+        "data-hide-scroll": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(!isLimitReached),
+        maxRows,
+        minRows,
+        style: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(inputProps.style, style != null ? style : {}),
+        onHeightChange: handleHeightChange
+    });
+    const clearButtonContent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        return isClearable ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("button", {
+            ...getClearButtonProps(),
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$icons$2f$dist$2f$chunk$2d$M3MASYO7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CloseFilledIcon"], {})
+        }) : null;
+    }, [
+        isClearable,
+        getClearButtonProps
+    ]);
+    const innerWrapper = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (startContent || endContent) {
+            return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("div", {
+                ...getInnerWrapperProps(),
+                children: [
+                    startContent,
+                    content,
+                    endContent
+                ]
+            });
+        }
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+            ...getInnerWrapperProps(),
+            children: content
+        });
+    }, [
+        startContent,
+        inputProps,
+        endContent,
+        getInnerWrapperProps
+    ]);
+    const shouldShowError = isInvalid && errorMessage;
+    const hasHelperContent = shouldShowError || description;
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(Component, {
+        ...getBaseProps(),
+        children: [
+            shouldLabelBeOutside ? labelContent : null,
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])("div", {
+                ...getInputWrapperProps(),
+                "data-has-multiple-rows": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(hasMultipleRows),
+                children: [
+                    shouldLabelBeInside ? labelContent : null,
+                    innerWrapper,
+                    clearButtonContent
+                ]
+            }),
+            hasHelper && hasHelperContent ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                ...getHelperWrapperProps(),
+                children: shouldShowError ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                    ...getErrorMessageProps(),
+                    children: errorMessage
+                }) : /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("div", {
+                    ...getDescriptionProps(),
+                    children: description
+                })
+            }) : null
+        ]
+    });
+});
+Textarea.displayName = "HeroUI.Textarea";
+var textarea_default = Textarea;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Input": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$HJTJQZF3$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["input_default"]),
+    "Textarea": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$ORPGD37S$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["textarea_default"]),
+    "useInput": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$K6DFORPN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useInput"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$HJTJQZF3$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-HJTJQZF3.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$ORPGD37S$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-ORPGD37S.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$chunk$2d$K6DFORPN$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/chunk-K6DFORPN.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Input": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Input"]),
+    "Textarea": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Textarea"]),
+    "useInput": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useInput"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$input$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/input/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/textfield/dist/useTextField.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useTextField": (()=>$2d73ec29415bd339$export$712718f7aec83d5)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$utils$2f$dist$2f$useControlledState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/utils/dist/useControlledState.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusable.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$form$2f$dist$2f$useFormValidationState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/form/dist/useFormValidationState.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$label$2f$dist$2f$useField$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-aria/label/dist/useField.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/filterDOMProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useFormReset$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/useFormReset.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$form$2f$dist$2f$useFormValidation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-aria/form/dist/useFormValidation.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$domHelpers$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/domHelpers.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $2d73ec29415bd339$export$712718f7aec83d5(props, ref) {
+    let { inputElementType: inputElementType = 'input', isDisabled: isDisabled = false, isRequired: isRequired = false, isReadOnly: isReadOnly = false, type: type = 'text', validationBehavior: validationBehavior = 'aria' } = props;
+    let [value, setValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$utils$2f$dist$2f$useControlledState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useControlledState"])(props.value, props.defaultValue || '', props.onChange);
+    let { focusableProps: focusableProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusable$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusable"])(props, ref);
+    let validationState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$form$2f$dist$2f$useFormValidationState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFormValidationState"])({
+        ...props,
+        value: value
+    });
+    let { isInvalid: isInvalid, validationErrors: validationErrors, validationDetails: validationDetails } = validationState.displayValidation;
+    let { labelProps: labelProps, fieldProps: fieldProps, descriptionProps: descriptionProps, errorMessageProps: errorMessageProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$label$2f$dist$2f$useField$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useField"])({
+        ...props,
+        isInvalid: isInvalid,
+        errorMessage: props.errorMessage || validationErrors
+    });
+    let domProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(props, {
+        labelable: true
+    });
+    const inputOnlyProps = {
+        type: type,
+        pattern: props.pattern
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useFormReset$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFormReset"])(ref, value, setValue);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$form$2f$dist$2f$useFormValidation$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFormValidation"])(props, validationState, ref);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        // This works around a React/Chrome bug that prevents textarea elements from validating when controlled.
+        // We prevent React from updating defaultValue (i.e. children) of textarea when `value` changes,
+        // which causes Chrome to skip validation. Only updating `value` is ok in our case since our
+        // textareas are always controlled. React is planning on removing this synchronization in a
+        // future major version.
+        // https://github.com/facebook/react/issues/19474
+        // https://github.com/facebook/react/issues/11896
+        if (ref.current instanceof (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$domHelpers$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getOwnerWindow"])(ref.current).HTMLTextAreaElement) {
+            let input = ref.current;
+            Object.defineProperty(input, 'defaultValue', {
+                get: ()=>input.value,
+                set: ()=>{},
+                configurable: true
+            });
+        }
+    }, [
+        ref
+    ]);
+    return {
+        labelProps: labelProps,
+        inputProps: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(domProps, inputElementType === 'input' ? inputOnlyProps : undefined, {
+            disabled: isDisabled,
+            readOnly: isReadOnly,
+            required: isRequired && validationBehavior === 'native',
+            'aria-required': isRequired && validationBehavior === 'aria' || undefined,
+            'aria-invalid': isInvalid || undefined,
+            'aria-errormessage': props['aria-errormessage'],
+            'aria-activedescendant': props['aria-activedescendant'],
+            'aria-autocomplete': props['aria-autocomplete'],
+            'aria-haspopup': props['aria-haspopup'],
+            'aria-controls': props['aria-controls'],
+            value: value,
+            onChange: (e)=>setValue(e.target.value),
+            autoComplete: props.autoComplete,
+            autoCapitalize: props.autoCapitalize,
+            maxLength: props.maxLength,
+            minLength: props.minLength,
+            name: props.name,
+            placeholder: props.placeholder,
+            inputMode: props.inputMode,
+            autoCorrect: props.autoCorrect,
+            spellCheck: props.spellCheck,
+            [parseInt((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]).version, 10) >= 17 ? 'enterKeyHint' : 'enterkeyhint']: props.enterKeyHint,
+            // Clipboard events
+            onCopy: props.onCopy,
+            onCut: props.onCut,
+            onPaste: props.onPaste,
+            // Composition events
+            onCompositionEnd: props.onCompositionEnd,
+            onCompositionStart: props.onCompositionStart,
+            onCompositionUpdate: props.onCompositionUpdate,
+            // Selection events
+            onSelect: props.onSelect,
+            // Input events
+            onBeforeInput: props.onBeforeInput,
+            onInput: props.onInput,
+            ...focusableProps,
+            ...fieldProps
+        }),
+        descriptionProps: descriptionProps,
+        errorMessageProps: errorMessageProps,
+        isInvalid: isInvalid,
+        validationErrors: validationErrors,
+        validationDetails: validationDetails
+    };
+}
+;
+ //# sourceMappingURL=useTextField.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript) <locals>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-LTNGAWBY.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useNavbar": (()=>useNavbar)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+// src/use-navbar.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/system/dist/chunk-Q3W45BN5.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$TMGLCZEQ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/theme/dist/chunk-TMGLCZEQ.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$utils$2f$dist$2f$useControlledState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/utils/dist/useControlledState.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$usePreventScroll$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/overlays/dist/usePreventScroll.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useResizeObserver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/useResizeObserver.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$scroll$2d$position$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/use-scroll-position/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function useNavbar(originalProps) {
+    var _a, _b;
+    const globalContext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$system$2f$dist$2f$chunk$2d$Q3W45BN5$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProviderContext"])();
+    const [props, variantProps] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mapPropsVariants"])(originalProps, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$TMGLCZEQ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar"].variantKeys);
+    const { ref, as, parentRef, height = "4rem", shouldHideOnScroll = false, disableScrollHandler = false, shouldBlockScroll = true, onScrollPositionChange, isMenuOpen: isMenuOpenProp, isMenuDefaultOpen, onMenuOpenChange = ()=>{}, motionProps, className, classNames, ...otherProps } = props;
+    const Component = as || "nav";
+    const disableAnimation = (_b = (_a = originalProps.disableAnimation) != null ? _a : globalContext == null ? void 0 : globalContext.disableAnimation) != null ? _b : false;
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const prevWidth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(0);
+    const navHeight = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(0);
+    const [isHidden, setIsHidden] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const handleMenuOpenChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((isOpen)=>{
+        onMenuOpenChange(isOpen || false);
+    }, [
+        onMenuOpenChange
+    ]);
+    const [isMenuOpen, setIsMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$utils$2f$dist$2f$useControlledState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useControlledState"])(isMenuOpenProp, isMenuDefaultOpen != null ? isMenuDefaultOpen : false, handleMenuOpenChange);
+    const updateWidth = ()=>{
+        if (domRef.current) {
+            const width = domRef.current.offsetWidth;
+            if (width !== prevWidth.current) {
+                prevWidth.current = width;
+            }
+        }
+    };
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$usePreventScroll$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePreventScroll"])({
+        isDisabled: !(shouldBlockScroll && isMenuOpen)
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useResizeObserver$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useResizeObserver"])({
+        ref: domRef,
+        onResize: ()=>{
+            var _a2;
+            const currentWidth = (_a2 = domRef.current) == null ? void 0 : _a2.offsetWidth;
+            const scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+            if (currentWidth && currentWidth + scrollWidth == prevWidth.current) {
+                return;
+            }
+            if (currentWidth !== prevWidth.current) {
+                updateWidth();
+                setIsMenuOpen(false);
+            }
+        }
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        var _a2;
+        updateWidth();
+        navHeight.current = ((_a2 = domRef.current) == null ? void 0 : _a2.offsetHeight) || 0;
+    }, []);
+    const slots = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$theme$2f$dist$2f$chunk$2d$TMGLCZEQ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar"])({
+            ...variantProps,
+            disableAnimation,
+            hideOnScroll: shouldHideOnScroll
+        }), [
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["objectToDeps"])(variantProps),
+        disableAnimation,
+        shouldHideOnScroll
+    ]);
+    const baseStyles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.base, className);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$use$2d$scroll$2d$position$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useScrollPosition"])({
+        elementRef: parentRef,
+        isEnabled: shouldHideOnScroll || !disableScrollHandler,
+        callback: ({ prevPos, currPos })=>{
+            onScrollPositionChange == null ? void 0 : onScrollPositionChange(currPos.y);
+            if (shouldHideOnScroll) {
+                setIsHidden((prev)=>{
+                    const next = currPos.y > prevPos.y && currPos.y > navHeight.current;
+                    return next !== prev ? next : prev;
+                });
+            }
+        }
+    });
+    const getBaseProps = (props2 = {})=>({
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(otherProps, props2),
+            "data-hidden": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isHidden),
+            "data-menu-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isMenuOpen),
+            ref: domRef,
+            className: slots.base({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(baseStyles, props2 == null ? void 0 : props2.className)
+            }),
+            style: {
+                "--navbar-height": typeof height === "number" ? `${height}px` : height,
+                ...otherProps == null ? void 0 : otherProps.style,
+                ...props2 == null ? void 0 : props2.style
+            }
+        });
+    const getWrapperProps = (props2 = {})=>({
+            ...props2,
+            "data-menu-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isMenuOpen),
+            className: slots.wrapper({
+                class: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.wrapper, props2 == null ? void 0 : props2.className)
+            })
+        });
+    return {
+        Component,
+        slots,
+        domRef,
+        height,
+        isHidden,
+        disableAnimation,
+        shouldHideOnScroll,
+        isMenuOpen,
+        classNames,
+        setIsMenuOpen,
+        motionProps,
+        getBaseProps,
+        getWrapperProps
+    };
+}
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "NavbarProvider": (()=>NavbarProvider),
+    "useNavbarContext": (()=>useNavbarContext)
+});
+// src/navbar-context.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$3XT5V4LF$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-3XT5V4LF.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+var [NavbarProvider, useNavbarContext] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$3XT5V4LF$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])({
+    name: "NavbarContext",
+    strict: true,
+    errorMessage: "useNavbarContext: `context` is undefined. Seems you forgot to wrap component within <Navbar />"
+});
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-UJDFI5KD.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "menuVariants": (()=>menuVariants)
+});
+"use client";
+// src/navbar-menu-transitions.ts
+var menuVariants = {
+    enter: {
+        height: "calc(100vh - var(--navbar-height))",
+        transition: {
+            duration: 0.3,
+            easings: "easeOut"
+        }
+    },
+    exit: {
+        height: 0,
+        transition: {
+            duration: 0.25,
+            easings: "easeIn"
+        }
+    }
+};
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-GGZP2VLD.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "navbar_menu_default": (()=>navbar_menu_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/navbar-menu.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$Overlay$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/overlays/dist/Overlay.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/components/LazyMotion/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/m/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$UJDFI5KD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-UJDFI5KD.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+var domAnimation = ()=>__turbopack_require__("[project]/node_modules/@heroui/dom-animation/dist/index.mjs [app-ssr] (ecmascript, async loader)")(__turbopack_import__).then((res)=>res.default);
+var NavbarMenu = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    var _a, _b;
+    const { className, children, portalContainer, motionProps, style, ...otherProps } = props;
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const { slots, isMenuOpen, height, disableAnimation, classNames } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbarContext"])();
+    const styles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.menu, className);
+    if (disableAnimation) {
+        if (!isMenuOpen) return null;
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$Overlay$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"], {
+            portalContainer,
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("ul", {
+                ref: domRef,
+                className: (_a = slots.menu) == null ? void 0 : _a.call(slots, {
+                    class: styles
+                }),
+                "data-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isMenuOpen),
+                style: {
+                    // @ts-expect-error
+                    "--navbar-height": typeof height === "number" ? `${height}px` : height
+                },
+                ...otherProps,
+                children
+            })
+        });
+    }
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+        mode: "wait",
+        children: isMenuOpen ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$overlays$2f$dist$2f$Overlay$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"], {
+            portalContainer,
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LazyMotion"], {
+                features: domAnimation,
+                children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["m"].ul, {
+                    ref: domRef,
+                    layoutScroll: true,
+                    animate: "enter",
+                    className: (_b = slots.menu) == null ? void 0 : _b.call(slots, {
+                        class: styles
+                    }),
+                    "data-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isMenuOpen),
+                    exit: "exit",
+                    initial: "exit",
+                    style: {
+                        // @ts-expect-error
+                        "--navbar-height": typeof height === "number" ? `${height}px` : height,
+                        ...style
+                    },
+                    variants: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$UJDFI5KD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["menuVariants"],
+                    ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(motionProps, otherProps),
+                    children
+                })
+            })
+        }) : null
+    });
+});
+NavbarMenu.displayName = "HeroUI.NavbarMenu";
+var navbar_menu_default = NavbarMenu;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-RRUQIZLR.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "hideOnScrollVariants": (()=>hideOnScrollVariants)
+});
+// src/navbar-transitions.ts
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/framer-utils/dist/chunk-736YWA4T.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+var hideOnScrollVariants = {
+    visible: {
+        y: 0,
+        transition: {
+            ease: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TRANSITION_EASINGS"].easeOut
+        }
+    },
+    hidden: {
+        y: "-100%",
+        transition: {
+            ease: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$framer$2d$utils$2f$dist$2f$chunk$2d$736YWA4T$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TRANSITION_EASINGS"].easeIn
+        }
+    }
+};
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-63OA3RRZ.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "navbar_default": (()=>navbar_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/navbar.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$LTNGAWBY$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-LTNGAWBY.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$rsc$2d$utils$2f$dist$2f$chunk$2d$WR7VNGRW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-rsc-utils/dist/chunk-WR7VNGRW.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$GGZP2VLD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-GGZP2VLD.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/components/LazyMotion/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/framer-motion/dist/es/render/components/m/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$RRUQIZLR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-RRUQIZLR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+var domAnimation = ()=>__turbopack_require__("[project]/node_modules/@heroui/dom-animation/dist/index.mjs [app-ssr] (ecmascript, async loader)")(__turbopack_import__).then((res)=>res.default);
+var Navbar = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    const { children, ...otherProps } = props;
+    const context = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$LTNGAWBY$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbar"])({
+        ...otherProps,
+        ref
+    });
+    const Component = context.Component;
+    const [childrenWithoutMenu, menu] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$rsc$2d$utils$2f$dist$2f$chunk$2d$WR7VNGRW$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["pickChildren"])(children, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$GGZP2VLD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_menu_default"]);
+    const content = /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("header", {
+                ...context.getWrapperProps(),
+                children: childrenWithoutMenu
+            }),
+            menu
+        ]
+    });
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NavbarProvider"], {
+        value: context,
+        children: context.shouldHideOnScroll ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$LazyMotion$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["LazyMotion"], {
+            features: domAnimation,
+            children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$m$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["m"].nav, {
+                animate: context.isHidden ? "hidden" : "visible",
+                initial: false,
+                variants: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$RRUQIZLR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hideOnScrollVariants"],
+                ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(context.getBaseProps(), context.motionProps),
+                children: content
+            })
+        }) : /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Component, {
+            ...context.getBaseProps(),
+            children: content
+        })
+    });
+});
+Navbar.displayName = "HeroUI.Navbar";
+var navbar_default = Navbar;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-4DMBHLGU.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "navbar_brand_default": (()=>navbar_brand_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/navbar-brand.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var NavbarBrand = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    var _a;
+    const { as, className, children, ...otherProps } = props;
+    const Component = as || "div";
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const { slots, classNames } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbarContext"])();
+    const styles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.brand, className);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Component, {
+        ref: domRef,
+        className: (_a = slots.brand) == null ? void 0 : _a.call(slots, {
+            class: styles
+        }),
+        ...otherProps,
+        children
+    });
+});
+NavbarBrand.displayName = "HeroUI.NavbarBrand";
+var navbar_brand_default = NavbarBrand;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-UYTDJMPP.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "navbar_content_default": (()=>navbar_content_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/navbar-content.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var NavbarContent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    var _a;
+    const { as, className, children, justify = "start", ...otherProps } = props;
+    const Component = as || "ul";
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const { slots, classNames } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbarContext"])();
+    const styles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.content, className);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Component, {
+        ref: domRef,
+        className: (_a = slots.content) == null ? void 0 : _a.call(slots, {
+            class: styles
+        }),
+        "data-justify": justify,
+        ...otherProps,
+        children
+    });
+});
+NavbarContent.displayName = "HeroUI.NavbarContent";
+var navbar_content_default = NavbarContent;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-5LMKFFWA.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "navbar_item_default": (()=>navbar_item_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/navbar-item.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var NavbarItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    var _a;
+    const { as, className, children, isActive, ...otherProps } = props;
+    const Component = as || "li";
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const { slots, classNames } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbarContext"])();
+    const styles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.item, className);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Component, {
+        ref: domRef,
+        className: (_a = slots.item) == null ? void 0 : _a.call(slots, {
+            class: styles
+        }),
+        "data-active": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isActive),
+        ...otherProps,
+        children
+    });
+});
+NavbarItem.displayName = "HeroUI.NavbarItem";
+var navbar_item_default = NavbarItem;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-W4R67QGI.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "navbar_menu_item_default": (()=>navbar_menu_item_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+// src/navbar-menu-item.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var NavbarMenuItem = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    var _a;
+    const { className, children, isActive, ...otherProps } = props;
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const { slots, isMenuOpen, classNames } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbarContext"])();
+    const styles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.menuItem, className);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("li", {
+        ref: domRef,
+        className: (_a = slots.menuItem) == null ? void 0 : _a.call(slots, {
+            class: styles
+        }),
+        "data-active": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isActive),
+        "data-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isMenuOpen),
+        ...otherProps,
+        children
+    });
+});
+NavbarMenuItem.displayName = "HeroUI.NavbarMenuItem";
+var navbar_menu_item_default = NavbarMenuItem;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-M6Y4IXO7.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "navbar_menu_toggle_default": (()=>navbar_menu_toggle_default)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/system-rsc/dist/chunk-YFAKJTDR.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react-utils/dist/chunk-OEE6MISH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$toggle$2f$dist$2f$useToggleState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/toggle/dist/useToggleState.mjs [app-ssr] (ecmascript)");
+// src/navbar-menu-toggle.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$button$2f$dist$2f$useToggleButton$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/button/dist/useToggleButton.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/focus/dist/useFocusRing.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useHover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/shared-utils/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+var NavbarMenuToggle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$system$2d$rsc$2f$dist$2f$chunk$2d$YFAKJTDR$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])((props, ref)=>{
+    var _a;
+    const { as, icon, className, onChange, autoFocus, srOnlyText: srOnlyTextProp, ...otherProps } = props;
+    const Component = as || "button";
+    const domRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2d$utils$2f$dist$2f$chunk$2d$OEE6MISH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDOMRef"])(ref);
+    const { slots, classNames, isMenuOpen, setIsMenuOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbarContext"])();
+    const handleChange = (isOpen)=>{
+        onChange == null ? void 0 : onChange(isOpen);
+        setIsMenuOpen(isOpen);
+    };
+    const state = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$toggle$2f$dist$2f$useToggleState$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToggleState"])({
+        ...otherProps,
+        isSelected: isMenuOpen,
+        onChange: handleChange
+    });
+    const { buttonProps, isPressed } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$button$2f$dist$2f$useToggleButton$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToggleButton"])(props, state, domRef);
+    const { isFocusVisible, focusProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$focus$2f$dist$2f$useFocusRing$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusRing"])({
+        autoFocus
+    });
+    const { isHovered, hoverProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useHover"])({});
+    const toggleStyles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"])(classNames == null ? void 0 : classNames.toggle, className);
+    const child = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (typeof icon === "function") {
+            return icon(isMenuOpen != null ? isMenuOpen : false);
+        }
+        return icon || /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("span", {
+            className: slots.toggleIcon({
+                class: classNames == null ? void 0 : classNames.toggleIcon
+            })
+        });
+    }, [
+        icon,
+        isMenuOpen,
+        slots.toggleIcon,
+        classNames == null ? void 0 : classNames.toggleIcon
+    ]);
+    const srOnlyText = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
+        if (srOnlyTextProp) {
+            return srOnlyTextProp;
+        }
+        return state.isSelected ? "close navigation menu" : "open navigation menu";
+    }, [
+        srOnlyTextProp,
+        isMenuOpen
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(Component, {
+        ref: domRef,
+        className: (_a = slots.toggle) == null ? void 0 : _a.call(slots, {
+            class: toggleStyles
+        }),
+        "data-focus-visible": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isFocusVisible),
+        "data-hover": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isHovered),
+        "data-open": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isMenuOpen),
+        "data-pressed": (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$shared$2d$utils$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataAttr"])(isPressed),
+        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(buttonProps, focusProps, hoverProps, otherProps),
+        children: [
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])("span", {
+                className: slots.srOnly(),
+                children: srOnlyText
+            }),
+            child
+        ]
+    });
+});
+NavbarMenuToggle.displayName = "HeroUI.NavbarMenuToggle";
+var navbar_menu_toggle_default = NavbarMenuToggle;
+;
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript) <exports>": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Navbar": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$63OA3RRZ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_default"]),
+    "NavbarBrand": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$4DMBHLGU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_brand_default"]),
+    "NavbarContent": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$UYTDJMPP$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_content_default"]),
+    "NavbarItem": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$5LMKFFWA$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_item_default"]),
+    "NavbarMenu": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$GGZP2VLD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_menu_default"]),
+    "NavbarMenuItem": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$W4R67QGI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_menu_item_default"]),
+    "NavbarMenuToggle": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$M6Y4IXO7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["navbar_menu_toggle_default"]),
+    "NavbarProvider": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["NavbarProvider"]),
+    "useNavbar": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$LTNGAWBY$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbar"]),
+    "useNavbarContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useNavbarContext"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$63OA3RRZ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-63OA3RRZ.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$4DMBHLGU$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-4DMBHLGU.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$UYTDJMPP$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-UYTDJMPP.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$5LMKFFWA$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-5LMKFFWA.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$GGZP2VLD$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-GGZP2VLD.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$W4R67QGI$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-W4R67QGI.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$M6Y4IXO7$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-M6Y4IXO7.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$IGERPFKH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-IGERPFKH.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$chunk$2d$LTNGAWBY$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/chunk-LTNGAWBY.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript) <locals>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, t: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "Navbar": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["Navbar"]),
+    "NavbarBrand": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["NavbarBrand"]),
+    "NavbarContent": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["NavbarContent"]),
+    "NavbarItem": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["NavbarItem"]),
+    "NavbarMenu": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["NavbarMenu"]),
+    "NavbarMenuItem": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["NavbarMenuItem"]),
+    "NavbarMenuToggle": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["NavbarMenuToggle"]),
+    "NavbarProvider": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["NavbarProvider"]),
+    "useNavbar": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useNavbar"]),
+    "useNavbarContext": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__["useNavbarContext"])
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript) <module evaluation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$navbar$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$exports$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@heroui/navbar/dist/index.mjs [app-ssr] (ecmascript) <exports>");
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/listbox/dist/utils.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ __turbopack_esm__({
+    "getItemId": (()=>$b1f0cad8af73213b$export$9145995848b05025),
+    "listData": (()=>$b1f0cad8af73213b$export$3585ede4d035bf14)
+});
+const $b1f0cad8af73213b$export$3585ede4d035bf14 = new WeakMap();
+function $b1f0cad8af73213b$var$normalizeKey(key) {
+    if (typeof key === 'string') return key.replace(/\s*/g, '');
+    return '' + key;
+}
+function $b1f0cad8af73213b$export$9145995848b05025(state, itemKey) {
+    let data = $b1f0cad8af73213b$export$3585ede4d035bf14.get(state);
+    if (!data) throw new Error('Unknown list');
+    return `${data.id}-option-${$b1f0cad8af73213b$var$normalizeKey(itemKey)}`;
+}
+;
+ //# sourceMappingURL=utils.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/listbox/dist/useListBox.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useListBox": (()=>$c132121280ec012d$export$50eacbbf140a3141)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/filterDOMProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$selection$2f$dist$2f$useSelectableList$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-aria/selection/dist/useSelectableList.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusWithin$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusWithin.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/useId.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$listbox$2f$dist$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/listbox/dist/utils.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$label$2f$dist$2f$useLabel$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-aria/label/dist/useLabel.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $c132121280ec012d$export$50eacbbf140a3141(props, state, ref) {
+    let domProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(props, {
+        labelable: true
+    });
+    // Use props instead of state here. We don't want this to change due to long press.
+    let selectionBehavior = props.selectionBehavior || 'toggle';
+    let linkBehavior = props.linkBehavior || (selectionBehavior === 'replace' ? 'action' : 'override');
+    if (selectionBehavior === 'toggle' && linkBehavior === 'action') // to initiate selection (checkboxes are not allowed inside a listbox). Link items will not be
+    // selectable in this configuration.
+    linkBehavior = 'override';
+    let { listProps: listProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$selection$2f$dist$2f$useSelectableList$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSelectableList"])({
+        ...props,
+        ref: ref,
+        selectionManager: state.selectionManager,
+        collection: state.collection,
+        disabledKeys: state.disabledKeys,
+        linkBehavior: linkBehavior
+    });
+    let { focusWithinProps: focusWithinProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusWithin$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusWithin"])({
+        onFocusWithin: props.onFocus,
+        onBlurWithin: props.onBlur,
+        onFocusWithinChange: props.onFocusChange
+    });
+    // Share list id and some props with child options.
+    let id = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])(props.id);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$listbox$2f$dist$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["listData"]).set(state, {
+        id: id,
+        shouldUseVirtualFocus: props.shouldUseVirtualFocus,
+        shouldSelectOnPressUp: props.shouldSelectOnPressUp,
+        shouldFocusOnHover: props.shouldFocusOnHover,
+        isVirtualized: props.isVirtualized,
+        onAction: props.onAction,
+        linkBehavior: linkBehavior
+    });
+    let { labelProps: labelProps, fieldProps: fieldProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$label$2f$dist$2f$useLabel$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLabel"])({
+        ...props,
+        id: id,
+        // listbox is not an HTML input element so it
+        // shouldn't be labeled by a <label> element.
+        labelElementType: 'span'
+    });
+    return {
+        labelProps: labelProps,
+        listBoxProps: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(domProps, focusWithinProps, state.selectionManager.selectionMode === 'multiple' ? {
+            'aria-multiselectable': 'true'
+        } : {}, {
+            role: 'listbox',
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(fieldProps, listProps)
+        })
+    };
+}
+;
+ //# sourceMappingURL=useListBox.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/listbox/dist/useOption.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useOption": (()=>$293f70390ea03370$export$497855f14858aa34)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$listbox$2f$dist$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/listbox/dist/utils.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/useId.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/platform.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$collections$2f$dist$2f$getItemCount$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-stately/collections/dist/getItemCount.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$selection$2f$dist$2f$useSelectableItem$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@react-aria/selection/dist/useSelectableItem.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/chain.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useHover.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusVisible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/interactions/dist/useFocusVisible.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/filterDOMProps.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/openLink.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/mergeProps.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $293f70390ea03370$export$497855f14858aa34(props, state, ref) {
+    var _item_props, _item_props1;
+    let { key: key } = props;
+    let data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$listbox$2f$dist$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["listData"]).get(state);
+    var _props_isDisabled;
+    let isDisabled = (_props_isDisabled = props.isDisabled) !== null && _props_isDisabled !== void 0 ? _props_isDisabled : state.selectionManager.isDisabled(key);
+    var _props_isSelected;
+    let isSelected = (_props_isSelected = props.isSelected) !== null && _props_isSelected !== void 0 ? _props_isSelected : state.selectionManager.isSelected(key);
+    var _props_shouldSelectOnPressUp;
+    let shouldSelectOnPressUp = (_props_shouldSelectOnPressUp = props.shouldSelectOnPressUp) !== null && _props_shouldSelectOnPressUp !== void 0 ? _props_shouldSelectOnPressUp : data === null || data === void 0 ? void 0 : data.shouldSelectOnPressUp;
+    var _props_shouldFocusOnHover;
+    let shouldFocusOnHover = (_props_shouldFocusOnHover = props.shouldFocusOnHover) !== null && _props_shouldFocusOnHover !== void 0 ? _props_shouldFocusOnHover : data === null || data === void 0 ? void 0 : data.shouldFocusOnHover;
+    var _props_shouldUseVirtualFocus;
+    let shouldUseVirtualFocus = (_props_shouldUseVirtualFocus = props.shouldUseVirtualFocus) !== null && _props_shouldUseVirtualFocus !== void 0 ? _props_shouldUseVirtualFocus : data === null || data === void 0 ? void 0 : data.shouldUseVirtualFocus;
+    var _props_isVirtualized;
+    let isVirtualized = (_props_isVirtualized = props.isVirtualized) !== null && _props_isVirtualized !== void 0 ? _props_isVirtualized : data === null || data === void 0 ? void 0 : data.isVirtualized;
+    let labelId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSlotId"])();
+    let descriptionId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSlotId"])();
+    let optionProps = {
+        role: 'option',
+        'aria-disabled': isDisabled || undefined,
+        'aria-selected': state.selectionManager.selectionMode !== 'none' ? isSelected : undefined
+    };
+    // Safari with VoiceOver on macOS misreads options with aria-labelledby or aria-label as simply "text".
+    // We should not map slots to the label and description on Safari and instead just have VoiceOver read the textContent.
+    // https://bugs.webkit.org/show_bug.cgi?id=209279
+    if (!((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isMac"])() && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$platform$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isWebKit"])())) {
+        optionProps['aria-label'] = props['aria-label'];
+        optionProps['aria-labelledby'] = labelId;
+        optionProps['aria-describedby'] = descriptionId;
+    }
+    let item = state.collection.getItem(key);
+    if (isVirtualized) {
+        let index = Number(item === null || item === void 0 ? void 0 : item.index);
+        optionProps['aria-posinset'] = Number.isNaN(index) ? undefined : index + 1;
+        optionProps['aria-setsize'] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$stately$2f$collections$2f$dist$2f$getItemCount$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getItemCount"])(state.collection);
+    }
+    let onAction = (data === null || data === void 0 ? void 0 : data.onAction) ? ()=>{
+        var _data_onAction;
+        return data === null || data === void 0 ? void 0 : (_data_onAction = data.onAction) === null || _data_onAction === void 0 ? void 0 : _data_onAction.call(data, key);
+    } : undefined;
+    let id = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$listbox$2f$dist$2f$utils$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getItemId"])(state, key);
+    let { itemProps: itemProps, isPressed: isPressed, isFocused: isFocused, hasAction: hasAction, allowsSelection: allowsSelection } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$aria$2f$selection$2f$dist$2f$useSelectableItem$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSelectableItem"])({
+        selectionManager: state.selectionManager,
+        key: key,
+        ref: ref,
+        shouldSelectOnPressUp: shouldSelectOnPressUp,
+        allowsDifferentPressOrigin: shouldSelectOnPressUp && shouldFocusOnHover,
+        isVirtualized: isVirtualized,
+        shouldUseVirtualFocus: shouldUseVirtualFocus,
+        isDisabled: isDisabled,
+        onAction: onAction || (item === null || item === void 0 ? void 0 : (_item_props = item.props) === null || _item_props === void 0 ? void 0 : _item_props.onAction) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$chain$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["chain"])(item === null || item === void 0 ? void 0 : (_item_props1 = item.props) === null || _item_props1 === void 0 ? void 0 : _item_props1.onAction, onAction) : undefined,
+        linkBehavior: data === null || data === void 0 ? void 0 : data.linkBehavior,
+        id: id
+    });
+    let { hoverProps: hoverProps } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useHover$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useHover"])({
+        isDisabled: isDisabled || !shouldFocusOnHover,
+        onHoverStart () {
+            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusVisible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isFocusVisible"])()) {
+                state.selectionManager.setFocused(true);
+                state.selectionManager.setFocusedKey(key);
+            }
+        }
+    });
+    let domProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$filterDOMProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["filterDOMProps"])(item === null || item === void 0 ? void 0 : item.props);
+    delete domProps.id;
+    let linkProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$openLink$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLinkProps"])(item === null || item === void 0 ? void 0 : item.props);
+    return {
+        optionProps: {
+            ...optionProps,
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$mergeProps$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeProps"])(domProps, itemProps, hoverProps, linkProps),
+            id: id
+        },
+        labelProps: {
+            id: labelId
+        },
+        descriptionProps: {
+            id: descriptionId
+        },
+        isFocused: isFocused,
+        isFocusVisible: isFocused && state.selectionManager.isFocused && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$interactions$2f$dist$2f$useFocusVisible$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isFocusVisible"])(),
+        isSelected: isSelected,
+        isDisabled: isDisabled,
+        isPressed: isPressed,
+        allowsSelection: allowsSelection,
+        hasAction: hasAction
+    };
+}
+;
+ //# sourceMappingURL=useOption.module.js.map
+}}),
+"[project]/node_modules/@heroui/react/node_modules/@react-aria/listbox/dist/useListBoxSection.mjs [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: require } = __turbopack_context__;
+{
+__turbopack_esm__({
+    "useListBoxSection": (()=>$af383d3bef1cfdc9$export$c3f9f39876e4bc7)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@heroui/react/node_modules/@react-aria/utils/dist/useId.mjs [app-ssr] (ecmascript)");
+;
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */ function $af383d3bef1cfdc9$export$c3f9f39876e4bc7(props) {
+    let { heading: heading, 'aria-label': ariaLabel } = props;
+    let headingId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$react$2d$aria$2f$utils$2f$dist$2f$useId$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])();
+    return {
+        itemProps: {
+            role: 'presentation'
+        },
+        headingProps: heading ? {
+            // Techincally, listbox cannot contain headings according to ARIA.
+            // We hide the heading from assistive technology, using role="presentation",
+            // and only use it as a visual label for the nested group.
+            id: headingId,
+            role: 'presentation'
+        } : {},
+        groupProps: {
+            role: 'group',
+            'aria-label': ariaLabel,
+            'aria-labelledby': heading ? headingId : undefined
+        }
+    };
+}
+;
+ //# sourceMappingURL=useListBoxSection.module.js.map
+}}),
+
+};
+
+//# sourceMappingURL=5e0ec_7ae091._.js.map

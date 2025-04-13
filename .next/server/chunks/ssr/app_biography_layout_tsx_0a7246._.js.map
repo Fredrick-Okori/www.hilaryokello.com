@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/graphics/hilaryokello/app/biography/layout.tsx"],"sourcesContent":["export default function BiographyLayout({\n    children,\n  }: {\n    children: React.ReactNode;\n  }) {\n    return (\n      <section className=\"flex bg-black flex-col items-center justify-center gap-4 py-8 md:py-10\">\n        <div className=\"text-center w-full justify-center\">\n          {children}\n        </div>\n      </section>\n    );\n  }\n  "],"names":[],"mappings":";;;;;AAAe,SAAS,gBAAgB,EACpC,QAAQ,EAGT;IACC,qBACE,8OAAC;QAAQ,WAAU;kBACjB,cAAA,8OAAC;YAAI,WAAU;sBACZ;;;;;;;;;;;AAIT"}},
+    {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
