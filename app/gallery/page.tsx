@@ -192,7 +192,7 @@ export default function Gallery() {
             {/* Close Button */}
             <button
               aria-label="Close gallery"
-              className="absolute top-4 right-4 bg-black/30 hover:bg-black/60 backdrop-blur-sm p-2 rounded-full text-white transition-all duration-300"
+              className="absolute top-10  right-8 bg-black/30 hover:bg-black/60 backdrop-blur-sm p-2 rounded-full text-white transition-all duration-300"
               onClick={closeModal}
             >
               <X className="h-6 w-6" />
