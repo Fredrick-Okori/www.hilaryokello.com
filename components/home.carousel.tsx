@@ -70,7 +70,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     <>
       <div>
         <h4 className="text-left text-4xl text-white font-bold">From the Lenses</h4>
-        <Button asChild className="rounded-full text-white px-4 py-2 mt-4" variant="bordered">
+        <Button  className="rounded-full text-white px-4 py-2 mt-4" variant="bordered">
           <Link href="/gallery">More Pictures</Link>
         </Button>
       </div>
