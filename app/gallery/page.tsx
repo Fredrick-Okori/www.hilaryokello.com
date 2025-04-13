@@ -54,9 +54,9 @@ export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [fadeIn, setFadeIn] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [hoverIndex, setHoverIndex] = useState(null);
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
-  const modalRef = useRef(null);
+  const modalRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -109,7 +109,7 @@ export default function Gallery() {
 
   // Handle keyboard navigation
   useEffect(() => {
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: { key: string; }) => {
       if (selectedIndex === null) return;
 
       if (e.key === "ArrowRight") {
@@ -128,7 +128,7 @@ export default function Gallery() {
 
   // Handle clicks outside the modal
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: { target: any; }) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         closeModal();
       }
