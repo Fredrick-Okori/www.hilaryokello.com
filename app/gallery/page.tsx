@@ -140,7 +140,7 @@ export default function Gallery() {
       <h1
         className={`text-5xl font-bold text-left mb-12 text-white transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
-        Stage Pictures
+        Viewing Gallery
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -189,7 +189,7 @@ export default function Gallery() {
           <div
             ref={modalRef}
             className="relative max-w-6xl w-full h-[85vh] mx-auto px-4"
-            role="dialog"
+            role="button"
             onClick={(e) => e.stopPropagation()}
           >
             <div
