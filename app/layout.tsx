@@ -6,8 +6,24 @@ import Script from "next/script";
 import { MenuBar } from "@/components/theme-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
+import { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
+
+
+
+export const metadata: Metadata = {
+  // Metadata unchanged
+  title: {
+    default: siteConfig.name,
+    template: `%s - ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+ 
+};
+
 
 export default function RootLayout({
   children,

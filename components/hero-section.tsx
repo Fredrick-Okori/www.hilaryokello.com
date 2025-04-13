@@ -10,6 +10,14 @@ export function HeroSection() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
 
+  const phoneNumber = "+256752734280"; // Replace with Dr. Hilary Okello's number
+  const message = "Hello Dr. Hilary Okello, I'm interested in your comedy shows!";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber.replace(
+    /[^0-9]/g,
+    ""
+  )}?text=${encodedMessage}`;
+
   return (
     <section className="w-full h-screen overflow-hidden relative">
       {/* Background image */}
@@ -63,7 +71,7 @@ export function HeroSection() {
           <Button
             as={Link}
             className="text-white rounded-full"
-            href="/booking"
+            href={whatsappURL} // Use the whatsappURL variable here
             size="lg"
             variant="bordered"
           >

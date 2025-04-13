@@ -4,6 +4,18 @@ import UpcomingShows from "@/components/upcoming.show";
 import { VideoSection } from "@/components/videos";
 import Head from "next/head";
 
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Home | Dr. Hilary Okello | Uganda's Funniest Stand-Up Comedian & Africa’s Doctor of Comedy",
+  keywords:
+    "Dr. Hilary Okello, Ugandan comedian, African stand-up comedy, comedy Uganda, top comedians in Africa, live comedy Uganda, comedy shows Kampala, medical comedian, funny Ugandan doctor, stand-up comedy East Africa",
+  description:
+    "Welcome to the official website of Dr. Hilary Okello, Uganda's top stand-up comedian and Africa's Doctor of Comedy. Discover hilarious stand-up clips, upcoming shows, exclusive behind-the-scenes content, and his journey from medicine to comedy stardom.",
+};
+
+
 export default function Page() {
   // Featured video - Dr. Hilary Okello's comedy
   const featuredVideo = {

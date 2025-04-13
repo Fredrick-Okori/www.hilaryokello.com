@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTwitter, FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FaTwitter className="hover:text-blue-400" size={24} />
+            <BsTwitterX className="hover:text-blue-400" size={24} />
           </a>
           <a
             href="https://www.youtube.com/@drhilaryokello"
@@ -21,7 +22,7 @@ export default function Footer() {
             <FaYoutube className="hover:text-red-600" size={24} />
           </a>
           <a
-            href="https://www.tiktok.com/@drhilaryokello"
+            href="https://www.tiktok.com/@drhilary_okello?_t=ZM-8vVQayDX5aZ&_r=1"
             rel="noopener noreferrer"
             target="_blank"
           >
