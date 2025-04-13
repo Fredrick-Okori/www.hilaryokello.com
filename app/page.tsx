@@ -54,16 +54,16 @@ export default function Page() {
     },
   ];
 
-  const images = [
-    "/gallery/bg_booking.webp",
-    "/gallery/crowd.png",
-    "/gallerypage/DSC_9170.webp",
-    "/gallerypage/DSC_1041.webp",
-    "/gallerypage/DSC_8976.webp",
-    "/gallerypage/DSC_2148.webp",
-    "/gallerypage/DSC_8799.webp",
-    "/gallerypage/DSC_9161.webp",
-  ];
+   const images = [
+    { url: "/gallery/bg_booking.webp", caption: "Booking Background" },
+    { url: "/gallery/crowd.png", caption: "Crowd" },
+    { url: "/gallerypage/DSC_9170.webp", caption: "Event Photo 9170" },
+    { url: "/gallerypage/DSC_1041.webp", caption: "Event Photo 1041" },
+    { url: "/gallerypage/DSC_8976.webp", caption: "Event Photo 8976" },
+    { url: "/gallerypage/DSC_2148.webp", caption: "Event Photo 2148" },
+    { url: "/gallerypage/DSC_8799.webp", caption: "Event Photo 8799" },
+    { url: "/gallerypage/DSC_9161.webp", caption: "Event Photo 9161" },
+  ]
 
   return (
     <>

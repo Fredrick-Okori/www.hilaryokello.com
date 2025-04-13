@@ -216,14 +216,38 @@ function Page() {
         }
     ];
     const images = [
-        "/gallery/bg_booking.webp",
-        "/gallery/crowd.png",
-        "/gallerypage/DSC_9170.webp",
-        "/gallerypage/DSC_1041.webp",
-        "/gallerypage/DSC_8976.webp",
-        "/gallerypage/DSC_2148.webp",
-        "/gallerypage/DSC_8799.webp",
-        "/gallerypage/DSC_9161.webp"
+        {
+            url: "/gallery/bg_booking.webp",
+            caption: "Booking Background"
+        },
+        {
+            url: "/gallery/crowd.png",
+            caption: "Crowd"
+        },
+        {
+            url: "/gallerypage/DSC_9170.webp",
+            caption: "Event Photo 9170"
+        },
+        {
+            url: "/gallerypage/DSC_1041.webp",
+            caption: "Event Photo 1041"
+        },
+        {
+            url: "/gallerypage/DSC_8976.webp",
+            caption: "Event Photo 8976"
+        },
+        {
+            url: "/gallerypage/DSC_2148.webp",
+            caption: "Event Photo 2148"
+        },
+        {
+            url: "/gallerypage/DSC_8799.webp",
+            caption: "Event Photo 8799"
+        },
+        {
+            url: "/gallerypage/DSC_9161.webp",
+            caption: "Event Photo 9161"
+        }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
