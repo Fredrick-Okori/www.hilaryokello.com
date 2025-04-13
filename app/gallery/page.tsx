@@ -80,7 +80,10 @@ export default function Gallery() {
     if (selectedIndex === null) return;
     setFadeIn(false);
     setTimeout(() => {
-      setSelectedIndex((prev) => (prev + 1) % images.length);
+      setSelectedIndex((prev) =>
+        prev !== null ? (prev + 1) % images.length : 0,
+      );
+
       setFadeIn(true);
     });
   };
@@ -89,7 +92,10 @@ export default function Gallery() {
     if (selectedIndex === null) return;
     setFadeIn(false);
     setTimeout(() => {
-      setSelectedIndex((prev) => (prev - 1 + images.length) % images.length);
+      setSelectedIndex(
+        (prev) =>
+          ((prev === null ? 0 : prev) - 1 + images.length) % images.length,
+      );
       setFadeIn(true);
     });
   };
