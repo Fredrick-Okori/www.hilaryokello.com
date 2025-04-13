@@ -227,7 +227,7 @@ export default function Gallery() {
                 priority
                 alt={`Modal image ${selectedIndex + 1}`}
                 className="object-contain"
-                quality={90}
+                quality={70}
                 src={images[selectedIndex]}
               />
             </div>
