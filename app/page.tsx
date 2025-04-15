@@ -56,15 +56,7 @@ export default function Page() {
       views: "14K",
       uploadedAt: "7 years ago",
     },
-    {
-      id: "5",
-      title:
-        "Ugandan Comedian thrills Rwanda with his hilarious, electrifying Comedy performance!",
-      duration: "19:30",
-      youtubeId: "ZrCm1CfKqoo", // Placeholder ID
-      views: "540K",
-      uploadedAt: "6 months ago",
-    },
+ 
   ];
 
   const images = [

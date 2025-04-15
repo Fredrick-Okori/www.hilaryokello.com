@@ -23,6 +23,14 @@ const menuItems: MenuItem[] = [
     iconColor: "text-blue-500",
     icon: undefined,
   },
+  {
+    label: "Videos",
+    href: "/watch",
+    gradient:
+      "radial-gradient(circle, rgba(217, 255, 0, 0.15) 0%, rgba(255,107,0,0.06) 50%, rgba(239,78,0,0) 100%)",
+    iconColor: "text-yellow-500",
+    icon: undefined,
+  },
 
   {
     label: "Biography",

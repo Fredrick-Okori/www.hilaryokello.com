@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/graphics/hilaryokello/lib/utils.ts"],"sourcesContent":["import { type ClassValue, clsx } from \"clsx\"\nimport { twMerge } from \"tailwind-merge\"\n\n/**\n * Combines multiple class names into a single string, handling Tailwind CSS conflicts.\n * This utility uses clsx for conditional class joining and tailwind-merge to handle\n * Tailwind CSS class conflicts properly.\n *\n * @param inputs - Class names or conditional class objects\n * @returns A merged string of class names\n */\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n"],"names":[],"mappings":";;;AAAA;AACA;;;AAUO,SAAS,GAAG,GAAG,MAAoB;IACxC,OAAO,CAAA,GAAA,8JAAA,CAAA,UAAO,AAAD,EAAE,CAAA,GAAA,wIAAA,CAAA,OAAI,AAAD,EAAE;AACtB"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///Users/graphics/hilaryokello/app/watch/page.tsx"],"sourcesContent":["import React from 'react'\n\nexport default function Page() {\n\n    return(\n        <>\n        </>\n    )\n\n"],"names":[],"mappings":";;;;;AAEe,SAAS;IAEpB,qBACI;AAEJ;KALoB"}},
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

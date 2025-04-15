@@ -2,6 +2,7 @@ const CHUNK_PUBLIC_PATH = "server/app/gallery/page.js";
 const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_101e1c._.js");
 runtime.loadChunk("server/chunks/ssr/[root of the server]__adba9d._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_bs_index_mjs_d1066a._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_fa_index_mjs_a1beb0._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_lib_b806b5._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_2c5a34._.js");

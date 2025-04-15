@@ -39,6 +39,13 @@ const menuItems = [
         icon: undefined
     },
     {
+        label: "Videos",
+        href: "/watch",
+        gradient: "radial-gradient(circle, rgba(217, 255, 0, 0.15) 0%, rgba(255,107,0,0.06) 50%, rgba(239,78,0,0) 100%)",
+        iconColor: "text-yellow-500",
+        icon: undefined
+    },
+    {
         label: "Biography",
         href: "/biography",
         gradient: "radial-gradient(circle, rgba(255,140,0,0.15) 0%, rgba(255,107,0,0.06) 50%, rgba(239,78,0,0) 100%)",
@@ -144,7 +151,7 @@ function MenuBar() {
                 variants: navGlowVariants
             }, void 0, false, {
                 fileName: "[project]/components/theme-toggle.tsx",
-                lineNumber: 104,
+                lineNumber: 112,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -158,12 +165,12 @@ function MenuBar() {
                             children: "Dr. Hilary Okello"
                         }, void 0, false, {
                             fileName: "[project]/components/theme-toggle.tsx",
-                            lineNumber: 116,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/theme-toggle.tsx",
-                        lineNumber: 115,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -174,23 +181,23 @@ function MenuBar() {
                                 className: "text-white"
                             }, void 0, false, {
                                 fileName: "[project]/components/theme-toggle.tsx",
-                                lineNumber: 124,
+                                lineNumber: 132,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                 className: "text-white"
                             }, void 0, false, {
                                 fileName: "[project]/components/theme-toggle.tsx",
-                                lineNumber: 126,
+                                lineNumber: 134,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/theme-toggle.tsx",
-                            lineNumber: 122,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/theme-toggle.tsx",
-                        lineNumber: 121,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -215,7 +222,7 @@ function MenuBar() {
                                             variants: glowVariants
                                         }, void 0, false, {
                                             fileName: "[project]/components/theme-toggle.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 149,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].a, {
@@ -233,7 +240,7 @@ function MenuBar() {
                                                     children: item.icon
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/theme-toggle.tsx",
-                                                    lineNumber: 160,
+                                                    lineNumber: 168,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -241,13 +248,13 @@ function MenuBar() {
                                                     children: item.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/theme-toggle.tsx",
-                                                    lineNumber: 165,
+                                                    lineNumber: 173,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/theme-toggle.tsx",
-                                            lineNumber: 150,
+                                            lineNumber: 158,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].a, {
@@ -264,34 +271,34 @@ function MenuBar() {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/components/theme-toggle.tsx",
-                                                lineNumber: 178,
+                                                lineNumber: 186,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/theme-toggle.tsx",
-                                            lineNumber: 167,
+                                            lineNumber: 175,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/theme-toggle.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 143,
                                     columnNumber: 15
                                 }, this)
                             }, item.label, false, {
                                 fileName: "[project]/components/theme-toggle.tsx",
-                                lineNumber: 134,
+                                lineNumber: 142,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/theme-toggle.tsx",
-                        lineNumber: 132,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/theme-toggle.tsx",
-                lineNumber: 113,
+                lineNumber: 121,
                 columnNumber: 7
             }, this),
             isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -305,28 +312,28 @@ function MenuBar() {
                                 children: item.label
                             }, void 0, false, {
                                 fileName: "[project]/components/theme-toggle.tsx",
-                                lineNumber: 195,
+                                lineNumber: 203,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/theme-toggle.tsx",
-                            lineNumber: 191,
+                            lineNumber: 199,
                             columnNumber: 15
                         }, this)
                     }, item.label, false, {
                         fileName: "[project]/components/theme-toggle.tsx",
-                        lineNumber: 190,
+                        lineNumber: 198,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/theme-toggle.tsx",
-                lineNumber: 188,
+                lineNumber: 196,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/theme-toggle.tsx",
-        lineNumber: 99,
+        lineNumber: 107,
         columnNumber: 5
     }, this);
 }
