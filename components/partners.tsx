@@ -17,12 +17,15 @@ const partnerLogos = [
 
 export default function Partners() {
   const [slideIndex, setSlideIndex] = useState(0);
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement | null>(null); // Specify the type
   const [itemsPerView, setItemsPerView] = useState(3);
   const autoScrollInterval = 3000; // Interval for auto-scrolling in milliseconds
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [carouselWidth, setCarouselWidth] = useState(0);
-  const maxSlideIndex = Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1);
+  const maxSlideIndex = Math.max(
+    0,
+    Math.ceil(partnerLogos.length / itemsPerView) - 1,
+  );
 
   // Handle responsive itemsPerView
   useEffect(() => {
@@ -34,7 +37,7 @@ export default function Partners() {
       } else {
         setItemsPerView(3);
       }
-      
+
       // Update carousel width measurement
       if (carouselRef.current) {
         setCarouselWidth(carouselRef.current.clientWidth);
@@ -43,10 +46,10 @@ export default function Partners() {
 
     // Initial setup
     handleResize();
-    
+
     // Set up event listener
     window.addEventListener("resize", handleResize);
-    
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -59,6 +62,7 @@ export default function Partners() {
     const interval = setInterval(() => {
       setSlideIndex((prevIndex) => {
         const newIndex = prevIndex + 1;
+
         return newIndex > maxSlideIndex ? 0 : newIndex;
       });
     }, autoScrollInterval);
@@ -75,6 +79,7 @@ export default function Partners() {
     setIsAutoScrolling(false);
     setSlideIndex((prevIndex) => {
       const newIndex = prevIndex + 1;
+
       return newIndex > maxSlideIndex ? 0 : newIndex;
     });
   };
@@ -83,6 +88,7 @@ export default function Partners() {
     setIsAutoScrolling(false);
     setSlideIndex((prevIndex) => {
       const newIndex = prevIndex - 1;
+
       return newIndex < 0 ? maxSlideIndex : newIndex;
     });
   };
@@ -97,29 +103,29 @@ export default function Partners() {
       <h4 className="text-left text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 md:mb-8">
         Our Partners
       </h4>
-      
-      <div 
+
+      <div
         className="relative w-full overflow-hidden"
         onMouseEnter={pauseAutoScroll}
         onMouseLeave={resumeAutoScroll}
-        onTouchStart={pauseAutoScroll}
         onTouchEnd={resumeAutoScroll}
+        onTouchStart={pauseAutoScroll}
       >
-        <div 
+        <div
           ref={carouselRef}
-          className="w-full" 
-          style={{ position: 'relative' }}
+          className="w-full"
+          style={{ position: "relative" }}
         >
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
               transform: `translateX(-${slideIndex * getItemWidth() * itemsPerView}px)`,
-              width: `${(partnerLogos.length * getItemWidth())}px`
+              width: `${partnerLogos.length * getItemWidth()}px`,
             }}
           >
             {partnerLogos.map((logo, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex items-center justify-center"
                 style={{ width: `${getItemWidth()}px` }}
               >
@@ -140,11 +146,11 @@ export default function Partners() {
 
       <div className="flex justify-center mt-6 space-x-4">
         <Button
+          aria-label="Previous partners"
           className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors"
           size="sm"
           variant="bordered"
           onClick={handlePrev}
-          aria-label="Previous partners"
         >
           <FaArrowLeft className="h-3 w-3 sm:h-4 sm:w-4" />
         </Button>
@@ -152,6 +158,7 @@ export default function Partners() {
           {Array.from({ length: maxSlideIndex + 1 }).map((_, index) => (
             <button
               key={index}
+              aria-label={`Go to slide ${index + 1}`}
               className={`w-2 h-2 rounded-full ${
                 index === slideIndex ? "bg-white" : "bg-gray-500"
               }`}
@@ -159,16 +166,15 @@ export default function Partners() {
                 setIsAutoScrolling(false);
                 setSlideIndex(index);
               }}
-              aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
         <Button
+          aria-label="Next partners"
           className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors"
           size="sm"
           variant="bordered"
           onClick={handleNext}
-          aria-label="Next partners"
         >
           <FaArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
         </Button>
