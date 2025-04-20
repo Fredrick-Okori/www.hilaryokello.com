@@ -17,99 +17,160 @@ const partnerLogos = [
 
 export default function Partners() {
   const [slideIndex, setSlideIndex] = useState(0);
-  const carouselRef = useRef<HTMLDivElement | null>(null);
-  const slideWidthRef = useRef<number>(0);
-  const itemsPerView = 3; // Number of partner logos per view
+  const carouselRef = useRef(null);
+  const [itemsPerView, setItemsPerView] = useState(3);
   const autoScrollInterval = 3000; // Interval for auto-scrolling in milliseconds
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const [carouselWidth, setCarouselWidth] = useState(0);
+  const maxSlideIndex = Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1);
 
+  // Handle responsive itemsPerView
   useEffect(() => {
     const handleResize = () => {
-      if (carouselRef.current && carouselRef.current.children[0]) {
-        // Type assertion to HTMLElement
-        const firstChild = carouselRef.current.children[0] as HTMLElement;
-
-        slideWidthRef.current = firstChild.offsetWidth;
-        carouselRef.current.style.transform = `translateX(-${slideIndex * slideWidthRef.current * itemsPerView}px)`;
+      if (window.innerWidth < 640) {
+        setItemsPerView(1);
+      } else if (window.innerWidth < 768) {
+        setItemsPerView(2);
+      } else {
+        setItemsPerView(3);
+      }
+      
+      // Update carousel width measurement
+      if (carouselRef.current) {
+        setCarouselWidth(carouselRef.current.clientWidth);
       }
     };
 
-    handleResize(); // Initial setup
-
+    // Initial setup
+    handleResize();
+    
+    // Set up event listener
     window.addEventListener("resize", handleResize);
-
-    // Auto-scrolling functionality
-    const interval = setInterval(() => {
-      setSlideIndex(
-        (prevIndex) =>
-          (prevIndex + 1) % Math.ceil(partnerLogos.length / itemsPerView),
-      );
-    }, autoScrollInterval);
-
+    
     return () => {
       window.removeEventListener("resize", handleResize);
-      clearInterval(interval);
     };
-  }, [slideIndex]);
+  }, []);
 
+  // Handle auto-scrolling
+  useEffect(() => {
+    if (!isAutoScrolling) return;
+
+    const interval = setInterval(() => {
+      setSlideIndex((prevIndex) => {
+        const newIndex = prevIndex + 1;
+        return newIndex > maxSlideIndex ? 0 : newIndex;
+      });
+    }, autoScrollInterval);
+
+    return () => clearInterval(interval);
+  }, [isAutoScrolling, maxSlideIndex, itemsPerView]);
+
+  // Pause auto-scroll on hover
+  const pauseAutoScroll = () => setIsAutoScrolling(false);
+  const resumeAutoScroll = () => setIsAutoScrolling(true);
+
+  // Navigation handlers
   const handleNext = () => {
-    setSlideIndex(
-      (prevIndex) =>
-        (prevIndex + 1) % Math.ceil(partnerLogos.length / itemsPerView),
-    );
+    setIsAutoScrolling(false);
+    setSlideIndex((prevIndex) => {
+      const newIndex = prevIndex + 1;
+      return newIndex > maxSlideIndex ? 0 : newIndex;
+    });
   };
 
   const handlePrev = () => {
-    setSlideIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + Math.ceil(partnerLogos.length / itemsPerView)) %
-        Math.ceil(partnerLogos.length / itemsPerView),
-    );
+    setIsAutoScrolling(false);
+    setSlideIndex((prevIndex) => {
+      const newIndex = prevIndex - 1;
+      return newIndex < 0 ? maxSlideIndex : newIndex;
+    });
+  };
+
+  // Calculate item width based on items per view
+  const getItemWidth = () => {
+    return carouselWidth / itemsPerView;
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h4 className="text-left text-3xl sm:text-4xl text-white font-bold mb-4">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h4 className="text-left text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 md:mb-8">
         Our Partners
       </h4>
-      <div className="relative w-full overflow-hidden">
-        <div
+      
+      <div 
+        className="relative w-full overflow-hidden"
+        onMouseEnter={pauseAutoScroll}
+        onMouseLeave={resumeAutoScroll}
+        onTouchStart={pauseAutoScroll}
+        onTouchEnd={resumeAutoScroll}
+      >
+        <div 
           ref={carouselRef}
-          className="whitespace-nowrap transition-transform duration-500 ease-in-out flex"
-          style={{
-            transform: `translateX(-${slideIndex * (slideWidthRef.current || 0) * itemsPerView}px)`,
-          }}
+          className="w-full" 
+          style={{ position: 'relative' }}
         >
-          {partnerLogos.map((logo, index) => (
-            <div key={index} className="inline-block w-1/3 p-4">
-              <div className="relative h-[100px] w-[150px] mx-auto">
-                <Image
-                  fill
-                  alt={`Partner Logo ${index + 1}`}
-                  className="object-contain"
-                  sizes="150px"
-                  src={logo || "/placeholder.svg"}
-                />
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{
+              transform: `translateX(-${slideIndex * getItemWidth() * itemsPerView}px)`,
+              width: `${(partnerLogos.length * getItemWidth())}px`
+            }}
+          >
+            {partnerLogos.map((logo, index) => (
+              <div 
+                key={index} 
+                className="flex items-center justify-center"
+                style={{ width: `${getItemWidth()}px` }}
+              >
+                <div className="relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6">
+                  <Image
+                    fill
+                    alt={`Partner Logo ${index + 1}`}
+                    className="object-contain"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                    src={logo || "/placeholder.svg"}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-      <div className="flex justify-center mt-4 space-x-4">
+
+      <div className="flex justify-center mt-6 space-x-4">
         <Button
-          className="rounded-full text-white"
+          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors"
           size="sm"
           variant="bordered"
           onClick={handlePrev}
+          aria-label="Previous partners"
         >
-          <FaArrowLeft className="h-4 w-4" />
+          <FaArrowLeft className="h-3 w-3 sm:h-4 sm:w-4" />
         </Button>
+        <div className="flex space-x-2">
+          {Array.from({ length: maxSlideIndex + 1 }).map((_, index) => (
+            <button
+              key={index}
+              className={`w-2 h-2 rounded-full ${
+                index === slideIndex ? "bg-white" : "bg-gray-500"
+              }`}
+              onClick={() => {
+                setIsAutoScrolling(false);
+                setSlideIndex(index);
+              }}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
         <Button
-          className="rounded-full text-white"
+          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors"
           size="sm"
           variant="bordered"
           onClick={handleNext}
+          aria-label="Next partners"
         >
-          <FaArrowRight className="h-4 w-4" />
+          <FaArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
         </Button>
       </div>
     </div>

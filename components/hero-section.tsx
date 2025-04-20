@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { Mic, Play } from "lucide-react";
+import { TicketCheck } from "lucide-react";
 import { Button } from "@heroui/button";
 import Link from "next/link";
 
@@ -71,11 +72,12 @@ export function HeroSection() {
           <Button
             as={Link}
             className="text-white rounded-full"
-            href={whatsappURL} // Use the whatsappURL variable here
+            href='https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform' // Use the whatsappURL variable here
             size="lg"
+            target="_blank"
             variant="bordered"
           >
-            <Mic className="mr-2 h-5 w-5" /> Book Now
+            <TicketCheck className="mr-2 h-5 w-5" /> Reserve Tickets
           </Button>
           <Button
             as={Link}

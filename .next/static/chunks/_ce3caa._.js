@@ -34,152 +34,231 @@ function Partners() {
     _s();
     const [slideIndex, setSlideIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const carouselRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const slideWidthRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(0);
-    const itemsPerView = 3; // Number of partner logos per view
+    const [itemsPerView, setItemsPerView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(3);
     const autoScrollInterval = 3000; // Interval for auto-scrolling in milliseconds
+    const [isAutoScrolling, setIsAutoScrolling] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [carouselWidth, setCarouselWidth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const maxSlideIndex = Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1);
+    // Handle responsive itemsPerView
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Partners.useEffect": ()=>{
             const handleResize = {
                 "Partners.useEffect.handleResize": ()=>{
-                    if (carouselRef.current && carouselRef.current.children[0]) {
-                        // Type assertion to HTMLElement
-                        const firstChild = carouselRef.current.children[0];
-                        slideWidthRef.current = firstChild.offsetWidth;
-                        carouselRef.current.style.transform = `translateX(-${slideIndex * slideWidthRef.current * itemsPerView}px)`;
+                    if (window.innerWidth < 640) {
+                        setItemsPerView(1);
+                    } else if (window.innerWidth < 768) {
+                        setItemsPerView(2);
+                    } else {
+                        setItemsPerView(3);
+                    }
+                    // Update carousel width measurement
+                    if (carouselRef.current) {
+                        setCarouselWidth(carouselRef.current.clientWidth);
                     }
                 }
             }["Partners.useEffect.handleResize"];
-            handleResize(); // Initial setup
+            // Initial setup
+            handleResize();
+            // Set up event listener
             window.addEventListener("resize", handleResize);
-            // Auto-scrolling functionality
+            return ({
+                "Partners.useEffect": ()=>{
+                    window.removeEventListener("resize", handleResize);
+                }
+            })["Partners.useEffect"];
+        }
+    }["Partners.useEffect"], []);
+    // Handle auto-scrolling
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Partners.useEffect": ()=>{
+            if (!isAutoScrolling) return;
             const interval = setInterval({
                 "Partners.useEffect.interval": ()=>{
                     setSlideIndex({
-                        "Partners.useEffect.interval": (prevIndex)=>(prevIndex + 1) % Math.ceil(partnerLogos.length / itemsPerView)
+                        "Partners.useEffect.interval": (prevIndex)=>{
+                            const newIndex = prevIndex + 1;
+                            return newIndex > maxSlideIndex ? 0 : newIndex;
+                        }
                     }["Partners.useEffect.interval"]);
                 }
             }["Partners.useEffect.interval"], autoScrollInterval);
             return ({
-                "Partners.useEffect": ()=>{
-                    window.removeEventListener("resize", handleResize);
-                    clearInterval(interval);
-                }
+                "Partners.useEffect": ()=>clearInterval(interval)
             })["Partners.useEffect"];
         }
     }["Partners.useEffect"], [
-        slideIndex
+        isAutoScrolling,
+        maxSlideIndex,
+        itemsPerView
     ]);
+    // Pause auto-scroll on hover
+    const pauseAutoScroll = ()=>setIsAutoScrolling(false);
+    const resumeAutoScroll = ()=>setIsAutoScrolling(true);
+    // Navigation handlers
     const handleNext = ()=>{
-        setSlideIndex((prevIndex)=>(prevIndex + 1) % Math.ceil(partnerLogos.length / itemsPerView));
+        setIsAutoScrolling(false);
+        setSlideIndex((prevIndex)=>{
+            const newIndex = prevIndex + 1;
+            return newIndex > maxSlideIndex ? 0 : newIndex;
+        });
     };
     const handlePrev = ()=>{
-        setSlideIndex((prevIndex)=>(prevIndex - 1 + Math.ceil(partnerLogos.length / itemsPerView)) % Math.ceil(partnerLogos.length / itemsPerView));
+        setIsAutoScrolling(false);
+        setSlideIndex((prevIndex)=>{
+            const newIndex = prevIndex - 1;
+            return newIndex < 0 ? maxSlideIndex : newIndex;
+        });
+    };
+    // Calculate item width based on items per view
+    const getItemWidth = ()=>{
+        return carouselWidth / itemsPerView;
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+        className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                className: "text-left text-3xl sm:text-4xl text-white font-bold mb-4",
+                className: "text-left text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 md:mb-8",
                 children: "Our Partners"
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 71,
+                lineNumber: 97,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative w-full overflow-hidden",
+                onMouseEnter: pauseAutoScroll,
+                onMouseLeave: resumeAutoScroll,
+                onTouchStart: pauseAutoScroll,
+                onTouchEnd: resumeAutoScroll,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: carouselRef,
-                    className: "whitespace-nowrap transition-transform duration-500 ease-in-out flex",
+                    className: "w-full",
                     style: {
-                        transform: `translateX(-${slideIndex * (slideWidthRef.current || 0) * itemsPerView}px)`
+                        position: 'relative'
                     },
-                    children: partnerLogos.map((logo, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "inline-block w-1/3 p-4",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative h-[100px] w-[150px] mx-auto",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    fill: true,
-                                    alt: `Partner Logo ${index + 1}`,
-                                    className: "object-contain",
-                                    sizes: "150px",
-                                    src: logo || "/placeholder.svg"
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex transition-transform duration-500 ease-in-out",
+                        style: {
+                            transform: `translateX(-${slideIndex * getItemWidth() * itemsPerView}px)`,
+                            width: `${partnerLogos.length * getItemWidth()}px`
+                        },
+                        children: partnerLogos.map((logo, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center justify-center",
+                                style: {
+                                    width: `${getItemWidth()}px`
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        fill: true,
+                                        alt: `Partner Logo ${index + 1}`,
+                                        className: "object-contain",
+                                        sizes: "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw",
+                                        src: logo || "/placeholder.svg"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/partners.tsx",
+                                        lineNumber: 127,
+                                        columnNumber: 19
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/partners.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 126,
                                     columnNumber: 17
                                 }, this)
-                            }, void 0, false, {
+                            }, index, false, {
                                 fileName: "[project]/components/partners.tsx",
-                                lineNumber: 84,
+                                lineNumber: 121,
                                 columnNumber: 15
-                            }, this)
-                        }, index, false, {
-                            fileName: "[project]/components/partners.tsx",
-                            lineNumber: 83,
-                            columnNumber: 13
-                        }, this))
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/partners.tsx",
+                        lineNumber: 113,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/partners.tsx",
-                    lineNumber: 75,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 74,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex justify-center mt-4 space-x-4",
+                className: "flex justify-center mt-6 space-x-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                        className: "rounded-full text-white",
+                        className: "rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors",
                         size: "sm",
                         variant: "bordered",
                         onClick: handlePrev,
+                        "aria-label": "Previous partners",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaArrowLeft"], {
-                            className: "h-4 w-4"
+                            className: "h-3 w-3 sm:h-4 sm:w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 104,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 98,
+                        lineNumber: 142,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex space-x-2",
+                        children: Array.from({
+                            length: maxSlideIndex + 1
+                        }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: `w-2 h-2 rounded-full ${index === slideIndex ? "bg-white" : "bg-gray-500"}`,
+                                onClick: ()=>{
+                                    setIsAutoScrolling(false);
+                                    setSlideIndex(index);
+                                },
+                                "aria-label": `Go to slide ${index + 1}`
+                            }, index, false, {
+                                fileName: "[project]/components/partners.tsx",
+                                lineNumber: 153,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/partners.tsx",
+                        lineNumber: 151,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                        className: "rounded-full text-white",
+                        className: "rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors",
                         size: "sm",
                         variant: "bordered",
                         onClick: handleNext,
+                        "aria-label": "Next partners",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaArrowRight"], {
-                            className: "h-4 w-4"
+                            className: "h-3 w-3 sm:h-4 sm:w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 112,
+                            lineNumber: 173,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 106,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 97,
+                lineNumber: 141,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/partners.tsx",
-        lineNumber: 70,
+        lineNumber: 96,
         columnNumber: 5
     }, this);
 }
-_s(Partners, "NyQMpEZEPrNlCf+n5AvCZ4d9eBA=");
+_s(Partners, "rw/fa5lBiBWtsA81Yz7gCq39PRw=");
 _c = Partners;
 var _c;
 __turbopack_refresh__.register(_c, "Partners");

@@ -1,0 +1,16 @@
+const CHUNK_PUBLIC_PATH = "server/app/reserve/page.js";
+const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_101e1c._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__adba9d._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_bs_index_mjs_d1066a._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_fa_index_mjs_a1beb0._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_lib_b806b5._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_2c5a34._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__4ac786._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__49471b._.css");
+runtime.loadChunk("server/chunks/ssr/app_error_tsx_b07d46._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_662325._.js");
+runtime.loadChunk("server/chunks/ssr/app_reserve_layout_tsx_dc328c._.js");
+runtime.loadChunk("server/chunks/ssr/_727cf5._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/reserve/page/actions.js [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/reserve/page { MODULE_0 => \"[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_1 => \"[project]/app/error.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_2 => \"[project]/node_modules/next/dist/client/components/not-found-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_3 => \"[project]/app/reserve/layout.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_4 => \"[project]/app/reserve/page.tsx [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH).exports;

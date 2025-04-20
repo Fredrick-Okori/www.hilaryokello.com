@@ -89,3 +89,23 @@ body {
     0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@layer utilities {
+  .glow-border {
+    pointer-events: none;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 215, 0, 0.4), transparent 60%),
+                radial-gradient(circle at 70% 70%, rgba(255, 0, 0, 0.3), transparent 60%);
+    filter: blur(40px);
+    animation: pulseGlow 4s infinite ease-in-out;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}

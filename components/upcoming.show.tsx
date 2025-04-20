@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@heroui/button";
+import Link from "next/link";
 
 const UpcomingShows = () => {
-  const imageDimension = 500;
+  const imageDimension = 400;
   const today = new Date();
 
   // Date parsing function
@@ -13,16 +14,15 @@ const UpcomingShows = () => {
 
   // Ticket Info
   const ticketInfo1 = {
-    dateLabel: "18th April 2025",
-    date: parseDate("2025-04-18T19:30:00"),
+    dateLabel: "13th June 2025",
+    date: parseDate("2025-06-13T19:30:00"),
     time: "7:30 PM - 10:30 PM",
-    location: "Donels Bistro & Lounge",
-    ticketsAvailable: "50 seats",
-    ticketPrice: "25k",
-    image: "/liveatthestork.webp",
-    link: "https://karitickets.com/event/LIVE_AT_THE_STORK%3A_HILARY_OKELLO",
+    location: "Uganda National Theatre - Kampala",
+    ticketPrice: "40K Single | 60K Couple",
+    image: "/uganda_must_laugh.jpeg",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform",
     description:
-      "Join us for a night of live entertainment at the Stork. This show features the best performances and is not to be missed.",
+      "Did you miss the first Uganda Must Laugh? This is yet another version of the show with relatable and crafted comedy.",
   };
 
   const ticketInfo2 = {
@@ -47,26 +47,30 @@ const UpcomingShows = () => {
       {ticketInfo1.date > today && (
         <div>
           <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
-            Upcoming Show: Live at the Stork
+            Upcoming Show: Uganda Must Laugh II
           </h4>
           <Button
             className="rounded-full text-white px-4 py-2 mt-4"
             variant="bordered"
-            onClick={() => handleBookTickets(ticketInfo1.link)}
+            target="_blank"
+            as={Link}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform"
           >
-            Buy Ticket Now
+            Reserve Tickets
           </Button>
 
           <div className="flex flex-col lg:flex-row mt-10 gap-8 items-center">
-            <div className="w-full lg:w-1/2">
-              <Image
-                alt="Live at the Stork"
-                className="w-full h-auto rounded-2xl object-cover"
-                height={imageDimension}
-                src={ticketInfo1.image}
-                width={imageDimension}
-              />
-            </div>
+          <div className="relative w-full lg:w-1/2">
+  <div className="absolute inset-0 z-0 rounded-2xl glow-border" />
+  <Image
+    alt="Uganda Must Laugh II"
+    className="relative z-10 rounded-2xl object-cover"
+    height={imageDimension}
+    src={ticketInfo1.image}
+    width={imageDimension}
+  />
+</div>
+
             <div className="w-full lg:w-1/2 p-2 sm:p-4">
               <h5 className="text-left text-2xl text-white font-bold">
                 Show Description
@@ -80,16 +84,18 @@ const UpcomingShows = () => {
               <p className="text-left text-lg text-white mt-4">
                 {ticketInfo1.dateLabel} • {ticketInfo1.time} <br />
                 Location: {ticketInfo1.location} <br />
-                Tickets Available: {ticketInfo1.ticketsAvailable} <br />
+              
                 Price: {ticketInfo1.ticketPrice}
               </p>
               <Button
-                className="rounded-full text-white px-4 py-2 mt-8"
-                variant="bordered"
-                onClick={() => handleBookTickets(ticketInfo1.link)}
-              >
-                Get Ticket Now
-              </Button>
+            className="rounded-full text-white px-4 py-2 mt-4"
+            variant="bordered"
+            as={Link}
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform"
+          >
+            Reserve Tickets
+          </Button>
             </div>
           </div>
         </div>
