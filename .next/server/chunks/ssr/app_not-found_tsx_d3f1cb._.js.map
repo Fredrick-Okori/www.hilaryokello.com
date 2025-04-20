@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":["file:///Users/graphics/hilaryokello/app/not-found.tsx/proxy.js"],"sourcesContent":["const { createClientModuleProxy } = require(\"react-server-dom-turbopack/server.edge\");\n\n__turbopack_export_namespace__(createClientModuleProxy(\"[project]/app/not-found.tsx <module evaluation>\"));\n"],"names":[],"mappings":"AAAA,MAAM,EAAE,uBAAuB,EAAE;AAEjC,+BAA+B,wBAAwB"}},
+    {"offset": {"line": 8, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///Users/graphics/hilaryokello/app/not-found.tsx/proxy.js"],"sourcesContent":["const { createClientModuleProxy } = require(\"react-server-dom-turbopack/server.edge\");\n\n__turbopack_export_namespace__(createClientModuleProxy(\"[project]/app/not-found.tsx\"));\n"],"names":[],"mappings":"AAAA,MAAM,EAAE,uBAAuB,EAAE;AAEjC,+BAA+B,wBAAwB"}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
