@@ -4,7 +4,7 @@ import { Button } from "@heroui/button";
 import Link from "next/link";
 
 const UpcomingShows = () => {
-  const imageDimension = 400;
+  const imageDimension = 500;
   const today = new Date();
 
   // Date parsing function
@@ -19,19 +19,19 @@ const UpcomingShows = () => {
     time: "7:30 PM - 10:30 PM",
     location: "Uganda National Theatre - Kampala",
     ticketPrice: "40K Single | 60K Couple",
-    image: "/uganda_must_laugh.jpeg",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform",
+    image: "/uganda_must_laugh_yellow.PNG",
+    link: "https://karitickets.com/event/UGANDA_MUST_LAUGH",
     description:
-      "Did you miss the first Uganda Must Laugh? This is yet another version of the show with relatable and crafted comedy.",
+      "Uganda, Get Ready to Laugh Like Never Before! The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is back with Part TWO of his smash-hit show, Uganda Must Laugh!Live at the National Theatre, Kampala, it’s a night of side-splitting comedy, 100% in English and perfect for the whole family. Bring your crew, bring your laughter—because Uganda must laugh again!",
   };
 
   const ticketInfo2 = {
     dateLabel: "30th May 2025",
     date: parseDate("2025-05-30T19:00:00"),
     time: "7:00 PM - Late",
-    location: "Mikaela Events - Lusaka",
-    ticketPrice: "K500",
-    image: "/zambia_uganda.jpeg",
+    location: "Scream Night Club - Lusaka",
+    ticketPrice: "VIP K500 | Standard K200 | Double K300",
+    image: "/zambian_show.jpeg",
     link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463445131",
     description:
       "Zambia vs Uganda comedy show, a night of unstoppable laughter ft: Inspector Pamela, live music, explode band.",
@@ -54,9 +54,9 @@ const UpcomingShows = () => {
             variant="bordered"
             target="_blank"
             as={Link}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform"
+            href="https://karitickets.com/event/UGANDA_MUST_LAUGH"
           >
-            Reserve Tickets
+            Buy Ticket Now
           </Button>
 
           <div className="flex flex-col lg:flex-row mt-10 gap-8 items-center">
@@ -85,16 +85,16 @@ const UpcomingShows = () => {
                 {ticketInfo1.dateLabel} • {ticketInfo1.time} <br />
                 Location: {ticketInfo1.location} <br />
               
-                Price: {ticketInfo1.ticketPrice}
+                Tickets: {ticketInfo1.ticketPrice}
               </p>
               <Button
             className="rounded-full text-white px-4 py-2 mt-4"
             variant="bordered"
             as={Link}
             target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform"
+            href="https://karitickets.com/event/UGANDA_MUST_LAUGH"
           >
-            Reserve Tickets
+            Buy Tickets Now
           </Button>
             </div>
           </div>
@@ -138,7 +138,7 @@ const UpcomingShows = () => {
               <p className="text-left text-lg text-white mt-4">
                 {ticketInfo2.dateLabel} • {ticketInfo2.time} <br />
                 Location: {ticketInfo2.location} <br />
-                Price: {ticketInfo2.ticketPrice}
+                Tickets: {ticketInfo2.ticketPrice}
               </p>
               <Button
                 className="rounded-full text-white px-4 py-2 mt-8"

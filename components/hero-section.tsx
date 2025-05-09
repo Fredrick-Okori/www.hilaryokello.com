@@ -58,9 +58,8 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Dive into laughter with live performances that keep the good vibes
-          rolling. Find tour dates across the country and experience stand-up
-          like never before.
+The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is back with Part TWO of his smash-hit show, "Uganda Must Laugh"!
+
         </motion.p>
 
         <motion.div
@@ -72,12 +71,12 @@ export function HeroSection() {
           <Button
             as={Link}
             className="text-white rounded-full"
-            href='https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform' // Use the whatsappURL variable here
+            href='https://karitickets.com/event/UGANDA_MUST_LAUGH' // Use the whatsappURL variable here
             size="lg"
             target="_blank"
             variant="bordered"
           >
-            <TicketCheck className="mr-2 h-5 w-5" /> Reserve Tickets
+            <TicketCheck className="mr-2 h-5 w-5" /> Buy Tickets
           </Button>
           <Button
             as={Link}

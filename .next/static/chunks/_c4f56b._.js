@@ -103,7 +103,7 @@ function HeroSection() {
                             duration: 0.8,
                             delay: 0.2
                         },
-                        children: "Dive into laughter with live performances that keep the good vibes rolling. Find tour dates across the country and experience stand-up like never before."
+                        children: 'The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is back with Part TWO of his smash-hit show, "Uganda Must Laugh"!'
                     }, void 0, false, {
                         fileName: "[project]/components/hero-section.tsx",
                         lineNumber: 55,
@@ -127,7 +127,7 @@ function HeroSection() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
                                 as: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
                                 className: "text-white rounded-full",
-                                href: "https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform" // Use the whatsappURL variable here
+                                href: "https://karitickets.com/event/UGANDA_MUST_LAUGH" // Use the whatsappURL variable here
                                 ,
                                 size: "lg",
                                 target: "_blank",
@@ -137,14 +137,14 @@ function HeroSection() {
                                         className: "mr-2 h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-section.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 79,
                                         columnNumber: 13
                                     }, this),
-                                    " Reserve Tickets"
+                                    " Buy Tickets"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 72,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
@@ -158,20 +158,20 @@ function HeroSection() {
                                         className: "mr-2 h-5 w-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/hero-section.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 88,
                                         columnNumber: 13
                                     }, this),
                                     " View Gallery"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 82,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 66,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this)
                 ]
@@ -195,7 +195,7 @@ function HeroSection() {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 95,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -214,7 +214,7 @@ function HeroSection() {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 105,
+                lineNumber: 104,
                 columnNumber: 7
             }, this)
         ]
@@ -505,7 +505,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$
 ;
 ;
 const UpcomingShows = ()=>{
-    const imageDimension = 400;
+    const imageDimension = 500;
     const today = new Date();
     // Date parsing function
     const parseDate = (dateString)=>{
@@ -518,17 +518,17 @@ const UpcomingShows = ()=>{
         time: "7:30 PM - 10:30 PM",
         location: "Uganda National Theatre - Kampala",
         ticketPrice: "40K Single | 60K Couple",
-        image: "/uganda_must_laugh.jpeg",
-        link: "https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform",
-        description: "Did you miss the first Uganda Must Laugh? This is yet another version of the show with relatable and crafted comedy."
+        image: "/uganda_must_laugh_yellow.PNG",
+        link: "https://karitickets.com/event/UGANDA_MUST_LAUGH",
+        description: "Uganda, Get Ready to Laugh Like Never Before! The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is back with Part TWO of his smash-hit show, Uganda Must Laugh!Live at the National Theatre, Kampala, it’s a night of side-splitting comedy, 100% in English and perfect for the whole family. Bring your crew, bring your laughter—because Uganda must laugh again!"
     };
     const ticketInfo2 = {
         dateLabel: "30th May 2025",
         date: parseDate("2025-05-30T19:00:00"),
         time: "7:00 PM - Late",
-        location: "Mikaela Events - Lusaka",
-        ticketPrice: "K500",
-        image: "/zambia_uganda.jpeg",
+        location: "Scream Night Club - Lusaka",
+        ticketPrice: "VIP K500 | Standard K200 | Double K300",
+        image: "/zambian_show.jpeg",
         link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463445131",
         description: "Zambia vs Uganda comedy show, a night of unstoppable laughter ft: Inspector Pamela, live music, explode band."
     };
@@ -553,8 +553,8 @@ const UpcomingShows = ()=>{
                         variant: "bordered",
                         target: "_blank",
                         as: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-                        href: "https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform",
-                        children: "Reserve Tickets"
+                        href: "https://karitickets.com/event/UGANDA_MUST_LAUGH",
+                        children: "Buy Ticket Now"
                     }, void 0, false, {
                         fileName: "[project]/components/upcoming.show.tsx",
                         lineNumber: 52,
@@ -637,7 +637,7 @@ const UpcomingShows = ()=>{
                                                 lineNumber: 86,
                                                 columnNumber: 50
                                             }, this),
-                                            "Price: ",
+                                            "Tickets: ",
                                             ticketInfo1.ticketPrice
                                         ]
                                     }, void 0, true, {
@@ -650,8 +650,8 @@ const UpcomingShows = ()=>{
                                         variant: "bordered",
                                         as: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
                                         target: "_blank",
-                                        href: "https://docs.google.com/forms/d/e/1FAIpQLSdliW9Xp5AnGND3_Ng0C_qlg99nbQSrvcPnCvWTlQHMDx_UHw/viewform",
-                                        children: "Reserve Tickets"
+                                        href: "https://karitickets.com/event/UGANDA_MUST_LAUGH",
+                                        children: "Buy Tickets Now"
                                     }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
                                         lineNumber: 90,
@@ -764,7 +764,7 @@ const UpcomingShows = ()=>{
                                                 lineNumber: 140,
                                                 columnNumber: 50
                                             }, this),
-                                            "Price: ",
+                                            "Tickets: ",
                                             ticketInfo2.ticketPrice
                                         ]
                                     }, void 0, true, {
