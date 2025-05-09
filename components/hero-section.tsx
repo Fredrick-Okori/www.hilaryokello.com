@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
-import { Mic, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import { TicketCheck } from "lucide-react";
 import { Button } from "@heroui/button";
 import Link from "next/link";
@@ -12,11 +12,12 @@ export function HeroSection() {
   const isDark = theme === "dark";
 
   const phoneNumber = "+256752734280"; // Replace with Dr. Hilary Okello's number
-  const message = "Hello Dr. Hilary Okello, I'm interested in your comedy shows!";
+  const message =
+    "Hello Dr. Hilary Okello, I'm interested in your comedy shows!";
   const encodedMessage = encodeURIComponent(message);
   const whatsappURL = `https://wa.me/${phoneNumber.replace(
     /[^0-9]/g,
-    ""
+    "",
   )}?text=${encodedMessage}`;
 
   return (
@@ -58,8 +59,9 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is back with Part TWO of his smash-hit show, "Uganda Must Laugh"!
-
+          The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is
+          back with Part TWO of his smash-hit show, &quot;Uganda Must
+          Laugh&quot;!
         </motion.p>
 
         <motion.div
@@ -71,7 +73,7 @@ The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is bac
           <Button
             as={Link}
             className="text-white rounded-full"
-            href='https://karitickets.com/event/UGANDA_MUST_LAUGH' // Use the whatsappURL variable here
+            href="https://karitickets.com/event/UGANDA_MUST_LAUGH" // Use the whatsappURL variable here
             size="lg"
             target="_blank"
             variant="bordered"
