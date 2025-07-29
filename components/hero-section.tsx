@@ -43,7 +43,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          Uganda Must Laugh II - A comedy Special
+        Dr. Hilary Okello Comedy
         </motion.h1>
         <motion.h4
           animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          Returns 13th June - National Theatre
+        Get latest updates on my shows
         </motion.h4>
         <motion.p
           animate={{ opacity: 1, y: 0 }}
@@ -59,9 +59,8 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is
-          back with Part TWO of his smash-hit show, &quot;Uganda Must
-          Laugh&quot;!
+          Uganda&lsquo;s finest stand-up comedian and Africa’s Doctor of Comedy. 
+          A true ambassador for Ugandan comedy, Dr. Hilary has represented Uganda on international stages.
         </motion.p>
 
         <motion.div
@@ -73,12 +72,12 @@ export function HeroSection() {
           <Button
             as={Link}
             className="text-white rounded-full"
-            href="https://karitickets.com/event/UGANDA_MUST_LAUGH" // Use the whatsappURL variable here
+            href="https://kayetickets.com/events/grand-finale-uganda-must-laugh" // Use the whatsappURL variable here
             size="lg"
             target="_blank"
             variant="bordered"
           >
-            <TicketCheck className="mr-2 h-5 w-5" /> Buy Tickets
+            <TicketCheck className="mr-2 h-5 w-5" /> Pre-Book
           </Button>
           <Button
             as={Link}
