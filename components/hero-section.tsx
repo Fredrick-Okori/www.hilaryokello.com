@@ -72,7 +72,7 @@ export function HeroSection() {
           <Button
             as={Link}
             className="text-white rounded-full"
-            href="https://kayetickets.com/events/grand-finale-uganda-must-laugh" // Use the whatsappURL variable here
+            href="https://docs.google.com/forms/d/e/1FAIpQLSclV1weyayxjcMC3qv8y7y96UrbOoDaD61WO6IYjQrP4ycs6w/viewform" // Use the whatsappURL variable here
             size="lg"
             target="_blank"
             variant="bordered"
