@@ -45,7 +45,7 @@ export default function Footer() {
             href="https://www.kayetickets.com/"
             rel="noopener noreferrer"
             target="_blank"
-              className={{color: 'text-transparent"}}
+              
           >
             Powered by kayetickets
           </a>
