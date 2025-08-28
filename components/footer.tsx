@@ -2,6 +2,8 @@ import React from "react";
 import { FaTwitter, FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
+import Link from "next/link"
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-8">
@@ -38,7 +40,15 @@ export default function Footer() {
         </div>
         <div className="text-center text-sm">
           &copy; {new Date().getFullYear()} Dr. Hilary Okello. All rights
-          reserved.
+          reserved. 
+            <a
+            href="https://www.kayetickets.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+              className={{color: 'text-transparent"}}
+          >
+            Powered by kayetickets
+          </a>
         </div>
       </div>
     </footer>
