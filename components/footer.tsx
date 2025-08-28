@@ -40,12 +40,12 @@ export default function Footer() {
         </div>
         <div className="text-center text-sm">
           &copy; {new Date().getFullYear()} Dr. Hilary Okello. All rights
-          reserved. 
+          reserved. {" "}
             <a
             href="https://www.kayetickets.com/"
             rel="noopener noreferrer"
             target="_blank"
-              
+              className="text-transparent"
           >
             Powered by kayetickets
           </a>
