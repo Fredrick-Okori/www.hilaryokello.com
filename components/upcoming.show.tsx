@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Button } from "@heroui/button";
 import Link from "next/link";
 
+import { ChevronRight } from "lucide-react";
+
 const UpcomingShows = () => {
   const imageDimension = 500;
   const today = new Date();
@@ -14,15 +16,15 @@ const UpcomingShows = () => {
 
   // Ticket Info
   const ticketInfo1 = {
-    dateLabel: "13th June 2025",
-    date: parseDate("2025-06-13T19:30:00"),
+    dateLabel: "7th November 2025",
+    date: parseDate("2025-11-07T19:30:00"),
     time: "7:30 PM - 10:30 PM",
-    location: "Uganda National Theatre - Kampala",
-    ticketPrice: "40K Single | 60K Couple",
-    image: "/uganda_must_laugh_yellow.PNG",
-    link: "https://karitickets.com/event/UGANDA_MUST_LAUGH",
+    location: "Theatre La Bonita - Kampala",
+    ticketPrice: "40K Single | 60K A Pair",
+    image: "/gallery/Uganda-Must-Laugh-Grand-Finale---Dr.-Lighter-Frame.webp",
+    link: "https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale",
     description:
-      "Uganda, Get Ready to Laugh Like Never Before! The unstoppable Dr. Hilary Okello—Uganda’s finest stand-up comedian—is back with Part TWO of his smash-hit show, Uganda Must Laugh!Live at the National Theatre, Kampala, it’s a night of side-splitting comedy, 100% in English and perfect for the whole family. Bring your crew, bring your laughter—because Uganda must laugh again!",
+      "After a year of unstoppable laughter, the biggest comedy movement in the land comes back for one last thunderous night! Dr Hilary Okello returns in this Grand Finale bringing together Uganda’s finest comedians, epic performances, and unforgettable moments of madness. It’s not just a show—it’s history in the making. Come ready to laugh, scream, and celebrate Ugandan comedy at its peak!",
   };
 
   const ticketInfo2 = {
@@ -46,17 +48,21 @@ const UpcomingShows = () => {
       {/* First Show */}
       {ticketInfo1.date > today && (
         <div>
+          <h2 className="text-left text-3xl sm:text-4xl text-white font-bold">
+            Upcoming Show <ChevronRight className="inline-block ml-2" />
+          </h2>
           <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
-            Upcoming Show: Uganda Must Laugh II
+            Grand Finale - Uganda Must Laugh 
           </h4>
           <Button
-            className="rounded-full text-white px-4 py-2 mt-4"
+            className="rounded-full text-white px-6 py-3 mt-4"
             variant="bordered"
             target="_blank"
             as={Link}
-            href="https://karitickets.com/event/UGANDA_MUST_LAUGH"
+            href="https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale"
           >
             Buy Ticket Now
+             <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
 
           <div className="flex flex-col lg:flex-row mt-10 gap-8 items-center">
@@ -88,13 +94,14 @@ const UpcomingShows = () => {
                 Tickets: {ticketInfo1.ticketPrice}
               </p>
               <Button
-            className="rounded-full text-white px-4 py-2 mt-4"
+            className="rounded-full text-white mt-4"
             variant="bordered"
             as={Link}
             target="_blank"
-            href="https://karitickets.com/event/UGANDA_MUST_LAUGH"
+            href="https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale"
           >
             Buy Tickets Now
+             <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
             </div>
           </div>

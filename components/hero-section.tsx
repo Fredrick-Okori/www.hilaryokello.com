@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
-import { Play } from "lucide-react";
+import { ChevronRight, Play } from "lucide-react";
 import { TicketCheck } from "lucide-react";
 import { Button } from "@heroui/button";
 import Link from "next/link";
@@ -51,16 +51,24 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-        Get latest updates on my shows
+        Grand Finale - Uganda Must Laugh
         </motion.h4>
+          <motion.h3
+          animate={{ opacity: 1, y: 0 }}
+          className="text-gray-900 bg-gray-100 py-2 px-4 rounded-full text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+          initial={{ opacity: 0, y: 30 }}
+          transition={{ duration: 0.8 }}
+        >
+        Returns 7th November 2025
+        </motion.h3>
         <motion.p
           animate={{ opacity: 1, y: 0 }}
           className="text-white/90 text-base sm:text-lg md:text-xl mt-6 max-w-2xl drop-shadow"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Uganda&lsquo;s finest stand-up comedian and Africa’s Doctor of Comedy. 
-          A true ambassador for Ugandan comedy, Dr. Hilary has represented Uganda on international stages.
+          After a year of unstoppable laughter, the biggest comedy movement in the land comes back for one last thunderous night.
+          Dr Hilary Okello returns in this Grand Finale bringing together Uganda’s finest comedians, epic performances, and unforgettable moments of madness.
         </motion.p>
 
         <motion.div
@@ -72,12 +80,12 @@ export function HeroSection() {
           <Button
             as={Link}
             className="text-white rounded-full"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSclV1weyayxjcMC3qv8y7y96UrbOoDaD61WO6IYjQrP4ycs6w/viewform" // Use the whatsappURL variable here
+            href="https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale" // Use the whatsappURL variable here
             size="lg"
             target="_blank"
             variant="bordered"
           >
-            <TicketCheck className="mr-2 h-5 w-5" /> Pre-Book
+             Get Ticket <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
           <Button
             as={Link}
@@ -86,7 +94,8 @@ export function HeroSection() {
             size="lg"
             variant="bordered"
           >
-            <Play className="mr-2 h-5 w-5" /> View Gallery
+             View Gallery
+             <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
         </motion.div>
       </div>
