@@ -36,7 +36,7 @@ export function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-start justify-center h-full px-4 md:px-8 text-left max-w-4xl mx-auto">
+      <div className="relative z-10 ml-12 flex flex-col items-start justify-center h-full px-4 md:px-8 text-left max-w-4xl mx-auto">
         <motion.h1
           animate={{ opacity: 1, y: 0 }}
           className="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-md"
