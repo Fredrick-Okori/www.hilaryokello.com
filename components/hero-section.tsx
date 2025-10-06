@@ -85,16 +85,16 @@ export function HeroSection() {
             target="_blank"
             variant="bordered"
           >
-             Get Ticket <ChevronRight className="mr-2 h-5 w-5" />
+             Single UGX: 40,000 <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
           <Button
             as={Link}
             className="text-white rounded-full"
-            href="/gallery"
+            href="https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale"
             size="lg"
             variant="bordered"
           >
-             View Gallery
+             Couple UGX: 60,000
              <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
         </motion.div>
