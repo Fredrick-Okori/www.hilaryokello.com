@@ -51,9 +51,7 @@ const UpcomingShows = () => {
           <h2 className="text-left text-3xl sm:text-4xl text-white font-bold">
             Upcoming Show <ChevronRight className="inline-block ml-2" />
           </h2>
-          <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
-            Grand Finale - Uganda Must Laugh 
-          </h4>
+         
           <Button
             className="rounded-full text-white px-6 py-3 mt-4"
             variant="bordered"
@@ -78,9 +76,9 @@ const UpcomingShows = () => {
 </div>
 
             <div className="w-full lg:w-1/2 p-2 sm:p-4">
-              <h5 className="text-left text-2xl text-white font-bold">
-                Show Description
-              </h5>
+            <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
+            Grand Finale - Uganda Must Laugh 
+          </h4>
               <p className="text-left text-lg text-white mt-4">
                 {ticketInfo1.description}
               </p>
@@ -133,9 +131,9 @@ const UpcomingShows = () => {
               />
             </div>
             <div className="w-full lg:w-1/2 p-2 sm:p-4">
-              <h5 className="text-left text-2xl text-white font-bold">
-                Show Description
-              </h5>
+              <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
+            Upcoming Show: Mikaela Events - Lusaka
+          </h4>
               <p className="text-left text-lg text-white mt-4">
                 {ticketInfo2.description}
               </p>
