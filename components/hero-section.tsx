@@ -93,6 +93,7 @@ export function HeroSection() {
             href="https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale"
             size="lg"
             variant="bordered"
+            target="_blank"
           >
              Couple UGX: 60,000
              <ChevronRight className="mr-2 h-5 w-5" />
