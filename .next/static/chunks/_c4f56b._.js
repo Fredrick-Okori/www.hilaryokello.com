@@ -36,7 +36,7 @@ function HeroSection() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-cover bg-center",
                 style: {
-                    backgroundImage: "url('/bg_hero_edited.png')",
+                    backgroundImage: "url('/bg_hero_edited.webp')",
                     filter: isDark ? "brightness(0.4) saturate(1.2)" : "brightness(0.8) saturate(1.1)",
                     backgroundSize: "cover",
                     backgroundPosition: "center"
@@ -73,7 +73,7 @@ function HeroSection() {
                             opacity: 1,
                             y: 0
                         },
-                        className: "text-gray-900 bg-gray-100 py-2 px-4 rounded-full text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-md",
+                        className: "text-gray-900 bg-gray-100 py-2 px-4  text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-md",
                         initial: {
                             opacity: 0,
                             y: 30
@@ -92,7 +92,7 @@ function HeroSection() {
                             opacity: 1,
                             y: 0
                         },
-                        className: "text-gray-900 bg-gray-100 py-2 px-4 rounded-full text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-md",
+                        className: "text-gray-900 bg-gray-100 py-2 px-4  text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-md",
                         initial: {
                             opacity: 0,
                             y: 30

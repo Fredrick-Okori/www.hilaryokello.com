@@ -26,7 +26,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/bg_hero_edited.png')",
+          backgroundImage: "url('/bg_hero_edited.webp')",
           filter: isDark
             ? "brightness(0.4) saturate(1.2)"
             : "brightness(0.8) saturate(1.1)",
@@ -47,7 +47,7 @@ export function HeroSection() {
         </motion.h1>
         <motion.h4
           animate={{ opacity: 1, y: 0 }}
-          className="text-gray-900 bg-gray-100 py-2 px-4 rounded-full text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+          className="text-gray-900 bg-gray-100 py-2 px-4  text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-md"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
@@ -55,7 +55,7 @@ export function HeroSection() {
         </motion.h4>
           <motion.h3
           animate={{ opacity: 1, y: 0 }}
-          className="text-gray-900 bg-gray-100 py-2 px-4 rounded-full text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+          className="text-gray-900 bg-gray-100 py-2 px-4  text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-md"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
