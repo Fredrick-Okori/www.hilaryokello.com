@@ -79,9 +79,9 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <Button
-           
+           as={Link}
             className="text-white rounded-full"
-        
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf7BUyd2f4kIfBl9J_CmlcS5rq89a0_L5UIy7gzVjNFWC3OVA/viewform"
             size="lg"
             target="_blank"
             variant="bordered"
@@ -89,9 +89,9 @@ export function HeroSection() {
              Single R200 <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
           <Button
-           
+           as={Link}
             className="text-white rounded-full"
-           
+           href="https://docs.google.com/forms/d/e/1FAIpQLSf7BUyd2f4kIfBl9J_CmlcS5rq89a0_L5UIy7gzVjNFWC3OVA/viewform"
             size="lg"
             variant="bordered"
             target="_blank"

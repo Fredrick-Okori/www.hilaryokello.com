@@ -17,7 +17,7 @@ const UpcomingShows = () => {
   // Ticket Info
   const ticketInfo1 = {
     dateLabel: "19th November 2025",
-    date: parseDate("2025-11-07T19:30:00"),
+    date: parseDate("2025-11-19T19:30:00"),
     time: "7:30 PM",
     location: "Victory Theatre Johannesburg",
     ticketPrice: "R200 Single | R300 a Couple",
