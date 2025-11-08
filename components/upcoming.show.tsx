@@ -78,7 +78,7 @@ const UpcomingShows = () => {
 
             <div className="w-full lg:w-1/2 p-2 sm:p-4">
             <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
-            Grand Finale - Uganda Must Laugh 
+             Dr. Hilary Okello - Live in Johannesburg
           </h4>
               <p className="text-left text-lg text-white mt-4">
                 {ticketInfo1.description}

@@ -43,7 +43,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-        Dr. Hilary Okello Comedy
+        Dr. Hilary Okello 
         </motion.h1>
         <motion.h4
           animate={{ opacity: 1, y: 0 }}
