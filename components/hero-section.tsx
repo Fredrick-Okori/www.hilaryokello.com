@@ -51,7 +51,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-        Grand Finale - Uganda Must Laugh
+       Live in Johannesburg
         </motion.h4>
           <motion.h3
           animate={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-        Returns 7th November 2025
+        19th November 2025
         </motion.h3>
         <motion.p
           animate={{ opacity: 1, y: 0 }}
@@ -67,8 +67,9 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          After a year of unstoppable laughter, the biggest comedy movement in the land comes back for one last thunderous night.
-          Dr Hilary Okello returns in this Grand Finale bringing together Uganda’s finest comedians, epic performances, and unforgettable moments of madness.
+          Uganda’s Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders.
+
+
         </motion.p>
 
         <motion.div
@@ -78,24 +79,24 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <Button
-            as={Link}
+           
             className="text-white rounded-full"
-            href="https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale" // Use the whatsappURL variable here
+        
             size="lg"
             target="_blank"
             variant="bordered"
           >
-             Single UGX: 40,000 <ChevronRight className="mr-2 h-5 w-5" />
+             Single R200 <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
           <Button
-            as={Link}
+           
             className="text-white rounded-full"
-            href="https://karitickets.com/event/UGANDA_MUST_LAUGH-_Grand_Finale"
+           
             size="lg"
             variant="bordered"
             target="_blank"
           >
-             Couple UGX: 60,000
+             Couple R300
              <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
         </motion.div>
