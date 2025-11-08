@@ -182,21 +182,21 @@ function Page() {
     // Featured video - Dr. Hilary Okello's comedy
     const featuredVideo = {
         id: "1",
-        title: "Dr Hilary Okello funniest joke about Government Ministers in Traffic Jam.",
-        duration: "08:04",
-        youtubeId: "uKznySp_XbE",
-        views: "23K",
-        uploadedAt: "10 days ago"
+        title: "Dr. Hilary Okello: Uganda Must Laugh 2 - (FULL STAND-UP COMEDY SPECIAL)",
+        duration: "1:20:10",
+        youtubeId: "UP8FWmG9BbY",
+        views: "94K",
+        uploadedAt: "3 Weeks ago"
     };
     // Other recommended videos
     const videos = [
         {
             id: "2",
-            title: "Comedian Hilary Okello jokes about how journalists cover stories",
-            duration: "15:42",
-            youtubeId: "yQMes8rjKrs",
-            views: "15K",
-            uploadedAt: "2 weeks ago"
+            title: "Dr  Hilary Okello - Uganda Must Laugh II (Full Show)",
+            duration: "50:30",
+            youtubeId: "Q4M4WYh43dw",
+            views: "26K",
+            uploadedAt: "5 Months ago"
         },
         {
             id: "3",
