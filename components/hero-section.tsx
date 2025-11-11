@@ -81,7 +81,7 @@ export function HeroSection() {
           <Button
            as={Link}
             className="text-white rounded-full"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSf7BUyd2f4kIfBl9J_CmlcS5rq89a0_L5UIy7gzVjNFWC3OVA/viewform"
+        href="https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/"
             size="lg"
             target="_blank"
             variant="bordered"
@@ -91,7 +91,7 @@ export function HeroSection() {
           <Button
            as={Link}
             className="text-white rounded-full"
-           href="https://docs.google.com/forms/d/e/1FAIpQLSf7BUyd2f4kIfBl9J_CmlcS5rq89a0_L5UIy7gzVjNFWC3OVA/viewform"
+           href="https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/"
             size="lg"
             variant="bordered"
             target="_blank"

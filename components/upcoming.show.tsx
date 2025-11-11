@@ -22,7 +22,7 @@ const UpcomingShows = () => {
     location: "Victory Theatre Johannesburg",
     ticketPrice: "R200 Single | R300 a Couple",
     image: "/johannesburg.webp",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSf7BUyd2f4kIfBl9J_CmlcS5rq89a0_L5UIy7gzVjNFWC3OVA/viewform",
+    link: "https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/",
     description:
       "Uganda’s Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders.After thrilling audiences across Africa, Dr. Hilary brings his unique mix of intelligence, heart, and humor to South Africa — in a show that’s all about connecting people through laughter",
 
@@ -58,7 +58,7 @@ const UpcomingShows = () => {
             variant="bordered"
             target="_blank"
             as={Link}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf7BUyd2f4kIfBl9J_CmlcS5rq89a0_L5UIy7gzVjNFWC3OVA/viewform"
+            href="https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/"
           >
             Buy Ticket Now
              <ChevronRight className="mr-2 h-5 w-5" />
@@ -97,7 +97,7 @@ const UpcomingShows = () => {
             variant="bordered"
             as={Link}
             target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf7BUyd2f4kIfBl9J_CmlcS5rq89a0_L5UIy7gzVjNFWC3OVA/viewform"
+            href="https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/"
           >
             Buy Tickets Now
              <ChevronRight className="mr-2 h-5 w-5" />
