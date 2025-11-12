@@ -14,183 +14,421 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/button/dist/chunk-KCYYJJH4.mjs [app-client] (ecmascript) <export button_default as Button>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
 ;
-var _s = __turbopack_refresh__.signature();
+var _s = __turbopack_refresh__.signature(), _s1 = __turbopack_refresh__.signature();
 "use client";
 ;
 ;
 ;
 ;
-// Example partner logos - moved outside component to prevent unnecessary re-renders
+// Partner logos - using WebP format for better performance
 const partnerLogos = [
-    "/partners/ciu-logo.png",
-    "/partners/images.jpeg",
-    "/partners/jico_league.jpg",
-    "/partners/kbadge.jpg",
+    "/partners/ciu-hor-white.webp",
+    "/partners/images.webp",
+    "/partners/logo.webp",
+    "/partners/jico.png",
+    "/partners/karitickets-white.webp",
     "/partners/laughing_maraboustork.webp",
+    "/partners/logo.webp",
+    "/partners/logo-top.webp",
+    "/partners/uganda_comedians_association.webp",
+    "/partners/logo.webp"
+];
+// Fallback logos for browsers that don't support WebP
+const fallbackLogos = [
+    "/partners/ciu-hor-white.png",
+    "/partners/images.jpeg",
+    "/partners/logo.webp",
+    "/partners/jico.png",
+    "/partners/karitickets-white.webp",
+    "/partners/laughing_maraboustork.webp",
+    "/partners/logo.webp",
     "/partners/logo-top.png",
     "/partners/uganda_comedians_association.jpg"
 ];
-function Partners() {
+// Simple debounce implementation
+function debounce(func, wait) {
+    let timeout = null;
+    const debounced = (...args)=>{
+        if (timeout) clearTimeout(timeout);
+        timeout = setTimeout(()=>func(...args), wait);
+    };
+    debounced.cancel = ()=>{
+        if (timeout) clearTimeout(timeout);
+    };
+    return debounced;
+}
+const PartnerLogo = ({ logo, fallback, index, isVisible, isPriority })=>{
     _s();
+    const [imageSrc, setImageSrc] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(logo);
+    const [isLoaded, setIsLoaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6",
+        children: [
+            !isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-gray-200 animate-pulse rounded-lg"
+            }, void 0, false, {
+                fileName: "[project]/components/partners.tsx",
+                lineNumber: 76,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                fill: true,
+                alt: `Partner Logo ${index + 1}`,
+                className: `object-contain transition-opacity duration-300 ${isLoaded ? "opacity-100" : "opacity-0"}`,
+                sizes: "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw",
+                src: imageSrc,
+                onError: ()=>setImageSrc(fallback),
+                onLoad: ()=>setIsLoaded(true),
+                loading: isPriority ? "eager" : "lazy",
+                priority: isPriority,
+                quality: 75,
+                placeholder: "empty"
+            }, void 0, false, {
+                fileName: "[project]/components/partners.tsx",
+                lineNumber: 78,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/partners.tsx",
+        lineNumber: 74,
+        columnNumber: 5
+    }, this);
+};
+_s(PartnerLogo, "loIBoY5nQo/6iLfpSVLipQGuvWc=");
+_c = PartnerLogo;
+function Partners() {
+    _s1();
     const [slideIndex, setSlideIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    const carouselRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null); // Specify the type
     const [itemsPerView, setItemsPerView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(3);
-    const autoScrollInterval = 3000; // Interval for auto-scrolling in milliseconds
     const [isAutoScrolling, setIsAutoScrolling] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
-    const [carouselWidth, setCarouselWidth] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    const maxSlideIndex = Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1);
-    // Handle responsive itemsPerView
+    const [isMounted, setIsMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const carouselRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const autoScrollRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const lastTimeRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(0);
+    const autoScrollInterval = 3000;
+    // Memoized calculations
+    const maxSlideIndex = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Partners.useMemo[maxSlideIndex]": ()=>Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1)
+    }["Partners.useMemo[maxSlideIndex]"], [
+        itemsPerView
+    ]);
+    const currentVisibleLogos = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Partners.useMemo[currentVisibleLogos]": ()=>{
+            const start = slideIndex * itemsPerView;
+            const end = Math.min(start + itemsPerView, partnerLogos.length);
+            return {
+                start,
+                end
+            };
+        }
+    }["Partners.useMemo[currentVisibleLogos]"], [
+        slideIndex,
+        itemsPerView
+    ]);
+    // Detect WebP support
+    const [supportsWebP, setSupportsWebP] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Partners.useEffect": ()=>{
-            const handleResize = {
-                "Partners.useEffect.handleResize": ()=>{
-                    if (window.innerWidth < 640) {
-                        setItemsPerView(1);
-                    } else if (window.innerWidth < 768) {
-                        setItemsPerView(2);
-                    } else {
-                        setItemsPerView(3);
-                    }
-                    // Update carousel width measurement
-                    if (carouselRef.current) {
-                        setCarouselWidth(carouselRef.current.clientWidth);
-                    }
+            setIsMounted(true);
+            // Check WebP support
+            const checkWebPSupport = {
+                "Partners.useEffect.checkWebPSupport": async ()=>{
+                    const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+                    const img = new window.Image();
+                    img.onload = ({
+                        "Partners.useEffect.checkWebPSupport": ()=>setSupportsWebP(true)
+                    })["Partners.useEffect.checkWebPSupport"];
+                    img.onerror = ({
+                        "Partners.useEffect.checkWebPSupport": ()=>setSupportsWebP(false)
+                    })["Partners.useEffect.checkWebPSupport"];
+                    img.src = webpData;
                 }
-            }["Partners.useEffect.handleResize"];
-            // Initial setup
+            }["Partners.useEffect.checkWebPSupport"];
+            checkWebPSupport();
+        }
+    }["Partners.useEffect"], []);
+    // Optimized resize handler with debouncing
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Partners.useEffect": ()=>{
+            const handleResize = debounce({
+                "Partners.useEffect.handleResize": ()=>{
+                    const width = window.innerWidth;
+                    setItemsPerView(width < 640 ? 1 : width < 768 ? 2 : 3);
+                }
+            }["Partners.useEffect.handleResize"], 250);
             handleResize();
-            // Set up event listener
             window.addEventListener("resize", handleResize);
             return ({
                 "Partners.useEffect": ()=>{
+                    handleResize.cancel();
                     window.removeEventListener("resize", handleResize);
                 }
             })["Partners.useEffect"];
         }
     }["Partners.useEffect"], []);
-    // Handle auto-scrolling
+    // Optimized auto-scrolling with requestAnimationFrame
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Partners.useEffect": ()=>{
-            if (!isAutoScrolling) return;
-            const interval = setInterval({
-                "Partners.useEffect.interval": ()=>{
-                    setSlideIndex({
-                        "Partners.useEffect.interval": (prevIndex)=>{
-                            const newIndex = prevIndex + 1;
-                            return newIndex > maxSlideIndex ? 0 : newIndex;
-                        }
-                    }["Partners.useEffect.interval"]);
+            if (!isAutoScrolling || !isMounted) return;
+            const animate = {
+                "Partners.useEffect.animate": (currentTime)=>{
+                    if (currentTime - lastTimeRef.current >= autoScrollInterval) {
+                        setSlideIndex({
+                            "Partners.useEffect.animate": (prev)=>{
+                                const next = prev + 1;
+                                return next > maxSlideIndex ? 0 : next;
+                            }
+                        }["Partners.useEffect.animate"]);
+                        lastTimeRef.current = currentTime;
+                    }
+                    autoScrollRef.current = requestAnimationFrame(animate);
                 }
-            }["Partners.useEffect.interval"], autoScrollInterval);
+            }["Partners.useEffect.animate"];
+            autoScrollRef.current = requestAnimationFrame(animate);
             return ({
-                "Partners.useEffect": ()=>clearInterval(interval)
+                "Partners.useEffect": ()=>{
+                    if (autoScrollRef.current) {
+                        cancelAnimationFrame(autoScrollRef.current);
+                    }
+                }
             })["Partners.useEffect"];
         }
     }["Partners.useEffect"], [
         isAutoScrolling,
         maxSlideIndex,
-        itemsPerView
+        isMounted
     ]);
-    // Pause auto-scroll on hover
-    const pauseAutoScroll = ()=>setIsAutoScrolling(false);
-    const resumeAutoScroll = ()=>setIsAutoScrolling(true);
-    // Navigation handlers
-    const handleNext = ()=>{
-        setIsAutoScrolling(false);
-        setSlideIndex((prevIndex)=>{
-            const newIndex = prevIndex + 1;
-            return newIndex > maxSlideIndex ? 0 : newIndex;
-        });
-    };
-    const handlePrev = ()=>{
-        setIsAutoScrolling(false);
-        setSlideIndex((prevIndex)=>{
-            const newIndex = prevIndex - 1;
-            return newIndex < 0 ? maxSlideIndex : newIndex;
-        });
-    };
-    // Calculate item width based on items per view
-    const getItemWidth = ()=>{
-        return carouselWidth / itemsPerView;
-    };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    // Preload next images
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Partners.useEffect": ()=>{
+            if (!isMounted) return;
+            const nextIndex = (slideIndex + 1) % (maxSlideIndex + 1);
+            const startIdx = nextIndex * itemsPerView;
+            const endIdx = Math.min(startIdx + itemsPerView, partnerLogos.length);
+            // Preload next set of images
+            for(let i = startIdx; i < endIdx; i++){
+                if (partnerLogos[i]) {
+                    const img = new window.Image();
+                    img.src = supportsWebP ? partnerLogos[i] : fallbackLogos[i];
+                }
+            }
+        }
+    }["Partners.useEffect"], [
+        slideIndex,
+        itemsPerView,
+        maxSlideIndex,
+        supportsWebP,
+        isMounted
+    ]);
+    // Memoized event handlers
+    const handleNext = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Partners.useCallback[handleNext]": ()=>{
+            setIsAutoScrolling(false);
+            setSlideIndex({
+                "Partners.useCallback[handleNext]": (prevIndex)=>{
+                    const next = prevIndex + 1;
+                    return next > maxSlideIndex ? 0 : next;
+                }
+            }["Partners.useCallback[handleNext]"]);
+            // Resume auto-scroll after manual navigation
+            setTimeout({
+                "Partners.useCallback[handleNext]": ()=>setIsAutoScrolling(true)
+            }["Partners.useCallback[handleNext]"], 5000);
+        }
+    }["Partners.useCallback[handleNext]"], [
+        maxSlideIndex
+    ]);
+    const handlePrev = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Partners.useCallback[handlePrev]": ()=>{
+            setIsAutoScrolling(false);
+            setSlideIndex({
+                "Partners.useCallback[handlePrev]": (prevIndex)=>{
+                    const prev = prevIndex - 1;
+                    return prev < 0 ? maxSlideIndex : prev;
+                }
+            }["Partners.useCallback[handlePrev]"]);
+            // Resume auto-scroll after manual navigation
+            setTimeout({
+                "Partners.useCallback[handlePrev]": ()=>setIsAutoScrolling(true)
+            }["Partners.useCallback[handlePrev]"], 5000);
+        }
+    }["Partners.useCallback[handlePrev]"], [
+        maxSlideIndex
+    ]);
+    const pauseAutoScroll = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Partners.useCallback[pauseAutoScroll]": ()=>setIsAutoScrolling(false)
+    }["Partners.useCallback[pauseAutoScroll]"], []);
+    const resumeAutoScroll = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Partners.useCallback[resumeAutoScroll]": ()=>setIsAutoScrolling(true)
+    }["Partners.useCallback[resumeAutoScroll]"], []);
+    const handleDotClick = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Partners.useCallback[handleDotClick]": (index)=>{
+            setIsAutoScrolling(false);
+            setSlideIndex(index);
+            // Resume auto-scroll after manual navigation
+            setTimeout({
+                "Partners.useCallback[handleDotClick]": ()=>setIsAutoScrolling(true)
+            }["Partners.useCallback[handleDotClick]"], 5000);
+        }
+    }["Partners.useCallback[handleDotClick]"], []);
+    // Touch handling for mobile
+    const touchStartX = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const touchEndX = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const handleTouchStart = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Partners.useCallback[handleTouchStart]": (e)=>{
+            touchStartX.current = e.touches[0].clientX;
+            pauseAutoScroll();
+        }
+    }["Partners.useCallback[handleTouchStart]"], [
+        pauseAutoScroll
+    ]);
+    const handleTouchEnd = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "Partners.useCallback[handleTouchEnd]": (e)=>{
+            touchEndX.current = e.changedTouches[0].clientX;
+            if (touchStartX.current !== null && touchEndX.current !== null) {
+                const diff = touchStartX.current - touchEndX.current;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        handleNext();
+                    } else {
+                        handlePrev();
+                    }
+                }
+            }
+            setTimeout({
+                "Partners.useCallback[handleTouchEnd]": ()=>resumeAutoScroll()
+            }["Partners.useCallback[handleTouchEnd]"], 5000);
+        }
+    }["Partners.useCallback[handleTouchEnd]"], [
+        handleNext,
+        handlePrev,
+        resumeAutoScroll
+    ]);
+    // Keyboard navigation
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Partners.useEffect": ()=>{
+            const handleKeyDown = {
+                "Partners.useEffect.handleKeyDown": (e)=>{
+                    if (e.key === "ArrowLeft") {
+                        handlePrev();
+                    } else if (e.key === "ArrowRight") {
+                        handleNext();
+                    }
+                }
+            }["Partners.useEffect.handleKeyDown"];
+            window.addEventListener("keydown", handleKeyDown);
+            return ({
+                "Partners.useEffect": ()=>window.removeEventListener("keydown", handleKeyDown)
+            })["Partners.useEffect"];
+        }
+    }["Partners.useEffect"], [
+        handleNext,
+        handlePrev
+    ]);
+    if (!isMounted) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "h-32 bg-gray-200 animate-pulse rounded-lg"
+            }, void 0, false, {
+                fileName: "[project]/components/partners.tsx",
+                lineNumber: 273,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/partners.tsx",
+            lineNumber: 272,
+            columnNumber: 7
+        }, this);
+    }
+    const logos = supportsWebP ? partnerLogos : fallbackLogos;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
+        "aria-label": "Our Partners",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "text-left text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 md:mb-8",
                 children: "Our Partners"
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 103,
+                lineNumber: 285,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative w-full overflow-hidden",
+                className: "relative w-full overflow-hidden rounded-lg",
                 onMouseEnter: pauseAutoScroll,
                 onMouseLeave: resumeAutoScroll,
-                onTouchEnd: resumeAutoScroll,
-                onTouchStart: pauseAutoScroll,
+                onTouchStart: handleTouchStart,
+                onTouchEnd: handleTouchEnd,
+                "aria-live": "polite",
+                "aria-label": `Partner carousel, showing ${itemsPerView} partners at a time`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: carouselRef,
-                    className: "w-full",
-                    style: {
-                        position: "relative"
-                    },
+                    className: "relative",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex transition-transform duration-500 ease-in-out",
+                        className: "flex transition-transform duration-500 ease-out will-change-transform",
                         style: {
-                            transform: `translateX(-${slideIndex * getItemWidth() * itemsPerView}px)`,
-                            width: `${partnerLogos.length * getItemWidth()}px`
+                            transform: `translateX(-${slideIndex * 100}%)`,
+                            WebkitTransform: `translateX(-${slideIndex * 100}%)`
                         },
-                        children: partnerLogos.map((logo, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center justify-center",
-                                style: {
-                                    width: `${getItemWidth()}px`
-                                },
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        fill: true,
-                                        alt: `Partner Logo ${index + 1}`,
-                                        className: "object-contain",
-                                        sizes: "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw",
-                                        src: logo || "/placeholder.svg"
-                                    }, void 0, false, {
+                        children: Array.from({
+                            length: Math.ceil(logos.length / itemsPerView)
+                        }).map((_, groupIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-shrink-0 w-full",
+                                children: logos.slice(groupIndex * itemsPerView, (groupIndex + 1) * itemsPerView).map((logo, indexInGroup)=>{
+                                    const globalIndex = groupIndex * itemsPerView + indexInGroup;
+                                    const isVisible = groupIndex === slideIndex;
+                                    const isPriority = groupIndex === 0 && indexInGroup < itemsPerView;
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center justify-center",
+                                        style: {
+                                            width: `${90 / itemsPerView}%`
+                                        },
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PartnerLogo, {
+                                            logo: logo,
+                                            fallback: fallbackLogos[globalIndex],
+                                            index: globalIndex,
+                                            isVisible: isVisible,
+                                            isPriority: isPriority
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/partners.tsx",
+                                            lineNumber: 327,
+                                            columnNumber: 25
+                                        }, this)
+                                    }, `${logo}-${globalIndex}`, false, {
                                         fileName: "[project]/components/partners.tsx",
-                                        lineNumber: 133,
-                                        columnNumber: 19
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/partners.tsx",
-                                    lineNumber: 132,
-                                    columnNumber: 17
-                                }, this)
-                            }, index, false, {
+                                        lineNumber: 322,
+                                        columnNumber: 23
+                                    }, this);
+                                })
+                            }, groupIndex, false, {
                                 fileName: "[project]/components/partners.tsx",
-                                lineNumber: 127,
+                                lineNumber: 310,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 119,
+                        lineNumber: 302,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/partners.tsx",
-                    lineNumber: 114,
+                    lineNumber: 298,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 107,
+                lineNumber: 289,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 className: "flex justify-center mt-6 space-x-4",
+                "aria-label": "Carousel navigation",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
                         "aria-label": "Previous partners",
-                        className: "rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors",
+                        className: "rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50",
                         size: "sm",
                         variant: "bordered",
                         onClick: handlePrev,
@@ -198,38 +436,38 @@ function Partners() {
                             className: "h-3 w-3 sm:h-4 sm:w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 155,
+                            lineNumber: 355,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 148,
+                        lineNumber: 348,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex space-x-2",
+                        className: "flex items-center space-x-2",
+                        role: "tablist",
                         children: Array.from({
                             length: maxSlideIndex + 1
                         }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                "aria-label": `Go to slide ${index + 1}`,
-                                className: `w-2 h-2 rounded-full ${index === slideIndex ? "bg-white" : "bg-gray-500"}`,
-                                onClick: ()=>{
-                                    setIsAutoScrolling(false);
-                                    setSlideIndex(index);
-                                }
+                                role: "tab",
+                                "aria-selected": index === slideIndex,
+                                "aria-label": `Go to slide ${index + 1} of ${maxSlideIndex + 1}`,
+                                className: `transition-all duration-200 rounded-full focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 ${index === slideIndex ? "bg-white w-8 h-2" : "bg-gray-500 hover:bg-gray-400 w-2 h-2"}`,
+                                onClick: ()=>handleDotClick(index)
                             }, index, false, {
                                 fileName: "[project]/components/partners.tsx",
-                                lineNumber: 159,
+                                lineNumber: 360,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 157,
+                        lineNumber: 358,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
                         "aria-label": "Next partners",
-                        className: "rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors",
+                        className: "rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50",
                         size: "sm",
                         variant: "bordered",
                         onClick: handleNext,
@@ -237,31 +475,32 @@ function Partners() {
                             className: "h-3 w-3 sm:h-4 sm:w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 179,
+                            lineNumber: 382,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 172,
+                        lineNumber: 375,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 147,
+                lineNumber: 344,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/partners.tsx",
-        lineNumber: 102,
+        lineNumber: 281,
         columnNumber: 5
     }, this);
 }
-_s(Partners, "rw/fa5lBiBWtsA81Yz7gCq39PRw=");
-_c = Partners;
-var _c;
-__turbopack_refresh__.register(_c, "Partners");
+_s1(Partners, "Rf08ESTYrrZp5p+feUB8usICYes=");
+_c1 = Partners;
+var _c, _c1;
+__turbopack_refresh__.register(_c, "PartnerLogo");
+__turbopack_refresh__.register(_c1, "Partners");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }

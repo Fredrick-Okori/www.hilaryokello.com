@@ -1,184 +1,387 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Image from "next/image";
 import { Button } from "@heroui/button";
 
-// Example partner logos - moved outside component to prevent unnecessary re-renders
+// Partner logos - using WebP format for better performance
 const partnerLogos = [
-  "/partners/ciu-logo.png",
-  "/partners/images.jpeg",
-  "/partners/jico_league.jpg",
-  "/partners/kbadge.jpg",
+  "/partners/ciu-hor-white.webp",
+  "/partners/images.webp",
+   "/partners/logo.webp",
+  "/partners/jico.png",
+  "/partners/karitickets-white.webp",
   "/partners/laughing_maraboustork.webp",
+   "/partners/logo.webp",
+  "/partners/logo-top.webp",
+  "/partners/uganda_comedians_association.webp",
+  "/partners/logo.webp"
+];
+
+// Fallback logos for browsers that don't support WebP
+const fallbackLogos = [
+  "/partners/ciu-hor-white.png",
+  "/partners/images.jpeg",
+    "/partners/logo.webp",
+  "/partners/jico.png",
+  "/partners/karitickets-white.webp",
+  "/partners/laughing_maraboustork.webp",
+    "/partners/logo.webp",
   "/partners/logo-top.png",
   "/partners/uganda_comedians_association.jpg",
+
 ];
+
+// Simple debounce implementation
+function debounce<T extends (...args: any[]) => any>(
+  func: T,
+  wait: number
+): T & { cancel: () => void } {
+  let timeout: NodeJS.Timeout | null = null;
+  
+  const debounced = (...args: Parameters<T>) => {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), wait);
+  };
+  
+  debounced.cancel = () => {
+    if (timeout) clearTimeout(timeout);
+  };
+  
+  return debounced as T & { cancel: () => void };
+}
+
+// Optimized Partner Logo component with lazy loading
+interface PartnerLogoProps {
+  logo: string;
+  fallback: string;
+  index: number;
+  isVisible: boolean;
+  isPriority: boolean;
+}
+
+const PartnerLogo: React.FC<PartnerLogoProps> = ({ 
+  logo, 
+  fallback, 
+  index, 
+  isVisible,
+  isPriority 
+}) => {
+  const [imageSrc, setImageSrc] = useState(logo);
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  return (
+    <div className="relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6">
+      {!isLoaded && (
+        <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-lg" />
+      )}
+      <Image
+        fill
+        alt={`Partner Logo ${index + 1}`}
+        className={`object-contain transition-opacity duration-300 ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        }`}
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+        src={imageSrc}
+        onError={() => setImageSrc(fallback)}
+        onLoad={() => setIsLoaded(true)}
+        loading={isPriority ? "eager" : "lazy"}
+        priority={isPriority}
+        quality={75}
+        placeholder="empty"
+      />
+    </div>
+  );
+};
 
 export default function Partners() {
   const [slideIndex, setSlideIndex] = useState(0);
-  const carouselRef = useRef<HTMLDivElement | null>(null); // Specify the type
   const [itemsPerView, setItemsPerView] = useState(3);
-  const autoScrollInterval = 3000; // Interval for auto-scrolling in milliseconds
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
-  const [carouselWidth, setCarouselWidth] = useState(0);
-  const maxSlideIndex = Math.max(
-    0,
-    Math.ceil(partnerLogos.length / itemsPerView) - 1,
+  const [isMounted, setIsMounted] = useState(false);
+  
+  const carouselRef = useRef<HTMLDivElement | null>(null);
+  const autoScrollRef = useRef<number | null>(null);
+  const lastTimeRef = useRef<number>(0);
+  
+  const autoScrollInterval = 3000;
+
+  // Memoized calculations
+  const maxSlideIndex = useMemo(
+    () => Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1),
+    [itemsPerView]
   );
 
-  // Handle responsive itemsPerView
+  const currentVisibleLogos = useMemo(() => {
+    const start = slideIndex * itemsPerView;
+    const end = Math.min(start + itemsPerView, partnerLogos.length);
+    return { start, end };
+  }, [slideIndex, itemsPerView]);
+
+  // Detect WebP support
+  const [supportsWebP, setSupportsWebP] = useState(true);
+  
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 640) {
-        setItemsPerView(1);
-      } else if (window.innerWidth < 768) {
-        setItemsPerView(2);
-      } else {
-        setItemsPerView(3);
-      }
-
-      // Update carousel width measurement
-      if (carouselRef.current) {
-        setCarouselWidth(carouselRef.current.clientWidth);
-      }
+    setIsMounted(true);
+    
+    // Check WebP support
+    const checkWebPSupport = async () => {
+      const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+      const img = new window.Image();
+      img.onload = () => setSupportsWebP(true);
+      img.onerror = () => setSupportsWebP(false);
+      img.src = webpData;
     };
+    
+    checkWebPSupport();
+  }, []);
 
-    // Initial setup
+  // Optimized resize handler with debouncing
+  useEffect(() => {
+    const handleResize = debounce(() => {
+      const width = window.innerWidth;
+      setItemsPerView(
+        width < 640 ? 1 : width < 768 ? 2 : 3
+      );
+    }, 250);
+
     handleResize();
-
-    // Set up event listener
     window.addEventListener("resize", handleResize);
-
+    
     return () => {
+      handleResize.cancel();
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  // Handle auto-scrolling
+  // Optimized auto-scrolling with requestAnimationFrame
   useEffect(() => {
-    if (!isAutoScrolling) return;
+    if (!isAutoScrolling || !isMounted) return;
 
-    const interval = setInterval(() => {
-      setSlideIndex((prevIndex) => {
-        const newIndex = prevIndex + 1;
+    const animate = (currentTime: number) => {
+      if (currentTime - lastTimeRef.current >= autoScrollInterval) {
+        setSlideIndex((prev) => {
+          const next = prev + 1;
+          return next > maxSlideIndex ? 0 : next;
+        });
+        lastTimeRef.current = currentTime;
+      }
+      autoScrollRef.current = requestAnimationFrame(animate);
+    };
 
-        return newIndex > maxSlideIndex ? 0 : newIndex;
-      });
-    }, autoScrollInterval);
+    autoScrollRef.current = requestAnimationFrame(animate);
 
-    return () => clearInterval(interval);
-  }, [isAutoScrolling, maxSlideIndex, itemsPerView]);
+    return () => {
+      if (autoScrollRef.current) {
+        cancelAnimationFrame(autoScrollRef.current);
+      }
+    };
+  }, [isAutoScrolling, maxSlideIndex, isMounted]);
 
-  // Pause auto-scroll on hover
-  const pauseAutoScroll = () => setIsAutoScrolling(false);
-  const resumeAutoScroll = () => setIsAutoScrolling(true);
+  // Preload next images
+  useEffect(() => {
+    if (!isMounted) return;
+    
+    const nextIndex = (slideIndex + 1) % (maxSlideIndex + 1);
+    const startIdx = nextIndex * itemsPerView;
+    const endIdx = Math.min(startIdx + itemsPerView, partnerLogos.length);
+    
+    // Preload next set of images
+    for (let i = startIdx; i < endIdx; i++) {
+      if (partnerLogos[i]) {
+        const img = new window.Image();
+        img.src = supportsWebP ? partnerLogos[i] : fallbackLogos[i];
+      }
+    }
+  }, [slideIndex, itemsPerView, maxSlideIndex, supportsWebP, isMounted]);
 
-  // Navigation handlers
-  const handleNext = () => {
+  // Memoized event handlers
+  const handleNext = useCallback(() => {
     setIsAutoScrolling(false);
     setSlideIndex((prevIndex) => {
-      const newIndex = prevIndex + 1;
-
-      return newIndex > maxSlideIndex ? 0 : newIndex;
+      const next = prevIndex + 1;
+      return next > maxSlideIndex ? 0 : next;
     });
-  };
+    // Resume auto-scroll after manual navigation
+    setTimeout(() => setIsAutoScrolling(true), 5000);
+  }, [maxSlideIndex]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setIsAutoScrolling(false);
     setSlideIndex((prevIndex) => {
-      const newIndex = prevIndex - 1;
-
-      return newIndex < 0 ? maxSlideIndex : newIndex;
+      const prev = prevIndex - 1;
+      return prev < 0 ? maxSlideIndex : prev;
     });
-  };
+    // Resume auto-scroll after manual navigation
+    setTimeout(() => setIsAutoScrolling(true), 5000);
+  }, [maxSlideIndex]);
 
-  // Calculate item width based on items per view
-  const getItemWidth = () => {
-    return carouselWidth / itemsPerView;
-  };
+  const pauseAutoScroll = useCallback(() => setIsAutoScrolling(false), []);
+  const resumeAutoScroll = useCallback(() => setIsAutoScrolling(true), []);
+
+  const handleDotClick = useCallback((index: number) => {
+    setIsAutoScrolling(false);
+    setSlideIndex(index);
+    // Resume auto-scroll after manual navigation
+    setTimeout(() => setIsAutoScrolling(true), 5000);
+  }, []);
+
+  // Touch handling for mobile
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    pauseAutoScroll();
+  }, [pauseAutoScroll]);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    
+    if (touchStartX.current !== null && touchEndX.current !== null) {
+      const diff = touchStartX.current - touchEndX.current;
+      
+      if (Math.abs(diff) > 50) { // Minimum swipe distance
+        if (diff > 0) {
+          handleNext();
+        } else {
+          handlePrev();
+        }
+      }
+    }
+    
+    setTimeout(() => resumeAutoScroll(), 5000);
+  }, [handleNext, handlePrev, resumeAutoScroll]);
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") {
+        handlePrev();
+      } else if (e.key === "ArrowRight") {
+        handleNext();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handleNext, handlePrev]);
+
+  if (!isMounted) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="h-32 bg-gray-200 animate-pulse rounded-lg" />
+      </div>
+    );
+  }
+
+  const logos = supportsWebP ? partnerLogos : fallbackLogos;
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h4 className="text-left text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 md:mb-8">
+    <section 
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+      aria-label="Our Partners"
+    >
+      <h2 className="text-left text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 md:mb-8">
         Our Partners
-      </h4>
+      </h2>
 
       <div
-        className="relative w-full overflow-hidden"
+        className="relative w-full overflow-hidden rounded-lg"
         onMouseEnter={pauseAutoScroll}
         onMouseLeave={resumeAutoScroll}
-        onTouchEnd={resumeAutoScroll}
-        onTouchStart={pauseAutoScroll}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        aria-live="polite"
+        aria-label={`Partner carousel, showing ${itemsPerView} partners at a time`}
       >
         <div
           ref={carouselRef}
-          className="w-full"
-          style={{ position: "relative" }}
+          className="relative"
         >
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-out will-change-transform"
             style={{
-              transform: `translateX(-${slideIndex * getItemWidth() * itemsPerView}px)`,
-              width: `${partnerLogos.length * getItemWidth()}px`,
+              transform: `translateX(-${slideIndex * 100}%)`,
+              WebkitTransform: `translateX(-${slideIndex * 100}%)`, // iOS Safari support
             }}
           >
-            {partnerLogos.map((logo, index) => (
+            {Array.from({ length: Math.ceil(logos.length / itemsPerView) }).map((_, groupIndex) => (
               <div
-                key={index}
-                className="flex items-center justify-center"
-                style={{ width: `${getItemWidth()}px` }}
+                key={groupIndex}
+                className="flex flex-shrink-0 w-full"
               >
-                <div className="relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6">
-                  <Image
-                    fill
-                    alt={`Partner Logo ${index + 1}`}
-                    className="object-contain"
-                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                    src={logo || "/placeholder.svg"}
-                  />
-                </div>
+                {logos
+                  .slice(groupIndex * itemsPerView, (groupIndex + 1) * itemsPerView)
+                  .map((logo, indexInGroup) => {
+                    const globalIndex = groupIndex * itemsPerView + indexInGroup;
+                    const isVisible = groupIndex === slideIndex;
+                    const isPriority = groupIndex === 0 && indexInGroup < itemsPerView;
+                    
+                    return (
+                      <div
+                        key={`${logo}-${globalIndex}`}
+                        className="flex items-center justify-center"
+                        style={{ width: `${90 / itemsPerView}%` }}
+                      >
+                        <PartnerLogo
+                          logo={logo}
+                          fallback={fallbackLogos[globalIndex]}
+                          index={globalIndex}
+                          isVisible={isVisible}
+                          isPriority={isPriority}
+                        />
+                      </div>
+                    );
+                  })}
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center mt-6 space-x-4">
+      {/* Navigation Controls */}
+      <nav 
+        className="flex justify-center mt-6 space-x-4"
+        aria-label="Carousel navigation"
+      >
         <Button
           aria-label="Previous partners"
-          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors"
+          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
           size="sm"
           variant="bordered"
           onClick={handlePrev}
         >
           <FaArrowLeft className="h-3 w-3 sm:h-4 sm:w-4" />
         </Button>
-        <div className="flex space-x-2">
+        
+        <div className="flex items-center space-x-2" role="tablist">
           {Array.from({ length: maxSlideIndex + 1 }).map((_, index) => (
             <button
               key={index}
-              aria-label={`Go to slide ${index + 1}`}
-              className={`w-2 h-2 rounded-full ${
-                index === slideIndex ? "bg-white" : "bg-gray-500"
+              role="tab"
+              aria-selected={index === slideIndex}
+              aria-label={`Go to slide ${index + 1} of ${maxSlideIndex + 1}`}
+              className={`transition-all duration-200 rounded-full focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 ${
+                index === slideIndex 
+                  ? "bg-white w-8 h-2" 
+                  : "bg-gray-500 hover:bg-gray-400 w-2 h-2"
               }`}
-              onClick={() => {
-                setIsAutoScrolling(false);
-                setSlideIndex(index);
-              }}
+              onClick={() => handleDotClick(index)}
             />
           ))}
         </div>
+        
         <Button
           aria-label="Next partners"
-          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-colors"
+          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
           size="sm"
           variant="bordered"
           onClick={handleNext}
         >
           <FaArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
         </Button>
-      </div>
-    </div>
+      </nav>
+    </section>
   );
 }

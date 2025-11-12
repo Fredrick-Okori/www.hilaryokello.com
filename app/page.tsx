@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import ImageCarousel from "@/components/home.carousel";
 import UpcomingShows from "@/components/upcoming.show";
+import Partners from "@/components/partners";
 import { VideoSection } from "@/components/videos";
 import Head from "next/head";
 
@@ -112,6 +113,9 @@ export default function Page() {
           <div className="max-w-7xl mx-auto px-4">
             <ImageCarousel images={images} />
           </div>
+        </div>
+        <div>
+          <Partners/>
         </div>
       </div>
     </>

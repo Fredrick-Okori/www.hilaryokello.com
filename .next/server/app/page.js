@@ -9,6 +9,6 @@ runtime.loadChunk("server/chunks/ssr/node_modules_next_2c5a34._.js");
 runtime.loadChunk("server/chunks/ssr/[root of the server]__4ac786._.js");
 runtime.loadChunk("server/chunks/ssr/[root of the server]__49471b._.css");
 runtime.loadChunk("server/chunks/ssr/_bc50e7._.js");
-runtime.loadChunk("server/chunks/ssr/_01d89c._.js");
+runtime.loadChunk("server/chunks/ssr/_cc9cd2._.js");
 runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/page/actions.js [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH);
 module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { MODULE_0 => \"[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_1 => \"[project]/app/not-found.tsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_2 => \"[project]/app/page.tsx [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
