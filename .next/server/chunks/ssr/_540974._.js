@@ -830,6 +830,7 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/button/dist/chunk-KCYYJJH4.mjs [app-ssr] (ecmascript) <export button_default as Button>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-icons/fa/index.mjs [app-ssr] (ecmascript)");
 "use client";
@@ -838,27 +839,68 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$ico
 ;
 ;
 ;
-// Partner logos - using WebP format for better performance
-const partnerLogos = [
-    "/partners/ciu-logo.webp",
-    "/partners/images.webp",
-    "/partners/jico_league.webp",
-    "/partners/kbadge.webp",
-    "/partners/laughing_maraboustork.webp",
-    "/partners/logo-top.webp",
-    "/partners/uganda_comedians_association.webp",
-    "/partners/logo.webp"
-];
-// Fallback logos for browsers that don't support WebP
-const fallbackLogos = [
-    "/partners/ciu-logo.png",
-    "/partners/images.jpeg",
-    "/partners/jico_league.jpg",
-    "/partners/kbadge.jpg",
-    "/partners/laughing_maraboustork.webp",
-    "/partners/logo-top.png",
-    "/partners/uganda_comedians_association.jpg",
-    "/partners/logo.webp"
+;
+const partners = [
+    {
+        logo: "/partners/ciu-hor-white.webp",
+        fallback: "/partners/ciu-hor-white.png",
+        website: "https://www.ciu.ac.ug",
+        name: "CIU"
+    },
+    {
+        logo: "/partners/images.webp",
+        fallback: "/partners/images.jpeg",
+        website: "https://www.instagram.com/donelbistrolounge_ug/?hl=en",
+        name: "Donel's Bistro, Ntinda"
+    },
+    {
+        logo: "/partners/logo.webp",
+        fallback: "/partners/logo.webp",
+        website: "https://www.kayetickets.com",
+        name: "Kayetickets"
+    },
+    {
+        logo: "/partners/jico.png",
+        fallback: "/partners/jico.png",
+        website: "https://x.com/JicoLeague",
+        name: "JICO"
+    },
+    {
+        logo: "/partners/karitickets-white.webp",
+        fallback: "/partners/karitickets-white.webp",
+        website: "https://www.karitickets.com",
+        name: "KariTickets"
+    },
+    {
+        logo: "/partners/laughing_maraboustork.webp",
+        fallback: "/partners/laughing_maraboustork.webp",
+        website: "https://laughingmaraboustork.com/",
+        name: "Laughing MarabouStork Comedy Club"
+    },
+    {
+        logo: "/partners/logo.webp",
+        fallback: "/partners/logo.webp",
+        website: "https://www.kayetickets.com",
+        name: "Kayetickets"
+    },
+    {
+        logo: "/partners/logo-top.webp",
+        fallback: "/partners/logo-top.png",
+        website: "https://www.roketelkom.co.ug/",
+        name: "Roketelcom"
+    },
+    {
+        logo: "/partners/uganda_comedians_association.webp",
+        fallback: "/partners/uganda_comedians_association.jpg",
+        website: "https://www.ugandacomedians.com",
+        name: "Uganda Comedians Association"
+    },
+    {
+        logo: "/partners/logo.webp",
+        fallback: "/partners/logo.webp",
+        website: "https://www.kayetickets.com",
+        name: "Kayetickets"
+    }
 ];
 // Simple debounce implementation
 function debounce(func, wait) {
@@ -872,40 +914,51 @@ function debounce(func, wait) {
     };
     return debounced;
 }
-const PartnerLogo = ({ logo, fallback, index, isVisible, isPriority })=>{
-    const [imageSrc, setImageSrc] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(logo);
+const PartnerLogo = ({ partner, index, isVisible, isPriority })=>{
+    const [imageSrc, setImageSrc] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(partner.logo);
     const [isLoaded, setIsLoaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+        href: partner.website,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        className: "relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6 block group",
+        "aria-label": `Visit ${partner.name} website`,
         children: [
             !isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-gray-200 animate-pulse rounded-lg"
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 72,
+                lineNumber: 124,
                 columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                fill: true,
-                alt: `Partner Logo ${index + 1}`,
-                className: `object-contain transition-opacity duration-300 ${isLoaded ? "opacity-100" : "opacity-0"}`,
-                sizes: "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw",
-                src: imageSrc,
-                onError: ()=>setImageSrc(fallback),
-                onLoad: ()=>setIsLoaded(true),
-                loading: isPriority ? "eager" : "lazy",
-                priority: isPriority,
-                quality: 75,
-                placeholder: "empty"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative h-full w-full transform transition-transform duration-300 group-hover:scale-110",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                    fill: true,
+                    alt: `${partner.name} Logo`,
+                    className: `object-contain transition-opacity duration-300 ${isLoaded ? "opacity-100" : "opacity-0"} group-hover:opacity-80`,
+                    sizes: "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw",
+                    src: imageSrc,
+                    onError: ()=>setImageSrc(partner.fallback),
+                    onLoad: ()=>setIsLoaded(true),
+                    loading: isPriority ? "eager" : "lazy",
+                    priority: isPriority,
+                    quality: 75,
+                    placeholder: "empty"
+                }, void 0, false, {
+                    fileName: "[project]/components/partners.tsx",
+                    lineNumber: 127,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 74,
+                lineNumber: 126,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/partners.tsx",
-        lineNumber: 70,
+        lineNumber: 116,
         columnNumber: 5
     }, this);
 };
@@ -919,12 +972,12 @@ function Partners() {
     const lastTimeRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(0);
     const autoScrollInterval = 3000;
     // Memoized calculations
-    const maxSlideIndex = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1), [
+    const maxSlideIndex = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>Math.max(0, Math.ceil(partners.length / itemsPerView) - 1), [
         itemsPerView
     ]);
     const currentVisibleLogos = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
         const start = slideIndex * itemsPerView;
-        const end = Math.min(start + itemsPerView, partnerLogos.length);
+        const end = Math.min(start + itemsPerView, partners.length);
         return {
             start,
             end
@@ -989,12 +1042,12 @@ function Partners() {
         if (!isMounted) return;
         const nextIndex = (slideIndex + 1) % (maxSlideIndex + 1);
         const startIdx = nextIndex * itemsPerView;
-        const endIdx = Math.min(startIdx + itemsPerView, partnerLogos.length);
+        const endIdx = Math.min(startIdx + itemsPerView, partners.length);
         // Preload next set of images
         for(let i = startIdx; i < endIdx; i++){
-            if (partnerLogos[i]) {
+            if (partners[i]) {
                 const img = new window.Image();
-                img.src = supportsWebP ? partnerLogos[i] : fallbackLogos[i];
+                img.src = supportsWebP ? partners[i].logo : partners[i].fallback;
             }
         }
     }, [
@@ -1084,16 +1137,20 @@ function Partners() {
                 className: "h-32 bg-gray-200 animate-pulse rounded-lg"
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 269,
+                lineNumber: 323,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/partners.tsx",
-            lineNumber: 268,
+            lineNumber: 322,
             columnNumber: 7
         }, this);
     }
-    const logos = supportsWebP ? partnerLogos : fallbackLogos;
+    // Use WebP if supported, otherwise use fallback
+    const currentPartners = supportsWebP ? partners : partners.map((p)=>({
+            ...p,
+            logo: p.fallback
+        }));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
         "aria-label": "Our Partners",
@@ -1103,7 +1160,7 @@ function Partners() {
                 children: "Our Partners"
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 281,
+                lineNumber: 338,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1124,53 +1181,52 @@ function Partners() {
                             WebkitTransform: `translateX(-${slideIndex * 100}%)`
                         },
                         children: Array.from({
-                            length: Math.ceil(logos.length / itemsPerView)
+                            length: Math.ceil(currentPartners.length / itemsPerView)
                         }).map((_, groupIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex flex-shrink-0 w-full",
-                                children: logos.slice(groupIndex * itemsPerView, (groupIndex + 1) * itemsPerView).map((logo, indexInGroup)=>{
+                                children: currentPartners.slice(groupIndex * itemsPerView, (groupIndex + 1) * itemsPerView).map((partner, indexInGroup)=>{
                                     const globalIndex = groupIndex * itemsPerView + indexInGroup;
                                     const isVisible = groupIndex === slideIndex;
                                     const isPriority = groupIndex === 0 && indexInGroup < itemsPerView;
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center justify-center",
                                         style: {
-                                            width: `${100 / itemsPerView}%`
+                                            width: `${90 / itemsPerView}%`
                                         },
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PartnerLogo, {
-                                            logo: logo,
-                                            fallback: fallbackLogos[globalIndex],
+                                            partner: partner,
                                             index: globalIndex,
                                             isVisible: isVisible,
                                             isPriority: isPriority
                                         }, void 0, false, {
                                             fileName: "[project]/components/partners.tsx",
-                                            lineNumber: 323,
+                                            lineNumber: 380,
                                             columnNumber: 25
                                         }, this)
-                                    }, `${logo}-${globalIndex}`, false, {
+                                    }, `${partner.name}-${globalIndex}`, false, {
                                         fileName: "[project]/components/partners.tsx",
-                                        lineNumber: 318,
+                                        lineNumber: 375,
                                         columnNumber: 23
                                     }, this);
                                 })
                             }, groupIndex, false, {
                                 fileName: "[project]/components/partners.tsx",
-                                lineNumber: 306,
+                                lineNumber: 363,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 298,
+                        lineNumber: 355,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/partners.tsx",
-                    lineNumber: 294,
+                    lineNumber: 351,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 285,
+                lineNumber: 342,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -1187,12 +1243,12 @@ function Partners() {
                             className: "h-3 w-3 sm:h-4 sm:w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 351,
+                            lineNumber: 407,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 344,
+                        lineNumber: 400,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1208,12 +1264,12 @@ function Partners() {
                                 onClick: ()=>handleDotClick(index)
                             }, index, false, {
                                 fileName: "[project]/components/partners.tsx",
-                                lineNumber: 356,
+                                lineNumber: 412,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 354,
+                        lineNumber: 410,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
@@ -1226,24 +1282,24 @@ function Partners() {
                             className: "h-3 w-3 sm:h-4 sm:w-4"
                         }, void 0, false, {
                             fileName: "[project]/components/partners.tsx",
-                            lineNumber: 378,
+                            lineNumber: 434,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/partners.tsx",
-                        lineNumber: 371,
+                        lineNumber: 427,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/partners.tsx",
-                lineNumber: 340,
+                lineNumber: 396,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/partners.tsx",
-        lineNumber: 277,
+        lineNumber: 334,
         columnNumber: 5
     }, this);
 }

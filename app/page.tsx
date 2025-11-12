@@ -114,9 +114,7 @@ export default function Page() {
             <ImageCarousel images={images} />
           </div>
         </div>
-        <div>
-          <Partners/>
-        </div>
+      
       </div>
     </>
   );

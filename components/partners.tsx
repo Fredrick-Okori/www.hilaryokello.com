@@ -3,33 +3,77 @@ import { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Image from "next/image";
 import { Button } from "@heroui/button";
+import Link from "next/link";
 
-// Partner logos - using WebP format for better performance
-const partnerLogos = [
-  "/partners/ciu-hor-white.webp",
-  "/partners/images.webp",
-   "/partners/logo.webp",
-  "/partners/jico.png",
-  "/partners/karitickets-white.webp",
-  "/partners/laughing_maraboustork.webp",
-   "/partners/logo.webp",
-  "/partners/logo-top.webp",
-  "/partners/uganda_comedians_association.webp",
-  "/partners/logo.webp"
-];
+// Partner data with logos and website URLs
+interface Partner {
+  logo: string;
+  fallback: string;
+  website: string;
+  name: string;
+}
 
-// Fallback logos for browsers that don't support WebP
-const fallbackLogos = [
-  "/partners/ciu-hor-white.png",
-  "/partners/images.jpeg",
-    "/partners/logo.webp",
-  "/partners/jico.png",
-  "/partners/karitickets-white.webp",
-  "/partners/laughing_maraboustork.webp",
-    "/partners/logo.webp",
-  "/partners/logo-top.png",
-  "/partners/uganda_comedians_association.jpg",
-
+const partners: Partner[] = [
+  {
+    logo: "/partners/ciu-hor-white.webp",
+    fallback: "/partners/ciu-hor-white.png",
+    website: "https://www.ciu.ac.ug", // Replace with actual website
+    name: "CIU"
+  },
+  {
+    logo: "/partners/images.webp",
+    fallback: "/partners/images.jpeg",
+    website: "https://www.instagram.com/donelbistrolounge_ug/?hl=en", // Replace with actual website
+    name: "Donel's Bistro, Ntinda"
+  },
+  {
+    logo: "/partners/logo.webp",
+    fallback: "/partners/logo.webp",
+    website: "https://www.kayetickets.com", // Replace with actual website
+    name: "Kayetickets"
+  },
+  {
+    logo: "/partners/jico.png",
+    fallback: "/partners/jico.png",
+    website: "https://x.com/JicoLeague", // Replace with actual website
+    name: "JICO"
+  },
+  {
+    logo: "/partners/karitickets-white.webp",
+    fallback: "/partners/karitickets-white.webp",
+    website: "https://www.karitickets.com", 
+    name: "KariTickets"
+  },
+  {
+    logo: "/partners/laughing_maraboustork.webp",
+    fallback: "/partners/laughing_maraboustork.webp",
+    website: "https://laughingmaraboustork.com/", // Replace with actual website
+    name: "Laughing MarabouStork Comedy Club"
+  },
+  {
+    logo: "/partners/logo.webp",
+    fallback: "/partners/logo.webp",
+    website: "https://www.kayetickets.com", // Replace with actual website
+    name: "Kayetickets"
+  },
+  {
+    logo: "/partners/logo-top.webp",
+    fallback: "/partners/logo-top.png",
+    website: "https://www.roketelkom.co.ug/", // Replace with actual website
+    name: "Roketelcom"
+  },
+  {
+    logo: "/partners/uganda_comedians_association.webp",
+    fallback: "/partners/uganda_comedians_association.jpg",
+    website: "https://www.ugandacomedians.com", // Replace with actual website
+    name: "Uganda Comedians Association"
+  },
+  {
+    logo: "/partners/logo.webp",
+    fallback: "/partners/logo.webp",
+    website: "https://www.kayetickets.com", // Replace with actual website
+    name: "Kayetickets"
+  }
 ];
 
 // Simple debounce implementation
@@ -51,46 +95,52 @@ function debounce<T extends (...args: any[]) => any>(
   return debounced as T & { cancel: () => void };
 }
 
-// Optimized Partner Logo component with lazy loading
+// Optimized Partner Logo component with lazy loading and hyperlinks
 interface PartnerLogoProps {
-  logo: string;
-  fallback: string;
+  partner: Partner;
   index: number;
   isVisible: boolean;
   isPriority: boolean;
 }
 
 const PartnerLogo: React.FC<PartnerLogoProps> = ({ 
-  logo, 
-  fallback, 
+  partner, 
   index, 
   isVisible,
   isPriority 
 }) => {
-  const [imageSrc, setImageSrc] = useState(logo);
+  const [imageSrc, setImageSrc] = useState(partner.logo);
   const [isLoaded, setIsLoaded] = useState(false);
   
   return (
-    <div className="relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6">
+    <Link 
+      href={partner.website}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative h-16 sm:h-20 md:h-24 lg:h-28 w-full mx-2 sm:mx-4 md:mx-6 block group"
+      aria-label={`Visit ${partner.name} website`}
+    >
       {!isLoaded && (
         <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-lg" />
       )}
-      <Image
-        fill
-        alt={`Partner Logo ${index + 1}`}
-        className={`object-contain transition-opacity duration-300 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
-        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-        src={imageSrc}
-        onError={() => setImageSrc(fallback)}
-        onLoad={() => setIsLoaded(true)}
-        loading={isPriority ? "eager" : "lazy"}
-        priority={isPriority}
-        quality={75}
-        placeholder="empty"
-      />
-    </div>
+      <div className="relative h-full w-full transform transition-transform duration-300 group-hover:scale-110">
+        <Image
+          fill
+          alt={`${partner.name} Logo`}
+          className={`object-contain transition-opacity duration-300 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          } group-hover:opacity-80`}
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+          src={imageSrc}
+          onError={() => setImageSrc(partner.fallback)}
+          onLoad={() => setIsLoaded(true)}
+          loading={isPriority ? "eager" : "lazy"}
+          priority={isPriority}
+          quality={75}
+          placeholder="empty"
+        />
+      </div>
+    </Link>
   );
 };
 
@@ -108,13 +158,13 @@ export default function Partners() {
 
   // Memoized calculations
   const maxSlideIndex = useMemo(
-    () => Math.max(0, Math.ceil(partnerLogos.length / itemsPerView) - 1),
+    () => Math.max(0, Math.ceil(partners.length / itemsPerView) - 1),
     [itemsPerView]
   );
 
   const currentVisibleLogos = useMemo(() => {
     const start = slideIndex * itemsPerView;
-    const end = Math.min(start + itemsPerView, partnerLogos.length);
+    const end = Math.min(start + itemsPerView, partners.length);
     return { start, end };
   }, [slideIndex, itemsPerView]);
 
@@ -184,13 +234,13 @@ export default function Partners() {
     
     const nextIndex = (slideIndex + 1) % (maxSlideIndex + 1);
     const startIdx = nextIndex * itemsPerView;
-    const endIdx = Math.min(startIdx + itemsPerView, partnerLogos.length);
+    const endIdx = Math.min(startIdx + itemsPerView, partners.length);
     
     // Preload next set of images
     for (let i = startIdx; i < endIdx; i++) {
-      if (partnerLogos[i]) {
+      if (partners[i]) {
         const img = new window.Image();
-        img.src = supportsWebP ? partnerLogos[i] : fallbackLogos[i];
+        img.src = supportsWebP ? partners[i].logo : partners[i].fallback;
       }
     }
   }, [slideIndex, itemsPerView, maxSlideIndex, supportsWebP, isMounted]);
@@ -275,7 +325,10 @@ export default function Partners() {
     );
   }
 
-  const logos = supportsWebP ? partnerLogos : fallbackLogos;
+  // Use WebP if supported, otherwise use fallback
+  const currentPartners = supportsWebP 
+    ? partners 
+    : partners.map(p => ({ ...p, logo: p.fallback }));
 
   return (
     <section 
@@ -306,27 +359,26 @@ export default function Partners() {
               WebkitTransform: `translateX(-${slideIndex * 100}%)`, // iOS Safari support
             }}
           >
-            {Array.from({ length: Math.ceil(logos.length / itemsPerView) }).map((_, groupIndex) => (
+            {Array.from({ length: Math.ceil(currentPartners.length / itemsPerView) }).map((_, groupIndex) => (
               <div
                 key={groupIndex}
                 className="flex flex-shrink-0 w-full"
               >
-                {logos
+                {currentPartners
                   .slice(groupIndex * itemsPerView, (groupIndex + 1) * itemsPerView)
-                  .map((logo, indexInGroup) => {
+                  .map((partner, indexInGroup) => {
                     const globalIndex = groupIndex * itemsPerView + indexInGroup;
                     const isVisible = groupIndex === slideIndex;
                     const isPriority = groupIndex === 0 && indexInGroup < itemsPerView;
                     
                     return (
                       <div
-                        key={`${logo}-${globalIndex}`}
+                        key={`${partner.name}-${globalIndex}`}
                         className="flex items-center justify-center"
                         style={{ width: `${90 / itemsPerView}%` }}
                       >
                         <PartnerLogo
-                          logo={logo}
-                          fallback={fallbackLogos[globalIndex]}
+                          partner={partner}
                           index={globalIndex}
                           isVisible={isVisible}
                           isPriority={isPriority}
