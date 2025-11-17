@@ -27,7 +27,7 @@ const parseDate = (dateString: string) => new Date(Date.parse(dateString));
 const TODAY = new Date();
 
 // Raw data structured for easy reading
-const RAW_SHOWS: Omit<Show, "date"> & { date: string }[] = [
+const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
   {
     id: 1,
     title: "Dr. Hilary Okello - Live in Johannesburg",
@@ -131,12 +131,15 @@ const CustomButton = ({
   const combinedClasses = `${baseClasses} ${className}`;
 
   if (as === "a" || href) {
+    // Add safe rel when opening in a new tab
+    const rel = target === "_blank" ? "noopener noreferrer" : undefined;
     return (
       <a
+        className={combinedClasses}
         href={href}
+        rel={rel}
         target={target || "_self"}
         onClick={onClick}
-        className={combinedClasses}
       >
         {children}
       </a>
@@ -144,7 +147,7 @@ const CustomButton = ({
   }
 
   return (
-    <button onClick={onClick} className={combinedClasses} disabled={disabled}>
+    <button className={combinedClasses} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );
@@ -179,10 +182,14 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
 
   return (
     <div
-      key={show.id}
-      onClick={() => onShowClick(show)}
       // Increased mobile padding for better touch target size
       className="group relative hover:bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 cursor-pointer transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl"
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onShowClick(show);
+      }}
+      onClick={() => onShowClick(show)}
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         {/* Date Section and Info */}
@@ -215,10 +222,9 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
         {/* Tickets Button (Aligns right on desktop, stretches on mobile for touch) */}
         <div className="flex justify-end sm:justify-start">
           <CustomButton
-            onClick={(e: React.MouseEvent) => onBookTickets(e, show.link)}
-            // Requested change: Removed 'w-full'. Uses 'w-auto' and 'min-w' to stay short on mobile.
             className="rounded-full bg-white hover:bg-yellow-600 text-gray-900 font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
             disabled={!isTicketLinkAvailable}
+            onClick={(e: React.MouseEvent) => onBookTickets(e, show.link)}
           >
             {isTicketLinkAvailable ? "Get Tickets" : "Coming Soon"}
             {isTicketLinkAvailable && <ChevronRight className="ml-1 h-4 w-4" />}
@@ -267,7 +273,7 @@ const UpcomingShows = () => {
   const handleSubmitRequest = useCallback(() => {
     if (cityRequest.trim()) {
       // In a real application, this would send data to Firestore or an API
-      console.log("City requested:", cityRequest.trim());
+      // cityRequest would be sent to the API here
       setCityRequest(""); // Clear input
       setRequestSubmitted(true);
       // Resetting state after a brief delay for user feedback
@@ -304,8 +310,8 @@ const UpcomingShows = () => {
             <ShowItem
               key={show.id}
               show={show}
-              onShowClick={handleShowClick}
               onBookTickets={handleBookTickets}
+              onShowClick={handleShowClick}
             />
           ))}
         </div>
@@ -322,18 +328,18 @@ const UpcomingShows = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
             <input
-              type="text"
+              className="flex-1 p-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all shadow-inner"
               placeholder="Enter your City, Country (e.g., Nairobi, Kenya)"
               value={cityRequest}
+              type="text"
               onChange={(e) => setCityRequest(e.target.value)}
-              className="flex-1 p-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all shadow-inner"
             />
             <Button
-              onClick={handleSubmitRequest}
-              disabled={!cityRequest.trim()}
               className="w-full sm:w-50 px-6 py-3 rounded-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={!cityRequest.trim()}
+              onClick={handleSubmitRequest}
             >
-              {requestSubmitted ? "Requested! 🎉" : "Request Show"}
+              {requestSubmitted ? "Requested" : "Request Show"}
             </Button>
           </div>
           {requestSubmitted && (
@@ -348,21 +354,34 @@ const UpcomingShows = () => {
       {isModalOpen && selectedShow && (
         <div
           // High responsiveness: Full screen on mobile, centered box on desktop
-          className="fixed inset-0 bg-blackbackdrop-blur-sm z-50 flex items-center justify-center p-0 sm:p-4"
-          onClick={closeModal}
+          className="fixed inset-0 bg-black backdrop-blur-sm z-50 flex items-center justify-center p-0 sm:p-4"
+          role="button"
+          tabIndex={0}
+          onClick={(e) => {
+            // Close only when overlay itself is clicked (not inner modal)
+            if (e.target === e.currentTarget) closeModal();
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " " || e.key === "Escape")
+              closeModal();
+          }}
         >
           <div
             // Ensures full height on mobile (h-full), max height on desktop
+            aria-modal="true"
             className="bg-black border border-white/10 rounded-none sm:rounded-2xl max-w-4xl w-full h-full sm:max-h-[90vh] overflow-y-auto shadow-2xl transition-all duration-300 ease-out"
-            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            tabIndex={-1}
           >
             {/* Modal Header with Image */}
             <div className="relative h-72 sm:h-80 w-full">
+              {/* Performance: Prioritize loading the main modal image */}
+              {/* eslint-disable-next-line react/jsx-sort-props */}
               <Image
                 src={selectedShow.image}
-                alt={selectedShow.title}
                 fill
-                priority // Performance: Prioritize loading the main modal image
+                priority
+                alt={selectedShow.title}
                 className="object-cover rounded-t-none sm:rounded-t-2xl"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px" // Image optimization
               />
@@ -371,8 +390,8 @@ const UpcomingShows = () => {
 
               {/* Close Button */}
               <button
-                onClick={closeModal}
                 className="absolute top-4 right-4 p-2 bg-black hover:bg-black/70 rounded-full transition-colors z-10"
+                onClick={closeModal}
               >
                 <X className="h-6 w-6 text-white" />
               </button>
@@ -457,9 +476,9 @@ const UpcomingShows = () => {
                 {selectedShow.link !== "#" ? (
                   <Button
                     as={Link}
+                    className="flex bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-all w-full"
                     href={selectedShow.link}
                     target="_blank"
-                    className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-all w-full"
                   >
                     Get Tickets Now
                     <ChevronRight className="ml-2 h-5 w-5" />
@@ -467,15 +486,15 @@ const UpcomingShows = () => {
                 ) : (
                   <Button
                     disabled
-                    className="flex-1 bg-white/10 text-white/50 font-bold py-3 px-6 rounded-full cursor-not-allowed w-full"
+                    className="flex bg-white/10 text-white/50 font-bold py-3 px-6 rounded-full cursor-not-allowed w-full"
                   >
                     Tickets Coming Soon
                   </Button>
                 )}
                 <Button
-                  onClick={closeModal}
+                  className="flex border-white/20 text-white hover:bg-white/10 font-medium py-3 px-6 rounded-full transition-all w-full"
                   variant="bordered"
-                  className="flex-1 sm:flex-initial border-white/20 text-white hover:bg-white/10 font-medium py-3 px-6 rounded-full transition-all w-full"
+                  onClick={closeModal}
                 >
                   Close Details
                 </Button>
