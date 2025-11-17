@@ -513,350 +513,846 @@ __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@heroui/button/dist/chunk-KCYYJJH4.mjs [app-client] (ecmascript) <export button_default as Button>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/ticket.js [app-client] (ecmascript) <export default as Ticket>");
+;
+var _s = __turbopack_refresh__.signature(), _s1 = __turbopack_refresh__.signature();
 "use client";
 ;
 ;
 ;
 ;
 ;
-const UpcomingShows = ()=>{
-    const imageDimension = 500;
-    const today = new Date();
-    // Date parsing function
-    const parseDate = (dateString)=>{
-        return new Date(Date.parse(dateString));
-    };
-    // Ticket Info
-    const ticketInfo1 = {
-        dateLabel: "19th November 2025",
-        date: parseDate("2025-11-19T19:30:00"),
+// --- Data Preparation (Optimized for performance) ---
+const parseDate = (dateString)=>new Date(Date.parse(dateString));
+const TODAY = new Date();
+// Raw data structured for easy reading
+const RAW_SHOWS = [
+    {
+        id: 1,
+        title: "Dr. Hilary Okello - Live in Johannesburg",
+        dateLabel: "November 19, 2025",
+        date: "2025-11-19T19:30:00",
         time: "7:30 PM",
-        location: "Victory Theatre Johannesburg",
+        location: "Victory Theatre",
+        city: "Johannesburg",
+        country: "South Africa",
         ticketPrice: "R200 Single | R300 a Couple",
         image: "/johannesburg.webp",
         link: "https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/",
-        description: "Uganda’s Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders.After thrilling audiences across Africa, Dr. Hilary brings his unique mix of intelligence, heart, and humor to South Africa — in a show that’s all about connecting people through laughter"
-    };
-    const ticketInfo2 = {
-        dateLabel: "30th May 2025",
-        date: parseDate("2025-05-30T19:00:00"),
-        time: "7:00 PM - Late",
-        location: "Scream Night Club - Lusaka",
-        ticketPrice: "VIP K500 | Standard K200 | Double K300",
-        image: "/zambian_show.jpeg",
+        description: "Uganda's Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders. After thrilling audiences across Africa, Dr. Hilary brings his unique mix of intelligence, heart, and humor to South Africa — in a show that's all about connecting people through laughter",
+        featured: false
+    },
+    {
+        id: 2,
+        title: "Gaborone, Botswana",
+        dateLabel: "Nov 20, 2025",
+        date: "2025-11-20T19:00:00",
+        time: "7:00 PM",
+        location: "Protea Hotel, Masa Square",
+        city: "Gaborone",
+        country: "Botswana",
+        ticketPrice: "Double R300 | Single P200 | At the Door P250",
+        image: "/shows/gaborone.webp",
+        link: "https://www.webtickets.co.bw/v2/Event.aspx?itemid=5911377",
+        description: "The Botswanan leg of the tour promises an evening of electrifying laughter. Expect fresh, new material focused on Southern African life, politics, and culture.",
+        featured: false
+    },
+    {
+        id: 3,
+        title: "Kigali, Rwanda",
+        dateLabel: "November 27, 2025",
+        date: "2025-11-27T19:00:00",
+        time: "7:00 PM",
+        location: "Camp Kigali",
+        city: "Kigali",
+        country: "Rwanda",
+        ticketPrice: "RWF 15,000 | Couples RWF 25,000",
+        image: "/shows/kigali.jpg",
+        link: "#",
+        description: "A special night in the heart of East Africa! Dr. Hilary Okello performs alongside top Rwandan comedic talent for a memorable, family-friendly evening of stand-up.",
+        featured: false
+    },
+    {
+        id: 4,
+        title: "Juba, South Sudan",
+        dateLabel: "December 06, 2025",
+        date: "2025-12-06T19:30:00",
+        time: "7:30 PM",
+        location: "Notos Art Center",
+        city: "Juba",
+        country: "South Sudan",
+        ticketPrice: "Ordinary - $10 | Corporate (5pax) - $250",
+        image: "/shows/south_sudan.webp",
+        link: "#",
+        description: "Juba, get ready to laugh! Dr. Okello brings his internationally acclaimed show to South Sudan for the first time. An evening dedicated to celebrating unity through humor.",
+        featured: false
+    },
+    {
+        id: 5,
+        title: "State of the Nation | Harare",
+        dateLabel: "December 20, 2025",
+        date: "2025-12-20T18:00:00",
+        time: "18:00 PM - Late",
+        location: "Celebration Centre",
+        city: "Harare",
+        country: "Zimbabwe",
+        ticketPrice: "Standard - $20.0 ",
+        image: "/shows/zimbabwe.webp",
         link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463445131",
-        description: "Zambia vs Uganda comedy show, a night of unstoppable laughter ft: Inspector Pamela, live music, explode band."
+        description: "Closing out the year in Harare! Join Dr. Okello for a massive King Kandoro's State of the Nation, featuring music and best performances.",
+        featured: false
+    }
+];
+// Final shows array with Date objects
+const ALL_SHOWS = RAW_SHOWS.map(_c = (show)=>({
+        ...show,
+        date: parseDate(show.date)
+    }));
+_c1 = ALL_SHOWS;
+const CustomButton = ({ onClick, children, className = "", disabled = false, as, href, target })=>{
+    const baseClasses = "flex items-center justify-center space-x-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed";
+    const combinedClasses = `${baseClasses} ${className}`;
+    if (as === "a" || href) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+            href: href,
+            target: target || "_self",
+            onClick: onClick,
+            className: combinedClasses,
+            children: children
+        }, void 0, false, {
+            fileName: "[project]/components/upcoming.show.tsx",
+            lineNumber: 135,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+        onClick: onClick,
+        className: combinedClasses,
+        disabled: disabled,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/components/upcoming.show.tsx",
+        lineNumber: 147,
+        columnNumber: 5
+    }, this);
+};
+_c2 = CustomButton;
+// --- Utility Functions ---
+// Use a stable, performant date formatting function
+const formatDatePart = (date)=>{
+    const weekday = date.toLocaleDateString("en-US", {
+        weekday: "short"
+    }).toUpperCase();
+    const month = date.toLocaleDateString("en-US", {
+        month: "short"
+    }).toUpperCase();
+    const day = date.getDate();
+    return {
+        weekday,
+        month,
+        day
     };
-    const handleBookTickets = (link)=>{
-        window.open(link, "_blank", "noopener,noreferrer");
-    };
+};
+const ShowItem = ({ show, onShowClick, onBookTickets })=>{
+    _s();
+    const { weekday, month, day } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "ShowItem.useMemo": ()=>formatDatePart(show.date)
+    }["ShowItem.useMemo"], [
+        show.date
+    ]);
+    const isTicketLinkAvailable = show.link !== "#";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8",
+        onClick: ()=>onShowClick(show),
+        // Increased mobile padding for better touch target size
+        className: "group relative hover:bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 cursor-pointer transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex items-start sm:items-center gap-4 sm:gap-6 min-w-full sm:min-w-[50%]",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "text-center min-w-[80px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-xs text-white/50 font-medium tracking-wider",
+                                    children: weekday
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 192,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-3xl font-extrabold text-white-400",
+                                    children: day
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 195,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-sm text-white/70 font-semibold",
+                                    children: month
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 196,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/upcoming.show.tsx",
+                            lineNumber: 191,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex-1 min-w-0",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-xl font-bold text-white mb-1 truncate",
+                                    children: [
+                                        show.city,
+                                        ", ",
+                                        show.country
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 201,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-white/70 text-sm sm:text-base truncate",
+                                    children: [
+                                        show.location,
+                                        " • ",
+                                        show.time
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 204,
+                                    columnNumber: 13
+                                }, this),
+                                show.featured && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "inline-block mt-2 px-3 py-1 bg-yellow-500/30 text-yellow-300 rounded-full text-xs font-medium",
+                                    children: "FEATURED EVENT"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 208,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/upcoming.show.tsx",
+                            lineNumber: 200,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/upcoming.show.tsx",
+                    lineNumber: 189,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex justify-end sm:justify-start",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomButton, {
+                        onClick: (e)=>onBookTickets(e, show.link),
+                        // Requested change: Removed 'w-full'. Uses 'w-auto' and 'min-w' to stay short on mobile.
+                        className: "rounded-full bg-white hover:bg-yellow-600 text-gray-900 font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto",
+                        disabled: !isTicketLinkAvailable,
+                        children: [
+                            isTicketLinkAvailable ? "Get Tickets" : "Coming Soon",
+                            isTicketLinkAvailable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                className: "ml-1 h-4 w-4"
+                            }, void 0, false, {
+                                fileName: "[project]/components/upcoming.show.tsx",
+                                lineNumber: 224,
+                                columnNumber: 39
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/upcoming.show.tsx",
+                        lineNumber: 217,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/upcoming.show.tsx",
+                    lineNumber: 216,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/upcoming.show.tsx",
+            lineNumber: 187,
+            columnNumber: 7
+        }, this)
+    }, show.id, false, {
+        fileName: "[project]/components/upcoming.show.tsx",
+        lineNumber: 181,
+        columnNumber: 5
+    }, this);
+};
+_s(ShowItem, "+N16q05JaOXy9AQ4LMbe/vtudfc=");
+_c3 = ShowItem;
+// --- Main Component ---
+const UpcomingShows = ()=>{
+    _s1();
+    const [selectedShow, setSelectedShow] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isModalOpen, setIsModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // CTA State
+    const [cityRequest, setCityRequest] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [requestSubmitted, setRequestSubmitted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Performance: Filter and sort upcoming shows using useMemo
+    const upcomingShows = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "UpcomingShows.useMemo[upcomingShows]": ()=>{
+            return ALL_SHOWS.filter({
+                "UpcomingShows.useMemo[upcomingShows]": (show)=>show.date.getTime() > TODAY.getTime()
+            }["UpcomingShows.useMemo[upcomingShows]"]).sort({
+                "UpcomingShows.useMemo[upcomingShows]": (a, b)=>a.date.getTime() - b.date.getTime()
+            }["UpcomingShows.useMemo[upcomingShows]"]);
+        }
+    }["UpcomingShows.useMemo[upcomingShows]"], []);
+    // Performance: Stable function references using useCallback
+    const handleShowClick = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "UpcomingShows.useCallback[handleShowClick]": (show)=>{
+            setSelectedShow(show);
+            setIsModalOpen(true);
+        }
+    }["UpcomingShows.useCallback[handleShowClick]"], []);
+    const closeModal = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "UpcomingShows.useCallback[closeModal]": ()=>{
+            setIsModalOpen(false);
+            // Delay setting selectedShow to null to allow for potential exit animations
+            setTimeout({
+                "UpcomingShows.useCallback[closeModal]": ()=>setSelectedShow(null)
+            }["UpcomingShows.useCallback[closeModal]"], 300);
+        }
+    }["UpcomingShows.useCallback[closeModal]"], []);
+    const handleBookTickets = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "UpcomingShows.useCallback[handleBookTickets]": (e, link)=>{
+            e.stopPropagation(); // Prevent opening the modal
+            if (link !== "#") {
+                window.open(link, "_blank", "noopener,noreferrer");
+            }
+        }
+    }["UpcomingShows.useCallback[handleBookTickets]"], []);
+    const handleSubmitRequest = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "UpcomingShows.useCallback[handleSubmitRequest]": ()=>{
+            if (cityRequest.trim()) {
+                // In a real application, this would send data to Firestore or an API
+                console.log("City requested:", cityRequest.trim());
+                setCityRequest(""); // Clear input
+                setRequestSubmitted(true);
+                // Resetting state after a brief delay for user feedback
+                setTimeout({
+                    "UpcomingShows.useCallback[handleSubmitRequest]": ()=>setRequestSubmitted(false)
+                }["UpcomingShows.useCallback[handleSubmitRequest]"], 3000);
+            }
+        }
+    }["UpcomingShows.useCallback[handleSubmitRequest]"], [
+        cityRequest
+    ]);
+    // Conditionally render the "No Shows" message
+    if (upcomingShows.length === 0) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "text-center text-3xl sm:text-4xl text-white font-bold",
+                    children: "New Shows Coming Soon!"
+                }, void 0, false, {
+                    fileName: "[project]/components/upcoming.show.tsx",
+                    lineNumber: 282,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-center text-lg text-white/70 mt-4",
+                    children: "Stay tuned for upcoming tour dates."
+                }, void 0, false, {
+                    fileName: "[project]/components/upcoming.show.tsx",
+                    lineNumber: 285,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/upcoming.show.tsx",
+            lineNumber: 281,
+            columnNumber: 7
+        }, this);
+    }
+    // --- Render List and Modal ---
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "font-sans min-h-screen text-white",
         children: [
-            ticketInfo1.date > today && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-7xl mx-auto px-4 pt-10 pb-20 sm:px-6 lg:px-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-left text-3xl sm:text-4xl text-white font-bold",
-                        children: [
-                            "Upcoming Show ",
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                className: "inline-block ml-2"
-                            }, void 0, false, {
-                                fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 53,
-                                columnNumber: 27
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        className: "text-center text-4xl sm:text-5xl text-white font-extrabold mb-12",
+                        children: "Upcoming Shows"
+                    }, void 0, false, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 52,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                        className: "rounded-full text-white px-6 py-3 mt-4",
-                        variant: "bordered",
-                        target: "_blank",
-                        as: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-                        href: "https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/",
-                        children: [
-                            "Buy Ticket Now",
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                className: "mr-2 h-5 w-5"
-                            }, void 0, false, {
-                                fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 64,
-                                columnNumber: 14
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 56,
-                        columnNumber: 11
+                        lineNumber: 297,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col lg:flex-row mt-10 gap-8 items-center",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative w-full lg:w-1/2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 z-0 rounded-2xl glow-border"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 69,
-                                        columnNumber: 3
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        alt: "Uganda Must Laugh II",
-                                        className: "relative z-10 rounded-2xl object-cover",
-                                        height: imageDimension,
-                                        src: ticketInfo1.image,
-                                        width: imageDimension
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 3
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                        className: "space-y-4",
+                        children: upcomingShows.map((show)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ShowItem, {
+                                show: show,
+                                onShowClick: handleShowClick,
+                                onBookTickets: handleBookTickets
+                            }, show.id, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 68,
+                                lineNumber: 304,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/upcoming.show.tsx",
+                        lineNumber: 302,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "py-20 mt-16 bg-black rounded-2xl border border-white/10 p-6 sm:p-10 shadow-3xl",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-center text-3xl sm:text-4xl font-extrabold mb-4 text-white",
+                                children: "Want me to perform in your City?"
+                            }, void 0, false, {
+                                fileName: "[project]/components/upcoming.show.tsx",
+                                lineNumber: 315,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-center text-lg text-white/70 max-w-2xl mx-auto mb-8",
+                                children: "Tell us where you want Dr. Okello to perform next. High-demand cities influence our next tour planning!"
+                            }, void 0, false, {
+                                fileName: "[project]/components/upcoming.show.tsx",
+                                lineNumber: 318,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full lg:w-1/2 p-2 sm:p-4",
+                                className: "flex flex-col sm:flex-row gap-3 max-w-lg mx-auto",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "text-left text-3xl sm:text-4xl text-white font-bold",
-                                        children: "Dr. Hilary Okello - Live in Johannesburg"
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        placeholder: "Enter your City, Country (e.g., Nairobi, Kenya)",
+                                        value: cityRequest,
+                                        onChange: (e)=>setCityRequest(e.target.value),
+                                        className: "flex-1 p-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all shadow-inner"
                                     }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 324,
                                         columnNumber: 13
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-left text-lg text-white mt-4",
-                                        children: ticketInfo1.description
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 83,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                        className: "text-left text-2xl text-white font-bold mt-8",
-                                        children: "Ticket Information"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 86,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-left text-lg text-white mt-4",
-                                        children: [
-                                            ticketInfo1.dateLabel,
-                                            " • ",
-                                            ticketInfo1.time,
-                                            " ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                fileName: "[project]/components/upcoming.show.tsx",
-                                                lineNumber: 90,
-                                                columnNumber: 62
-                                            }, this),
-                                            "Location: ",
-                                            ticketInfo1.location,
-                                            " ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                fileName: "[project]/components/upcoming.show.tsx",
-                                                lineNumber: 91,
-                                                columnNumber: 50
-                                            }, this),
-                                            "Tickets: ",
-                                            ticketInfo1.ticketPrice
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 89,
-                                        columnNumber: 15
-                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                                        className: "rounded-full text-white mt-4",
-                                        variant: "bordered",
-                                        as: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-                                        target: "_blank",
-                                        href: "https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/",
-                                        children: [
-                                            "Buy Tickets Now",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                                className: "mr-2 h-5 w-5"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/upcoming.show.tsx",
-                                                lineNumber: 103,
-                                                columnNumber: 14
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        onClick: handleSubmitRequest,
+                                        disabled: !cityRequest.trim(),
+                                        className: "w-full sm:w-50 px-6 py-3 rounded-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed",
+                                        children: requestSubmitted ? "Requested! 🎉" : "Request Show"
+                                    }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 15
+                                        lineNumber: 331,
+                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 79,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 67,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/upcoming.show.tsx",
-                lineNumber: 51,
-                columnNumber: 9
-            }, this),
-            ticketInfo2.date > today && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-20",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                        className: "text-left text-3xl sm:text-4xl text-white font-bold",
-                        children: "Upcoming Show: Mikaela Events - Lusaka"
-                    }, void 0, false, {
-                        fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 113,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                        className: "rounded-full text-white px-4 py-2 mt-4",
-                        variant: "bordered",
-                        onClick: ()=>handleBookTickets(ticketInfo2.link),
-                        children: "Buy Ticket Now"
-                    }, void 0, false, {
-                        fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 116,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col lg:flex-row mt-10 gap-8 items-center",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full lg:w-1/2",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    alt: "Live at Central Park",
-                                    className: "rounded-2xl object-cover",
-                                    height: 200,
-                                    src: ticketInfo2.image,
-                                    width: 400
-                                }, void 0, false, {
-                                    fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 126,
-                                    columnNumber: 15
-                                }, this)
+                                lineNumber: 323,
+                                columnNumber: 11
+                            }, this),
+                            requestSubmitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-center text-green-400 mt-4 text-sm font-medium animate-pulse",
+                                children: "Thank you! Your city request has been noted."
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 125,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full lg:w-1/2 p-2 sm:p-4",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        className: "text-left text-3xl sm:text-4xl text-white font-bold",
-                                        children: "Upcoming Show: Mikaela Events - Lusaka"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 135,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-left text-lg text-white mt-4",
-                                        children: ticketInfo2.description
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 138,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                        className: "text-left text-2xl text-white font-bold mt-8",
-                                        children: "Ticket Information"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 141,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-left text-lg text-white mt-4",
-                                        children: [
-                                            ticketInfo2.dateLabel,
-                                            " • ",
-                                            ticketInfo2.time,
-                                            " ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                fileName: "[project]/components/upcoming.show.tsx",
-                                                lineNumber: 145,
-                                                columnNumber: 62
-                                            }, this),
-                                            "Location: ",
-                                            ticketInfo2.location,
-                                            " ",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                fileName: "[project]/components/upcoming.show.tsx",
-                                                lineNumber: 146,
-                                                columnNumber: 50
-                                            }, this),
-                                            "Tickets: ",
-                                            ticketInfo2.ticketPrice
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 144,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                                        className: "rounded-full text-white px-4 py-2 mt-8",
-                                        variant: "bordered",
-                                        onClick: ()=>handleBookTickets(ticketInfo2.link),
-                                        children: "Get Ticket Now"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 149,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 134,
+                                lineNumber: 340,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 124,
-                        columnNumber: 11
+                        lineNumber: 314,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/upcoming.show.tsx",
-                lineNumber: 112,
+                lineNumber: 295,
+                columnNumber: 7
+            }, this),
+            isModalOpen && selectedShow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                // High responsiveness: Full screen on mobile, centered box on desktop
+                className: "fixed inset-0 bg-blackbackdrop-blur-sm z-50 flex items-center justify-center p-0 sm:p-4",
+                onClick: closeModal,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    // Ensures full height on mobile (h-full), max height on desktop
+                    className: "bg-black border border-white/10 rounded-none sm:rounded-2xl max-w-4xl w-full h-full sm:max-h-[90vh] overflow-y-auto shadow-2xl transition-all duration-300 ease-out",
+                    onClick: (e)=>e.stopPropagation(),
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative h-72 sm:h-80 w-full",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: selectedShow.image,
+                                    alt: selectedShow.title,
+                                    fill: true,
+                                    priority: true,
+                                    className: "object-cover rounded-t-none sm:rounded-t-2xl",
+                                    sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px" // Image optimization
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 361,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent rounded-t-none sm:rounded-t-2xl"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 370,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: closeModal,
+                                    className: "absolute top-4 right-4 p-2 bg-black hover:bg-black/70 rounded-full transition-colors z-10",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                        className: "h-6 w-6 text-white"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/upcoming.show.tsx",
+                                        lineNumber: 377,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 373,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute bottom-4 left-6 right-6 z-10",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-3xl sm:text-4xl font-bold text-white mb-2",
+                                            children: selectedShow.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 382,
+                                            columnNumber: 17
+                                        }, this),
+                                        selectedShow.featured && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "inline-block px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm font-medium",
+                                            children: "FEATURED SHOW"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 386,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 381,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/upcoming.show.tsx",
+                            lineNumber: 360,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "p-6 sm:p-8",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid grid-cols-2 gap-x-4 gap-y-6 mb-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-start gap-3 col-span-2 sm:col-span-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                    className: "h-5 w-5 text-yellow-500 mt-0.5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 399,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white/50 text-sm",
+                                                            children: "Date"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 401,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white font-medium",
+                                                            children: selectedShow.dateLabel
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 402,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 400,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 398,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-start gap-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                    className: "h-5 w-5 text-yellow-500 mt-0.5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 410,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white/50 text-sm",
+                                                            children: "Time"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 412,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white font-medium",
+                                                            children: selectedShow.time
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 413,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 411,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 409,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-start gap-3 col-span-2 sm:col-span-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                    className: "h-5 w-5 text-yellow-500 mt-0.5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 421,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white/50 text-sm",
+                                                            children: "Venue"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 423,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white font-medium",
+                                                            children: selectedShow.location
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 424,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white/70 text-sm",
+                                                            children: [
+                                                                selectedShow.city,
+                                                                ", ",
+                                                                selectedShow.country
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 427,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 422,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 420,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-start gap-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ticket$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ticket$3e$__["Ticket"], {
+                                                    className: "h-5 w-5 text-yellow-500 mt-0.5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 435,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white/50 text-sm",
+                                                            children: "Tickets"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 437,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-white font-medium",
+                                                            children: selectedShow.ticketPrice
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/upcoming.show.tsx",
+                                                            lineNumber: 438,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 436,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 434,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 396,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mb-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                            className: "text-xl font-bold text-white mb-3",
+                                            children: "About This Show"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 447,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-white/70 leading-relaxed",
+                                            children: selectedShow.description
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 450,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 446,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-col sm:flex-row gap-3 sticky bottom-0 bg-black py-3 sm:static sm:bg-transparent sm:py-0 border-t sm:border-t-0 border-white/5",
+                                    children: [
+                                        selectedShow.link !== "#" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
+                                            as: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
+                                            href: selectedShow.link,
+                                            target: "_blank",
+                                            className: "flex-1 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-all w-full",
+                                            children: [
+                                                "Get Tickets Now",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                    className: "ml-2 h-5 w-5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/upcoming.show.tsx",
+                                                    lineNumber: 465,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 458,
+                                            columnNumber: 19
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
+                                            disabled: true,
+                                            className: "flex-1 bg-white/10 text-white/50 font-bold py-3 px-6 rounded-full cursor-not-allowed w-full",
+                                            children: "Tickets Coming Soon"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 468,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
+                                            onClick: closeModal,
+                                            variant: "bordered",
+                                            className: "flex-1 sm:flex-initial border-white/20 text-white hover:bg-white/10 font-medium py-3 px-6 rounded-full transition-all w-full",
+                                            children: "Close Details"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 475,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 456,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/upcoming.show.tsx",
+                            lineNumber: 394,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/upcoming.show.tsx",
+                    lineNumber: 354,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/upcoming.show.tsx",
+                lineNumber: 349,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/upcoming.show.tsx",
-        lineNumber: 48,
+        lineNumber: 294,
         columnNumber: 5
     }, this);
 };
-_c = UpcomingShows;
+_s1(UpcomingShows, "YF+6zotqyZnj908/UWjABUT/Z68=");
+_c4 = UpcomingShows;
 const __TURBOPACK__default__export__ = UpcomingShows;
-var _c;
-__turbopack_refresh__.register(_c, "UpcomingShows");
+var _c, _c1, _c2, _c3, _c4;
+__turbopack_refresh__.register(_c, "ALL_SHOWS$RAW_SHOWS.map");
+__turbopack_refresh__.register(_c1, "ALL_SHOWS");
+__turbopack_refresh__.register(_c2, "CustomButton");
+__turbopack_refresh__.register(_c3, "ShowItem");
+__turbopack_refresh__.register(_c4, "UpcomingShows");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }

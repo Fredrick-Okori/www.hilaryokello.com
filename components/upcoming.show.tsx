@@ -1,158 +1,485 @@
 "use client";
+import { useState, useMemo, useCallback } from "react";
 import Image from "next/image";
 import { Button } from "@heroui/button";
 import Link from "next/link";
+import { ChevronRight, X, MapPin, Calendar, Clock, Ticket } from "lucide-react";
 
-import { ChevronRight } from "lucide-react";
+// --- Type Definition ---
+interface Show {
+  id: number;
+  title: string;
+  dateLabel: string;
+  date: Date;
+  time: string;
+  location: string;
+  country: string;
+  city: string;
+  ticketPrice: string;
+  image: string;
+  link: string;
+  description: string;
+  featured: boolean;
+}
 
-const UpcomingShows = () => {
-  const imageDimension = 500;
-  const today = new Date();
+// --- Data Preparation (Optimized for performance) ---
+const parseDate = (dateString: string) => new Date(Date.parse(dateString));
+const TODAY = new Date();
 
-  // Date parsing function
-  const parseDate = (dateString: string) => {
-    return new Date(Date.parse(dateString));
-  };
-
-  // Ticket Info
-  const ticketInfo1 = {
-    dateLabel: "19th November 2025",
-    date: parseDate("2025-11-19T19:30:00"),
+// Raw data structured for easy reading
+const RAW_SHOWS: Omit<Show, "date"> & { date: string }[] = [
+  {
+    id: 1,
+    title: "Dr. Hilary Okello - Live in Johannesburg",
+    dateLabel: "November 19, 2025",
+    date: "2025-11-19T19:30:00",
     time: "7:30 PM",
-    location: "Victory Theatre Johannesburg",
+    location: "Victory Theatre",
+    city: "Johannesburg",
+    country: "South Africa",
     ticketPrice: "R200 Single | R300 a Couple",
     image: "/johannesburg.webp",
     link: "https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/",
     description:
-      "Uganda’s Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders.After thrilling audiences across Africa, Dr. Hilary brings his unique mix of intelligence, heart, and humor to South Africa — in a show that’s all about connecting people through laughter",
-
-  };
-
-  const ticketInfo2 = {
-    dateLabel: "30th May 2025",
-    date: parseDate("2025-05-30T19:00:00"),
-    time: "7:00 PM - Late",
-    location: "Scream Night Club - Lusaka",
-    ticketPrice: "VIP K500 | Standard K200 | Double K300",
-    image: "/zambian_show.jpeg",
+      "Uganda's Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders. After thrilling audiences across Africa, Dr. Hilary brings his unique mix of intelligence, heart, and humor to South Africa — in a show that's all about connecting people through laughter",
+    featured: false,
+  },
+  {
+    id: 2,
+    title: "Gaborone, Botswana",
+    dateLabel: "Nov 20, 2025",
+    date: "2025-11-20T19:00:00",
+    time: "7:00 PM",
+    location: "Protea Hotel, Masa Square",
+    city: "Gaborone",
+    country: "Botswana",
+    ticketPrice: "Double R300 | Single P200 | At the Door P250",
+    image: "/shows/gaborone.webp",
+    link: "https://www.webtickets.co.bw/v2/Event.aspx?itemid=5911377",
+    description:
+      "The Botswanan leg of the tour promises an evening of electrifying laughter. Expect fresh, new material focused on Southern African life, politics, and culture.",
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "Kigali, Rwanda",
+    dateLabel: "November 27, 2025",
+    date: "2025-11-27T19:00:00",
+    time: "7:00 PM",
+    location: "Camp Kigali",
+    city: "Kigali",
+    country: "Rwanda",
+    ticketPrice: "RWF 15,000 | Couples RWF 25,000",
+    image: "/shows/kigali.jpg",
+    link: "#",
+    description:
+      "A special night in the heart of East Africa! Dr. Hilary Okello performs alongside top Rwandan comedic talent for a memorable, family-friendly evening of stand-up.",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "Juba, South Sudan",
+    dateLabel: "December 06, 2025",
+    date: "2025-12-06T19:30:00",
+    time: "7:30 PM",
+    location: "Notos Art Center",
+    city: "Juba",
+    country: "South Sudan",
+    ticketPrice: "Ordinary - $10 | Corporate (5pax) - $250",
+    image: "/shows/south_sudan.webp",
+    link: "#",
+    description:
+      "Juba, get ready to laugh! Dr. Okello brings his internationally acclaimed show to South Sudan for the first time. An evening dedicated to celebrating unity through humor.",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "State of the Nation | Harare",
+    dateLabel: "December 20, 2025",
+    date: "2025-12-20T18:00:00",
+    time: "18:00 PM - Late",
+    location: "Celebration Centre",
+    city: "Harare",
+    country: "Zimbabwe",
+    ticketPrice: "Standard - $20.0 ",
+    image: "/shows/zimbabwe.webp",
     link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463445131",
     description:
-      "Zambia vs Uganda comedy show, a night of unstoppable laughter ft: Inspector Pamela, live music, explode band.",
-  };
+      "Closing out the year in Harare! Join Dr. Okello for a massive King Kandoro's State of the Nation, featuring music and best performances.",
+    featured: false,
+  },
+];
 
-  const handleBookTickets = (link: string) => {
-    window.open(link, "_blank", "noopener,noreferrer");
-  };
+// Final shows array with Date objects
+const ALL_SHOWS: Show[] = RAW_SHOWS.map((show) => ({
+  ...show,
+  date: parseDate(show.date),
+}));
+
+const CustomButton = ({
+  onClick,
+  children,
+  className = "",
+  disabled = false,
+  as,
+  href,
+  target,
+}: any) => {
+  const baseClasses =
+    "flex items-center justify-center space-x-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed";
+
+  const combinedClasses = `${baseClasses} ${className}`;
+
+  if (as === "a" || href) {
+    return (
+      <a
+        href={href}
+        target={target || "_self"}
+        onClick={onClick}
+        className={combinedClasses}
+      >
+        {children}
+      </a>
+    );
+  }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
-      {/* First Show */}
-      {ticketInfo1.date > today && (
-        <div>
-          <h2 className="text-left text-3xl sm:text-4xl text-white font-bold">
-            Upcoming Show <ChevronRight className="inline-block ml-2" />
-          </h2>
-         
-          <Button
-            className="rounded-full text-white px-6 py-3 mt-4"
-            variant="bordered"
-            target="_blank"
-            as={Link}
-            href="https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/"
-          >
-            Buy Ticket Now
-             <ChevronRight className="mr-2 h-5 w-5" />
-          </Button>
+    <button onClick={onClick} className={combinedClasses} disabled={disabled}>
+      {children}
+    </button>
+  );
+};
+// --- Utility Functions ---
 
-          <div className="flex flex-col lg:flex-row mt-10 gap-8 items-center">
-          <div className="relative w-full lg:w-1/2">
-  <div className="absolute inset-0 z-0 rounded-2xl glow-border" />
-  <Image
-    alt="Uganda Must Laugh II"
-    className="relative z-10 rounded-2xl object-cover"
-    height={imageDimension}
-    src={ticketInfo1.image}
-    width={imageDimension}
-  />
-</div>
+// Use a stable, performant date formatting function
+const formatDatePart = (date: Date) => {
+  const weekday = date
+    .toLocaleDateString("en-US", { weekday: "short" })
+    .toUpperCase();
+  const month = date
+    .toLocaleDateString("en-US", { month: "short" })
+    .toUpperCase();
+  const day = date.getDate();
+  return { weekday, month, day };
+};
 
-            <div className="w-full lg:w-1/2 p-2 sm:p-4">
-            <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
-             Dr. Hilary Okello - Live in Johannesburg
-          </h4>
-              <p className="text-left text-lg text-white mt-4">
-                {ticketInfo1.description}
-              </p>
-              <h5 className="text-left text-2xl text-white font-bold mt-8">
-                Ticket Information
-              </h5>
-              <p className="text-left text-lg text-white mt-4">
-                {ticketInfo1.dateLabel} • {ticketInfo1.time} <br />
-                Location: {ticketInfo1.location} <br />
-              
-                Tickets: {ticketInfo1.ticketPrice}
-              </p>
-              <Button
-            className="rounded-full text-white mt-4"
-            variant="bordered"
-            as={Link}
-            target="_blank"
-            href="https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/"
-          >
-            Buy Tickets Now
-             <ChevronRight className="mr-2 h-5 w-5" />
-          </Button>
+// --- Show Item Component (Optimized for list rendering) ---
+interface ShowItemProps {
+  show: Show;
+  onShowClick: (show: Show) => void;
+  onBookTickets: (e: React.MouseEvent, link: string) => void;
+}
+
+const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
+  const { weekday, month, day } = useMemo(
+    () => formatDatePart(show.date),
+    [show.date],
+  );
+  const isTicketLinkAvailable = show.link !== "#";
+
+  return (
+    <div
+      key={show.id}
+      onClick={() => onShowClick(show)}
+      // Increased mobile padding for better touch target size
+      className="group relative hover:bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 cursor-pointer transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl"
+    >
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        {/* Date Section and Info */}
+        <div className="flex items-start sm:items-center gap-4 sm:gap-6 min-w-full sm:min-w-[50%]">
+          {/* Fixed width date container for stable alignment */}
+          <div className="text-center min-w-[80px]">
+            <div className="text-xs text-white/50 font-medium tracking-wider">
+              {weekday}
             </div>
+            <div className="text-3xl font-extrabold text-white-400">{day}</div>
+            <div className="text-sm text-white/70 font-semibold">{month}</div>
+          </div>
+
+          {/* Show Info */}
+          <div className="flex-1 min-w-0">
+            <h3 className="text-xl font-bold text-white mb-1 truncate">
+              {show.city}, {show.country}
+            </h3>
+            <p className="text-white/70 text-sm sm:text-base truncate">
+              {show.location} • {show.time}
+            </p>
+            {show.featured && (
+              <span className="inline-block mt-2 px-3 py-1 bg-yellow-500/30 text-yellow-300 rounded-full text-xs font-medium">
+                FEATURED EVENT
+              </span>
+            )}
           </div>
         </div>
-      )}
 
-      {/* Second Show */}
-      {ticketInfo2.date > today && (
-        <div className="mt-20">
-          <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
-            Upcoming Show: Mikaela Events - Lusaka
-          </h4>
-          <Button
-            className="rounded-full text-white px-4 py-2 mt-4"
-            variant="bordered"
-            onClick={() => handleBookTickets(ticketInfo2.link)}
+        {/* Tickets Button (Aligns right on desktop, stretches on mobile for touch) */}
+        <div className="flex justify-end sm:justify-start">
+          <CustomButton
+            onClick={(e: React.MouseEvent) => onBookTickets(e, show.link)}
+            // Requested change: Removed 'w-full'. Uses 'w-auto' and 'min-w' to stay short on mobile.
+            className="rounded-full bg-white hover:bg-yellow-600 text-gray-900 font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
+            disabled={!isTicketLinkAvailable}
           >
-            Buy Ticket Now
-          </Button>
+            {isTicketLinkAvailable ? "Get Tickets" : "Coming Soon"}
+            {isTicketLinkAvailable && <ChevronRight className="ml-1 h-4 w-4" />}
+          </CustomButton>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-          <div className="flex flex-col lg:flex-row mt-10 gap-8 items-center">
-            <div className="w-full lg:w-1/2">
+// --- Main Component ---
+const UpcomingShows = () => {
+  const [selectedShow, setSelectedShow] = useState<Show | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // CTA State
+  const [cityRequest, setCityRequest] = useState("");
+  const [requestSubmitted, setRequestSubmitted] = useState(false);
+
+  // Performance: Filter and sort upcoming shows using useMemo
+  const upcomingShows = useMemo(() => {
+    return ALL_SHOWS.filter(
+      (show) => show.date.getTime() > TODAY.getTime(),
+    ).sort((a, b) => a.date.getTime() - b.date.getTime());
+  }, []);
+
+  // Performance: Stable function references using useCallback
+  const handleShowClick = useCallback((show: Show) => {
+    setSelectedShow(show);
+    setIsModalOpen(true);
+  }, []);
+
+  const closeModal = useCallback(() => {
+    setIsModalOpen(false);
+    // Delay setting selectedShow to null to allow for potential exit animations
+    setTimeout(() => setSelectedShow(null), 300);
+  }, []);
+
+  const handleBookTickets = useCallback((e: React.MouseEvent, link: string) => {
+    e.stopPropagation(); // Prevent opening the modal
+    if (link !== "#") {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
+  }, []);
+
+  const handleSubmitRequest = useCallback(() => {
+    if (cityRequest.trim()) {
+      // In a real application, this would send data to Firestore or an API
+      console.log("City requested:", cityRequest.trim());
+      setCityRequest(""); // Clear input
+      setRequestSubmitted(true);
+      // Resetting state after a brief delay for user feedback
+      setTimeout(() => setRequestSubmitted(false), 3000);
+    }
+  }, [cityRequest]);
+
+  // Conditionally render the "No Shows" message
+  if (upcomingShows.length === 0) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
+        <h2 className="text-center text-3xl sm:text-4xl text-white font-bold">
+          New Shows Coming Soon!
+        </h2>
+        <p className="text-center text-lg text-white/70 mt-4">
+          Stay tuned for upcoming tour dates.
+        </p>
+      </div>
+    );
+  }
+
+  // --- Render List and Modal ---
+  return (
+    <div className="font-sans min-h-screen text-white">
+      <div className="max-w-7xl mx-auto px-4 pt-10 pb-20 sm:px-6 lg:px-8">
+        {/* Title */}
+        <h2 className="text-center text-4xl sm:text-5xl text-white font-extrabold mb-12">
+          Upcoming Shows
+        </h2>
+
+        {/* Shows List */}
+        <div className="space-y-4">
+          {upcomingShows.map((show) => (
+            <ShowItem
+              key={show.id}
+              show={show}
+              onShowClick={handleShowClick}
+              onBookTickets={handleBookTickets}
+            />
+          ))}
+        </div>
+
+        {/* CTA section (Enhanced) */}
+        <div className="py-20 mt-16 bg-black rounded-2xl border border-white/10 p-6 sm:p-10 shadow-3xl">
+          <h2 className="text-center text-3xl sm:text-4xl font-extrabold mb-4 text-white">
+            Want me to perform in your City?
+          </h2>
+          <p className="text-center text-lg text-white/70 max-w-2xl mx-auto mb-8">
+            Tell us where you want Dr. Okello to perform next. High-demand
+            cities influence our next tour planning!
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+            <input
+              type="text"
+              placeholder="Enter your City, Country (e.g., Nairobi, Kenya)"
+              value={cityRequest}
+              onChange={(e) => setCityRequest(e.target.value)}
+              className="flex-1 p-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all shadow-inner"
+            />
+            <Button
+              onClick={handleSubmitRequest}
+              disabled={!cityRequest.trim()}
+              className="w-full sm:w-50 px-6 py-3 rounded-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {requestSubmitted ? "Requested! 🎉" : "Request Show"}
+            </Button>
+          </div>
+          {requestSubmitted && (
+            <p className="text-center text-green-400 mt-4 text-sm font-medium animate-pulse">
+              Thank you! Your city request has been noted.
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Modal - Render only when open for efficiency */}
+      {isModalOpen && selectedShow && (
+        <div
+          // High responsiveness: Full screen on mobile, centered box on desktop
+          className="fixed inset-0 bg-blackbackdrop-blur-sm z-50 flex items-center justify-center p-0 sm:p-4"
+          onClick={closeModal}
+        >
+          <div
+            // Ensures full height on mobile (h-full), max height on desktop
+            className="bg-black border border-white/10 rounded-none sm:rounded-2xl max-w-4xl w-full h-full sm:max-h-[90vh] overflow-y-auto shadow-2xl transition-all duration-300 ease-out"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header with Image */}
+            <div className="relative h-72 sm:h-80 w-full">
               <Image
-                alt="Live at Central Park"
-                className="rounded-2xl object-cover"
-                height={200}
-                src={ticketInfo2.image}
-                width={400}
+                src={selectedShow.image}
+                alt={selectedShow.title}
+                fill
+                priority // Performance: Prioritize loading the main modal image
+                className="object-cover rounded-t-none sm:rounded-t-2xl"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px" // Image optimization
               />
-            </div>
-            <div className="w-full lg:w-1/2 p-2 sm:p-4">
-              <h4 className="text-left text-3xl sm:text-4xl text-white font-bold">
-            Upcoming Show: Mikaela Events - Lusaka
-          </h4>
-              <p className="text-left text-lg text-white mt-4">
-                {ticketInfo2.description}
-              </p>
-              <h5 className="text-left text-2xl text-white font-bold mt-8">
-                Ticket Information
-              </h5>
-              <p className="text-left text-lg text-white mt-4">
-                {ticketInfo2.dateLabel} • {ticketInfo2.time} <br />
-                Location: {ticketInfo2.location} <br />
-                Tickets: {ticketInfo2.ticketPrice}
-              </p>
-              <Button
-                className="rounded-full text-white px-4 py-2 mt-8"
-                variant="bordered"
-                onClick={() => handleBookTickets(ticketInfo2.link)}
+              {/* Gradient for text visibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent rounded-t-none sm:rounded-t-2xl" />
+
+              {/* Close Button */}
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 p-2 bg-black hover:bg-black/70 rounded-full transition-colors z-10"
               >
-                Get Ticket Now
-              </Button>
+                <X className="h-6 w-6 text-white" />
+              </button>
+
+              {/* Title Overlay */}
+              <div className="absolute bottom-4 left-6 right-6 z-10">
+                <h3 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+                  {selectedShow.title}
+                </h3>
+                {selectedShow.featured && (
+                  <span className="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm font-medium">
+                    FEATURED SHOW
+                  </span>
+                )}
+              </div>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 sm:p-8">
+              {/* Event Details Grid (Responsive) */}
+              <div className="grid grid-cols-2 gap-x-4 gap-y-6 mb-8">
+                {/* Date */}
+                <div className="flex items-start gap-3 col-span-2 sm:col-span-1">
+                  <Calendar className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <div>
+                    <p className="text-white/50 text-sm">Date</p>
+                    <p className="text-white font-medium">
+                      {selectedShow.dateLabel}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Time */}
+                <div className="flex items-start gap-3">
+                  <Clock className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <div>
+                    <p className="text-white/50 text-sm">Time</p>
+                    <p className="text-white font-medium">
+                      {selectedShow.time}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Venue */}
+                <div className="flex items-start gap-3 col-span-2 sm:col-span-1">
+                  <MapPin className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <div>
+                    <p className="text-white/50 text-sm">Venue</p>
+                    <p className="text-white font-medium">
+                      {selectedShow.location}
+                    </p>
+                    <p className="text-white/70 text-sm">
+                      {selectedShow.city}, {selectedShow.country}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Tickets */}
+                <div className="flex items-start gap-3">
+                  <Ticket className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <div>
+                    <p className="text-white/50 text-sm">Tickets</p>
+                    <p className="text-white font-medium">
+                      {selectedShow.ticketPrice}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Description */}
+              <div className="mb-8">
+                <h4 className="text-xl font-bold text-white mb-3">
+                  About This Show
+                </h4>
+                <p className="text-white/70 leading-relaxed">
+                  {selectedShow.description}
+                </p>
+              </div>
+
+              {/* Action Buttons (Sticky footer on mobile for touch UX) */}
+              <div className="flex flex-col sm:flex-row gap-3 sticky bottom-0 bg-black py-3 sm:static sm:bg-transparent sm:py-0 border-t sm:border-t-0 border-white/5">
+                {selectedShow.link !== "#" ? (
+                  <Button
+                    as={Link}
+                    href={selectedShow.link}
+                    target="_blank"
+                    className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-all w-full"
+                  >
+                    Get Tickets Now
+                    <ChevronRight className="ml-2 h-5 w-5" />
+                  </Button>
+                ) : (
+                  <Button
+                    disabled
+                    className="flex-1 bg-white/10 text-white/50 font-bold py-3 px-6 rounded-full cursor-not-allowed w-full"
+                  >
+                    Tickets Coming Soon
+                  </Button>
+                )}
+                <Button
+                  onClick={closeModal}
+                  variant="bordered"
+                  className="flex-1 sm:flex-initial border-white/20 text-white hover:bg-white/10 font-medium py-3 px-6 rounded-full transition-all w-full"
+                >
+                  Close Details
+                </Button>
+              </div>
             </div>
           </div>
         </div>
