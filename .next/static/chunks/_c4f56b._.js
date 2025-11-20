@@ -466,21 +466,6 @@ const TODAY = new Date();
 // Raw data structured for easy reading
 const RAW_SHOWS = [
     {
-        id: 1,
-        title: "Dr. Hilary Okello - Live in Johannesburg",
-        dateLabel: "November 19, 2025",
-        date: "2025-11-19T19:30:00",
-        time: "7:30 PM",
-        location: "Victory Theatre",
-        city: "Johannesburg",
-        country: "South Africa",
-        ticketPrice: "R200 Single | R300 a Couple",
-        image: "/johannesburg.webp",
-        link: "https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/",
-        description: "Uganda's Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders. After thrilling audiences across Africa, Dr. Hilary brings his unique mix of intelligence, heart, and humor to South Africa — in a show that's all about connecting people through laughter",
-        featured: false
-    },
-    {
         id: 2,
         title: "Gaborone, Botswana",
         dateLabel: "Nov 20, 2025",
@@ -534,10 +519,10 @@ const RAW_SHOWS = [
         time: "18:00 PM - Late",
         location: "Celebration Centre",
         city: "Harare",
-        country: "Zimbabwe",
+        country: "Zambia",
         ticketPrice: "Standard - $20.0 ",
         image: "/shows/zimbabwe.webp",
-        link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463445131",
+        link: "https://tickets.hypenation.co.zw/tickets/state-of-the-nation-20-12-2025/01K7KND1YTQ1JHZE8GBXGTM78X/01JJVDSR6AH5DRD109ZZKEVN4P",
         description: "Closing out the year in Harare! Join Dr. Okello for a massive King Kandoro's State of the Nation, featuring music and best performances.",
         featured: false
     }
@@ -563,7 +548,7 @@ const CustomButton = ({ onClick, children, className = "", disabled = false, as,
             children: children
         }, void 0, false, {
             fileName: "[project]/components/upcoming.show.tsx",
-            lineNumber: 139,
+            lineNumber: 124,
             columnNumber: 7
         }, this);
     }
@@ -574,7 +559,7 @@ const CustomButton = ({ onClick, children, className = "", disabled = false, as,
         children: children
     }, void 0, false, {
         fileName: "[project]/components/upcoming.show.tsx",
-        lineNumber: 152,
+        lineNumber: 137,
         columnNumber: 5
     }, this);
 };
@@ -632,7 +617,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: weekday
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 215,
+                                    lineNumber: 200,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -640,7 +625,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: day
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 218,
+                                    lineNumber: 203,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -648,13 +633,13 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: month
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 219,
+                                    lineNumber: 204,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 214,
+                            lineNumber: 199,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -669,7 +654,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 224,
+                                    lineNumber: 209,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -681,7 +666,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 227,
+                                    lineNumber: 212,
                                     columnNumber: 13
                                 }, this),
                                 show.featured && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -689,19 +674,19 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: "FEATURED EVENT"
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 231,
+                                    lineNumber: 216,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 223,
+                            lineNumber: 208,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 212,
+                    lineNumber: 197,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -715,13 +700,13 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                 className: "ml-1 h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 246,
+                                lineNumber: 231,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 241,
+                        lineNumber: 226,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomButton, {
                         className: "rounded-full bg-white hover:bg-white text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto",
@@ -733,29 +718,29 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                 className: "ml-1 h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 255,
+                                lineNumber: 240,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 249,
+                        lineNumber: 234,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 239,
+                    lineNumber: 224,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/upcoming.show.tsx",
-            lineNumber: 210,
+            lineNumber: 195,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/upcoming.show.tsx",
-        lineNumber: 200,
+        lineNumber: 185,
         columnNumber: 5
     }, this);
 };
@@ -829,7 +814,7 @@ const UpcomingShows = ()=>{
                     children: "New Shows Coming Soon!"
                 }, void 0, false, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 314,
+                    lineNumber: 299,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -837,13 +822,13 @@ const UpcomingShows = ()=>{
                     children: "Stay tuned for upcoming tour dates."
                 }, void 0, false, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 317,
+                    lineNumber: 302,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/upcoming.show.tsx",
-            lineNumber: 313,
+            lineNumber: 298,
             columnNumber: 7
         }, this);
     }
@@ -859,7 +844,7 @@ const UpcomingShows = ()=>{
                         children: "Upcoming Shows"
                     }, void 0, false, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 329,
+                        lineNumber: 314,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -870,12 +855,12 @@ const UpcomingShows = ()=>{
                                 onShowClick: handleShowClick
                             }, show.id, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 336,
+                                lineNumber: 321,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 334,
+                        lineNumber: 319,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -886,7 +871,7 @@ const UpcomingShows = ()=>{
                                 children: "Want me to perform in your City?"
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 347,
+                                lineNumber: 332,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -894,7 +879,7 @@ const UpcomingShows = ()=>{
                                 children: "Tell us where you want Dr. Okello to perform next. High-demand cities influence our next tour planning!"
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 350,
+                                lineNumber: 335,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -908,7 +893,7 @@ const UpcomingShows = ()=>{
                                         onChange: (e)=>setCityRequest(e.target.value)
                                     }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 356,
+                                        lineNumber: 341,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
@@ -918,13 +903,13 @@ const UpcomingShows = ()=>{
                                         children: requestSubmitted ? "Requested" : "Request Show"
                                     }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 363,
+                                        lineNumber: 348,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 355,
+                                lineNumber: 340,
                                 columnNumber: 11
                             }, this),
                             requestSubmitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -932,19 +917,19 @@ const UpcomingShows = ()=>{
                                 children: "Thank you! Your city request has been noted."
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 372,
+                                lineNumber: 357,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 346,
+                        lineNumber: 331,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/upcoming.show.tsx",
-                lineNumber: 327,
+                lineNumber: 312,
                 columnNumber: 7
             }, this),
             isModalOpen && selectedShow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -978,14 +963,14 @@ const UpcomingShows = ()=>{
                                     sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px" // Image optimization
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 406,
+                                    lineNumber: 391,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent rounded-t-none sm:rounded-t-2xl"
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 415,
+                                    lineNumber: 400,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -995,12 +980,12 @@ const UpcomingShows = ()=>{
                                         className: "h-6 w-6 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 422,
+                                        lineNumber: 407,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 418,
+                                    lineNumber: 403,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1011,7 +996,7 @@ const UpcomingShows = ()=>{
                                             children: selectedShow.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 427,
+                                            lineNumber: 412,
                                             columnNumber: 17
                                         }, this),
                                         selectedShow.featured && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1019,19 +1004,19 @@ const UpcomingShows = ()=>{
                                             children: "FEATURED SHOW"
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 431,
+                                            lineNumber: 416,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 426,
+                                    lineNumber: 411,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 403,
+                            lineNumber: 388,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1047,7 +1032,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-yellow-500 mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 444,
+                                                    lineNumber: 429,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1057,7 +1042,7 @@ const UpcomingShows = ()=>{
                                                             children: "Date"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 446,
+                                                            lineNumber: 431,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1065,19 +1050,19 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.dateLabel
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 447,
+                                                            lineNumber: 432,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 445,
+                                                    lineNumber: 430,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 443,
+                                            lineNumber: 428,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1087,7 +1072,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-yellow-500 mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 455,
+                                                    lineNumber: 440,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1097,7 +1082,7 @@ const UpcomingShows = ()=>{
                                                             children: "Time"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 457,
+                                                            lineNumber: 442,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1105,19 +1090,19 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.time
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 458,
+                                                            lineNumber: 443,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 456,
+                                                    lineNumber: 441,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 454,
+                                            lineNumber: 439,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1127,7 +1112,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-yellow-500 mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 466,
+                                                    lineNumber: 451,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1137,7 +1122,7 @@ const UpcomingShows = ()=>{
                                                             children: "Venue"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 468,
+                                                            lineNumber: 453,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1145,7 +1130,7 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.location
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 469,
+                                                            lineNumber: 454,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1157,19 +1142,19 @@ const UpcomingShows = ()=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 472,
+                                                            lineNumber: 457,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 467,
+                                                    lineNumber: 452,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 465,
+                                            lineNumber: 450,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1179,7 +1164,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-yellow-500 mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 480,
+                                                    lineNumber: 465,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1189,7 +1174,7 @@ const UpcomingShows = ()=>{
                                                             children: "Tickets"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 482,
+                                                            lineNumber: 467,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1197,25 +1182,25 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.ticketPrice
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 483,
+                                                            lineNumber: 468,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 481,
+                                                    lineNumber: 466,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 479,
+                                            lineNumber: 464,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 441,
+                                    lineNumber: 426,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1226,7 +1211,7 @@ const UpcomingShows = ()=>{
                                             children: "About This Show"
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 492,
+                                            lineNumber: 477,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1234,13 +1219,13 @@ const UpcomingShows = ()=>{
                                             children: selectedShow.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 495,
+                                            lineNumber: 480,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 491,
+                                    lineNumber: 476,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1257,13 +1242,13 @@ const UpcomingShows = ()=>{
                                                     className: "ml-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 510,
+                                                    lineNumber: 495,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 503,
+                                            lineNumber: 488,
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
                                             as: "a",
@@ -1276,13 +1261,13 @@ const UpcomingShows = ()=>{
                                                     className: "ml-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 522,
+                                                    lineNumber: 507,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 513,
+                                            lineNumber: 498,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
@@ -1292,36 +1277,36 @@ const UpcomingShows = ()=>{
                                             children: "Close Details"
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 525,
+                                            lineNumber: 510,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 501,
+                                    lineNumber: 486,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 439,
+                            lineNumber: 424,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 395,
+                    lineNumber: 380,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/upcoming.show.tsx",
-                lineNumber: 381,
+                lineNumber: 366,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/upcoming.show.tsx",
-        lineNumber: 326,
+        lineNumber: 311,
         columnNumber: 5
     }, this);
 };

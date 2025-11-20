@@ -29,22 +29,7 @@ const TODAY = new Date();
 
 // Raw data structured for easy reading
 const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
-  {
-    id: 1,
-    title: "Dr. Hilary Okello - Live in Johannesburg",
-    dateLabel: "November 19, 2025",
-    date: "2025-11-19T19:30:00",
-    time: "7:30 PM",
-    location: "Victory Theatre",
-    city: "Johannesburg",
-    country: "South Africa",
-    ticketPrice: "R200 Single | R300 a Couple",
-    image: "/johannesburg.webp",
-    link: "https://www.quicket.co.za/events/317886-dr-hilary-okello-live-in-johannesburg/#/",
-    description:
-      "Uganda's Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders. After thrilling audiences across Africa, Dr. Hilary brings his unique mix of intelligence, heart, and humor to South Africa — in a show that's all about connecting people through laughter",
-    featured: false,
-  },
+ 
   {
     id: 2,
     title: "Gaborone, Botswana",
@@ -102,10 +87,10 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     time: "18:00 PM - Late",
     location: "Celebration Centre",
     city: "Harare",
-    country: "Zimbabwe",
+    country: "Zambia",
     ticketPrice: "Standard - $20.0 ",
     image: "/shows/zimbabwe.webp",
-    link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463445131",
+    link: "https://tickets.hypenation.co.zw/tickets/state-of-the-nation-20-12-2025/01K7KND1YTQ1JHZE8GBXGTM78X/01JJVDSR6AH5DRD109ZZKEVN4P",
     description:
       "Closing out the year in Harare! Join Dr. Okello for a massive King Kandoro's State of the Nation, featuring music and best performances.",
     featured: false,
