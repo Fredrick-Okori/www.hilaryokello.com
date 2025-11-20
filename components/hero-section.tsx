@@ -67,7 +67,10 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-           
+          Welcome to the official website of Dr. Hilary Okello - Uganda’s finest stand-up comedian and Africa’s Doctor of Comedy.
+Here, you can stay updated on my latest news, explore my work, and most importantly, check out all upcoming shows happening across Africa and beyond.
+
+Have a laugh, look around, and see where we meet next! 
            
         </motion.p>
 
