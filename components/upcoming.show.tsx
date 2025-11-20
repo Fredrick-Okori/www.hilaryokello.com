@@ -20,6 +20,7 @@ interface Show {
   link: string;
   description: string;
   featured: boolean;
+  contactNumber?: string;
 }
 
 // --- Data Preparation (Optimized for performance) ---
@@ -72,6 +73,7 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     ticketPrice: "RWF 15,000 | Couples RWF 25,000",
     image: "/shows/kigali.jpg",
     link: "#",
+    contactNumber: "+250786280358",
     description:
       "A special night in the heart of East Africa! Dr. Hilary Okello performs alongside top Rwandan comedic talent for a memorable, family-friendly evening of stand-up.",
     featured: false,
@@ -154,6 +156,15 @@ const CustomButton = ({
 };
 // --- Utility Functions ---
 
+ const phoneNumber = "+211922064459"; // Replace with Dr. Hilary Okello's number
+  const message =
+    "Hello, I'm interested in booking tickets for the upcoming show";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${phoneNumber.replace(
+    /[^0-9]/g,
+    "",
+  )}?text=${encodedMessage}`;
+
 // Use a stable, performant date formatting function
 const formatDatePart = (date: Date) => {
   const weekday = date
@@ -179,6 +190,11 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
     [show.date],
   );
   const isTicketLinkAvailable = show.link !== "#";
+
+  const contactNumber = show.contactNumber ?? phoneNumber;
+  const waLinkForShow = `https://wa.me/${contactNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+    `Hello, I'm interested in tickets for ${show.title} in ${show.city}, show`,
+  )}`;
 
   return (
     <div
@@ -221,14 +237,24 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
 
         {/* Tickets Button (Aligns right on desktop, stretches on mobile for touch) */}
         <div className="flex justify-end sm:justify-start">
-          <CustomButton
-            className="rounded-full bg-white hover:bg-yellow-600 text-gray-900 font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
-            disabled={!isTicketLinkAvailable}
-            onClick={(e: React.MouseEvent) => onBookTickets(e, show.link)}
-          >
-            {isTicketLinkAvailable ? "Get Tickets" : "Coming Soon"}
-            {isTicketLinkAvailable && <ChevronRight className="ml-1 h-4 w-4" />}
-          </CustomButton>
+          {isTicketLinkAvailable ? (
+            <CustomButton
+              className="rounded-full bg-white hover:bg-yellow-600 text-gray-900 font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
+              onClick={(e: React.MouseEvent) => onBookTickets(e, show.link)}
+            >
+              Get Tickets
+              <ChevronRight className="ml-1 h-4 w-4" />
+            </CustomButton>
+          ) : (
+            <CustomButton
+              className="rounded-full bg-white hover:bg-white text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
+              href={waLinkForShow}
+              target="_blank"
+            >
+              WhatsApp
+              <ChevronRight className="ml-1 h-4 w-4" />
+            </CustomButton>
+          )}
         </div>
       </div>
     </div>
@@ -485,10 +511,15 @@ const UpcomingShows = () => {
                   </Button>
                 ) : (
                   <Button
-                    disabled
-                    className="flex bg-white/10 text-white/50 font-bold py-3 px-6 rounded-full cursor-not-allowed w-full"
+                    as="a"
+                    className="flex bg-white hover:bg-green-700 text-black font-bold py-3 px-6 rounded-full transition-all w-full"
+                    href={`https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+                      `Hello, I'm interested in tickets for ${selectedShow.title} in ${selectedShow.city}, ${selectedShow.country}`,
+                    )}`}
+                    target="_blank"
                   >
-                    Tickets Coming Soon
+                    Contact on WhatsApp
+                    <ChevronRight className="ml-2 h-5 w-5" />
                   </Button>
                 )}
                 <Button
