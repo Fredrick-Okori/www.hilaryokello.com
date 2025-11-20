@@ -39,7 +39,7 @@ export function HeroSection() {
       <div className="relative z-10 ml-12 flex flex-col items-start justify-center h-full px-4 md:px-8 text-left max-w-4xl mx-auto">
         <motion.h1
           animate={{ opacity: 1, y: 0 }}
-          className="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+          className="text-white text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight drop-shadow-md"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
@@ -51,7 +51,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-       Live in Johannesburg
+    Africa&apos;s Doctor of Comedy
         </motion.h4>
           <motion.h3
           animate={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-        19th November 2025
+       Upcoming Shows
         </motion.h3>
         <motion.p
           animate={{ opacity: 1, y: 0 }}
@@ -67,12 +67,11 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Uganda’s Celebrated comedian Dr. Hilary Okello is coming to Johannesburg for a night of world-class stand-up comedy! Get ready for sharp wit, hilarious storytelling, and laughter that cuts across borders.
-
-
+           
+           
         </motion.p>
 
-        <motion.div
+        {/* <motion.div
           animate={{ opacity: 1, y: 0 }}
           className="mt-10 flex flex-col sm:flex-row gap-4"
           initial={{ opacity: 0, y: 20 }}
@@ -99,7 +98,7 @@ export function HeroSection() {
              Couple R300
              <ChevronRight className="mr-2 h-5 w-5" />
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Glowing floating blobs */}
