@@ -14,8 +14,13 @@ interface ImageItem {
   caption: string
 }
 
+interface ImageCarouselProps {
+  images?: ImageItem[]
+  botswana?: ImageItem[]
+}
+
 // Define the local data array
-const botswana: ImageItem[] = [
+const defaultBotswana: ImageItem[] = [
   { url: "/Botswana/DSC_8883 2_1_11zon.webp", caption: "Botswana 1" },
   { url: "/Botswana/DSC_8941 2_2_11zon.webp", caption: "Botswana 2" },
   { url: "/Botswana/DSC_8991 2_4_11zon.webp", caption: "Botswana 4" },
@@ -31,10 +36,10 @@ const botswana: ImageItem[] = [
   { url: "/Botswana/DSC_9098 2_18_11zon.webp", caption: "Botswana 18" },
 ]
 
-// The component no longer accepts any props
-const ImageCarousel: React.FC = () => {
-  // Use the local 'botswana' array directly
-  const imgs = botswana
+// The component can accept optional `images` or `botswana` props from parent
+const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
+  // Prefer parent-provided `images`, then `botswana`, otherwise fall back to default
+  const imgs = images ?? botswana ?? defaultBotswana
   const [slideIndex, setSlideIndex] = useState(0)
   const carouselRef = useRef<HTMLDivElement>(null)
   const slideWidthRef = useRef<number>(0)

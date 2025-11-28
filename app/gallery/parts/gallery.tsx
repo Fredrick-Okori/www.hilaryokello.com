@@ -48,7 +48,7 @@ const galleries: Record<string, string[]> = {
     "/Botswana/DSC_9098 2_18_11zon.webp",
     "/Botswana/DSC_9100 2_19_11zon.webp",
     "/Botswana/DSC_9104 2_20_11zon.webp",
-  ],  "Gallery Page": [
+  ],  "View More": [
     "/gallerypage/DSC_0808.webp",
     "/gallerypage/DSC_0809.webp",
     "/gallerypage/DSC_0854.webp",
