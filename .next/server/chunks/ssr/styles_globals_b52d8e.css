@@ -3994,6 +3994,10 @@ img, video {
   opacity: var(--heroui-disabled-opacity);
 }
 
+.opacity-40 {
+  opacity: .4;
+}
+
 .\!shadow-none {
   --tw-shadow: 0 0 #0000 !important;
   --tw-shadow-colored: 0 0 #0000 !important;
@@ -10037,6 +10041,10 @@ img, video {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {

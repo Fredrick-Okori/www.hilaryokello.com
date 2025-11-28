@@ -328,7 +328,7 @@ const UpcomingShows = () => {
         </div>
 
         {/* CTA section (Enhanced) */}
-        <div className="py-20 mt-16 bg-black rounded-2xl border border-white/10 p-6 sm:p-10 shadow-3xl">
+        <div className="mt-16 bg-black rounded-2xl border border-white/10 sm:p-10 shadow-3xl">
           <h2 className="text-center text-3xl sm:text-4xl font-extrabold mb-4 text-white">
             Want me to perform in your City?
           </h2>

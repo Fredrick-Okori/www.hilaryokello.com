@@ -23,50 +23,101 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
-const images = [
-    "/bg_hero.webp",
-    "/gallery/crowd.png",
-    "/gallerypage/DSC_0808.webp",
-    "/gallerypage/DSC_0809.webp",
-    "/gallerypage/DSC_0854.webp",
-    "/gallerypage/DSC_0913.webp",
-    "/gallerypage/DSC_0934.webp",
-    "/gallerypage/DSC_1041.webp",
-    "/gallerypage/DSC_9107.webp",
-    "/gallerypage/DSC_9137.webp",
-    "/gallerypage/DSC_9161.webp",
-    "/gallerypage/DSC_9170.webp",
-    "/gallerypage/DSC_9173.webp",
-    "/gallerypage/DSC_8796.webp",
-    "/gallerypage/DSC_8799.webp",
-    "/gallerypage/DSC_8883.webp",
-    "/gallerypage/DSC_8976.webp",
-    "/gallerypage/DSC_9022.webp",
-    "/gallerypage/DSC_9060.webp",
-    "/gallerypage/DSC_1439.webp",
-    "/gallerypage/DSC_1443.webp",
-    "/gallerypage/DSC_1462.webp",
-    "/gallerypage/DSC_1499.webp",
-    "/gallerypage/DSC_9178.webp",
-    "/gallerypage/DSC_9186.webp",
-    "/gallerypage/DSC_9197.webp",
-    "/gallerypage/DSC_9202.webp",
-    "/gallerypage/DSC_9205.webp",
-    "/gallerypage/DSC_9210.webp",
-    "/gallerypage/DSC_9264.webp",
-    "/gallerypage/DSC_9291.webp",
-    "/gallerypage/DSC_9304.webp",
-    "/gallerypage/DSC_9316.webp",
-    "/gallerypage/DSC_1501.webp",
-    "/gallerypage/DSC_1536.webp",
-    "/gallerypage/DSC_2131.webp",
-    "/gallerypage/DSC_2132.webp",
-    "/gallerypage/DSC_2137.webp",
-    "/gallerypage/DSC_2148.webp",
-    "/gallerypage/DSC_2151.webp",
-    "/gallerypage/DSC_5225.webp",
-    "/gallerypage/DSC_5228.webp"
-];
+// Group images into titled galleries
+const galleries = {
+    Rwanda: [
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_127_3_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_129_5_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_132_8_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_133_9_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_154_10_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_155_11_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_156_12_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_157_13_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_158_14_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_159_15_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_160_16_11zon.jpg",
+        "/Rwanda/SHEMA INNOCENT 0780 329 329_161_17_11zon.jpg",
+        "/Rwanda/rwanda_1.jpg",
+        "/Rwanda/rwanda_2.jpg"
+    ],
+    Botswana: [
+        "/Botswana/DSC_8883 2_1_11zon.webp",
+        "/Botswana/DSC_8941 2_2_11zon.webp",
+        "/Botswana/DSC_8967 2_3_11zon.webp",
+        "/Botswana/DSC_8991 2_4_11zon.webp",
+        "/Botswana/DSC_9023 2_5_11zon.webp",
+        "/Botswana/DSC_9042 2_6_11zon.webp",
+        "/Botswana/DSC_9047 2_7_11zon.webp",
+        "/Botswana/DSC_9048 2_8_11zon.webp",
+        "/Botswana/DSC_9052 2_9_11zon.webp",
+        "/Botswana/DSC_9053 2_10_11zon.webp",
+        "/Botswana/DSC_9055 2_11_11zon.webp",
+        "/Botswana/DSC_9060 2_12_11zon.webp",
+        "/Botswana/DSC_9064 2_13_11zon.webp",
+        "/Botswana/DSC_9066 2_14_11zon.webp",
+        "/Botswana/DSC_9072 2_15_11zon.webp",
+        "/Botswana/DSC_9082 2_16_11zon.webp",
+        "/Botswana/DSC_9091 2_17_11zon.webp",
+        "/Botswana/DSC_9098 2_18_11zon.webp",
+        "/Botswana/DSC_9100 2_19_11zon.webp",
+        "/Botswana/DSC_9104 2_20_11zon.webp"
+    ],
+    "Gallery Page": [
+        "/gallerypage/DSC_0808.webp",
+        "/gallerypage/DSC_0809.webp",
+        "/gallerypage/DSC_0854.webp",
+        "/gallerypage/DSC_0913.webp",
+        "/gallerypage/DSC_0934.webp",
+        "/gallerypage/DSC_1041.webp",
+        "/gallerypage/DSC_9107.webp",
+        "/gallerypage/DSC_9137.webp",
+        "/gallerypage/DSC_9161.webp",
+        "/gallerypage/DSC_9170.webp",
+        "/gallerypage/DSC_9173.webp",
+        "/gallerypage/DSC_8796.webp",
+        "/gallerypage/DSC_8799.webp",
+        "/gallerypage/DSC_8883.webp",
+        "/gallerypage/DSC_8976.webp",
+        "/gallerypage/DSC_9022.webp",
+        "/gallerypage/DSC_9060.webp",
+        "/gallerypage/DSC_1439.webp",
+        "/gallerypage/DSC_1443.webp",
+        "/gallerypage/DSC_1462.webp",
+        "/gallerypage/DSC_1499.webp",
+        "/gallerypage/DSC_9178.webp",
+        "/gallerypage/DSC_9186.webp",
+        "/gallerypage/DSC_9197.webp",
+        "/gallerypage/DSC_9202.webp",
+        "/gallerypage/DSC_9205.webp",
+        "/gallerypage/DSC_9210.webp",
+        "/gallerypage/DSC_9264.webp",
+        "/gallerypage/DSC_9291.webp",
+        "/gallerypage/DSC_9304.webp",
+        "/gallerypage/DSC_9316.webp",
+        "/gallerypage/DSC_1501.webp",
+        "/gallerypage/DSC_1536.webp",
+        "/gallerypage/DSC_2131.webp",
+        "/gallerypage/DSC_2132.webp",
+        "/gallerypage/DSC_2137.webp",
+        "/gallerypage/DSC_2148.webp",
+        "/gallerypage/DSC_2151.webp",
+        "/gallerypage/DSC_5225.webp",
+        "/gallerypage/DSC_5228.webp"
+    ]
+};
+// Flatten galleries for modal navigation
+const groupEntries = Object.entries(galleries);
+const groupStarts = [];
+let _acc = 0;
+for (const [, imgs] of groupEntries){
+    groupStarts.push(_acc);
+    _acc += imgs.length;
+}
+const imagesFlat = groupEntries.flatMap(([_, imgs])=>imgs);
 function Gallery() {
     _s();
     const [selectedIndex, setSelectedIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -109,7 +160,9 @@ function Gallery() {
         if (selectedIndex === null) return;
         setFadeIn(false);
         setTimeout(()=>{
-            setSelectedIndex((prev)=>prev !== null ? (prev + 1) % images.length : 0);
+            setSelectedIndex((prev)=>{
+                return prev !== null ? (prev + 1) % imagesFlat.length : 0;
+            });
             setFadeIn(true);
         });
     };
@@ -117,7 +170,10 @@ function Gallery() {
         if (selectedIndex === null) return;
         setFadeIn(false);
         setTimeout(()=>{
-            setSelectedIndex((prev)=>((prev === null ? 0 : prev) - 1 + images.length) % images.length);
+            setSelectedIndex((prev)=>{
+                const value = (prev === null ? 0 : prev) - 1 + imagesFlat.length;
+                return value % imagesFlat.length;
+            });
             setFadeIn(true);
         });
     };
@@ -171,83 +227,103 @@ function Gallery() {
         modalRef
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "px-6 py-20 max-w-7xl mx-auto bg-black min-h-screen",
+        className: "px-6 py-20  mx-auto bg-black min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: `text-5xl font-bold text-left mb-12 text-white transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`,
+                className: `text-4xl font-bold text-left mb-12 text-white transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`,
                 children: "Viewing Gallery"
             }, void 0, false, {
                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                lineNumber: 157,
+                lineNumber: 206,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6",
-                children: images.map((src, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `relative rounded-xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 transform ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
-                        role: "button",
-                        style: {
-                            transitionDelay: `${idx * 50}ms`,
-                            height: "300px",
-                            width: "400px"
-                        },
-                        tabIndex: 0,
-                        onClick: ()=>setSelectedIndex(idx),
-                        onMouseEnter: ()=>setHoverIndex(idx),
-                        onMouseLeave: ()=>setHoverIndex(null),
-                        children: [
-                            !isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$skeleton$2f$dist$2f$chunk$2d$TLYTI3QM$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__skeleton_default__as__Skeleton$3e$__["Skeleton"], {
-                                className: "h-full w-full"
-                            }, void 0, false, {
-                                fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 182,
-                                columnNumber: 15
-                            }, this),
-                            isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                fill: true,
-                                alt: `Gallery image ${idx + 1}`,
-                                className: "object-cover transition-transform duration-700 group-hover:scale-110",
-                                loading: "lazy",
-                                quality: 70,
-                                sizes: "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw",
-                                src: src
-                            }, void 0, false, {
-                                fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 185,
-                                columnNumber: 15
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-4 w-full flex justify-between items-center",
-                                    children: hoverIndex === idx && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$maximize$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Maximize$3e$__["Maximize"], {
-                                        className: "text-white h-5 w-5"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                        lineNumber: 198,
-                                        columnNumber: 19
-                                    }, this)
-                                }, void 0, false, {
+            groupEntries.map(([title, imgs], gIdx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                    className: "mb-12",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "text-2xl text-left font-bold text-white py-10",
+                            children: title
+                        }, void 0, false, {
+                            fileName: "[project]/app/gallery/parts/gallery.tsx",
+                            lineNumber: 215,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6",
+                            children: imgs.map((src, idx)=>{
+                                const globalIdx = groupStarts[gIdx] + idx;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `relative rounded-xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 transform ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
+                                    role: "button",
+                                    style: {
+                                        transitionDelay: `${globalIdx * 50}ms`,
+                                        height: "300px",
+                                        width: "400px"
+                                    },
+                                    tabIndex: 0,
+                                    onClick: ()=>setSelectedIndex(globalIdx),
+                                    onMouseEnter: ()=>setHoverIndex(globalIdx),
+                                    onMouseLeave: ()=>setHoverIndex(null),
+                                    children: [
+                                        !isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$skeleton$2f$dist$2f$chunk$2d$TLYTI3QM$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__skeleton_default__as__Skeleton$3e$__["Skeleton"], {
+                                            className: "h-full w-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/gallery/parts/gallery.tsx",
+                                            lineNumber: 239,
+                                            columnNumber: 33
+                                        }, this),
+                                        isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            fill: true,
+                                            alt: `${title} image ${idx + 1}`,
+                                            className: "object-cover transition-transform duration-700 group-hover:scale-110",
+                                            loading: "lazy",
+                                            quality: 70,
+                                            sizes: "(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw",
+                                            src: encodeURI(src)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/gallery/parts/gallery.tsx",
+                                            lineNumber: 241,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "p-4 w-full flex justify-between items-center",
+                                                children: hoverIndex === globalIdx && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$maximize$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Maximize$3e$__["Maximize"], {
+                                                    className: "text-white h-5 w-5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/gallery/parts/gallery.tsx",
+                                                    lineNumber: 254,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/gallery/parts/gallery.tsx",
+                                                lineNumber: 252,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/gallery/parts/gallery.tsx",
+                                            lineNumber: 251,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, globalIdx, true, {
                                     fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                    lineNumber: 196,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 195,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, idx, true, {
-                        fileName: "[project]/app/gallery/parts/gallery.tsx",
-                        lineNumber: 165,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/app/gallery/parts/gallery.tsx",
-                lineNumber: 163,
-                columnNumber: 7
-            }, this),
+                                    lineNumber: 221,
+                                    columnNumber: 17
+                                }, this);
+                            })
+                        }, void 0, false, {
+                            fileName: "[project]/app/gallery/parts/gallery.tsx",
+                            lineNumber: 216,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, title, true, {
+                    fileName: "[project]/app/gallery/parts/gallery.tsx",
+                    lineNumber: 214,
+                    columnNumber: 9
+                }, this)),
             selectedIndex !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 "aria-label": "Close modal",
                 className: `fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex items-center justify-center transition-opacity duration-300 ${fadeIn ? "opacity-100" : "opacity-0"}`,
@@ -269,17 +345,17 @@ function Gallery() {
                                 fill: true,
                                 priority: true,
                                 alt: `Modal image ${selectedIndex + 1}`,
-                                className: "object-contain",
+                                className: "object-contain  rounded-lg mx-auto",
                                 quality: 70,
-                                src: images[selectedIndex]
+                                src: encodeURI(imagesFlat[selectedIndex])
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 229,
+                                lineNumber: 288,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 226,
+                            lineNumber: 285,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -287,11 +363,11 @@ function Gallery() {
                             children: [
                                 selectedIndex + 1,
                                 " / ",
-                                images.length
+                                imagesFlat.length
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 240,
+                            lineNumber: 300,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -302,12 +378,12 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 250,
+                                lineNumber: 310,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 245,
+                            lineNumber: 305,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -318,12 +394,12 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 259,
+                                lineNumber: 319,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 254,
+                            lineNumber: 314,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -334,29 +410,29 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 268,
+                                lineNumber: 328,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 263,
+                            lineNumber: 323,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/gallery/parts/gallery.tsx",
-                    lineNumber: 214,
+                    lineNumber: 273,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                lineNumber: 208,
+                lineNumber: 267,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/gallery/parts/gallery.tsx",
-        lineNumber: 156,
+        lineNumber: 205,
         columnNumber: 5
     }, this);
 }

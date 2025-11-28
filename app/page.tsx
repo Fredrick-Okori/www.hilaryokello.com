@@ -6,6 +6,7 @@ import { VideoSection } from "@/components/videos";
 import Head from "next/head";
 
 import { Metadata } from "next";
+import CountryGlimpse from "@/components/glimpse";
 
 
 export const metadata: Metadata = {
@@ -61,15 +62,16 @@ export default function Page() {
   ];
 
   const images = [
-    { url: "/gallery/bg_booking.webp", caption: "Booking Background" },
-    { url: "/gallery/crowd.png", caption: "Crowd" },
-    { url: "/gallerypage/DSC_9170.webp", caption: "Event Photo 9170" },
-    { url: "/gallerypage/DSC_1041.webp", caption: "Event Photo 1041" },
-    { url: "/gallerypage/DSC_8976.webp", caption: "Event Photo 8976" },
-    { url: "/gallerypage/DSC_2148.webp", caption: "Event Photo 2148" },
-    { url: "/gallerypage/DSC_8799.webp", caption: "Event Photo 8799" },
-    { url: "/gallerypage/DSC_9161.webp", caption: "Event Photo 9161" },
+    { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg", caption: "Event Photo 1284" },
+     { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg", caption: "Crowd" },
+         { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_157_13_11zon.jpg", caption: "Event Photo 9170" },
+    { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg", caption: "Booking Background" },
+   
+
+
+
   ];
+
 
   return (
     <>
@@ -97,6 +99,11 @@ export default function Page() {
         </div>
 
         <UpcomingShows />
+        <div className="bg-black py-16">
+          <div className="max-w-7xl mx-auto px-4">
+            <CountryGlimpse images={images} />
+          </div>
+        </div>
         {/* Video Section */}
         <div className="bg-black py-16">
           <div className="max-w-7xl mx-auto px-4">
@@ -109,7 +116,7 @@ export default function Page() {
         </div>
 
         {/* Gallery Glimpse */}
-        <div className="bg-black py-16">
+        <div className="bg-black">
           <div className="max-w-7xl mx-auto px-4">
             <ImageCarousel images={images} />
           </div>

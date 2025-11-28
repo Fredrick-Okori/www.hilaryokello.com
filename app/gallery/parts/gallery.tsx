@@ -4,57 +4,105 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, Maximize } from "lucide-react";
-
-
-
-
 import { Skeleton } from "@heroui/react";
-import { Metadata } from "next";
 
-const images = [
-  "/bg_hero.webp",
-  "/gallery/crowd.png",
-  "/gallerypage/DSC_0808.webp",
-  "/gallerypage/DSC_0809.webp",
-  "/gallerypage/DSC_0854.webp",
-  "/gallerypage/DSC_0913.webp",
-  "/gallerypage/DSC_0934.webp",
-  "/gallerypage/DSC_1041.webp",
-  "/gallerypage/DSC_9107.webp",
-  "/gallerypage/DSC_9137.webp",
-  "/gallerypage/DSC_9161.webp",
-  "/gallerypage/DSC_9170.webp",
-  "/gallerypage/DSC_9173.webp",
-  "/gallerypage/DSC_8796.webp",
-  "/gallerypage/DSC_8799.webp",
-  "/gallerypage/DSC_8883.webp",
-  "/gallerypage/DSC_8976.webp",
-  "/gallerypage/DSC_9022.webp",
-  "/gallerypage/DSC_9060.webp",
-  "/gallerypage/DSC_1439.webp",
-  "/gallerypage/DSC_1443.webp",
-  "/gallerypage/DSC_1462.webp",
-  "/gallerypage/DSC_1499.webp",
-  "/gallerypage/DSC_9178.webp",
-  "/gallerypage/DSC_9186.webp",
-  "/gallerypage/DSC_9197.webp",
-  "/gallerypage/DSC_9202.webp",
-  "/gallerypage/DSC_9205.webp",
-  "/gallerypage/DSC_9210.webp",
-  "/gallerypage/DSC_9264.webp",
-  "/gallerypage/DSC_9291.webp",
-  "/gallerypage/DSC_9304.webp",
-  "/gallerypage/DSC_9316.webp",
-  "/gallerypage/DSC_1501.webp",
-  "/gallerypage/DSC_1536.webp",
-  "/gallerypage/DSC_2131.webp",
-  "/gallerypage/DSC_2132.webp",
-  "/gallerypage/DSC_2137.webp",
-  "/gallerypage/DSC_2148.webp",
-  "/gallerypage/DSC_2151.webp",
-  "/gallerypage/DSC_5225.webp",
-  "/gallerypage/DSC_5228.webp",
-];
+// Group images into titled galleries
+const galleries: Record<string, string[]> = {
+  Rwanda: [
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_127_3_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_129_5_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_132_8_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_133_9_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_154_10_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_155_11_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_156_12_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_157_13_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_158_14_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_159_15_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_160_16_11zon.jpg",
+    "/Rwanda/SHEMA INNOCENT 0780 329 329_161_17_11zon.jpg",
+    "/Rwanda/rwanda_1.jpg",
+    "/Rwanda/rwanda_2.jpg",
+  ],
+  Botswana: [
+    "/Botswana/DSC_8883 2_1_11zon.webp",
+    "/Botswana/DSC_8941 2_2_11zon.webp",
+    "/Botswana/DSC_8967 2_3_11zon.webp",
+    "/Botswana/DSC_8991 2_4_11zon.webp",
+    "/Botswana/DSC_9023 2_5_11zon.webp",
+    "/Botswana/DSC_9042 2_6_11zon.webp",
+    "/Botswana/DSC_9047 2_7_11zon.webp",
+    "/Botswana/DSC_9048 2_8_11zon.webp",
+    "/Botswana/DSC_9052 2_9_11zon.webp",
+    "/Botswana/DSC_9053 2_10_11zon.webp",
+    "/Botswana/DSC_9055 2_11_11zon.webp",
+    "/Botswana/DSC_9060 2_12_11zon.webp",
+    "/Botswana/DSC_9064 2_13_11zon.webp",
+    "/Botswana/DSC_9066 2_14_11zon.webp",
+    "/Botswana/DSC_9072 2_15_11zon.webp",
+    "/Botswana/DSC_9082 2_16_11zon.webp",
+    "/Botswana/DSC_9091 2_17_11zon.webp",
+    "/Botswana/DSC_9098 2_18_11zon.webp",
+    "/Botswana/DSC_9100 2_19_11zon.webp",
+    "/Botswana/DSC_9104 2_20_11zon.webp",
+  ],  "Gallery Page": [
+    "/gallerypage/DSC_0808.webp",
+    "/gallerypage/DSC_0809.webp",
+    "/gallerypage/DSC_0854.webp",
+    "/gallerypage/DSC_0913.webp",
+    "/gallerypage/DSC_0934.webp",
+    "/gallerypage/DSC_1041.webp",
+    "/gallerypage/DSC_9107.webp",
+    "/gallerypage/DSC_9137.webp",
+    "/gallerypage/DSC_9161.webp",
+    "/gallerypage/DSC_9170.webp",
+    "/gallerypage/DSC_9173.webp",
+    "/gallerypage/DSC_8796.webp",
+    "/gallerypage/DSC_8799.webp",
+    "/gallerypage/DSC_8883.webp",
+    "/gallerypage/DSC_8976.webp",
+    "/gallerypage/DSC_9022.webp",
+    "/gallerypage/DSC_9060.webp",
+    "/gallerypage/DSC_1439.webp",
+    "/gallerypage/DSC_1443.webp",
+    "/gallerypage/DSC_1462.webp",
+    "/gallerypage/DSC_1499.webp",
+    "/gallerypage/DSC_9178.webp",
+    "/gallerypage/DSC_9186.webp",
+    "/gallerypage/DSC_9197.webp",
+    "/gallerypage/DSC_9202.webp",
+    "/gallerypage/DSC_9205.webp",
+    "/gallerypage/DSC_9210.webp",
+    "/gallerypage/DSC_9264.webp",
+    "/gallerypage/DSC_9291.webp",
+    "/gallerypage/DSC_9304.webp",
+    "/gallerypage/DSC_9316.webp",
+    "/gallerypage/DSC_1501.webp",
+    "/gallerypage/DSC_1536.webp",
+    "/gallerypage/DSC_2131.webp",
+    "/gallerypage/DSC_2132.webp",
+    "/gallerypage/DSC_2137.webp",
+    "/gallerypage/DSC_2148.webp",
+    "/gallerypage/DSC_2151.webp",
+    "/gallerypage/DSC_5225.webp",
+    "/gallerypage/DSC_5228.webp",
+  ],
+
+};
+
+// Flatten galleries for modal navigation
+const groupEntries = Object.entries(galleries);
+const groupStarts: number[] = [];
+let _acc = 0;
+
+for (const [, imgs] of groupEntries) {
+  groupStarts.push(_acc);
+  _acc += imgs.length;
+}
+const imagesFlat = groupEntries.flatMap(([_, imgs]) => imgs);
 
 export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -91,9 +139,9 @@ export default function Gallery() {
     if (selectedIndex === null) return;
     setFadeIn(false);
     setTimeout(() => {
-      setSelectedIndex((prev) =>
-        prev !== null ? (prev + 1) % images.length : 0,
-      );
+      setSelectedIndex((prev) => {
+        return prev !== null ? (prev + 1) % imagesFlat.length : 0;
+      });
 
       setFadeIn(true);
     });
@@ -103,10 +151,11 @@ export default function Gallery() {
     if (selectedIndex === null) return;
     setFadeIn(false);
     setTimeout(() => {
-      setSelectedIndex(
-        (prev) =>
-          ((prev === null ? 0 : prev) - 1 + images.length) % images.length,
-      );
+      setSelectedIndex((prev) => {
+        const value = (prev === null ? 0 : prev) - 1 + imagesFlat.length;
+
+        return value % imagesFlat.length;
+      });
       setFadeIn(true);
     });
   };
@@ -120,7 +169,7 @@ export default function Gallery() {
 
   // Handle keyboard navigation
   useEffect(() => {
-    const handleKeyDown = (e: { key: string; }) => {
+    const handleKeyDown = (e: { key: string }) => {
       if (selectedIndex === null) return;
 
       if (e.key === "ArrowRight") {
@@ -139,7 +188,7 @@ export default function Gallery() {
 
   // Handle clicks outside the modal
   useEffect(() => {
-    const handleClickOutside = (event: { target: any; }) => {
+    const handleClickOutside = (event: { target: any }) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         closeModal();
       }
@@ -153,55 +202,65 @@ export default function Gallery() {
   }, [modalRef]);
 
   return (
-    <div className="px-6 py-20 max-w-7xl mx-auto bg-black min-h-screen">
+    <div className="px-6 py-20  mx-auto bg-black min-h-screen">
       <h1
-        className={`text-5xl font-bold text-left mb-12 text-white transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
+        className={`text-4xl font-bold text-left mb-12 text-white transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         Viewing Gallery
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {images.map((src, idx) => (
-          <div
-            key={idx}
-            className={`relative rounded-xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 transform ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-            role="button"
-            style={{
-              transitionDelay: `${idx * 50}ms`,
-              height: "300px",
-              width: "400px",
-            }}
-            tabIndex={0}
-            onClick={() => setSelectedIndex(idx)}
-            onMouseEnter={() => setHoverIndex(idx)}
-            onMouseLeave={() => setHoverIndex(null)}
-          >
-            {!isLoaded && (
-              <Skeleton className="h-full w-full" />
-            )}
-            {isLoaded && (
-              <Image
-                fill
-                alt={`Gallery image ${idx + 1}`}
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
-                quality={70}
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                src={src}
-              />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-              <div className="p-4 w-full flex justify-between items-center">
-                {hoverIndex === idx && (
-                  <Maximize className="text-white h-5 w-5" />
-                )}
-              </div>
-            </div>
+      {/* Render each gallery group with a heading */}
+      {groupEntries.map(([title, imgs], gIdx) => (
+        <section key={title} className="mb-12">
+          <h2 className="text-2xl text-left font-bold text-white py-10">{title}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {imgs.map((src, idx) => {
+              const globalIdx = groupStarts[gIdx] + idx;
+
+              return (
+                <div
+                  key={globalIdx}
+                  className={`relative rounded-xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 transform ${
+                    isLoaded
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-8"
+                  }`}
+                  role="button"
+                  style={{
+                    transitionDelay: `${globalIdx * 50}ms`,
+                    height: "300px",
+                    width: "400px",
+                  }}
+                  tabIndex={0}
+                  onClick={() => setSelectedIndex(globalIdx)}
+                  onMouseEnter={() => setHoverIndex(globalIdx)}
+                  onMouseLeave={() => setHoverIndex(null)}
+                >
+                  {!isLoaded && <Skeleton className="h-full w-full" />}
+                  {isLoaded && (
+                    <Image
+                      fill
+                      alt={`${title} image ${idx + 1}`}
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
+                      quality={70}
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                      src={encodeURI(src)}
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="p-4 w-full flex justify-between items-center">
+                      {hoverIndex === globalIdx && (
+                        <Maximize className="text-white h-5 w-5" />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        ))}
-      </div>
+        </section>
+      ))}
 
       {/* Modal */}
       {selectedIndex !== null && (
@@ -230,15 +289,16 @@ export default function Gallery() {
                 fill
                 priority
                 alt={`Modal image ${selectedIndex + 1}`}
-                className="object-contain"
+                className="object-contain  rounded-lg mx-auto"
+               
                 quality={70}
-                src={images[selectedIndex]}
+                src={encodeURI(imagesFlat[selectedIndex])}
               />
             </div>
 
             {/* Counter */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm">
-              {selectedIndex + 1} / {images.length}
+              {selectedIndex + 1} / {imagesFlat.length}
             </div>
 
             {/* Close Button */}
