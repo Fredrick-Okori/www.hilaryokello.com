@@ -108,7 +108,7 @@ const CountryGlimpse: React.FC<ImageCarouselProps> = ({ images }) => {
               <div key={index} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-2">
                 <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96">
                   {isLoading ? (
-                    <Skeleton className="w-full h-full rounded-2xl" />
+                    <Skeleton className="w-full h-full bg-default-200 rounded-2xl" />
                   ) : (
                     <Image
                       fill

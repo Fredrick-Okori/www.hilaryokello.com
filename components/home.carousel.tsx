@@ -157,7 +157,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
               >
                 <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96">
                   {isLoading ? (
-                    <Skeleton className="w-full h-full rounded-2xl" />
+                    <Skeleton className="w-full h-full bg-default-200 rounded-2xl" />
                   ) : (
                     <>
                       <Image

@@ -72,6 +72,7 @@ export default function Page() {
 
   ];
 
+ 
 
   return (
     <>
@@ -116,9 +117,9 @@ export default function Page() {
         </div>
 
         {/* Gallery Glimpse */}
-        <div className="bg-black">
+        <div className="bg-black py-16">
           <div className="max-w-7xl mx-auto px-4">
-            <ImageCarousel images={images} />
+            <ImageCarousel />
           </div>
         </div>
       
