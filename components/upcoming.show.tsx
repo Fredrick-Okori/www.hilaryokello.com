@@ -251,10 +251,6 @@ const UpcomingShows = () => {
   const [selectedShow, setSelectedShow] = useState<Show | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // CTA State
-  const [cityRequest, setCityRequest] = useState("");
-  const [requestSubmitted, setRequestSubmitted] = useState(false);
-
   // Performance: Filter and sort upcoming shows using useMemo
   const upcomingShows = useMemo(() => {
     return ALL_SHOWS.filter(
@@ -281,31 +277,6 @@ const UpcomingShows = () => {
     }
   }, []);
 
-  const handleSubmitRequest = useCallback(() => {
-    if (cityRequest.trim()) {
-      // In a real application, this would send data to Firestore or an API
-      // cityRequest would be sent to the API here
-      setCityRequest(""); // Clear input
-      setRequestSubmitted(true);
-      // Resetting state after a brief delay for user feedback
-      setTimeout(() => setRequestSubmitted(false), 3000);
-    }
-  }, [cityRequest]);
-
-  // Conditionally render the "No Shows" message
-  if (upcomingShows.length === 0) {
-    return (
-      <div className="max-w-7xl mx-auto px-4 mt-10 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl sm:text-4xl text-white font-bold">
-          New Shows Coming Soon!
-        </h2>
-        <p className="text-center text-lg text-white/70 mt-4">
-          Stay tuned for upcoming tour dates.
-        </p>
-      </div>
-    );
-  }
-
   // --- Render List and Modal ---
   return (
     <div className="font-sans min-h-screen text-white">
@@ -315,49 +286,54 @@ const UpcomingShows = () => {
           Upcoming Shows
         </h2>
 
-        {/* Shows List */}
-        <div className="space-y-4">
-          {upcomingShows.map((show) => (
-            <ShowItem
-              key={show.id}
-              show={show}
-              onBookTickets={handleBookTickets}
-              onShowClick={handleShowClick}
-            />
-          ))}
-        </div>
+        {/* Shows List or No Shows Message */}
+        {upcomingShows.length === 0 ? (
+          <div className="mb-16 text-center">
+            <h3 className="text-2xl sm:text-3xl text-white font-bold mb-3">
+              New Shows Coming Soon!
+            </h3>
+            <p className="text-lg text-white/70">
+              Stay tuned for upcoming tour dates.
+            </p>
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {upcomingShows.map((show) => (
+              <ShowItem
+                key={show.id}
+                show={show}
+                onBookTickets={handleBookTickets}
+                onShowClick={handleShowClick}
+              />
+            ))}
+          </div>
+        )}
 
-        {/* CTA section (Enhanced) */}
-        <div className="mt-16 bg-black rounded-2xl border border-white/10 sm:p-10 shadow-3xl">
-          <h2 className="text-center text-3xl sm:text-4xl font-extrabold mb-4 text-white">
-            Want me to perform in your City?
+        {/* Join Email List CTA Section */}
+        <div className="mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-2xl border border-white/10 p-8 sm:p-12 shadow-3xl text-center">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-white">
+            Want Me to Perform in Your City?
           </h2>
-          <p className="text-center text-lg text-white/70 max-w-2xl mx-auto mb-8">
-            Tell us where you want Dr. Okello to perform next. High-demand
-            cities influence our next tour planning!
+          <p className="text-lg text-white/70 max-w-2xl mx-auto mb-8">
+            Join the &quot;Jokes From Far Away&quot; World Tour! Tell us where you want 
+            Dr. Okello to perform next. High-demand cities influence our tour planning!
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-            <input
-              className="flex-1 p-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all shadow-inner"
-              placeholder="Enter your City, Country (e.g., Nairobi, Kenya)"
-              value={cityRequest}
-              type="text"
-              onChange={(e) => setCityRequest(e.target.value)}
-            />
-            <Button
-              className="w-full sm:w-50 px-6 py-3 rounded-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              disabled={!cityRequest.trim()}
-              onClick={handleSubmitRequest}
-            >
-              {requestSubmitted ? "Requested" : "Request Show"}
-            </Button>
-          </div>
-          {requestSubmitted && (
-            <p className="text-center text-green-400 mt-4 text-sm font-medium animate-pulse">
-              Thank you! Your city request has been noted.
-            </p>
-          )}
+          {/* Join Email List Button */}
+          <Button
+            as="a"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg rounded-full transition-all transform hover:scale-105"
+          >
+            Join Email List
+            <ChevronRight className="h-5 w-5" />
+          </Button>
+
+          <p className="text-xs text-white/50 mt-6">
+            We respect your privacy. Your information will only be used to plan tour locations.
+          </p>
         </div>
       </div>
 

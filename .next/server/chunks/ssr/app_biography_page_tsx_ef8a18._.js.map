@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/graphics/hilaryokello/app/biography/page.tsx"],"sourcesContent":["\nimport { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"Biography | Dr. Hilary Okello - Uganda's Top Stand-Up Comedian\",\n  keywords:\n    \"Dr. Hilary Okello, Hilary Okello biography, Ugandan comedian bio, stand-up comedian Uganda, African comedy, Gulu comedian, Ugandan entertainers, comedy career Uganda, top African comedians, comedian profiles Uganda\",\n  description:\n    \"Learn more about Dr. Hilary Okello, Uganda's top comedian known for his sharp wit, medical background, and unique storytelling style. Discover his journey from Gulu to the comedy spotlight across Africa.\",\n};\n\n"],"names":[],"mappings":";;;AAGO,MAAM,WAAqB;IAChC,OAAO;IACP,UACE;IACF,aACE;AACJ"}},
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
