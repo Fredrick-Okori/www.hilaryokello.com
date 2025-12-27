@@ -280,7 +280,7 @@ const UpcomingShows = () => {
   // --- Render List and Modal ---
   return (
     <div className="font-sans min-h-screen text-white">
-      <div className="max-w-7xl mx-auto px-4 pt-10 pb-20 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 pt-10 sm:px-6 lg:px-8">
         {/* Title */}
         <h2 className="text-center text-4xl sm:text-5xl text-white font-extrabold mb-12">
           Upcoming Shows

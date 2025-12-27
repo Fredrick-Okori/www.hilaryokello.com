@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[next]/internal/font/google/comfortaa_9fa2a57d.module.css"],"sourcesContent":["@font-face {\n    font-family: 'Comfortaa Fallback';\n    src: local(\"Arial\");\n    ascent-override: 74.95%;\ndescent-override: 19.91%;\nline-gap-override: 0.00%;\nsize-adjust: 117.54%;\n\n}\n.className {\n    font-family: 'Comfortaa', 'Comfortaa Fallback';\n    font-style: normal;\n\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA","ignoreList":[0]}}]
+}
