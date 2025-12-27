@@ -870,7 +870,11 @@ _export(exports, {
         return safeRouteMatcher;
     }
 });
-const _pathtoregexp = __turbopack_context__.r("[project]/www.hilaryokello.com/node_modules/next/dist/compiled/path-to-regexp/index.js [client] (ecmascript)");
+const _pathtoregexp = (()=>{
+    const e = new Error("Cannot find module 'next/dist/compiled/path-to-regexp'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 const _routepatternnormalizer = __turbopack_context__.r("[project]/www.hilaryokello.com/node_modules/next/dist/lib/route-pattern-normalizer.js [client] (ecmascript)");
 function safePathToRegexp(route, keys, options) {
     if (typeof route !== 'string') {
@@ -4903,7 +4907,11 @@ class Router {
                     __N_SSP: res.mod.__N_SSP
                 }));
             if ("TURBOPACK compile-time truthy", 1) {
-                const { isValidElementType } = __turbopack_context__.r("[project]/www.hilaryokello.com/node_modules/next/dist/compiled/react-is/index.js [client] (ecmascript)");
+                const { isValidElementType } = (()=>{
+                    const e = new Error("Cannot find module 'next/dist/compiled/react-is'");
+                    e.code = 'MODULE_NOT_FOUND';
+                    throw e;
+                })();
                 if (!isValidElementType(routeInfo.Component)) {
                     throw Object.defineProperty(new Error(`The default export is not a React Component in page: "${pathname}"`), "__NEXT_ERROR_CODE", {
                         value: "E286",
@@ -5642,7 +5650,11 @@ Object.defineProperty(exports, "default", {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/www.hilaryokello.com/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/www.hilaryokello.com/node_modules/next/dist/compiled/strip-ansi/index.js [client] (ecmascript)"));
+const _stripansi = /*#__PURE__*/ _interop_require_default._((()=>{
+    const e = new Error("Cannot find module 'next/dist/compiled/strip-ansi'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})());
 // This file is based on https://github.com/facebook/create-react-app/blob/7b1a32be6ec9f99a6c9a3c66813f3ac09c4736b9/packages/react-dev-utils/formatWebpackMessages.js
 // It's been edited to remove chalk and CRA-specific logic
 const friendlySyntaxErrorLabel = 'Syntax error:';
