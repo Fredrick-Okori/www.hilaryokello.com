@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import React from "react"; // Corrected import for React
 import { Comfortaa } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/next';
 
 import { MenuBar } from "@/components/theme-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -61,6 +62,7 @@ export default function RootLayout({
 
           {/* Main content with enough top padding to avoid overlap */}
           <div className="">{children}</div>
+          <Analytics />
         </ThemeProvider>
         <Footer />
       </body>
