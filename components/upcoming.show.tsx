@@ -32,7 +32,7 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
  
   {
     id: 2,
-    title: "Lusaka, Zambia",
+    title: "Jokes From Far Away | Lusaka, Zambia",
     dateLabel: "Feb 13, 2026",
     date: "2026-02-13T19:00:00",
     time: "7:00 PM",
