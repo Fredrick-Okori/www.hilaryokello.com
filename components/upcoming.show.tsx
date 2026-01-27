@@ -40,7 +40,7 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     city: "Lusaka",
     country: "Zambia",
     ticketPrice: "Singles K800 | Doubles K1,500",
-    image: "/shows/gaborone.webp",
+    image: "/shows/PHOTO-2026-01-27-12-37-31.jpg",
     link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463491291",
     description:
       "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you’re from.",
