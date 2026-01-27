@@ -41,7 +41,7 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     country: "Zambia",
     ticketPrice: "Singles K800 | Doubles K1,500",
     image: "/shows/gaborone.webp",
-    link: "https://www.webtickets.co.bw/v2/Event.aspx?itemid=5911377",
+    link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463491291",
     description:
       "The Botswanan leg of the tour promises an evening of electrifying laughter. Expect fresh, new material focused on Southern African life, politics, and culture.",
     featured: false,
