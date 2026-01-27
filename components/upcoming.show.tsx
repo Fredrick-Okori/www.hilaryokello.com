@@ -32,14 +32,14 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
  
   {
     id: 2,
-    title: "Gaborone, Botswana",
-    dateLabel: "Nov 20, 2025",
-    date: "2025-11-20T19:00:00",
+    title: "Lusaka, Zambia",
+    dateLabel: "Feb 13, 2026",
+    date: "2026-02-13T19:00:00",
     time: "7:00 PM",
-    location: "Protea Hotel, Masa Square",
-    city: "Gaborone",
-    country: "Botswana",
-    ticketPrice: "Double R300 | Single P200 | At the Door P250",
+    location: "Mikaela Gardens, Woodlands",
+    city: "Lusaka",
+    country: "Zambia",
+    ticketPrice: "Singles K800 | Doubles K1,500",
     image: "/shows/gaborone.webp",
     link: "https://www.webtickets.co.bw/v2/Event.aspx?itemid=5911377",
     description:
