@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu as MenuIcon, X } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -28,7 +28,7 @@ const menuItems: MenuItem[] = [
     href: "/watch",
     gradient:
       "radial-gradient(circle, rgba(217, 255, 0, 0.15) 0%, rgba(255,107,0,0.06) 50%, rgba(239,78,0,0) 100%)",
-    iconColor: "text-yellow-500",
+    iconColor: "text-gold",
     icon: undefined,
   },
 
@@ -37,7 +37,7 @@ const menuItems: MenuItem[] = [
     href: "/biography",
     gradient:
       "radial-gradient(circle, rgba(255,140,0,0.15) 0%, rgba(255,107,0,0.06) 50%, rgba(239,78,0,0) 100%)",
-    iconColor: "text-yellow-500",
+    iconColor: "text-gold",
     icon: undefined,
   },
   {
@@ -100,8 +100,13 @@ const sharedTransition = {
 
 export function MenuBar() {
   const { theme } = useTheme();
-  const isDarkTheme = theme === "dark";
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const isDarkTheme = mounted ? theme === "dark" : true;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <motion.nav

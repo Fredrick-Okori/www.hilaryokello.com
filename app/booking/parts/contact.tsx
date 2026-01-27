@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@heroui/button";
 import Partners from "@/components/partners";
+import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function BookingPage() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -51,14 +52,14 @@ export default function BookingPage() {
       {/* Hero Section */}
       <div className="relative w-full h-screen overflow-hidden">
         <Image
-          src="/gallery/bg_booking.webp"
+          src="/hero_bg.webp"
           alt="Uganda Must Laugh - Comedy Special"
           layout="fill"
           quality={80}
           objectFit="cover"
-          className="brightness-50"
+          className="brightness-70"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+        <div className="absolute inset-0 flex flex-col items-left justify-left px-6 text-left ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -66,34 +67,49 @@ export default function BookingPage() {
           >
            
       {/* Contact Information */}
-      <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="max-w-xl mx-20 px-6 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="text-center"
+          className="text-left"
         >
-          <h2 className="text-3xl font-bold mb-10">For Bookings</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-left">
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Phone Numbers</h3>
-              <p>+256 752 734280</p>
-              <p>+256 784 704143 </p>
+          <h2 className="text-4xl font-bold mb-10">For Bookings</h2>
+          <div className="grid grid-cols-1 gap-8">
+            <div className="flex flex-col p-8  justify-end">
+              <h3 className="text-lg font-semibold mb-4 text-black">Booking Information</h3>
+              <div className="mb-6">
+                <h4 className="text-sm font-semibold text-black mb-3 flex items-center gap-2">
+                  <FaPhone size={18} /> Phone Numbers
+                </h4>
+                <div className="flex items-center gap-3 mb-3">
+                  <a href="https://wa.me/256752734280" className="hover:text-black transition-colors flex items-center gap-2">
+                    <FaWhatsapp size={20} className="text-green-600" />
+                    <span className="text-black">+256 752 734280</span>
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <a href="https://wa.me/256784704143" className="hover:text-black transition-colors flex items-center gap-2">
+                    <FaWhatsapp size={20} className="text-green-600" />
+                    <span className="text-black">+256 784 704143</span>
+                  </a>
+                </div>
+              </div>
+              <div className="mb-6">
+                <h4 className="text-sm font-semibold text-black mb-3 flex items-center gap-2">
+                  <FaEnvelope size={18} /> Email
+                </h4>
+                <div className="flex items-center  text-black gap-3">
+                  <a href="mailto:info@hilaryokello.com" className="hover:text-black transition-colors flex items-center gap-2">
+                    
+                    <span>info@hilaryokello.com</span>
+                  </a>
+                </div>
+              </div>
+           
+            
             </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p>
-                <a href="mailto:info@example.com" className="hover:underline">
-                  info@hilaryokello.com
-                </a>
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Location</h3>
-              <p>Kampala, Uganda</p>
-            </div>
-         
           </div>
         </motion.div>
       </div>

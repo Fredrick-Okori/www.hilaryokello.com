@@ -10,8 +10,29 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        mono: ["var(--font-mono)"],
+        sans: ["var(--font-viga)", "system-ui", "sans-serif"],
+        mono: ["system-ui", "monospace"],
+      },
+      colors: {
+        /* 60-30-10 Color Palette */
+        black: {
+          DEFAULT: '#000000',
+          light: '#1a1a1a',
+          lighter: '#2a2a2a',
+          muted: '#0a0a0a',
+        },
+        gold: {
+          DEFAULT: '#C89021',
+          light: '#D4A04A',
+          dark: '#A67818',
+          muted: '#8B6914',
+        },
+        red: {
+          DEFAULT: '#FF0000',
+          light: '#FF3333',
+          dark: '#CC0000',
+          muted: '#990000',
+        },
       },
     },
   },

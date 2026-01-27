@@ -1,7 +1,19 @@
 {
   "app": {
-    "[project]/www.hilaryokello.com/app/page": [
-      "static/media/7f20430e44eb7422-s.p.bd5bbcc6.woff2"
+    "[project]/app/_not-found/page": [
+      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
+    ],
+    "[project]/app/biography/page": [
+      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
+    ],
+    "[project]/app/booking/page": [
+      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
+    ],
+    "[project]/app/gallery/page": [
+      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

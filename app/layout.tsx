@@ -1,27 +1,47 @@
 import "@/styles/globals.css";
-import React from "react"; // Corrected import for React
-import { Comfortaa } from "next/font/google";
+import React, { Suspense, lazy } from "react";
+import { Viga } from "next/font/google";
 import Script from "next/script";
 
-import { MenuBar } from "@/components/theme-toggle";
 import { ThemeProvider } from "@/components/theme-provider";
-import Footer from "@/components/footer";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
-const comfortaa = Comfortaa({ subsets: ["latin"] });
+// Lazy load non-critical components
+const MenuBar = lazy(() => import("@/components/theme-toggle").then(mod => ({ default: mod.MenuBar })));
+const Footer = lazy(() => import("@/components/footer"));
 
-
+const viga = Viga({ 
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  variable: "--font-viga",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
-  // Metadata unchanged
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
- 
+  metadataBase: new URL('https://www.hilaryokello.com'),
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 
@@ -31,17 +51,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="en" className={viga.variable}>
       <head>
         <meta charSet="utf-8" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="Hilary Okello's personal website" name="description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="description" content="Hilary Okello's personal website - Uganda's top stand-up comedian" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-36J4TDZWT9"
+        strategy="afterInteractive"
       />
-    <Script id="google-analytics">
+    <Script id="google-analytics" strategy="afterInteractive">
   {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -50,17 +73,19 @@ export default function RootLayout({
 </Script>
 
       <body
-        className={comfortaa.className}
+        className="font-sans antialiased"
         style={{ backgroundColor: "black" }}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {/* Navbar positioned on top of hero */}
           <div className="absolute top-20 left-0 right-0 z-40 flex justify-center px-4">
             <MenuBar />
           </div>
 
           {/* Main content with enough top padding to avoid overlap */}
-          <div className="">{children}</div>
+          <Suspense fallback={<div className="min-h-screen bg-black" />}>
+            <div className="">{children}</div>
+          </Suspense>
         </ThemeProvider>
         <Footer />
       </body>

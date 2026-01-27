@@ -29,9 +29,9 @@ export default function ComedianBio() {
           priority
           alt="Comedian on stage"
           className="object-cover"
-          src="/gallerypage/DSC_9170.webp"
+          src="/Rwanda/rwanda_3.jpg"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-left text-white p-4">
           <motion.h1
             animate={{ opacity: 1, y: 0 }}
             className="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-md"

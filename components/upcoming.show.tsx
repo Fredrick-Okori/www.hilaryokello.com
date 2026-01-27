@@ -33,68 +33,20 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
   {
     id: 2,
     title: "Jokes From Far Away | Lusaka, Zambia",
-    dateLabel: "Feb 13, 2026",
-    date: "2026-02-13T19:00:00",
+    dateLabel: "Mar 06, 2026",
+    date: "2026-03-06T19:00:00",
     time: "7:00 PM",
     location: "Mikaela Gardens, Woodlands",
     city: "Lusaka",
     country: "Zambia",
     ticketPrice: "Singles K800 | Doubles K1,500",
-    image: "/shows/PHOTO-2026-01-27-12-37-31.jpg",
+    image: "/shows/lusaka_tour.jpg",
     link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463491291",
     description:
       "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you’re from.",
     featured: true,
   },
-  {
-    id: 3,
-    title: "Kigali, Rwanda",
-    dateLabel: "November 27, 2025",
-    date: "2025-11-27T19:00:00",
-    time: "7:00 PM",
-    location: "Camp Kigali",
-    city: "Kigali",
-    country: "Rwanda",
-    ticketPrice: "RWF 15,000 | Couples RWF 25,000",
-    image: "/shows/kigali.jpg",
-    link: "#",
-    contactNumber: "+250786280358",
-    description:
-      "A special night in the heart of East Africa! Dr. Hilary Okello performs alongside top Rwandan comedic talent for a memorable, family-friendly evening of stand-up.",
-    featured: false,
-  },
-  {
-    id: 4,
-    title: "Juba, South Sudan",
-    dateLabel: "December 06, 2025",
-    date: "2025-12-06T19:30:00",
-    time: "7:30 PM",
-    location: "Notos Art Center",
-    city: "Juba",
-    country: "South Sudan",
-    ticketPrice: "Ordinary - $10 | Corporate (5pax) - $250",
-    image: "/shows/south_sudan.webp",
-    link: "#",
-    description:
-      "Juba, get ready to laugh! Dr. Okello brings his internationally acclaimed show to South Sudan for the first time. An evening dedicated to celebrating unity through humor.",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "State of the Nation | Zimbabwe",
-    dateLabel: "December 20, 2025",
-    date: "2025-12-20T18:00:00",
-    time: "18:00 PM - Late",
-    location: "Celebration Centre",
-    city: "Harare",
-    country: "Zimbabwe",
-    ticketPrice: "Standard - $20.0 ",
-    image: "/shows/zimbabwe.webp",
-    link: "https://tickets.hypenation.co.zw/tickets/state-of-the-nation-20-12-2025/01K7KND1YTQ1JHZE8GBXGTM78X/01JJVDSR6AH5DRD109ZZKEVN4P",
-    description:
-      "Closing out the year in Harare! Join Dr. Okello for a massive King Kandoro's State of the Nation, featuring music and best performances.",
-    featured: false,
-  },
+  
 ];
 
 // Final shows array with Date objects
@@ -113,7 +65,7 @@ const CustomButton = ({
   target,
 }: any) => {
   const baseClasses =
-    "flex items-center justify-center space-x-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed";
+    "flex items-center justify-center space-x-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold disabled:opacity-50 disabled:cursor-not-allowed";
 
   const combinedClasses = `${baseClasses} ${className}`;
 
@@ -213,7 +165,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
               {show.location} • {show.time}
             </p>
             {show.featured && (
-              <span className="inline-block mt-2 px-3 py-1 bg-yellow-500/30 text-yellow-300 rounded-full text-xs font-medium">
+              <span className="inline-block mt-2 px-3 py-1 bg-gold/30 text-gold-light rounded-full text-xs font-medium">
                 FEATURED EVENT
               </span>
             )}
@@ -224,7 +176,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
         <div className="flex justify-end sm:justify-start">
           {isTicketLinkAvailable ? (
             <CustomButton
-              className="rounded-full bg-white hover:bg-yellow-600 text-gray-900 font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
+              className="rounded-full bg-gold hover:bg-gold-light text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
               onClick={(e: React.MouseEvent) => onBookTickets(e, show.link)}
             >
               Get Tickets
@@ -232,7 +184,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
             </CustomButton>
           ) : (
             <CustomButton
-              className="rounded-full bg-white hover:bg-white text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
+              className="rounded-full bg-gold hover:bg-gold-light text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto"
               href={waLinkForShow}
               target="_blank"
             >
@@ -283,7 +235,7 @@ const UpcomingShows = () => {
       <div className="max-w-7xl mx-auto px-4 pt-10 sm:px-6 lg:px-8">
         {/* Title */}
         <h2 className="text-center text-4xl sm:text-5xl text-white font-extrabold mb-12">
-          Upcoming Shows
+          Jokes From Far Away 2026 World Tour
         </h2>
 
         {/* Shows List or No Shows Message */}
@@ -325,9 +277,9 @@ const UpcomingShows = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold text-lg rounded-full transition-all transform hover:scale-105"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold-light text-black font-bold text-lg rounded-full transition-all transform hover:scale-105"
           >
-            Join Email List
+            Click to Register your City
             <ChevronRight className="h-5 w-5" />
           </Button>
 
@@ -389,7 +341,7 @@ const UpcomingShows = () => {
                   {selectedShow.title}
                 </h3>
                 {selectedShow.featured && (
-                  <span className="inline-block px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm font-medium">
+                  <span className="inline-block px-3 py-1 bg-gold/20 text-gold-light rounded-full text-sm font-medium">
                     FEATURED SHOW
                   </span>
                 )}
@@ -402,7 +354,7 @@ const UpcomingShows = () => {
               <div className="grid grid-cols-2 gap-x-4 gap-y-6 mb-8">
                 {/* Date */}
                 <div className="flex items-start gap-3 col-span-2 sm:col-span-1">
-                  <Calendar className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <Calendar className="h-5 w-5 text-gold mt-0.5" />
                   <div>
                     <p className="text-white/50 text-sm">Date</p>
                     <p className="text-white font-medium">
@@ -413,7 +365,7 @@ const UpcomingShows = () => {
 
                 {/* Time */}
                 <div className="flex items-start gap-3">
-                  <Clock className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <Clock className="h-5 w-5 text-gold mt-0.5" />
                   <div>
                     <p className="text-white/50 text-sm">Time</p>
                     <p className="text-white font-medium">
@@ -424,7 +376,7 @@ const UpcomingShows = () => {
 
                 {/* Venue */}
                 <div className="flex items-start gap-3 col-span-2 sm:col-span-1">
-                  <MapPin className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <MapPin className="h-5 w-5 text-gold mt-0.5" />
                   <div>
                     <p className="text-white/50 text-sm">Venue</p>
                     <p className="text-white font-medium">
@@ -438,7 +390,7 @@ const UpcomingShows = () => {
 
                 {/* Tickets */}
                 <div className="flex items-start gap-3">
-                  <Ticket className="h-5 w-5 text-yellow-500 mt-0.5" />
+                  <Ticket className="h-5 w-5 text-gold mt-0.5" />
                   <div>
                     <p className="text-white/50 text-sm">Tickets</p>
                     <p className="text-white font-medium">
@@ -463,7 +415,7 @@ const UpcomingShows = () => {
                 {selectedShow.link !== "#" ? (
                   <Button
                     as={Link}
-                    className="flex bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-all w-full"
+                    className="flex bg-gold hover:bg-gold-light text-black font-bold py-3 px-6 rounded-full transition-all w-full"
                     href={selectedShow.link}
                     target="_blank"
                   >
@@ -473,7 +425,7 @@ const UpcomingShows = () => {
                 ) : (
                   <Button
                     as="a"
-                    className="flex bg-white hover:bg-green-700 text-black font-bold py-3 px-6 rounded-full transition-all w-full"
+                    className="flex bg-gold hover:bg-gold-light text-black font-bold py-3 px-6 rounded-full transition-all w-full"
                     href={`https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
                       `Hello, I'm interested in tickets for ${selectedShow.title} in ${selectedShow.city}, ${selectedShow.country}`,
                     )}`}
