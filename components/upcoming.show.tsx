@@ -29,7 +29,6 @@ const TODAY = new Date();
 
 // Raw data structured for easy reading
 const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
- 
   {
     id: 2,
     title: "Jokes From Far Away | Lusaka, Zambia",
@@ -43,10 +42,9 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     image: "/shows/lusaka_tour.jpg",
     link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463491291",
     description:
-      "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you’re from.",
+      "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you're from.",
     featured: true,
   },
-  
 ];
 
 // Final shows array with Date objects
@@ -91,16 +89,11 @@ const CustomButton = ({
     </button>
   );
 };
+
 // --- Utility Functions ---
 
- const phoneNumber = "+211922064459"; // Replace with Dr. Hilary Okello's number
-  const message =
-    "Hello, I'm interested in booking tickets for the upcoming show";
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappURL = `https://wa.me/${phoneNumber.replace(
-    /[^0-9]/g,
-    "",
-  )}?text=${encodedMessage}`;
+// Phone number for WhatsApp bookings
+const phoneNumber = "+211922064459"; // Replace with Dr. Hilary Okello's number
 
 // Use a stable, performant date formatting function
 const formatDatePart = (date: Date) => {
@@ -135,7 +128,6 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
 
   return (
     <div
-      // Increased mobile padding for better touch target size
       className="group relative hover:bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 cursor-pointer transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl"
       role="button"
       tabIndex={0}
@@ -147,7 +139,6 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         {/* Date Section and Info */}
         <div className="flex items-start sm:items-center gap-4 sm:gap-6 min-w-full sm:min-w-[50%]">
-          {/* Fixed width date container for stable alignment */}
           <div className="text-center min-w-[80px]">
             <div className="text-xs text-white/50 font-medium tracking-wider">
               {weekday}
@@ -172,7 +163,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
           </div>
         </div>
 
-        {/* Tickets Button (Aligns right on desktop, stretches on mobile for touch) */}
+        {/* Tickets Button */}
         <div className="flex justify-end sm:justify-start">
           {isTicketLinkAvailable ? (
             <CustomButton
@@ -218,12 +209,11 @@ const UpcomingShows = () => {
 
   const closeModal = useCallback(() => {
     setIsModalOpen(false);
-    // Delay setting selectedShow to null to allow for potential exit animations
     setTimeout(() => setSelectedShow(null), 300);
   }, []);
 
   const handleBookTickets = useCallback((e: React.MouseEvent, link: string) => {
-    e.stopPropagation(); // Prevent opening the modal
+    e.stopPropagation();
     if (link !== "#") {
       window.open(link, "_blank", "noopener,noreferrer");
     }
@@ -262,42 +252,61 @@ const UpcomingShows = () => {
         )}
 
         {/* Join Email List CTA Section */}
-        <div className="mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-2xl border border-white/10 p-8 sm:p-12 shadow-3xl text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-white">
-            Want Me to Perform in Your City?
-          </h2>
-          <p className="text-lg text-white/70 max-w-2xl mx-auto mb-8">
-            Join the &quot;Jokes From Far Away&quot; World Tour! Tell us where you want 
-            Dr. Okello to perform next. High-demand cities influence our tour planning!
-          </p>
+        <div className="mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-2xl border border-white/10 p-8 sm:p-12 shadow-3xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Image */}
+            <div className="order-2 lg:order-1">
+              <Image
+                src="/tour_countries.jpg"
+                alt="World Tour Map"
+                width={800}
+                height={400}
+                className="rounded-xl w-full h-auto"
+                quality={80}
+              />
+            </div>
 
-          {/* Join Email List Button */}
-          <Button
-            as="a"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold-light text-black font-bold text-lg rounded-full transition-all transform hover:scale-105"
-          >
-            Click to Register your City
-            <ChevronRight className="h-5 w-5" />
-          </Button>
+            {/* Content */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-white text-left lg:text-left">
+                Want Me to Perform in Your City?
+              </h2>
+              <p className="text-lg text-white/70 mb-8 text-left lg:text-left">
+                Join the "Jokes From Far Away" World Tour! Tell us where you
+                want Dr. Okello to perform next. High-demand cities influence our
+                tour planning!
+              </p>
 
-          <p className="text-xs text-white/50 mt-6">
-            We respect your privacy. Your information will only be used to plan tour locations.
-          </p>
+              {/* Join Email List Button */}
+              <div className="flex justify-start">
+                <Button
+                  as="a"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold-light text-black font-bold text-lg rounded-full transition-all transform hover:scale-105"
+                >
+                  Click to Register your City
+                  <ChevronRight className="h-5 w-5" />
+                </Button>
+              </div>
+
+              <p className="text-xs text-white/50 mt-6 text-left lg:text-left">
+                We respect your privacy. Your information will only be used to
+                plan tour locations.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Modal - Render only when open for efficiency */}
       {isModalOpen && selectedShow && (
         <div
-          // High responsiveness: Full screen on mobile, centered box on desktop
           className="fixed inset-0 bg-black backdrop-blur-sm z-50 flex items-center justify-center p-0 sm:p-4"
           role="button"
           tabIndex={0}
           onClick={(e) => {
-            // Close only when overlay itself is clicked (not inner modal)
             if (e.target === e.currentTarget) closeModal();
           }}
           onKeyDown={(e) => {
@@ -306,7 +315,6 @@ const UpcomingShows = () => {
           }}
         >
           <div
-            // Ensures full height on mobile (h-full), max height on desktop
             aria-modal="true"
             className="bg-black border border-white/10 rounded-none sm:rounded-2xl max-w-4xl w-full h-full sm:max-h-[90vh] overflow-y-auto shadow-2xl transition-all duration-300 ease-out"
             role="dialog"
@@ -314,17 +322,14 @@ const UpcomingShows = () => {
           >
             {/* Modal Header with Image */}
             <div className="relative h-72 sm:h-80 w-full">
-              {/* Performance: Prioritize loading the main modal image */}
-              {/* eslint-disable-next-line react/jsx-sort-props */}
               <Image
                 src={selectedShow.image}
                 fill
                 priority
                 alt={selectedShow.title}
                 className="object-cover rounded-t-none sm:rounded-t-2xl"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px" // Image optimization
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px"
               />
-              {/* Gradient for text visibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent rounded-t-none sm:rounded-t-2xl" />
 
               {/* Close Button */}
@@ -410,7 +415,7 @@ const UpcomingShows = () => {
                 </p>
               </div>
 
-              {/* Action Buttons (Sticky footer on mobile for touch UX) */}
+              {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 sticky bottom-0 bg-black py-3 sm:static sm:bg-transparent sm:py-0 border-t sm:border-t-0 border-white/5">
                 {selectedShow.link !== "#" ? (
                   <Button
@@ -452,3 +457,4 @@ const UpcomingShows = () => {
 };
 
 export default UpcomingShows;
+

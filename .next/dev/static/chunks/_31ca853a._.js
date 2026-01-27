@@ -1114,7 +1114,7 @@ const RAW_SHOWS = [
         ticketPrice: "Singles K800 | Doubles K1,500",
         image: "/shows/lusaka_tour.jpg",
         link: "https://www.webtickets.co.zm/v2/Event.aspx?itemid=1463491291",
-        description: "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you’re from.",
+        description: "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you're from.",
         featured: true
     }
 ];
@@ -1139,7 +1139,7 @@ const CustomButton = ({ onClick, children, className = "", disabled = false, as,
             children: children
         }, void 0, false, {
             fileName: "[project]/components/upcoming.show.tsx",
-            lineNumber: 76,
+            lineNumber: 74,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -1150,16 +1150,14 @@ const CustomButton = ({ onClick, children, className = "", disabled = false, as,
         children: children
     }, void 0, false, {
         fileName: "[project]/components/upcoming.show.tsx",
-        lineNumber: 89,
+        lineNumber: 87,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
 _c2 = CustomButton;
 // --- Utility Functions ---
+// Phone number for WhatsApp bookings
 const phoneNumber = "+211922064459"; // Replace with Dr. Hilary Okello's number
-const message = "Hello, I'm interested in booking tickets for the upcoming show";
-const encodedMessage = encodeURIComponent(message);
-const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodedMessage}`;
 // Use a stable, performant date formatting function
 const formatDatePart = (date)=>{
     const weekday = date.toLocaleDateString("en-US", {
@@ -1186,7 +1184,6 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
     const contactNumber = show.contactNumber ?? phoneNumber;
     const waLinkForShow = `https://wa.me/${contactNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello, I'm interested in tickets for ${show.title} in ${show.city}, show`)}`;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        // Increased mobile padding for better touch target size
         className: "group relative hover:bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 cursor-pointer transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl",
         role: "button",
         tabIndex: 0,
@@ -1208,7 +1205,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: weekday
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 152,
+                                    lineNumber: 143,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1216,7 +1213,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: day
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 146,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1224,13 +1221,13 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: month
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 156,
+                                    lineNumber: 147,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 151,
+                            lineNumber: 142,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1245,7 +1242,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 161,
+                                    lineNumber: 152,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1257,7 +1254,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 155,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 show.featured && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1265,19 +1262,19 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                     children: "FEATURED EVENT"
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 159,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 160,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 149,
+                    lineNumber: 141,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1291,13 +1288,13 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                 className: "ml-1 h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 183,
+                                lineNumber: 174,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 178,
+                        lineNumber: 169,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomButton, {
                         className: "rounded-full bg-gold hover:bg-gold-light text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto",
@@ -1309,29 +1306,29 @@ const ShowItem = ({ show, onShowClick, onBookTickets })=>{
                                 className: "ml-1 h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 192,
+                                lineNumber: 183,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 186,
+                        lineNumber: 177,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 176,
+                    lineNumber: 167,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/components/upcoming.show.tsx",
-            lineNumber: 147,
+            lineNumber: 139,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/components/upcoming.show.tsx",
-        lineNumber: 137,
+        lineNumber: 130,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1362,7 +1359,6 @@ const UpcomingShows = ()=>{
     const closeModal = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "UpcomingShows.useCallback[closeModal]": ()=>{
             setIsModalOpen(false);
-            // Delay setting selectedShow to null to allow for potential exit animations
             setTimeout({
                 "UpcomingShows.useCallback[closeModal]": ()=>setSelectedShow(null)
             }["UpcomingShows.useCallback[closeModal]"], 300);
@@ -1370,7 +1366,7 @@ const UpcomingShows = ()=>{
     }["UpcomingShows.useCallback[closeModal]"], []);
     const handleBookTickets = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
         "UpcomingShows.useCallback[handleBookTickets]": (e, link)=>{
-            e.stopPropagation(); // Prevent opening the modal
+            e.stopPropagation();
             if (link !== "#") {
                 window.open(link, "_blank", "noopener,noreferrer");
             }
@@ -1388,7 +1384,7 @@ const UpcomingShows = ()=>{
                         children: "Jokes From Far Away 2026 World Tour"
                     }, void 0, false, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 237,
+                        lineNumber: 227,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     upcomingShows.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1399,7 +1395,7 @@ const UpcomingShows = ()=>{
                                 children: "New Shows Coming Soon!"
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 244,
+                                lineNumber: 234,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1407,13 +1403,13 @@ const UpcomingShows = ()=>{
                                 children: "Stay tuned for upcoming tour dates."
                             }, void 0, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 247,
+                                lineNumber: 237,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 243,
+                        lineNumber: 233,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-4",
@@ -1423,88 +1419,127 @@ const UpcomingShows = ()=>{
                                 onShowClick: handleShowClick
                             }, show.id, false, {
                                 fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 254,
+                                lineNumber: 244,
                                 columnNumber: 15
                             }, ("TURBOPACK compile-time value", void 0)))
                     }, void 0, false, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 252,
+                        lineNumber: 242,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-2xl border border-white/10 p-8 sm:p-12 shadow-3xl text-center",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-3xl sm:text-4xl font-extrabold mb-4 text-white",
-                                children: "Want Me to Perform in Your City?"
-                            }, void 0, false, {
-                                fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 266,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg text-white/70 max-w-2xl mx-auto mb-8",
-                                children: 'Join the "Jokes From Far Away" World Tour! Tell us where you want Dr. Okello to perform next. High-demand cities influence our tour planning!'
-                            }, void 0, false, {
-                                fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 269,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
-                                as: "a",
-                                href: "https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform",
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: "inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold-light text-black font-bold text-lg rounded-full transition-all transform hover:scale-105",
-                                children: [
-                                    "Click to Register your City",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                        className: "h-5 w-5"
+                        className: "mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-2xl border border-white/10 p-8 sm:p-12 shadow-3xl",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "order-2 lg:order-1",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/tour_countries.jpg",
+                                        alt: "World Tour Map",
+                                        width: 800,
+                                        height: 400,
+                                        className: "rounded-xl w-full h-auto",
+                                        quality: 80
                                     }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 283,
-                                        columnNumber: 13
+                                        lineNumber: 259,
+                                        columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 275,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-xs text-white/50 mt-6",
-                                children: "We respect your privacy. Your information will only be used to plan tour locations."
-                            }, void 0, false, {
-                                fileName: "[project]/components/upcoming.show.tsx",
-                                lineNumber: 286,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, void 0, true, {
+                                }, void 0, false, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 258,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "order-1 lg:order-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "text-3xl sm:text-4xl font-extrabold mb-4 text-white text-left lg:text-left",
+                                            children: "Want Me to Perform in Your City?"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 271,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-lg text-white/70 mb-8 text-left lg:text-left",
+                                            children: 'Join the "Jokes From Far Away" World Tour! Tell us where you want Dr. Okello to perform next. High-demand cities influence our tour planning!'
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 274,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex justify-start",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
+                                                as: "a",
+                                                href: "https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform",
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold hover:bg-gold-light text-black font-bold text-lg rounded-full transition-all transform hover:scale-105",
+                                                children: [
+                                                    "Click to Register your City",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                        className: "h-5 w-5"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/upcoming.show.tsx",
+                                                        lineNumber: 290,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/upcoming.show.tsx",
+                                                lineNumber: 282,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 281,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0)),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-white/50 mt-6 text-left lg:text-left",
+                                            children: "We respect your privacy. Your information will only be used to plan tour locations."
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/upcoming.show.tsx",
+                                            lineNumber: 294,
+                                            columnNumber: 15
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/upcoming.show.tsx",
+                                    lineNumber: 270,
+                                    columnNumber: 13
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/upcoming.show.tsx",
+                            lineNumber: 256,
+                            columnNumber: 11
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
                         fileName: "[project]/components/upcoming.show.tsx",
-                        lineNumber: 265,
+                        lineNumber: 255,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/upcoming.show.tsx",
-                lineNumber: 235,
+                lineNumber: 225,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             isModalOpen && selectedShow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                // High responsiveness: Full screen on mobile, centered box on desktop
                 className: "fixed inset-0 bg-black backdrop-blur-sm z-50 flex items-center justify-center p-0 sm:p-4",
                 role: "button",
                 tabIndex: 0,
                 onClick: (e)=>{
-                    // Close only when overlay itself is clicked (not inner modal)
                     if (e.target === e.currentTarget) closeModal();
                 },
                 onKeyDown: (e)=>{
                     if (e.key === "Enter" || e.key === " " || e.key === "Escape") closeModal();
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    // Ensures full height on mobile (h-full), max height on desktop
                     "aria-modal": "true",
                     className: "bg-black border border-white/10 rounded-none sm:rounded-2xl max-w-4xl w-full h-full sm:max-h-[90vh] overflow-y-auto shadow-2xl transition-all duration-300 ease-out",
                     role: "dialog",
@@ -1522,14 +1557,14 @@ const UpcomingShows = ()=>{
                                     sizes: "(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px"
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 319,
+                                    lineNumber: 325,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent rounded-t-none sm:rounded-t-2xl"
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 328,
+                                    lineNumber: 333,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1539,12 +1574,12 @@ const UpcomingShows = ()=>{
                                         className: "h-6 w-6 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/components/upcoming.show.tsx",
-                                        lineNumber: 335,
+                                        lineNumber: 340,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 331,
+                                    lineNumber: 336,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1555,7 +1590,7 @@ const UpcomingShows = ()=>{
                                             children: selectedShow.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 340,
+                                            lineNumber: 345,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         selectedShow.featured && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1563,19 +1598,19 @@ const UpcomingShows = ()=>{
                                             children: "FEATURED SHOW"
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 344,
+                                            lineNumber: 349,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 339,
+                                    lineNumber: 344,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 316,
+                            lineNumber: 324,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1591,7 +1626,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-gold mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 357,
+                                                    lineNumber: 362,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1601,7 +1636,7 @@ const UpcomingShows = ()=>{
                                                             children: "Date"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 359,
+                                                            lineNumber: 364,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1609,19 +1644,19 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.dateLabel
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 360,
+                                                            lineNumber: 365,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 358,
+                                                    lineNumber: 363,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 356,
+                                            lineNumber: 361,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1631,7 +1666,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-gold mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 368,
+                                                    lineNumber: 373,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1641,7 +1676,7 @@ const UpcomingShows = ()=>{
                                                             children: "Time"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 370,
+                                                            lineNumber: 375,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1649,19 +1684,19 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.time
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 371,
+                                                            lineNumber: 376,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 369,
+                                                    lineNumber: 374,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 367,
+                                            lineNumber: 372,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1671,7 +1706,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-gold mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 379,
+                                                    lineNumber: 384,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1681,7 +1716,7 @@ const UpcomingShows = ()=>{
                                                             children: "Venue"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 381,
+                                                            lineNumber: 386,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1689,7 +1724,7 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.location
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 382,
+                                                            lineNumber: 387,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1701,19 +1736,19 @@ const UpcomingShows = ()=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 385,
+                                                            lineNumber: 390,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 380,
+                                                    lineNumber: 385,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 378,
+                                            lineNumber: 383,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1723,7 +1758,7 @@ const UpcomingShows = ()=>{
                                                     className: "h-5 w-5 text-gold mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 393,
+                                                    lineNumber: 398,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1733,7 +1768,7 @@ const UpcomingShows = ()=>{
                                                             children: "Tickets"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 395,
+                                                            lineNumber: 400,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0)),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1741,25 +1776,25 @@ const UpcomingShows = ()=>{
                                                             children: selectedShow.ticketPrice
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/upcoming.show.tsx",
-                                                            lineNumber: 396,
+                                                            lineNumber: 401,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 394,
+                                                    lineNumber: 399,
                                                     columnNumber: 19
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 392,
+                                            lineNumber: 397,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 354,
+                                    lineNumber: 359,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1770,7 +1805,7 @@ const UpcomingShows = ()=>{
                                             children: "About This Show"
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 405,
+                                            lineNumber: 410,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1778,13 +1813,13 @@ const UpcomingShows = ()=>{
                                             children: selectedShow.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 408,
+                                            lineNumber: 413,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 404,
+                                    lineNumber: 409,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1801,13 +1836,13 @@ const UpcomingShows = ()=>{
                                                     className: "ml-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 423,
+                                                    lineNumber: 428,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 416,
+                                            lineNumber: 421,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
                                             as: "a",
@@ -1820,13 +1855,13 @@ const UpcomingShows = ()=>{
                                                     className: "ml-2 h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/upcoming.show.tsx",
-                                                    lineNumber: 435,
+                                                    lineNumber: 440,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 426,
+                                            lineNumber: 431,
                                             columnNumber: 19
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$button$2f$dist$2f$chunk$2d$KCYYJJH4$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__button_default__as__Button$3e$__["Button"], {
@@ -1836,36 +1871,36 @@ const UpcomingShows = ()=>{
                                             children: "Close Details"
                                         }, void 0, false, {
                                             fileName: "[project]/components/upcoming.show.tsx",
-                                            lineNumber: 438,
+                                            lineNumber: 443,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/upcoming.show.tsx",
-                                    lineNumber: 414,
+                                    lineNumber: 419,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/upcoming.show.tsx",
-                            lineNumber: 352,
+                            lineNumber: 357,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/upcoming.show.tsx",
-                    lineNumber: 308,
+                    lineNumber: 317,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/components/upcoming.show.tsx",
-                lineNumber: 294,
+                lineNumber: 305,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/components/upcoming.show.tsx",
-        lineNumber: 234,
+        lineNumber: 224,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
