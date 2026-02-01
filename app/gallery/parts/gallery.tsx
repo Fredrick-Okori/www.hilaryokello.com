@@ -19,7 +19,6 @@ const galleries: Record<string, string[]> = {
     "/Rwanda/SHEMA INNOCENT 0780 329 329_154_10_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_155_11_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_156_12_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_157_13_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_158_14_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_159_15_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_160_16_11zon.jpg",
@@ -87,10 +86,7 @@ const galleries: Record<string, string[]> = {
     "/gallerypage/DSC_9291.webp",
     "/gallerypage/DSC_9304.webp",
     "/gallerypage/DSC_9316.webp",
-    "/gallerypage/DSC_1501.webp",
-    "/gallerypage/DSC_1536.webp",
-    "/gallerypage/DSC_2131.webp",
-    "/gallerypage/DSC_2132.webp",
+
 
   ],
 

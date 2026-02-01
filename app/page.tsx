@@ -93,8 +93,8 @@ export default function Page() {
   const images = [
     { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg", caption: "Event Photo 1284" },
     { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg", caption: "Crowd" },
-    { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_157_13_11zon.jpg", caption: "Event Photo 9170" },
     { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg", caption: "Booking Background" },
+        { url: "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg", caption: "Crowd" },
   ];
 
   return (
