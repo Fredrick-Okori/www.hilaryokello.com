@@ -1,3 +1,4 @@
+import Zambia from "@/components/home.zambia";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
@@ -52,11 +53,11 @@ export default function Page() {
   const featuredVideo = {
     id: "1",
     title:
-      "Dr. Hilary Okello: Uganda Must Laugh 2 - (FULL STAND-UP COMEDY SPECIAL)",
-    duration: "1:20:10",
-    youtubeId: "UP8FWmG9BbY",
-    views: "94K",
-    uploadedAt: "3 Weeks ago",
+      "Comedian Dr Hilary Okello Jokes About BODA BODA (Bike) Transport in Uganda.",
+    duration: "15:04",
+    youtubeId: "0OQTRCxtZYc",
+    views: "60K",
+    uploadedAt: "6 days ago",
   };
 
   // Other recommended videos
@@ -106,12 +107,17 @@ export default function Page() {
       <Suspense fallback={<div className="h-64 bg-black-light animate-pulse" />}>
         <UpcomingShows />
       </Suspense>
-      
+         <div className="bg-black py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <Zambia  />
+        </div>
+      </div>
       <div className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
           <CountryGlimpse images={images} />
         </div>
       </div>
+   
       
       {/* Video Section */}
       <div className="bg-black py-16">

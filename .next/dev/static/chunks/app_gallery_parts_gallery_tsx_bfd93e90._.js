@@ -23,7 +23,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 // Group images into titled galleries
 const galleries = {
-    Rwanda: [
+    "Gen-Z Comdy | Kigali - Rwanda": [
         "/Rwanda/SHEMA INNOCENT 0780 329 329_127_3_11zon.jpg",
         "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg",
         "/Rwanda/SHEMA INNOCENT 0780 329 329_129_5_11zon.jpg",
@@ -39,8 +39,17 @@ const galleries = {
         "/Rwanda/SHEMA INNOCENT 0780 329 329_159_15_11zon.jpg",
         "/Rwanda/SHEMA INNOCENT 0780 329 329_160_16_11zon.jpg",
         "/Rwanda/SHEMA INNOCENT 0780 329 329_161_17_11zon.jpg",
-        "/Rwanda/rwanda_1.jpg",
-        "/Rwanda/rwanda_2.jpg"
+        "/Rwanda/rwanda_1.jpg"
+    ],
+    "State of Nation | Harare - Zimbabwe ": [
+        "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif",
+        "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif",
+        "/harare/04cbaeee377f02f0494c389c69c3d98e.avif",
+        "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif",
+        "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif",
+        "/harare/12d317ce22156a27704561fc77a1f764.avif",
+        "/harare/a1c38ae750c359bee856d474a125f227.avif",
+        "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif"
     ],
     Botswana: [
         "/Botswana/DSC_8883 2_1_11zon.webp",
@@ -64,15 +73,11 @@ const galleries = {
         "/Botswana/DSC_9100 2_19_11zon.webp",
         "/Botswana/DSC_9104 2_20_11zon.webp"
     ],
-    "View More": [
-        "/gallerypage/DSC_0808.webp",
-        "/gallerypage/DSC_0809.webp",
+    "Kampala - Uganda": [
         "/gallerypage/DSC_0854.webp",
         "/gallerypage/DSC_0913.webp",
-        "/gallerypage/DSC_0934.webp",
         "/gallerypage/DSC_1041.webp",
         "/gallerypage/DSC_9107.webp",
-        "/gallerypage/DSC_9137.webp",
         "/gallerypage/DSC_9161.webp",
         "/gallerypage/DSC_9170.webp",
         "/gallerypage/DSC_9173.webp",
@@ -82,9 +87,6 @@ const galleries = {
         "/gallerypage/DSC_8976.webp",
         "/gallerypage/DSC_9022.webp",
         "/gallerypage/DSC_9060.webp",
-        "/gallerypage/DSC_1439.webp",
-        "/gallerypage/DSC_1443.webp",
-        "/gallerypage/DSC_1462.webp",
         "/gallerypage/DSC_1499.webp",
         "/gallerypage/DSC_9178.webp",
         "/gallerypage/DSC_9186.webp",
@@ -99,12 +101,7 @@ const galleries = {
         "/gallerypage/DSC_1501.webp",
         "/gallerypage/DSC_1536.webp",
         "/gallerypage/DSC_2131.webp",
-        "/gallerypage/DSC_2132.webp",
-        "/gallerypage/DSC_2137.webp",
-        "/gallerypage/DSC_2148.webp",
-        "/gallerypage/DSC_2151.webp",
-        "/gallerypage/DSC_5225.webp",
-        "/gallerypage/DSC_5228.webp"
+        "/gallerypage/DSC_2132.webp"
     ]
 };
 // Flatten galleries for modal navigation
@@ -227,14 +224,6 @@ function Gallery() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-6 py-20  mx-auto bg-black min-h-screen",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: `text-4xl font-bold text-left mb-12 text-white transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`,
-                children: "Viewing Gallery"
-            }, void 0, false, {
-                fileName: "[project]/app/gallery/parts/gallery.tsx",
-                lineNumber: 206,
-                columnNumber: 7
-            }, this),
             groupEntries.map(([title, imgs], gIdx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                     className: "mb-12",
                     children: [
@@ -243,7 +232,7 @@ function Gallery() {
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 215,
+                            lineNumber: 214,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -267,7 +256,7 @@ function Gallery() {
                                             className: "h-full w-full"
                                         }, void 0, false, {
                                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                            lineNumber: 239,
+                                            lineNumber: 238,
                                             columnNumber: 33
                                         }, this),
                                         isLoaded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -280,7 +269,7 @@ function Gallery() {
                                             src: encodeURI(src)
                                         }, void 0, false, {
                                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                            lineNumber: 241,
+                                            lineNumber: 240,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -291,35 +280,35 @@ function Gallery() {
                                                     className: "text-white h-5 w-5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                                    lineNumber: 254,
+                                                    lineNumber: 253,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                                lineNumber: 252,
+                                                lineNumber: 251,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                            lineNumber: 251,
+                                            lineNumber: 250,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, globalIdx, true, {
                                     fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                    lineNumber: 221,
+                                    lineNumber: 220,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 216,
+                            lineNumber: 215,
                             columnNumber: 11
                         }, this)
                     ]
                 }, title, true, {
                     fileName: "[project]/app/gallery/parts/gallery.tsx",
-                    lineNumber: 214,
+                    lineNumber: 213,
                     columnNumber: 9
                 }, this)),
             selectedIndex !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -348,12 +337,12 @@ function Gallery() {
                                 src: encodeURI(imagesFlat[selectedIndex])
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 288,
+                                lineNumber: 287,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 285,
+                            lineNumber: 284,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -365,7 +354,7 @@ function Gallery() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 300,
+                            lineNumber: 299,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -376,12 +365,12 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 310,
+                                lineNumber: 309,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 305,
+                            lineNumber: 304,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -392,12 +381,12 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 319,
+                                lineNumber: 318,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 314,
+                            lineNumber: 313,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -408,29 +397,29 @@ function Gallery() {
                                 className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                                lineNumber: 328,
+                                lineNumber: 327,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/gallery/parts/gallery.tsx",
-                            lineNumber: 323,
+                            lineNumber: 322,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/gallery/parts/gallery.tsx",
-                    lineNumber: 273,
+                    lineNumber: 272,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/gallery/parts/gallery.tsx",
-                lineNumber: 267,
+                lineNumber: 266,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/gallery/parts/gallery.tsx",
-        lineNumber: 205,
+        lineNumber: 208,
         columnNumber: 5
     }, this);
 }

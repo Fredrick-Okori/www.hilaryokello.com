@@ -8,7 +8,7 @@ import { Skeleton } from "@heroui/react";
 
 // Group images into titled galleries
 const galleries: Record<string, string[]> = {
-  Rwanda: [
+  "Gen-Z Comdy | Kigali - Rwanda": [
     "/Rwanda/SHEMA INNOCENT 0780 329 329_127_3_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_129_5_11zon.jpg",
@@ -25,7 +25,18 @@ const galleries: Record<string, string[]> = {
     "/Rwanda/SHEMA INNOCENT 0780 329 329_160_16_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_161_17_11zon.jpg",
     "/Rwanda/rwanda_1.jpg",
-    "/Rwanda/rwanda_2.jpg",
+    
+  ],
+    "State of Nation | Harare - Zimbabwe ": [
+    "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif",
+    "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif",
+    "/harare/04cbaeee377f02f0494c389c69c3d98e.avif",
+    "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif",
+    "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif",
+    "/harare/12d317ce22156a27704561fc77a1f764.avif",
+    "/harare/a1c38ae750c359bee856d474a125f227.avif",
+    "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif",
+
   ],
   Botswana: [
     "/Botswana/DSC_8883 2_1_11zon.webp",
@@ -48,15 +59,14 @@ const galleries: Record<string, string[]> = {
     "/Botswana/DSC_9098 2_18_11zon.webp",
     "/Botswana/DSC_9100 2_19_11zon.webp",
     "/Botswana/DSC_9104 2_20_11zon.webp",
-  ],  "View More": [
-    "/gallerypage/DSC_0808.webp",
-    "/gallerypage/DSC_0809.webp",
+  ],
+
+  "Kampala - Uganda": [
+
     "/gallerypage/DSC_0854.webp",
     "/gallerypage/DSC_0913.webp",
-    "/gallerypage/DSC_0934.webp",
     "/gallerypage/DSC_1041.webp",
     "/gallerypage/DSC_9107.webp",
-    "/gallerypage/DSC_9137.webp",
     "/gallerypage/DSC_9161.webp",
     "/gallerypage/DSC_9170.webp",
     "/gallerypage/DSC_9173.webp",
@@ -66,9 +76,6 @@ const galleries: Record<string, string[]> = {
     "/gallerypage/DSC_8976.webp",
     "/gallerypage/DSC_9022.webp",
     "/gallerypage/DSC_9060.webp",
-    "/gallerypage/DSC_1439.webp",
-    "/gallerypage/DSC_1443.webp",
-    "/gallerypage/DSC_1462.webp",
     "/gallerypage/DSC_1499.webp",
     "/gallerypage/DSC_9178.webp",
     "/gallerypage/DSC_9186.webp",
@@ -84,11 +91,7 @@ const galleries: Record<string, string[]> = {
     "/gallerypage/DSC_1536.webp",
     "/gallerypage/DSC_2131.webp",
     "/gallerypage/DSC_2132.webp",
-    "/gallerypage/DSC_2137.webp",
-    "/gallerypage/DSC_2148.webp",
-    "/gallerypage/DSC_2151.webp",
-    "/gallerypage/DSC_5225.webp",
-    "/gallerypage/DSC_5228.webp",
+
   ],
 
 };
@@ -203,11 +206,7 @@ export default function Gallery() {
 
   return (
     <div className="px-6 py-20  mx-auto bg-black min-h-screen">
-      <h1
-        className={`text-4xl font-bold text-left mb-12 text-white transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
-      >
-        Viewing Gallery
-      </h1>
+      
 
       {/* Render each gallery group with a heading */}
       {groupEntries.map(([title, imgs], gIdx) => (

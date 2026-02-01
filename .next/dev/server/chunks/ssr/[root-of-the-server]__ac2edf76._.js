@@ -67,11 +67,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$videos$2e$tsx_
 // Featured video - Dr. Hilary Okello's comedy
 const featuredVideo = {
     id: "1",
-    title: "Dr Hilary Okello funniest joke about Government Ministers in Traffic Jam.",
-    duration: "08:04",
-    youtubeId: "uKznySp_XbE",
-    views: "23K",
-    uploadedAt: "10 days ago"
+    title: "Comedian Dr Hilary Okello Jokes About BODA BODA (Bike) Transport in Uganda.",
+    duration: "15:04",
+    youtubeId: "0OQTRCxtZYc",
+    views: "60K",
+    uploadedAt: "6 days ago"
 };
 // Other recommended videos
 const videos = [
@@ -120,17 +120,17 @@ function Page() {
                     videos: videos
                 }, void 0, false, {
                     fileName: "[project]/app/watch/page.tsx",
-                    lineNumber: 66,
+                    lineNumber: 67,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/watch/page.tsx",
-                lineNumber: 65,
+                lineNumber: 66,
                 columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/watch/page.tsx",
-            lineNumber: 64,
+            lineNumber: 65,
             columnNumber: 9
         }, this)
     }, void 0, false);

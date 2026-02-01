@@ -46,7 +46,7 @@ const HeroSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
             className: "min-h-screen bg-black animate-pulse"
         }, void 0, false, {
             fileName: "[project]/app/page.tsx",
-            lineNumber: 8,
+            lineNumber: 9,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0))
 });
@@ -60,7 +60,7 @@ const CountryGlimpse = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_
             className: "h-96 bg-black-light animate-pulse"
         }, void 0, false, {
             fileName: "[project]/app/page.tsx",
-            lineNumber: 12,
+            lineNumber: 13,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0))
 });
@@ -76,7 +76,7 @@ const VideoSection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
             className: "h-64 bg-black-light animate-pulse"
         }, void 0, false, {
             fileName: "[project]/app/page.tsx",
-            lineNumber: 17,
+            lineNumber: 18,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0))
 });
@@ -90,7 +90,7 @@ const ImageCarousel = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
             className: "h-96 bg-black-light animate-pulse"
         }, void 0, false, {
             fileName: "[project]/app/page.tsx",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0))
 });
@@ -104,7 +104,7 @@ const UpcomingShows = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_m
             className: "h-64 bg-black-light animate-pulse"
         }, void 0, false, {
             fileName: "[project]/app/page.tsx",
-            lineNumber: 25,
+            lineNumber: 26,
             columnNumber: 18
         }, ("TURBOPACK compile-time value", void 0))
 });
@@ -139,11 +139,11 @@ function Page() {
     // Featured video - Dr. Hilary Okello's comedy
     const featuredVideo = {
         id: "1",
-        title: "Dr. Hilary Okello: Uganda Must Laugh 2 - (FULL STAND-UP COMEDY SPECIAL)",
-        duration: "1:20:10",
-        youtubeId: "UP8FWmG9BbY",
-        views: "94K",
-        uploadedAt: "3 Weeks ago"
+        title: "Comedian Dr Hilary Okello Jokes About BODA BODA (Bike) Transport in Uganda.",
+        duration: "15:04",
+        youtubeId: "0OQTRCxtZYc",
+        views: "60K",
+        uploadedAt: "6 days ago"
     };
     // Other recommended videos
     const videos = [
@@ -197,12 +197,12 @@ function Page() {
                 className: "min-h-screen overflow-hidden relative",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(HeroSection, {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 103,
+                    lineNumber: 104,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 102,
+                lineNumber: 103,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Suspense"], {
@@ -210,17 +210,17 @@ function Page() {
                     className: "h-64 bg-black-light animate-pulse"
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 106,
+                    lineNumber: 107,
                     columnNumber: 27
                 }, void 0),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(UpcomingShows, {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 107,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 106,
+                lineNumber: 107,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -231,17 +231,17 @@ function Page() {
                         images: images
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 112,
+                        lineNumber: 113,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 111,
+                    lineNumber: 112,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 110,
+                lineNumber: 111,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -254,17 +254,17 @@ function Page() {
                         videos: videos
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 119,
+                        lineNumber: 121,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 118,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 117,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -273,23 +273,23 @@ function Page() {
                     className: "max-w-7xl mx-auto px-4",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(ImageCarousel, {}, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 130,
+                        lineNumber: 132,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 129,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 128,
+                lineNumber: 130,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 100,
+        lineNumber: 101,
         columnNumber: 5
     }, this);
 }
