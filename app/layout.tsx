@@ -72,6 +72,9 @@ export default function RootLayout({
   gtag('config', 'G-36J4TDZWT9');`}
 </Script>
 
+<chat-widget env="prod" project-id="6cab4e2d-7389-4443-a5a6-10100007c55d"/>
+<Script src="https://cdn.apollo.kayeai.com/js/chat-widget.js" type="module"></Script>
+
       <body
         className="font-sans antialiased"
         style={{ backgroundColor: "black" }}
