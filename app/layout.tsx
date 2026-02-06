@@ -64,7 +64,7 @@ export default function RootLayout({
         src="https://www.googletagmanager.com/gtag/js?id=G-36J4TDZWT9"
         strategy="afterInteractive"
       />
-    <Script id="google-analytics" strategy="afterInteractive">
+<Script id="google-analytics" strategy="afterInteractive">
   {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -72,13 +72,13 @@ export default function RootLayout({
   gtag('config', 'G-36J4TDZWT9');`}
 </Script>
 
-<chat-widget env="prod" project-id="6cab4e2d-7389-4443-a5a6-10100007c55d"/>
-<Script src="https://cdn.apollo.kayeai.com/js/chat-widget.js" type="module"></Script>
-
       <body
         className="font-sans antialiased"
         style={{ backgroundColor: "black" }}
       >
+        {/* Chat Widget - placed in body where custom elements are valid */}
+        <chat-widget env="prod" project-id="6cab4e2d-7389-4443-a5a6-10100007c55d"/>
+        <Script src="https://cdn.apollo.kayeai.com/js/chat-widget.js" type="module" strategy="afterInteractive" />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {/* Navbar positioned on top of hero */}
           <div className="absolute top-20 left-0 right-0 z-40 flex justify-center px-4">
