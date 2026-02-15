@@ -1,327 +1,330 @@
-[00:00:02.250] Server  LOG     ✓ Ready in 1636ms
-[00:00:14.418] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:00:14.457] Server  LOG     Images array: [{...},{...},{...},{...}]
-[00:00:14.571] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:01.960] Server  LOG     ✓ Ready in 1443ms
+[00:01:05.934] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":25,"pageLoadTimestamp":1771186782245,"pageViews":1,"scrollDepth":0,"timeOnSite":25,"urlsVisited":["/contact"]},"timestamp":"2026-02-15T20:20:08.130Z","triggerId":"timeOnPage"}
+[00:03:08.105] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":145,"pageLoadTimestamp":1771186782245,"pageViews":1,"scrollDepth":0,"timeOnSite":145,"urlsVisited":["/contact"]},"timestamp":"2026-02-15T20:22:09.028Z","triggerId":"inactivity"}
+[00:09:57.553] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:09:57.643] Server  LOG     Images array: [{...},{...},{...},{...}]
+[00:09:57.734] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:14.587] Server  WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:09:57.777] Server  WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:14.591] Server  WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:09:57.783] Server  WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:14.593] Server  WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:09:57.787] Server  WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:15.626] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
-This will cause a hydration error.%s <chat-widget> html  
+[00:10:01.801] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:10:03.335] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:10:03.335] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:10:03.337] Browser WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:10:03.346] Browser WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:10:03.346] Browser WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:10:03.346] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:10:03.346] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:10:03.346] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:10:04.284] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.284] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:10:04.285] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:10:04.285] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:04.285] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:10:36.649] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1771187343726,"pageViews":1,"scrollDepth":28.695058073331815,"timeOnSite":25,"urlsVisited":["/"]},"timestamp":"2026-02-15T20:29:28.900Z","triggerId":"timeOnPage"}
+[00:10:36.649] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:10:36.649] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:10:36.649] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:11:44.872] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:11:44.872] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:12:06.270] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:12:06.334] Server  LOG     Images array: [{...},{...},{...},{...}]
+[00:12:06.386] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:12:06.420] Server  WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:12:06.427] Server  WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:12:06.434] Server  WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:12:16.444] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:13:21.995] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:13:21.995] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:13:21.995] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:13:21.995] Browser WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:13:21.995] Browser WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:13:21.995] Browser WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
+[00:13:21.995] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:13:21.995] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:13:21.995] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:13:21.995] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:13:21.995] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:21.995] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
 
   ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
->                       <html
->                         suppressHydrationWarning={true}
->                         lang="en"
->                         className="viga_86fe40a8-module__xYbT-W__variable"
->                       >
-                          <head>
-                          <Script>
-                          <Script>
->                         <chat-widget env="prod" project-id="6cab4e2d-7389-4443-a5a6-10100007c55d">
-                          ...
-                  ...
+    <SegmentViewNode type="page" pagePath="page.tsx">
+      <SegmentTrieNode>
+      <Page>
+        <main className="min-h-screen">
+          <div>
+          ...
+            <LoadableComponent>
+              <Suspense fallback={<div>}>
+                ...
+                  <div className="font-sans ...">
+                    <div className="max-w-7xl ...">
+                      <h2>
+                      <div className="space-y-4">
+                        <ShowItem>
+                        <ShowItem>
+                        <ShowItem show={{id:3,title:"Fr...", ...}} ...>
+                          <div className="group rela..." role="button" tabIndex={0} onKeyDown={function onKeyDown} ...>
+                            <div className="flex flex-...">
+                              <div className="flex items...">
+                                <div className="text-cente...">
+                                  <div className="text-xs text-white/50 font-medium tracking-wider">
++                                   SAT
+-                                   FRI
+                                  ...
+                                ...
+                              ...
+                      ...
+          ...
 
-[00:00:15.989] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:00:15.989] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:00:15.989] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:00:15.989] Browser WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:13:23.337] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:13:23.337] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:13:23.337] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:13:23.337] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:14:20.006] Server  LOG     ✓ Compiled in 333.9s
+[00:14:38.428] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 2
+[00:14:38.429] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1771187543199,"pageViews":1,"scrollDepth":0,"timeOnSite":70,"urlsVisited":["/"]},"timestamp":"2026-02-15T20:33:34.095Z","triggerId":"exitIntent"}
+[00:15:08.173] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:15:08.233] Server  LOG     Images array: [{...},{...},{...},{...}]
+[00:15:08.279] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:15:08.300] Server  WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:15.989] Browser WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:15:08.302] Server  WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:15.989] Browser WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:15:08.303] Server  WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:00:15.989] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:00:15.990] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:00:15.990] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:00:17.484] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:00:17.484] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.484] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:00.430] Server  ERROR   ⨯ "upstream image response timed out for" "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg"
-[00:01:00.478] Server  ERROR   Error: "url" parameter is valid but upstream response timed out
-[00:01:00.478] Server  ERROR   ⨯ "upstream image response timed out for" "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg"
-[00:01:00.479] Server  ERROR   ⨯ "upstream image response timed out for" "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg"
-[00:01:00.507] Server  ERROR   Error: "url" parameter is valid but upstream response timed out
-[00:01:00.520] Server  ERROR   Error: "url" parameter is valid but upstream response timed out
-[00:01:08.374] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":3,"pageLoadTimestamp":1770372804814,"pageViews":1,"scrollDepth":83.34557923095764,"timeOnSite":3,"urlsVisited":["/"]},"timestamp":"2026-02-06T10:13:28.607Z","triggerId":"scrollDepth"}
-[00:01:24.223] Browser ERROR   Thread creation timed out
-[00:01:35.182] Server  LOG     Images array: [{...},{...},{...},{...}]
-[00:01:36.081] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
-This will cause a hydration error.%s <chat-widget> html  
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.tsx">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <script>
-                      <RootLayout>
->                       <html
->                         suppressHydrationWarning={true}
->                         lang="en"
->                         className="viga_86fe40a8-module__xYbT-W__variable"
->                       >
-                          <head>
-                          <Script>
-                          <Script>
->                         <chat-widget env="prod" project-id="6cab4e2d-7389-4443-a5a6-10100007c55d">
-                          ...
-                  ...
-
-[00:01:36.384] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:01:36.384] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:01:36.384] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:01:36.384] Browser WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:16:36.792] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:16:36.938] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:16:36.939] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:16:36.939] Browser WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:01:36.384] Browser WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:16:36.939] Browser WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:01:36.384] Browser WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
+[00:16:36.939] Browser WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:01:36.384] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:01:36.384] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:01:36.384] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:16:36.939] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:16:36.939] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:16:36.939] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.851] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:01:37.852] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:01:37.852] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:16:38.895] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:16:38.895] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.852] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:37.854] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:16:38.895] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:36.208] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1770372836337,"pageViews":1,"scrollDepth":99.7550820475141,"timeOnSite":120,"urlsVisited":["/"]},"timestamp":"2026-02-06T10:15:56.442Z","triggerId":"timeOnPage"}
-[00:03:47.501] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:03:47.501] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:03:47.501] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:03:47.501] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:03:48.991] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:03:48.991] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:04:48.493] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:04:48.494] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:05:02.150] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1770372967582,"pageViews":1,"scrollDepth":0,"timeOnSite":74,"urlsVisited":["/"]},"timestamp":"2026-02-06T10:17:22.384Z","triggerId":"exitIntent"}
-[00:05:03.503] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:03.538] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:05:03.554] Server  LOG     Images array: [{...},{...},{...},{...}]
-[00:05:03.573] Server  WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:05:03.576] Server  WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:05:03.576] Server  WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:05:04.534] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:05:04.535] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:05:04.535] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:05:04.535] Browser WARN    Image with src "https://img.youtube.com/vi/Q4M4WYh43dw/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:05:04.535] Browser WARN    Image with src "https://img.youtube.com/vi/uKznySp_XbE/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:05:04.535] Browser WARN    Image with src "https://img.youtube.com/vi/CT0VkRUdrtk/maxresdefault.jpg" has legacy prop "layout". Did you forget to run the codemod?
-Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
-[00:05:04.535] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:05:04.535] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:05:04.535] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:05:06.054] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:05:06.054] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:05:06.054] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:06:42.461] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
-[00:06:42.461] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:17:09.790] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":333,"pageLoadTimestamp":1771186782245,"pageViews":1,"scrollDepth":0,"timeOnSite":862,"urlsVisited":["/contact"]},"timestamp":"2026-02-15T20:35:05.044Z","triggerId":"inactivity"}
+[00:18:27.092] Server  LOG     ✓ Compiled in 251.7s
+[00:19:18.246] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1771187738458,"pageViews":1,"scrollDepth":0,"timeOnSite":162,"urlsVisited":["/"]},"timestamp":"2026-02-15T20:38:20.522Z","triggerId":"inactivity"}
+[00:19:32.368] Server  LOG     ✓ Compiled in 240ms
+[00:19:35.544] Server  LOG     ✓ Compiled in 124ms
+[00:19:39.059] Server  LOG     ✓ Compiled in 133ms
+[00:19:44.872] Server  LOG     ✓ Compiled in 260ms
+[00:19:51.274] Server  LOG     ✓ Compiled in 115ms
+[00:20:16.303] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:16.303] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:16.520] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:16.520] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:17.291] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:17.291] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:17.291] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:17.291] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:22.519] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:22.519] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:22.519] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:22.519] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:22.752] Browser LOG     Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]
+[00:20:22.752] Browser LOG     [2;38;2;124;124;124m%s[0m Images array: [{"caption":"Event Photo 1284","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"},{"caption":"Booking Background","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg"},{"caption":"Crowd","url":"/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg"}]

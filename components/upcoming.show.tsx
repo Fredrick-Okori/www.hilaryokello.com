@@ -30,7 +30,7 @@ const TODAY = new Date();
 // Raw data structured for easy reading
 const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
   {
-    id: 2,
+    id: 1,
     title: "Jokes From Far Away | Lusaka, Zambia",
     dateLabel: "Mar 06, 2026",
     date: "2026-03-06T19:00:00",
@@ -44,6 +44,38 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     description:
       "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you're from.",
     featured: true,
+  },
+   {
+    id: 2,
+    title: "Friday | Lavington: Jokes From Far Away",
+    dateLabel: "Apri 10, 2026",
+    date: "2026-04-10T19:30:00",
+    time: "7:30 PM",
+    location: "Levels Hotel, Kingara Rd",
+    city: "Friday - Nairobi",
+    country: "Kenya",
+    ticketPrice: "Early Bird JFFA - KES 1500",
+   image: "/tour/jffa_nairobi_kenya.jpg",
+    link: "https://standupcollective.co.ke/buytickets?event=LAVINGTON%3a%20JOKES%20FROM%20FAR%20AWAY%20-%20DR.%20Hilary%20Okello%20-%20Friday",
+    description:
+      "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
+    featured: false,
+  },
+   {
+    id: 3,
+    title: "Saturday | Lavington: Jokes From Far Away",
+    dateLabel: "Apri 11, 2026",
+    date: "2026-04-11T19:30:00",
+    time: "7:30 PM",
+    location: "Levels Hotel, Kingara Rd",
+    city: " Saturday - Nairobi",
+    country: "Kenya",
+    ticketPrice: "Early Bird JFFA - KES 1500",
+   image: "/tour/jffa_nairobi_kenya.jpg",
+    link: "https://standupcollective.co.ke/buytickets?event=LAVINGTON%3a%20JOKES%20FROM%20FAR%20AWAY%20-%20DR.%20Hilary%20Okello%20-%20Saturday",
+    description:
+      "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
+    featured: false,
   },
 ];
 
