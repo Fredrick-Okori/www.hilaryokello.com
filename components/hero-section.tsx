@@ -24,53 +24,54 @@ export function HeroSection() {
   )}?text=${encodedMessage}`;
 
   return (
-    <section className="w-full h-screen overflow-hidden relative">
+    <section className="w-full h-screen overflow-hidden relative" aria-label="Hero section">
       {/* Background image with priority for LCP optimization */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/hero_bg.webp')",
           filter: isDark
-            ? "brightness(0.9) saturate(1.2)"
-            : "brightness(0.9) saturate(1.1)",
+            ? "brightness(0.85) saturate(1.2)"
+            : "brightness(0.85) saturate(1.1)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+        aria-hidden="true"
       />
 
       {/* CSS-only animated blobs for better performance */}
-      <div className="blob blob-1" />
-      <div className="blob blob-2" />
+      <div className="blob blob-1" aria-hidden="true" />
+      <div className="blob blob-2" aria-hidden="true" />
 
       {/* Content */}
       <div className="relative z-10 ml-12 flex flex-col items-start justify-center h-full px-4 md:px-8 text-left max-w-4xl mx-auto">
         <motion.h1
           animate={{ opacity: 1, y: 0 }}
-          className="text-black text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+          className="text-white text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight drop-shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
         Dr. Hilary Okello 
         </motion.h1>
-        <motion.h4
+        <motion.h2
           animate={{ opacity: 1, y: 0 }}
-          className="text-gray-900 bg-gray-100/90 rounded-t-lg py-2 px-4 text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+          className="text-black bg-gold/90 rounded-t-lg py-3 px-4 text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
     Jokes From Far Away 2026 World Tour
-        </motion.h4>
-        <motion.h3
+        </motion.h2>
+        <motion.h2
           animate={{ opacity: 1, y: 0 }}
-          className="text-gray-900 rounded-b-lg bg-gray-100/90 py-2 px-4 text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+          className="text-black rounded-b-lg bg-gold/90 py-3 px-4 text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
        Africa&apos;s Doctor of Comedy 
-        </motion.h3>
+        </motion.h2>
         <motion.p
           animate={{ opacity: 1, y: 0 }}
-          className="text-white text-base sm:text-lg md:text-xl mt-6 max-w-2xl drop-shadow"
+          className="text-white text-base sm:text-lg md:text-xl mt-6 max-w-2xl drop-shadow leading-relaxed"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >

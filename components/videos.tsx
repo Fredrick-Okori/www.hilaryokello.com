@@ -49,16 +49,16 @@ export function VideoSection({
   };
 
   return (
-    <section className={cn("py-12", className)} id="clips">
+    <section className={cn("py-8 sm:py-12", className)} id="clips">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tight text-white mb-8">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6 sm:mb-8 leading-tight">
           {title}
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Featured Video */}
-          <div className="lg:col-span-2 space-y-4">
-            <div className="relative aspect-video overflow-hidden rounded-xl bg-black">
+          <div className="lg:col-span-2 space-y-3 sm:space-y-4">
+            <div className="relative aspect-video overflow-hidden rounded-lg sm:rounded-xl bg-black" role="region" aria-label="Featured video player">
               {isPlaying ? (
                 <ReactPlayer
                   controls
@@ -67,15 +67,24 @@ export function VideoSection({
                   height="100%"
                   url={`https://www.youtube.com/watch?v=${activeVideo.youtubeId}`}
                   width="100%"
+                  aria-label={`Playing video: ${activeVideo.title}`}
                 />
               ) : (
                 <div
                   className="relative w-full h-full cursor-pointer"
                   role="button"
+                  tabIndex={0}
                   onClick={playVideo}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      playVideo();
+                    }
+                  }}
+                  aria-label={`Play video: ${activeVideo.title}`}
                 >
                   <img
-                    alt={`Thumbnail for ${activeVideo.title}`}
+                    alt={`Video thumbnail for: ${activeVideo.title}`}
                     className="object-cover w-full h-full"
                     src={
                       getYouTubeThumbnail(activeVideo.youtubeId) ||
@@ -83,8 +92,11 @@ export function VideoSection({
                     }
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <button className="bg-gray-600 hover:bg-gray-900 text-white rounded-full p-4 transition-transform duration-300 hover:scale-110">
-                      <Play className="h-8 w-8 fill-white" />
+                    <button 
+                      className="bg-gold hover:bg-gold-light text-black rounded-full p-4 transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+                      aria-label={`Play video: ${activeVideo.title}`}
+                    >
+                      <Play className="h-8 w-8 fill-current" />
                     </button>
                   </div>
                   <div className="absolute bottom-3 text-white right-3 bg-black/80 text-white text-xs px-2 py-1 rounded">
@@ -93,10 +105,10 @@ export function VideoSection({
                 </div>
               )}
             </div>
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="text-lg sm:text-xl font-semibold text-white">
               {activeVideo.title}
             </h3>
-            <div className="flex items-center text-sm  text-white text-muted-foreground">
+            <div className="flex items-center text-xs sm:text-sm text-white/70">
               <span>{activeVideo.views} views</span>
               <span className="mx-2">•</span>
               <span>{activeVideo.uploadedAt}</span>
@@ -104,8 +116,8 @@ export function VideoSection({
           </div>
 
           {/* Video Grid */}
-          <div className="space-y-6">
-            <h3 className="font-medium text-white text-lg">Up Next</h3>
+          <div className="space-y-4 sm:space-y-6">
+            <h3 className="font-medium text-white text-base sm:text-lg">Up Next</h3>
             {[...videos, featuredVideo]
               .filter((video) => video.id !== activeVideo.id)
               .slice(0, 4)
@@ -114,14 +126,22 @@ export function VideoSection({
                   key={video.id}
                   className={cn(
                     "flex gap-4 cursor-pointer p-2 rounded-lg transition-colors",
-                    "hover:bg-muted",
+                    "hover:bg-muted focus-within:ring-2 focus-within:ring-gold focus-within:ring-offset-2 focus-within:ring-offset-black",
                   )}
                   role="button"
+                  tabIndex={0}
                   onClick={() => selectVideo(video)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      selectVideo(video);
+                    }
+                  }}
+                  aria-label={`Select video: ${video.title}`}
                 >
                   <div className="relative flex-shrink-0 w-40 h-24 overflow-hidden rounded-lg bg-muted">
                     <Image
-                      alt={`Thumbnail for ${video.title}`}
+                      alt={`Thumbnail for: ${video.title}`}
                       className="object-cover w-full h-full"
                       height={240}
                       width={400}
@@ -139,7 +159,7 @@ export function VideoSection({
                     <h4 className="font-medium text-white line-clamp-2">
                       {video.title}
                     </h4>
-                    <div className="flex text-white items-center text-xs text-muted-foreground">
+                    <div className="flex text-white/70 items-center text-xs">
                       <span>{video.views} views</span>
                       <span className="mx-1">•</span>
                       <span>{video.uploadedAt}</span>

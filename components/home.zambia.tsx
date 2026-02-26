@@ -155,20 +155,22 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
       {/* Navigation Buttons */}
       <div className="top-0 right-0 flex py-10 justify-end space-x-2 z-10">
         <Button
-          className="text-white rounded-full"
+          className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
           size="sm"
           variant="bordered"
           onClick={handlePrev}
           disabled={isLoading || imgs.length <= itemsPerView}
+          aria-label="Previous slide"
         >
           <ChevronLeft />
         </Button>
         <Button
-          className="text-white rounded-full"
+          className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
           size="sm"
           variant="bordered"
           onClick={handleNext}
           disabled={isLoading || imgs.length <= itemsPerView}
+          aria-label="Next slide"
         >
           <ChevronRight />
         </Button>
