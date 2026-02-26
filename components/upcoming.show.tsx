@@ -77,6 +77,40 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
       "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
     featured: false,
   },
+   {
+    id: 4,
+    title: "THURSDAY | Dar es Salaam: Jokes From Far Away",
+    dateLabel: "Apri 16, 2026",
+    date: "2026-04-16T20:00:00",
+    time: "8:00 PM",
+    location: "The Punchline Comedy Club",
+    city: " Thursday - Dar es Salaam",
+    country: "Tanzania",
+    ticketPrice: "",
+   image: "/tour/Dar _converted.avif",
+    link: "#",
+    description:
+      "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
+    featured: false,
+    contactNumber: "+255654035555",
+  },
+   {
+    id: 5,
+    title: "Saturday | Arusha: Jokes From Far Away",
+    dateLabel: "Apri 18, 2026",
+    date: "2026-04-18T20:00:00",
+    time: "8:00 PM",
+    location: "Twiga Brewery, Aim Mall Arusha",
+    city: " Saturday - Arusha",
+    country: "Tanzania",
+    ticketPrice: "",
+   image: "/tour/Arusha_converted.avif",
+    link: "#",
+    description:
+      "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
+    featured: false,
+    contactNumber: "+255621383543",
+  },
 ];
 
 // Final shows array with Date objects
@@ -463,7 +497,7 @@ const UpcomingShows = () => {
                   <Button
                     as="a"
                     className="flex bg-gold hover:bg-gold-light text-black font-bold py-3 px-6 rounded-full transition-all w-full"
-                    href={`https://wa.me/${phoneNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+                    href={`https://wa.me/${(selectedShow.contactNumber ?? phoneNumber).replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
                       `Hello, I'm interested in tickets for ${selectedShow.title} in ${selectedShow.city}, ${selectedShow.country}`,
                     )}`}
                     target="_blank"
