@@ -318,7 +318,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
         <div className="flex justify-end sm:justify-start">
           {isTicketLinkAvailable ? (
             <CustomButton
-              className="rounded-full bg-gold hover:bg-gold-light text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-gold"
+              className="rounded-full bg-yellow-500 hover:bg-gold-light text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-gold"
               onClick={(e: React.MouseEvent) => onBookTickets(e, show.link)}
               aria-label={`Get tickets for ${show.title}`}
             >
@@ -327,7 +327,7 @@ const ShowItem = ({ show, onShowClick, onBookTickets }: ShowItemProps) => {
             </CustomButton>
           ) : (
             <CustomButton
-              className="rounded-full bg-gold hover:bg-gold-light text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-gold"
+              className="rounded-full bg-yellow-500 hover:bg-gold-light text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-gold"
               href={waLinkForShow}
               target="_blank"
               aria-label={`Contact via WhatsApp for ${show.title} tickets`}
@@ -384,6 +384,53 @@ const UpcomingShows = () => {
           Upcoming Shows
         </h2>
 
+         <div className="mt-12 mb-10 sm:mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-xl sm:rounded-2xl border border-white/10 p-6 sm:p-8 lg:p-12 shadow-3xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+            {/* Image */}
+            <div className="order-2 lg:order-1">
+              <Image
+                src="/tour/DR-HILARY-BUGOLOBI-BLACK-VERSION_converted.avif"
+                alt="World Tour Map"
+                width={800}
+                height={400}
+                className="rounded-lg sm:rounded-xl w-full h-auto"
+                quality={80}
+              />
+            </div>
+
+            {/* Content */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white text-left leading-tight">
+                Kampala | MoTIV Bugolobi
+              </h2>
+                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-4 text-white text-left leading-tight">
+               Jokes from Far Away 
+              </h2>
+              <p className="text-base sm:text-lg text-white/75 mb-6 sm:mb-8 text-left leading-relaxed">
+                The Kampala edition of &quot;Jokes From Far Away&quot; brings the global comedy tour home! Experience Dr. Hilary Okello&lsquo;s sharp wit, bold humor, and relatable African stories right here in Uganda's capital at MoTIV Bugolobi.
+              </p>
+
+              {/* Join Email List Button */}
+              <div className="flex justify-start">
+                <Button
+                  as="a"
+                  href="https://kayetickets.com/events/dr-hilary-okello-live-jokes-from-far-away-kampala/checkout"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-gold-light text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105 focus-gold"
+                >
+                  Buy Tickets Now
+                  <ChevronRight className="h-4 sm:h-5 w-4 sm:w-5" />
+                </Button>
+              </div>
+
+              <p className="text-xs sm:text-sm text-white/50 mt-6 text-left">
+            Only 200 early bird tickets available. Get yours today.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {upcomingShows.length > 0 ? (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
             {upcomingShows.map((show) => (
@@ -422,7 +469,7 @@ const UpcomingShows = () => {
                 Want Me to Perform in Your City?
               </h2>
               <p className="text-base sm:text-lg text-white/75 mb-6 sm:mb-8 text-left leading-relaxed">
-                Join the "Jokes From Far Away" World Tour! Tell us where you
+                Join the &quot;Jokes From Far Away&quot; World Tour! Tell us where you
                 want Dr. Okello to perform next. High-demand cities influence our
                 tour planning!
               </p>
@@ -434,7 +481,7 @@ const UpcomingShows = () => {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-gold hover:bg-gold-light text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105 focus-gold"
+                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-gold-light text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105 focus-gold"
                 >
                   Register your City
                   <ChevronRight className="h-4 sm:h-5 w-4 sm:w-5" />
