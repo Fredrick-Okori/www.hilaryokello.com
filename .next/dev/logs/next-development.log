@@ -372,3 +372,4 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:23:21.210] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":71,"pageLoadTimestamp":1772439854094,"pageViews":1,"scrollDepth":0,"timeOnSite":811,"urlsVisited":["/booking"]},"timestamp":"2026-03-02T08:38:45.879Z","triggerId":"inactivity"}
 [00:33:22.630] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":719,"pageLoadTimestamp":1772440585176,"pageViews":1,"scrollDepth":0,"timeOnSite":801,"urlsVisited":["/"]},"timestamp":"2026-03-02T08:49:47.006Z","triggerId":"inactivity"}
 [00:34:18.456] Server  LOG     ✓ Compiled in 180ms
+[00:35:43.121] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":82,"pageLoadTimestamp":1772439854094,"pageViews":1,"scrollDepth":0,"timeOnSite":1553,"urlsVisited":["/booking"]},"timestamp":"2026-03-02T08:51:07.597Z","triggerId":"inactivity"}
