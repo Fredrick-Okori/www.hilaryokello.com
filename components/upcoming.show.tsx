@@ -196,6 +196,24 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     featured: false,
     contactNumber: "+256768202585",
   },
+    {
+    id: 10,
+    title: "Entebbe  | Entebbe",
+    dateLabel: "Apr 25, 2026",
+    date: "2026-04-25T19:00:00",
+    time: "7:30 PM",
+    location: "Numax Cinemas",
+    
+    city: "Saturday | Entebbe",
+    country: "Uganda",
+    ticketPrice: "Early Bird: 30K | Gate: 50K",
+    image: "/tour/Dr-Hilary-Okello-Entebbe_converted.avif",
+    link: "https://kayetickets.com/events/hilary/checkout",
+    description:
+      "We will be bringing you laughter to the Entebbe. As you wait for your flight, we will be laughing first. Just dont miss your flight.",
+    featured: false,
+   
+  },
 ];
 
 // Final shows array with Date objects
