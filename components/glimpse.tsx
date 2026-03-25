@@ -74,9 +74,6 @@ const CountryGlimpse: React.FC<ImageCarouselProps> = ({ images }) => {
     )
   }
 
-  // For debugging - log the images array
-  console.log("Images array:", images)
-
   return (
     <>
       <div>

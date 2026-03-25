@@ -83,9 +83,12 @@ export function VideoSection({
                   }}
                   aria-label={`Play video: ${activeVideo.title}`}
                 >
-                  <img
+                  <Image
                     alt={`Video thumbnail for: ${activeVideo.title}`}
-                    className="object-cover w-full h-full"
+                    className="object-cover"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 66vw"
+                    priority
                     src={
                       getYouTubeThumbnail(activeVideo.youtubeId) ||
                       "/placeholder.svg"
@@ -142,10 +145,9 @@ export function VideoSection({
                   <div className="relative flex-shrink-0 w-40 h-24 overflow-hidden rounded-lg bg-muted">
                     <Image
                       alt={`Thumbnail for: ${video.title}`}
-                      className="object-cover w-full h-full"
-                      height={240}
-                      width={400}
-                      layout="responsive"
+                      className="object-cover"
+                      fill
+                      sizes="160px"
                       src={
                         getYouTubeThumbnail(video.youtubeId) ||
                         "/placeholder.svg"

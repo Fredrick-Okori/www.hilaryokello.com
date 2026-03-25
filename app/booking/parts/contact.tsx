@@ -224,7 +224,8 @@ export default function BookingPage() {
                   alt="Dr. Hilary Okello performing"
                   className="object-cover"
                   quality={80}
-                  src="/gallery/crowd.png"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  src="/gallery/crowd.webp"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">

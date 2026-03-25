@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export function HeroSection() {
   const { theme } = useTheme();
@@ -27,17 +28,24 @@ export function HeroSection() {
     <section className="w-full h-screen overflow-hidden relative" aria-label="Hero section">
       {/* Background image with priority for LCP optimization */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0"
         style={{
-          backgroundImage: "url('/hero_bg.webp')",
           filter: isDark
             ? "brightness(0.85) saturate(1.2)"
             : "brightness(0.85) saturate(1.1)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
         aria-hidden="true"
-      />
+      >
+        <Image
+          fill
+          priority
+          alt=""
+          className="object-cover object-center"
+          quality={80}
+          sizes="100vw"
+          src="/hero_bg.webp"
+        />
+      </div>
 
       {/* CSS-only animated blobs for better performance */}
       <div className="blob blob-1" aria-hidden="true" />

@@ -407,12 +407,13 @@ const UpcomingShows = () => {
             {/* Image */}
             <div className="order-2 lg:order-1">
               <Image
-                src="/tour/DR-HILARY-BUGOLOBI-BLACK-VERSION_converted.avif"
                 alt="World Tour Map"
-                width={800}
-                height={400}
                 className="rounded-lg sm:rounded-xl w-full h-auto"
+                height={400}
                 quality={80}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                src="/tour/DR-HILARY-BUGOLOBI-BLACK-VERSION_converted.avif"
+                width={800}
               />
             </div>
 
@@ -472,12 +473,13 @@ const UpcomingShows = () => {
             {/* Image */}
             <div className="order-2 lg:order-1">
               <Image
-                src="/tour_countries.jpg"
                 alt="World Tour Map"
-                width={800}
-                height={400}
                 className="rounded-lg sm:rounded-xl w-full h-auto"
+                height={400}
                 quality={80}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                src="/tour_countries.jpg"
+                width={800}
               />
             </div>
 
