@@ -45,7 +45,7 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
       "Get ready for a night of nonstop laughter as Jokes From Far Away lands in Zambia! This comedy showcase brings bold humor, relatable African stories, and cross-border punchlines that hit home—no matter where you're from.",
     featured: true,
   },
-   {
+  {
     id: 2,
     title: "Friday | Lavington: Jokes From Far Away",
     dateLabel: "Apri 10, 2026",
@@ -55,13 +55,13 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     city: "Friday - Nairobi",
     country: "Kenya",
     ticketPrice: "Early Bird JFFA - KES 1500",
-   image: "/tour/jffa_nairobi_kenya.jpg",
+    image: "/tour/jffa_nairobi_kenya.jpg",
     link: "https://standupcollective.co.ke/buytickets?event=LAVINGTON%3a%20JOKES%20FROM%20FAR%20AWAY%20-%20DR.%20Hilary%20Okello%20-%20Friday",
     description:
       "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
     featured: false,
   },
-   {
+  {
     id: 3,
     title: "Saturday | Lavington: Jokes From Far Away",
     dateLabel: "Apri 11, 2026",
@@ -71,13 +71,13 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     city: " Saturday - Nairobi",
     country: "Kenya",
     ticketPrice: "Early Bird JFFA - KES 1500",
-   image: "/tour/jffa_nairobi_kenya.jpg",
+    image: "/tour/jffa_nairobi_kenya.jpg",
     link: "https://standupcollective.co.ke/buytickets?event=LAVINGTON%3a%20JOKES%20FROM%20FAR%20AWAY%20-%20DR.%20Hilary%20Okello%20-%20Saturday",
     description:
       "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
     featured: false,
   },
-   {
+  {
     id: 4,
     title: "THURSDAY | Dar es Salaam: Jokes From Far Away",
     dateLabel: "Apri 16, 2026",
@@ -87,14 +87,14 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     city: " Thursday - Dar es Salaam",
     country: "Tanzania",
     ticketPrice: "",
-   image: "/tour/Dar _converted.avif",
+    image: "/tour/Dar _converted.avif",
     link: "#",
     description:
       "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
     featured: false,
     contactNumber: "+255654035555",
   },
-   {
+  {
     id: 5,
     title: "Saturday | Arusha: Jokes From Far Away",
     dateLabel: "Apri 18, 2026",
@@ -104,7 +104,7 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     city: " Saturday - Arusha",
     country: "Tanzania",
     ticketPrice: "",
-   image: "/tour/Arusha_converted.avif",
+    image: "/tour/Arusha_converted.avif",
     link: "#",
     description:
       "Jokes From Far Away is Dr. Hilary Okello’s global comedy tour, and Nairobi is next. After touring stages around the world, the Ugandan comedian brings his sharp observations, smart storytelling, and outsider-insider perspective to Nairobi for two nights only. Fresh, thoughtful, and very funny. Dr. Hilary in 6 short years has gone from administering medicine to administering laughter on stages all over the continent.",
@@ -154,7 +154,8 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     location: "Tropical Suites",
     city: "Arua",
     country: "Uganda",
-    ticketPrice: "Early Bird 20k | Gate 30k | VIP 50k | Silver 500k | Gold 500k | Platinum 1M",
+    ticketPrice:
+      "Early Bird 20k | Gate 30k | VIP 50k | Silver 500k | Gold 500k | Platinum 1M",
     image: "/tour/arua.avif",
     link: "#",
     description:
@@ -171,7 +172,8 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     location: "Cloud 9",
     city: "Easter Sunday | Soroti",
     country: "Uganda",
-    ticketPrice: "Early Bird 15k | Gate 20k | VIP 40k | Table of 8 500k | Table of 5 300k",
+    ticketPrice:
+      "Early Bird 15k | Gate 20k | VIP 40k | Table of 8 500k | Table of 5 300k",
     image: "/tour/soroti.avif",
     link: "#",
     description:
@@ -196,14 +198,14 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     featured: false,
     contactNumber: "+256768202585",
   },
-    {
-    id: 10,
+  {
+    id: 11,
     title: "Entebbe  | Entebbe",
     dateLabel: "Apr 25, 2026",
     date: "2026-04-25T19:00:00",
     time: "7:30 PM",
     location: "Numax Cinemas",
-    
+
     city: "Saturday | Entebbe",
     country: "Uganda",
     ticketPrice: "Early Bird: 30K | Gate: 50K",
@@ -212,7 +214,60 @@ const RAW_SHOWS: (Omit<Show, "date"> & { date: string })[] = [
     description:
       "We will be bringing you laughter to the Entebbe. As you wait for your flight, we will be laughing first. Just dont miss your flight.",
     featured: false,
-   
+  },
+  {
+    id: 12,
+    title: "Capetown  | South Africa",
+    dateLabel: "May 30, 2026",
+    date: "2026-05-30T19:00:00",
+    time: "7:30 PM",
+    location: "Homecoming Center",
+
+    city: "Saturday | Cape Town",
+    country: "South Africa",
+    ticketPrice: "From R250",
+    image: "/tour/capetown_south_africa.avif",
+    link: "#",
+    description:
+      "Jokes From Far Away lands in the Mother City! Dr. Hilary Okello brings his continent-spanning comedy tour to Cape Town — sharp observations, bold African storytelling, and punchlines that travel as far as Table Mountain's shadow. An unmissable night of laughter at the Homecoming Centre.",
+    featured: false,
+    contactNumber: "+27637677212",
+  },
+  {
+    id: 13,
+    title: "Mbabane | Eswatini",
+    dateLabel: "May 28, 2026",
+    date: "2026-05-28T19:00:00",
+    time: "7:30 PM",
+    location: "Mbabane Theatre Club",
+
+    city: "Thursday | Mbabane",
+    country: "Eswatini",
+    ticketPrice: "Early Bird: E100 | Standard: E200",
+    image: "/tour/mbabane_eswatini.avif",
+    link: "#",
+    description:
+      "The Kingdom of Eswatini, welcome! Jokes From Far Away makes a royal stop in Mbabane as Dr. Hilary Okello brings fresh, cross-continental comedy to the Mbabane Theatre Club. Expect hilarious stories from the road, sharp cultural observations, and a night of laughter that's fit for a kingdom.",
+    featured: false,
+    contactNumber: "+27637677212",
+  },
+  {
+    id: 14,
+    title: "Johannesburg  | South Africa",
+    dateLabel: "May 29, 2026",
+    date: "2026-05-29T19:00:00",
+    time: "7:30 PM",
+    location: "Ster Kinekor Mall of Africa",
+
+    city: "Friday | Johannesburg",
+    country: "South Africa",
+    ticketPrice: "Early Bird: R250 | Standard: R300 | VIP: R600",
+    image: "/tour/johannesburg.avif",
+    link: "#",
+    description:
+      "Johannesburg, the City of Gold — get ready for a night of pure comedy gold! Dr. Hilary Okello brings Jokes From Far Away to Joburg, performing at the iconic Ster Kinekor Mall of Africa. From Kampala to Joburg, the jokes travel far and hit hard. This is African comedy at its sharpest — don't miss it.",
+    featured: false,
+    contactNumber: "+27637677212",
   },
 ];
 
@@ -377,12 +432,12 @@ const UpcomingShows = () => {
     setSelectedShow(show);
     setIsModalOpen(true);
     // Prevent scroll when modal is open
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   }, []);
 
   const closeModal = useCallback(() => {
     setIsModalOpen(false);
-    document.body.style.overflow = 'unset';
+    document.body.style.overflow = "unset";
     setTimeout(() => setSelectedShow(null), 300);
   }, []);
 
@@ -402,7 +457,7 @@ const UpcomingShows = () => {
           Upcoming Shows
         </h2>
 
-         <div className="mt-12 mb-10 sm:mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-xl sm:rounded-2xl border border-white/10 p-6 sm:p-8 lg:p-12 shadow-3xl">
+        <div className="mt-12 mb-10 sm:mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-xl sm:rounded-2xl border border-white/10 p-6 sm:p-8 lg:p-12 shadow-3xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
             {/* Image */}
             <div className="order-2 lg:order-1">
@@ -422,11 +477,14 @@ const UpcomingShows = () => {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white text-left leading-tight">
                 Kampala | MoTIV Bugolobi
               </h2>
-                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-4 text-white text-left leading-tight">
-               Jokes from Far Away 
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-4 text-white text-left leading-tight">
+                Jokes from Far Away
               </h2>
               <p className="text-base sm:text-lg text-white/75 mb-6 sm:mb-8 text-left leading-relaxed">
-                The Kampala edition of &quot;Jokes From Far Away&quot; brings the global comedy tour home! Experience Dr. Hilary Okello&lsquo;s sharp wit, bold humor, and relatable African stories right here in Uganda's capital at MoTIV Bugolobi.
+                The Kampala edition of &quot;Jokes From Far Away&quot; brings
+                the global comedy tour home! Experience Dr. Hilary
+                Okello&lsquo;s sharp wit, bold humor, and relatable African
+                stories right here in Uganda's capital at MoTIV Bugolobi.
               </p>
 
               {/* Join Email List Button */}
@@ -444,7 +502,7 @@ const UpcomingShows = () => {
               </div>
 
               <p className="text-xs sm:text-sm text-white/50 mt-6 text-left">
-            Only 200 early bird tickets available. Get yours today.
+                Only 200 early bird tickets available. Get yours today.
               </p>
             </div>
           </div>
@@ -489,9 +547,9 @@ const UpcomingShows = () => {
                 Want Me to Perform in Your City?
               </h2>
               <p className="text-base sm:text-lg text-white/75 mb-6 sm:mb-8 text-left leading-relaxed">
-                Join the &quot;Jokes From Far Away&quot; World Tour! Tell us where you
-                want Dr. Okello to perform next. High-demand cities influence our
-                tour planning!
+                Join the &quot;Jokes From Far Away&quot; World Tour! Tell us
+                where you want Dr. Okello to perform next. High-demand cities
+                influence our tour planning!
               </p>
 
               {/* Join Email List Button */}
@@ -560,7 +618,10 @@ const UpcomingShows = () => {
 
               {/* Title Overlay */}
               <div className="absolute bottom-4 left-6 right-6 z-10">
-                <h3 id="modal-title" className="text-3xl sm:text-4xl font-bold text-white mb-2">
+                <h3
+                  id="modal-title"
+                  className="text-3xl sm:text-4xl font-bold text-white mb-2"
+                >
                   {selectedShow.title}
                 </h3>
                 {selectedShow.featured && (
@@ -577,7 +638,10 @@ const UpcomingShows = () => {
               <div className="grid grid-cols-2 gap-x-4 gap-y-6 mb-8">
                 {/* Date */}
                 <div className="flex items-start gap-3 col-span-2 sm:col-span-1">
-                  <Calendar className="h-5 w-5 text-gold mt-0.5" aria-hidden="true" />
+                  <Calendar
+                    className="h-5 w-5 text-gold mt-0.5"
+                    aria-hidden="true"
+                  />
                   <div>
                     <p className="text-white/65 text-sm">Date</p>
                     <p className="text-white font-medium">
@@ -588,7 +652,10 @@ const UpcomingShows = () => {
 
                 {/* Time */}
                 <div className="flex items-start gap-3">
-                  <Clock className="h-5 w-5 text-gold mt-0.5" aria-hidden="true" />
+                  <Clock
+                    className="h-5 w-5 text-gold mt-0.5"
+                    aria-hidden="true"
+                  />
                   <div>
                     <p className="text-white/65 text-sm">Time</p>
                     <p className="text-white font-medium">
@@ -599,7 +666,10 @@ const UpcomingShows = () => {
 
                 {/* Venue */}
                 <div className="flex items-start gap-3 col-span-2 sm:col-span-1">
-                  <MapPin className="h-5 w-5 text-gold mt-0.5" aria-hidden="true" />
+                  <MapPin
+                    className="h-5 w-5 text-gold mt-0.5"
+                    aria-hidden="true"
+                  />
                   <div>
                     <p className="text-white/65 text-sm">Venue</p>
                     <p className="text-white font-medium">
@@ -613,7 +683,10 @@ const UpcomingShows = () => {
 
                 {/* Tickets */}
                 <div className="flex items-start gap-3">
-                  <Ticket className="h-5 w-5 text-gold mt-0.5" aria-hidden="true" />
+                  <Ticket
+                    className="h-5 w-5 text-gold mt-0.5"
+                    aria-hidden="true"
+                  />
                   <div>
                     <p className="text-white/65 text-sm">Tickets</p>
                     <p className="text-white font-medium">
@@ -628,7 +701,10 @@ const UpcomingShows = () => {
                 <h4 className="text-xl font-bold text-white mb-3">
                   About This Show
                 </h4>
-                <p id="modal-description" className="text-white/75 leading-relaxed">
+                <p
+                  id="modal-description"
+                  className="text-white/75 leading-relaxed"
+                >
                   {selectedShow.description}
                 </p>
               </div>
@@ -676,4 +752,3 @@ const UpcomingShows = () => {
 };
 
 export default UpcomingShows;
-

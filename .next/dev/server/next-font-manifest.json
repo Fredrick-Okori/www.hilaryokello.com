@@ -1,17 +1,5 @@
 {
   "app": {
-    "[project]/www.hilaryokello.com/app/_not-found/page": [
-      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
-    ],
-    "[project]/www.hilaryokello.com/app/biography/page": [
-      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
-    ],
-    "[project]/www.hilaryokello.com/app/booking/page": [
-      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
-    ],
-    "[project]/www.hilaryokello.com/app/gallery/page": [
-      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
-    ],
     "[project]/www.hilaryokello.com/app/page": [
       "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
     ]
