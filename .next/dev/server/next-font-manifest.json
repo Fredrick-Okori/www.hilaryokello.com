@@ -2,6 +2,9 @@
   "app": {
     "[project]/www.hilaryokello.com/app/page": [
       "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/shows/[slug]/page": [
+      "static/media/82dd060ecf6c3ebd-s.p.b1fa668e.woff2"
     ]
   },
   "appUsingSizeAdjust": true,
