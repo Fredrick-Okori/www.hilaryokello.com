@@ -31,6 +31,22 @@ function makeSlug(city: string, country: string, id: number): string {
 
 const RAW: Omit<Show, "slug">[] = [
   {
+    id: 1,
+    title: "Thursday | Lavington: Jokes From Far Away",
+    dateLabel: "Apr 09, 2026",
+    date: "2026-04-09T19:30:00",
+    time: "7:30 PM",
+    location: "Suave Kitchen & Social Club, Westlands",
+    city: "Thursday - Nairobi",
+    country: "Kenya",
+    ticketPrice: "Early Bird - KES 1500 | Standard - KES 2000",
+    image: "/tour/thursday_poster.webp",
+    link: "https://standupcollective.co.ke/buytickets?event=WESTLANDS%20%3a%20JOKES%20FROM%20FAR%20AWAY%20-%20DR.%20Hilary%20Okello%20-%20Thursday",
+    description:
+      "Jokes From Far Away kicks off at Westlands. Dr. Hilary Okello brings his globally-travelled comedy to Kenya: sharp East African observations, outsider-insider storytelling, and a room full of laughter at Suave Kitchen & Social Club, Westlands. Get your early bird tickets before they're gone.",
+    featured: true,
+  },
+  {
     id: 2,
     title: "Friday | Lavington: Jokes From Far Away",
     dateLabel: "Apr 10, 2026",
