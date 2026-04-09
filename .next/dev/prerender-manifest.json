@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/shows/lusaka-zambia-1":{},"/shows/friday-nairobi-kenya-2":{},"/shows/saturday-nairobi-kenya-3":{},"/shows/thursday-dar-es-salaam-tanzania-4":{},"/shows/saturday-arusha-tanzania-5":{},"/shows/holy-thursday-lira-uganda-6":{},"/shows/good-friday-koboko-uganda-7":{},"/shows/arua-uganda-8":{},"/shows/easter-sunday-soroti-uganda-9":{},"/shows/easter-monday-gulu-uganda-10":{},"/shows/saturday-entebbe-uganda-11":{},"/shows/saturday-cape-town-south-africa-12":{},"/shows/thursday-mbabane-eswatini-13":{},"/shows/friday-johannesburg-south-africa-14":{}},"dynamicRoutes":{"/shows/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/shows/[slug]","routeRegex":"^\\/shows\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"634a5c53e6fd8ee844dc01d7d28823af","previewModeSigningKey":"6b9df03206600b774ff0320ee0324a5a51f86cd120a87388beefd15d9a241ccd","previewModeEncryptionKey":"d38b29dc22790b609642aa17563d4914f85ebe50ea56ff5475ac129528913095"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "0a0d7958bbcc880545476798cd6d58b0",
+    "previewModeSigningKey": "7975e54de552a10643043ced9ca06f123fab768ade02bddc6b7bb5915e74c731",
+    "previewModeEncryptionKey": "3ee6a5118cf5ba7cc46de628be2c5c992979a5bf021af343ef2666ddaffe7c63"
+  }
+}
