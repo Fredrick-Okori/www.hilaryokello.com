@@ -86,6 +86,29 @@ export function HeroSection() {
 Welcome!
 I’m glad you’re here. This is where the jokes travel and the laughter meets real life. Scroll down to see upcoming shows near you - and don’t forget to register your CITY below to be part of the new comedy tour: JOKES FROM FAR AWAY.
         </motion.p>
+        <motion.div
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-8 flex flex-col sm:flex-row gap-4"
+          initial={{ opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <a
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold text-base sm:text-lg rounded-full transition-all duration-200 hover:scale-105 drop-shadow-lg"
+            href="https://kayetickets.com/events/dr-hilary-okello-live-jokes-from-far-away-kampala/checkout"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            🎟 Buy Tickets — Kampala, MoTIV Bugolobi
+          </a>
+          <a
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-extrabold text-base sm:text-lg rounded-full border border-white/30 transition-all duration-200 hover:scale-105 drop-shadow-lg backdrop-blur-sm"
+            href="https://kayetickets.com/events/hilary/checkout"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            🎟 Buy Tickets — Entebbe, Numax Cinemas
+          </a>
+        </motion.div>
       </div>
     </section>
   );
