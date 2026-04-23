@@ -162,3 +162,8 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:09:59.075] Server  LOG     ✓ Compiled in 771ms
 [00:10:15.908] Browser WARN    Image with src "/tour/Dr-Hilary-Okello-Entebbe_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:19:36.651] Server  LOG     ✓ Compiled in 3.3s
+[00:20:57.148] Server  LOG     ✓ Compiled in 83ms
+[00:21:07.405] Server  LOG     ✓ Compiled in 54ms
+[00:21:17.060] Server  LOG     ✓ Compiled in 447ms
+[00:21:21.772] Server  LOG     ✓ Compiled in 167ms

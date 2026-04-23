@@ -16,6 +16,7 @@ export interface Show {
   description: string;
   featured: boolean;
   badge?: string;
+  soldOutPercentage?: number;
   contactNumber?: string;
 }
 
@@ -40,13 +41,14 @@ const RAW: Omit<Show, "slug">[] = [
     location: "Numax Cinemas",
     city: "Saturday | Entebbe",
     country: "Uganda",
-    ticketPrice: "Early Bird: 30K | Gate: 50K",
+    ticketPrice: "Gate: 50K",
     image: "/tour/Dr-Hilary-Okello-Entebbe_converted.avif",
     link: "https://kayetickets.com/events/hilary/checkout",
     description:
       "Before your next flight, there's comedy to catch. Jokes From Far Away lands at Numax Cinemas in Entebbe for one unmissable night of laughter. Dr. Hilary Okello performs right by the lake — a world-class show in the gateway city of Uganda.",
     featured: false,
     badge: "Early Bird Sold Out",
+    soldOutPercentage: 95,
   },
   {
     id: 12,
