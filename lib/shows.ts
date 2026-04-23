@@ -17,6 +17,7 @@ export interface Show {
   featured: boolean;
   badge?: string;
   soldOutPercentage?: number;
+  soldOutLabel?: string;
   contactNumber?: string;
 }
 
@@ -47,8 +48,9 @@ const RAW: Omit<Show, "slug">[] = [
     description:
       "Before your next flight, there's comedy to catch. Jokes From Far Away lands at Numax Cinemas in Entebbe for one unmissable night of laughter. Dr. Hilary Okello performs right by the lake — a world-class show in the gateway city of Uganda.",
     featured: false,
-    badge: "Early Bird Sold Out",
-    soldOutPercentage: 95,
+    badge: "Open for 9:30 PM show only",
+    soldOutPercentage: 76,
+    soldOutLabel: "Open for 9:30 PM show only",
   },
   {
     id: 12,
