@@ -98,7 +98,7 @@ I’m glad you’re here. This is where the jokes travel and the laughter meets 
             rel="noopener noreferrer"
             target="_blank"
           >
-            🎟 Buy Tickets — Kampala, MoTIV Bugolobi
+           Buy Tickets - Kampala, MoTIV Bugolobi
           </a>
           <a
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-extrabold text-base sm:text-lg rounded-full border border-white/30 transition-all duration-200 hover:scale-105 drop-shadow-lg backdrop-blur-sm"
@@ -106,7 +106,7 @@ I’m glad you’re here. This is where the jokes travel and the laughter meets 
             rel="noopener noreferrer"
             target="_blank"
           >
-            🎟 Buy Tickets — Entebbe, Numax Cinemas
+            Buy Tickets - Entebbe, Numax Cinemas
           </a>
         </motion.div>
       </div>

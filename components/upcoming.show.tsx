@@ -60,11 +60,18 @@ const ShowItem = ({ show }: ShowItemProps) => {
           <p className="text-white/75 text-sm sm:text-base truncate">
             {show.location} • {show.time}
           </p>
-          {show.featured && (
-            <span className="inline-block mt-2 px-3 py-1 bg-yellow-500 text-black rounded-full text-xs font-bold">
-              FEATURED EVENT
-            </span>
-          )}
+          <div className="flex flex-wrap gap-2 mt-2">
+            {show.featured && (
+              <span className="inline-block px-3 py-1 bg-yellow-500 text-black rounded-full text-xs font-bold">
+                FEATURED EVENT
+              </span>
+            )}
+            {show.badge && (
+              <span className="inline-block px-3 py-1 bg-red-600 text-white rounded-full text-xs font-bold">
+                {show.badge}
+              </span>
+            )}
+          </div>
         </div>
       </div>
 

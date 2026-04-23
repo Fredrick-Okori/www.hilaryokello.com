@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "11e27dc8ac10be6e7a3351b2e23ec1c3",
-    "previewModeSigningKey": "c9ca2b8808fe2a852b19d148db6b70b096ae7f86160495d2a42dd75e93700262",
-    "previewModeEncryptionKey": "63b870b0426d133a10c34e57c5a7a83e32f4a0c0bb76ace6fc9a47cf3ea178ad"
-  }
-}
+{"version":4,"routes":{"/shows/saturday-entebbe-uganda-11":{},"/shows/saturday-cape-town-south-africa-12":{},"/shows/thursday-mbabane-eswatini-13":{},"/shows/friday-johannesburg-south-africa-14":{}},"dynamicRoutes":{"/shows/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/shows/[slug]","routeRegex":"^\\/shows\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"204560cff0cf8671535c0377a67a12e2","previewModeSigningKey":"fdb662b2b75d591e36e98858e03f8944b7cf21c2d6ceeea3bb745fbe53c7e52f","previewModeEncryptionKey":"8c0092b6e08a94d6bf0d9d877ed1dfe16cfc08a102fff3c852aed96afba621a3"}}
