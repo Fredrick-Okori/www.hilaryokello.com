@@ -40,7 +40,7 @@ const ShowItem = ({ show }: ShowItemProps) => {
 
   return (
     <Link
-      className={`group relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-5 sm:p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl focus-within:ring-2 focus-within:ring-yellow-500 ${show.badge ? "border-yellow-500" : "border-white/10"}`}
+      className={`group relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-5 sm:p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl focus-within:ring-2 focus-within:ring-yellow-500 ${show.badge ? "border-red-600" : "border-white/10"}`}
       href={`/shows/${show.slug}`}
     >
       {/* Date + Info */}
@@ -78,13 +78,13 @@ const ShowItem = ({ show }: ShowItemProps) => {
                 <span className="text-xs text-white/60">
                   {show.soldOutLabel ?? "Tickets sold"}
                 </span>
-                <span className="text-xs font-bold text-yellow-400">
+                <span className="text-xs font-bold text-red-400">
                   {show.soldOutPercentage}%
                 </span>
               </div>
               <div className="w-full bg-white/10 rounded-full h-1.5">
                 <div
-                  className="bg-yellow-500 h-1.5 rounded-full transition-all duration-500"
+                  className="bg-red-500 h-1.5 rounded-full transition-all duration-500"
                   style={{ width: `${show.soldOutPercentage}%` }}
                 />
               </div>
