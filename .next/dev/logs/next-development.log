@@ -162,3 +162,5 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:02:15.339] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1777109633621,"pageViews":2,"scrollDepth":52.47747747747747,"timeOnSite":123,"urlsVisited":["/","/shows/saturday-entebbe-uganda-11"]},"timestamp":"2026-04-25T09:35:57.062Z","triggerId":"exitIntent"}
 [00:02:37.581] Server  LOG     ✓ Compiled in 463ms
 [00:02:42.336] Server  LOG     ✓ Compiled in 310ms
+[00:03:17.016] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":52,"pageLoadTimestamp":1777109633621,"pageViews":3,"scrollDepth":100.11261261261262,"timeOnSite":183,"urlsVisited":["/","/shows/saturday-entebbe-uganda-11"]},"timestamp":"2026-04-25T09:36:57.841Z","triggerId":"inactivity"}
+[00:06:19.456] Server  LOG     ✓ Compiled in 221ms
