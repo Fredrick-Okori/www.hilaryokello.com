@@ -100,14 +100,6 @@ I’m glad you’re here. This is where the jokes travel and the laughter meets 
           >
            Buy Tickets - Kampala, MoTIV Bugolobi
           </a>
-          <a
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-extrabold text-base sm:text-lg rounded-full border border-white/30 transition-all duration-200 hover:scale-105 drop-shadow-lg backdrop-blur-sm"
-            href="https://wa.me/256784704143?text=Hello%2C%20I%27m%20interested%20in%20tickets%20for%20Jokes%20From%20Far%20Away%20in%20Entebbe"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            WhatsApp - Entebbe, Numax Cinemas
-          </a>
         </motion.div>
       </div>
     </section>

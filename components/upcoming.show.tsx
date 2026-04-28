@@ -21,6 +21,7 @@ const formatDatePart = (date: Date) => {
     .toLocaleDateString("en-US", { month: "short" })
     .toUpperCase();
   const day = date.getDate();
+
   return { weekday, month, day };
 };
 
@@ -38,9 +39,18 @@ const ShowItem = ({ show }: ShowItemProps) => {
     `Hello, I'm interested in tickets for ${show.title} in ${show.city}, ${show.country}`,
   )}`;
 
+  // Special green border for Kampala show (id: 15)
+
+  const borderClass =
+    show.id === 15
+      ? "border-green-600"
+      : show.badge && show.id !== 16
+        ? "border-red-600"
+        : "border-white/10";
+
   return (
     <Link
-      className={`group relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-5 sm:p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl focus-within:ring-2 focus-within:ring-yellow-500 ${show.badge ? "border-red-600" : "border-white/10"}`}
+      className={`group relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-5 sm:p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl focus-within:ring-2 focus-within:ring-yellow-500 ${borderClass}`}
       href={`/shows/${show.slug}`}
     >
       {/* Date + Info */}
@@ -67,12 +77,15 @@ const ShowItem = ({ show }: ShowItemProps) => {
               </span>
             )}
             {show.badge && (
-              <span className="inline-block px-3 py-1 bg-red-600 text-white rounded-full text-xs font-bold">
+              <span
+                className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${show.id === 15 ? "bg-green-600 text-white" : "bg-red-600 text-white"}`}
+              >
                 {show.badge}
               </span>
             )}
           </div>
-          {show.soldOutPercentage !== undefined && (
+          {/* No sold out bar for Kampala show */}
+          {show.soldOutPercentage !== undefined && show.id !== 15 && (
             <div className="mt-3">
               <div className="flex justify-between items-center mb-1">
                 <span className="text-xs text-white/60">
@@ -171,10 +184,10 @@ const UpcomingShows = () => {
               <div className="flex justify-start">
                 <Button
                   as="a"
-                  href="https://kayetickets.com/events/dr-hilary-okello-live-jokes-from-far-away-kampala/checkout"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105"
+                  href="https://kayetickets.com/events/dr-hilary-okello-live-jokes-from-far-away-kampala/checkout"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   Buy Tickets Now
                   <ChevronRight className="h-4 sm:h-5 w-4 sm:w-5" />
@@ -226,10 +239,10 @@ const UpcomingShows = () => {
               <div className="flex justify-start">
                 <Button
                   as="a"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   Register your City
                   <ChevronRight className="h-4 sm:h-5 w-4 sm:w-5" />

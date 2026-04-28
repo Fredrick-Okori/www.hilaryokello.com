@@ -33,6 +33,42 @@ function makeSlug(city: string, country: string, id: number): string {
 }
 
 const RAW: Omit<Show, "slug">[] = [
+    {
+      id: 16,
+      title: "Kigali | Thank God It's Comedy - Edition 4",
+      dateLabel: "May 8, 2026",
+      date: "2026-05-08T19:00:00",
+      time: "7:00 PM",
+      location: "Kigali Universe, Chic Building",
+      city: "Thursday | Kigali",
+      country: "Rwanda",
+      ticketPrice: "Classic: 10k | VIP: 20k | Table of 6: 200k",
+      image: "/tour/rwanda_show.webp",
+      link: "https://www.sinc.events/thank-god-2536-edition-4",
+      description:
+        "Thank God It's Comedy - Edition 4 lands in Kigali! Join Dr. Hilary Okello for a night of laughter at Kigali Universe, Chic Building. Classic, VIP, and Table tickets available. Secure your spot for Rwanda's biggest comedy night!",
+      featured: false,
+      badge: "Tickets Available",
+      contactNumber: "+250788123456",
+    },
+  {
+    id: 15,
+    title: "Kampala | Jokes From Far Away",
+    dateLabel: "May 1, 2026",
+    date: "2026-05-01T19:00:00",
+    time: "7:30 PM",
+    location: "MoTIV Bugolobi",
+    city: "Friday | Kampala",
+    country: "Uganda",
+    ticketPrice: "Early Bird: 50K | Standard: 70K",
+    image: "/tour/DR-HILARY-BUGOLOBI-BLACK-VERSION_converted.avif",
+    link: "https://kayetickets.com/events/dr-hilary-okello-live-jokes-from-far-away-kampala/checkout",
+    description:
+      "The Kampala edition of 'Jokes From Far Away' brings the global comedy tour home! Experience Dr. Hilary Okello's sharp wit, bold humor, and relatable African stories right here in Uganda's capital at MoTIV Bugolobi.",
+    featured: true,
+    badge: "Early Bird Available",
+    contactNumber: "+256784704143",
+  },
   {
     id: 11,
     title: "Entebbe | Jokes From Far Away",
@@ -51,7 +87,7 @@ const RAW: Omit<Show, "slug">[] = [
     badge: "Open for 9:30 PM show only",
     soldOutPercentage: 90,
     soldOutLabel: "Open for 9:30 PM show only",
-    contactNumber: "+256784704143"
+    contactNumber: "+256784704143",
   },
   {
     id: 12,
