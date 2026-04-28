@@ -124,6 +124,23 @@ const RAW: Omit<Show, "slug">[] = [
     contactNumber: "+27637677212",
   },
   {
+    id: 17,
+    title: "Windhoek | Jokes From Far Away",
+    dateLabel: "Jun 3, 2026",
+    date: "2026-06-03T19:00:00",
+    time: "7:30 PM",
+    location: "Ster Kinekor Grove Mall",
+    city: "Wednesday | Windhoek",
+    country: "Namibia",
+    ticketPrice: "N$300",
+    image: "/tour/DR-OKELLO-LIVE-IN-Namibia.avif",
+    link: "#",
+    description:
+      "Jokes From Far Away touches down in Namibia! Dr. Hilary Okello brings his acclaimed comedy tour to Windhoek for a night of sharp wit and hilarious African storytelling at Ster Kinekor Grove Mall.",
+    featured: false,
+    contactNumber: "+27637677212",
+  },
+  {
     id: 14,
     title: "Johannesburg | Jokes From Far Away",
     dateLabel: "May 29, 2026",

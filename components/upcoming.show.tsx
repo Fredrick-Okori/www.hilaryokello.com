@@ -78,7 +78,7 @@ const ShowItem = ({ show }: ShowItemProps) => {
             )}
             {show.badge && (
               <span
-                className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${show.id === 15 ? "bg-green-600 text-white" : "bg-red-600 text-white"}`}
+                className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${show.id === 15 ? "bg-green-600 text-white" : show.id === 16 ? "bg-white/20 text-white" : "bg-red-600 text-white"}`}
               >
                 {show.badge}
               </span>
@@ -109,29 +109,31 @@ const ShowItem = ({ show }: ShowItemProps) => {
       {/* Ticket / WhatsApp button */}
       <div className="flex justify-end sm:justify-start shrink-0">
         {show.link !== "#" ? (
-          <a
+          <button
             aria-label={`Get tickets for ${show.title}`}
             className="flex items-center rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
-            href={show.link}
-            rel="noopener noreferrer"
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open(show.link, "_blank", "noopener,noreferrer");
+            }}
           >
             Get Tickets
             <ChevronRight className="ml-1 h-4 w-4" />
-          </a>
+          </button>
         ) : (
-          <a
+          <button
             aria-label={`Contact via WhatsApp for ${show.title}`}
             className="flex items-center rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
-            href={waLink}
-            rel="noopener noreferrer"
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open(waLink, "_blank", "noopener,noreferrer");
+            }}
           >
             WhatsApp
             <ChevronRight className="ml-1 h-4 w-4" />
-          </a>
+          </button>
         )}
       </div>
     </Link>
