@@ -120,7 +120,7 @@ const RAW: Omit<Show, "slug">[] = [
     description:
       "Jokes From Far Away touches down in Namibia! Dr. Hilary Okello brings his acclaimed comedy tour to Windhoek for a night of sharp wit and hilarious African storytelling at Ster Kinekor Grove Mall.",
     featured: false,
-    contactNumber: "+27637677212",
+    contactNumber: "+264811563577",
   },
   {
     id: 14,
