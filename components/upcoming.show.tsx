@@ -39,14 +39,8 @@ const ShowItem = ({ show }: ShowItemProps) => {
     `Hello, I'm interested in tickets for ${show.title} in ${show.city}, ${show.country}`,
   )}`;
 
-  // Special green border for Kampala show (id: 15)
-
   const borderClass =
-    show.id === 15
-      ? "border-green-600"
-      : show.badge && show.id !== 16
-        ? "border-red-600"
-        : "border-white/10";
+    show.badge && show.id !== 16 ? "border-red-600" : "border-white/10";
 
   return (
     <Link
@@ -78,14 +72,13 @@ const ShowItem = ({ show }: ShowItemProps) => {
             )}
             {show.badge && (
               <span
-                className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${show.id === 15 ? "bg-green-600 text-white" : show.id === 16 ? "bg-white/20 text-white" : "bg-red-600 text-white"}`}
+                className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${show.id === 16 ? "bg-white/20 text-white" : "bg-red-600 text-white"}`}
               >
                 {show.badge}
               </span>
             )}
           </div>
-          {/* No sold out bar for Kampala show */}
-          {show.soldOutPercentage !== undefined && show.id !== 15 && (
+          {show.soldOutPercentage !== undefined && (
             <div className="mt-3">
               <div className="flex justify-between items-center mb-1">
                 <span className="text-xs text-white/60">
@@ -155,52 +148,6 @@ const UpcomingShows = () => {
         <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl text-white font-extrabold mb-8 sm:mb-12 leading-tight">
           Upcoming Shows
         </h2>
-
-        {/* Featured banner — Kampala */}
-        <div className="mt-12 mb-10 sm:mt-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-xl sm:rounded-2xl border border-white/10 p-6 sm:p-8 lg:p-12 shadow-3xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <Image
-                alt="Dr. Hilary Okello — Kampala MoTIV Bugolobi"
-                className="rounded-lg sm:rounded-xl w-full h-auto"
-                height={400}
-                quality={80}
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                src="/tour/DR-HILARY-BUGOLOBI-BLACK-VERSION_converted.avif"
-                width={800}
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white text-left leading-tight">
-                Kampala | MoTIV Bugolobi
-              </h2>
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold mb-4 text-white text-left leading-tight">
-                Jokes from Far Away
-              </h2>
-              <p className="text-base sm:text-lg text-white/75 mb-6 sm:mb-8 text-left leading-relaxed">
-                The Kampala edition of &quot;Jokes From Far Away&quot; brings
-                the global comedy tour home! Experience Dr. Hilary Okello&apos;s
-                sharp wit, bold humor, and relatable African stories right here
-                in Uganda&apos;s capital at MoTIV Bugolobi.
-              </p>
-              <div className="flex justify-start">
-                <Button
-                  as="a"
-                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105"
-                  href="https://kayetickets.com/events/dr-hilary-okello-live-jokes-from-far-away-kampala/checkout"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Buy Tickets Now
-                  <ChevronRight className="h-4 sm:h-5 w-4 sm:w-5" />
-                </Button>
-              </div>
-              <p className="text-xs sm:text-sm text-white/50 mt-6 text-left">
-                Only 200 early bird tickets available. Get yours today.
-              </p>
-            </div>
-          </div>
-        </div>
 
         {/* Show list */}
         {upcomingShows.length > 0 ? (

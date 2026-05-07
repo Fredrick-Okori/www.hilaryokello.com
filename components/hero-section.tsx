@@ -94,11 +94,9 @@ I’m glad you’re here. This is where the jokes travel and the laughter meets 
         >
           <a
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold text-base sm:text-lg rounded-full transition-all duration-200 hover:scale-105 drop-shadow-lg"
-            href="https://kayetickets.com/events/dr-hilary-okello-live-jokes-from-far-away-kampala/checkout"
-            rel="noopener noreferrer"
-            target="_blank"
+            href="#upcoming-shows"
           >
-           Buy Tickets - Kampala, MoTIV Bugolobi
+            View Upcoming Shows
           </a>
         </motion.div>
       </div>
