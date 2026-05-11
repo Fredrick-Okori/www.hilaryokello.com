@@ -67,100 +67,111 @@ export default async function ShowPage({
     currentIndex < SHOWS.length - 1 ? SHOWS[currentIndex + 1] : null;
 
   return (
-    <main className="text-white">
-      {/* Hero */}
-      <div className="relative h-[55vh] sm:h-[65vh] w-full">
-        <Image
-          fill
-          priority
-          alt={show.title}
-          className="object-cover"
-          quality={85}
-          sizes="100vw"
-          src={show.image}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+    <main className="text-white min-h-screen">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 pb-14">
 
         {/* Back link */}
         <Link
           href="/#shows"
-          className="absolute top-6 left-4 sm:left-8 flex items-center gap-1.5 text-white/80 hover:text-white transition-colors text-sm font-medium z-10"
+          className="inline-flex items-center gap-1.5 text-white/60 hover:text-white transition-colors text-sm font-medium mb-8"
         >
           <ChevronLeft className="h-4 w-4" />
           All Shows
         </Link>
 
-        {/* Title overlay */}
-        <div className="absolute bottom-8 left-4 sm:left-8 right-4 sm:right-8 z-10">
-          {show.featured && (
-            <span className="inline-block mb-3 px-3 py-1 bg-yellow-500 text-black rounded-full text-xs font-bold tracking-wide">
-              FEATURED SHOW
-            </span>
-          )}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-lg">
-            {show.title}
-          </h1>
-          <p className="mt-2 text-white/75 text-base sm:text-lg">
-            {show.city}, {show.country}
-          </p>
-        </div>
-      </div>
-
-      {/* Body */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-8 py-10 sm:py-14">
-        {/* Two-column layout: details left, description right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
-          {/* Left — event details */}
-          <div className="p-6 sm:p-8 bg-white/5 border border-white/10 rounded-2xl flex flex-col gap-6">
-            <div className="flex items-start gap-4">
-              <Calendar className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
-              <div>
-                <p className="text-white/50 text-xs mb-1">Date</p>
-                <p className="text-white font-semibold">{show.dateLabel}</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <Clock className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
-              <div>
-                <p className="text-white/50 text-xs mb-1">Time</p>
-                <p className="text-white font-semibold">{show.time}</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <MapPin className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
-              <div>
-                <p className="text-white/50 text-xs mb-1">Venue</p>
-                <p className="text-white font-semibold">{show.location}</p>
-                <p className="text-white/60 text-sm mt-0.5">
-                  {show.city}, {show.country}
-                </p>
-              </div>
-            </div>
-
-            {show.ticketPrice && (
-              <div className="flex items-start gap-4">
-                <Ticket className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
-                <div>
-                  <p className="text-white/50 text-xs mb-1">Tickets</p>
-                  <p className="text-white font-semibold">{show.ticketPrice}</p>
-                </div>
-              </div>
+        {/* Title + date header */}
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-10">
+          <div>
+            {show.featured && (
+              <span className="inline-block mb-3 px-3 py-1 bg-yellow-500 text-black rounded-full text-xs font-bold tracking-wide">
+                FEATURED SHOW
+              </span>
             )}
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+              {show.title}
+            </h1>
+            <p className="mt-2 text-white/60 text-base">
+              {show.city}, {show.country}
+            </p>
+          </div>
+          <div className="flex flex-col items-start sm:items-end gap-1 shrink-0">
+            <span className="text-2xl sm:text-3xl font-extrabold text-yellow-500">
+              {show.dateLabel}
+            </span>
+            <span className="text-white/60 text-sm">{show.time}</span>
+          </div>
+        </div>
+
+        {/* Side-by-side: image left, details right */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+
+          {/* Left — image */}
+          <div className="w-full rounded-2xl overflow-hidden shadow-2xl">
+            <Image
+              priority
+              alt={show.title}
+              className="w-full h-auto block"
+              height={900}
+              quality={85}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              src={show.image}
+              width={600}
+            />
           </div>
 
-          {/* Right — description + CTAs */}
-          <div className="flex flex-col justify-center">
-            <h2 className="text-2xl font-bold text-white mb-4">
-              About This Show
-            </h2>
-            <p className="text-white/75 leading-relaxed text-base sm:text-lg mb-8">
-              {show.description}
-            </p>
+          {/* Right — details + description + CTAs */}
+          <div className="flex flex-col gap-6">
+
+            {/* Event details card */}
+            <div className="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col gap-5">
+              <div className="flex items-start gap-4">
+                <Calendar className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
+                <div>
+                  <p className="text-white/50 text-xs mb-1">Date</p>
+                  <p className="text-white font-semibold">{show.dateLabel}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Clock className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
+                <div>
+                  <p className="text-white/50 text-xs mb-1">Time</p>
+                  <p className="text-white font-semibold">{show.time}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MapPin className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
+                <div>
+                  <p className="text-white/50 text-xs mb-1">Venue</p>
+                  <p className="text-white font-semibold">{show.location}</p>
+                  <p className="text-white/60 text-sm mt-0.5">
+                    {show.city}, {show.country}
+                  </p>
+                </div>
+              </div>
+
+              {show.ticketPrice && (
+                <div className="flex items-start gap-4">
+                  <Ticket className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
+                  <div>
+                    <p className="text-white/50 text-xs mb-1">Tickets</p>
+                    <p className="text-white font-semibold">{show.ticketPrice}</p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Description */}
+            <div>
+              <h2 className="text-lg font-bold text-white mb-2">About This Show</h2>
+              <p className="text-white/70 leading-relaxed text-base">
+                {show.description}
+              </p>
+            </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-auto">
               {hasTicketLink ? (
                 <a
                   href={show.link}

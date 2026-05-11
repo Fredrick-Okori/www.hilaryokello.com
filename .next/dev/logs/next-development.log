@@ -146,3 +146,11 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:19:16.063] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":378,"pageLoadTimestamp":1778486960117,"pageViews":1,"scrollDepth":24.48282406528753,"timeOnSite":401,"urlsVisited":["/"]},"timestamp":"2026-05-11T08:16:01.283Z","triggerId":"timeOnPage"}
 [00:19:27.604] Browser WARN    Image with src "/tour/francistown.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:22.052] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":25,"pageLoadTimestamp":1778486960117,"pageViews":2,"scrollDepth":100.07163323782235,"timeOnSite":525,"urlsVisited":["/","/shows/friday-francistown-botswana-20"]},"timestamp":"2026-05-11T08:18:06.376Z","triggerId":"scrollDepth"}
+[00:24:19.470] Server  LOG     ✓ Compiled in 0ms
+[00:24:19.591] Browser WARN    Image with src "/tour/mbabane_eswatini.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:25:08.521] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1778486960117,"pageViews":3,"scrollDepth":100.07163323782235,"timeOnSite":753,"urlsVisited":["/","/shows/friday-francistown-botswana-20","/shows/thursday-mbabane-eswatini-13"]},"timestamp":"2026-05-11T08:21:53.746Z","triggerId":"exitIntent"}
+[00:27:36.179] Server  LOG     ✓ Compiled in 0ms
+[00:27:43.487] Browser WARN    Image with src "/tour/gaborone_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
