@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "d93e9416227afab515f05266826e744c",
-    "previewModeSigningKey": "f9a4edb13ad6c6c470214165e5bd3605d081859ad38838e825839992ea95fdd9",
-    "previewModeEncryptionKey": "39e918e33fb72efd9f190c7607f01d6d529bd840636808123dff71d174dd1469"
-  }
-}
+{"version":4,"routes":{"/shows/thursday-kampala-uganda-18":{},"/shows/friday-kigali-rwanda-16":{},"/shows/saturday-entebbe-uganda-11":{},"/shows/saturday-cape-town-south-africa-12":{},"/shows/thursday-mbabane-eswatini-13":{},"/shows/wednesday-windhoek-namibia-17":{},"/shows/friday-johannesburg-south-africa-14":{},"/shows/thursday-gaborone-botswana-19":{},"/shows/friday-francistown-botswana-20":{}},"dynamicRoutes":{"/shows/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/shows/[slug]","routeRegex":"^\\/shows\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"67eface6cef4fe707dcc9657195a7acf","previewModeSigningKey":"fa881c76f6f4e31f79b1f373c6026e1c1d247b47ac3c7012b8228a9242dd8679","previewModeEncryptionKey":"5b3362021898eb7f49610ad3f8506a81ff7c9e876d2227bd1b7bb6f66a42dfb7"}}
