@@ -68,3 +68,4 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:00:23.828] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:00:49.290] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":10,"pageLoadTimestamp":1778584429061,"pageViews":1,"scrollDepth":20.659007153696077,"timeOnSite":25,"urlsVisited":["/"]},"timestamp":"2026-05-12T11:14:15.900Z","triggerId":"timeOnPage"}
+[00:01:19.266] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1778584429061,"pageViews":1,"scrollDepth":20.659007153696077,"timeOnSite":57,"urlsVisited":["/"]},"timestamp":"2026-05-12T11:14:46.953Z","triggerId":"exitIntent"}

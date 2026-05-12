@@ -43,7 +43,7 @@ const RAW: Omit<Show, "slug">[] = [
     city: "Thursday | Kampala",
     country: "Uganda",
     ticketPrice: "25K",
-    image: "/tour/laughing_maraboustork.jpg",
+    image: "/tour/laugh_maraboustork.jpg",
     link: "https://karitickets.com/event/THE_LAUGHING_DEBATE",
     description:
       "The Laughing Debate lands at Infinity Cafe & Lounge inside Capital Shoppers! A night of sharp comedy, bold opinions, and laughs that hit different. Join Dr. Hilary Okello for an unmissable Thursday evening in Kampala.",
