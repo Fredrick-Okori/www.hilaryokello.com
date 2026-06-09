@@ -379,3 +379,209 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:24:10.846] Browser ERROR   {}
 [00:24:12.651] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":584,"pageLoadTimestamp":1780983865696,"pageViews":1,"scrollDepth":0,"timeOnSite":1438,"urlsVisited":["/"]},"timestamp":"2026-06-09T06:08:25.635Z","triggerId":"inactivity"}
 [00:24:17.248] Browser ERROR   {}
+[00:24:30.093] Browser ERROR   {}
+[00:24:30.093] Browser ERROR   {}
+[00:24:30.336] Browser ERROR   {}
+[00:24:30.755] Browser ERROR   {}
+[00:24:31.575] Browser ERROR   {}
+[00:24:33.197] Browser ERROR   {}
+[00:24:36.421] Browser ERROR   {}
+[00:24:42.842] Browser ERROR   {}
+[00:24:55.689] Browser ERROR   {}
+[00:24:55.689] Browser ERROR   {"message":"Failed to fetch","name":"AuthRetryableFetchError","status":0}
+[00:24:55.689] Browser ERROR   {}
+[00:24:55.980] Browser ERROR   {}
+[00:24:56.402] Browser ERROR   {}
+[00:24:57.227] Browser ERROR   {}
+[00:24:58.848] Browser ERROR   {}
+[00:25:02.080] Browser ERROR   {}
+[00:25:08.515] Browser ERROR   {}
+[00:25:21.365] Browser ERROR   {}
+[00:25:21.365] Browser ERROR   {}
+[00:25:21.599] Browser ERROR   {}
+[00:25:22.021] Browser ERROR   {}
+[00:25:22.872] Browser ERROR   {}
+[00:25:24.500] Browser ERROR   {}
+[00:25:27.720] Browser ERROR   {}
+[00:25:34.144] Browser ERROR   {}
+[00:25:47.016] Browser ERROR   {}
+[00:25:47.016] Browser ERROR   {}
+[00:25:47.238] Browser ERROR   {}
+[00:25:47.663] Browser ERROR   {}
+[00:25:48.511] Browser ERROR   {}
+[00:25:50.132] Browser ERROR   {}
+[00:25:53.356] Browser ERROR   {}
+[00:25:59.778] Browser ERROR   {}
+[00:26:12.624] Browser ERROR   {}
+[00:26:12.624] Browser ERROR   {}
+[00:26:12.845] Browser ERROR   {}
+[00:26:13.269] Browser ERROR   {}
+[00:26:14.095] Browser ERROR   {}
+[00:26:15.718] Browser ERROR   {}
+[00:26:18.942] Browser ERROR   {}
+[00:26:25.364] Browser ERROR   {}
+[00:26:38.230] Browser ERROR   {}
+[00:26:38.230] Browser ERROR   {}
+[00:26:38.453] Browser ERROR   {}
+[00:26:38.874] Browser ERROR   {}
+[00:26:39.710] Browser ERROR   {}
+[00:26:41.331] Browser ERROR   {}
+[00:26:44.554] Browser ERROR   {}
+[00:26:52.651] Browser ERROR   {}
+[00:27:05.661] Browser ERROR   {}
+[00:27:05.661] Browser ERROR   {}
+[00:27:06.651] Browser ERROR   {}
+[00:27:07.653] Browser ERROR   {}
+[00:27:08.657] Browser ERROR   {}
+[00:27:10.652] Browser ERROR   {}
+[00:27:14.651] Browser ERROR   {}
+[00:27:21.651] Browser ERROR   {}
+[00:27:34.656] Browser ERROR   {}
+[00:27:34.656] Browser ERROR   {}
+[00:27:35.651] Browser ERROR   {}
+[00:27:36.653] Browser ERROR   {}
+[00:27:37.651] Browser ERROR   {}
+[00:27:39.651] Browser ERROR   {}
+[00:27:43.667] Browser ERROR   {}
+[00:27:50.651] Browser ERROR   {}
+[00:28:03.651] Browser ERROR   {}
+[00:28:03.651] Browser ERROR   {}
+[00:28:04.651] Browser ERROR   {}
+[00:28:05.651] Browser ERROR   {}
+[00:28:06.651] Browser ERROR   {}
+[00:28:08.651] Browser ERROR   {}
+[00:28:12.651] Browser ERROR   {}
+[00:28:19.651] Browser ERROR   {}
+[00:28:32.651] Browser ERROR   {}
+[00:28:32.651] Browser ERROR   {}
+[00:28:33.651] Browser ERROR   {}
+[00:28:34.651] Browser ERROR   {}
+[00:28:35.651] Browser ERROR   {}
+[00:28:37.650] Browser ERROR   {}
+[00:28:41.651] Browser ERROR   {}
+[00:28:48.651] Browser ERROR   {}
+[00:29:01.651] Browser ERROR   {}
+[00:29:01.651] Browser ERROR   {}
+[00:29:02.651] Browser ERROR   {}
+[00:29:03.651] Browser ERROR   {}
+[00:29:04.651] Browser ERROR   {}
+[00:29:06.651] Browser ERROR   {}
+[00:29:10.651] Browser ERROR   {}
+[00:29:17.650] Browser ERROR   {}
+[00:29:30.648] Browser ERROR   {}
+[00:29:30.648] Browser ERROR   {}
+[00:29:31.647] Browser ERROR   {}
+[00:29:32.647] Browser ERROR   {}
+[00:29:33.648] Browser ERROR   {}
+[00:29:35.646] Browser ERROR   {}
+[00:29:39.646] Browser ERROR   {}
+[00:29:46.646] Browser ERROR   {}
+[00:29:59.700] Browser ERROR   {}
+[00:29:59.700] Browser ERROR   {}
+[00:30:00.702] Browser ERROR   {}
+[00:30:00.756] Server  LOG     ✓ Compiled in 607ms
+[00:30:01.646] Browser ERROR   {}
+[00:30:02.816] Browser ERROR   {}
+[00:30:04.646] Browser ERROR   {}
+[00:30:09.646] Browser ERROR   {}
+[00:30:17.648] Browser ERROR   {}
+[00:30:17.648] Browser ERROR   {}
+[00:30:18.648] Browser ERROR   {}
+[00:30:19.648] Browser ERROR   {}
+[00:30:21.649] Browser ERROR   {}
+[00:30:24.648] Browser ERROR   {}
+[00:30:28.648] Browser ERROR   {}
+[00:30:35.649] Browser ERROR   {}
+[00:30:35.649] Browser ERROR   {}
+[00:30:36.649] Browser ERROR   {}
+[00:30:37.649] Browser ERROR   {}
+[00:30:39.650] Browser ERROR   {}
+[00:30:41.649] Browser ERROR   {}
+[00:30:45.649] Browser ERROR   {}
+[00:30:52.651] Browser ERROR   {}
+[00:31:06.650] Browser ERROR   {}
+[00:31:06.651] Browser ERROR   {}
+[00:31:07.756] Browser ERROR   {}
+[00:31:08.651] Browser ERROR   {}
+[00:31:10.651] Browser ERROR   {}
+[00:31:12.657] Browser ERROR   {}
+[00:31:16.651] Browser ERROR   {}
+[00:31:23.651] Browser ERROR   {}
+[00:31:37.651] Browser ERROR   {}
+[00:31:37.651] Browser ERROR   {}
+[00:31:38.651] Browser ERROR   {}
+[00:31:39.653] Browser ERROR   {}
+[00:31:41.653] Browser ERROR   {}
+[00:32:59.618] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":76,"pageLoadTimestamp":1780984996460,"pageViews":7,"scrollDepth":100,"timeOnSite":776,"urlsVisited":["/","/shows/saturday-entebbe-uganda-21"]},"timestamp":"2026-06-09T06:17:12.635Z","triggerId":"inactivity"}
+[00:33:58.654] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":595,"pageLoadTimestamp":1780983865696,"pageViews":1,"scrollDepth":0,"timeOnSite":1906,"urlsVisited":["/"]},"timestamp":"2026-06-09T06:17:12.636Z","triggerId":"timeOnPage"}
+[00:37:58.651] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":599,"pageLoadTimestamp":1780983865696,"pageViews":1,"scrollDepth":0,"timeOnSite":2146,"urlsVisited":["/"]},"timestamp":"2026-06-09T06:21:12.572Z","triggerId":"inactivity"}
+[00:40:45.493] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:40:45.709] Server  WARN    Image with src "/hero_bg.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:45.732] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:46.826] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:40:46.826] Browser WARN    Image with src "/hero_bg.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:47.166] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.251] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:40:48.505] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:41:14.651] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":16,"pageLoadTimestamp":1780986300656,"pageViews":1,"scrollDepth":0,"timeOnSite":26,"urlsVisited":["/"]},"timestamp":"2026-06-09T06:25:27.571Z","triggerId":"timeOnPage"}
+[00:41:54.181] Server  LOG     ✓ Compiled in 582ms

@@ -94,9 +94,11 @@ I’m glad you’re here. This is where the jokes travel and the laughter meets 
         >
           <a
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold text-base sm:text-lg rounded-full transition-all duration-200 hover:scale-105 drop-shadow-lg"
-            href="#upcoming-shows"
+            href="https://kayetickets.com/events/a-night-of-laughter-ft-dr-hilary/checkout"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            View Upcoming Shows
+            Buy Tickets: Entebbe Event
           </a>
         </motion.div>
       </div>
