@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "7b1b89d56fb199667a22b707ac84a04f",
-    "previewModeSigningKey": "e24018282bb4daa9488a9eb48957ed87d51ed58b8676748565882505fcf7d0f0",
-    "previewModeEncryptionKey": "c438f63e3aafbafaa9cdb72d2d1d118c0ce370a35c5d357e1ae8a41769f90350"
-  }
-}
+{"version":4,"routes":{"/shows/saturday-entebbe-uganda-21":{},"/shows/saturday-entebbe-uganda-22":{}},"dynamicRoutes":{"/shows/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/shows/[slug]","routeRegex":"^\\/shows\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"da802fe715b564208ecf05fd6af094f1","previewModeSigningKey":"6a5fafb2fd55ba5f04d6575907917f29fc23bd48719df9a49f6c54e1a3b3b645","previewModeEncryptionKey":"27e1aaab08f60c216550c3d77225b60bf342b519e5e2a44a1e550e2e09bd8e37"}}

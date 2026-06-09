@@ -1,36 +1,76 @@
 "use client";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@heroui/button";
 import { ChevronRight } from "lucide-react";
 
-import { SHOWS, DEFAULT_CONTACT, type Show } from "@/lib/shows";
+import { supabase } from "@/lib/supabase";
+import { SHOWS, DEFAULT_CONTACT, type Show as StaticShow } from "@/lib/shows";
 
-// --- Constants ---
-const TODAY = new Date();
+// Row shape returned from Supabase
+type DbShow = {
+  id: string;
+  title: string;
+  date: string;
+  time: string;
+  city: string;
+  location: string;
+  country: string;
+  ticket_price: string;
+  ticket_url: string | null;
+  image: string;
+  description: string;
+  featured: boolean;
+  badge: string | null;
+  contact_number: string | null;
+  published: boolean;
+  published_at: string | null;
+};
+
+function toSlug(text: string) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function dbShowToStaticShape(s: DbShow): StaticShow {
+  return {
+    id: parseInt(s.id.replace(/-/g, "").slice(0, 8), 16),
+    slug: `${toSlug(s.city)}-${toSlug(s.country)}-${s.id.slice(0, 8)}`,
+    title: s.title,
+    dateLabel: new Date(s.date).toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    }),
+    date: s.date,
+    time: s.time,
+    location: s.location,
+    country: s.country,
+    city: s.city,
+    ticketPrice: s.ticket_price,
+    image: s.image || "/tour/website_poster.png",
+    link: s.ticket_url || "#",
+    description: s.description,
+    featured: s.featured,
+    badge: s.badge ?? undefined,
+    contactNumber: s.contact_number ?? undefined,
+  };
+}
 
 // --- Date helpers ---
 const parseDate = (iso: string) => new Date(Date.parse(iso));
 
-const formatDatePart = (date: Date) => {
-  const weekday = date
-    .toLocaleDateString("en-US", { weekday: "short" })
-    .toUpperCase();
-  const month = date
-    .toLocaleDateString("en-US", { month: "short" })
-    .toUpperCase();
-  const day = date.getDate();
-
-  return { weekday, month, day };
-};
+const formatDatePart = (date: Date) => ({
+  weekday: date.toLocaleDateString("en-US", { weekday: "short" }).toUpperCase(),
+  month: date.toLocaleDateString("en-US", { month: "short" }).toUpperCase(),
+  day: date.getDate(),
+});
 
 // --- Show Item ---
-interface ShowItemProps {
-  show: Show;
-}
-
-const ShowItem = ({ show }: ShowItemProps) => {
+const ShowItem = ({ show }: { show: StaticShow }) => {
   const date = useMemo(() => parseDate(show.date), [show.date]);
   const { weekday, month, day } = useMemo(() => formatDatePart(date), [date]);
 
@@ -47,7 +87,6 @@ const ShowItem = ({ show }: ShowItemProps) => {
       className={`group relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-5 sm:p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl focus-within:ring-2 focus-within:ring-yellow-500 ${borderClass}`}
       href={`/shows/${show.slug}`}
     >
-      {/* Date + Info */}
       <div className="flex items-start sm:items-center gap-4 sm:gap-6 min-w-full sm:min-w-[50%]">
         <div className="text-center min-w-[80px]">
           <div className="text-xs text-white/60 font-medium tracking-wider">
@@ -99,7 +138,6 @@ const ShowItem = ({ show }: ShowItemProps) => {
         </div>
       </div>
 
-      {/* Ticket / WhatsApp button */}
       <div className="flex justify-end sm:justify-start shrink-0">
         {show.link !== "#" ? (
           <button
@@ -135,21 +173,49 @@ const ShowItem = ({ show }: ShowItemProps) => {
 
 // --- Main Component ---
 const UpcomingShows = () => {
+  const today = useMemo(() => new Date(), []);
+  const [dbShows, setDbShows] = useState<StaticShow[]>([]);
+
+  useEffect(() => {
+    supabase
+      .from("shows")
+      .select("*")
+      .eq("published", true)
+      .gte("date", today.toISOString().slice(0, 10))
+      .order("date", { ascending: true })
+      .then(({ data }) => {
+        if (data && data.length > 0) {
+          setDbShows((data as DbShow[]).map(dbShowToStaticShape));
+        }
+      });
+  }, [today]);
+
+  // Merge: Supabase published shows + static shows (deduplicated by date+country)
   const upcomingShows = useMemo(() => {
-    return SHOWS.filter(
-      (show) => parseDate(show.date).getTime() > TODAY.getTime(),
-    ).sort((a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime());
-  }, []);
+    const staticUpcoming = SHOWS.filter(
+      (s) => parseDate(s.date).getTime() > today.getTime(),
+    );
+
+    // Build a Set of keys from Supabase shows to avoid duplicates
+    const dbKeys = new Set(
+      dbShows.map((s) => `${s.date}-${s.country}-${s.city}`),
+    );
+    const filteredStatic = staticUpcoming.filter(
+      (s) => !dbKeys.has(`${s.date.slice(0, 10)}-${s.country}-${s.city}`),
+    );
+
+    return [...dbShows, ...filteredStatic].sort(
+      (a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime(),
+    );
+  }, [dbShows, today]);
 
   return (
     <div className="font-sans min-h-screen text-white">
       <div className="max-w-7xl mx-auto px-4 pt-8 sm:pt-10 sm:px-6 lg:px-8">
-        {/* Title */}
         <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl text-white font-extrabold mb-8 sm:mb-12 leading-tight">
           Upcoming Shows
         </h2>
 
-        {/* Show list */}
         {upcomingShows.length > 0 ? (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
             {upcomingShows.map((show) => (
