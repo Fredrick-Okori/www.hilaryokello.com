@@ -78,8 +78,6 @@ const socialLinks = [
   },
 ];
 
-
-
 export default function BookingPage() {
   return (
     <section className="w-full bg-black text-white min-h-screen">

@@ -139,7 +139,20 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
       </div>
 
       <div className="flex justify-end sm:justify-start shrink-0">
-        {show.link !== "#" ? (
+        {show.badge === "Join Waiting List" ? (
+          <button
+            aria-label={`Join waiting list for ${show.title}`}
+            className="flex items-center rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.location.href = `/shows/${show.slug}`;
+            }}
+          >
+            WaitingList
+            <ChevronRight className="ml-1 h-4 w-4" />
+          </button>
+        ) : show.link !== "#" ? (
           <button
             aria-label={`Get tickets for ${show.title}`}
             className="flex items-center rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"

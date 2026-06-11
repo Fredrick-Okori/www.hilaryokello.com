@@ -14,15 +14,15 @@ export async function middleware(request: NextRequest) {
         },
         setAll(cookiesToSet) {
           cookiesToSet.forEach(({ name, value }) =>
-            request.cookies.set(name, value)
+            request.cookies.set(name, value),
           );
           response = NextResponse.next({ request });
           cookiesToSet.forEach(({ name, value, options }) =>
-            response.cookies.set(name, value, options)
+            response.cookies.set(name, value, options),
           );
         },
       },
-    }
+    },
   );
 
   const {
@@ -34,14 +34,18 @@ export async function middleware(request: NextRequest) {
   // Unauthenticated user hitting any /admin page → send to login
   if (!user && pathname.startsWith("/admin") && pathname !== "/admin/login") {
     const loginUrl = request.nextUrl.clone();
+
     loginUrl.pathname = "/admin/login";
+
     return NextResponse.redirect(loginUrl);
   }
 
   // Already logged-in user hitting the login page → send to dashboard
   if (user && pathname === "/admin/login") {
     const dashboardUrl = request.nextUrl.clone();
+
     dashboardUrl.pathname = "/admin";
+
     return NextResponse.redirect(dashboardUrl);
   }
 

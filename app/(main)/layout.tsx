@@ -3,7 +3,7 @@
 import React, { Suspense, lazy } from "react";
 
 const MenuBar = lazy(() =>
-  import("@/components/theme-toggle").then((mod) => ({ default: mod.MenuBar }))
+  import("@/components/theme-toggle").then((mod) => ({ default: mod.MenuBar })),
 );
 const Footer = lazy(() => import("@/components/footer"));
 

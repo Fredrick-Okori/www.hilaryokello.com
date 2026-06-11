@@ -1,5 +1,6 @@
-import Gallery from "./parts/gallery";
 import { Metadata } from "next";
+
+import Gallery from "./parts/gallery";
 
 export const metadata: Metadata = {
   title: "Gallery | Dr. Hilary Okello - Uganda's Top Comedian",
@@ -10,8 +11,9 @@ export const metadata: Metadata = {
 };
 
 export default function GalleryPage() {
-  return <div>
-<Gallery/>
-
-  </div>;
-  }
+  return (
+    <div>
+      <Gallery />
+    </div>
+  );
+}

@@ -217,3 +217,39 @@ create policy "videos: auth delete"
   on public.videos for delete to authenticated using (true);
 
 create index if not exists videos_featured_idx on public.videos (is_featured desc);
+
+
+-- ─────────────────────────────────────────────────────────────
+-- 6. WAITING LIST ENTRIES
+-- ─────────────────────────────────────────────────────────────
+create table if not exists public.waiting_list_entries (
+  id         uuid primary key default gen_random_uuid(),
+  show_slug  text not null,
+  show_title text not null,
+  username   text not null,
+  phone      text not null,
+  email      text not null,
+  created_at timestamptz not null default now()
+);
+
+alter table public.waiting_list_entries enable row level security;
+
+drop policy if exists "waiting_list_entries: public read"  on public.waiting_list_entries;
+drop policy if exists "waiting_list_entries: auth insert"  on public.waiting_list_entries;
+drop policy if exists "waiting_list_entries: auth delete"  on public.waiting_list_entries;
+
+create policy "waiting_list_entries: public read"
+  on public.waiting_list_entries for select using (true);
+
+create policy "waiting_list_entries: auth insert"
+  on public.waiting_list_entries for insert to authenticated with check (true);
+
+create policy "waiting_list_entries: auth delete"
+  on public.waiting_list_entries for delete to authenticated using (true);
+
+create index if not exists waiting_list_entries_created_at_idx
+  on public.waiting_list_entries (created_at desc);
+
+create index if not exists waiting_list_entries_show_slug_idx
+  on public.waiting_list_entries (show_slug);
+

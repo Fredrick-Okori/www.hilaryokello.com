@@ -58,46 +58,50 @@ export function VideoSection({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Featured Video */}
           <div className="lg:col-span-2 space-y-3 sm:space-y-4">
-            <div className="relative aspect-video overflow-hidden rounded-lg sm:rounded-xl bg-black" role="region" aria-label="Featured video player">
+            <div
+              aria-label="Featured video player"
+              className="relative aspect-video overflow-hidden rounded-lg sm:rounded-xl bg-black"
+              role="region"
+            >
               {isPlaying ? (
                 <ReactPlayer
                   controls
                   playing
+                  aria-label={`Playing video: ${activeVideo.title}`}
                   className="absolute top-0 left-0"
                   height="100%"
                   url={`https://www.youtube.com/watch?v=${activeVideo.youtubeId}`}
                   width="100%"
-                  aria-label={`Playing video: ${activeVideo.title}`}
                 />
               ) : (
                 <div
+                  aria-label={`Play video: ${activeVideo.title}`}
                   className="relative w-full h-full cursor-pointer"
                   role="button"
                   tabIndex={0}
                   onClick={playVideo}
                   onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
+                    if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
                       playVideo();
                     }
                   }}
-                  aria-label={`Play video: ${activeVideo.title}`}
                 >
                   <Image
+                    fill
+                    priority
                     alt={`Video thumbnail for: ${activeVideo.title}`}
                     className="object-cover"
-                    fill
                     sizes="(max-width: 1024px) 100vw, 66vw"
-                    priority
                     src={
                       getYouTubeThumbnail(activeVideo.youtubeId) ||
                       "/placeholder.svg"
                     }
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <button 
-                      className="bg-gold hover:bg-gold-light text-black rounded-full p-4 transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+                    <button
                       aria-label={`Play video: ${activeVideo.title}`}
+                      className="bg-gold hover:bg-gold-light text-black rounded-full p-4 transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
                     >
                       <Play className="h-8 w-8 fill-current" />
                     </button>
@@ -120,13 +124,16 @@ export function VideoSection({
 
           {/* Video Grid */}
           <div className="space-y-4 sm:space-y-6">
-            <h3 className="font-medium text-white text-base sm:text-lg">Up Next</h3>
+            <h3 className="font-medium text-white text-base sm:text-lg">
+              Up Next
+            </h3>
             {[...videos, featuredVideo]
               .filter((video) => video.id !== activeVideo.id)
               .slice(0, 4)
               .map((video) => (
                 <div
                   key={video.id}
+                  aria-label={`Select video: ${video.title}`}
                   className={cn(
                     "flex gap-4 cursor-pointer p-2 rounded-lg transition-colors",
                     "hover:bg-muted focus-within:ring-2 focus-within:ring-gold focus-within:ring-offset-2 focus-within:ring-offset-black",
@@ -135,18 +142,17 @@ export function VideoSection({
                   tabIndex={0}
                   onClick={() => selectVideo(video)}
                   onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
+                    if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
                       selectVideo(video);
                     }
                   }}
-                  aria-label={`Select video: ${video.title}`}
                 >
                   <div className="relative flex-shrink-0 w-40 h-24 overflow-hidden rounded-lg bg-muted">
                     <Image
+                      fill
                       alt={`Thumbnail for: ${video.title}`}
                       className="object-cover"
-                      fill
                       sizes="160px"
                       src={
                         getYouTubeThumbnail(video.youtubeId) ||

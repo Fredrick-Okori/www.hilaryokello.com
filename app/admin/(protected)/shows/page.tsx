@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
 import { Plus, Trash2, Pencil, X, Check, Globe, EyeOff } from "lucide-react";
+
+import { supabase } from "@/lib/supabase";
 
 type Show = {
   id: string;
@@ -54,6 +55,7 @@ export default function AdminShowsPage() {
       .from("shows")
       .select("*")
       .order("date", { ascending: true });
+
     setShows(data ?? []);
     setLoading(false);
   }
@@ -82,6 +84,7 @@ export default function AdminShowsPage() {
 
   async function handleTogglePublish(show: Show) {
     const nowPublished = !show.published;
+
     await supabase
       .from("shows")
       .update({
@@ -105,8 +108,8 @@ export default function AdminShowsPage() {
           </p>
         </div>
         <button
-          onClick={() => setAdding(true)}
           className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300 transition-colors"
+          onClick={() => setAdding(true)}
         >
           <Plus size={16} /> Add Show
         </button>
@@ -118,14 +121,14 @@ export default function AdminShowsPage() {
           <ShowForm form={form} onChange={setForm} />
           <div className="flex gap-2">
             <button
-              onClick={handleAdd}
               className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+              onClick={handleAdd}
             >
               <Check size={14} /> Save as Draft
             </button>
             <button
-              onClick={() => setAdding(false)}
               className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+              onClick={() => setAdding(false)}
             >
               <X size={14} /> Cancel
             </button>
@@ -136,7 +139,9 @@ export default function AdminShowsPage() {
       {loading ? (
         <p className="text-zinc-500 text-sm">Loading…</p>
       ) : shows.length === 0 ? (
-        <p className="text-zinc-500 text-sm">No shows yet. Add your first show above.</p>
+        <p className="text-zinc-500 text-sm">
+          No shows yet. Add your first show above.
+        </p>
       ) : (
         <div className="space-y-6">
           {/* Published */}
@@ -150,18 +155,18 @@ export default function AdminShowsPage() {
                   <EditRow
                     key={show.id}
                     show={show}
-                    onSave={(u) => handleUpdate(show.id, u)}
                     onCancel={() => setEditingId(null)}
+                    onSave={(u) => handleUpdate(show.id, u)}
                   />
                 ) : (
                   <ShowRow
                     key={show.id}
                     show={show}
-                    onEdit={() => setEditingId(show.id)}
                     onDelete={() => handleDelete(show.id)}
+                    onEdit={() => setEditingId(show.id)}
                     onTogglePublish={() => handleTogglePublish(show)}
                   />
-                )
+                ),
               )}
             </section>
           )}
@@ -177,18 +182,18 @@ export default function AdminShowsPage() {
                   <EditRow
                     key={show.id}
                     show={show}
-                    onSave={(u) => handleUpdate(show.id, u)}
                     onCancel={() => setEditingId(null)}
+                    onSave={(u) => handleUpdate(show.id, u)}
                   />
                 ) : (
                   <ShowRow
                     key={show.id}
                     show={show}
-                    onEdit={() => setEditingId(show.id)}
                     onDelete={() => handleDelete(show.id)}
+                    onEdit={() => setEditingId(show.id)}
                     onTogglePublish={() => handleTogglePublish(show)}
                   />
-                )
+                ),
               )}
             </section>
           )}
@@ -213,7 +218,9 @@ function ShowRow({
     <div className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-4 gap-3">
       <div className="min-w-0">
         <div className="flex items-center gap-2">
-          <p className="text-sm font-semibold text-white truncate">{show.title}</p>
+          <p className="text-sm font-semibold text-white truncate">
+            {show.title}
+          </p>
           {show.featured && (
             <span className="shrink-0 text-xs bg-yellow-400/20 text-yellow-400 px-2 py-0.5 rounded-full font-medium">
               Featured
@@ -221,7 +228,8 @@ function ShowRow({
           )}
         </div>
         <p className="text-xs text-zinc-400 mt-0.5">
-          {show.date} · {show.time} · {show.city || show.location}, {show.country}
+          {show.date} · {show.time} · {show.city || show.location},{" "}
+          {show.country}
         </p>
         {show.published && show.published_at && (
           <p className="text-xs text-green-500 mt-0.5">
@@ -231,13 +239,13 @@ function ShowRow({
       </div>
       <div className="flex items-center gap-2 shrink-0">
         <button
-          onClick={onTogglePublish}
-          title={show.published ? "Unpublish" : "Publish to website"}
           className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
             show.published
               ? "bg-green-500/15 text-green-400 hover:bg-red-500/15 hover:text-red-400"
               : "bg-zinc-800 text-zinc-400 hover:bg-green-500/15 hover:text-green-400"
           }`}
+          title={show.published ? "Unpublish" : "Publish to website"}
+          onClick={onTogglePublish}
         >
           {show.published ? (
             <>
@@ -250,14 +258,14 @@ function ShowRow({
           )}
         </button>
         <button
-          onClick={onEdit}
           className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-yellow-400 transition-colors"
+          onClick={onEdit}
         >
           <Pencil size={15} />
         </button>
         <button
-          onClick={onDelete}
           className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-red-400 transition-colors"
+          onClick={onDelete}
         >
           <Trash2 size={15} />
         </button>
@@ -296,14 +304,14 @@ function EditRow({
       <ShowForm form={form} onChange={setForm} />
       <div className="flex gap-2">
         <button
-          onClick={() => onSave(form)}
           className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+          onClick={() => onSave(form)}
         >
           <Check size={14} /> Save
         </button>
         <button
-          onClick={onCancel}
           className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+          onClick={onCancel}
         >
           <X size={14} /> Cancel
         </button>
@@ -324,10 +332,10 @@ function ShowForm({
       <div className="flex flex-col gap-1">
         <label className="text-xs text-zinc-400">{label}</label>
         <input
+          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none"
           type={type}
           value={(form[key] ?? "") as string}
           onChange={(e) => onChange({ ...form, [key]: e.target.value })}
-          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none"
         />
       </div>
     );
@@ -353,20 +361,20 @@ function ShowForm({
       <div className="flex flex-col gap-1">
         <label className="text-xs text-zinc-400">Description</label>
         <textarea
+          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none resize-y"
+          rows={3}
           value={form.description}
           onChange={(e) => onChange({ ...form, description: e.target.value })}
-          rows={3}
-          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none resize-y"
         />
       </div>
 
       {/* Featured toggle */}
       <label className="flex items-center gap-2 text-sm text-zinc-300 cursor-pointer">
         <input
-          type="checkbox"
           checked={form.featured}
-          onChange={(e) => onChange({ ...form, featured: e.target.checked })}
           className="accent-yellow-400 w-4 h-4"
+          type="checkbox"
+          onChange={(e) => onChange({ ...form, featured: e.target.checked })}
         />
         Mark as Featured Show
       </label>

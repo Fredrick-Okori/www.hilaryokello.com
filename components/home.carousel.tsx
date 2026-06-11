@@ -1,22 +1,22 @@
-"use client"
-import { useState, useEffect, useRef } from "react"
-import type React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { ChevronRight, ChevronLeft } from "lucide-react"
+"use client";
+import type React from "react";
 
-import { Button } from "@heroui/button"
-import { Skeleton } from "@heroui/react" // Import the Skeleton component
+import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ChevronRight, ChevronLeft } from "lucide-react";
+import { Button } from "@heroui/button";
+import { Skeleton } from "@heroui/react"; // Import the Skeleton component
 
 // Define the type for a single image item
 interface ImageItem {
-  url: string
-  caption: string
+  url: string;
+  caption: string;
 }
 
 interface ImageCarouselProps {
-  images?: ImageItem[]
-  botswana?: ImageItem[]
+  images?: ImageItem[];
+  botswana?: ImageItem[];
 }
 
 // Define the local data array
@@ -34,80 +34,86 @@ const defaultBotswana: ImageItem[] = [
   { url: "/Botswana/DSC_9072 2_15_11zon.webp", caption: "Botswana 15" },
   { url: "/Botswana/DSC_9082 2_16_11zon.webp", caption: "Botswana 16" },
   { url: "/Botswana/DSC_9098 2_18_11zon.webp", caption: "Botswana 18" },
-]
+];
 
 // The component can accept optional `images` or `botswana` props from parent
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
   // Prefer parent-provided `images`, then `botswana`, otherwise fall back to default
-  const imgs = images ?? botswana ?? defaultBotswana
-  const [slideIndex, setSlideIndex] = useState(0)
-  const carouselRef = useRef<HTMLDivElement>(null)
-  const slideWidthRef = useRef<number>(0)
-  const [itemsPerView, setItemsPerView] = useState(3) // Default for large screens
-  const [isLoading, setIsLoading] = useState(true) // State to track loading status
+  const imgs = images ?? botswana ?? defaultBotswana;
+  const [slideIndex, setSlideIndex] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const slideWidthRef = useRef<number>(0);
+  const [itemsPerView, setItemsPerView] = useState(3); // Default for large screens
+  const [isLoading, setIsLoading] = useState(true); // State to track loading status
 
   // Dynamically adjust items per view based on screen width
   useEffect(() => {
     const updateItemsPerView = () => {
-      const width = window.innerWidth
+      const width = window.innerWidth;
 
       if (width < 768) {
-        setItemsPerView(1)
+        setItemsPerView(1);
       } else if (width < 1024) {
-        setItemsPerView(2)
+        setItemsPerView(2);
       } else {
-        setItemsPerView(3)
+        setItemsPerView(3);
       }
-    }
+    };
 
-    updateItemsPerView()
-    window.addEventListener("resize", updateItemsPerView)
+    updateItemsPerView();
+    window.addEventListener("resize", updateItemsPerView);
 
-    return () => window.removeEventListener("resize", updateItemsPerView)
-  }, [])
+    return () => window.removeEventListener("resize", updateItemsPerView);
+  }, []);
 
   // Update carousel position on index or resize
   useEffect(() => {
     // Only calculate width and apply transform if images are loaded and refs exist
     if (carouselRef.current && carouselRef.current.children.length > 0) {
       // Calculate the width of a single *item* within the current view setting.
-      const containerWidth = carouselRef.current.offsetWidth
-      slideWidthRef.current = containerWidth / itemsPerView
+      const containerWidth = carouselRef.current.offsetWidth;
+
+      slideWidthRef.current = containerWidth / itemsPerView;
 
       // Calculate the correct transform based on the total width the slide needs to move
       // which is the `slideIndex` multiplied by the width of *one full slide group*.
-      const slideGroupWidth = slideWidthRef.current * itemsPerView
+      const slideGroupWidth = slideWidthRef.current * itemsPerView;
 
-      carouselRef.current.style.transform = `translateX(-${slideIndex * slideGroupWidth}px)`
+      carouselRef.current.style.transform = `translateX(-${slideIndex * slideGroupWidth}px)`;
     }
-  }, [slideIndex, itemsPerView])
+  }, [slideIndex, itemsPerView]);
 
   // Simulate image loading
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 1500) // 1.5 second delay to simulate loading
+      setIsLoading(false);
+    }, 1500); // 1.5 second delay to simulate loading
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
   // Calculate the total number of viewable slides (groups of images)
-  const totalSlides = Math.ceil(imgs.length / itemsPerView)
+  const totalSlides = Math.ceil(imgs.length / itemsPerView);
 
   const handleNext = () => {
-    setSlideIndex((prev) => (prev + 1) % totalSlides)
-  }
+    setSlideIndex((prev) => (prev + 1) % totalSlides);
+  };
 
   const handlePrev = () => {
-    setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides)
-  }
+    setSlideIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
 
   return (
     <>
       {/* Title and Button Section */}
       <div>
-        <h4 className="text-left text-4xl text-white font-bold">Gaborone - Botswana</h4>
-        <Button className="rounded-full text-white px-4 py-2 mt-4" variant="bordered">
+        <h4 className="text-left text-4xl text-white font-bold">
+          Gaborone - Botswana
+        </h4>
+        <Button
+          className="rounded-full text-white px-4 py-2 mt-4"
+          variant="bordered"
+        >
           <Link href="/gallery">More from Botswana</Link>
         </Button>
       </div>
@@ -115,22 +121,22 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
       {/* Navigation Buttons */}
       <div className="top-0 right-0 flex py-10 justify-end space-x-2 z-10">
         <Button
+          aria-label="Previous slide"
           className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+          disabled={isLoading || imgs.length <= itemsPerView}
           size="sm"
           variant="bordered"
           onClick={handlePrev}
-          disabled={isLoading || imgs.length <= itemsPerView}
-          aria-label="Previous slide"
         >
           <ChevronLeft />
         </Button>
         <Button
+          aria-label="Next slide"
           className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+          disabled={isLoading || imgs.length <= itemsPerView}
           size="sm"
           variant="bordered"
           onClick={handleNext}
-          disabled={isLoading || imgs.length <= itemsPerView}
-          aria-label="Next slide"
         >
           <ChevronRight />
         </Button>
@@ -166,16 +172,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
                         fill
                         alt={`Carousel Image ${index + 1}: ${image.caption}`}
                         className="rounded-2xl object-cover"
+                        priority={index < itemsPerView} // Prioritize first few images
+                        quality={70}
                         src={encodeURI(image.url || "/placeholder.svg")}
                         // sizes are crucial for Next/Image performance
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        priority={index < itemsPerView} // Prioritize first few images
-                        quality={70}
                       />
                       {/* Dark overlay to reduce image brightness */}
-                      <div className="absolute inset-0 bg-black opacity-40 rounded-2xl"></div>
-                      
-                    
+                      <div className="absolute inset-0 bg-black opacity-40 rounded-2xl" />
                     </>
                   )}
                 </div>
@@ -191,7 +195,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ImageCarousel
+export default ImageCarousel;

@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
 import { Loader2, Eye, EyeOff } from "lucide-react";
+
+import { supabase } from "@/lib/supabase";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -18,11 +19,15 @@ export default function AdminLoginPage() {
     setLoading(true);
     setError("");
 
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
 
     if (error) {
       setError("Invalid email or password.");
       setLoading(false);
+
       return;
     }
 
@@ -33,54 +38,61 @@ export default function AdminLoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-950 px-4">
       <div className="w-full max-w-sm space-y-8">
-
         {/* Logo / heading */}
         <div className="text-center space-y-2">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-black text-2xl font-black">
             H
           </div>
           <h1 className="text-2xl font-bold text-white">Admin Login</h1>
-          <p className="text-sm text-zinc-400">Dr. Hilary Okello — Website Manager</p>
+          <p className="text-sm text-zinc-400">
+            Dr. Hilary Okello — Website Manager
+          </p>
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="space-y-1.5">
-            <label className="text-xs font-medium text-zinc-400" htmlFor="email">
+            <label
+              className="text-xs font-medium text-zinc-400"
+              htmlFor="email"
+            >
               Email address
             </label>
             <input
-              id="email"
-              type="email"
-              autoComplete="email"
               required
+              autoComplete="email"
+              className="w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
+              id="email"
+              placeholder="admin@example.com"
+              type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="admin@example.com"
-              className="w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
             />
           </div>
 
           <div className="space-y-1.5">
-            <label className="text-xs font-medium text-zinc-400" htmlFor="password">
+            <label
+              className="text-xs font-medium text-zinc-400"
+              htmlFor="password"
+            >
               Password
             </label>
             <div className="relative">
               <input
-                id="password"
-                type={showPassword ? "text" : "password"}
-                autoComplete="current-password"
                 required
+                autoComplete="current-password"
+                className="w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 pr-11 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
+                id="password"
+                placeholder="••••••••"
+                type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="••••••••"
-                className="w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 pr-11 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
               />
               <button
+                aria-label="Toggle password visibility"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 transition-colors"
                 type="button"
                 onClick={() => setShowPassword((v) => !v)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 transition-colors"
-                aria-label="Toggle password visibility"
               >
                 {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
               </button>
@@ -94,11 +106,11 @@ export default function AdminLoginPage() {
           )}
 
           <button
-            type="submit"
-            disabled={loading}
             className="w-full flex items-center justify-center gap-2 rounded-xl bg-yellow-400 py-3 text-sm font-semibold text-black hover:bg-yellow-300 disabled:opacity-60 transition-colors"
+            disabled={loading}
+            type="submit"
           >
-            {loading && <Loader2 size={16} className="animate-spin" />}
+            {loading && <Loader2 className="animate-spin" size={16} />}
             {loading ? "Signing in…" : "Sign in"}
           </button>
         </form>

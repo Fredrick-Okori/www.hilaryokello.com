@@ -6,22 +6,20 @@ export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-black px-4">
       <div className="max-w-4xl w-full space-y-6 p-8 bg-black rounded-xl shadow-lg text-center">
-        <h1 className="text-5xl font-bold text-white">
-          Oops! Page Not Found
-        </h1>
+        <h1 className="text-5xl font-bold text-white">Oops! Page Not Found</h1>
 
         <p className="text-md text-gray-200">
-          It looks like you&apos;ve stumbled into a dead page that
-          doesn&apos;t exist. Don&apos;t frown, though! You can still have a
-          laugh and return to the homepage.
+          It looks like you&apos;ve stumbled into a dead page that doesn&apos;t
+          exist. Don&apos;t frown, though! You can still have a laugh and return
+          to the homepage.
         </p>
 
         <div className="flex justify-center mt-4">
           <Link href="/">
             <Button
               className="text-sm font-medium text-white bg-black hover:bg-white hover:text-black flex items-center justify-center"
-              variant="bordered"
               size="lg"
+              variant="bordered"
             >
               <svg
                 className="mr-1 h-4 w-4"

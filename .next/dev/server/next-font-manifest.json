@@ -1,6 +1,25 @@
 {
-  "app": {},
-  "appUsingSizeAdjust": false,
+  "app": {
+    "[project]/www.hilaryokello.com/app/(main)/biography/page": [
+      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/(main)/booking/page": [
+      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/(main)/page": [
+      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/(main)/shows/[slug]/page": [
+      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/(main)/watch/page": [
+      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/_not-found/page": [
+      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
   "pages": {},
   "pagesUsingSizeAdjust": false
 }

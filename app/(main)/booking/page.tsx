@@ -1,7 +1,6 @@
-import BookingPage from "./parts/contact";
-
 import { Metadata } from "next";
 
+import BookingPage from "./parts/contact";
 
 export const metadata: Metadata = {
   title: "Booking | Dr. Hilary Okello - Uganda's Top Stand-Up Comedian",
@@ -11,9 +10,9 @@ export const metadata: Metadata = {
     "Learn more about Dr. Hilary Okello, Uganda's top comedian known for his sharp wit, medical background, and unique storytelling style. Discover his journey from   comedy spotlight across Africa.",
 };
 export default function Booking() {
-  return(
+  return (
     <>
-    <BookingPage/>
+      <BookingPage />
     </>
-  )
+  );
 }

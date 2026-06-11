@@ -124,12 +124,12 @@ export function VideoPage({
                       alt={`Thumbnail for ${video.title}`}
                       className="object-cover w-full h-full"
                       height={240}
-                      width={400}
                       layout="responsive"
                       src={
                         getYouTubeThumbnail(video.youtubeId) ||
                         "/placeholder.svg"
                       }
+                      width={400}
                     />
                     <div className="absolute text-white bottom-1 right-1 bg-black/80 text-white text-xs px-1.5 py-0.5 rounded">
                       {video.duration}

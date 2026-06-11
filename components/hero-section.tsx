@@ -25,16 +25,19 @@ export function HeroSection() {
   )}?text=${encodedMessage}`;
 
   return (
-    <section className="w-full h-screen overflow-hidden relative" aria-label="Hero section">
+    <section
+      aria-label="Hero section"
+      className="w-full h-screen overflow-hidden relative"
+    >
       {/* Background image with priority for LCP optimization */}
       <div
+        aria-hidden="true"
         className="absolute inset-0"
         style={{
           filter: isDark
             ? "brightness(0.85) saturate(1.2)"
             : "brightness(0.85) saturate(1.1)",
         }}
-        aria-hidden="true"
       >
         <Image
           fill
@@ -48,8 +51,8 @@ export function HeroSection() {
       </div>
 
       {/* CSS-only animated blobs for better performance */}
-      <div className="blob blob-1" aria-hidden="true" />
-      <div className="blob blob-2" aria-hidden="true" />
+      <div aria-hidden="true" className="blob blob-1" />
+      <div aria-hidden="true" className="blob blob-2" />
 
       {/* Content */}
       <div className="relative z-10 ml-12 flex flex-col items-start justify-center h-full px-4 md:px-8 text-left max-w-4xl mx-auto">
@@ -59,7 +62,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-        Dr. Hilary Okello 
+          Dr. Hilary Okello
         </motion.h1>
         <motion.h2
           animate={{ opacity: 1, y: 0 }}
@@ -67,7 +70,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-    Jokes From Far Away 2026 World Tour
+          Jokes From Far Away 2026 World Tour
         </motion.h2>
         <motion.h2
           animate={{ opacity: 1, y: 0 }}
@@ -75,7 +78,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-       Africa&apos;s Doctor of Comedy 
+          Africa&apos;s Doctor of Comedy
         </motion.h2>
         <motion.p
           animate={{ opacity: 1, y: 0 }}
@@ -83,8 +86,10 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-Welcome!
-I’m glad you’re here. This is where the jokes travel and the laughter meets real life. Scroll down to see upcoming shows near you - and don’t forget to register your CITY below to be part of the new comedy tour: JOKES FROM FAR AWAY.
+          Welcome! I’m glad you’re here. This is where the jokes travel and the
+          laughter meets real life. Scroll down to see upcoming shows near you -
+          and don’t forget to register your CITY below to be part of the new
+          comedy tour: JOKES FROM FAR AWAY.
         </motion.p>
         <motion.div
           animate={{ opacity: 1, y: 0 }}
@@ -105,4 +110,3 @@ I’m glad you’re here. This is where the jokes travel and the laughter meets 
     </section>
   );
 }
-

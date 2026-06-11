@@ -1,7 +1,8 @@
 // app/comedian-bio/page.tsx (Server Component)
 
-import ComedianBio from "./parts/biography";
 import { Metadata } from "next";
+
+import ComedianBio from "./parts/biography";
 
 export const metadata: Metadata = {
   title: "Biography | Dr. Hilary Okello - Uganda's Top Stand-Up Comedian",

@@ -1,18 +1,19 @@
 import "@/styles/globals.css";
 import React from "react";
-import { Viga } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
+import { Metadata } from "next";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
-const viga = Viga({
+// Fallback to the bundled font currently wired into Tailwind.
+// (Tailwind is configured to use --font-plus-jakarta-sans for `font-sans`.)
+const viga = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
-  preload: true,
-  variable: "--font-viga",
-  weight: "400",
+  variable: "--font-plus-jakarta-sans",
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -46,12 +47,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en" className={viga.variable}>
+    <html suppressHydrationWarning className={viga.variable} lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="format-detection" content="telephone=no" />
+        <meta
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+          name="viewport"
+        />
+        <meta content="#000000" name="theme-color" />
+        <meta content="telephone=no" name="format-detection" />
       </head>
       <Script
         async
@@ -77,7 +81,11 @@ export default function RootLayout({
           strategy="afterInteractive"
           type="module"
         />
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
           {children}
         </ThemeProvider>
       </body>

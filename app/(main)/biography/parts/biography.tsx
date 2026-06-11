@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { Button } from "@heroui/button";
-import { Mic, Instagram, Twitter, Youtube } from "lucide-react";
-
+import { Mic, Instagram, Youtube } from "lucide-react";
 import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
   description:
     "Learn more about Dr. Hilary Okello, Uganda's top comedian known for his sharp wit, medical background, and unique storytelling style. Discover his journey from Gulu to the comedy spotlight across Africa.",
 };
-
 
 export default function ComedianBio() {
   return (

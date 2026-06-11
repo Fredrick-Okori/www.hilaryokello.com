@@ -1,10 +1,10 @@
 "use client";
 
+import type { User } from "@supabase/supabase-js";
+
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
-import type { User } from "@supabase/supabase-js";
 import {
   LayoutDashboard,
   CalendarDays,
@@ -19,16 +19,23 @@ import {
   Menu,
 } from "lucide-react";
 
+import { supabase } from "@/lib/supabase";
+
 const navItems = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
   { label: "Shows", href: "/admin/shows", icon: CalendarDays },
+  { label: "Waitinglist", href: "/admin/waitinglist", icon: BookOpen },
   { label: "Gallery", href: "/admin/gallery", icon: Images },
   { label: "Biography", href: "/admin/biography", icon: BookOpen },
   { label: "Booking", href: "/admin/booking", icon: Phone },
   { label: "Videos", href: "/admin/videos", icon: Video },
 ];
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default function AdminLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const pathname = usePathname();
   const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
@@ -70,9 +77,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </span>
           )}
           <button
-            onClick={() => setCollapsed((c) => !c)}
-            className="hidden md:flex items-center justify-center w-8 h-8 rounded-md hover:bg-zinc-800 transition-colors"
             aria-label="Toggle sidebar"
+            className="hidden md:flex items-center justify-center w-8 h-8 rounded-md hover:bg-zinc-800 transition-colors"
+            onClick={() => setCollapsed((c) => !c)}
           >
             {collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
           </button>
@@ -82,18 +89,20 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <nav className="flex-1 overflow-y-auto py-4 space-y-1 px-2">
           {navItems.map(({ label, href, icon: Icon }) => {
             const active = pathname === href;
+
             return (
               <Link
                 key={href}
-                href={href}
                 className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors
-                  ${active
-                    ? "bg-yellow-400 text-black"
-                    : "text-zinc-400 hover:bg-zinc-800 hover:text-white"
+                  ${
+                    active
+                      ? "bg-yellow-400 text-black"
+                      : "text-zinc-400 hover:bg-zinc-800 hover:text-white"
                   }`}
+                href={href}
                 onClick={() => setMobileOpen(false)}
               >
-                <Icon size={18} className="shrink-0" />
+                <Icon className="shrink-0" size={18} />
                 {!collapsed && <span>{label}</span>}
               </Link>
             );
@@ -103,18 +112,18 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         {/* Footer actions */}
         <div className="border-t border-zinc-800 px-2 py-4 space-y-1">
           <Link
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"
             href="/"
             target="_blank"
-            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"
           >
-            <ExternalLink size={18} className="shrink-0" />
+            <ExternalLink className="shrink-0" size={18} />
             {!collapsed && <span>View Site</span>}
           </Link>
           <button
-            onClick={handleLogout}
             className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-400 hover:bg-zinc-800 hover:text-red-400 transition-colors"
+            onClick={handleLogout}
           >
-            <LogOut size={18} className="shrink-0" />
+            <LogOut className="shrink-0" size={18} />
             {!collapsed && <span>Log out</span>}
           </button>
         </div>
@@ -125,9 +134,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         {/* Top bar */}
         <header className="flex h-16 items-center gap-4 border-b border-zinc-800 bg-zinc-900 px-4 md:px-6">
           <button
+            aria-label="Open menu"
             className="md:hidden flex items-center justify-center w-9 h-9 rounded-md hover:bg-zinc-800"
             onClick={() => setMobileOpen(true)}
-            aria-label="Open menu"
           >
             <Menu size={20} />
           </button>

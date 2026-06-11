@@ -8,9 +8,12 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      'chat-widget': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+      "chat-widget": React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLElement>,
+        HTMLElement
+      > & {
         env?: string;
-        'project-id'?: string;
+        "project-id"?: string;
       };
     }
   }

@@ -24,9 +24,8 @@ const galleries: Record<string, string[]> = {
     "/Rwanda/SHEMA INNOCENT 0780 329 329_160_16_11zon.jpg",
     "/Rwanda/SHEMA INNOCENT 0780 329 329_161_17_11zon.jpg",
     "/Rwanda/rwanda_1.jpg",
-    
   ],
-    "State of Nation | Harare - Zimbabwe ": [
+  "State of Nation | Harare - Zimbabwe ": [
     "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif",
     "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif",
     "/harare/04cbaeee377f02f0494c389c69c3d98e.avif",
@@ -35,7 +34,6 @@ const galleries: Record<string, string[]> = {
     "/harare/12d317ce22156a27704561fc77a1f764.avif",
     "/harare/a1c38ae750c359bee856d474a125f227.avif",
     "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif",
-
   ],
   Botswana: [
     "/Botswana/DSC_8883 2_1_11zon.webp",
@@ -61,7 +59,6 @@ const galleries: Record<string, string[]> = {
   ],
 
   "Kampala - Uganda": [
-
     "/gallerypage/DSC_0854.webp",
     "/gallerypage/DSC_0913.webp",
     "/gallerypage/DSC_1041.webp",
@@ -86,10 +83,7 @@ const galleries: Record<string, string[]> = {
     "/gallerypage/DSC_9291.webp",
     "/gallerypage/DSC_9304.webp",
     "/gallerypage/DSC_9316.webp",
-
-
   ],
-
 };
 
 // Flatten galleries for modal navigation
@@ -202,12 +196,12 @@ export default function Gallery() {
 
   return (
     <div className="px-6 py-20  mx-auto bg-black min-h-screen">
-      
-
       {/* Render each gallery group with a heading */}
       {groupEntries.map(([title, imgs], gIdx) => (
         <section key={title} className="mb-12">
-          <h2 className="text-2xl text-left font-bold text-white py-10">{title}</h2>
+          <h2 className="text-2xl text-left font-bold text-white py-10">
+            {title}
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {imgs.map((src, idx) => {
               const globalIdx = groupStarts[gIdx] + idx;
@@ -285,7 +279,6 @@ export default function Gallery() {
                 priority
                 alt={`Modal image ${selectedIndex + 1}`}
                 className="object-contain  rounded-lg mx-auto"
-               
                 quality={70}
                 src={encodeURI(imagesFlat[selectedIndex])}
               />

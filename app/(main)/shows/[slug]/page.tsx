@@ -2,7 +2,16 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
-import { ChevronLeft, ChevronRight, MapPin, Calendar, Clock, Ticket } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  MapPin,
+  Calendar,
+  Clock,
+  Ticket,
+} from "lucide-react";
+
+import WaitingListForm from "./waiting-list-form";
 
 import { SHOWS, getShowBySlug, DEFAULT_CONTACT } from "@/lib/shows";
 
@@ -19,6 +28,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const show = getShowBySlug(slug);
+
   if (!show) return { title: "Show Not Found" };
 
   const title = `${show.title} — Dr. Hilary Okello`;
@@ -50,6 +60,7 @@ export default async function ShowPage({
 }) {
   const { slug } = await params;
   const show = getShowBySlug(slug);
+
   if (!show) notFound();
 
   const contact = show.contactNumber ?? DEFAULT_CONTACT;
@@ -69,11 +80,10 @@ export default async function ShowPage({
   return (
     <main className="text-white min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 pb-14">
-
         {/* Back link */}
         <Link
-          href="/#shows"
           className="inline-flex items-center gap-1.5 text-white/60 hover:text-white transition-colors text-sm font-medium mb-8"
+          href="/#shows"
         >
           <ChevronLeft className="h-4 w-4" />
           All Shows
@@ -104,7 +114,6 @@ export default async function ShowPage({
 
         {/* Side-by-side: image left, details right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-
           {/* Left — image */}
           <div className="w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
@@ -121,7 +130,6 @@ export default async function ShowPage({
 
           {/* Right — details + description + CTAs */}
           <div className="flex flex-col gap-6">
-
             {/* Event details card */}
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col gap-5">
               <div className="flex items-start gap-4">
@@ -156,15 +164,34 @@ export default async function ShowPage({
                   <Ticket className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
                   <div>
                     <p className="text-white/50 text-xs mb-1">Tickets</p>
-                    <p className="text-white font-semibold">{show.ticketPrice}</p>
+                    <p className="text-white font-semibold">
+                      {show.ticketPrice}
+                    </p>
                   </div>
                 </div>
               )}
             </div>
 
+            {/* Waiting list form (Zimbabwe show only) */}
+            {show.country === "Zimbabwe" && (
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 space-y-4">
+                <h2 className="text-lg font-bold text-white">
+                  Join WaitingList
+                </h2>
+                <p className="text-white/70 text-sm">
+                  Drop your details and we’ll notify you when tickets are
+                  available.
+                </p>
+
+                <WaitingListForm showSlug={slug} showTitle={show.title} />
+              </div>
+            )}
+
             {/* Description */}
             <div>
-              <h2 className="text-lg font-bold text-white mb-2">About This Show</h2>
+              <h2 className="text-lg font-bold text-white mb-2">
+                About This Show
+              </h2>
               <p className="text-white/70 leading-relaxed text-base">
                 {show.description}
               </p>
@@ -172,22 +199,30 @@ export default async function ShowPage({
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-              {hasTicketLink ? (
-                <a
-                  href={show.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {show.country === "Zimbabwe" ? (
+                <Link
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
+                  href={`/shows/${slug}`}
+                >
+                  Join WaitingList
+                  <ChevronRight className="h-5 w-5" />
+                </Link>
+              ) : hasTicketLink ? (
+                <a
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
+                  href={show.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   Get Tickets Now
                   <ChevronRight className="h-5 w-5" />
                 </a>
               ) : (
                 <a
-                  href={waLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
+                  href={waLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   Book via WhatsApp
                   <ChevronRight className="h-5 w-5" />
@@ -195,8 +230,8 @@ export default async function ShowPage({
               )}
 
               <Link
-                href="/#shows"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 hover:bg-white/10 text-white font-medium text-base rounded-full transition-all"
+                href="/#shows"
               >
                 View All Shows
               </Link>
@@ -209,8 +244,8 @@ export default async function ShowPage({
           <nav className="mt-14 pt-8 border-t border-white/10 flex justify-between gap-4">
             {prevShow ? (
               <Link
-                href={`/shows/${prevShow.slug}`}
                 className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm max-w-[45%]"
+                href={`/shows/${prevShow.slug}`}
               >
                 <ChevronLeft className="h-4 w-4 shrink-0" />
                 <span className="truncate">{prevShow.title}</span>
@@ -220,8 +255,8 @@ export default async function ShowPage({
             )}
             {nextShow ? (
               <Link
-                href={`/shows/${nextShow.slug}`}
                 className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm max-w-[45%] text-right"
+                href={`/shows/${nextShow.slug}`}
               >
                 <span className="truncate">{nextShow.title}</span>
                 <ChevronRight className="h-4 w-4 shrink-0" />

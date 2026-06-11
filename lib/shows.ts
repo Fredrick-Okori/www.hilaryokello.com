@@ -42,7 +42,8 @@ const RAW: Omit<Show, "slug">[] = [
     location: "Numax Cinemas, Victoria Mall",
     city: "Saturday | Entebbe",
     country: "Uganda",
-    ticketPrice: "Early Bird: 30K | VIP Early Bird: 50K | Gate: 50K | Gate VIP: 60K",
+    ticketPrice:
+      "Early Bird: 30K | VIP Early Bird: 50K | Gate: 50K | Gate VIP: 60K",
     image: "/tour/website_poster.png",
     link: "https://kayetickets.com/events/a-night-of-laughter-ft-dr-hilary/checkout",
     description:
@@ -50,6 +51,25 @@ const RAW: Omit<Show, "slug">[] = [
     featured: true,
     badge: "Tickets Available",
     contactNumber: "+256784704143",
+  },
+  {
+    id: 22,
+    title: "Dr. Hilary Okello Live in Zimbabwe",
+    dateLabel: "12th July, 2026",
+    date: "2026-07-12T19:30:00",
+    time: "7:30 PM",
+    location: "Harare, Zimbabwe",
+    city: "Harare",
+    country: "Zimbabwe",
+    ticketPrice: "",
+    image: "/tour_countries.jpg",
+
+    link: "#",
+    description:
+      "Join the waiting list to be the first to hear about tickets, show updates, and venue confirmation for Dr. Hilary Okello’s live show in Harare, Zimbabwe.",
+    featured: false,
+    badge: "Join Waiting List",
+    contactNumber: "+263000000000",
   },
 ];
 
