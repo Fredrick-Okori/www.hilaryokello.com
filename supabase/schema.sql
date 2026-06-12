@@ -1,26 +1,3 @@
--- ============================================================
--- Hilary Okello Website — Supabase Schema
--- Run this in: Supabase Dashboard → SQL Editor → New query
--- Safe to re-run: uses IF NOT EXISTS and drops policies first.
--- ============================================================
---
--- ADMIN USERS (Authentication)
--- ─────────────────────────────────────────────────────────────
--- Supabase handles auth via its built-in auth.users table.
--- No extra SQL needed. To create an admin account:
---
---   Option A (Recommended — invite):
---     Dashboard → Authentication → Users → Invite user
---     Enter the admin email, Supabase sends a magic link.
---
---   Option B (Create directly):
---     Dashboard → Authentication → Users → Add user
---     Fill in email + password → Create user
---
--- The RLS policies below allow only `authenticated` users
--- (i.e. logged-in admins) to INSERT / UPDATE / DELETE.
--- Public visitors can only SELECT (read) data.
--- ─────────────────────────────────────────────────────────────
 
 
 -- ─────────────────────────────────────────────────────────────
@@ -229,8 +206,11 @@ create table if not exists public.waiting_list_entries (
   username   text not null,
   phone      text not null,
   email      text not null,
+  tickets    integer not null default 1,
   created_at timestamptz not null default now()
 );
+
+alter table public.waiting_list_entries add column if not exists tickets integer not null default 1;
 
 alter table public.waiting_list_entries enable row level security;
 

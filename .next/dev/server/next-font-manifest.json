@@ -1,25 +1,28 @@
 {
   "app": {
-    "[project]/www.hilaryokello.com/app/(main)/biography/page": [
-      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
-    ],
-    "[project]/www.hilaryokello.com/app/(main)/booking/page": [
-      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    "[project]/www.hilaryokello.com/app/(main)/gallery/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
     ],
     "[project]/www.hilaryokello.com/app/(main)/page": [
-      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
     ],
     "[project]/www.hilaryokello.com/app/(main)/shows/[slug]/page": [
-      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
     ],
     "[project]/www.hilaryokello.com/app/(main)/watch/page": [
-      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
     ],
-    "[project]/www.hilaryokello.com/app/_not-found/page": [
-      "static/media/fba5a26ea33df6a3-s.p.1bbdebe6.woff2"
+    "[project]/www.hilaryokello.com/app/admin/(protected)/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/admin/(protected)/shows/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/admin/(protected)/waitinglist/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
     ]
   },
-  "appUsingSizeAdjust": true,
+  "appUsingSizeAdjust": false,
   "pages": {},
   "pagesUsingSizeAdjust": false
 }

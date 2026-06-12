@@ -1,18 +1,16 @@
 import "@/styles/globals.css";
 import React from "react";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Google_Sans } from "next/font/google";
 import Script from "next/script";
 import { Metadata } from "next";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
 
-// Fallback to the bundled font currently wired into Tailwind.
-// (Tailwind is configured to use --font-plus-jakarta-sans for `font-sans`.)
-const viga = Plus_Jakarta_Sans({
+const googleSans = Google_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-plus-jakarta-sans",
+  variable: "--font-google-sans",
   weight: ["400", "500", "700"],
 });
 
@@ -47,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning className={viga.variable} lang="en">
+    <html suppressHydrationWarning className={googleSans.variable} lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta

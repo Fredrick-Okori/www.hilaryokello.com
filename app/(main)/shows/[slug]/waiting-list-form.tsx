@@ -14,6 +14,7 @@ export default function WaitingListForm({
   const [username, setUsername] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [tickets, setTickets] = useState(1);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
 
@@ -28,6 +29,7 @@ export default function WaitingListForm({
       username: username.trim(),
       phone: phone.trim(),
       email: email.trim(),
+      tickets,
     };
 
     const { error } = await supabase
@@ -44,6 +46,7 @@ export default function WaitingListForm({
     setUsername("");
     setPhone("");
     setEmail("");
+    setTickets(1);
     setMessage("Thanks! You’ve been added to the waiting list.");
     setSubmitting(false);
   }
@@ -60,7 +63,7 @@ export default function WaitingListForm({
           required
           className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
           name="username"
-          placeholder="e.g. hilaryfan123"
+          placeholder="e.g. Paul Kori"
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -69,12 +72,26 @@ export default function WaitingListForm({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label className="block">
+          <span className="text-xs text-white/60">Number of tickets</span>
+          <input
+            required
+            className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
+            max={20}
+            min={1}
+            name="tickets"
+            type="number"
+            value={tickets}
+            onChange={(e) => setTickets(Number(e.target.value))}
+          />
+        </label>
+
+        <label className="block">
           <span className="text-xs text-white/60">Phone number</span>
           <input
             required
             className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
             name="phone"
-            placeholder="e.g. +2637..."
+            placeholder="e.g. +263712345678"
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -87,7 +104,7 @@ export default function WaitingListForm({
             required
             className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
             name="email"
-            placeholder="you@example.com"
+            placeholder="paul@gmail.com"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

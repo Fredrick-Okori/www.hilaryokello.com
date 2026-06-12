@@ -53,7 +53,7 @@ export default function AdminLayout({
   }
 
   return (
-    <div className="flex min-h-screen bg-zinc-950 text-white">
+    <div className="flex h-screen overflow-hidden bg-zinc-950 text-white">
       {/* Mobile overlay */}
       {mobileOpen && (
         <div
@@ -130,7 +130,7 @@ export default function AdminLayout({
       </aside>
 
       {/* Main content */}
-      <div className="flex flex-1 flex-col min-w-0">
+      <div className="flex flex-1 flex-col min-w-0 overflow-hidden">
         {/* Top bar */}
         <header className="flex h-16 items-center gap-4 border-b border-zinc-800 bg-zinc-900 px-4 md:px-6">
           <button

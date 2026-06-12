@@ -62,8 +62,7 @@ const RAW: Omit<Show, "slug">[] = [
     city: "Harare",
     country: "Zimbabwe",
     ticketPrice: "",
-    image: "/tour_countries.jpg",
-
+    image: "/tour/harare_zimbabwe.jpg",
     link: "#",
     description:
       "Join the waiting list to be the first to hear about tickets, show updates, and venue confirmation for Dr. Hilary Okello’s live show in Harare, Zimbabwe.",

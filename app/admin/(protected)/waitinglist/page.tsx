@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Trash2, RotateCcw } from "lucide-react";
+import { Trash2, RotateCcw, FileDown } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
 
@@ -12,6 +12,7 @@ type WaitingListEntry = {
   username: string;
   phone: string;
   email: string;
+  tickets: number;
   created_at: string;
 };
 
@@ -44,6 +45,33 @@ export default function AdminWaitinglistPage() {
   useEffect(() => {
     fetchEntries();
   }, []);
+
+  async function handleExportPdf() {
+    const { default: jsPDF } = await import("jspdf");
+    const { default: autoTable } = await import("jspdf-autotable");
+
+    const doc = new jsPDF({ orientation: "landscape" });
+
+    doc.setFontSize(14);
+    doc.text("Waiting List — Dr. Hilary Okello", 14, 16);
+
+    autoTable(doc, {
+      startY: 22,
+      head: [["Show", "Username", "Phone", "Email", "Tickets", "Date"]],
+      body: entries.map((e) => [
+        e.show_title,
+        e.username,
+        e.phone,
+        e.email,
+        String(e.tickets ?? 1),
+        new Date(e.created_at).toLocaleString(),
+      ]),
+      styles: { fontSize: 9 },
+      headStyles: { fillColor: [234, 179, 8] },
+    });
+
+    doc.save("waiting-list.pdf");
+  }
 
   async function handleDelete(id: string) {
     const ok = window.confirm("Delete this waiting list entry?");
@@ -80,13 +108,22 @@ export default function AdminWaitinglistPage() {
             Users who joined the show waiting list
           </p>
         </div>
-        <button
-          className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm font-semibold text-zinc-200 hover:bg-zinc-800 transition-colors"
-          disabled={loading}
-          onClick={fetchEntries}
-        >
-          <RotateCcw size={16} /> Refresh
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-2 text-sm font-semibold text-zinc-200 hover:bg-zinc-800 transition-colors"
+            disabled={loading}
+            onClick={fetchEntries}
+          >
+            <RotateCcw size={16} /> Refresh
+          </button>
+          <button
+            className="flex items-center gap-2 rounded-lg border border-zinc-700 bg-yellow-500 hover:bg-yellow-400 px-4 py-2 text-sm font-semibold text-black transition-colors disabled:opacity-50"
+            disabled={loading || entries.length === 0}
+            onClick={handleExportPdf}
+          >
+            <FileDown size={16} /> Export PDF
+          </button>
+        </div>
       </div>
 
       {loading ? (
@@ -107,7 +144,8 @@ export default function AdminWaitinglistPage() {
                 <div className="grid grid-cols-12 gap-0 border-b border-zinc-800 bg-zinc-950 px-4 py-3 text-xs font-semibold text-zinc-400">
                   <div className="col-span-3">Username</div>
                   <div className="col-span-3">Phone</div>
-                  <div className="col-span-4">Email</div>
+                  <div className="col-span-3">Email</div>
+                  <div className="col-span-1 text-center">Tickets</div>
                   <div className="col-span-2 text-right">Actions</div>
                 </div>
 
@@ -126,7 +164,10 @@ export default function AdminWaitinglistPage() {
                         </div>
                       </div>
                       <div className="col-span-3 text-zinc-200">{e.phone}</div>
-                      <div className="col-span-4 text-zinc-200">{e.email}</div>
+                      <div className="col-span-3 text-zinc-200">{e.email}</div>
+                      <div className="col-span-1 text-center text-zinc-200">
+                        {e.tickets ?? 1}
+                      </div>
                       <div className="col-span-2 text-right">
                         <button
                           className="inline-flex items-center justify-center rounded-lg p-2 hover:bg-zinc-800 text-zinc-300 hover:text-red-400 transition-colors"
