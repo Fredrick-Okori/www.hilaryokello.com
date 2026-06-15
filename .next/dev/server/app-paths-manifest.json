@@ -1,9 +1,4 @@
 {
-  "/(main)/gallery/page": "app/(main)/gallery/page.js",
   "/(main)/page": "app/(main)/page.js",
-  "/(main)/shows/[slug]/page": "app/(main)/shows/[slug]/page.js",
-  "/(main)/watch/page": "app/(main)/watch/page.js",
-  "/admin/(protected)/page": "app/admin/(protected)/page.js",
-  "/admin/(protected)/shows/page": "app/admin/(protected)/shows/page.js",
-  "/admin/(protected)/waitinglist/page": "app/admin/(protected)/waitinglist/page.js"
+  "/(main)/shows/[slug]/page": "app/(main)/shows/[slug]/page.js"
 }

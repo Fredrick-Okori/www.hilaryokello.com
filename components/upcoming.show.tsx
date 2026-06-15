@@ -79,8 +79,7 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
     `Hello, I'm interested in tickets for ${show.title} in ${show.city}, ${show.country}`,
   )}`;
 
-  const borderClass =
-    show.badge && show.id !== 16 ? "border-red-600" : "border-white/10";
+  const borderClass = show.featured ? "border-red-600" : "border-white/10";
 
   return (
     <Link

@@ -34,6 +34,24 @@ function makeSlug(city: string, country: string, id: number): string {
 
 const RAW: Omit<Show, "slug">[] = [
   {
+    id: 23,
+    title: "New Jokes Only by Dr. Hilary Okello",
+    dateLabel: "25th June, 2026",
+    date: "2026-06-25T19:30:00",
+    time: "7:30 PM",
+    location: "Infinity Cafe, Capital Shoppers Ntinda",
+    city: "Ntinda",
+    country: "Uganda",
+    ticketPrice: "30K",
+    image: "/tour/new_jokes.avif",
+    link: "https://karitickets.com/event/NEW_JOKES_ONLY%3A_DR._HILARY_OKELLO",
+    description:
+      "Dr. Hilary Okello takes the stage at Infinity Cafe, Capital Shoppers Ntinda for an unforgettable night of brand new material. This is New Jokes Only — a fresh set, no repeats. Grab your tickets early and come ready to laugh.",
+    featured: true,
+    badge: "Tickets Available",
+    contactNumber: "+256784704143",
+  },
+  {
     id: 21,
     title: "Dr. Hilary Okello presents Night of Laughters",
     dateLabel: "July 4, 2026",
@@ -48,7 +66,7 @@ const RAW: Omit<Show, "slug">[] = [
     link: "https://kayetickets.com/events/a-night-of-laughter-ft-dr-hilary/checkout",
     description:
       "Dr. Hilary Okello brings the Night of Laughters to Numax Cinemas at Victoria Mall, Entebbe! Featuring Cotilda, Dough Mutai (Kenya), and other comedians. Two shows on the night — 7:30 PM and 9:30 PM. Select your preferred time when booking tickets.",
-    featured: true,
+    featured: false,
     badge: "Tickets Available",
     contactNumber: "+256784704143",
   },
