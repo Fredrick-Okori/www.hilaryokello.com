@@ -202,44 +202,31 @@ export default async function ShowPage({
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-              {show.country === "Zimbabwe" ? (
-                <Link
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
-                  href={`/shows/${slug}`}
-                >
-                  Join WaitingList
-                  <ChevronRight className="h-5 w-5" />
-                </Link>
-              ) : hasTicketLink ? (
-                <a
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
-                  href={show.link}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Get Tickets Now
-                  <ChevronRight className="h-5 w-5" />
-                </a>
-              ) : (
-                <a
-                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
-                  href={waLink}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Book via WhatsApp
-                  <ChevronRight className="h-5 w-5" />
-                </a>
-              )}
-
-              <Link
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 hover:bg-white/10 text-white font-medium text-base rounded-full transition-all"
-                href="/#shows"
-              >
-                View All Shows
-              </Link>
-            </div>
+            {!show.country.includes("Zimbabwe") && (
+              <div className="flex flex-col sm:flex-row gap-4 mt-auto">
+                {hasTicketLink ? (
+                  <a
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
+                    href={show.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Get Tickets Now
+                    <ChevronRight className="h-5 w-5" />
+                  </a>
+                ) : (
+                  <a
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
+                    href={waLink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Book via WhatsApp
+                    <ChevronRight className="h-5 w-5" />
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
