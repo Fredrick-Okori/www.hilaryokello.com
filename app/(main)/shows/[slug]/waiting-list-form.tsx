@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { CheckCircle } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
 
@@ -16,39 +17,45 @@ export default function WaitingListForm({
   const [email, setEmail] = useState("");
   const [tickets, setTickets] = useState(1);
   const [submitting, setSubmitting] = useState(false);
-  const [message, setMessage] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
     setSubmitting(true);
-    setMessage(null);
+    setError(null);
 
-    const payload = {
+    const { error } = await supabase.from("waiting_list_entries").insert({
       show_slug: showSlug,
       show_title: showTitle,
       username: username.trim(),
       phone: phone.trim(),
       email: email.trim(),
       tickets,
-    };
-
-    const { error } = await supabase
-      .from("waiting_list_entries")
-      .insert(payload);
+    });
 
     if (error) {
-      setMessage(error.message);
+      setError(error.message);
       setSubmitting(false);
 
       return;
     }
 
-    setUsername("");
-    setPhone("");
-    setEmail("");
-    setTickets(1);
-    setMessage("Thanks! You’ve been added to the waiting list.");
+    setSubmitted(true);
     setSubmitting(false);
+  }
+
+  if (submitted) {
+    return (
+      <div className="flex flex-col items-center gap-3 py-6 text-center">
+        <CheckCircle className="h-10 w-10 text-yellow-400" />
+        <p className="text-white font-bold text-lg">You&apos;re on the list!</p>
+        <p className="text-white/60 text-sm">
+          We&apos;ll notify you as soon as tickets are available for{" "}
+          <span className="text-white font-medium">{showTitle}</span>.
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -120,13 +127,9 @@ export default function WaitingListForm({
         {submitting ? "Submitting…" : "Submit"}
       </button>
 
-      {message && (
-        <p
-          aria-live="polite"
-          className={`text-sm ${message.startsWith("Thanks") ? "text-green-400" : "text-red-400"}`}
-          role="status"
-        >
-          {message}
+      {error && (
+        <p aria-live="polite" className="text-sm text-red-400" role="status">
+          {error}
         </p>
       )}
     </form>

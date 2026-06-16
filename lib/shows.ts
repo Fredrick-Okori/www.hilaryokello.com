@@ -40,7 +40,7 @@ const RAW: Omit<Show, "slug">[] = [
     date: "2026-06-25T19:30:00",
     time: "7:30 PM",
     location: "Infinity Cafe, Capital Shoppers Ntinda",
-    city: "Ntinda",
+    city: "Kampala",
     country: "Uganda",
     ticketPrice: "30K",
     image: "/tour/new_jokes.avif",
@@ -86,7 +86,7 @@ const RAW: Omit<Show, "slug">[] = [
       "Join the waiting list to be the first to hear about tickets, show updates, and venue confirmation for Dr. Hilary Okello’s live show in Harare, Zimbabwe.",
     featured: false,
     badge: "Join Waiting List",
-    contactNumber: "+263000000000",
+    contactNumber: "+263788940077",
   },
 ];
 

@@ -99,11 +99,11 @@ export function HeroSection() {
         >
           <a
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold text-base sm:text-lg rounded-full transition-all duration-200 hover:scale-105 drop-shadow-lg"
-            href="https://kayetickets.com/events/a-night-of-laughter-ft-dr-hilary/checkout"
+            href="https://wa.me/263788940077?text=Hi%2C%20I%27d%20like%20to%20join%20the%20waiting%20list%20for%20Dr.%20Hilary%20Okello%20Live%20in%20Zimbabwe"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Buy Tickets: Entebbe Event
+            Join Zimbabwe Waitinglist
           </a>
         </motion.div>
       </div>

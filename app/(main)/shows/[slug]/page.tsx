@@ -11,8 +11,6 @@ import {
   Ticket,
 } from "lucide-react";
 
-import WaitingListForm from "./waiting-list-form";
-
 import { SHOWS, getShowBySlug, DEFAULT_CONTACT } from "@/lib/shows";
 
 // Pre-render a page for every known show at build time
@@ -172,18 +170,24 @@ export default async function ShowPage({
               )}
             </div>
 
-            {/* Waiting list form (Zimbabwe show only) */}
+            {/* Zimbabwe — WhatsApp waiting list */}
             {show.country === "Zimbabwe" && (
               <div className="rounded-2xl border border-white/10 bg-white/5 p-6 space-y-4">
                 <h2 className="text-lg font-bold text-white">
-                  Join WaitingList
+                  Join the Waiting List
                 </h2>
                 <p className="text-white/70 text-sm">
-                  Drop your details and we’ll notify you when tickets are
-                  available.
+                  Message us on WhatsApp to reserve your spot and be notified
+                  when tickets go live.
                 </p>
-
-                <WaitingListForm showSlug={slug} showTitle={show.title} />
+                <a
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-400 text-white font-bold text-base rounded-xl transition-all"
+                  href={waLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Chat on WhatsApp
+                </a>
               </div>
             )}
 

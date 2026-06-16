@@ -145,7 +145,7 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.location.href = `/shows/${show.slug}`;
+              window.open(waLink, "_blank", "noopener,noreferrer");
             }}
           >
             WaitingList
