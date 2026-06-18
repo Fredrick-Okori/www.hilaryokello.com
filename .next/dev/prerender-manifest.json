@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/shows/ntinda-uganda-23":{},"/shows/saturday-entebbe-uganda-21":{},"/shows/harare-zimbabwe-22":{},"/shows/kampala-uganda-23":{}},"dynamicRoutes":{"/shows/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/shows/[slug]","routeRegex":"^\\/shows\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"9197dc754c6db5f6c64e164e485de1fb","previewModeSigningKey":"5a38857b3c8345873c3399e63216624d354212c764ae700e4cc24f36286b1cc7","previewModeEncryptionKey":"76c8a99e339e4df97a1546d89b0ba479e5a89d544b97ce856f9fff9a22cc0aaa"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "27ddbea3f133558a95322d6fae599866",
+    "previewModeSigningKey": "028876ed34ff576905e231383cd4a55cdeecc7b4311767f0695fb81de55c0f6a",
+    "previewModeEncryptionKey": "674f35baa00b0935839317bb9d5f9724ed543155728fa1d9350674a77d6de788"
+  }
+}

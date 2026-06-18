@@ -46,7 +46,7 @@ export function HeroSection() {
           className="object-cover object-center"
           quality={80}
           sizes="100vw"
-          src="/hero_bg.webp"
+          src="/bg_hero_edited.webp"
         />
       </div>
 
@@ -66,7 +66,7 @@ export function HeroSection() {
         </motion.h1>
         <motion.h2
           animate={{ opacity: 1, y: 0 }}
-          className="text-black bg-gold/90 rounded-t-lg py-3 px-4 text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-lg"
+          className="text-black bg-yellow-500 rounded-t-lg py-3 px-4 text-xl mt-3 sm:text-2xl md:text-3xl font-extrabold leading-tight tracking-tight drop-shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
@@ -74,7 +74,7 @@ export function HeroSection() {
         </motion.h2>
         <motion.h2
           animate={{ opacity: 1, y: 0 }}
-          className="text-black rounded-b-lg bg-gold/90 py-3 px-4 text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-lg"
+          className="text-black rounded-b-lg bg-yellow-500 py-3 px-4 text-xl mt-3 sm:text-2xl md:text-xl font-extrabold leading-tight tracking-tight drop-shadow-lg"
           initial={{ opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
