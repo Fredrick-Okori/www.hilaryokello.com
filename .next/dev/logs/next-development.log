@@ -171,3 +171,5 @@ Skipping generating a fallback font.
 
 [00:00:59.491] Browser WARN    Image with src "/store/gray_cap.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:26.904] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1782386152490,"pageViews":1,"scrollDepth":69.00878293601004,"timeOnSite":85,"urlsVisited":["/store"]},"timestamp":"2026-06-25T11:17:19.068Z","triggerId":"inactivity"}
+[00:02:39.107] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":145,"pageLoadTimestamp":1782386106906,"pageViews":1,"scrollDepth":0,"timeOnSite":145,"urlsVisited":["/"]},"timestamp":"2026-06-25T11:17:32.170Z","triggerId":"inactivity"}
