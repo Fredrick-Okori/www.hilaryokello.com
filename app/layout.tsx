@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/hilary_white.webp",
+    shortcut: "/hilary_white.webp",
+    apple: "/hilary_white.webp",
+  },
 };
 
 export default function RootLayout({

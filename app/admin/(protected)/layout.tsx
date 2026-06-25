@@ -4,6 +4,7 @@ import type { User } from "@supabase/supabase-js";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
@@ -72,9 +73,13 @@ export default function AdminLayout({
         {/* Logo row */}
         <div className="flex h-16 items-center justify-between px-4 border-b border-zinc-800">
           {!collapsed && (
-            <span className="text-sm font-semibold tracking-wide text-yellow-400 uppercase truncate">
-              Hilary Admin
-            </span>
+            <Image
+              alt="Dr. Hilary Okello"
+              className="object-contain"
+              height={32}
+              src="/hilary_white.webp"
+              width={110}
+            />
           )}
           <button
             aria-label="Toggle sidebar"

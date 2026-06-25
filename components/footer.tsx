@@ -1,4 +1,3 @@
-import React from "react";
 import { FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
@@ -6,6 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white py-8 px-4">
       <div className="container mx-auto flex flex-col gap-6 items-center">
+        <span className="text-white font-semibold text-lg">Dr. Hilary Okello</span>
         {/* Social Media Links */}
         <nav aria-label="Social media" className="flex space-x-6">
           <a

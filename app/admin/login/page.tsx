@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Loader2, Eye, EyeOff } from "lucide-react";
+import Image from "next/image";
 
 import { supabase } from "@/lib/supabase";
 
@@ -40,8 +41,14 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-sm space-y-8">
         {/* Logo / heading */}
         <div className="text-center space-y-2">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-black text-2xl font-black">
-            H
+          <div className="flex justify-center mb-2">
+            <Image
+              alt="Dr. Hilary Okello"
+              className="object-contain"
+              height={50}
+              src="/hilary_white.webp"
+              width={160}
+            />
           </div>
           <h1 className="text-2xl font-bold text-white">Admin Login</h1>
           <p className="text-sm text-zinc-400">

@@ -49,6 +49,14 @@ const menuItems: MenuItem[] = [
     icon: undefined,
   },
   {
+    label: "Store",
+    href: "/store",
+    gradient:
+      "radial-gradient(circle, rgba(234,179,8,0.15) 0%, rgba(202,138,4,0.06) 50%, rgba(161,98,7,0) 100%)",
+    iconColor: "text-yellow-500",
+    icon: undefined,
+  },
+  {
     label: "Contact",
     href: "/booking",
     gradient:
@@ -126,9 +134,7 @@ export function MenuBar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between relative z-10">
         {/* Logo/Brand */}
         <Link className="flex items-center gap-2" href="/">
-          <span className="text-white font-semibold text-lg">
-            Dr. Hilary Okello
-          </span>
+          <span className="text-white font-semibold text-lg">Dr. Hilary Okello</span>
         </Link>
 
         <div className="sm:hidden">
