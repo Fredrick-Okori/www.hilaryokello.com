@@ -81,11 +81,11 @@ const RAW: Omit<Show, "slug">[] = [
     country: "Zimbabwe",
     ticketPrice: "",
     image: "/tour/harare_zimbabwe.jpg",
-    link: "#",
+    link: "https://hypenation.co.zw/tickets/unbothered-special-edition-dc--dr-hilary-okello--12-07-2026/019e97da-163a-70ba-aa80-39665911b779/01JJVDSR6AH5DRD109ZZKEVN4P",
     description:
-      "Join the waiting list to be the first to hear about tickets, show updates, and venue confirmation for Dr. Hilary Okello’s live show in Harare, Zimbabwe.",
+      "Dr. Hilary Okello brings his Unbothered Special Edition show to Harare, Zimbabwe on 12th July 2026. Grab your tickets now and come ready to laugh!",
     featured: false,
-    badge: "Join Waiting List",
+    badge: "Get Tickets",
     contactNumber: "+263788940077",
   },
 ];
