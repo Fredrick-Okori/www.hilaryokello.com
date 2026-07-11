@@ -12,11 +12,13 @@ import {
   BookOpen,
   Phone,
   Video,
+  ShoppingBag,
   ChevronLeft,
   ChevronRight,
   LogOut,
   ExternalLink,
   Menu,
+  List,
 } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
@@ -25,10 +27,12 @@ const navItems = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
   { label: "Shows", href: "/admin/shows", icon: CalendarDays },
   { label: "Waitinglist", href: "/admin/waitinglist", icon: BookOpen },
+  { label: "Show Requests", href: "/admin/show-requests", icon: List },
   { label: "Gallery", href: "/admin/gallery", icon: Images },
   { label: "Biography", href: "/admin/biography", icon: BookOpen },
   { label: "Booking", href: "/admin/booking", icon: Phone },
   { label: "Videos", href: "/admin/videos", icon: Video },
+  { label: "Store", href: "/admin/store", icon: ShoppingBag },
 ];
 
 export default function AdminLayout({

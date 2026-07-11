@@ -2,9 +2,9 @@
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@heroui/button";
 import { ChevronRight } from "lucide-react";
 
+import CityRegistrationForm from "@/components/city-registration-form";
 import { supabase } from "@/lib/supabase";
 import { SHOWS, DEFAULT_CONTACT, type Show as StaticShow } from "@/lib/shows";
 
@@ -229,7 +229,7 @@ const UpcomingShows = () => {
         </h2>
 
         {upcomingShows.length > 0 ? (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6">
             {upcomingShows.map((show) => (
               <ShowItem key={show.id} show={show} />
             ))}
@@ -263,17 +263,8 @@ const UpcomingShows = () => {
                 where you want Dr. Okello to perform next. High-demand cities
                 influence our tour planning!
               </p>
-              <div className="flex justify-start">
-                <Button
-                  as="a"
-                  className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Register your City
-                  <ChevronRight className="h-4 sm:h-5 w-4 sm:w-5" />
-                </Button>
+              <div className="mt-2">
+                <CityRegistrationForm />
               </div>
               <p className="text-xs sm:text-sm text-white/50 mt-6 text-left">
                 We respect your privacy. Your information will only be used to

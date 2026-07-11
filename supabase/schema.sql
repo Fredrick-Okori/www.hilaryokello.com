@@ -233,3 +233,38 @@ create index if not exists waiting_list_entries_created_at_idx
 create index if not exists waiting_list_entries_show_slug_idx
   on public.waiting_list_entries (show_slug);
 
+
+-- ─────────────────────────────────────────────────────────────
+-- 7. SHOW REQUESTS
+-- ─────────────────────────────────────────────────────────────
+create table if not exists public.show_requests (
+  id         uuid primary key default gen_random_uuid(),
+  city       text not null,
+  country    text not null,
+  name       text not null,
+  email      text not null,
+  created_at timestamptz not null default now()
+);
+
+alter table public.show_requests enable row level security;
+
+drop policy if exists "show_requests: public read" on public.show_requests;
+drop policy if exists "show_requests: auth insert" on public.show_requests;
+drop policy if exists "show_requests: auth update" on public.show_requests;
+drop policy if exists "show_requests: auth delete" on public.show_requests;
+
+create policy "show_requests: public read"
+  on public.show_requests for select using (true);
+
+create policy "show_requests: auth insert"
+  on public.show_requests for insert to authenticated with check (true);
+
+create policy "show_requests: auth update"
+  on public.show_requests for update to authenticated using (true);
+
+create policy "show_requests: auth delete"
+  on public.show_requests for delete to authenticated using (true);
+
+create index if not exists show_requests_created_at_idx
+  on public.show_requests (created_at desc);
+

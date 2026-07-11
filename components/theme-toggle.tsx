@@ -48,14 +48,7 @@ const menuItems: MenuItem[] = [
     iconColor: "text-green-500",
     icon: undefined,
   },
-  {
-    label: "Store",
-    href: "/store",
-    gradient:
-      "radial-gradient(circle, rgba(234,179,8,0.15) 0%, rgba(202,138,4,0.06) 50%, rgba(161,98,7,0) 100%)",
-    iconColor: "text-yellow-400",
-    icon: undefined,
-  },
+
   {
     label: "Contact",
     href: "/booking",
