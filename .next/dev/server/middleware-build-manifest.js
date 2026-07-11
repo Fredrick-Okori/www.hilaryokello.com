@@ -3,9 +3,22 @@ globalThis.__BUILD_MANIFEST = {
     "/_app": []
   },
   "devFiles": [],
-  "polyfillFiles": [],
+  "polyfillFiles": [
+    "static/chunks/ed219_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
   "lowPriorityFiles": [],
-  "rootMainFiles": []
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_af1c98aa._.js",
+    "static/chunks/ed219_next_dist_compiled_react-dom_222d8934._.js",
+    "static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js",
+    "static/chunks/ed219_next_dist_compiled_next-devtools_index_238d948d.js",
+    "static/chunks/ed219_next_dist_compiled_b30eab8b._.js",
+    "static/chunks/ed219_next_dist_client_d757f930._.js",
+    "static/chunks/ed219_next_dist_486f3318._.js",
+    "static/chunks/108be_@swc_helpers_cjs_3c1b9d6d._.js",
+    "static/chunks/www_hilaryokello_com_a0ff3932._.js",
+    "static/chunks/turbopack-www_hilaryokello_com_24f89e3c._.js"
+  ]
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
 "/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
