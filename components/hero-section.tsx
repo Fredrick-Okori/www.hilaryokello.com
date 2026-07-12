@@ -39,7 +39,7 @@ export function HeroSection() {
           fill
           priority
           alt=""
-          className="object-cover object-center"
+          className="object-cover object-[center_28%]"
           quality={80}
           sizes="100vw"
           src="/bg_hero_edited.webp"

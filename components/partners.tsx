@@ -15,18 +15,6 @@ interface Partner {
 
 const partners: Partner[] = [
   {
-    logo: "/partners/ciu-hor-white.webp",
-    fallback: "/partners/ciu-hor-white.png",
-    website: "https://www.ciu.ac.ug", // Replace with actual website
-    name: "CIU",
-  },
-  {
-    logo: "/partners/images.webp",
-    fallback: "/partners/images.jpeg",
-    website: "https://www.instagram.com/donelbistrolounge_ug/?hl=en", // Replace with actual website
-    name: "Donel's Bistro, Ntinda",
-  },
-  {
     logo: "/partners/logo.webp",
     fallback: "/partners/logo.webp",
     website: "https://www.kayetickets.com", // Replace with actual website
@@ -37,12 +25,6 @@ const partners: Partner[] = [
     fallback: "/partners/jico.png",
     website: "https://x.com/JicoLeague", // Replace with actual website
     name: "JICO",
-  },
-  {
-    logo: "/partners/karitickets-white.webp",
-    fallback: "/partners/karitickets-white.webp",
-    website: "https://www.karitickets.com",
-    name: "KariTickets",
   },
   {
     logo: "/partners/laughing_maraboustork.webp",
