@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { Button } from "@heroui/button";
-import { Input } from "@heroui/input";
 
 import { supabase } from "@/lib/supabase";
 
@@ -11,6 +10,7 @@ type FormState = {
   email: string;
   phone: string;
   city: string;
+  country: string;
 };
 
 export default function CityRegistrationForm() {
@@ -19,6 +19,7 @@ export default function CityRegistrationForm() {
     email: "",
     phone: "",
     city: "",
+    country: "",
   });
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
@@ -30,7 +31,8 @@ export default function CityRegistrationForm() {
       form.username.trim().length >= 2 &&
       emailOk &&
       form.phone.trim().length >= 7 &&
-      form.city.trim().length >= 2
+      form.city.trim().length >= 2 &&
+      form.country.trim().length >= 2
     );
   }, [form]);
 
@@ -48,7 +50,7 @@ export default function CityRegistrationForm() {
     try {
       const { error } = await supabase.from("show_requests").insert({
         city: form.city.trim(),
-        country: "",
+        country: form.country.trim(),
         email: form.email.trim(),
         name: form.username.trim(),
         phone: form.phone.trim(),
@@ -60,6 +62,7 @@ export default function CityRegistrationForm() {
 
       setForm({
         city: "",
+        country: "",
         email: "",
         phone: "",
         username: "",
@@ -75,55 +78,61 @@ export default function CityRegistrationForm() {
   return (
     <form className="w-full" onSubmit={onSubmit}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <Input
-          isRequired
-          classNames={{
-            input: "text-white",
-            label: "text-white/75",
-          }}
-          label="Username"
-          placeholder="e.g. HilaryFan"
-          value={form.username}
-          variant="bordered"
-          onValueChange={update("username")}
-        />
-        <Input
-          isRequired
-          classNames={{
-            input: "text-white",
-            label: "text-white/75",
-          }}
-          label="Email"
-          placeholder="you@example.com"
-          type="email"
-          value={form.email}
-          variant="bordered"
-          onValueChange={update("email")}
-        />
-        <Input
-          isRequired
-          classNames={{
-            input: "text-white",
-            label: "text-white/75",
-          }}
-          label="Phone Number"
-          placeholder="e.g. +2567xxxxxxxx"
-          value={form.phone}
-          variant="bordered"
-          onValueChange={update("phone")}
-        />
-        <Input
-          isRequired
-          classNames={{
-            input: "text-white",
-            label: "text-white/75",
-          }}
-          label="Location / City"
-          placeholder="e.g. Nairobi"
-          value={form.city}
-          variant="bordered"
-          onValueChange={update("city")}
-        />
+        <label className="flex flex-col gap-2 text-sm text-white/80">
+          <span>Username</span>
+          <input
+            required
+            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            placeholder="e.g. JaneDoe"
+            type="text"
+            value={form.username}
+            onChange={(e) => update("username")(e.target.value)}
+          />
+        </label>
+        <label className="flex flex-col gap-2 text-sm text-white/80">
+          <span>Email</span>
+          <input
+            required
+            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            placeholder="janedoe@gmail.com"
+            type="email"
+            value={form.email}
+            onChange={(e) => update("email")(e.target.value)}
+          />
+        </label>
+        <label className="flex flex-col gap-2 text-sm text-white/80">
+          <span>Phone Number</span>
+          <input
+            required
+            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            placeholder="e.g. +61412345678"
+            type="tel"
+            value={form.phone}
+            onChange={(e) => update("phone")(e.target.value)}
+          />
+        </label>
+        <label className="flex flex-col gap-2 text-sm text-white/80">
+          <span>Location / City</span>
+          <input
+            required
+            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            placeholder="e.g. Melbourne"
+            type="text"
+            value={form.city}
+            onChange={(e) => update("city")(e.target.value)}
+          />
+        </label>
+        <label className="flex flex-col gap-2 text-sm text-white/80 sm:col-span-2">
+          <span>Country</span>
+          <input
+            required
+            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            placeholder="e.g. Australia"
+            type="text"
+            value={form.country}
+            onChange={(e) => update("country")(e.target.value)}
+          />
+        </label>
       </div>
 
       <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
