@@ -84,3 +84,5 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:03:43.345] Server  LOG     ✓ Compiled in 416ms
 [00:06:25.757] Server  LOG     ✓ Compiled in 5.1s
 [00:07:29.164] Server  LOG     ✓ Compiled in 39ms
+[00:10:42.561] Server  LOG     ✓ Compiled in 712ms
+[00:13:20.339] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":538,"pageLoadTimestamp":1783875450284,"pageViews":1,"scrollDepth":14.188632619439867,"timeOnSite":780,"urlsVisited":["/"]},"timestamp":"2026-07-12T17:10:30.427Z","triggerId":"inactivity"}

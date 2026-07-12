@@ -5,6 +5,8 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
+import { SHOWS } from "@/lib/shows";
+
 export function HeroSection() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -15,14 +17,8 @@ export function HeroSection() {
 
   const isDark = mounted ? theme === "dark" : true;
 
-  const phoneNumber = "+256752734280";
-  const message =
-    "Hello Dr. Hilary Okello, I'm interested in your comedy shows!";
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappURL = `https://wa.me/${phoneNumber.replace(
-    /[^0-9]/g,
-    "",
-  )}?text=${encodedMessage}`;
+  const fridayNairobiShow = SHOWS.find((show) => show.id === 24);
+  const fridayTicketUrl = fridayNairobiShow?.link || "#";
 
   return (
     <section
@@ -99,11 +95,11 @@ export function HeroSection() {
         >
           <a
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold text-base sm:text-lg rounded-full transition-all duration-200 hover:scale-105 drop-shadow-lg"
-            href="https://wa.me/263788940077?text=Hi%2C%20I%27d%20like%20to%20join%20the%20waiting%20list%20for%20Dr.%20Hilary%20Okello%20Live%20in%20Zimbabwe"
+            href={fridayTicketUrl}
             rel="noopener noreferrer"
             target="_blank"
           >
-            Join Zimbabwe Waitinglist
+            Get Tickets
           </a>
         </motion.div>
       </div>
