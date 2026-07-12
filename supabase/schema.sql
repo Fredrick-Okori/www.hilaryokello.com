@@ -243,12 +243,16 @@ create table if not exists public.show_requests (
   country    text not null,
   name       text not null,
   email      text not null,
+  phone      text not null default '',
   created_at timestamptz not null default now()
 );
+
+alter table public.show_requests add column if not exists phone text not null default '';
 
 alter table public.show_requests enable row level security;
 
 drop policy if exists "show_requests: public read" on public.show_requests;
+drop policy if exists "show_requests: public insert" on public.show_requests;
 drop policy if exists "show_requests: auth insert" on public.show_requests;
 drop policy if exists "show_requests: auth update" on public.show_requests;
 drop policy if exists "show_requests: auth delete" on public.show_requests;
@@ -256,8 +260,8 @@ drop policy if exists "show_requests: auth delete" on public.show_requests;
 create policy "show_requests: public read"
   on public.show_requests for select using (true);
 
-create policy "show_requests: auth insert"
-  on public.show_requests for insert to authenticated with check (true);
+create policy "show_requests: public insert"
+  on public.show_requests for insert to anon, authenticated with check (true);
 
 create policy "show_requests: auth update"
   on public.show_requests for update to authenticated using (true);

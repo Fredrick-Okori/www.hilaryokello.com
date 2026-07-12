@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
 
+import { supabase } from "@/lib/supabase";
+
 type FormState = {
   username: string;
   email: string;
@@ -44,30 +46,27 @@ export default function CityRegistrationForm() {
     setStatus(null);
 
     try {
-      // This app currently uses a Google Form CTA on the home page.
-      // We collect data and then open the Google Form with query params.
-      // If you have a backend endpoint later, this is where you would POST.
+      const { error } = await supabase.from("show_requests").insert({
+        city: form.city.trim(),
+        country: "",
+        email: form.email.trim(),
+        name: form.username.trim(),
+        phone: form.phone.trim(),
+      });
 
-      const googleFormUrl =
-        "https://docs.google.com/forms/d/e/1FAIpQLSfJtqtEE96Z7VMjrEWPMJnAuGV0ozURLy5iFvbsCImEw5VTGA/viewform";
+      if (error) {
+        throw error;
+      }
 
-      const params = new URLSearchParams();
-
-      params.set("entry.username", form.username.trim());
-      params.set("entry.email", form.email.trim());
-      params.set("entry.phone", form.phone.trim());
-      params.set("entry.city", form.city.trim());
-
-      // Note: Google Form entry.* parameter IDs must match your form.
-      // Leaving params in place makes it easy to wire to the correct IDs.
-      window.open(
-        `${googleFormUrl}?${params.toString()}`,
-        "_blank",
-        "noopener,noreferrer",
-      );
-      setStatus("Opening the registration form…");
+      setForm({
+        city: "",
+        email: "",
+        phone: "",
+        username: "",
+      });
+      setStatus("Thanks! Your city has been registered.");
     } catch {
-      setStatus("Could not open the form. Please try again.");
+      setStatus("Could not submit your registration. Please try again.");
     } finally {
       setSubmitting(false);
     }
