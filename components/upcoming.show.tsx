@@ -186,6 +186,11 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
 // --- Main Component ---
 const UpcomingShows = () => {
   const today = useMemo(() => new Date(), []);
+  const todayStart = useMemo(() => {
+    const start = new Date(today);
+    start.setHours(0, 0, 0, 0);
+    return start;
+  }, [today]);
   const [dbShows, setDbShows] = useState<StaticShow[]>([]);
 
   useEffect(() => {
@@ -205,7 +210,7 @@ const UpcomingShows = () => {
   // Merge: Supabase published shows + static shows (deduplicated by date+country)
   const upcomingShows = useMemo(() => {
     const staticUpcoming = SHOWS.filter(
-      (s) => parseDate(s.date).getTime() > today.getTime(),
+      (s) => parseDate(s.date).getTime() >= todayStart.getTime(),
     );
 
     // Build a Set of keys from Supabase shows to avoid duplicates
@@ -219,7 +224,7 @@ const UpcomingShows = () => {
     return [...dbShows, ...filteredStatic].sort(
       (a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime(),
     );
-  }, [dbShows, today]);
+  }, [dbShows, todayStart]);
 
   return (
     <div className="font-sans min-h-screen text-white">

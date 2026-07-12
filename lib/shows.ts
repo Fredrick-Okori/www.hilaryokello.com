@@ -84,7 +84,7 @@ const RAW: Omit<Show, "slug">[] = [
     description:
       "Dr. Hilary Okello brings his Unbothered Special Edition show to Harare, Zimbabwe on 12th July 2026. Grab your tickets now and come ready to laugh!",
     featured: false,
-    badge: "Selling Fast",
+    badge: "Showing now",
     contactNumber: "+263788940077",
   },
 ];
