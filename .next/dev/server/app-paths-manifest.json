@@ -1,7 +1,3 @@
 {
-  "/(main)/page": "app/(main)/page.js",
-  "/admin/(protected)/gallery/page": "app/admin/(protected)/gallery/page.js",
-  "/admin/(protected)/page": "app/admin/(protected)/page.js",
-  "/admin/(protected)/show-requests/page": "app/admin/(protected)/show-requests/page.js",
-  "/admin/(protected)/store/page": "app/admin/(protected)/store/page.js"
+  "/(main)/page": "app/(main)/page.js"
 }
