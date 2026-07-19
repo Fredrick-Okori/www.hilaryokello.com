@@ -5,8 +5,6 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-import { SHOWS } from "@/lib/shows";
-
 export function HeroSection() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -16,9 +14,6 @@ export function HeroSection() {
   }, []);
 
   const isDark = mounted ? theme === "dark" : true;
-
-  const fridayNairobiShow = SHOWS.find((show) => show.id === 24);
-  const fridayTicketUrl = fridayNairobiShow?.link || "#";
 
   return (
     <section
@@ -87,21 +82,6 @@ export function HeroSection() {
           and don’t forget to register your CITY below to be part of the new
           comedy tour: JOKES FROM FAR AWAY.
         </motion.p>
-        <motion.div
-          animate={{ opacity: 1, y: 0 }}
-          className="mt-8 flex flex-col sm:flex-row gap-4"
-          initial={{ opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <a
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-extrabold text-base sm:text-lg rounded-full transition-all duration-200 hover:scale-105 drop-shadow-lg"
-            href={fridayTicketUrl}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Get Tickets
-          </a>
-        </motion.div>
       </div>
     </section>
   );

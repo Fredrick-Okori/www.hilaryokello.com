@@ -1,2571 +1,420 @@
-[00:00:02.736] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:03.001] Server  LOG     ✓ Ready in 2.3s
-[00:00:16.637] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:02.891] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:03.286] Server  LOG     ✓ Ready in 2.7s
+[00:00:07.428] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:00:17.522] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:00:17.726] Server  WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:08.332] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:00:08.535] Server  WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:17.842] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:08.653] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:19.209] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:09.972] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:00:19.447] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:20.287] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:00:20.287] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:10.291] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.588] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:00:11.846] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:20.902] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:13.361] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.609] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.361] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.842] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.842] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.842] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.977] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.978] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:13.676] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:45.337] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":25,"pageLoadTimestamp":1783875450284,"pageViews":1,"scrollDepth":0,"timeOnSite":25,"urlsVisited":["/"]},"timestamp":"2026-07-12T16:57:55.402Z","triggerId":"timeOnPage"}
-[00:02:45.336] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":125,"pageLoadTimestamp":1783875450284,"pageViews":1,"scrollDepth":0,"timeOnSite":145,"urlsVisited":["/"]},"timestamp":"2026-07-12T16:59:55.405Z","triggerId":"inactivity"}
-[00:03:43.345] Server  LOG     ✓ Compiled in 416ms
-[00:06:25.757] Server  LOG     ✓ Compiled in 5.1s
-[00:07:29.164] Server  LOG     ✓ Compiled in 39ms
-[00:10:42.561] Server  LOG     ✓ Compiled in 712ms
-[00:13:20.339] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":538,"pageLoadTimestamp":1783875450284,"pageViews":1,"scrollDepth":14.188632619439867,"timeOnSite":780,"urlsVisited":["/"]},"timestamp":"2026-07-12T17:10:30.427Z","triggerId":"inactivity"}
-[00:16:04.642] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:16.247] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:16:05.573] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:16:05.837] Server  WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:05.855] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:06.415] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:16:07.012] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:16:07.012] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:07.372] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.457] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:08.668] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:16:35.128] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":24,"pageLoadTimestamp":1783876397057,"pageViews":1,"scrollDepth":0,"timeOnSite":26,"urlsVisited":["/"]},"timestamp":"2026-07-12T17:13:44.296Z","triggerId":"timeOnPage"}
-[00:16:51.436] Server  LOG     ✓ Compiled in 450ms
-[00:17:23.624] Server  LOG     ✓ Compiled in 347ms
-[00:18:34.225] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":53,"pageLoadTimestamp":1783876397057,"pageViews":1,"scrollDepth":8.791208791208792,"timeOnSite":147,"urlsVisited":["/"]},"timestamp":"2026-07-12T17:15:44.324Z","triggerId":"inactivity"}
-[00:20:06.330] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:06.616] Server  WARN    Image with src "/hero_bg.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:20:06.639] Server  WARN    Image with src "/gallery/crowd.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:20:07.424] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:07.424] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:08.114] Browser WARN    Image with src "/hero_bg.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:20:08.114] Browser WARN    Image with src "/gallery/crowd.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:20:08.114] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:20:09.599] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:09.603] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:09.609] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:14.168] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:20.198] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:20.200] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:26.151] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:32.184] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:32.187] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:38.208] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:44.212] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:44.214] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:50.243] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:56.261] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:20:56.264] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:02.274] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:08.296] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:08.298] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:14.308] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:16.112] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:16.116] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:20.359] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:20.363] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:26.377] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:32.379] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:21:32.381] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:22:27.128] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1783876637905,"pageViews":1,"scrollDepth":48.52459016393443,"timeOnSite":137,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:19:36.307Z","triggerId":"inactivity"}
-[00:23:31.696] Server  LOG     ✓ Compiled in 394ms
-[00:23:45.661] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1783875450284,"pageViews":1,"scrollDepth":14.188632619439867,"timeOnSite":1405,"urlsVisited":["/"]},"timestamp":"2026-07-12T17:20:55.770Z","triggerId":"inactivity"}
-[00:25:00.266] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:06.268] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:06.270] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:12.289] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:18.306] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:18.308] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:24.351] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:26.186] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1783876637905,"pageViews":1,"scrollDepth":70.7112970711297,"timeOnSite":318,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:22:36.297Z","triggerId":"scrollDepth"}
-[00:25:30.793] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:30.795] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:36.745] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:40.784] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:40.788] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:44.801] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:50.807] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:50.809] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:25:56.804] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:04.117] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:04.120] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:31.702] Server  LOG     ✓ Compiled in 269ms
-[00:26:31.732] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:39.193] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:39.196] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:43.639] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:46.636] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:26:52.660] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:06.166] Server  LOG     ✓ Compiled in 221ms
-[00:27:15.357] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:15.489] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:21.370] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:21.373] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:30.128] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":4,"pageLoadTimestamp":1783876637905,"pageViews":1,"scrollDepth":91.57949790794979,"timeOnSite":440,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:24:39.316Z","triggerId":"timeOnPage"}
-[00:27:49.734] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:49.736] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:58.753] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:27:58.755] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:07.787] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:07.789] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:16.839] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:16.841] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:25.870] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:25.872] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:34.902] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:34.904] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:43.947] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:43.956] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:52.939] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:28:52.943] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:01.969] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:01.972] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:10.968] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:10.970] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:20.001] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:20.003] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:29.035] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:29.037] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:38.054] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:38.056] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:47.092] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:47.095] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:56.103] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:29:56.105] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:05.119] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:05.121] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:14.153] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:14.161] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:23.185] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:23.187] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:32.221] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:32.223] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:41.234] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:41.236] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:50.283] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:50.285] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:59.268] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:30:59.270] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:08.302] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:08.304] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:15.824] Server  LOG     ✓ Compiled in 214ms
-[00:31:16.245] Browser WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:31:17.316] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:17.319] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:26.336] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:26.367] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:35.357] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:35.359] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:44.361] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:44.368] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:53.398] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:31:53.403] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:02.416] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:02.419] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:11.479] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:11.481] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:20.464] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:20.466] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:29.515] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:29.533] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:38.531] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:38.539] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:47.581] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:47.583] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:56.598] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:32:56.600] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:05.631] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:05.632] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:14.646] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:14.648] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:23.681] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:23.683] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:32.716] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:32.718] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:41.731] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:41.733] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:50.763] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:50.765] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:59.798] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:33:59.799] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:05.945] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1783876637905,"pageViews":1,"scrollDepth":91.57949790794979,"timeOnSite":838,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:31:16.033Z","triggerId":"inactivity"}
-[00:34:08.812] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:08.814] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:17.832] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:17.834] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:26.869] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:26.871] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:35.879] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:35.882] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:44.902] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:44.904] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:50.349] Server  LOG     ✓ Compiled in 243ms
-[00:34:53.915] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:34:53.916] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:02.934] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:02.936] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:11.973] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:11.976] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:20.991] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:20.996] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:32.491] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:32.499] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:41.499] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:41.503] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:50.522] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:50.525] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:59.529] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:35:59.531] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:08.616] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:08.623] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:17.579] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:17.581] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:26.599] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:26.607] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:35.646] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:35.648] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:44.689] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:44.691] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:53.694] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:36:53.696] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:02.727] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:02.729] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:11.760] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:11.762] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:20.812] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:20.814] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:29.843] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:29.846] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:38.881] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:38.885] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:45.812] Server  LOG     ✓ Compiled in 337ms
-[00:37:45.896] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:37:47.896] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:47.900] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:56.921] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:37:56.925] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:05.959] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:06.045] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:14.964] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:14.968] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:23.998] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:24.000] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:33.038] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:33.040] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:42.059] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:42.061] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:48.375] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:49.400] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:38:49.635] Server  WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:49.661] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:50.341] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:50.341] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:50.341] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:51.014] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:38:51.014] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:51.292] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.385] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:52.633] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:53.384] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:53.978] Server  WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:54.020] Server  WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:54.616] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:54.617] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:54.618] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:55.215] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:55.225] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:38:55.420] Browser WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:55.420] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:38:55.420] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:39:02.344] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:02.348] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:11.379] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:11.381] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:19.847] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":13,"pageLoadTimestamp":1783877764867,"pageViews":1,"scrollDepth":0,"timeOnSite":25,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:36:29.984Z","triggerId":"timeOnPage"}
-[00:39:20.418] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:20.420] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:29.463] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:29.466] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:38.476] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:38.478] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:43.335] Server  LOG     ✓ Compiled in 317ms
-[00:39:47.512] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:47.514] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:56.554] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:39:56.556] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:05.596] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:05.598] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:14.611] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:14.618] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:23.630] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:23.632] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:32.667] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:32.675] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:41.691] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:41.692] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:50.744] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:50.745] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:59.774] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:40:59.776] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:02.096] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:02.834] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:08.815] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:08.819] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:17.824] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:17.831] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:19.849] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":108,"pageLoadTimestamp":1783877764867,"pageViews":1,"scrollDepth":31.537656903765694,"timeOnSite":145,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:38:29.989Z","triggerId":"inactivity"}
-[00:41:26.841] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:26.848] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:35.909] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:35.914] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:44.910] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:44.911] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:53.924] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:41:53.926] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:02.956] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:02.958] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:11.995] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:11.997] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:21.028] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:21.036] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:30.059] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:30.067] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:39.075] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:39.078] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:48.106] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:48.108] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:57.128] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:42:57.130] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:06.160] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:06.162] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:13.847] Server  LOG     ✓ Compiled in 486ms
-[00:43:13.944] Browser WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:43:15.175] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:15.178] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:19.848] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":10,"pageLoadTimestamp":1783877764867,"pageViews":1,"scrollDepth":84.6234309623431,"timeOnSite":265,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:40:29.991Z","triggerId":"scrollDepth"}
-[00:43:24.178] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:24.179] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:33.211] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:33.214] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:42.233] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:42.247] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:51.262] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:43:51.266] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:00.280] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:00.289] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:09.326] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:09.328] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:18.355] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:18.357] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:21.810] Server  LOG     ✓ Compiled in 474ms
-[00:44:27.391] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:27.393] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:36.409] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:36.411] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:45.424] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:45.433] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:54.440] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:44:54.442] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:03.472] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:03.474] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:12.485] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:12.487] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:21.502] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:21.504] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:30.559] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:30.561] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:39.600] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:39.602] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:45.950] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:46.540] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:46.540] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:46.540] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:47.184] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:45:47.184] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:47.639] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.732] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:48.928] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:52.914] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:53.895] Server  WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:53.903] Server  WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:53.958] Server  WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:54.679] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:54.680] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:54.680] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:55.168] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:55.176] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:55.387] Browser WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:55.387] Browser WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:55.387] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:45:55.387] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:45:58.207] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:45:58.210] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:01.890] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:01.892] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:10.904] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:10.908] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:20.016] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:20.031] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:28.970] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:28.972] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:38.004] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:38.006] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:47.067] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:47.072] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:56.069] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:46:56.071] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:05.104] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:05.106] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:14.137] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:14.139] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:14.534] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1783878185187,"pageViews":1,"scrollDepth":43.98535564853556,"timeOnSite":79,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:44:24.684Z","triggerId":"inactivity"}
-[00:47:20.579] Server  LOG     ✓ Compiled in 346ms
-[00:47:23.161] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:23.163] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:31.330] Server  LOG     ✓ Compiled in 282ms
-[00:47:32.190] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:32.192] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:41.236] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:41.238] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:48.226] Server  LOG     ✓ Compiled in 284ms
-[00:47:50.260] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:50.262] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:59.281] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:47:59.283] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:08.313] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:08.315] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:17.354] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:17.356] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:26.427] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:26.430] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:35.419] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:35.421] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:44.466] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:44.468] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:53.483] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:53.486] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:48:58.274] Server  LOG     ✓ Compiled in 365ms
-[00:49:02.507] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:02.511] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:04.072] Server  LOG     ✓ Compiled in 391ms
-[00:49:11.539] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:11.541] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:20.156] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":17,"pageLoadTimestamp":1783878185187,"pageViews":1,"scrollDepth":43.98535564853556,"timeOnSite":205,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:46:30.310Z","triggerId":"timeOnPage"}
-[00:49:20.574] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:20.577] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:29.589] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:29.592] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:38.605] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:38.607] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:47.619] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:47.621] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:56.649] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:49:56.651] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:05.717] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:05.720] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:06.801] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:07.583] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:07.583] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:07.583] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:07.583] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:23.288] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":8,"pageLoadTimestamp":1783878438328,"pageViews":1,"scrollDepth":100,"timeOnSite":15,"urlsVisited":["/biography"]},"timestamp":"2026-07-12T17:47:33.444Z","triggerId":"scrollDepth"}
-[00:50:33.197] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1783878438328,"pageViews":1,"scrollDepth":100,"timeOnSite":25,"urlsVisited":["/biography"]},"timestamp":"2026-07-12T17:47:43.354Z","triggerId":"exitIntent"}
-[00:50:35.975] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:18.245] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:50:36.583] Server  WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+[00:00:19.196] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:00:19.196] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:50:36.587] Server  WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:19.857] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:50:36.615] Server  WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:20.269] Browser ERROR   {"code":"refresh_token_not_found","message":"Invalid Refresh Token: Refresh Token Not Found","name":"AuthApiError","status":400}
+[00:00:20.863] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:50:37.196] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:37.196] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:37.197] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:37.197] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:37.753] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:37.756] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:37.937] Browser WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+[00:00:20.863] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:50:37.937] Browser WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:20.863] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:50:37.937] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:20.863] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:50:37.937] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:50:38.580] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:39.010] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:44.981] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:44.988] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:54.022] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:50:54.024] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:03.051] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:03.053] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:12.101] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:12.103] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:21.101] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:21.103] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:30.116] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:30.118] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:39.134] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:51:39.136] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:20.863] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:20.863] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:35.680] Server  LOG     ✓ Compiled in 754ms
+[00:00:37.031] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":25,"pageLoadTimestamp":1784484098388,"pageViews":1,"scrollDepth":0,"timeOnSite":25,"urlsVisited":["/"]},"timestamp":"2026-07-19T18:02:03.913Z","triggerId":"timeOnPage"}
+[00:00:46.952] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":22,"pageLoadTimestamp":1784484105960,"pageViews":1,"scrollDepth":21.60437556973564,"timeOnSite":26,"urlsVisited":["/"]},"timestamp":"2026-07-19T18:02:13.621Z","triggerId":"timeOnPage"}
+[00:00:52.900] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:51:48.166] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:54.547] Browser WARN    Image with src "/shows/IMG_0925_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:05.596] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1784484105960,"pageViews":2,"scrollDepth":21.60437556973564,"timeOnSite":46,"urlsVisited":["/","/shows/nairobi-kenya-25"]},"timestamp":"2026-07-19T18:02:32.477Z","triggerId":"exitIntent"}
+[00:01:07.785] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:51:48.168] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:01:08.273] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:01:08.423] Server  WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:08.433] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:08.835] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:51:53.522] Server  LOG     ✓ Compiled in 263ms
-[00:51:57.220] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:01:08.835] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:51:57.240] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:01:09.429] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:01:09.429] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:09.784] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.775] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.775] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.775] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.776] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.945] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.945] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:10.945] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:11.084] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:47.934] Server  LOG     ✓ Compiled in 4s
+[00:01:48.051] Browser ERROR   uncaughtError: ReferenceError: fridayTicketUrl is not defined
+[00:01:48.645] Browser ERROR   uncaughtError: ReferenceError: fridayTicketUrl is not defined
+[00:01:56.903] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:56.903] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:56.908] Server  LOG     ✓ Compiled in 288ms
+[00:01:56.973] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:52:05.834] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:01:57.364] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:52:08.118] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:01:58.464] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:01:59.012] Server  WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:59.048] Server  WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:59.864] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:52:08.119] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:01:59.864] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:52:08.119] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:02:00.054] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:52:08.119] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:02:00.054] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:52:09.381] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:52:09.864] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:02:00.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:01.152] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:02:01.152] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:10.327] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:02:01.932] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.064] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.328] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.667] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.667] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.667] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.687] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.688] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.910] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.688] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.913] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.688] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.913] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.688] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.916] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.688] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.916] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:52:11.688] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:02:02.916] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:55:06.787] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1783878558883,"pageViews":1,"scrollDepth":100,"timeOnSite":178,"urlsVisited":["/"]},"timestamp":"2026-07-12T17:52:16.951Z","triggerId":"exitIntent"}
-[00:55:51.861] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:55:52.491] Server  WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+[00:02:03.637] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:02:03.637] Browser WARN    Image with src "/bg_hero_edited.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:55:52.495] Server  WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:02:03.637] Browser WARN    Image with src "/tour_countries.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:55:52.527] Server  WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:02:05.642] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:55:53.431] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:55:53.431] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:55:53.431] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:55:53.431] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:55:54.272] Browser WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+[00:02:05.642] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:55:54.272] Browser WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:02:05.642] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:55:54.272] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:02:05.642] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:55:54.272] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:55:54.339] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:55:54.341] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:56:00.817] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:56:01.208] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:56:01.218] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:56:03.830] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:56:07.161] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":12,"pageLoadTimestamp":1783878784400,"pageViews":1,"scrollDepth":85.06914433880726,"timeOnSite":12,"urlsVisited":["/booking"]},"timestamp":"2026-07-12T17:53:17.327Z","triggerId":"scrollDepth"}
-[00:56:13.001] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
-[00:56:13.012] Server  WARN    ⚠ ./www.hilaryokello.com
-Failed to find font override values for font `Google Sans`
-Skipping generating a fallback font.
-
-
+[00:02:05.642] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.642] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:05.643] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:03.534] Server  LOG     ✓ Compiled in 1272ms
+[00:03:09.439] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1784484208048,"pageViews":1,"scrollDepth":21.444849589790337,"timeOnSite":68,"urlsVisited":["/"]},"timestamp":"2026-07-19T18:04:36.321Z","triggerId":"inactivity"}
+[00:03:20.710] Server  LOG     ✓ Compiled in 975ms

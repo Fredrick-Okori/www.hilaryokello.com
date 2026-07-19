@@ -83,23 +83,27 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
 
   return (
     <Link
-      className={`group relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-5 sm:p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl focus-within:ring-2 focus-within:ring-yellow-500 ${borderClass}`}
+      className={`group relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 hover:bg-white/10 backdrop-blur-sm border rounded-xl p-4 sm:p-6 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl focus-within:ring-2 focus-within:ring-yellow-500 ${borderClass}`}
       href={`/shows/${show.slug}`}
     >
-      <div className="flex items-start sm:items-center gap-4 sm:gap-6 min-w-full sm:min-w-[50%]">
-        <div className="text-center min-w-[80px]">
-          <div className="text-xs text-white/60 font-medium tracking-wider">
+      <div className="flex items-start sm:items-center gap-3 sm:gap-6 min-w-full sm:min-w-[50%]">
+        <div className="text-center min-w-[56px] sm:min-w-[80px] shrink-0">
+          <div className="text-[11px] sm:text-xs text-white/60 font-medium tracking-wider">
             {weekday}
           </div>
-          <div className="text-3xl font-extrabold text-white">{day}</div>
-          <div className="text-sm text-white/75 font-semibold">{month}</div>
+          <div className="text-2xl sm:text-3xl font-extrabold text-white">
+            {day}
+          </div>
+          <div className="text-xs sm:text-sm text-white/75 font-semibold">
+            {month}
+          </div>
         </div>
 
         <div className="flex-1 min-w-0">
-          <h3 className="text-xl font-bold text-white mb-1 truncate">
+          <h3 className="text-lg sm:text-xl font-bold text-white mb-1 break-words sm:truncate">
             {show.city}, {show.country}
           </h3>
-          <p className="text-white/75 text-sm sm:text-base truncate">
+          <p className="text-white/75 text-xs sm:text-base break-words sm:truncate">
             {show.location} • {show.time}
           </p>
           <div className="flex flex-wrap gap-2 mt-2">
@@ -137,11 +141,11 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
         </div>
       </div>
 
-      <div className="flex justify-end sm:justify-start shrink-0">
+      <div className="w-full sm:w-auto shrink-0">
         {show.badge === "Join Waiting List" ? (
           <button
             aria-label={`Join waiting list for ${show.title}`}
-            className="flex items-center rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
+            className="flex items-center w-full sm:w-auto rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2.5 sm:py-2 text-sm transition-all sm:min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -154,7 +158,7 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
         ) : show.link !== "#" ? (
           <button
             aria-label={`Get tickets for ${show.title}`}
-            className="flex items-center rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
+            className="flex items-center w-full sm:w-auto rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2.5 sm:py-2 text-sm transition-all sm:min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -167,7 +171,7 @@ const ShowItem = ({ show }: { show: StaticShow }) => {
         ) : (
           <button
             aria-label={`Contact via WhatsApp for ${show.title}`}
-            className="flex items-center rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2 text-sm transition-all min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
+            className="flex items-center w-full sm:w-auto rounded-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-2.5 sm:py-2 text-sm transition-all sm:min-w-[120px] justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-yellow-500"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();

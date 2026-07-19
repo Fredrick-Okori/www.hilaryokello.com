@@ -52,7 +52,7 @@ const RAW: Omit<Show, "slug">[] = [
   },
   {
     id: 25,
-    title: "LAVINGTON: DR HILARY OKELLO LIVE - Aug 8th",
+    title: "WESTLANDS: DR HILARY OKELLO LIVE - Aug 8th",
     dateLabel: "8th August, 2026",
     date: "2026-08-08T19:30:00",
     time: "7:30 PM - 9:30 PM",
@@ -61,9 +61,9 @@ const RAW: Omit<Show, "slug">[] = [
     country: "Kenya",
     ticketPrice: "",
     image: "/shows/IMG_0925_converted.avif",
-    link: "https://standupcollective.co.ke/buytickets?event=LAVINGTON%3a%20DR%20HILARY%20OKELLO%20LIVE%20-%20Aug%207th",
+    link: "https://standupcollective.co.ke/buytickets?event=WESTLANDS%3a%20DR%20HILARY%20OKELLO%20LIVE%20-%20Aug%208th",
     description:
-      "Dr. Hilary Okello performs live at Sauve Kitchen & Social Club on 8th August 2026. Grab your tickets early and come ready to laugh.",
+      "Dr. Hilary Okello performs live at Sauve Kitchen & Social Club, Westlands, on 8th August 2026. Grab your tickets early and come ready to laugh.",
     featured: false,
     badge: "Tickets Available",
   },
