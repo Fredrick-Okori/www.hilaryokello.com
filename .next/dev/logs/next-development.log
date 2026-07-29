@@ -157,3 +157,27 @@ Skipping generating a fallback font.
 
 [00:04:46.173] Browser WARN    Image with src "/tour/sauve.jpg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:33.171] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":68,"pageLoadTimestamp":1785307426770,"pageViews":1,"scrollDepth":0,"timeOnSite":146,"urlsVisited":["/"]},"timestamp":"2026-07-29T06:46:13.942Z","triggerId":"inactivity"}
+[00:07:23.172] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1785307435224,"pageViews":3,"scrollDepth":20.17278617710583,"timeOnSite":187,"urlsVisited":["/","/shows/nairobi-kenya-26"]},"timestamp":"2026-07-29T06:47:03.942Z","triggerId":"inactivity"}
+[00:07:42.975] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:07:43.391] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:07:43.514] Server  LOG     ✓ Compiled in 99ms
+[00:07:48.406] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:07:48.966] Server  LOG     ✓ Compiled in 82ms
+[00:07:49.034] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
