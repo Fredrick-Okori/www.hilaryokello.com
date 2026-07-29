@@ -2,6 +2,8 @@ import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
+import ExportPdfButton from "./export-pdf-button";
+
 export const revalidate = 0;
 
 export default async function ShowRequestsPage() {
@@ -52,8 +54,11 @@ export default async function ShowRequestsPage() {
             Review city interest submissions and contact details.
           </p>
         </div>
-        <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/70">
-          {showRequests?.length ?? 0} total submissions
+        <div className="flex items-center gap-3">
+          <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/70">
+            {showRequests?.length ?? 0} total submissions
+          </div>
+          <ExportPdfButton showRequests={showRequests ?? []} />
         </div>
       </div>
 
