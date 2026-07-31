@@ -108,8 +108,8 @@ const ShowCard = ({ show, index }: { show: StaticShow; index: number }) => {
 
       {/* Show Info - Wraps on mobile */}
       <div className="flex-1 min-w-0 py-0.5">
-        <div className="flex items-center gap-1.5 sm:gap-2 mb-1">
-          <h3 className="text-base sm:text-lg font-semibold text-white truncate">
+        <div className="flex items-center flex-wrap sm:flex-nowrap gap-1.5 gap-y-1 sm:gap-2 mb-1">
+          <h3 className="text-base sm:text-lg font-semibold text-white truncate max-w-[60%] sm:max-w-none">
             {show.city}
           </h3>
           {show.featured && (
