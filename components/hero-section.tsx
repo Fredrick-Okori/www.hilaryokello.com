@@ -1,116 +1,112 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { ArrowDown, MapPin } from "lucide-react";
+import { Orbitron, Goldman } from "next/font/google";
+
+// Bold display face for the headline
+const orbitron = Orbitron({
+  weight: ["700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const goldman = Goldman({
+  weight: "700",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const item = {
+  hidden: { opacity: 0, y: 24 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
 
 export function HeroSection() {
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const isDark = mounted ? theme === "dark" : true;
+  // Scroll down zooms the headline out; scrolling back up zooms it back in,
+  // since scale is derived directly from scroll position.
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+  const headlineScale = useTransform(scrollYProgress, [0, 1], [1, 0.55]);
 
   return (
     <section
+      ref={sectionRef}
       aria-label="Hero section"
-      className="relative w-full min-h-screen flex items-center overflow-hidden"
+      className="relative w-full h-screen flex items-end overflow-hidden"
     >
-      {/* Background image with overlay gradient */}
+      {/* Background image + readability gradients */}
       <div aria-hidden="true" className="absolute inset-0">
+        {/* Mobile background */}
         <Image
           fill
           priority
           alt=""
-          className="object-cover object-[center_28%]"
+          className="object-cover object-[center_28%] sm:hidden"
           quality={85}
           sizes="100vw"
           src="/bg_hero_edited.webp"
         />
-        {/* Gradient overlays for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+        {/* Desktop background */}
+        <Image
+          fill
+          priority
+          alt=""
+          className="hidden object-cover object-[center_28%] sm:block"
+          quality={85}
+          sizes="100vw"
+          src="/bg_hero_edited.webp"
+        />
+        {/* Blue duotone tint */}
+        <div className="absolute inset-0 bg-blue-950/40 mix-blend-multiply" />
+        {/* Bottom-heavy gradient for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/10" />
       </div>
-
-      {/* Animated blobs with opacity for subtlety */}
-      <div aria-hidden="true" className="blob blob-1 opacity-30" />
-      <div aria-hidden="true" className="blob blob-2 opacity-20" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-        <div className="max-w-3xl">
-          {/* Name with decorative element */}
-          <motion.div
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.8 }}
-            className="mb-6"
-          >
-            <div className="inline-block">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-none tracking-tight">
-                Dr. Hilary
-                <br />
-                <span className="text-yellow-400">Okello</span>
-              </h1>
-              <div className="h-1 w-24 bg-yellow-400 mt-4 rounded-full" />
-            </div>
-          </motion.div>
+      <motion.div
+        animate="show"
+        className="relative z-10 w-full px-5 pb-10 text-center sm:px-8 sm:pb-14 lg:px-16 lg:pb-20"
+        initial="hidden"
+        transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}
+      >
+        <motion.h1
+          className={`${goldman.className} text-[13vw] font-bold leading-[0.92] tracking-tight text-yellow-400 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl`}
+          style={{ scale: headlineScale }}
+          variants={item}
+        >
+          DR. HILARY OKELLO
+        </motion.h1>
 
-          {/* Tour title card */}
-          <motion.div
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="mb-4"
-          >
-            <div className="inline-flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0">
-              <div className="bg-yellow-400 text-black px-5 py-3 sm:py-4 rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
-                  Jokes From Far Away
-                </h2>
-              </div>
-              <div className="bg-yellow-500 text-black px-5 py-2 sm:py-4 rounded-b-xl sm:rounded-r-xl sm:rounded-bl-none">
-                <p className="text-sm sm:text-base md:text-lg font-semibold tracking-wide uppercase">
-                  2026 World Tour
-                </p>
-              </div>
-            </div>
-          </motion.div>
+        <motion.h2
+          className={`${orbitron.className} mt-1 whitespace-nowrap text-[5.2vw] leading-tight tracking-normal text-white sm:mt-2 sm:text-2xl sm:tracking-wide md:text-3xl lg:text-4xl`}
+          style={{ scale: headlineScale }}
+          variants={item}
+        >
+          World Tour Updates 2026
+        </motion.h2>
 
-          {/* Subtitle */}
-          <motion.p
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-yellow-400/90 text-sm sm:text-base md:text-lg font-semibold tracking-wide uppercase mb-6"
-          >
-            Africa&apos;s Doctor of Comedy
-          </motion.p>
+        <motion.a
+          className="mt-4 inline-block text-xs font-bold uppercase tracking-[0.2em] text-white/90 transition hover:text-yellow-400 sm:mt-6 sm:text-sm"
+          href="#tour-dates"
+          variants={item}
+        >
+          Check Upcoming Shows
+        </motion.a>
+      </motion.div>
 
-          {/* Description */}
-          <motion.p
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-white/90 text-base sm:text-lg md:text-xl max-w-2xl leading-relaxed mb-8"
-          >
-            Welcome! I'm glad you're here. This is where the jokes travel and
-            the laughter meets real life. Scroll down to see upcoming shows near
-            you — and don't forget to register your city below to be part of the
-            new comedy tour: JOKES FROM FAR AWAY.
-          </motion.p>
-
-          {/* CTA Buttons */}
-         
-        </div>
-      </div>
-
-  
+      {/* Ambient blobs */}
+      <div aria-hidden="true" className="blob blob-1 opacity-30" />
+      <div aria-hidden="true" className="blob blob-2 opacity-20" />
     </section>
   );
 }

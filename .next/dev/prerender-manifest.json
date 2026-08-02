@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/shows/nairobi-kenya-26":{},"/shows/nairobi-kenya-24":{},"/shows/nairobi-kenya-25":{},"/shows/harare-zimbabwe-22":{}},"dynamicRoutes":{"/shows/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/shows/[slug]","routeRegex":"^\\/shows\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"efd6f738637488eac119fd0e952885dc","previewModeSigningKey":"cd2ea3ae59a0d18058d9c09135fc9f3280f885afebcaeb46b5984484ca9f11f9","previewModeEncryptionKey":"b5735c9ef4eca1f2168448b507f2caaa32ba9e93a6de83cf5e1ee60f4d8126e0"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "55c18b0602a98dfb1889950a04bc1829",
+    "previewModeSigningKey": "d0bd4feb612b7852eb1dbecbb39fd26a84f1747677edff25a05c6ab9f1cef169",
+    "previewModeEncryptionKey": "a01b23c6fcc7cdfb8ae2048b9286e1a326844fdaf57a7fb2a1653d2574369189"
+  }
+}
