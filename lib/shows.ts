@@ -66,7 +66,7 @@ const RAW: Omit<Show, "slug">[] = [
     description:
       "Dr. Hilary Okello performs live at Nairobi Laugh Bar on 7th August 2026. Grab your tickets early and come ready to laugh.",
     featured: false,
-    badge: "Tickets Available",
+    badge: "80% Sold Out",
   },
   {
     id: 25,

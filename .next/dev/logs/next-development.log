@@ -74,3 +74,5 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:00:21.441] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:00:44.608] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1785703654294,"pageViews":1,"scrollDepth":20.01763668430335,"timeOnSite":25,"urlsVisited":["/"]},"timestamp":"2026-08-02T20:47:59.428Z","triggerId":"timeOnPage"}
+[00:03:17.026] Server  LOG     ✓ Compiled in 324ms
+[00:03:18.061] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1785703654294,"pageViews":1,"scrollDepth":21.45214521452145,"timeOnSite":178,"urlsVisited":["/"]},"timestamp":"2026-08-02T20:50:32.951Z","triggerId":"inactivity"}
