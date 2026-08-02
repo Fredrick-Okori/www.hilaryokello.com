@@ -67,6 +67,7 @@ export default async function ShowPage({
   )}`;
 
   const hasTicketLink = show.link !== "#";
+  const isSoldOut = show.soldOut === true;
 
   // Find adjacent shows for prev/next navigation
   const allSlugs = SHOWS.map((s) => s.slug);
@@ -90,7 +91,12 @@ export default async function ShowPage({
         {/* Title + date header */}
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-10">
           <div>
-            {show.featured && (
+            {isSoldOut && (
+              <span className="inline-block mb-3 px-3 py-1 bg-white/10 border border-white/15 text-white/70 rounded-full text-xs font-bold tracking-wide">
+                SOLD OUT
+              </span>
+            )}
+            {show.featured && !isSoldOut && (
               <span className="inline-block mb-3 px-3 py-1 bg-yellow-500 text-black rounded-full text-xs font-bold tracking-wide">
                 FEATURED SHOW
               </span>
@@ -113,7 +119,9 @@ export default async function ShowPage({
         {/* Side-by-side: image left, details right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left — image */}
-          <div className="w-full rounded-2xl overflow-hidden shadow-2xl">
+          <div
+            className={`w-full rounded-2xl overflow-hidden shadow-2xl ${isSoldOut ? "grayscale opacity-70" : ""}`}
+          >
             <Image
               priority
               alt={show.title}
@@ -204,7 +212,14 @@ export default async function ShowPage({
             {/* CTAs */}
             {!show.country.includes("Zimbabwe") && (
               <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-                {hasTicketLink ? (
+                {isSoldOut ? (
+                  <span
+                    aria-disabled="true"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white/40 font-bold text-base rounded-full cursor-not-allowed"
+                  >
+                    Sold Out
+                  </span>
+                ) : hasTicketLink ? (
                   <a
                     className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
                     href={show.link}

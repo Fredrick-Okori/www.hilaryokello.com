@@ -83,18 +83,28 @@ const ShowCard = ({ show, index }: { show: StaticShow; index: number }) => {
   )}`;
 
   // Determine ticket action
+  const isSoldOut = !!show.soldOut;
   const isWaitingList = show.badge === "Join Waiting List";
   const hasTickets = show.link !== "#";
   const ticketUrl = hasTickets ? show.link : waLink;
   const sellingFast =
-    show.soldOutPercentage !== undefined && show.soldOutPercentage > 70;
+    !isSoldOut &&
+    show.soldOutPercentage !== undefined &&
+    show.soldOutPercentage > 70;
 
-  const showCustomBadge = !!show.badge && !show.featured && !isWaitingList;
-  const hasBadges = show.featured || sellingFast || showCustomBadge;
+  const showCustomBadge =
+    !!show.badge && !show.featured && !isWaitingList && !isSoldOut;
+  const hasBadges =
+    isSoldOut || show.featured || sellingFast || showCustomBadge;
 
   // Rendered inline (desktop) and as a bottom row (mobile)
   const badges = (
     <>
+      {isSoldOut && (
+        <span className="rounded-full border border-white/15 bg-white/10 px-2 py-0.5 text-[10px] font-bold tracking-wider text-white/70">
+          SOLD OUT
+        </span>
+      )}
       {show.featured && (
         <span className="inline-flex items-center gap-1 rounded-full border border-yellow-400/20 bg-yellow-400/15 px-2 py-0.5 text-[10px] font-bold tracking-wider text-yellow-400">
           <Star className="h-2.5 w-2.5 fill-yellow-400" />
@@ -114,138 +124,168 @@ const ShowCard = ({ show, index }: { show: StaticShow; index: number }) => {
     </>
   );
 
+  const cardClassName = `group relative flex flex-col overflow-hidden rounded-2xl border bg-gradient-to-br transition-all duration-300 sm:flex-row sm:items-stretch ${
+    isSoldOut
+      ? "cursor-not-allowed grayscale opacity-60 border-white/5 from-zinc-900/40 to-black/60"
+      : show.featured
+        ? "border-yellow-400/25 from-yellow-400/[0.07] to-black hover:border-yellow-400/45"
+        : "border-white/10 from-zinc-900/80 to-black hover:border-yellow-400/25"
+  }`;
+
+  const cardContent = (
+    <>
+      {/* Featured accent rail */}
+      {show.featured && !isSoldOut && (
+        <span
+          aria-hidden="true"
+          className="absolute left-0 top-0 z-10 h-full w-1 bg-yellow-400"
+        />
+      )}
+
+      {/* ── Main body (the "keep" portion) ── */}
+      <div className="flex flex-1 items-center gap-3.5 px-4 pb-3 pt-4 sm:gap-4 sm:px-5 sm:py-5">
+        {/* Date */}
+        <div
+          aria-hidden="true"
+          className="min-w-[48px] shrink-0 text-center sm:min-w-[54px]"
+        >
+          <span
+            className={`block text-[28px] font-black leading-none tabular-nums sm:text-3xl ${isSoldOut ? "text-white/40" : "text-yellow-400"}`}
+          >
+            {String(day).padStart(2, "0")}
+          </span>
+          <span
+            className={`mt-1 block text-[11px] font-bold uppercase tracking-wider ${isSoldOut ? "text-white/30" : "text-yellow-400/80"}`}
+          >
+            {month}
+          </span>
+          <span className="mt-0.5 block text-[10px] text-white/35">
+            {weekday}
+          </span>
+        </div>
+
+        {/* Info */}
+        <div className="min-w-0 flex-1">
+          {/* Title — city + country (country shows on the meta line for desktop) */}
+          <div className="mb-1 flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <h3 className="min-w-0 text-[17px] font-bold leading-snug text-white sm:truncate sm:text-lg">
+              {weekday}, {show.city} - {show.country}
+            </h3>
+            {/* Desktop: badges inline next to the city */}
+            {hasBadges && (
+              <span className="hidden items-center gap-2 sm:flex">
+                {badges}
+              </span>
+            )}
+          </div>
+
+          {/* Location + time */}
+          <div className="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:gap-x-3">
+            <span className="inline-flex items-center gap-1.5 text-xs text-white/50 sm:text-[13px] sm:text-white/45">
+              <MapPin className="h-3.5 w-3.5 shrink-0 text-yellow-400/60 sm:h-3 sm:w-3" />
+              <span className="truncate">{show.location}</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs text-white/50 sm:text-[13px] sm:text-white/45">
+              <Clock className="h-3.5 w-3.5 shrink-0 text-yellow-400/60 sm:h-3 sm:w-3" />
+              {show.time}
+            </span>
+            <span className="hidden text-[13px] text-white/25 sm:inline">
+              {show.country}
+            </span>
+          </div>
+
+          {/* Mobile: price */}
+          {show.ticketPrice && !isSoldOut && (
+            <p className="mt-1 text-xs font-bold text-yellow-400 sm:hidden">
+              {show.ticketPrice}
+            </p>
+          )}
+
+          {/* Mobile: badges last, after all details */}
+          {hasBadges && (
+            <div className="mt-2 flex flex-wrap items-center gap-1.5 sm:hidden">
+              {badges}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* ── Perforation (tear line) ── */}
+      <div className="relative shrink-0 border-t-2 border-dashed border-white/15 sm:border-l-2 sm:border-t-0">
+        {/* Mobile notches (top edge, left/right) */}
+        <span className="absolute -left-1.5 -top-1.5 h-3 w-3 rounded-full bg-black sm:hidden" />
+        <span className="absolute -right-1.5 -top-1.5 h-3 w-3 rounded-full bg-black sm:hidden" />
+        {/* Desktop notches (left border, top/bottom) */}
+        <span className="absolute -left-1.5 -top-1.5 hidden h-3 w-3 rounded-full bg-black sm:block" />
+        <span className="absolute -bottom-1.5 -left-1.5 hidden h-3 w-3 rounded-full bg-black sm:block" />
+      </div>
+
+      {/* ── Stub (the tear-off portion) ── */}
+      <div className="px-4 pb-4 pt-3 sm:flex sm:min-w-[152px] sm:flex-col sm:items-center sm:justify-center sm:gap-2.5 sm:px-5 sm:py-4 sm:pt-4">
+        {/* Desktop-only price / label */}
+        <div className="hidden sm:flex sm:flex-col sm:items-center">
+          {show.ticketPrice && !isSoldOut && (
+            <span className="text-sm font-bold text-yellow-400">
+              {show.ticketPrice}
+            </span>
+          )}
+        </div>
+
+        <span
+          aria-hidden="true"
+          className={`group/btn inline-flex min-h-[46px] w-full items-center justify-center gap-1.5 whitespace-nowrap rounded-full px-5 text-[15px] font-bold sm:min-h-0 sm:w-auto sm:py-2.5 sm:text-sm ${
+            isSoldOut
+              ? "border border-white/10 bg-white/5 text-white/40"
+              : isWaitingList
+                ? "touch-manipulation border border-white/10 bg-white/10 text-white transition-all duration-300 group-active:scale-[0.97] group-hover:bg-white/15"
+                : "touch-manipulation bg-yellow-500 text-black shadow-lg shadow-yellow-400/10 transition-all duration-300 group-active:scale-[0.97] group-hover:bg-yellow-300 group-hover:shadow-yellow-400/20"
+          }`}
+        >
+          {isSoldOut ? (
+            <span>Sold Out</span>
+          ) : isWaitingList ? (
+            <>
+              <MessageCircle className="h-4 w-4 sm:h-3.5 sm:w-3.5" />
+              <span>Join List</span>
+            </>
+          ) : (
+            <>
+              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:h-3.5 sm:w-3.5" />
+              <span>Get Tickets</span>
+            </>
+          )}
+        </span>
+      </div>
+    </>
+  );
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-20px" }}
       transition={{ duration: 0.3, delay: index * 0.03 }}
+      viewport={{ once: true, margin: "-20px" }}
+      whileInView={{ opacity: 1, y: 0 }}
     >
-      <a
-        aria-label={`${isWaitingList ? "Join waiting list" : "Get tickets"} for ${show.title} in ${show.city} on ${fullDate} at ${show.time}`}
-        className={`group relative flex flex-col overflow-hidden rounded-2xl border bg-gradient-to-br transition-all duration-300 sm:flex-row sm:items-stretch ${
-          show.featured
-            ? "border-yellow-400/25 from-yellow-400/[0.07] to-black hover:border-yellow-400/45"
-            : "border-white/10 from-zinc-900/80 to-black hover:border-yellow-400/25"
-        }`}
-        href={ticketUrl}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        {/* Featured accent rail */}
-        {show.featured && (
-          <span
-            aria-hidden="true"
-            className="absolute left-0 top-0 z-10 h-full w-1 bg-yellow-400"
-          />
-        )}
-
-        {/* ── Main body (the "keep" portion) ── */}
-        <div className="flex flex-1 items-center gap-3.5 px-4 pb-3 pt-4 sm:gap-4 sm:px-5 sm:py-5">
-          {/* Date */}
-          <div
-            className="min-w-[48px] shrink-0 text-center sm:min-w-[54px]"
-            aria-hidden="true"
-          >
-            <span className="block text-[28px] font-black leading-none tabular-nums text-yellow-400 sm:text-3xl">
-              {String(day).padStart(2, "0")}
-            </span>
-            <span className="mt-1 block text-[11px] font-bold uppercase tracking-wider text-yellow-400/80">
-              {month}
-            </span>
-            <span className="mt-0.5 block text-[10px] text-white/35">
-              {weekday}
-            </span>
-          </div>
-
-          {/* Info */}
-          <div className="min-w-0 flex-1">
-            {/* Title — city + country (country shows on the meta line for desktop) */}
-            <div className="mb-1 flex flex-wrap items-center gap-1.5 sm:gap-2">
-              <h3 className="min-w-0 text-[17px] font-bold leading-snug text-white sm:truncate sm:text-lg">
-                {weekday}, {show.city} - {show.country}
-              </h3>
-              {/* Desktop: badges inline next to the city */}
-              {hasBadges && (
-                <span className="hidden items-center gap-2 sm:flex">{badges}</span>
-              )}
-            </div>
-
-            {/* Location + time */}
-            <div className="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:gap-x-3">
-              <span className="inline-flex items-center gap-1.5 text-xs text-white/50 sm:text-[13px] sm:text-white/45">
-                <MapPin className="h-3.5 w-3.5 shrink-0 text-yellow-400/60 sm:h-3 sm:w-3" />
-                <span className="truncate">{show.location}</span>
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-xs text-white/50 sm:text-[13px] sm:text-white/45">
-                <Clock className="h-3.5 w-3.5 shrink-0 text-yellow-400/60 sm:h-3 sm:w-3" />
-                {show.time}
-              </span>
-              <span className="hidden text-[13px] text-white/25 sm:inline">
-                {show.country}
-              </span>
-            </div>
-
-            {/* Mobile: price */}
-            {show.ticketPrice && (
-              <p className="mt-1 text-xs font-bold text-yellow-400 sm:hidden">
-                {show.ticketPrice}
-              </p>
-            )}
-
-            {/* Mobile: badges last, after all details */}
-            {hasBadges && (
-              <div className="mt-2 flex flex-wrap items-center gap-1.5 sm:hidden">
-                {badges}
-              </div>
-            )}
-          </div>
+      {isSoldOut ? (
+        <div
+          aria-disabled="true"
+          aria-label={`${show.title} in ${show.city} — sold out`}
+          className={cardClassName}
+          role="group"
+        >
+          {cardContent}
         </div>
-
-        {/* ── Perforation (tear line) ── */}
-        <div className="relative shrink-0 border-t-2 border-dashed border-white/15 sm:border-l-2 sm:border-t-0">
-          {/* Mobile notches (top edge, left/right) */}
-          <span className="absolute -left-1.5 -top-1.5 h-3 w-3 rounded-full bg-black sm:hidden" />
-          <span className="absolute -right-1.5 -top-1.5 h-3 w-3 rounded-full bg-black sm:hidden" />
-          {/* Desktop notches (left border, top/bottom) */}
-          <span className="absolute -left-1.5 -top-1.5 hidden h-3 w-3 rounded-full bg-black sm:block" />
-          <span className="absolute -bottom-1.5 -left-1.5 hidden h-3 w-3 rounded-full bg-black sm:block" />
-        </div>
-
-        {/* ── Stub (the tear-off portion) ── */}
-        <div className="px-4 pb-4 pt-3 sm:flex sm:min-w-[152px] sm:flex-col sm:items-center sm:justify-center sm:gap-2.5 sm:px-5 sm:py-4 sm:pt-4">
-          {/* Desktop-only price / label */}
-          <div className="hidden sm:flex sm:flex-col sm:items-center">
-           
-            {show.ticketPrice && (
-              <span className="text-sm font-bold text-yellow-400">
-                {show.ticketPrice}
-              </span>
-            )}
-          </div>
-
-          <span
-            aria-hidden="true"
-            className={`group/btn inline-flex min-h-[46px] w-full touch-manipulation items-center justify-center gap-1.5 whitespace-nowrap rounded-full px-5 text-[15px] font-bold transition-all duration-300 group-active:scale-[0.97] sm:min-h-0 sm:w-auto sm:py-2.5 sm:text-sm ${
-              isWaitingList
-                ? "border border-white/10 bg-white/10 text-white group-hover:bg-white/15"
-                : "bg-yellow-500 text-black shadow-lg shadow-yellow-400/10 group-hover:bg-yellow-300 group-hover:shadow-yellow-400/20"
-            }`}
-          >
-            {isWaitingList ? (
-              <>
-                <MessageCircle className="h-4 w-4 sm:h-3.5 sm:w-3.5" />
-                <span>Join List</span>
-              </>
-            ) : (
-              <>
-                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:h-3.5 sm:w-3.5" />
-                <span>Get Tickets</span>
-              </>
-            )}
-          </span>
-        </div>
-      </a>
+      ) : (
+        <a
+          aria-label={`${isWaitingList ? "Join waiting list" : "Get tickets"} for ${show.title} in ${show.city} on ${fullDate} at ${show.time}`}
+          className={cardClassName}
+          href={ticketUrl}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          {cardContent}
+        </a>
+      )}
     </motion.article>
   );
 };
@@ -255,7 +295,9 @@ const UpcomingShows = () => {
   const today = useMemo(() => new Date(), []);
   const todayStart = useMemo(() => {
     const start = new Date(today);
+
     start.setHours(0, 0, 0, 0);
+
     return start;
   }, [today]);
   const [dbShows, setDbShows] = useState<StaticShow[]>([]);
@@ -318,9 +360,9 @@ const UpcomingShows = () => {
         {/* Shows List */}
         {loading ? (
           <div
+            aria-label="Loading shows"
             className="animate-pulse space-y-3 sm:space-y-4"
             role="status"
-            aria-label="Loading shows"
           >
             {[...Array(3)].map((_, i) => (
               <div
@@ -344,12 +386,11 @@ const UpcomingShows = () => {
         ) : upcomingShows.length > 0 ? (
           <nav aria-label="Show listings" className="space-y-3 sm:space-y-4">
             {upcomingShows.map((show, index) => (
-              <ShowCard key={show.id} show={show} index={index} />
+              <ShowCard key={show.id} index={index} show={show} />
             ))}
           </nav>
         ) : (
-          <div role="status" className="px-4 py-16 text-center">
-           
+          <div className="px-4 py-16 text-center" role="status">
             <p className="text-sm text-white/50 sm:text-base">
               No upcoming shows right now.
             </p>
@@ -365,13 +406,13 @@ const UpcomingShows = () => {
             <div className="grid grid-cols-1 gap-0 lg:grid-cols-2 lg:gap-8">
               <div className="relative order-1 aspect-[16/9] lg:order-1 lg:aspect-auto lg:min-h-[400px]">
                 <Image
+                  fill
                   alt="World tour destinations map"
                   className="object-cover"
-                  fill
+                  priority={false}
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   src="/tour_countries.jpg"
-                  priority={false}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/40" />
               </div>

@@ -16,6 +16,7 @@ export interface Show {
   description: string;
   featured: boolean;
   badge?: string;
+  soldOut?: boolean;
   soldOutPercentage?: number;
   soldOutLabel?: string;
   contactNumber?: string;
@@ -82,7 +83,8 @@ const RAW: Omit<Show, "slug">[] = [
     description:
       "Dr. Hilary Okello performs live at Sauve Kitchen & Social Club, Westlands, on 8th August 2026. Grab your tickets early and come ready to laugh.",
     featured: false,
-    badge: "Tickets Available",
+    badge: "Sold Out",
+    soldOut: true,
   },
 
   {
