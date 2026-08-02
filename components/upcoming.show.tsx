@@ -268,13 +268,15 @@ const UpcomingShows = () => {
       .eq("published", true)
       .gte("date", today.toISOString().slice(0, 10))
       .order("date", { ascending: true })
-      .then(({ data }) => {
-        if (data && data.length > 0) {
-          setDbShows((data as DbShow[]).map(dbShowToStaticShape));
-        }
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
+      .then(
+        ({ data }) => {
+          if (data && data.length > 0) {
+            setDbShows((data as DbShow[]).map(dbShowToStaticShape));
+          }
+          setLoading(false);
+        },
+        () => setLoading(false),
+      );
   }, [today]);
 
   const upcomingShows = useMemo(() => {
