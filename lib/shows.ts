@@ -49,7 +49,7 @@ const RAW: Omit<Show, "slug">[] = [
     description:
       "Dr. Hilary Okello performs live at Sauve Kitchen & Social Club, Westlands, on 6th August 2026. Grab your tickets early and come ready to laugh.",
     featured: false,
-    badge: "Tickets Available",
+    badge: "Tickets selling fast",
   },
   {
     id: 24,
@@ -66,7 +66,8 @@ const RAW: Omit<Show, "slug">[] = [
     description:
       "Dr. Hilary Okello performs live at Nairobi Laugh Bar on 7th August 2026. Grab your tickets early and come ready to laugh.",
     featured: false,
-    badge: "80% Sold Out",
+    badge: "Sold Out",
+    soldOut: true,
   },
   {
     id: 25,
