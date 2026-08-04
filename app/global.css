@@ -190,4 +190,20 @@
       opacity: 0.7;
     }
   }
+
+  /* Neon-sign style flicker */
+  .flicker-text {
+    animation: text-flicker 5s linear infinite;
+  }
+
+  @keyframes text-flicker {
+    0%, 3%, 6%, 7%, 9%, 78%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    3.5%, 6.5%, 8%, 8.5%, 79%, 80% {
+      opacity: 0.4;
+      text-shadow: none;
+    }
+  }
 }

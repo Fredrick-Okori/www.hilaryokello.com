@@ -82,7 +82,7 @@ export function VideoPage({
                       "/placeholder.svg"
                     }
                   />
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="absolute inset-0 flex items-center justify-left">
                     <button className="bg-gray-600 hover:bg-gray-900 text-white rounded-full p-4 transition-transform duration-300 hover:scale-110">
                       <Play className="h-8 w-8 fill-white" />
                     </button>

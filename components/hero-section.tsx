@@ -84,7 +84,7 @@ export function HeroSection() {
         transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}
       >
         <motion.h1
-          className={`${goldman.className} text-[13vw] font-bold leading-[0.92] tracking-tight text-yellow-500 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl`}
+          className={`${goldman.className} flicker-text text-[12vw] font-bold leading-[0.92] tracking-tight text-white sm:text-6xl md:text-6xl lg:text-8xl xl:text-9xl`}
           style={{ scale: headlineScale }}
           variants={item}
         >
