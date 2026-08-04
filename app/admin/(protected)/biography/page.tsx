@@ -59,7 +59,33 @@ export default function AdminBiographyPage() {
       <div>
         <h2 className="text-2xl font-bold text-white">Biography</h2>
         <p className="text-sm text-zinc-400 mt-1">
-          Edit the biography displayed on the website
+          Edit the biography displayed on the website. The first two paragraphs
+          (or headings) appear next to the photo, the rest below it — separate
+          paragraphs with a blank line. Start any line with{" "}
+          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+            #
+          </code>
+          ,{" "}
+          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+            ##
+          </code>
+          , or{" "}
+          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+            ###
+          </code>{" "}
+          for a heading — it doesn&apos;t need a blank line around it. Use{" "}
+          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+            [link text](https://example.com)
+          </code>{" "}
+          for a link — no space between{" "}
+          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+            ]
+          </code>{" "}
+          and{" "}
+          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+            (
+          </code>
+          . Bare http(s) links are also made clickable automatically.
         </p>
       </div>
 

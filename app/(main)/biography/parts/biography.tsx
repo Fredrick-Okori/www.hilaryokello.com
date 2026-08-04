@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@heroui/button";
 import { Mic, Instagram, Youtube } from "lucide-react";
@@ -6,17 +7,141 @@ import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaTiktok } from "react-icons/fa";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Biography | Dr. Hilary Okello - Uganda's Top Stand-Up Comedian",
-  keywords:
-    "Dr. Hilary Okello, Hilary Okello biography, Ugandan comedian bio, stand-up comedian Uganda, African comedy, Gulu comedian, Ugandan entertainers, comedy career Uganda, top African comedians, comedian profiles Uganda",
-  description:
-    "Learn more about Dr. Hilary Okello, Uganda's top comedian known for his sharp wit, medical background, and unique storytelling style. Discover his journey from Gulu to the comedy spotlight across Africa.",
+import { supabase } from "@/lib/supabase";
+import { cn } from "@/lib/utils";
+
+// Inline markdown-lite: [label](url) links, plus bare http(s) URLs.
+const INLINE_PATTERN = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)|(https?:\/\/\S+)/g;
+
+function renderInline(text: string) {
+  const nodes: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let key = 0;
+  let match: RegExpExecArray | null;
+
+  INLINE_PATTERN.lastIndex = 0;
+  while ((match = INLINE_PATTERN.exec(text))) {
+    if (match.index > lastIndex) {
+      nodes.push(text.slice(lastIndex, match.index));
+    }
+
+    const [full, label, mdUrl, bareUrl] = match;
+    const url = mdUrl ?? bareUrl;
+
+    nodes.push(
+      <a
+        key={key++}
+        className="text-yellow-600 hover:underline"
+        href={url}
+        rel="noreferrer"
+        target="_blank"
+      >
+        {label ?? bareUrl}
+      </a>,
+    );
+    lastIndex = match.index + full.length;
+  }
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+
+  return nodes;
+}
+
+const HEADING_STYLES: Record<number, string> = {
+  1: "text-3xl",
+  2: "text-2xl",
+  3: "text-xl",
 };
 
+type BioBlock =
+  | { type: "heading"; level: 1 | 2 | 3; text: string }
+  | { type: "paragraph"; text: string };
+
+// Line-based parser: any line starting with #/##/### becomes a heading
+// immediately, whether or not it has blank lines around it. Consecutive
+// plain lines are joined (with a space) into one paragraph; a blank line
+// starts a new paragraph.
+function parseBioBlocks(content: string): BioBlock[] {
+  const blocks: BioBlock[] = [];
+  let buffer: string[] = [];
+
+  const flushParagraph = () => {
+    const text = buffer.join(" ").trim();
+
+    if (text) blocks.push({ type: "paragraph", text });
+    buffer = [];
+  };
+
+  for (const rawLine of content.split("\n")) {
+    const line = rawLine.trim();
+    const headingMatch = line.match(/^(#{1,3})\s+(.+)$/);
+
+    if (headingMatch) {
+      flushParagraph();
+      blocks.push({
+        type: "heading",
+        level: headingMatch[1].length as 1 | 2 | 3,
+        text: headingMatch[2],
+      });
+    } else if (line === "") {
+      flushParagraph();
+    } else {
+      buffer.push(line);
+    }
+  }
+  flushParagraph();
+
+  return blocks;
+}
+
+// Renders a heading or paragraph block — either way, [label](url) links and
+// bare URLs inside it become clickable.
+function renderBlock(block: BioBlock, key: number, paragraphClassName: string) {
+  if (block.type === "heading") {
+    const Tag = `h${block.level + 1}` as "h2" | "h3" | "h4";
+
+    return (
+      <Tag
+        key={key}
+        className={cn(
+          HEADING_STYLES[block.level],
+          "font-bold text-white text-left mt-10 mb-4",
+        )}
+      >
+        {renderInline(block.text)}
+      </Tag>
+    );
+  }
+
+  return (
+    <p key={key} className={paragraphClassName}>
+      {renderInline(block.text)}
+    </p>
+  );
+}
+
 export default function ComedianBio() {
+  const [bioContent, setBioContent] = useState<string | null>(null);
+
+  useEffect(() => {
+    supabase
+      .from("biography")
+      .select("content")
+      .limit(1)
+      .single()
+      .then(
+        ({ data }) => setBioContent(data?.content ?? ""),
+        () => setBioContent(""),
+      );
+  }, []);
+
+  const blocks = parseBioBlocks(bioContent ?? "");
+  const introBlocks = blocks.slice(0, 2);
+  const restBlocks = blocks.slice(2);
+  const isLoading = bioContent === null;
+
   return (
     <div className="min-h-screen bg-black">
       {/* Header */}
@@ -89,68 +214,35 @@ export default function ComedianBio() {
             <h2 className="text-4xl text-left font-bold mb-6 text-white">
               About Dr. Hilary Okello
             </h2>
-            <p className="text-lg text-white text-left mb-6">
-              Dr. Hilary Okello is Uganda&apos;s finest stand-up comedian and
-              Africa’s Doctor of Comedy. A former medical professional, Dr.
-              Hilary traded his stethoscope for a microphone and has since made
-              waves across the African comedy scene.
-            </p>
-            <p className="text-lg text-white text-left mb-6">
-              Since launching his career in 2017, he’s lit up the stage at
-              Uganda’s premier comedy shows, including Fun Factory, Comedy
-              Store, and Africa Laughs. His breakthrough came in 2017 when he
-              ranked among the top 5 in the Next Top Comedian competition at
-              Theatre Labonita, earning him his first big stage appearance. This
-              success continued with a semi-finalist position in the NBS The
-              Comic competition in 2018, his TV debut, and a major career boost.
-            </p>
+            {isLoading ? (
+              <div
+                aria-label="Loading biography"
+                className="space-y-3 animate-pulse"
+                role="status"
+              >
+                <div className="h-4 w-full rounded bg-white/10" />
+                <div className="h-4 w-full rounded bg-white/10" />
+                <div className="h-4 w-2/3 rounded bg-white/10" />
+              </div>
+            ) : introBlocks.length > 0 ? (
+              introBlocks.map((block, i) =>
+                renderBlock(block, i, "text-lg text-white text-left mb-6"),
+              )
+            ) : (
+              <p className="text-lg text-white/50 text-left">
+                Biography content coming soon.
+              </p>
+            )}
           </div>
         </div>
       </section>
-      <section className="bg-black max-w-4xl mx-auto text-white px-4  py-16">
-        <p className="text-white text-left">
-          {" "}
-          A true ambassador for Ugandan comedy, Dr. Hilary has represented
-          Uganda on international stages. He performed at the Seka Live
-          International Comedy Show in Kigali, Rwanda, alongside Anne Kansiime,
-          and featured at the renowned Laugh Festival in Nairobi, Kenya. In
-          2023, he took the stage at the Juba International Comedy Festival in
-          South Sudan, and in 2024-2025, he showcased his talent at both the
-          GenZ Comedy Festival in Kigali and the Kopala Comedy Show in Zambia.
-        </p>
-
-        <p className="text-white text-left mt-10">
-          {" "}
-          With three successful comedy specials recorded live at the Uganda
-          National Theatre in just three years, Dr. Hilary has firmly planted
-          his name in the Ugandan and African comedy scenes. He’s also made
-          numerous TV appearances, including performances on Comedy Store NTV,
-          Pablo Live, and The Salvador Show on Pearl Magic (Showmax). His
-          writing credits include contributing to the first season of the Senkyu
-          Boss comedy series on ShowMax.
-        </p>
-
-        <p className="text-white text-left mt-10">
-          {" "}
-          Recently expanding his horizons, Dr. Hilary ventured into acting with
-          roles in POPI and Akatale Kange, both available on DSTV and ShowMax.
-          Dr. Hilary&apos;s captivating persona and unmatched comedy style
-          continue to draw crowds at his regular shows at the National Theatre
-          in Kampala and across East Africa. He is also the proud co-founder of
-          The Laughing Maraboustork, the hottest comedy club in Kampala,
-          offering live shows three nights a week. For more info visit:{" "}
-          <a
-            className="text-yellow-600 hover:underline"
-            href="https://www.laughingMaraboustork.com/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Laughing Maraboustork
-          </a>
-        </p>
-
-        <p className="text-white text-left mt-10" />
-      </section>
+      {restBlocks.length > 0 && (
+        <section className="bg-black max-w-4xl mx-auto text-white px-4  py-16">
+          {restBlocks.map((block, i) =>
+            renderBlock(block, i, cn("text-white text-left", i > 0 && "mt-10")),
+          )}
+        </section>
+      )}
       {/* Contact */}
       <section className="bg-black text-white py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
