@@ -4,6 +4,18 @@
       "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2",
       "static/media/0acc7fdf55eb3220-s.p.532ccaa1.woff2",
       "static/media/3dad42ede2327efc-s.p.ce8199fc.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/(main)/watch/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/admin/(protected)/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/admin/(protected)/videos/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
+    ],
+    "[project]/www.hilaryokello.com/app/admin/login/page": [
+      "static/media/47d6d6c1e6da10b8.p.12b7df74.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

@@ -72,47 +72,6 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  // Featured video - Dr. Hilary Okello's comedy
-  const featuredVideo = {
-    id: "1",
-    title:
-      "Comedian Dr Hilary Okello Jokes About BODA BODA (Bike) Transport in Uganda.",
-    duration: "15:04",
-    youtubeId: "0OQTRCxtZYc",
-    views: "60K",
-    uploadedAt: "6 days ago",
-  };
-
-  // Other recommended videos
-  const videos = [
-    {
-      id: "2",
-      title: "Dr  Hilary Okello - Uganda Must Laugh II (Full Show)",
-      duration: "50:30",
-      youtubeId: "Q4M4WYh43dw",
-      views: "26K",
-      uploadedAt: "5 Months ago",
-    },
-    {
-      id: "3",
-      title:
-        "Comedian Dr Hilary Okello's amazing performance leaves audience in stitches",
-      duration: "22:15",
-      youtubeId: "uKznySp_XbE",
-      views: "28K",
-      uploadedAt: "1 month ago",
-    },
-    {
-      id: "4",
-      title:
-        "Uganda Fire Brigade are never in a hurry - Comedian Hilary Okello",
-      duration: "10:35",
-      youtubeId: "CT0VkRUdrtk",
-      views: "14K",
-      uploadedAt: "7 years ago",
-    },
-  ];
-
   const images = [
     {
       url: "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg",
@@ -158,11 +117,7 @@ export default function Page() {
       {/* Video Section */}
       <div className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <VideoSection
-            featuredVideo={featuredVideo}
-            title="Featured Videos"
-            videos={videos}
-          />
+          <VideoSection title="Featured Videos" />
         </div>
       </div>
 

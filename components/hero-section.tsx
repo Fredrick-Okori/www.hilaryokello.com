@@ -45,8 +45,8 @@ export function HeroSection() {
       className="relative w-full h-screen flex items-end overflow-hidden"
     >
       {/* Background image + readability gradients */}
-      <div aria-hidden="true" className="absolute inset-0">
-        {/* Mobile background */}
+      <div aria-hidden="true" className="absolute inset-0 bg-black">
+        {/* Mobile background — full-bleed crop */}
         <Image
           fill
           priority
@@ -54,18 +54,22 @@ export function HeroSection() {
           className="object-cover object-[center_28%] sm:hidden"
           quality={85}
           sizes="100vw"
-          src="/bg_hero_edited.webp"
+          src="/mobile_converted.avif"
         />
-        {/* Desktop background */}
+        {/* Desktop/tablet background — whole image visible, letterboxed */}
         <Image
           fill
           priority
           alt=""
-          className="hidden object-cover object-[center_28%] sm:block"
+          className="hidden object-contain sm:block"
           quality={85}
           sizes="100vw"
-          src="/bg_hero_edited.webp"
+          src="/desktop_hero_converted.avif"
         />
+        {/* Letterbox edge gradients (desktop/tablet only) so the full image reads as intentional, not empty */}
+        <div className="absolute inset-y-0 left-0 hidden w-1/4 bg-gradient-to-r from-black to-transparent sm:block" />
+        <div className="absolute inset-y-0 right-0 hidden w-1/4 bg-gradient-to-l from-black to-transparent sm:block" />
+        <div className="absolute inset-x-0 bottom-0 hidden h-1/3 bg-gradient-to-t from-black to-transparent sm:block" />
         {/* Blue duotone tint */}
         <div className="absolute inset-0 bg-blue-950/40 mix-blend-multiply" />
         {/* Bottom-heavy gradient for text legibility */}
@@ -80,7 +84,7 @@ export function HeroSection() {
         transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}
       >
         <motion.h1
-          className={`${goldman.className} text-[13vw] font-bold leading-[0.92] tracking-tight text-yellow-400 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl`}
+          className={`${goldman.className} text-[13vw] font-bold leading-[0.92] tracking-tight text-yellow-500 sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl`}
           style={{ scale: headlineScale }}
           variants={item}
         >
@@ -88,20 +92,14 @@ export function HeroSection() {
         </motion.h1>
 
         <motion.h2
-          className={`${orbitron.className} mt-1 whitespace-nowrap text-[5.2vw] leading-tight tracking-normal text-white sm:mt-2 sm:text-2xl sm:tracking-wide md:text-3xl lg:text-4xl`}
+          className={`${goldman.className} mt-1 whitespace-nowrap text-[5.2vw] leading-tight tracking-normal text-yellow-500 sm:mt-2 sm:text-2xl sm:tracking-wide md:text-3xl lg:text-4xl`}
           style={{ scale: headlineScale }}
           variants={item}
         >
-          World Tour Updates 2026
+          Checkout World Tour Updates 2026
         </motion.h2>
 
-        <motion.a
-          className="mt-4 inline-block text-xs font-bold uppercase tracking-[0.2em] text-white/90 transition hover:text-yellow-400 sm:mt-6 sm:text-sm"
-          href="#tour-dates"
-          variants={item}
-        >
-          Check Upcoming Shows
-        </motion.a>
+       
       </motion.div>
 
       {/* Ambient blobs */}
