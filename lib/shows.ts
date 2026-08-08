@@ -35,6 +35,23 @@ function makeSlug(city: string, country: string, id: number): string {
 
 const RAW: Omit<Show, "slug">[] = [
   {
+    id: 27,
+    title: "WESTLANDS: DR HILARY OKELLO LIVE - Aug 9th",
+    dateLabel: "9th August, 2026",
+    date: "2026-08-09T19:30:00",
+    time: "7:30 PM",
+    location: "Sauve Kitchen & Social Club",
+    city: "Nairobi",
+    country: "Kenya",
+    ticketPrice: "",
+    image: "/tour/sauve.jpg",
+    link: "https://standupcollective.co.ke/buytickets?event=DR.%20HILARY%20LIVE%20SUNDAY%20SHOW%20",
+    description:
+      "Dr. Hilary Okello performs live at Sauve Kitchen & Social Club, Westlands, on 9th August 2026. Grab your tickets early and come ready to laugh.",
+    featured: true,
+    badge: "Newly added show",
+  },
+  {
     id: 26,
     title: "WESTLANDS: DR HILARY OKELLO LIVE - Aug 6th",
     dateLabel: "6th August, 2026",
