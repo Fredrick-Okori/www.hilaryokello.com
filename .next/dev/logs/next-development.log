@@ -214,3 +214,7 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:07:49.538] Server  LOG     ✓ Compiled in 377ms
 [00:07:56.744] Server  LOG     ✓ Compiled in 337ms
 [00:08:08.434] Server  LOG     ✓ Compiled in 535ms
+[00:13:48.557] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":71,"pageLoadTimestamp":1786464250666,"pageViews":3,"scrollDepth":0,"timeOnSite":769,"urlsVisited":["/admin","/admin/waitinglist","/admin/show-requests"]},"timestamp":"2026-08-11T16:17:10.835Z","triggerId":"inactivity"}
+[00:13:49.939] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1786464250666,"pageViews":3,"scrollDepth":0,"timeOnSite":781,"urlsVisited":["/admin","/admin/waitinglist","/admin/show-requests"]},"timestamp":"2026-08-11T16:17:12.217Z","triggerId":"exitIntent"}
+[00:14:27.041] Server  LOG     ✓ Compiled in 610ms
+[00:14:35.864] Server  LOG     ✓ Compiled in 284ms

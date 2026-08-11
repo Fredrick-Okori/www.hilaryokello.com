@@ -20,7 +20,7 @@ export default function CityRegistrationForm() {
     email: "",
     phone: "",
     city: "",
-    country: "",
+    country: "Uganda",
   });
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
@@ -69,7 +69,7 @@ export default function CityRegistrationForm() {
 
       setForm({
         city: "",
-        country: "",
+        country: "Uganda",
         email: "",
         phone: "",
         username: "",
