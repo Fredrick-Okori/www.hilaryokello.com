@@ -1,3 +1,6 @@
 {
-  "/(main)/page": "app/(main)/page.js"
+  "/(main)/page": "app/(main)/page.js",
+  "/admin/(protected)/page": "app/admin/(protected)/page.js",
+  "/admin/(protected)/show-requests/page": "app/admin/(protected)/show-requests/page.js",
+  "/admin/(protected)/waitinglist/page": "app/admin/(protected)/waitinglist/page.js"
 }

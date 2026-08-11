@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { Button } from "@heroui/button";
 
 import { supabase } from "@/lib/supabase";
+import { COUNTRIES } from "@/lib/countries";
 
 type FormState = {
   username: string;
@@ -24,17 +25,23 @@ export default function CityRegistrationForm() {
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
 
+  const dialCode = useMemo(
+    () => COUNTRIES.find((c) => c.name === form.country)?.dialCode ?? "",
+    [form.country],
+  );
+
   const canSubmit = useMemo(() => {
     const emailOk = /.+@.+\..+/.test(form.email.trim());
 
     return (
       form.username.trim().length >= 2 &&
       emailOk &&
-      form.phone.trim().length >= 7 &&
+      !!dialCode &&
+      form.phone.trim().length >= 6 &&
       form.city.trim().length >= 2 &&
       form.country.trim().length >= 2
     );
-  }, [form]);
+  }, [form, dialCode]);
 
   const update = (key: keyof FormState) => (value: string) => {
     setForm((prev) => ({ ...prev, [key]: value }));
@@ -53,7 +60,7 @@ export default function CityRegistrationForm() {
         country: form.country.trim(),
         email: form.email.trim(),
         name: form.username.trim(),
-        phone: form.phone.trim(),
+        phone: `${dialCode} ${form.phone.trim()}`,
       });
 
       if (error) {
@@ -101,17 +108,49 @@ export default function CityRegistrationForm() {
           />
         </label>
         <label className="flex flex-col gap-2 text-sm text-white/80">
-          <span>Phone Number</span>
-          <input
+          <span>Country</span>
+          <select
             required
-            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
-            placeholder="e.g. +61412345678"
-            type="tel"
-            value={form.phone}
-            onChange={(e) => update("phone")(e.target.value)}
-          />
+            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            value={form.country}
+            onChange={(e) => update("country")(e.target.value)}
+          >
+            <option className="bg-black text-white/45" value="">
+              Select your country
+            </option>
+            {COUNTRIES.map((country) => (
+              <option
+                key={country.iso2}
+                className="bg-black text-white"
+                value={country.name}
+              >
+                {country.name}
+              </option>
+            ))}
+          </select>
         </label>
         <label className="flex flex-col gap-2 text-sm text-white/80">
+          <span>Phone Number</span>
+          <div className="flex gap-2">
+            <input
+              disabled
+              readOnly
+              aria-label="Country code"
+              className="w-20 shrink-0 rounded-2xl border border-white/15 bg-white/5 px-3 py-3 text-center text-base text-white/70 outline-none"
+              placeholder="+…"
+              value={dialCode}
+            />
+            <input
+              required
+              className="w-full min-w-0 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+              placeholder="e.g. 412345678"
+              type="tel"
+              value={form.phone}
+              onChange={(e) => update("phone")(e.target.value)}
+            />
+          </div>
+        </label>
+        <label className="flex flex-col gap-2 text-sm text-white/80 sm:col-span-2">
           <span>Location / City</span>
           <input
             required
@@ -120,17 +159,6 @@ export default function CityRegistrationForm() {
             type="text"
             value={form.city}
             onChange={(e) => update("city")(e.target.value)}
-          />
-        </label>
-        <label className="flex flex-col gap-2 text-sm text-white/80 sm:col-span-2">
-          <span>Country</span>
-          <input
-            required
-            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
-            placeholder="e.g. Australia"
-            type="text"
-            value={form.country}
-            onChange={(e) => update("country")(e.target.value)}
           />
         </label>
       </div>
