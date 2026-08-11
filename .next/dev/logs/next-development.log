@@ -218,3 +218,198 @@ Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 [00:13:49.939] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1786464250666,"pageViews":3,"scrollDepth":0,"timeOnSite":781,"urlsVisited":["/admin","/admin/waitinglist","/admin/show-requests"]},"timestamp":"2026-08-11T16:17:12.217Z","triggerId":"exitIntent"}
 [00:14:27.041] Server  LOG     ✓ Compiled in 610ms
 [00:14:35.864] Server  LOG     ✓ Compiled in 284ms
+[00:15:38.113] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":66,"pageLoadTimestamp":1786464213769,"pageViews":1,"scrollDepth":0,"timeOnSite":806,"urlsVisited":["/"]},"timestamp":"2026-08-11T16:18:00.475Z","triggerId":"inactivity"}
+[00:16:26.563] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1786464288987,"pageViews":1,"scrollDepth":46.594817702361844,"timeOnSite":899,"urlsVisited":["/"]},"timestamp":"2026-08-11T16:19:48.830Z","triggerId":"inactivity"}
+[00:16:51.249] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:51.790] Server  LOG     ✓ Compiled in 1724ms
+[00:16:51.831] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:51.909] Server  LOG     ✓ Compiled in 0ms
+[00:16:52.610] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:52.839] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:53.210] Browser WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:53.210] Browser WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:53.210] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:16:53.258] Server  ERROR   ⨯ ReferenceError: ExportPdfButton is not defined
+[00:16:53.801] Server  ERROR   ⨯ ReferenceError: ExportPdfButton is not defined
+[00:16:54.248] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:54.248] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:54.248] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:54.248] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:16:55.095] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.095] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.095] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.095] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.095] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.095] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.095] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.096] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:16:55.109] Browser ERROR   uncaughtError: ReferenceError: ExportPdfButton is not defined
+[00:17:32.566] Server  LOG     ✓ Compiled in 790ms
+[00:17:32.588] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:17:32.856] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:17:33.497] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:17:34.786] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:17:34.786] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:17:34.786] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:17:34.786] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:17:36.110] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="show-reque..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/admin/sho..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="/www.hilar...">
+                <SegmentTrieNode>
+                <ShowRequestsPage>
+                  <div className="p-4 md:p-6">
+                    <ShowRequestsTable showRequests={[...]}>
+                      <div>
+                      <div className="overflow-h...">
+                        <div className="overflow-x...">
+                          <table className="min-w-[940...">
+                            <thead>
+                            <tbody>
+                              <tr className="border-t b...">
+                                <td>
+                                <td>
+                                <td>
+                                <td>
+                                <td>
+                                <td className="px-4 py-3 whitespace-nowrap">
++                                 10/08/2026, 17:03:10
+-                                 8/10/2026, 5:03:10 PM
+                              ...
+              ...
+            ...
+
+[00:18:03.852] Server  LOG     ✓ Compiled in 208ms
+[00:18:04.094] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":26,"pageLoadTimestamp":1786465257594,"pageViews":1,"scrollDepth":0,"timeOnSite":26,"urlsVisited":["/admin/show-requests"]},"timestamp":"2026-08-11T16:21:25.478Z","triggerId":"timeOnPage"}
+[00:19:46.376] Server  LOG     ✓ Compiled in 482ms
+[00:20:02.484] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":62,"pageLoadTimestamp":1786465257594,"pageViews":1,"scrollDepth":0,"timeOnSite":147,"urlsVisited":["/admin/show-requests"]},"timestamp":"2026-08-11T16:23:24.766Z","triggerId":"inactivity"}
+[00:20:32.480] Server  LOG     ✓ Compiled in 483ms
+[00:20:43.769] Server  LOG     ✓ Compiled in 377ms
+[00:20:51.995] Server  LOG     ✓ Compiled in 350ms
+[00:21:16.209] Server  LOG     ✓ Compiled in 815ms
+[00:21:37.586] Server  LOG     ✓ Compiled in 189ms
