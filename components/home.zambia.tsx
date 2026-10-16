@@ -8,6 +8,8 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@heroui/button";
 import { Skeleton } from "@heroui/react"; // Import the Skeleton component
 
+import { useSectionReveal } from "@/components/use-section-reveal";
+
 // Define the type for a single image item
 interface ImageItem {
   url: string;
@@ -87,6 +89,9 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
 
   // Start at the first real slide (accounting for the prepended clone)
   const [transitionEnabled, setTransitionEnabled] = useState(true);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useSectionReveal(sectionRef, isLoading);
 
   // Reset slide index when itemsPerView or imgs change
   useEffect(() => {
@@ -160,10 +165,10 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
   };
 
   return (
-    <>
+    <section ref={sectionRef} aria-label="Zimbabwe gallery" className="w-full">
       {/* Title and Button Section */}
-      <div>
-        <h4 className="text-left text-4xl text-white font-bold">
+      <div data-scroll-reveal-item>
+        <h4 className="text-left text-4xl text-white font-bold 4xl:text-5xl">
           State of Nation | Harare - Zimbabwe
         </h4>
         <Button
@@ -175,7 +180,10 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="top-0 right-0 flex py-10 justify-end space-x-2 z-10">
+      <div
+        data-scroll-reveal-item
+        className="top-0 right-0 flex py-10 justify-end space-x-2 z-10"
+      >
         <Button
           aria-label="Previous slide"
           className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
@@ -199,7 +207,7 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
       </div>
 
       {/* Carousel Container */}
-      <div className="relative w-full overflow-hidden">
+      <div data-scroll-reveal-item className="relative w-full overflow-hidden">
         <div
           ref={carouselRef}
           className="flex"
@@ -216,7 +224,7 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
                   width: `${100 / itemsPerView}%`,
                 }}
               >
-                <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96">
+                <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 2xl:h-[28rem] 3xl:h-[32rem] 4xl:h-[38rem]">
                   {isLoading ? (
                     <Skeleton className="w-full h-full bg-default-200 rounded-2xl" />
                   ) : (
@@ -240,14 +248,14 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
             ))
           ) : (
             <div className="flex-shrink-0 w-full p-2">
-              <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 flex items-center justify-center bg-gray-100 rounded-2xl">
+              <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 2xl:h-[28rem] 3xl:h-[32rem] 4xl:h-[38rem] flex items-center justify-center bg-gray-100 rounded-2xl">
                 <p>No images available</p>
               </div>
             </div>
           )}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

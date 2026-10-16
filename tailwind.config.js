@@ -9,6 +9,10 @@ const config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1920px",
+        "4xl": "2560px",
+      },
       fontFamily: {
         sans: ["var(--font-google-sans)", "system-ui", "sans-serif"],
         mono: ["system-ui", "monospace"],
@@ -25,7 +29,19 @@ const config = {
         'xl': '2.5rem',
       },
       colors: {
-        /* 60-30-10 Color Palette - WCAG AA Compliant */
+        yellow: {
+          50: '#ffffcc',
+          100: '#ffff99',
+          200: '#ffff66',
+          300: '#ffff33',
+          400: '#fffc00',
+          500: '#e6e300',
+          600: '#ccc900',
+          700: '#b3b000',
+          800: '#999600',
+          900: '#666300',
+          950: '#333200',
+        },
         black: {
           DEFAULT: '#000000',
           light: '#1a1a1a',
@@ -33,10 +49,10 @@ const config = {
           muted: '#0d0d0d',
         },
         gold: {
-          DEFAULT: '#D4A04A',
-          light: '#E8BA6A',
-          dark: '#9d7a2a',
-          muted: '#B8882A',
+          DEFAULT: '#fffc00',
+          light: '#ffff33',
+          dark: '#ccc900',
+          muted: '#e6e300',
         },
         red: {
           DEFAULT: '#E63946',

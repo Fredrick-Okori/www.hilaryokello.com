@@ -3,14 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { Orbitron, Goldman } from "next/font/google";
-
-// Bold display face for the headline
-const orbitron = Orbitron({
-  weight: ["700", "800"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { Goldman } from "next/font/google";
 
 const goldman = Goldman({
   weight: "700",
@@ -79,12 +72,12 @@ export function HeroSection() {
       {/* Content */}
       <motion.div
         animate="show"
-        className="relative z-10 w-full px-5 pb-10 text-center sm:px-8 sm:pb-14 lg:px-16 lg:pb-20"
+        className="relative z-10 w-full px-5 pb-10 text-center sm:px-8 sm:pb-14 lg:px-16 lg:pb-20 2xl:pb-24 3xl:pb-28 4xl:pb-32"
         initial="hidden"
         transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}
       >
         <motion.h1
-          className={`${goldman.className} flicker-text text-[12vw] font-bold leading-[0.92] tracking-tight text-white sm:text-6xl md:text-6xl lg:text-8xl xl:text-9xl`}
+          className={`${goldman.className} flicker-text text-[12vw] font-bold leading-[0.92] tracking-tight text-white sm:text-6xl md:text-6xl lg:text-8xl xl:text-9xl 2xl:text-[9rem] 3xl:text-[10rem] 4xl:text-[11rem]`}
           style={{ scale: headlineScale }}
           variants={item}
         >
@@ -92,14 +85,12 @@ export function HeroSection() {
         </motion.h1>
 
         <motion.h2
-          className={`${goldman.className} mt-1 whitespace-nowrap text-[5.2vw] leading-tight tracking-normal text-yellow-500 sm:mt-2 sm:text-2xl sm:tracking-wide md:text-3xl lg:text-4xl`}
+          className={`${goldman.className} mt-1 whitespace-nowrap text-[5.2vw] leading-tight tracking-normal text-yellow-500 sm:mt-2 sm:text-2xl sm:tracking-wide md:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl`}
           style={{ scale: headlineScale }}
           variants={item}
         >
-          Checkout World Tour Updates 2026
+          Hilarious World Tour 2026
         </motion.h2>
-
-       
       </motion.div>
 
       {/* Ambient blobs */}

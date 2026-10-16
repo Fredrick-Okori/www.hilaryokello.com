@@ -3,22 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  /* 60-30-10 Color Rule: Black (60%), Gold/C89021 (30%), Red (10%) */
+  /* Brand palette: black, Snapchat yellow, and white. */
   :root {
-    /* Primary - Black (60%) */
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
-    /* Secondary - Gold C89021 (30%) */
-    --primary: 40 75% 45%;
+    --primary: 59.3 100% 50%;
     --primary-foreground: 0 0% 0%;
 
-    --secondary: 40 60% 25%;
+    --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Red (10%) */
-    --accent: 0 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 59.3 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 100% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -36,7 +33,7 @@
 
     --border: 0 0% 25%;
     --input: 0 0% 15%;
-    --ring: 40 75% 45%;
+    --ring: 59.3 100% 50%;
 
     --radius: 0.5rem;
   }
@@ -45,14 +42,14 @@
     --background: 0 0% 100%;
     --foreground: 0 0% 5%;
 
-    --primary: 40 75% 40%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 59.3 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 40 60% 35%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 0 0% 0%;
 
-    --accent: 0 85% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 59.3 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 100% 40%;
     --destructive-foreground: 0 0% 100%;
@@ -68,7 +65,7 @@
 
     --border: 0 0% 85%;
     --input: 0 0% 92%;
-    --ring: 40 75% 40%;
+    --ring: 59.3 100% 50%;
   }
 }
 
@@ -136,8 +133,8 @@
 @layer utilities {
   .glow-border {
     pointer-events: none;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 215, 0, 0.4), transparent 60%),
-                radial-gradient(circle at 70% 70%, rgba(255, 0, 0, 0.3), transparent 60%);
+    background: radial-gradient(circle at 30% 30%, rgba(255, 252, 0, 0.4), transparent 60%),
+                radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.2), transparent 60%);
     filter: blur(40px);
     animation: pulseGlow 4s infinite ease-in-out;
   }
@@ -167,7 +164,7 @@
     right: -6rem;
     width: 18rem;
     height: 18rem;
-    background: #C89021;
+    background: #FFFC00;
     animation-delay: 0s;
   }
 
@@ -176,7 +173,7 @@
     left: -6rem;
     width: 18rem;
     height: 18rem;
-    background: #FF0000;
+    background: #FFFFFF;
     animation-delay: 3s;
   }
 

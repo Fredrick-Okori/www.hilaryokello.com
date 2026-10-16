@@ -1,10 +1,12 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, Maximize } from "lucide-react";
 import { Skeleton } from "@heroui/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Group images into titled galleries
 const galleries: Record<string, string[]> = {
@@ -103,6 +105,7 @@ export default function Gallery() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
+  const galleryRef = useRef<HTMLDivElement>(null);
   const modalRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -113,6 +116,70 @@ export default function Gallery() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  useLayoutEffect(() => {
+    const gallery = galleryRef.current;
+
+    if (!gallery || !isLoaded) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const media = gsap.matchMedia();
+    const context = gsap.context(() => {
+      media.add("(prefers-reduced-motion: no-preference)", () => {
+        const groups = gsap.utils.toArray<HTMLElement>(
+          "[data-gallery-group]",
+          gallery,
+        );
+
+        groups.forEach((group) => {
+          const heading = group.querySelector<HTMLElement>(
+            "[data-gallery-heading]",
+          );
+          const cards = gsap.utils.toArray<HTMLElement>(
+            "[data-gallery-card]",
+            group,
+          );
+          const timeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: group,
+              start: "top 82%",
+              once: true,
+            },
+          });
+
+          if (heading) {
+            timeline.fromTo(
+              heading,
+              { y: 22, autoAlpha: 0 },
+              { y: 0, autoAlpha: 1, duration: 0.55, ease: "power3.out" },
+            );
+          }
+
+          if (cards.length > 0) {
+            timeline.fromTo(
+              cards,
+              { y: 34, autoAlpha: 0, scale: 0.97 },
+              {
+                y: 0,
+                autoAlpha: 1,
+                scale: 1,
+                duration: 0.65,
+                stagger: 0.06,
+                ease: "power3.out",
+              },
+              heading ? "-=0.2" : 0,
+            );
+          }
+        });
+      });
+    }, gallery);
+
+    return () => {
+      context.revert();
+      media.revert();
+    };
+  }, [isLoaded]);
 
   useEffect(() => {
     if (selectedIndex !== null) {
@@ -195,11 +262,14 @@ export default function Gallery() {
   }, [modalRef]);
 
   return (
-    <div className="px-6 py-20  mx-auto bg-black min-h-screen">
+    <div ref={galleryRef} className="px-6 py-20  mx-auto bg-black min-h-screen">
       {/* Render each gallery group with a heading */}
       {groupEntries.map(([title, imgs], gIdx) => (
-        <section key={title} className="mb-12">
-          <h2 className="text-2xl text-left font-bold text-white py-10">
+        <section key={title} data-gallery-group className="mb-12">
+          <h2
+            data-gallery-heading
+            className="text-2xl text-left font-bold text-white py-10"
+          >
             {title}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -209,14 +279,10 @@ export default function Gallery() {
               return (
                 <div
                   key={globalIdx}
-                  className={`relative rounded-xl overflow-hidden shadow-lg cursor-pointer group transition-all duration-500 transform ${
-                    isLoaded
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-8"
-                  }`}
+                  data-gallery-card
+                  className={`relative rounded-xl overflow-hidden shadow-lg cursor-pointer group ${isLoaded ? "opacity-100" : "opacity-0"}`}
                   role="button"
                   style={{
-                    transitionDelay: `${globalIdx * 50}ms`,
                     height: "300px",
                     width: "400px",
                   }}

@@ -7,6 +7,7 @@ import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 import { supabase } from "@/lib/supabase";
+import { useSectionReveal } from "@/components/use-section-reveal";
 
 interface Video {
   id: string;
@@ -87,10 +88,13 @@ interface VideoSectionProps {
 }
 
 export function VideoSection({ title, className }: VideoSectionProps) {
+  const sectionRef = useRef<HTMLElement>(null);
   const [videos, setVideos] = useState<Video[] | null>(null);
   const [activeVideo, setActiveVideo] = useState<Video | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const userSelectedRef = useRef(false);
+
+  useSectionReveal(sectionRef, videos === null);
 
   useEffect(() => {
     supabase
@@ -124,14 +128,22 @@ export function VideoSection({ title, className }: VideoSectionProps) {
   };
 
   return (
-    <section className={cn("py-8 sm:py-12", className)} id="clips">
+    <section
+      ref={sectionRef}
+      className={cn("py-8 sm:py-12", className)}
+      id="clips"
+    >
       <div className="container px-4 md:px-6">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6 sm:mb-8 leading-tight">
+        <h2
+          data-scroll-reveal-item
+          className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6 sm:mb-8 leading-tight"
+        >
           {title}
         </h2>
 
         {videos === null ? (
           <div
+            data-scroll-reveal-item
             aria-label="Loading videos"
             className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 animate-pulse"
             role="status"
@@ -145,13 +157,17 @@ export function VideoSection({ title, className }: VideoSectionProps) {
           </div>
         ) : videos.length === 0 || !activeVideo ? (
           <div
+            data-scroll-reveal-item
             className="text-center text-white/60 bg-white/5 border border-white/10 rounded-xl p-10"
             role="status"
           >
             No videos published yet. Check back soon.
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div
+            data-scroll-reveal-item
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8"
+          >
             {/* Featured Video */}
             <div className="lg:col-span-2 space-y-3 sm:space-y-4">
               <div

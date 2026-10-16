@@ -101,29 +101,31 @@ export default function Page() {
       <Suspense
         fallback={<div className="h-64 bg-black-light animate-pulse" />}
       >
-        <UpcomingShows />
+        <div className="scroll-mt-24" id="shows">
+          <UpcomingShows />
+        </div>
       </Suspense>
-      <div className="bg-black py-16">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="bg-black py-16 4xl:py-24">
+        <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <Zambia />
         </div>
       </div>
-      <div className="bg-black py-16">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="bg-black py-16 4xl:py-24">
+        <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <CountryGlimpse images={images} />
         </div>
       </div>
 
       {/* Video Section */}
-      <div className="bg-black py-16">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="bg-black py-16 4xl:py-24">
+        <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <VideoSection title="Featured Videos" />
         </div>
       </div>
 
       {/* Gallery Glimpse */}
-      <div className="bg-black py-16">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="bg-black py-16 4xl:py-24">
+        <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <ImageCarousel />
         </div>
       </div>

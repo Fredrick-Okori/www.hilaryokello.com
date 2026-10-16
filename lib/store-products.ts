@@ -18,7 +18,7 @@ export const STORE_PRODUCTS: StoreProduct[] = [
     slug: "dr-hilary-signature-tee",
     name: "Dr. Hilary Signature Tee",
     description:
-      "The official Dr. Hilary Okello signature tee. Features the embroidered comedy tour logo on the chest and a clean minimal back. 100% organic cotton, pre-shrunk. Wear it to a show, wear it anywhere.",
+      "The official Dr. Hilary Okello signature tee. Features the embroidered Hilarious tour logo on the chest and a clean minimal back. 100% organic cotton, pre-shrunk. Wear it to a show, wear it anywhere.",
     price: "UGX 65,000",
     category: "T-Shirts",
     categoryLabel: "OFFICIAL MERCHANDISE · T-SHIRT",
@@ -50,7 +50,7 @@ export const STORE_PRODUCTS: StoreProduct[] = [
   {
     id: 3,
     slug: "comedy-tour-cap",
-    name: "Comedy Tour Cap",
+    name: "Hilarious Tour Cap",
     description:
       "Structured snapback with gold embroidery of the Dr. Hilary logo on the front. Flat brim, adjustable strap. One size fits all. Pairs with anything.",
     price: "UGX 45,000",
@@ -67,9 +67,9 @@ export const STORE_PRODUCTS: StoreProduct[] = [
   {
     id: 4,
     slug: "world-tour-tee",
-    name: "World Tour Tee",
+    name: "Hilarious World Tour Tee",
     description:
-      "Jokes From Far Away World Tour edition. All tour cities printed on the back in bold gold. Breathable ringspun cotton — comfortable for all-day wear from Kampala to Harare.",
+      "Hilarious World Tour edition. All tour cities printed on the back in bold gold. Breathable ringspun cotton — comfortable for all-day wear from Kampala to Harare.",
     price: "UGX 70,000",
     category: "T-Shirts",
     categoryLabel: "OFFICIAL MERCHANDISE · T-SHIRT",
@@ -101,7 +101,7 @@ export const STORE_PRODUCTS: StoreProduct[] = [
   {
     id: 6,
     slug: "jokes-from-far-away-hoodie",
-    name: "Jokes From Far Away Hoodie",
+    name: "Hilarious World Tour Hoodie",
     description:
       "World Tour Edition — strictly limited run. Oversized cut, fleece lined interior, dropped shoulders. The most premium piece in the collection. Once it's gone, it's gone.",
     price: "UGX 130,000",
@@ -135,9 +135,9 @@ export const STORE_PRODUCTS: StoreProduct[] = [
   {
     id: 8,
     slug: "comedy-tour-hoodie",
-    name: "Comedy Tour Hoodie",
+    name: "Hilarious Tour Hoodie",
     description:
-      "The Dr. Hilary Okello Comedy Tour hoodie. Heavyweight fleece, oversized fit, dropped shoulders. Front chest logo and full tour dates on the back. Limited quantities — this one won't be restocked.",
+      "The Dr. Hilary Okello Hilarious Tour hoodie. Heavyweight fleece, oversized fit, dropped shoulders. Front chest logo and full tour dates on the back. Limited quantities — this one won't be restocked.",
     price: "UGX 115,000",
     category: "Hoodies",
     categoryLabel: "OFFICIAL MERCHANDISE · HOODIE",

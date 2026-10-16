@@ -1,12 +1,14 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MapPin, Clock, Star, ArrowUpRight, MessageCircle } from "lucide-react";
 
 import CityRegistrationForm from "@/components/city-registration-form";
 import { supabase } from "@/lib/supabase";
 import { SHOWS, DEFAULT_CONTACT, type Show as StaticShow } from "@/lib/shows";
+import { useSectionReveal } from "@/components/use-section-reveal";
 
 // Row shape returned from Supabase
 type DbShow = {
@@ -66,7 +68,7 @@ const parseDate = (iso: string) => new Date(Date.parse(iso));
 const WEEKDAY_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
 
 // --- Show Card — mobile-first tear-off event ticket ---
-const ShowCard = ({ show, index }: { show: StaticShow; index: number }) => {
+const ShowCard = ({ show }: { show: StaticShow }) => {
   const date = useMemo(() => parseDate(show.date), [show.date]);
   const month = date.toLocaleDateString("en-US", { month: "short" });
   const day = date.getDate();
@@ -168,7 +170,7 @@ const ShowCard = ({ show, index }: { show: StaticShow; index: number }) => {
         <div className="min-w-0 flex-1">
           {/* Title — city + country (country shows on the meta line for desktop) */}
           <div className="mb-1 flex flex-wrap items-center gap-1.5 sm:gap-2">
-            <h3 className="min-w-0 text-[17px] font-bold leading-snug text-white sm:truncate sm:text-lg">
+            <h3 className="min-w-0 text-[17px] font-bold leading-snug text-white sm:truncate sm:text-lg 2xl:text-xl 4xl:text-2xl">
               {weekday}, {show.city} - {show.country}
             </h3>
             {/* Desktop: badges inline next to the city */}
@@ -260,12 +262,7 @@ const ShowCard = ({ show, index }: { show: StaticShow; index: number }) => {
   );
 
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 10 }}
-      transition={{ duration: 0.3, delay: index * 0.03 }}
-      viewport={{ once: true, margin: "-20px" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
+    <article data-show-card>
       {isSoldOut ? (
         <div
           aria-disabled="true"
@@ -286,12 +283,13 @@ const ShowCard = ({ show, index }: { show: StaticShow; index: number }) => {
           {cardContent}
         </a>
       )}
-    </motion.article>
+    </article>
   );
 };
 
 // --- Main Component ---
 const UpcomingShows = () => {
+  const sectionRef = useRef<HTMLElement>(null);
   const today = useMemo(() => new Date(), []);
   const todayStart = useMemo(() => {
     const start = new Date(today);
@@ -338,18 +336,60 @@ const UpcomingShows = () => {
     );
   }, [dbShows, todayStart]);
 
+  useSectionReveal(sectionRef, `${loading}:${upcomingShows.length}`);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+
+    if (!section || loading || upcomingShows.length === 0) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const media = gsap.matchMedia();
+
+    media.add("(prefers-reduced-motion: no-preference)", () => {
+      const cards = gsap.utils.toArray<HTMLElement>(
+        "[data-show-card]",
+        section,
+      );
+
+      if (cards.length === 0) return;
+
+      gsap.fromTo(
+        cards,
+        { y: 28, autoAlpha: 0, scale: 0.98 },
+        {
+          y: 0,
+          autoAlpha: 1,
+          scale: 1,
+          duration: 0.55,
+          stagger: 0.11,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: cards[0],
+            start: "top 88%",
+            once: true,
+          },
+        },
+      );
+    });
+
+    return () => media.revert();
+  }, [loading, upcomingShows]);
+
   return (
     <section
+      ref={sectionRef}
       aria-label="Upcoming Shows"
       className="min-h-screen bg-black font-sans text-white"
     >
-      <div className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:px-8 2xl:max-w-[1440px] 2xl:pb-20 2xl:pt-16 3xl:max-w-[1680px] 3xl:pb-24 3xl:pt-20 4xl:max-w-[2400px] 4xl:pb-28 4xl:pt-24">
         {/* Section Header */}
-        <header className="mb-6 text-center sm:mb-10">
+        <header data-scroll-reveal-item className="mb-6 text-center sm:mb-10">
           <span className="mb-2 inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-400 sm:mb-3 sm:text-xs">
-            2026 World Tour
+            Hilarious World Tour 2026
           </span>
-          <h2 className="text-4xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl">
+          <h2 className="text-4xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl">
             Upcoming Shows
           </h2>
           <p className="mx-auto mt-2 max-w-md text-xs text-white/40 sm:text-sm">
@@ -360,6 +400,7 @@ const UpcomingShows = () => {
         {/* Shows List */}
         {loading ? (
           <div
+            data-scroll-reveal-item
             aria-label="Loading shows"
             className="animate-pulse space-y-3 sm:space-y-4"
             role="status"
@@ -384,13 +425,21 @@ const UpcomingShows = () => {
             ))}
           </div>
         ) : upcomingShows.length > 0 ? (
-          <nav aria-label="Show listings" className="space-y-3 sm:space-y-4">
-            {upcomingShows.map((show, index) => (
-              <ShowCard key={show.id} index={index} show={show} />
+          <nav
+            data-scroll-reveal-item
+            aria-label="Show listings"
+            className="space-y-3 sm:space-y-4"
+          >
+            {upcomingShows.map((show) => (
+              <ShowCard key={show.id} show={show} />
             ))}
           </nav>
         ) : (
-          <div className="px-4 py-16 text-center" role="status">
+          <div
+            data-scroll-reveal-item
+            className="px-4 py-16 text-center"
+            role="status"
+          >
             <p className="text-sm text-white/50 sm:text-base">
               No upcoming shows right now.
             </p>
@@ -401,7 +450,11 @@ const UpcomingShows = () => {
         )}
 
         {/* City Registration CTA */}
-        <aside aria-label="City registration" className="mt-10 sm:mt-14">
+        <aside
+          data-scroll-reveal-item
+          aria-label="City registration"
+          className="mt-10 sm:mt-14"
+        >
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900 via-black to-gray-900">
             <div className="grid grid-cols-1 gap-0 lg:grid-cols-2 lg:gap-8">
               <div className="relative order-1 aspect-[16/9] lg:order-1 lg:aspect-auto lg:min-h-[400px]">
@@ -412,7 +465,7 @@ const UpcomingShows = () => {
                   priority={false}
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  src="/tour_countries.jpg"
+                  src="/tour_countries.png"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/40" />
               </div>
@@ -422,7 +475,7 @@ const UpcomingShows = () => {
                   Want Me to Perform in Your City?
                 </h3>
                 <p className="mb-5 text-sm leading-relaxed text-white/70 sm:mb-6 sm:text-base">
-                  Join the &quot;Jokes From Far Away&quot; World Tour! Tell us
+                  Join the Hilarious World Tour! Tell us
                   where you want Dr. Okello to perform next. High-demand cities
                   influence our tour planning!
                 </p>
