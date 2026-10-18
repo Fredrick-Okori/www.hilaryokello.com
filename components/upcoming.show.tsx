@@ -465,7 +465,7 @@ const UpcomingShows = () => {
                   priority={false}
                   quality={75}
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  src="/tour_countries.png"
+                  src="/tour_countries.webp"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/40" />
               </div>
