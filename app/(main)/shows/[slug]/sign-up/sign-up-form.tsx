@@ -19,9 +19,7 @@ import {
 import { FaWhatsapp } from "react-icons/fa";
 
 import { COUNTRIES } from "@/lib/countries";
-import { useRecaptcha } from "@/lib/use-recaptcha";
 import { submitShowSignUp } from "@/app/actions/public-forms";
-import { RecaptchaNotice } from "@/components/recaptcha-notice";
 
 const fieldClass =
   "h-12 w-full min-w-0 rounded-xl border border-ink/10 bg-cream/60 text-base text-ink placeholder:text-ink/35 outline-none transition focus:border-yellow-500 focus:bg-white focus:ring-4 focus:ring-yellow-500/10";
@@ -39,8 +37,6 @@ export default function SignUpForm({ show }: { show: Show }) {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
-  const { preload: preloadRecaptcha, getToken: getRecaptchaToken } =
-    useRecaptcha();
 
   const city = show.city.trim();
 
@@ -74,7 +70,6 @@ export default function SignUpForm({ show }: { show: Show }) {
         email,
         phoneCountry: country,
         phone,
-        recaptchaToken: await getRecaptchaToken("show_signup"),
       });
 
       if (result.ok) setSubmitted(true);
@@ -152,7 +147,6 @@ export default function SignUpForm({ show }: { show: Show }) {
         noValidate
         aria-label={`Sign up for ${show.title}`}
         className="mt-8 space-y-5"
-        onFocus={preloadRecaptcha}
         onSubmit={onSubmit}
       >
         <label className="block">
@@ -254,8 +248,6 @@ export default function SignUpForm({ show }: { show: Show }) {
             </>
           )}
         </button>
-
-        <RecaptchaNotice />
       </form>
     </div>
   );

@@ -4,9 +4,7 @@ import { useMemo, useState } from "react";
 import { Button } from "@heroui/button";
 
 import { COUNTRIES } from "@/lib/countries";
-import { useRecaptcha } from "@/lib/use-recaptcha";
 import { submitCityRequest } from "@/app/actions/public-forms";
-import { RecaptchaNotice } from "@/components/recaptcha-notice";
 
 type FormState = {
   username: string;
@@ -26,8 +24,6 @@ export default function CityRegistrationForm() {
   });
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
-  const { preload: preloadRecaptcha, getToken: getRecaptchaToken } =
-    useRecaptcha();
 
   const dialCode = useMemo(
     () => COUNTRIES.find((c) => c.name === form.country)?.dialCode ?? "",
@@ -65,7 +61,6 @@ export default function CityRegistrationForm() {
         email: form.email,
         name: form.username,
         phone: form.phone,
-        recaptchaToken: await getRecaptchaToken("city_request"),
       });
 
       if (!result.ok) {
@@ -90,7 +85,7 @@ export default function CityRegistrationForm() {
   };
 
   return (
-    <form className="w-full" onFocus={preloadRecaptcha} onSubmit={onSubmit}>
+    <form className="w-full" onSubmit={onSubmit}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <label className="flex flex-col gap-2 text-sm text-ink/80">
           <span>Username</span>
@@ -180,10 +175,6 @@ export default function CityRegistrationForm() {
         </Button>
 
         {status && <p className="text-sm text-ink/70">{status}</p>}
-      </div>
-
-      <div className="mt-4">
-        <RecaptchaNotice />
       </div>
     </form>
   );

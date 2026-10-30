@@ -1,10 +1,8 @@
 "use server";
 
-// Public form submissions. Each one is checked with reCAPTCHA and validated
-// here, then written with the service-role client, so the tables don't need
+// Public form submissions. Each one is validated here, then written with the service-role client, so the tables don't need
 // to accept inserts from the public (anon) key.
 
-import { verifyRecaptcha } from "@/lib/recaptcha";
 import { supabaseAdmin } from "@/lib/supabase-admin";
 import { COUNTRIES } from "@/lib/countries";
 import { dbShowToShow, getShowBySlug, type DbShow } from "@/lib/shows";
@@ -12,8 +10,6 @@ import { dbShowToShow, getShowBySlug, type DbShow } from "@/lib/shows";
 export type FormResult = { ok: true } | { ok: false; error: string };
 
 const GENERIC_ERROR = "We couldn't save your details. Please try again.";
-const BOT_ERROR =
-  "We couldn't verify you're human. Please refresh the page and try again.";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -37,7 +33,6 @@ export async function submitShowSignUp(input: {
   email: string;
   phoneCountry: string;
   phone: string;
-  recaptchaToken: string;
 }): Promise<FormResult> {
   const slug = clean(input.slug, 200);
   const fullName = clean(input.fullName, 120);
@@ -53,13 +48,6 @@ export async function submitShowSignUp(input: {
   ) {
     return { ok: false, error: "Please check your details and try again." };
   }
-
-  const captcha = await verifyRecaptcha(
-    clean(input.recaptchaToken, 4000),
-    "show_signup",
-  );
-
-  if (!captcha.ok) return { ok: false, error: BOT_ERROR };
 
   try {
     const db = supabaseAdmin();
@@ -102,7 +90,6 @@ export async function submitCityRequest(input: {
   country: string;
   phone: string;
   city: string;
-  recaptchaToken: string;
 }): Promise<FormResult> {
   const name = clean(input.name, 120);
   const email = clean(input.email, 254);
@@ -120,13 +107,6 @@ export async function submitCityRequest(input: {
   ) {
     return { ok: false, error: "Please check your details and try again." };
   }
-
-  const captcha = await verifyRecaptcha(
-    clean(input.recaptchaToken, 4000),
-    "city_request",
-  );
-
-  if (!captcha.ok) return { ok: false, error: BOT_ERROR };
 
   try {
     const { error } = await supabaseAdmin()
