@@ -57,7 +57,7 @@ export default function AdminLayout({
   }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-zinc-950 text-white">
+    <div className="flex h-screen overflow-hidden bg-cream text-ink">
       {/* Mobile overlay */}
       {mobileOpen && (
         <div
@@ -68,13 +68,13 @@ export default function AdminLayout({
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 z-30 flex h-full flex-col border-r border-zinc-800 bg-zinc-900 transition-all duration-300
+        className={`fixed top-0 left-0 z-30 flex h-full flex-col border-r border-ink/10 bg-white transition-all duration-300
           ${collapsed ? "w-16" : "w-60"}
           ${mobileOpen ? "translate-x-0" : "-translate-x-full"}
           md:relative md:translate-x-0`}
       >
         {/* Logo row */}
-        <div className="flex h-16 items-center justify-between px-4 border-b border-zinc-800">
+        <div className="flex h-16 items-center justify-between px-4 border-b border-ink/10">
           {!collapsed && (
             <span className="text-sm font-semibold tracking-wide text-yellow-400 uppercase truncate">
               Hilary Admin
@@ -82,7 +82,7 @@ export default function AdminLayout({
           )}
           <button
             aria-label="Toggle sidebar"
-            className="hidden md:flex items-center justify-center w-8 h-8 rounded-md hover:bg-zinc-800 transition-colors"
+            className="hidden md:flex items-center justify-center w-8 h-8 rounded-md hover:bg-ink/5 transition-colors"
             onClick={() => setCollapsed((c) => !c)}
           >
             {collapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
@@ -100,8 +100,8 @@ export default function AdminLayout({
                 className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors
                   ${
                     active
-                      ? "bg-yellow-400 text-black"
-                      : "text-zinc-400 hover:bg-zinc-800 hover:text-white"
+                      ? "bg-yellow-400 text-white"
+                      : "text-ink/60 hover:bg-ink/5 hover:text-ink"
                   }`}
                 href={href}
                 onClick={() => setMobileOpen(false)}
@@ -114,9 +114,9 @@ export default function AdminLayout({
         </nav>
 
         {/* Footer actions */}
-        <div className="border-t border-zinc-800 px-2 py-4 space-y-1">
+        <div className="border-t border-ink/10 px-2 py-4 space-y-1">
           <Link
-            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-ink/60 hover:bg-ink/5 hover:text-ink transition-colors"
             href="/"
             target="_blank"
           >
@@ -124,7 +124,7 @@ export default function AdminLayout({
             {!collapsed && <span>View Site</span>}
           </Link>
           <button
-            className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-400 hover:bg-zinc-800 hover:text-red-400 transition-colors"
+            className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-ink/60 hover:bg-ink/5 hover:text-red-600 transition-colors"
             onClick={handleLogout}
           >
             <LogOut className="shrink-0" size={18} />
@@ -136,24 +136,24 @@ export default function AdminLayout({
       {/* Main content */}
       <div className="flex flex-1 flex-col min-w-0 overflow-hidden">
         {/* Top bar */}
-        <header className="flex h-16 items-center gap-4 border-b border-zinc-800 bg-zinc-900 px-4 md:px-6">
+        <header className="flex h-16 items-center gap-4 border-b border-ink/10 bg-white px-4 md:px-6">
           <button
             aria-label="Open menu"
-            className="md:hidden flex items-center justify-center w-9 h-9 rounded-md hover:bg-zinc-800"
+            className="md:hidden flex items-center justify-center w-9 h-9 rounded-md hover:bg-ink/5"
             onClick={() => setMobileOpen(true)}
           >
             <Menu size={20} />
           </button>
-          <h1 className="text-sm font-semibold text-zinc-300 capitalize">
+          <h1 className="text-sm font-semibold text-ink/75 capitalize">
             {navItems.find((n) => n.href === pathname)?.label ?? "Admin"}
           </h1>
           <div className="ml-auto flex items-center gap-2">
             {user && (
-              <span className="text-xs text-zinc-500 hidden sm:block truncate max-w-[180px]">
+              <span className="text-xs text-ink/50 hidden sm:block truncate max-w-[180px]">
                 {user.email}
               </span>
             )}
-            <div className="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center text-black text-xs font-bold shrink-0">
+            <div className="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center text-white text-xs font-bold shrink-0">
               {user?.email?.[0]?.toUpperCase() ?? "A"}
             </div>
           </div>

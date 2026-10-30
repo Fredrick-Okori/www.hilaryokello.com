@@ -45,7 +45,7 @@ export default function ExportPdfButton({
 
   return (
     <button
-      className="flex items-center gap-2 rounded-lg border border-zinc-700 bg-yellow-500 hover:bg-yellow-400 px-4 py-2 text-sm font-semibold text-black transition-colors disabled:opacity-50"
+      className="flex items-center gap-2 rounded-lg border border-ink/15 bg-yellow-500 hover:bg-yellow-400 px-4 py-2 text-sm font-semibold text-white transition-colors disabled:opacity-50"
       disabled={showRequests.length === 0}
       onClick={handleExportPdf}
     >

@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import { Goldman } from "next/font/google";
 
 const goldman = Goldman({
@@ -19,6 +19,31 @@ const item = {
     transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
+
+// Art direction: one <img>, two sources, so each device downloads only the
+// image it shows.
+const heroCommon = {
+  alt: "",
+  fetchPriority: "high",
+  fill: true,
+  loading: "eager",
+  quality: 85,
+} as const;
+const { props: desktopImg } = getImageProps({
+  ...heroCommon,
+  sizes: "(orientation: portrait) 220vw, 200vh",
+  src: "/hilarious_tour_converted.avif",
+});
+const { props: mobileImg } = getImageProps({
+  ...heroCommon,
+  sizes: "100vw",
+  // 1400×2100 downscale of render_mobile.avif (6105×9156): sharp at 3× DPR,
+  // but ~1/19th the pixels to decode, so it paints without a visible delay.
+  src: "/render_mobile_sm.avif",
+});
+const desktopSrcSet = desktopImg.srcSet ?? desktopImg.src;
+const mobileSrcSet = mobileImg.srcSet ?? mobileImg.src;
+const heroImgProps = { ...mobileImg, srcSet: undefined };
 
 export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -37,36 +62,61 @@ export function HeroSection() {
       aria-label="Hero section"
       className="relative w-full h-screen flex items-end overflow-hidden"
     >
+      {/* <picture> sources aren't preloaded automatically; React hoists these
+          into <head> so each device fetches only its own hero image early. */}
+      <link
+        as="image"
+        fetchPriority="high"
+        href={mobileSrcSet}
+        media="(max-width: 767px)"
+        rel="preload"
+        type="image/avif"
+      />
+      <link
+        as="image"
+        fetchPriority="high"
+        href={desktopSrcSet}
+        media="(min-width: 768px)"
+        rel="preload"
+        type="image/avif"
+      />
+
       {/* Background image + readability gradients */}
-      <div aria-hidden="true" className="absolute inset-0 bg-black">
-        {/* Mobile background — full-bleed crop */}
-        <Image
-          fill
-          priority
-          alt=""
-          className="object-cover object-[center_28%] sm:hidden"
-          quality={85}
-          sizes="100vw"
-          src="/mobile_converted.avif"
-        />
-        {/* Desktop/tablet background — whole image visible, letterboxed */}
-        <Image
-          fill
-          priority
-          alt=""
-          className="hidden object-contain sm:block"
-          quality={85}
-          sizes="100vw"
-          src="/desktop_hero_converted.avif"
-        />
-        {/* Letterbox edge gradients (desktop/tablet only) so the full image reads as intentional, not empty */}
-        <div className="absolute inset-y-0 left-0 hidden w-1/4 bg-gradient-to-r from-black to-transparent sm:block" />
-        <div className="absolute inset-y-0 right-0 hidden w-1/4 bg-gradient-to-l from-black to-transparent sm:block" />
-        <div className="absolute inset-x-0 bottom-0 hidden h-1/3 bg-gradient-to-t from-black to-transparent sm:block" />
-        {/* Blue duotone tint */}
-        <div className="absolute inset-0 bg-blue-950/40 mix-blend-multiply" />
-        {/* Bottom-heavy gradient for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-black/10" />
+      <div aria-hidden="true" className="absolute inset-0 bg-cream">
+        {/* texture-tile.webp is Texture.png mirrored into a 2×2 tile, so the
+            repeat has no visible seams. */}
+        <div className="absolute inset-0 bg-[url('/texture-tile.webp')] bg-[length:360px_auto] bg-center bg-repeat opacity-15 md:bg-[length:560px_auto]" />
+        {/* Fades the texture into plain cream at the bottom, matching the
+            image's own fade, so the headline sits on a clean background. */}
+        <div className="absolute inset-x-0 bottom-0 h-[35%] bg-gradient-to-t from-cream via-cream/80 to-transparent md:h-[50%]" />
+        {/* Transparent cut-out group shot. The figures occupy x 6–87% and
+            y 16–76% of the canvas, so the wrapper is pushed down by the empty
+            bottom band (24.3% of its height = 19.17% of its width) and shifted
+            so the figures, not the canvas, are centred. The mask fades the
+            lower part of the figures into the page instead of a hard cut, and
+            is near-transparent where the headline sits.
+            Portrait screens: larger, centred on the middle figure, and lifted
+            so the group sits mid-screen above the headline. */}
+        {/* Phones (< md) get a dedicated single-figure portrait render
+            (2:3, transparent top band, face centred ~40% across). It is
+            sized by screen height so it fills most of the viewport on every
+            phone, bottom-anchored, and the face is centred horizontally. */}
+        <div
+          className="absolute left-1/2 aspect-[6105/9156] -translate-x-[40%] [--hero-bottom:8svh] [--hero-mask:linear-gradient(to_top,transparent_4%,rgba(0,0,0,0.25)_12%,black_26%)] [--hero-w:max(min(100vw,85svh),68svh)] md:aspect-[13323/10512] md:[--hero-mask:linear-gradient(to_top,transparent_30%,rgba(0,0,0,0.25)_45%,black_62%)] md:-translate-x-[46.7%] md:[--hero-bottom:calc(var(--hero-w)*-0.1917)] md:[--hero-w:min(200vh,135vw)] md:portrait:-translate-x-[53%] md:portrait:[--hero-bottom:calc(var(--hero-w)*-0.1917+12svh)] md:portrait:[--hero-w:min(220vw,120svh)]"
+          style={{
+            width: "var(--hero-w)",
+            bottom: "var(--hero-bottom)",
+            maskImage: "var(--hero-mask)",
+            WebkitMaskImage: "var(--hero-mask)",
+          }}
+        >
+          <picture>
+            <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+            <source media="(max-width: 767px)" srcSet={mobileSrcSet} />
+            {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
+            <img {...heroImgProps} className="object-contain" />
+          </picture>
+        </div>
       </div>
 
       {/* Content */}
@@ -77,7 +127,7 @@ export function HeroSection() {
         transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}
       >
         <motion.h1
-          className={`${goldman.className} flicker-text text-[12vw] font-bold leading-[0.92] tracking-tight text-white sm:text-6xl md:text-6xl lg:text-8xl xl:text-9xl 2xl:text-[9rem] 3xl:text-[10rem] 4xl:text-[11rem]`}
+          className={`${goldman.className} flicker-text whitespace-nowrap text-[7.6vw] font-bold leading-[0.92] tracking-tight text-[#391314]`}
           style={{ scale: headlineScale }}
           variants={item}
         >
@@ -89,7 +139,7 @@ export function HeroSection() {
           style={{ scale: headlineScale }}
           variants={item}
         >
-          Hilarious World Tour 2026
+          Hilarious World Tour 2027
         </motion.h2>
       </motion.div>
 

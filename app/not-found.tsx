@@ -4,11 +4,11 @@ import { Button } from "@heroui/button";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black px-4">
-      <div className="max-w-4xl w-full space-y-6 p-8 bg-black rounded-xl shadow-lg text-center">
-        <h1 className="text-5xl font-bold text-white">Oops! Page Not Found</h1>
+    <div className="min-h-screen flex items-center justify-center bg-cream px-4">
+      <div className="max-w-4xl w-full space-y-6 p-8 bg-white rounded-xl shadow-lg text-center">
+        <h1 className="text-5xl font-bold text-ink">Oops! Page Not Found</h1>
 
-        <p className="text-md text-gray-200">
+        <p className="text-md text-ink/70">
           It looks like you&apos;ve stumbled into a dead page that doesn&apos;t
           exist. Don&apos;t frown, though! You can still have a laugh and return
           to the homepage.
@@ -17,7 +17,7 @@ export default function NotFound() {
         <div className="flex justify-center mt-4">
           <Link href="/">
             <Button
-              className="text-sm font-medium text-white bg-black hover:bg-white hover:text-black flex items-center justify-center"
+              className="text-sm font-medium text-ink bg-cream hover:bg-white hover:text-black flex items-center justify-center"
               size="lg"
               variant="bordered"
             >

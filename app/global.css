@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-  /* Brand palette: black, Snapchat yellow, and white. */
+  /* Brand palette: black, rust red (#9b2912), and white. */
   :root {
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
-    --primary: 59.3 100% 50%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 10.1 79.2% 33.9%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 59.3 100% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 10.1 79.2% 33.9%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 100% 50%;
     --destructive-foreground: 0 0% 100%;
@@ -33,7 +33,7 @@
 
     --border: 0 0% 25%;
     --input: 0 0% 15%;
-    --ring: 59.3 100% 50%;
+    --ring: 10.1 79.2% 33.9%;
 
     --radius: 0.5rem;
   }
@@ -42,14 +42,14 @@
     --background: 0 0% 100%;
     --foreground: 0 0% 5%;
 
-    --primary: 59.3 100% 50%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 10.1 79.2% 33.9%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 94%;
     --secondary-foreground: 0 0% 0%;
 
-    --accent: 59.3 100% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 10.1 79.2% 33.9%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 100% 40%;
     --destructive-foreground: 0 0% 100%;
@@ -65,7 +65,7 @@
 
     --border: 0 0% 85%;
     --input: 0 0% 92%;
-    --ring: 59.3 100% 50%;
+    --ring: 10.1 79.2% 33.9%;
   }
 }
 
@@ -133,7 +133,7 @@
 @layer utilities {
   .glow-border {
     pointer-events: none;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 252, 0, 0.4), transparent 60%),
+    background: radial-gradient(circle at 30% 30%, rgba(155, 41, 18, 0.4), transparent 60%),
                 radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.2), transparent 60%);
     filter: blur(40px);
     animation: pulseGlow 4s infinite ease-in-out;
@@ -164,7 +164,7 @@
     right: -6rem;
     width: 18rem;
     height: 18rem;
-    background: #FFFC00;
+    background: #9b2912;
     animation-delay: 0s;
   }
 

@@ -1,431 +1,1187 @@
-[00:00:03.759] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:04.308] Server  LOG     ✓ Ready in 3.5s
-[00:00:19.605] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:04.335] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:05.284] Server  LOG     ✓ Ready in 3.9s
+[00:00:07.698] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:00:21.415] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:00:21.509] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:08.946] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:00:09.148] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.511] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:09.151] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.512] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:09.152] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.513] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:09.153] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.515] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:09.154] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.518] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:09.156] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.521] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:09.157] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.523] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:00:09.158] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.530] Server  WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:00:09.164] Server  WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.532] Server  WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:22.989] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:09.536] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:00:25.060] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:00:25.060] Browser WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.060] Browser WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.060] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.408] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.738] Server  LOG     ○ Compiling /_not-found/page ...
-[00:00:25.944] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:16.271] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:00:25.960] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:18.539] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:00:18.539] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:18.539] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:00:19.292] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:19.292] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:19.292] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:19.292] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:19.292] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:19.292] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:19.293] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:19.293] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:28.788] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:28.788] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:28.788] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:25.960] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:28.788] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:26.533] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:28.788] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:26.533] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:28.788] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:26.533] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:00:28.788] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:51.783] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":12,"pageLoadTimestamp":1792150280750,"pageViews":1,"scrollDepth":20.875143938147723,"timeOnSite":25,"urlsVisited":["/"]},"timestamp":"2026-10-16T11:31:47.608Z","triggerId":"timeOnPage"}
-[00:01:03.772] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1792150280750,"pageViews":1,"scrollDepth":20.875143938147723,"timeOnSite":39,"urlsVisited":["/"]},"timestamp":"2026-10-16T11:32:00.483Z","triggerId":"exitIntent"}
-[00:01:04.579] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:00:28.788] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:28.789] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:01:09.433] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793360438470,"pageViews":1,"scrollDepth":12.061548643282595,"timeOnSite":49,"urlsVisited":["/"]},"timestamp":"2026-10-30T11:41:29.203Z","triggerId":"exitIntent"}
+[00:02:02.424] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1793360438470,"pageViews":1,"scrollDepth":12.061548643282595,"timeOnSite":102,"urlsVisited":["/"]},"timestamp":"2026-10-30T11:42:21.720Z","triggerId":"inactivity"}
+[00:03:49.408] Server  LOG     ✓ Compiled in 5.6s
+[00:03:49.459] Browser WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.171] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:01:05.206] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:04:07.882] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:04:07.934] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.936] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.936] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.937] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.938] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.938] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.939] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.941] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.942] Server  WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:07.943] Server  WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:12.741] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:01:05.863] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:04:13.314] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:04:13.314] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.314] Browser WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.314] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:04:13.517] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.517] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.517] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.517] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.518] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.521] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.521] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:13.521] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:14.881] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:41.726] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793360673474,"pageViews":1,"scrollDepth":10.221729490022174,"timeOnSite":28,"urlsVisited":["/"]},"timestamp":"2026-10-30T11:45:01.923Z","triggerId":"exitIntent"}
+[00:06:20.837] Server  LOG     ✓ Compiled in 218ms
+[00:06:21.839] Server  LOG     ✓ Compiled in 171ms
+[00:07:43.422] Server  LOG     ✓ Compiled in 440ms
+[00:07:44.339] Server  LOG     ✓ Compiled in 316ms
+[00:08:20.424] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":2,"pageLoadTimestamp":1793360673474,"pageViews":1,"scrollDepth":10.221729490022174,"timeOnSite":245,"urlsVisited":["/"]},"timestamp":"2026-10-30T11:48:39.735Z","triggerId":"timeOnPage"}
+[00:13:16.428] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":63,"pageLoadTimestamp":1793360673474,"pageViews":1,"scrollDepth":10.221729490022174,"timeOnSite":423,"urlsVisited":["/"]},"timestamp":"2026-10-30T11:52:36.769Z","triggerId":"inactivity"}
+[00:17:30.544] Server  LOG     ✓ Compiled in 782ms
+[00:20:36.995] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:01:05.863] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:20:37.828] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:20:37.883] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.886] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.886] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.887] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.891] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.892] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.893] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.893] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.895] Server  WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:37.896] Server  WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:40.696] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:01:07.992] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:01:09.081] Browser WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:20:41.524] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:20:41.527] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:20:41.527] Browser WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.527] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:20:41.720] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.089] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:01:09.756] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.823] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:09.756] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:42.824] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:10.220] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:43.072] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:10.220] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:43.072] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:10.220] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:20:43.072] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:32.384] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:20:55.553] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:01:32.995] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:01:33.047] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.048] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.050] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.050] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.051] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.052] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.052] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.053] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.057] Server  WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.058] Server  WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:33.597] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:20:59.000] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:01:33.598] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:20:59.664] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:20:59.664] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:20:59.664] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.824] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.973] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.973] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:00.973] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:29.589] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":27,"pageLoadTimestamp":1793361679693,"pageViews":1,"scrollDepth":0,"timeOnSite":29,"urlsVisited":["/"]},"timestamp":"2026-10-30T12:01:49.736Z","triggerId":"timeOnPage"}
+[00:22:02.021] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:01:34.910] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:01:34.910] Browser WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:34.910] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.756] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.984] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.984] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:01:35.984] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:35.784] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1792150350926,"pageViews":1,"scrollDepth":29.634808356637603,"timeOnSite":119,"urlsVisited":["/"]},"timestamp":"2026-10-16T11:34:31.598Z","triggerId":"inactivity"}
-[00:03:39.336] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:22:04.389] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:03:40.429] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:22:04.941] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:22:04.941] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:04.941] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:06.329] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:37.596] Server  LOG     ✓ Compiled in 198ms
+[00:22:56.507] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793361744986,"pageViews":1,"scrollDepth":4.878048780487805,"timeOnSite":51,"urlsVisited":["/"]},"timestamp":"2026-10-30T12:03:16.657Z","triggerId":"exitIntent"}
+[00:23:49.424] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1793361744986,"pageViews":1,"scrollDepth":4.878048780487805,"timeOnSite":102,"urlsVisited":["/"]},"timestamp":"2026-10-30T12:04:08.676Z","triggerId":"inactivity"}
+[00:27:00.724] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:03:40.430] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:27:01.651] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:27:01.714] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.716] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.717] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.718] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.719] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.719] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.720] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.721] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.722] Server  WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:01.723] Server  WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:04.555] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[00:03:41.328] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[00:03:41.638] Browser WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:27:05.248] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:27:05.248] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.638] Browser WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:27:05.248] Browser WARN    Image with src "/render_mobile.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.638] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.638] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.638] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.638] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.638] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.988] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.988] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.988] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:27:05.248] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:41.988] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[00:03:42.837] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:42.837] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.546] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:43.445] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.663] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:43.445] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.663] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:43.445] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:27:06.663] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:04:31.856] Server  LOG     ✓ Compiled in 1570ms
-[00:05:38.794] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":28,"pageLoadTimestamp":1792150477641,"pageViews":1,"scrollDepth":85.96808685639085,"timeOnSite":116,"urlsVisited":["/"]},"timestamp":"2026-10-16T11:36:34.597Z","triggerId":"scrollDepth"}
-[00:05:38.794] Browser ERROR   Error fetching trigger message: {}
-[44:57:02.569] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:27:37.692] Server  LOG     ✓ Compiled in 310ms
+[00:27:38.746] Server  LOG     ✓ Compiled in 331ms
+[00:28:38.448] Server  LOG     ✓ Compiled in 335ms
+[00:29:56.945] Server  LOG     ✓ Compiled in 285ms
+[00:30:08.605] Server  LOG     ✓ Compiled in 193ms
+[00:30:51.903] Server  LOG     ✓ Compiled in 162ms
+[00:31:30.211] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":10,"pageLoadTimestamp":1793362045235,"pageViews":1,"scrollDepth":5.299334811529934,"timeOnSite":265,"urlsVisited":["/"]},"timestamp":"2026-10-30T12:11:50.367Z","triggerId":"timeOnPage"}
+[00:32:02.345] Server  LOG     ✓ Compiled in 265ms
+[00:32:48.198] Server  LOG     ✓ Compiled in 318ms
+[00:34:16.745] Server  LOG     ✓ Compiled in 478ms
+[00:34:16.827] Browser WARN    Image with src "/render_mobile_sm.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:34:17.588] Server  LOG     ✓ Compiled in 282ms
+[00:34:37.740] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[44:57:03.732] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[44:57:03.798] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:38.885] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:34:38.996] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.799] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:38.999] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.800] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:39.000] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.801] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:39.005] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.802] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:39.007] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.802] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:39.010] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.803] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:39.011] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.804] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:34:39.013] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.808] Server  WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:34:39.014] Server  WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:03.810] Server  WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:34:39.015] Server  WARN    Image with src "/render_mobile_sm.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:04.324] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:34:46.704] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[44:57:04.324] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:34:58.513] Server  LOG     ✓ Compiled in 310ms
+[00:35:13.063] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[44:57:04.674] Server  WARN    ⚠ ./www.hilaryokello.com
+[00:35:13.712] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:35:13.771] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.775] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.776] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.777] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.779] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.780] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.781] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.782] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.783] Server  WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:13.784] Server  WARN    Image with src "/render_mobile_sm.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:35:41.737] Server  LOG     ✓ Compiled in 256ms
+[00:35:42.779] Server  LOG     ✓ Compiled in 250ms
+[00:35:43.854] Server  LOG     ✓ Compiled in 286ms
+[00:35:44.783] Server  LOG     ✓ Compiled in 171ms
+[00:35:51.483] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1793362045235,"pageViews":1,"scrollDepth":11.295865203414255,"timeOnSite":526,"urlsVisited":["/"]},"timestamp":"2026-10-30T12:16:11.644Z","triggerId":"inactivity"}
+[00:37:05.796] Server  LOG     ✓ Compiled in 254ms
+[00:37:12.749] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793362045235,"pageViews":1,"scrollDepth":11.295865203414255,"timeOnSite":607,"urlsVisited":["/"]},"timestamp":"2026-10-30T12:17:32.910Z","triggerId":"exitIntent"}
+[00:38:50.056] Server  WARN    ⚠ ./www.hilaryokello.com
 Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
-[44:57:05.499] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
-[44:57:05.499] Browser WARN    Image with src "/mobile_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:38:50.682] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:38:50.682] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:38:54.053] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":2,"pageLoadTimestamp":1793362751319,"pageViews":1,"scrollDepth":71.51205259313367,"timeOnSite":2,"urlsVisited":["/biography"]},"timestamp":"2026-10-30T12:19:14.218Z","triggerId":"scrollDepth"}
+[00:39:19.822] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:20.471] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.499] Browser WARN    Image with src "/desktop_hero_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+[00:39:20.471] Browser WARN    Image with src "/render_mobile_sm.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.499] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:05.649] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+[00:39:20.471] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.363] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:39:22.609] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.604] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.916] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.916] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:06.916] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+[00:39:22.609] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[44:57:32.755] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":21,"pageLoadTimestamp":1792312082562,"pageViews":1,"scrollDepth":18.084596967278532,"timeOnSite":25,"urlsVisited":["/"]},"timestamp":"2026-10-18T08:28:29.310Z","triggerId":"timeOnPage"}
-[44:59:44.294] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":64,"pageLoadTimestamp":1792312082562,"pageViews":1,"scrollDepth":18.084596967278532,"timeOnSite":159,"urlsVisited":["/"]},"timestamp":"2026-10-18T08:30:41.736Z","triggerId":"inactivity"}
-[45:00:10.758] Server  LOG     ✓ Compiled in 1107ms
-[45:00:22.016] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1792312082562,"pageViews":1,"scrollDepth":18.084596967278532,"timeOnSite":196,"urlsVisited":["/"]},"timestamp":"2026-10-18T08:31:19.459Z","triggerId":"exitIntent"}
+[00:39:33.004] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:33.660] Server  WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.663] Server  WARN    Image with src "/render_mobile_sm.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.725] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:39:33.772] Server  WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.773] Server  WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.774] Server  WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.775] Server  WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.776] Server  WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.776] Server  WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.777] Server  WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:33.778] Server  WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:36.613] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:36.614] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:37.284] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:39:37.284] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/render_mobile_sm.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:37.284] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:38.599] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:40.461] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:41.207] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:41.208] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:41.208] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_127_3_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_129_5_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_132_8_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_133_9_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_154_10_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_155_11_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_156_12_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_158_14_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_159_15_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_160_16_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_161_17_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Rwanda/rwanda_1.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_8967%202_3_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9048%202_8_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9055%202_11_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9060%202_12_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9064%202_13_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9066%202_14_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9072%202_15_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9082%202_16_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9091%202_17_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9098%202_18_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9100%202_19_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/Botswana/DSC_9104%202_20_11zon.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_0854.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_0913.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_1041.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9107.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9161.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9170.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9173.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_8796.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_8799.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_8883.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_8976.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9022.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9060.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_1499.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9178.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9186.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9197.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9202.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9205.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9210.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9264.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.189] Browser WARN    Image with src "/gallerypage/DSC_9291.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.190] Browser WARN    Image with src "/gallerypage/DSC_9304.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.190] Browser WARN    Image with src "/gallerypage/DSC_9316.webp" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:43.776] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_127_3_11zon.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:39:43.776] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_128_4_11zon.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:39:43.776] Browser WARN    Image with src "/Rwanda/SHEMA%20INNOCENT%200780%20329%20329_129_5_11zon.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:40:03.895] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="gallery/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url="/gallery" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                    <SegmentViewNode type="page" pagePath="/www.hilar...">
+                      <SegmentTrieNode>
+                      <GalleryPage>
+                        <div>
+                          <Gallery>
+                            <div ref={{...}} className="px-6 py-20...">
+                              <section>
+                              <section>
+                              <section>
+                              <section>
+                              <div aria-label="Close modal" className="fixed inse...">
+>                               <button
+>                                 ref={{current:null}}
+>                                 className="relative max-w-6xl w-full h-[85vh] mx-auto px-4"
+>                                 tabIndex={0}
+>                                 onClick={function onClick}
+>                                 onKeyDown={function onKeyDown}
+>                               >
+                                  <div>
+                                  <div>
+>                                 <button
+>                                   aria-label="Close gallery"
+>                                   className="absolute top-10 right-8 bg-black/30 hover:bg-black/60 backdrop-blur-sm ..."
+>                                   onClick={function closeModal}
+>                                 >
+                                  ...
+                    ...
+                  ...
+        ...
+
+[00:41:31.724] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":33,"pageLoadTimestamp":1793362801776,"pageViews":1,"scrollDepth":28.601083032490976,"timeOnSite":110,"urlsVisited":["/gallery"]},"timestamp":"2026-10-30T12:21:51.891Z","triggerId":"timeOnPage"}
+[00:41:44.128] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:41:44.679] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:41:44.680] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:41:44.680] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:41:53.636] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793362925417,"pageViews":1,"scrollDepth":82.9072315558802,"timeOnSite":8,"urlsVisited":["/biography"]},"timestamp":"2026-10-30T12:22:13.804Z","triggerId":"exitIntent"}
+[00:41:56.327] Server  LOG     ✓ Compiled in 781ms
+[00:42:05.605] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:06.130] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:06.133] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:06.649] Browser WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:06.649] Browser WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:06.649] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:06.649] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:42:11.463] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:11.468] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:12.051] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:12.053] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:21.069] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:21.071] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:26.383] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:27.539] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:27.539] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:27.539] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:27.540] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:27.540] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:41.346] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:41.742] Browser WARN    Image with src "/hilarious_tour_converted.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/render_mobile_sm.avif" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_8883%202_1_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_8941%202_2_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_8991%202_4_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_9023%202_5_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_9042%202_6_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_9047%202_7_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_9052%202_9_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:41.742] Browser WARN    Image with src "/Botswana/DSC_9053%202_10_11zon.webp" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.611] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[00:42:43.773] Browser WARN    Image with src "/harare/ec4dc4a37ef294e1f6410a1299013227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/ef9444da75b91900d4485ace060648fc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/fab58e92a17b915d2a67586ef87f1f57.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/04cbaeee377f02f0494c389c69c3d98e.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/12d317ce22156a27704561fc77a1f764.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/3d0bf176f7af29f9899405aeca1b0cbd.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/4e7684c9ede317aeb1a93b5097ed46db.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/a1c38ae750c359bee856d474a125f227.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/a8ebe61cede18ff1fb0d5ef1c28f4f54.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/b09a276db4645c44342e61e47bc86ee3.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:43.773] Browser WARN    Image with src "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:42:55.954] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:56.286] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:56.286] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:56.286] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:56.288] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:42:56.288] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:43:59.424] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":29,"pageLoadTimestamp":1793362996759,"pageViews":1,"scrollDepth":100.036523009496,"timeOnSite":61,"urlsVisited":["/biography"]},"timestamp":"2026-10-30T12:24:18.697Z","triggerId":"scrollDepth"}
+[00:44:13.898] Server  LOG     ✓ Compiled in 244ms
+[00:44:19.996] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:44:20.554] Server  WARN    Image with src "/download.png" is using quality "60" which is not configured in images.qualities [75]. Please update your config to [60, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:44:20.557] Server  WARN    Image with src "/6417a8348314497a428acf03_Chips-Header-Background.jpg" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:44:20.604] Server  WARN    Image with src "/harare/e0ae9f44d17f47586c3a5dd2aaf829dc.avif" is using quality "80" which is not configured in images.qualities [75]. Please update your config to [75, 80].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:45:30.727] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:45:31.552] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:45:31.552] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:45:31.553] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:45:31.553] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:45:31.553] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:46:01.092] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:46:05.196] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[00:47:23.424] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1793363152060,"pageViews":1,"scrollDepth":100.03676470588236,"timeOnSite":109,"urlsVisited":["/biography"]},"timestamp":"2026-10-30T12:27:42.701Z","triggerId":"inactivity"}
+[00:49:22.630] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":1,"pageLoadTimestamp":1793363152060,"pageViews":1,"scrollDepth":100.03676470588236,"timeOnSite":230,"urlsVisited":["/biography"]},"timestamp":"2026-10-30T12:29:42.804Z","triggerId":"scrollDepth"}
+[00:49:29.295] Server  LOG     ✓ Compiled in 511ms
+[00:50:11.078] Server  LOG     ✓ Compiled in 282ms
+[00:50:37.443] Server  LOG     ✓ Compiled in 268ms
+[00:50:59.610] Server  LOG     ✓ Compiled in 166ms
+[00:51:32.631] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":4,"pageLoadTimestamp":1793363152060,"pageViews":1,"scrollDepth":100.03676470588236,"timeOnSite":360,"urlsVisited":["/biography"]},"timestamp":"2026-10-30T12:31:52.808Z","triggerId":"timeOnPage"}

@@ -36,15 +36,15 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-950 px-4">
+    <div className="flex min-h-screen items-center justify-center bg-cream px-4">
       <div className="w-full max-w-sm space-y-8">
         {/* Logo / heading */}
         <div className="text-center space-y-2">
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-black text-2xl font-black">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-400 text-white text-2xl font-black">
             H
           </div>
-          <h1 className="text-2xl font-bold text-white">Admin Login</h1>
-          <p className="text-sm text-zinc-400">
+          <h1 className="text-2xl font-bold text-ink">Admin Login</h1>
+          <p className="text-sm text-ink/60">
             Dr. Hilary Okello — Website Manager
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function AdminLoginPage() {
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="space-y-1.5">
             <label
-              className="text-xs font-medium text-zinc-400"
+              className="text-xs font-medium text-ink/60"
               htmlFor="email"
             >
               Email address
@@ -61,7 +61,7 @@ export default function AdminLoginPage() {
             <input
               required
               autoComplete="email"
-              className="w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
+              className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm text-ink placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
               id="email"
               placeholder="admin@example.com"
               type="email"
@@ -72,7 +72,7 @@ export default function AdminLoginPage() {
 
           <div className="space-y-1.5">
             <label
-              className="text-xs font-medium text-zinc-400"
+              className="text-xs font-medium text-ink/60"
               htmlFor="password"
             >
               Password
@@ -81,7 +81,7 @@ export default function AdminLoginPage() {
               <input
                 required
                 autoComplete="current-password"
-                className="w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 pr-11 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
+                className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 pr-11 text-sm text-ink placeholder-zinc-500 focus:border-yellow-400 focus:outline-none transition-colors"
                 id="password"
                 placeholder="••••••••"
                 type={showPassword ? "text" : "password"}
@@ -90,7 +90,7 @@ export default function AdminLoginPage() {
               />
               <button
                 aria-label="Toggle password visibility"
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 transition-colors"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-ink/50 hover:text-ink transition-colors"
                 type="button"
                 onClick={() => setShowPassword((v) => !v)}
               >
@@ -100,13 +100,13 @@ export default function AdminLoginPage() {
           </div>
 
           {error && (
-            <p className="rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-2.5 text-sm text-red-400">
+            <p className="rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-2.5 text-sm text-red-600">
               {error}
             </p>
           )}
 
           <button
-            className="w-full flex items-center justify-center gap-2 rounded-xl bg-yellow-400 py-3 text-sm font-semibold text-black hover:bg-yellow-300 disabled:opacity-60 transition-colors"
+            className="w-full flex items-center justify-center gap-2 rounded-xl bg-yellow-400 py-3 text-sm font-semibold text-white hover:bg-yellow-300 disabled:opacity-60 transition-colors"
             disabled={loading}
             type="submit"
           >
@@ -115,7 +115,7 @@ export default function AdminLoginPage() {
           </button>
         </form>
 
-        <p className="text-center text-xs text-zinc-600">
+        <p className="text-center text-xs text-ink/40">
           Access is restricted to authorised administrators only.
         </p>
       </div>

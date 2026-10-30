@@ -102,13 +102,13 @@ export default function AdminShowsPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-white">Shows</h2>
-          <p className="text-sm text-zinc-400 mt-1">
+          <h2 className="text-2xl font-bold text-ink">Shows</h2>
+          <p className="text-sm text-ink/60 mt-1">
             {published.length} published · {drafts.length} draft
           </p>
         </div>
         <button
-          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300 transition-colors"
+          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300 transition-colors"
           onClick={() => setAdding(true)}
         >
           <Plus size={16} /> Add Show
@@ -116,18 +116,18 @@ export default function AdminShowsPage() {
       </div>
 
       {adding && (
-        <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-5 space-y-4">
+        <div className="rounded-xl border border-ink/15 bg-white p-5 space-y-4">
           <p className="text-sm font-semibold text-yellow-400">New Show</p>
           <ShowForm form={form} onChange={setForm} />
           <div className="flex gap-2">
             <button
-              className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+              className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300"
               onClick={handleAdd}
             >
               <Check size={14} /> Save as Draft
             </button>
             <button
-              className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+              className="flex items-center gap-1.5 rounded-lg border border-ink/15 px-4 py-2 text-sm text-ink/60 hover:text-ink"
               onClick={() => setAdding(false)}
             >
               <X size={14} /> Cancel
@@ -137,9 +137,9 @@ export default function AdminShowsPage() {
       )}
 
       {loading ? (
-        <p className="text-zinc-500 text-sm">Loading…</p>
+        <p className="text-ink/50 text-sm">Loading…</p>
       ) : shows.length === 0 ? (
-        <p className="text-zinc-500 text-sm">
+        <p className="text-ink/50 text-sm">
           No shows yet. Add your first show above.
         </p>
       ) : (
@@ -147,7 +147,7 @@ export default function AdminShowsPage() {
           {/* Published */}
           {published.length > 0 && (
             <section className="space-y-2">
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-green-400">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-green-700">
                 Published ({published.length})
               </h3>
               {published.map((show) =>
@@ -174,7 +174,7 @@ export default function AdminShowsPage() {
           {/* Drafts */}
           {drafts.length > 0 && (
             <section className="space-y-2">
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-ink/50">
                 Drafts ({drafts.length})
               </h3>
               {drafts.map((show) =>
@@ -215,10 +215,10 @@ function ShowRow({
   onTogglePublish: () => void;
 }) {
   return (
-    <div className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-4 gap-3">
+    <div className="flex items-center justify-between rounded-xl border border-ink/10 bg-white px-5 py-4 gap-3">
       <div className="min-w-0">
         <div className="flex items-center gap-2">
-          <p className="text-sm font-semibold text-white truncate">
+          <p className="text-sm font-semibold text-ink truncate">
             {show.title}
           </p>
           {show.featured && (
@@ -227,7 +227,7 @@ function ShowRow({
             </span>
           )}
         </div>
-        <p className="text-xs text-zinc-400 mt-0.5">
+        <p className="text-xs text-ink/60 mt-0.5">
           {show.date} · {show.time} · {show.city || show.location},{" "}
           {show.country}
         </p>
@@ -241,8 +241,8 @@ function ShowRow({
         <button
           className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
             show.published
-              ? "bg-green-500/15 text-green-400 hover:bg-red-500/15 hover:text-red-400"
-              : "bg-zinc-800 text-zinc-400 hover:bg-green-500/15 hover:text-green-400"
+              ? "bg-green-500/15 text-green-700 hover:bg-red-500/15 hover:text-red-600"
+              : "bg-white text-ink/60 hover:bg-green-500/15 hover:text-green-700"
           }`}
           title={show.published ? "Unpublish" : "Publish to website"}
           onClick={onTogglePublish}
@@ -258,13 +258,13 @@ function ShowRow({
           )}
         </button>
         <button
-          className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-yellow-400 transition-colors"
+          className="p-2 rounded-lg hover:bg-ink/5 text-ink/60 hover:text-yellow-400 transition-colors"
           onClick={onEdit}
         >
           <Pencil size={15} />
         </button>
         <button
-          className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-red-400 transition-colors"
+          className="p-2 rounded-lg hover:bg-ink/5 text-ink/60 hover:text-red-600 transition-colors"
           onClick={onDelete}
         >
           <Trash2 size={15} />
@@ -300,17 +300,17 @@ function EditRow({
   });
 
   return (
-    <div className="rounded-xl border border-yellow-400/40 bg-zinc-900 p-5 space-y-4">
+    <div className="rounded-xl border border-yellow-400/40 bg-white p-5 space-y-4">
       <ShowForm form={form} onChange={setForm} />
       <div className="flex gap-2">
         <button
-          className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+          className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300"
           onClick={() => onSave(form)}
         >
           <Check size={14} /> Save
         </button>
         <button
-          className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+          className="flex items-center gap-1.5 rounded-lg border border-ink/15 px-4 py-2 text-sm text-ink/60 hover:text-ink"
           onClick={onCancel}
         >
           <X size={14} /> Cancel
@@ -330,9 +330,9 @@ function ShowForm({
   function text(key: keyof ShowDraft, label: string, type = "text") {
     return (
       <div className="flex flex-col gap-1">
-        <label className="text-xs text-zinc-400">{label}</label>
+        <label className="text-xs text-ink/60">{label}</label>
         <input
-          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none"
+          className="rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink focus:border-yellow-400 focus:outline-none"
           type={type}
           value={(form[key] ?? "") as string}
           onChange={(e) => onChange({ ...form, [key]: e.target.value })}
@@ -359,9 +359,9 @@ function ShowForm({
 
       {/* Description */}
       <div className="flex flex-col gap-1">
-        <label className="text-xs text-zinc-400">Description</label>
+        <label className="text-xs text-ink/60">Description</label>
         <textarea
-          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none resize-y"
+          className="rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink focus:border-yellow-400 focus:outline-none resize-y"
           rows={3}
           value={form.description}
           onChange={(e) => onChange({ ...form, description: e.target.value })}
@@ -369,7 +369,7 @@ function ShowForm({
       </div>
 
       {/* Featured toggle */}
-      <label className="flex items-center gap-2 text-sm text-zinc-300 cursor-pointer">
+      <label className="flex items-center gap-2 text-sm text-ink/75 cursor-pointer">
         <input
           checked={form.featured}
           className="accent-yellow-400 w-4 h-4"

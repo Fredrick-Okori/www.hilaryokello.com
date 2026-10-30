@@ -103,7 +103,7 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
   const badges = (
     <>
       {isSoldOut && (
-        <span className="rounded-full border border-white/15 bg-white/10 px-2 py-0.5 text-[10px] font-bold tracking-wider text-white/70">
+        <span className="rounded-full border border-ink/15 bg-ink/10 px-2 py-0.5 text-[10px] font-bold tracking-wider text-ink/70">
           SOLD OUT
         </span>
       )}
@@ -119,19 +119,19 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
         </span>
       )}
       {sellingFast && (
-        <span className="rounded bg-red-500/10 px-1.5 py-0.5 text-[10px] font-bold text-red-400">
+        <span className="rounded bg-red-500/10 px-1.5 py-0.5 text-[10px] font-bold text-red-600">
           Selling Fast
         </span>
       )}
     </>
   );
 
-  const cardClassName = `group relative flex flex-col overflow-hidden rounded-2xl border bg-gradient-to-br transition-all duration-300 sm:flex-row sm:items-stretch ${
+  const cardClassName = `group relative flex flex-row items-stretch overflow-hidden rounded-2xl border bg-gradient-to-br transition-all duration-300 ${
     isSoldOut
-      ? "cursor-not-allowed grayscale opacity-60 border-white/5 from-zinc-900/40 to-black/60"
+      ? "cursor-not-allowed grayscale opacity-60 border-ink/5 from-white to-cream"
       : show.featured
-        ? "border-yellow-400/25 from-yellow-400/[0.07] to-black hover:border-yellow-400/45"
-        : "border-white/10 from-zinc-900/80 to-black hover:border-yellow-400/25"
+        ? "border-yellow-400/25 from-yellow-400/[0.07] to-cream hover:border-yellow-400/45"
+        : "border-ink/10 from-white to-cream hover:border-yellow-400/25"
   }`;
 
   const cardContent = (
@@ -145,23 +145,23 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
       )}
 
       {/* ── Main body (the "keep" portion) ── */}
-      <div className="flex flex-1 items-center gap-3.5 px-4 pb-3 pt-4 sm:gap-4 sm:px-5 sm:py-5">
+      <div className="flex min-w-0 flex-1 items-center gap-3 py-4 pl-4 pr-3 sm:gap-4 sm:px-5 sm:py-5">
         {/* Date */}
         <div
           aria-hidden="true"
-          className="min-w-[48px] shrink-0 text-center sm:min-w-[54px]"
+          className="min-w-[42px] shrink-0 text-center sm:min-w-[54px]"
         >
           <span
-            className={`block text-[28px] font-black leading-none tabular-nums sm:text-3xl ${isSoldOut ? "text-white/40" : "text-yellow-400"}`}
+            className={`block text-2xl font-black leading-none tabular-nums sm:text-3xl ${isSoldOut ? "text-ink/40" : "text-yellow-400"}`}
           >
             {String(day).padStart(2, "0")}
           </span>
           <span
-            className={`mt-1 block text-[11px] font-bold uppercase tracking-wider ${isSoldOut ? "text-white/30" : "text-yellow-400/80"}`}
+            className={`mt-1 block text-[11px] font-bold uppercase tracking-wider ${isSoldOut ? "text-ink/45" : "text-yellow-400/80"}`}
           >
             {month}
           </span>
-          <span className="mt-0.5 block text-[10px] text-white/35">
+          <span className="mt-0.5 block text-[10px] text-ink/50">
             {weekday}
           </span>
         </div>
@@ -170,7 +170,7 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
         <div className="min-w-0 flex-1">
           {/* Title — city + country (country shows on the meta line for desktop) */}
           <div className="mb-1 flex flex-wrap items-center gap-1.5 sm:gap-2">
-            <h3 className="min-w-0 text-[17px] font-bold leading-snug text-white sm:truncate sm:text-lg 2xl:text-xl 4xl:text-2xl">
+            <h3 className="min-w-0 text-[15px] font-bold leading-snug text-ink sm:truncate sm:text-lg 2xl:text-xl 4xl:text-2xl">
               {weekday}, {show.city} - {show.country}
             </h3>
             {/* Desktop: badges inline next to the city */}
@@ -183,25 +183,18 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
 
           {/* Location + time */}
           <div className="flex flex-col gap-y-1 sm:flex-row sm:items-center sm:gap-x-3">
-            <span className="inline-flex items-center gap-1.5 text-xs text-white/50 sm:text-[13px] sm:text-white/45">
+            <span className="inline-flex items-center gap-1.5 text-xs text-ink/50 sm:text-[13px] sm:text-ink/45">
               <MapPin className="h-3.5 w-3.5 shrink-0 text-yellow-400/60 sm:h-3 sm:w-3" />
               <span className="truncate">{show.location}</span>
             </span>
-            <span className="inline-flex items-center gap-1.5 text-xs text-white/50 sm:text-[13px] sm:text-white/45">
+            <span className="inline-flex items-center gap-1.5 text-xs text-ink/50 sm:text-[13px] sm:text-ink/45">
               <Clock className="h-3.5 w-3.5 shrink-0 text-yellow-400/60 sm:h-3 sm:w-3" />
               {show.time}
             </span>
-            <span className="hidden text-[13px] text-white/25 sm:inline">
+            <span className="hidden text-[13px] text-ink/45 sm:inline">
               {show.country}
             </span>
           </div>
-
-          {/* Mobile: price */}
-          {show.ticketPrice && !isSoldOut && (
-            <p className="mt-1 text-xs font-bold text-yellow-400 sm:hidden">
-              {show.ticketPrice}
-            </p>
-          )}
 
           {/* Mobile: badges last, after all details */}
           {hasBadges && (
@@ -213,46 +206,40 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
       </div>
 
       {/* ── Perforation (tear line) ── */}
-      <div className="relative shrink-0 border-t-2 border-dashed border-white/15 sm:border-l-2 sm:border-t-0">
-        {/* Mobile notches (top edge, left/right) */}
-        <span className="absolute -left-1.5 -top-1.5 h-3 w-3 rounded-full bg-black sm:hidden" />
-        <span className="absolute -right-1.5 -top-1.5 h-3 w-3 rounded-full bg-black sm:hidden" />
-        {/* Desktop notches (left border, top/bottom) */}
-        <span className="absolute -left-1.5 -top-1.5 hidden h-3 w-3 rounded-full bg-black sm:block" />
-        <span className="absolute -bottom-1.5 -left-1.5 hidden h-3 w-3 rounded-full bg-black sm:block" />
+      <div className="relative shrink-0 border-l-2 border-dashed border-ink/15">
+        {/* Notches (left border, top/bottom) */}
+        <span className="absolute -left-1.5 -top-1.5 h-3 w-3 rounded-full bg-cream" />
+        <span className="absolute -bottom-1.5 -left-1.5 h-3 w-3 rounded-full bg-cream" />
       </div>
 
       {/* ── Stub (the tear-off portion) ── */}
-      <div className="px-4 pb-4 pt-3 sm:flex sm:min-w-[152px] sm:flex-col sm:items-center sm:justify-center sm:gap-2.5 sm:px-5 sm:py-4 sm:pt-4">
-        {/* Desktop-only price / label */}
-        <div className="hidden sm:flex sm:flex-col sm:items-center">
-          {show.ticketPrice && !isSoldOut && (
-            <span className="text-sm font-bold text-yellow-400">
-              {show.ticketPrice}
-            </span>
-          )}
-        </div>
+      <div className="flex shrink-0 flex-col items-center justify-center gap-2 px-3 py-4 sm:min-w-[152px] sm:gap-2.5 sm:px-5">
+        {show.ticketPrice && !isSoldOut && (
+          <span className="text-xs font-bold text-yellow-400 sm:text-sm">
+            {show.ticketPrice}
+          </span>
+        )}
 
         <span
           aria-hidden="true"
-          className={`group/btn inline-flex min-h-[46px] w-full items-center justify-center gap-1.5 whitespace-nowrap rounded-full px-5 text-[15px] font-bold sm:min-h-0 sm:w-auto sm:py-2.5 sm:text-sm ${
+          className={`group/btn inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-full px-3.5 py-2 text-[13px] font-bold sm:gap-1.5 sm:px-5 sm:py-2.5 sm:text-sm ${
             isSoldOut
-              ? "border border-white/10 bg-white/5 text-white/40"
+              ? "border border-ink/10 bg-ink/5 text-ink/40"
               : isWaitingList
-                ? "touch-manipulation border border-white/10 bg-white/10 text-white transition-all duration-300 group-active:scale-[0.97] group-hover:bg-white/15"
-                : "touch-manipulation bg-yellow-500 text-black shadow-lg shadow-yellow-400/10 transition-all duration-300 group-active:scale-[0.97] group-hover:bg-yellow-300 group-hover:shadow-yellow-400/20"
+                ? "touch-manipulation border border-ink/10 bg-ink/10 text-ink transition-all duration-300 group-active:scale-[0.97] group-hover:bg-ink/15"
+                : "touch-manipulation bg-yellow-500 text-white shadow-lg shadow-yellow-400/10 transition-all duration-300 group-active:scale-[0.97] group-hover:bg-yellow-300 group-hover:shadow-yellow-400/20"
           }`}
         >
           {isSoldOut ? (
             <span>Sold Out</span>
           ) : isWaitingList ? (
             <>
-              <MessageCircle className="h-4 w-4 sm:h-3.5 sm:w-3.5" />
+              <MessageCircle className="h-3.5 w-3.5" />
               <span>Join List</span>
             </>
           ) : (
             <>
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:h-3.5 sm:w-3.5" />
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               <span>Get Tickets</span>
             </>
           )}
@@ -336,6 +323,32 @@ const UpcomingShows = () => {
     );
   }, [dbShows, todayStart]);
 
+  // Group the (already sorted) shows by calendar month
+  const showsByMonth = useMemo(() => {
+    const groups: { key: string; label: string; shows: StaticShow[] }[] = [];
+
+    for (const show of upcomingShows) {
+      const date = parseDate(show.date);
+      const key = `${date.getFullYear()}-${date.getMonth()}`;
+      let group = groups[groups.length - 1];
+
+      if (!group || group.key !== key) {
+        group = {
+          key,
+          label: date.toLocaleDateString("en-US", {
+            month: "long",
+            year: "numeric",
+          }),
+          shows: [],
+        };
+        groups.push(group);
+      }
+      group.shows.push(show);
+    }
+
+    return groups;
+  }, [upcomingShows]);
+
   useSectionReveal(sectionRef, `${loading}:${upcomingShows.length}`);
 
   useEffect(() => {
@@ -381,18 +394,18 @@ const UpcomingShows = () => {
     <section
       ref={sectionRef}
       aria-label="Upcoming Shows"
-      className="min-h-screen bg-black font-sans text-white"
+      className="min-h-screen bg-cream font-sans text-ink"
     >
       <div className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:px-8 2xl:max-w-[1440px] 2xl:pb-20 2xl:pt-16 3xl:max-w-[1680px] 3xl:pb-24 3xl:pt-20 4xl:max-w-[2400px] 4xl:pb-28 4xl:pt-24">
         {/* Section Header */}
         <header data-scroll-reveal-item className="mb-6 text-center sm:mb-10">
           <span className="mb-2 inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-400 sm:mb-3 sm:text-xs">
-            Hilarious World Tour 2026
+            Hilarious World Tour 2027
           </span>
-          <h2 className="text-4xl font-extrabold leading-tight text-white sm:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl">
+          <h2 className="text-4xl font-extrabold leading-tight text-ink sm:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl">
             Upcoming Shows
           </h2>
-          <p className="mx-auto mt-2 max-w-md text-xs text-white/40 sm:text-sm">
+          <p className="mx-auto mt-2 max-w-md text-xs text-ink/40 sm:text-sm">
             Grab your tickets before they sell out
           </p>
         </header>
@@ -408,18 +421,18 @@ const UpcomingShows = () => {
             {[...Array(3)].map((_, i) => (
               <div
                 key={i}
-                className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50 sm:flex-row sm:items-stretch"
+                className="flex flex-row items-stretch overflow-hidden rounded-2xl border border-ink/10 bg-white/60"
               >
                 <div className="flex flex-1 items-center gap-4 px-4 py-4 sm:px-5 sm:py-5">
-                  <div className="h-12 w-12 shrink-0 rounded-lg bg-white/[0.04]" />
+                  <div className="h-12 w-12 shrink-0 rounded-lg bg-ink/[0.04]" />
                   <div className="flex-1 space-y-2">
-                    <div className="h-4 w-1/3 rounded bg-white/[0.04]" />
-                    <div className="h-3 w-1/2 rounded bg-white/[0.03]" />
+                    <div className="h-4 w-1/3 rounded bg-ink/[0.04]" />
+                    <div className="h-3 w-1/2 rounded bg-ink/[0.03]" />
                   </div>
                 </div>
-                <div className="border-t-2 border-dashed border-white/10 sm:border-l-2 sm:border-t-0" />
-                <div className="px-4 pb-4 pt-3 sm:flex sm:min-w-[152px] sm:flex-col sm:items-center sm:justify-center sm:px-5 sm:py-4">
-                  <div className="h-[46px] w-full rounded-full bg-white/[0.04] sm:h-9 sm:w-24" />
+                <div className="border-l-2 border-dashed border-ink/10" />
+                <div className="flex flex-col items-center justify-center px-3 py-4 sm:min-w-[152px] sm:px-5">
+                  <div className="h-8 w-24 rounded-full bg-ink/[0.04] sm:h-9" />
                 </div>
               </div>
             ))}
@@ -428,10 +441,35 @@ const UpcomingShows = () => {
           <nav
             data-scroll-reveal-item
             aria-label="Show listings"
-            className="space-y-3 sm:space-y-4"
+            className="space-y-8 sm:space-y-12"
           >
-            {upcomingShows.map((show) => (
-              <ShowCard key={show.id} show={show} />
+            {showsByMonth.map((group) => (
+              <section
+                key={group.key}
+                aria-labelledby={`shows-month-${group.key}`}
+              >
+                <div className="mb-3 flex items-center gap-3 sm:mb-4 sm:gap-4">
+                  <h3
+                    className="shrink-0 text-sm font-extrabold uppercase tracking-[0.18em] text-yellow-400 sm:text-base 2xl:text-lg"
+                    id={`shows-month-${group.key}`}
+                  >
+                    {group.label}
+                  </h3>
+                  <span
+                    aria-hidden="true"
+                    className="h-px flex-1 bg-gradient-to-r from-yellow-400/30 to-transparent"
+                  />
+                  <span className="shrink-0 text-[11px] font-medium text-ink/40 sm:text-xs">
+                    {group.shows.length}{" "}
+                    {group.shows.length === 1 ? "show" : "shows"}
+                  </span>
+                </div>
+                <div className="space-y-3 sm:space-y-4">
+                  {group.shows.map((show) => (
+                    <ShowCard key={show.id} show={show} />
+                  ))}
+                </div>
+              </section>
             ))}
           </nav>
         ) : (
@@ -440,10 +478,10 @@ const UpcomingShows = () => {
             className="px-4 py-16 text-center"
             role="status"
           >
-            <p className="text-sm text-white/50 sm:text-base">
+            <p className="text-sm text-ink/50 sm:text-base">
               No upcoming shows right now.
             </p>
-            <p className="mt-1 text-xs text-white/30 sm:text-sm">
+            <p className="mt-1 text-xs text-ink/30 sm:text-sm">
               Check back soon or register your city below!
             </p>
           </div>
@@ -455,7 +493,7 @@ const UpcomingShows = () => {
           aria-label="City registration"
           className="mt-10 sm:mt-14"
         >
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900 via-black to-gray-900">
+          <div className="overflow-hidden rounded-2xl border border-ink/10 bg-gradient-to-br from-white via-cream to-white">
             <div className="grid grid-cols-1 gap-0 lg:grid-cols-2 lg:gap-8">
               <div className="relative order-1 aspect-[16/9] lg:order-1 lg:aspect-auto lg:min-h-[400px]">
                 <Image
@@ -471,16 +509,16 @@ const UpcomingShows = () => {
               </div>
 
               <div className="order-2 flex flex-col justify-center p-5 sm:p-8 lg:order-2 lg:p-10">
-                <h3 className="mb-3 text-xl font-extrabold leading-tight text-white sm:text-2xl lg:text-3xl">
+                <h3 className="mb-3 text-xl font-extrabold leading-tight text-ink sm:text-2xl lg:text-3xl">
                   Want Me to Perform in Your City?
                 </h3>
-                <p className="mb-5 text-sm leading-relaxed text-white/70 sm:mb-6 sm:text-base">
+                <p className="mb-5 text-sm leading-relaxed text-ink/70 sm:mb-6 sm:text-base">
                   Join the Hilarious World Tour! Tell us
                   where you want Dr. Okello to perform next. High-demand cities
                   influence our tour planning!
                 </p>
                 <CityRegistrationForm />
-                <p className="mt-4 text-[11px] leading-relaxed text-white/40 sm:text-xs">
+                <p className="mt-4 text-[11px] leading-relaxed text-ink/40 sm:text-xs">
                   We respect your privacy. Your information will only be used to
                   plan tour locations.
                 </p>

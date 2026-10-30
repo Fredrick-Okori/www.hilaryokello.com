@@ -19,7 +19,7 @@ export default function MainLayout({
           <MenuBar />
         </Suspense>
       </div>
-      <Suspense fallback={<div className="min-h-screen bg-black" />}>
+      <Suspense fallback={<div className="min-h-screen bg-cream" />}>
         <div>{children}</div>
       </Suspense>
       <Suspense fallback={null}>

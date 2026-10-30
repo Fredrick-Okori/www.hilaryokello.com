@@ -11,7 +11,7 @@ const HeroSection = dynamic(
       default: mod.HeroSection,
     })),
   {
-    loading: () => <div className="min-h-screen bg-black animate-pulse" />,
+    loading: () => <div className="min-h-screen bg-cream animate-pulse" />,
   },
 );
 
@@ -105,26 +105,26 @@ export default function Page() {
           <UpcomingShows />
         </div>
       </Suspense>
-      <div className="bg-black py-16 4xl:py-24">
+      <div className="bg-cream py-16 4xl:py-24">
         <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <Zambia />
         </div>
       </div>
-      <div className="bg-black py-16 4xl:py-24">
+      <div className="bg-cream py-16 4xl:py-24">
         <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <CountryGlimpse images={images} />
         </div>
       </div>
 
       {/* Video Section */}
-      <div className="bg-black py-16 4xl:py-24">
+      <div className="bg-cream py-16 4xl:py-24">
         <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <VideoSection title="Featured Videos" />
         </div>
       </div>
 
       {/* Gallery Glimpse */}
-      <div className="bg-black py-16 4xl:py-24">
+      <div className="bg-cream py-16 4xl:py-24">
         <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <ImageCarousel />
         </div>

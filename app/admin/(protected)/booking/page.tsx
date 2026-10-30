@@ -81,29 +81,29 @@ export default function AdminBookingPage() {
   return (
     <div className="space-y-6 max-w-2xl">
       <div>
-        <h2 className="text-2xl font-bold text-white">Booking</h2>
-        <p className="text-sm text-zinc-400 mt-1">
+        <h2 className="text-2xl font-bold text-ink">Booking</h2>
+        <p className="text-sm text-ink/60 mt-1">
           Update booking contact information displayed on the site
         </p>
       </div>
 
       {loading ? (
-        <p className="text-zinc-500 text-sm">Loading…</p>
+        <p className="text-ink/50 text-sm">Loading…</p>
       ) : (
         <div className="space-y-4">
           {fields.map(({ key, label, type = "text", multiline }) => (
             <div key={key} className="flex flex-col gap-1.5">
-              <label className="text-xs text-zinc-400">{label}</label>
+              <label className="text-xs text-ink/60">{label}</label>
               {multiline ? (
                 <textarea
-                  className="rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none resize-y"
+                  className="rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm text-ink placeholder-zinc-500 focus:border-yellow-400 focus:outline-none resize-y"
                   rows={4}
                   value={form[key]}
                   onChange={(e) => setForm({ ...form, [key]: e.target.value })}
                 />
               ) : (
                 <input
-                  className="rounded-lg border border-zinc-700 bg-zinc-900 px-4 py-2.5 text-sm text-white focus:border-yellow-400 focus:outline-none"
+                  className="rounded-lg border border-ink/15 bg-white px-4 py-2.5 text-sm text-ink focus:border-yellow-400 focus:outline-none"
                   type={type}
                   value={form[key]}
                   onChange={(e) => setForm({ ...form, [key]: e.target.value })}
@@ -113,7 +113,7 @@ export default function AdminBookingPage() {
           ))}
 
           <button
-            className="flex items-center gap-2 rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-semibold text-black hover:bg-yellow-300 disabled:opacity-60 transition-colors"
+            className="flex items-center gap-2 rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-semibold text-white hover:bg-yellow-300 disabled:opacity-60 transition-colors"
             disabled={saving}
             onClick={handleSave}
           >
@@ -126,7 +126,7 @@ export default function AdminBookingPage() {
           </button>
 
           {info?.updated_at && (
-            <p className="text-xs text-zinc-500">
+            <p className="text-xs text-ink/50">
               Last updated: {new Date(info.updated_at).toLocaleString()}
             </p>
           )}

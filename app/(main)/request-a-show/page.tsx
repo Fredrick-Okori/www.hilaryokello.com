@@ -21,7 +21,7 @@ export default function RequestAShowPage() {
         </p>
         <div className="mt-8">
           <iframe
-            className="w-full min-h-[800px] rounded-xl border border-white/10"
+            className="w-full min-h-[800px] rounded-xl border border-ink/10"
             loading="lazy"
             src="https://docs.google.com/forms/d/e/REPLACE_WITH_YOUR_FORM_ID/viewform?embedded=true"
             title="Request a show form"

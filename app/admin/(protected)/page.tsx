@@ -39,8 +39,8 @@ export default function AdminDashboard() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-bold text-white">Dashboard</h2>
-        <p className="text-sm text-zinc-400 mt-1">
+        <h2 className="text-2xl font-bold text-ink">Dashboard</h2>
+        <p className="text-sm text-ink/60 mt-1">
           Select a section below to start editing the website content.
         </p>
       </div>
@@ -49,18 +49,18 @@ export default function AdminDashboard() {
         {sections.map(({ label, description, href, icon: Icon }) => (
           <Link
             key={href}
-            className="group flex flex-col gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-5 hover:border-yellow-400 hover:bg-zinc-800 transition-all duration-200"
+            className="group flex flex-col gap-3 rounded-xl border border-ink/10 bg-white p-5 hover:border-yellow-400 hover:bg-ink/5 transition-all duration-200"
             href={href}
           >
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-400/10 text-yellow-400 group-hover:bg-yellow-400 group-hover:text-black transition-colors">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-400/10 text-yellow-400 group-hover:bg-yellow-400 group-hover:text-ink transition-colors">
                 <Icon size={20} />
               </div>
-              <span className="text-base font-semibold text-white">
+              <span className="text-base font-semibold text-ink">
                 {label}
               </span>
             </div>
-            <p className="text-sm text-zinc-400">{description}</p>
+            <p className="text-sm text-ink/60">{description}</p>
           </Link>
         ))}
       </div>

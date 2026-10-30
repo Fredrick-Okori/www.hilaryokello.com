@@ -3,5 +3,5 @@ export default function ShowLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <section className="bg-black min-h-screen">{children}</section>;
+  return <section className="bg-cream min-h-screen">{children}</section>;
 }

@@ -51,7 +51,7 @@ export function VideoPage({
   return (
     <section className={cn("py-12", className)} id="clips">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tight text-white mb-8">
+        <h2 className="text-3xl font-bold tracking-tight text-ink mb-8">
           {title}
         </h2>
 
@@ -93,10 +93,10 @@ export function VideoPage({
                 </div>
               )}
             </div>
-            <h3 className="text-xl font-semibold text-white">
+            <h3 className="text-xl font-semibold text-ink">
               {activeVideo.title}
             </h3>
-            <div className="flex items-center text-sm  text-white text-muted-foreground">
+            <div className="flex items-center text-sm  text-ink text-muted-foreground">
               <span>{activeVideo.views} views</span>
               <span className="mx-2">•</span>
               <span>{activeVideo.uploadedAt}</span>
@@ -105,7 +105,7 @@ export function VideoPage({
 
           {/* Video Grid */}
           <div className="space-y-6">
-            <h3 className="font-medium text-white text-lg">Up Next</h3>
+            <h3 className="font-medium text-ink text-lg">Up Next</h3>
             {[...videos, featuredVideo]
               .filter((video) => video.id !== activeVideo.id)
               .slice(0, 4)
@@ -136,10 +136,10 @@ export function VideoPage({
                     </div>
                   </div>
                   <div className="space-y-1">
-                    <h4 className="font-medium text-white line-clamp-2">
+                    <h4 className="font-medium text-ink line-clamp-2">
                       {video.title}
                     </h4>
-                    <div className="flex text-white items-center text-xs text-muted-foreground">
+                    <div className="flex text-ink items-center text-xs text-muted-foreground">
                       <span>{video.views} views</span>
                       <span className="mx-1">•</span>
                       <span>{video.uploadedAt}</span>

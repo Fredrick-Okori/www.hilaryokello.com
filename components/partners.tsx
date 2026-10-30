@@ -331,7 +331,7 @@ export default function Partners() {
       aria-label="Our Partners"
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
     >
-      <h2 className="text-left text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 md:mb-8">
+      <h2 className="text-left text-2xl sm:text-3xl md:text-4xl text-ink font-bold mb-6 md:mb-8">
         Our Partners
       </h2>
 
@@ -396,7 +396,7 @@ export default function Partners() {
       >
         <Button
           aria-label="Previous partners"
-          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+          className="rounded-full text-ink hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-ink focus:ring-opacity-50"
           size="sm"
           variant="bordered"
           onClick={handlePrev}
@@ -410,10 +410,10 @@ export default function Partners() {
               key={index}
               aria-label={`Go to slide ${index + 1} of ${maxSlideIndex + 1}`}
               aria-selected={index === slideIndex}
-              className={`transition-all duration-200 rounded-full focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 ${
+              className={`transition-all duration-200 rounded-full focus:outline-none focus:ring-2 focus:ring-ink focus:ring-opacity-50 ${
                 index === slideIndex
-                  ? "bg-white w-8 h-2"
-                  : "bg-gray-500 hover:bg-gray-400 w-2 h-2"
+                  ? "bg-yellow-400 w-8 h-2"
+                  : "bg-ink/25 hover:bg-ink/40 w-2 h-2"
               }`}
               role="tab"
               onClick={() => handleDotClick(index)}
@@ -423,7 +423,7 @@ export default function Partners() {
 
         <Button
           aria-label="Next partners"
-          className="rounded-full text-white hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+          className="rounded-full text-ink hover:bg-white hover:text-gray-800 transition-all duration-200 transform hover:scale-110 focus:scale-110 focus:outline-none focus:ring-2 focus:ring-ink focus:ring-opacity-50"
           size="sm"
           variant="bordered"
           onClick={handleNext}

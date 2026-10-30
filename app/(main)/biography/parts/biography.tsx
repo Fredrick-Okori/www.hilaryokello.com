@@ -107,7 +107,7 @@ function renderBlock(block: BioBlock, key: number, paragraphClassName: string) {
         key={key}
         className={cn(
           HEADING_STYLES[block.level],
-          "font-bold text-white text-left mt-10 mb-4",
+          "font-bold text-ink text-left mt-10 mb-4",
         )}
       >
         {renderInline(block.text)}
@@ -143,17 +143,21 @@ export default function ComedianBio() {
   const isLoading = bioContent === null;
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-cream">
       {/* Header */}
       <header className="relative h-[70vh] overflow-hidden">
-        <div className="absolute bg-black" />
+        {/* Stage sits top-right of the shot; bias the crop towards it so it
+            stays in frame on narrow screens. */}
         <Image
           fill
           priority
-          alt="Comedian on stage"
-          className="object-cover"
-          src="/Rwanda/rwanda_3.jpg"
+          alt="Dr. Hilary Okello performing to a packed hall in Harare"
+          className="object-cover object-[75%_40%]"
+          sizes="100vw"
+          src="/harare/4ecae83f9e03691ad3d8d5601de7f0d5.avif"
         />
+        {/* Darkens the busy crowd so the white headline stays readable. */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/60" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-left text-white p-4">
           <motion.h1
             animate={{ opacity: 1, y: 0 }}
@@ -197,21 +201,30 @@ export default function ComedianBio() {
       <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="w-full md:w-1/3 relative">
-            <div className="aspect-square relative rounded-2xl overflow-hidden border-8 border-white shadow-xl">
+            {/* biography_sm.avif: 1000×1500 downscale of biography.avif, a
+                transparent cut-out whose figure starts ~19% down, so a 3:4
+                frame anchored to the bottom keeps the head in view. */}
+            <div className="aspect-[3/4] relative rounded-2xl overflow-hidden border-8 border-cream bg-yellow-400 shadow-xl">
+              {/* Same seamless texture tile as the home hero. */}
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 bg-[url('/texture-tile.webp')] bg-[length:280px_auto] bg-center bg-repeat opacity-15"
+              />
               <Image
                 fill
-                alt="Alex Laughton"
-                className="object-cover"
-                src="/gallerypage/DSC_8976.webp"
+                alt="Dr. Hilary Okello"
+                className="object-cover object-bottom"
+                sizes="(min-width: 768px) 33vw, 100vw"
+                src="/biography_sm.avif"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-black rounded-full p-4 shadow-lg">
-              <Mic className="h-8 w-8 text-white" />
+            <div className="absolute -bottom-6 -right-6 bg-cream rounded-full p-4 shadow-lg">
+              <Mic className="h-8 w-8 text-ink" />
             </div>
           </div>
 
           <div className="w-full md:w-2/3">
-            <h2 className="text-4xl text-left font-bold mb-6 text-white">
+            <h2 className="text-4xl text-left font-bold mb-6 text-ink">
               About Dr. Hilary Okello
             </h2>
             {isLoading ? (
@@ -220,16 +233,16 @@ export default function ComedianBio() {
                 className="space-y-3 animate-pulse"
                 role="status"
               >
-                <div className="h-4 w-full rounded bg-white/10" />
-                <div className="h-4 w-full rounded bg-white/10" />
-                <div className="h-4 w-2/3 rounded bg-white/10" />
+                <div className="h-4 w-full rounded bg-ink/10" />
+                <div className="h-4 w-full rounded bg-ink/10" />
+                <div className="h-4 w-2/3 rounded bg-ink/10" />
               </div>
             ) : introBlocks.length > 0 ? (
               introBlocks.map((block, i) =>
-                renderBlock(block, i, "text-lg text-white text-left mb-6"),
+                renderBlock(block, i, "text-lg text-ink text-left mb-6"),
               )
             ) : (
-              <p className="text-lg text-white/50 text-left">
+              <p className="text-lg text-ink/50 text-left">
                 Biography content coming soon.
               </p>
             )}
@@ -237,16 +250,16 @@ export default function ComedianBio() {
         </div>
       </section>
       {restBlocks.length > 0 && (
-        <section className="bg-black max-w-4xl mx-auto text-white px-4  py-16">
+        <section className="bg-cream max-w-4xl mx-auto text-ink px-4  py-16">
           {restBlocks.map((block, i) =>
-            renderBlock(block, i, cn("text-white text-left", i > 0 && "mt-10")),
+            renderBlock(block, i, cn("text-ink text-left", i > 0 && "mt-10")),
           )}
         </section>
       )}
       {/* Contact */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-cream text-ink py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Lets Connect</h2>
+          <h2 className="text-4xl font-bold text-ink mb-8">Lets Connect</h2>
           <p className="text-xl mb-10 max-w-2xl mx-auto">
             For bookings, press inquiries, or just to say hello, reach out
             through any of these channels.
@@ -255,7 +268,7 @@ export default function ComedianBio() {
           <div className="flex flex-wrap justify-center gap-6">
             <Button
               as={Link}
-              className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              className="border-ink rounded-full text-ink hover:bg-white hover:text-yellow-600"
               href="https://www.instagram.com/drhilaryokello/"
               size="lg"
               target="_blank"
@@ -266,7 +279,7 @@ export default function ComedianBio() {
             </Button>
             <Button
               as={Link}
-              className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              className="border-ink rounded-full text-ink hover:bg-white hover:text-yellow-600"
               href="https://twitter.com/DrHilaryOkello"
               size="lg"
               target="_blank"
@@ -277,7 +290,7 @@ export default function ComedianBio() {
             </Button>
             <Button
               as={Link}
-              className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              className="border-ink rounded-full text-ink hover:bg-white hover:text-yellow-600"
               href="https://www.youtube.com/@drhilaryokello"
               size="lg"
               target="_blank"
@@ -288,7 +301,7 @@ export default function ComedianBio() {
             </Button>
             <Button
               as={Link}
-              className="border-white rounded-full text-white hover:bg-white hover:text-yellow-600"
+              className="border-ink rounded-full text-ink hover:bg-white hover:text-yellow-600"
               href="https://www.tiktok.com/@drhilary_okello?_t=ZM-8vVQayDX5aZ&_r=1"
               size="lg"
               target="_blank"

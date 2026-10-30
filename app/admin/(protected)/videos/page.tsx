@@ -70,13 +70,13 @@ export default function AdminVideosPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-white">Videos</h2>
-          <p className="text-sm text-zinc-400 mt-1">
+          <h2 className="text-2xl font-bold text-ink">Videos</h2>
+          <p className="text-sm text-ink/60 mt-1">
             Manage featured and recommended videos
           </p>
         </div>
         <button
-          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300 transition-colors"
+          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300 transition-colors"
           onClick={() => setAdding(true)}
         >
           <Plus size={16} /> Add Video
@@ -84,18 +84,18 @@ export default function AdminVideosPage() {
       </div>
 
       {adding && (
-        <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-5 space-y-3">
+        <div className="rounded-xl border border-ink/15 bg-white p-5 space-y-3">
           <p className="text-sm font-semibold text-yellow-400">New Video</p>
           <VideoForm form={form} onChange={setForm} />
           <div className="flex gap-2">
             <button
-              className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+              className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300"
               onClick={handleAdd}
             >
               <Check size={14} /> Save
             </button>
             <button
-              className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+              className="flex items-center gap-1.5 rounded-lg border border-ink/15 px-4 py-2 text-sm text-ink/60 hover:text-ink"
               onClick={() => setAdding(false)}
             >
               <X size={14} /> Cancel
@@ -105,9 +105,9 @@ export default function AdminVideosPage() {
       )}
 
       {loading ? (
-        <p className="text-zinc-500 text-sm">Loading…</p>
+        <p className="text-ink/50 text-sm">Loading…</p>
       ) : videos.length === 0 ? (
-        <p className="text-zinc-500 text-sm">
+        <p className="text-ink/50 text-sm">
           No videos found. Add your first video above.
         </p>
       ) : (
@@ -145,7 +145,7 @@ function VideoRow({
   onDelete: () => void;
 }) {
   return (
-    <div className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-4">
+    <div className="flex items-center justify-between rounded-xl border border-ink/10 bg-white px-5 py-4">
       <div className="flex items-center gap-3 min-w-0">
         <img
           alt={video.title}
@@ -153,10 +153,10 @@ function VideoRow({
           src={`https://img.youtube.com/vi/${video.youtube_id}/mqdefault.jpg`}
         />
         <div className="min-w-0">
-          <p className="text-sm font-semibold text-white truncate">
+          <p className="text-sm font-semibold text-ink truncate">
             {video.title}
           </p>
-          <p className="text-xs text-zinc-400 mt-0.5">
+          <p className="text-xs text-ink/60 mt-0.5">
             {video.duration} · {video.views} views{" "}
             {video.is_featured && (
               <span className="ml-1 text-yellow-400">★ Featured</span>
@@ -166,13 +166,13 @@ function VideoRow({
       </div>
       <div className="flex gap-2 shrink-0 ml-3">
         <button
-          className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-yellow-400 transition-colors"
+          className="p-2 rounded-lg hover:bg-ink/5 text-ink/60 hover:text-yellow-400 transition-colors"
           onClick={onEdit}
         >
           <Pencil size={15} />
         </button>
         <button
-          className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-red-400 transition-colors"
+          className="p-2 rounded-lg hover:bg-ink/5 text-ink/60 hover:text-red-600 transition-colors"
           onClick={onDelete}
         >
           <Trash2 size={15} />
@@ -200,17 +200,17 @@ function EditVideoRow({
   });
 
   return (
-    <div className="rounded-xl border border-yellow-400/40 bg-zinc-900 p-5 space-y-3">
+    <div className="rounded-xl border border-yellow-400/40 bg-white p-5 space-y-3">
       <VideoForm form={form} onChange={setForm} />
       <div className="flex gap-2">
         <button
-          className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+          className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300"
           onClick={() => onSave(form)}
         >
           <Check size={14} /> Save
         </button>
         <button
-          className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+          className="flex items-center gap-1.5 rounded-lg border border-ink/15 px-4 py-2 text-sm text-ink/60 hover:text-ink"
           onClick={onCancel}
         >
           <X size={14} /> Cancel
@@ -239,16 +239,16 @@ function VideoForm({
           ] as const
         ).map(([key, label]) => (
           <div key={key} className="flex flex-col gap-1">
-            <label className="text-xs text-zinc-400">{label}</label>
+            <label className="text-xs text-ink/60">{label}</label>
             <input
-              className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none"
+              className="rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink focus:border-yellow-400 focus:outline-none"
               value={form[key]}
               onChange={(e) => onChange({ ...form, [key]: e.target.value })}
             />
           </div>
         ))}
       </div>
-      <label className="flex items-center gap-2 text-sm text-zinc-300 cursor-pointer">
+      <label className="flex items-center gap-2 text-sm text-ink/75 cursor-pointer">
         <input
           checked={form.is_featured}
           className="accent-yellow-400 w-4 h-4"

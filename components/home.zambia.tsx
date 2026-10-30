@@ -168,11 +168,11 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
     <section ref={sectionRef} aria-label="Zimbabwe gallery" className="w-full">
       {/* Title and Button Section */}
       <div data-scroll-reveal-item>
-        <h4 className="text-left text-4xl text-white font-bold 4xl:text-5xl">
+        <h4 className="text-left text-4xl text-ink font-bold 4xl:text-5xl">
           State of Nation | Harare - Zimbabwe
         </h4>
         <Button
-          className="rounded-full text-white px-4 py-2 mt-4"
+          className="rounded-full text-ink px-4 py-2 mt-4"
           variant="bordered"
         >
           <Link href="/gallery">More from Zimbabwe</Link>
@@ -186,7 +186,7 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
       >
         <Button
           aria-label="Previous slide"
-          className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+          className="text-ink rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream"
           disabled={isLoading || imgs.length <= itemsPerView}
           size="sm"
           variant="bordered"
@@ -196,7 +196,7 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
         </Button>
         <Button
           aria-label="Next slide"
-          className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+          className="text-ink rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream"
           disabled={isLoading || imgs.length <= itemsPerView}
           size="sm"
           variant="bordered"

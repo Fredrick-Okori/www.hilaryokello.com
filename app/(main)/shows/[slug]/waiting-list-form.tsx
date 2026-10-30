@@ -49,10 +49,10 @@ export default function WaitingListForm({
     return (
       <div className="flex flex-col items-center gap-3 py-6 text-center">
         <CheckCircle className="h-10 w-10 text-yellow-400" />
-        <p className="text-white font-bold text-lg">You&apos;re on the list!</p>
-        <p className="text-white/60 text-sm">
+        <p className="text-ink font-bold text-lg">You&apos;re on the list!</p>
+        <p className="text-ink/60 text-sm">
           We&apos;ll notify you as soon as tickets are available for{" "}
-          <span className="text-white font-medium">{showTitle}</span>.
+          <span className="text-ink font-medium">{showTitle}</span>.
         </p>
       </div>
     );
@@ -65,10 +65,10 @@ export default function WaitingListForm({
       onSubmit={onSubmit}
     >
       <label className="block">
-        <span className="text-xs text-white/60">Username</span>
+        <span className="text-xs text-ink/60">Username</span>
         <input
           required
-          className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
+          className="mt-1 w-full rounded-xl bg-white border border-ink/10 px-4 py-3 text-sm text-ink placeholder:text-ink/40 outline-none focus:border-yellow-400"
           name="username"
           placeholder="e.g. Paul Kori"
           type="text"
@@ -79,10 +79,10 @@ export default function WaitingListForm({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label className="block">
-          <span className="text-xs text-white/60">Number of tickets</span>
+          <span className="text-xs text-ink/60">Number of tickets</span>
           <input
             required
-            className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
+            className="mt-1 w-full rounded-xl bg-white border border-ink/10 px-4 py-3 text-sm text-ink placeholder:text-ink/40 outline-none focus:border-yellow-400"
             max={20}
             min={1}
             name="tickets"
@@ -93,10 +93,10 @@ export default function WaitingListForm({
         </label>
 
         <label className="block">
-          <span className="text-xs text-white/60">Phone number</span>
+          <span className="text-xs text-ink/60">Phone number</span>
           <input
             required
-            className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
+            className="mt-1 w-full rounded-xl bg-white border border-ink/10 px-4 py-3 text-sm text-ink placeholder:text-ink/40 outline-none focus:border-yellow-400"
             name="phone"
             placeholder="e.g. +263712345678"
             type="tel"
@@ -106,10 +106,10 @@ export default function WaitingListForm({
         </label>
 
         <label className="block">
-          <span className="text-xs text-white/60">Email</span>
+          <span className="text-xs text-ink/60">Email</span>
           <input
             required
-            className="mt-1 w-full rounded-xl bg-zinc-900/40 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 outline-none focus:border-yellow-400"
+            className="mt-1 w-full rounded-xl bg-white border border-ink/10 px-4 py-3 text-sm text-ink placeholder:text-ink/40 outline-none focus:border-yellow-400"
             name="email"
             placeholder="paul@gmail.com"
             type="email"
@@ -120,7 +120,7 @@ export default function WaitingListForm({
       </div>
 
       <button
-        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+        className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-xl transition-all disabled:opacity-70 disabled:cursor-not-allowed"
         disabled={submitting}
         type="submit"
       >
@@ -128,7 +128,7 @@ export default function WaitingListForm({
       </button>
 
       {error && (
-        <p aria-live="polite" className="text-sm text-red-400" role="status">
+        <p aria-live="polite" className="text-sm text-red-600" role="status">
           {error}
         </p>
       )}

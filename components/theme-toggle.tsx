@@ -19,22 +19,27 @@ const menuItems: MenuItem[] = [
   {
     label: "Shows",
     href: "/#shows",
-    gradient: "radial-gradient(circle, rgba(255,252,0,0.15), transparent)",
+    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
   },
   {
     label: "Watch & Listen",
     href: "/watch",
-    gradient: "radial-gradient(circle, rgba(255,252,0,0.15), transparent)",
+    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
   },
   {
     label: "Gallery",
     href: "/gallery",
-    gradient: "radial-gradient(circle, rgba(255,252,0,0.15), transparent)",
+    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
   },
   {
     label: "About",
     href: "/biography",
-    gradient: "radial-gradient(circle, rgba(255,252,0,0.15), transparent)",
+    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
+  },
+  {
+    label: "Book",
+    href: "/booking",
+    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
   },
 ];
 
@@ -79,7 +84,7 @@ export function MenuBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const islandText = isScrolled ? "text-black" : "text-white";
+  const islandText = isScrolled ? "text-white" : "text-ink";
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 48);
@@ -180,7 +185,7 @@ export function MenuBar() {
     <motion.nav
       className={`fixed z-50 px-4 py-2 transition-[top,left,right,width,transform] duration-500 ease-out ${
         isScrolled
-          ? "left-1/2 right-auto top-3 w-[calc(100%-2rem)] max-w-3xl -translate-x-1/2 rounded-full border border-yellow-200 bg-yellow-400 text-black shadow-2xl shadow-black/30 backdrop-blur-xl"
+          ? "left-1/2 right-auto top-3 w-[calc(100%-2rem)] max-w-3xl -translate-x-1/2 rounded-full border border-yellow-200 bg-yellow-400 text-white shadow-2xl shadow-black/30 backdrop-blur-xl"
           : "left-0 right-0 top-0 bg-transparent"
       }`}
       initial="initial"
@@ -209,7 +214,7 @@ export function MenuBar() {
           </button>
         </div>
 
-        <ul className="ml-auto hidden items-center gap-2 rounded-full border border-gray-800 px-4 py-2 shadow-xl sm:flex">
+        <ul className="ml-auto hidden items-center gap-2 rounded-full border border-ink/15 px-4 py-2 shadow-xl sm:flex">
           {menuItems.map((item) => (
             <motion.li key={item.label} className="relative">
               <motion.div
@@ -228,7 +233,7 @@ export function MenuBar() {
                   variants={glowVariants}
                 />
                 <motion.a
-                  className={`relative z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${isScrolled ? "text-black group-hover:text-black" : "text-muted-foreground group-hover:text-white"}`}
+                  className={`relative z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${isScrolled ? "text-white group-hover:text-white" : "text-muted-foreground group-hover:text-ink"}`}
                   href={item.href}
                   style={{
                     transformStyle: "preserve-3d",
@@ -237,12 +242,12 @@ export function MenuBar() {
                   transition={sharedTransition}
                   variants={itemVariants}
                 >
-                  <span className={isScrolled ? "text-black" : "text-white"}>
+                  <span className={isScrolled ? "text-white" : "text-ink"}>
                     {item.label}
                   </span>
                 </motion.a>
                 <motion.a
-                  className={`absolute inset-0 z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${isScrolled ? "text-black group-hover:text-black" : "text-muted-foreground group-hover:text-white"}`}
+                  className={`absolute inset-0 z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${isScrolled ? "text-white group-hover:text-white" : "text-muted-foreground group-hover:text-ink"}`}
                   href={item.href}
                   style={{
                     transformStyle: "preserve-3d",
@@ -252,7 +257,7 @@ export function MenuBar() {
                   transition={sharedTransition}
                   variants={backVariants}
                 >
-                  <span className={isScrolled ? "text-black" : "text-white"}>
+                  <span className={isScrolled ? "text-white" : "text-ink"}>
                     {item.label}
                   </span>
                 </motion.a>
@@ -269,7 +274,7 @@ export function MenuBar() {
             ref={menuRef}
             aria-label="Main navigation"
             aria-modal="true"
-            className="fixed inset-0 z-[60] min-h-[100dvh] overflow-y-auto bg-black text-white sm:hidden"
+            className="fixed inset-0 z-[60] min-h-[100dvh] overflow-y-auto bg-cream text-ink sm:hidden"
             role="dialog"
           >
             <div className="mx-auto flex min-h-[100dvh] w-full max-w-3xl flex-col px-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))]">
@@ -283,7 +288,7 @@ export function MenuBar() {
                 </Link>
                 <div className="flex shrink-0 items-center gap-2">
                   <a
-                    className="inline-flex h-11 items-center justify-center rounded-full bg-yellow-400 px-3 text-xs font-semibold text-black transition-transform active:scale-95 sm:px-5 sm:text-sm"
+                    className="inline-flex h-11 items-center justify-center rounded-full bg-yellow-400 px-3 text-xs font-semibold text-white transition-transform active:scale-95 sm:px-5 sm:text-sm"
                     href="https://momoticketing.com/events/2-kings-one-mic"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -292,7 +297,7 @@ export function MenuBar() {
                   </a>
                   <button
                     aria-label="Close menu"
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-black transition-transform active:scale-95"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-white transition-transform active:scale-95"
                     type="button"
                     onClick={closeMenu}
                   >
@@ -305,11 +310,11 @@ export function MenuBar() {
                 {menuItems.map((item, index) => (
                   <Link
                     key={item.label}
-                    className="mobile-menu-link flex min-h-[82px] items-center gap-5 rounded-full bg-white/10 px-7 transition-colors hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400"
+                    className="mobile-menu-link flex min-h-[82px] items-center gap-5 rounded-full bg-ink/10 px-7 transition-colors hover:bg-ink/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400"
                     href={item.href}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className="w-7 shrink-0 text-[15px] font-semibold tabular-nums text-white/50">
+                    <span className="w-7 shrink-0 text-[15px] font-semibold tabular-nums text-ink/50">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     <span className="min-w-0 flex-1 text-[30px] font-bold leading-none tracking-normal sm:text-5xl">
@@ -346,7 +351,7 @@ export function MenuBar() {
                     <a
                       key={social.label}
                       aria-label={social.label}
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-lg text-white transition-colors hover:bg-white/10"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/15 text-lg text-ink transition-colors hover:bg-ink/10"
                       href={social.href}
                       rel="noopener noreferrer"
                       target="_blank"
@@ -355,7 +360,7 @@ export function MenuBar() {
                     </a>
                   ))}
                 </nav>
-                <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm leading-relaxed text-white/50">
+                <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm leading-relaxed text-ink/50">
                   <span>© Dr. Hilary Okello {new Date().getFullYear()}</span>
                   <a href="https://www.kayetickets.com/">
                     Powered by KayeTickets

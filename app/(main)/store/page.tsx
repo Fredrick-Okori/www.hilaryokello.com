@@ -67,9 +67,9 @@ export default function StorePage() {
       : allProducts.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-cream text-ink">
       {/* Hero */}
-      <div className="relative overflow-hidden border-b border-white/10">
+      <div className="relative overflow-hidden border-b border-ink/10">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(200,144,33,0.15)_0%,_transparent_60%)] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
           <div className="flex items-center gap-3 mb-4">
@@ -78,10 +78,10 @@ export default function StorePage() {
               Official Store
             </span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-ink leading-tight mb-4">
             Official Merch
           </h1>
-          <p className="text-white/60 text-lg max-w-xl leading-relaxed">
+          <p className="text-ink/60 text-lg max-w-xl leading-relaxed">
             Exclusive Dr. Hilary Okello gear. Limited editions — comedy-ready
             apparel and accessories straight from the tour.
           </p>
@@ -105,7 +105,7 @@ export default function StorePage() {
       </div>
 
       {/* Category Tabs */}
-      <div className="sticky top-16 z-30 bg-black/80 backdrop-blur-md border-b border-white/10">
+      <div className="sticky top-16 z-30 bg-cream/80 backdrop-blur-md border-b border-ink/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-1 overflow-x-auto py-3 scrollbar-none">
             {CATEGORIES.map((cat) => (
@@ -113,8 +113,8 @@ export default function StorePage() {
                 key={cat}
                 className={`flex-shrink-0 px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                   activeCategory === cat
-                    ? "bg-yellow-400 text-black"
-                    : "text-white/60 hover:text-white hover:bg-white/10"
+                    ? "bg-yellow-400 text-white"
+                    : "text-ink/60 hover:text-ink hover:bg-ink/10"
                 }`}
                 onClick={() => setActiveCategory(cat)}
               >
@@ -127,13 +127,13 @@ export default function StorePage() {
 
       {/* Product Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-white/10 rounded-2xl overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-ink/10 rounded-2xl overflow-hidden">
           {filtered.map((product, i) => (
             <div
               key={product.id}
-              className={`group relative bg-zinc-950 flex flex-col ${
-                i % 4 !== 3 ? "sm:border-r border-white/10" : ""
-              } ${i < filtered.length - 4 ? "border-b border-white/10" : ""}`}
+              className={`group relative bg-cream flex flex-col ${
+                i % 4 !== 3 ? "sm:border-r border-ink/10" : ""
+              } ${i < filtered.length - 4 ? "border-b border-ink/10" : ""}`}
             >
               {/* Image panel */}
               <div
@@ -150,7 +150,7 @@ export default function StorePage() {
                 {/* Badge */}
                 {product.badge && (
                   <div className="absolute top-3 left-3 z-10">
-                    <span className="px-2.5 py-1 rounded bg-yellow-400 text-black text-[10px] font-extrabold tracking-widest uppercase">
+                    <span className="px-2.5 py-1 rounded bg-yellow-400 text-white text-[10px] font-extrabold tracking-widest uppercase">
                       {product.badge}
                     </span>
                   </div>
@@ -160,20 +160,20 @@ export default function StorePage() {
                 <div className="absolute inset-0 bg-black/70 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <button
                     aria-label="Wishlist"
-                    className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors"
+                    className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-cream transition-colors"
                   >
-                    <Heart className="w-4 h-4 text-white" />
+                    <Heart className="w-4 h-4 text-ink" />
                   </button>
-                  <span className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-yellow-400 text-black text-sm font-extrabold tracking-wider uppercase cursor-default">
+                  <span className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-yellow-400 text-white text-sm font-extrabold tracking-wider uppercase cursor-default">
                     <ShoppingBag className="w-4 h-4" />
                     Coming Soon
                   </span>
                   <Link
                     aria-label="View item"
-                    className="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors"
+                    className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-cream transition-colors"
                     href={`/store/${product.slug}`}
                   >
-                    <Eye className="w-4 h-4 text-white" />
+                    <Eye className="w-4 h-4 text-ink" />
                   </Link>
                 </div>
               </div>
@@ -184,10 +184,10 @@ export default function StorePage() {
                 href={`/store/${product.slug}`}
               >
                 <div>
-                  <h3 className="text-white font-extrabold text-sm uppercase tracking-wide leading-snug mb-1">
+                  <h3 className="text-ink font-extrabold text-sm uppercase tracking-wide leading-snug mb-1">
                     {product.name}
                   </h3>
-                  <p className="text-white/50 text-xs leading-relaxed line-clamp-2">
+                  <p className="text-ink/50 text-xs leading-relaxed line-clamp-2">
                     {product.description}
                   </p>
                 </div>
@@ -197,7 +197,7 @@ export default function StorePage() {
                   {product.sizes.map((size) => (
                     <span
                       key={size}
-                      className="px-2 py-0.5 rounded border border-white/20 text-white/60 text-[10px] font-semibold"
+                      className="px-2 py-0.5 rounded border border-ink/20 text-ink/60 text-[10px] font-semibold"
                     >
                       {size}
                     </span>
@@ -206,7 +206,7 @@ export default function StorePage() {
 
                 {/* Price + CTA */}
                 <div className="flex items-center justify-between mt-auto pt-2">
-                  <span className="text-white font-extrabold text-base">
+                  <span className="text-ink font-extrabold text-base">
                     {product.price}
                   </span>
                   <span className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-yellow-400/20 text-yellow-400 text-xs font-extrabold uppercase tracking-wider">
@@ -220,19 +220,19 @@ export default function StorePage() {
         </div>
 
         {/* Notify CTA */}
-        <div className="mt-16 rounded-2xl border border-yellow-400/20 bg-gradient-to-br from-yellow-400/10 via-black to-black p-8 sm:p-12 text-center">
+        <div className="mt-16 rounded-2xl border border-yellow-400/20 bg-gradient-to-br from-yellow-400/10 via-cream to-cream p-8 sm:p-12 text-center">
           <div className="w-14 h-14 rounded-full bg-yellow-400/10 flex items-center justify-center mx-auto mb-5">
             <Bell className="w-7 h-7 text-yellow-400" />
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-ink mb-3">
             Merchandise Dropping Soon
           </h2>
-          <p className="text-white/60 max-w-md mx-auto mb-8 leading-relaxed">
+          <p className="text-ink/60 max-w-md mx-auto mb-8 leading-relaxed">
             The Dr. Hilary Okello official merch collection is almost here.
             Contact us on WhatsApp to be the first to know when it goes live.
           </p>
           <a
-            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-base transition-all hover:scale-105"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-yellow-400 hover:bg-yellow-300 text-white font-bold text-base transition-all hover:scale-105"
             href="https://wa.me/256700000000?text=Hi%2C%20I%27d%20like%20to%20be%20notified%20when%20the%20Dr.%20Hilary%20Okello%20merch%20store%20launches!"
             rel="noopener noreferrer"
             target="_blank"

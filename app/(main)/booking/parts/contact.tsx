@@ -75,7 +75,7 @@ const bookingHighlights = [
 
 export default function BookingPage() {
   return (
-    <section className="w-full bg-black text-white min-h-screen">
+    <section className="w-full bg-cream text-ink min-h-screen">
       {/* Hero Section */}
       <div className="relative w-full min-h-[70vh] sm:min-h-[80vh] overflow-hidden">
         {/* Decorative network visualization */}
@@ -96,9 +96,9 @@ export default function BookingPage() {
           quality={80}
           src="/6417a8348314497a428acf03_Chips-Header-Background.jpg"
         />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(250,204,21,0.16),_transparent_45%),linear-gradient(135deg,rgba(0,0,0,0.9),rgba(0,0,0,0.45),rgba(0,0,0,0.8))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(155,41,18,0.16),_transparent_45%),linear-gradient(135deg,rgba(0,0,0,0.9),rgba(0,0,0,0.45),rgba(0,0,0,0.8))]" />
 
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] sm:min-h-[80vh] px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] sm:min-h-[80vh] px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.div
             animate={{ opacity: 1, y: 0 }}
             className="max-w-5xl mx-auto p-6 sm:p-8 lg:p-10"
@@ -119,7 +119,7 @@ export default function BookingPage() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
               <Button
                 as="a"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all duration-200 transform hover:scale-[1.02] shadow-lg shadow-yellow-500/20"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-full transition-all duration-200 transform hover:scale-[1.02] shadow-lg shadow-yellow-500/20"
                 href="https://wa.me/256784704143"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -154,7 +154,7 @@ export default function BookingPage() {
       </div>
 
       {/* Contact Methods Section */}
-      <div className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[radial-gradient(circle_at_top,_rgba(250,204,21,0.08),_transparent_30%),linear-gradient(180deg,_#050505_0%,_#0f0f0f_100%)]">
+      <div className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-[radial-gradient(circle_at_top,_rgba(155,41,18,0.08),_transparent_30%),linear-gradient(180deg,_#fff7e5_0%,_#fdf0d5_100%)]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <motion.div
@@ -169,7 +169,7 @@ export default function BookingPage() {
               <h2 className="mt-4 text-3xl sm:text-4xl font-extrabold mb-4">
                 Get in <span className="text-yellow-500">Touch</span>
               </h2>
-              <p className="text-white/70 mb-8 text-lg leading-relaxed">
+              <p className="text-ink/70 mb-8 text-lg leading-relaxed">
                 Ready to make your event unforgettable? Reach out through any of
                 these channels and our team will get back to you within 24
                 hours.
@@ -179,7 +179,7 @@ export default function BookingPage() {
                 {contactMethods.map((method, index) => (
                   <motion.a
                     key={method.label}
-                    className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-yellow-500/30 hover:bg-white/10"
+                    className="group flex items-start gap-4 rounded-2xl border border-ink/10 bg-ink/5 p-4 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-yellow-500/30 hover:bg-ink/10"
                     href={method.href}
                     initial={{ opacity: 0, x: -20 }}
                     rel="noopener noreferrer"
@@ -194,27 +194,27 @@ export default function BookingPage() {
                       <method.icon className={`h-6 w-6 ${method.color}`} />
                     </div>
                     <div className="min-w-0 flex-1">
-                      <p className="text-sm text-white/60">{method.label}</p>
-                      <p className="font-semibold text-white truncate">
+                      <p className="text-sm text-ink/60">{method.label}</p>
+                      <p className="font-semibold text-ink truncate">
                         {method.value}
                       </p>
-                      <p className="mt-0.5 text-xs text-white/50">
+                      <p className="mt-0.5 text-xs text-ink/50">
                         {method.description}
                       </p>
                     </div>
-                    <ChevronRight className="mt-1 h-5 w-5 shrink-0 text-white/40 transition-colors group-hover:text-yellow-500" />
+                    <ChevronRight className="mt-1 h-5 w-5 shrink-0 text-ink/40 transition-colors group-hover:text-yellow-500" />
                   </motion.a>
                 ))}
               </div>
 
-              <div className="mt-8 rounded-2xl border border-white/10 bg-gradient-to-br from-white/8 to-transparent p-5">
-                <p className="text-sm text-white/60 mb-4">Follow for updates</p>
+              <div className="mt-8 rounded-2xl border border-ink/10 bg-gradient-to-br from-white/70 to-transparent p-5">
+                <p className="text-sm text-ink/60 mb-4">Follow for updates</p>
                 <div className="flex flex-wrap gap-3">
                   {socialLinks.map((social) => (
                     <a
                       key={social.label}
                       aria-label={social.label}
-                      className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-all hover:-translate-y-0.5 hover:bg-yellow-500 hover:text-black hover:border-yellow-500"
+                      className="flex h-11 w-11 items-center justify-center rounded-full border border-ink/10 bg-ink/5 text-ink transition-all hover:-translate-y-0.5 hover:bg-yellow-500 hover:text-white hover:border-yellow-500"
                       href={social.href}
                       rel="noopener noreferrer"
                       target="_blank"
@@ -233,7 +233,7 @@ export default function BookingPage() {
               viewport={{ once: true }}
               whileInView={{ opacity: 1, x: 0 }}
             >
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-black/40">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-ink/10 shadow-2xl shadow-ink/20">
                 <Image
                   fill
                   alt="Dr. Hilary Okello performing"
@@ -250,9 +250,9 @@ export default function BookingPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
+      <div className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-cream">
         <motion.div
-          className="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-gradient-to-br from-yellow-500/15 via-black/70 to-black/90 p-8 text-center shadow-2xl shadow-yellow-500/10 sm:p-10"
+          className="mx-auto max-w-5xl rounded-[2rem] border border-ink/10 bg-gradient-to-br from-yellow-500/15 via-white to-cream p-8 text-center shadow-2xl shadow-yellow-500/10 sm:p-10"
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
@@ -262,13 +262,13 @@ export default function BookingPage() {
             Let&apos;s Make Your Event{" "}
             <span className="text-yellow-500">Legendary</span>
           </h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-white/70">
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-ink/70">
             Don&apos;t settle for ordinary entertainment. Book Dr. Hilary Okello
             and give your guests an experience they&apos;ll never forget.
           </p>
           <Button
             as="a"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-yellow-500 px-10 py-5 text-lg font-bold text-black transition-all duration-200 hover:scale-[1.02] hover:bg-yellow-400"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-yellow-500 px-10 py-5 text-lg font-bold text-white transition-all duration-200 hover:scale-[1.02] hover:bg-yellow-400"
             href="https://wa.me/256784704143"
             rel="noopener noreferrer"
             target="_blank"
@@ -280,7 +280,7 @@ export default function BookingPage() {
       </div>
 
       {/* Partners Section */}
-      <div className="py-12 sm:py-16 bg-black border-t border-white/10">
+      <div className="py-12 sm:py-16 bg-cream border-t border-ink/10">
         <Partners />
       </div>
     </section>

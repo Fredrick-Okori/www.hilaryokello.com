@@ -89,18 +89,18 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
     >
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
             On the road
           </p>
           <h2
-            className="text-3xl font-bold text-white md:text-4xl 4xl:text-5xl"
+            className="text-3xl font-bold text-ink md:text-4xl 4xl:text-5xl"
             id="gallery-title"
           >
             Gaborone, Botswana
           </h2>
         </div>
         <Link
-          className="inline-flex min-h-11 items-center gap-2 self-start border-b border-amber-400/70 pb-1 text-sm font-medium text-white transition-colors hover:text-amber-300 sm:self-auto"
+          className="inline-flex min-h-11 items-center gap-2 self-start border-b border-amber-400/70 pb-1 text-sm font-medium text-ink transition-colors hover:text-amber-700 sm:self-auto"
           href="/gallery"
         >
           More from the gallery <span aria-hidden="true">↗</span>
@@ -123,7 +123,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
           return (
             <figure
               key={`${image.url}-${index}`}
-              className={`gallery-card group relative isolate overflow-hidden rounded-sm bg-zinc-900 ${tileLayout}`}
+              className={`gallery-card group relative isolate overflow-hidden rounded-sm bg-white ${tileLayout}`}
             >
               <Image
                 fill

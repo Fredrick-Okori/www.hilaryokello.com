@@ -4,13 +4,13 @@ import { BsTwitterX } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-8 px-4">
+    <footer className="bg-cream text-ink py-8 px-4">
       <div className="container mx-auto flex flex-col gap-6 items-center">
         {/* Social Media Links */}
         <nav aria-label="Social media" className="flex space-x-6">
           <a
             aria-label="Visit Dr. Hilary Okello on Twitter"
-            className="text-white hover:text-gold transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black rounded-full p-2"
+            className="text-ink hover:text-gold transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream rounded-full p-2"
             href="https://twitter.com/DrHilaryOkello"
             rel="noopener noreferrer"
             target="_blank"
@@ -19,7 +19,7 @@ export default function Footer() {
           </a>
           <a
             aria-label="Visit Dr. Hilary Okello on YouTube"
-            className="text-white hover:text-red transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black rounded-full p-2"
+            className="text-ink hover:text-red transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream rounded-full p-2"
             href="https://www.youtube.com/@drhilaryokello"
             rel="noopener noreferrer"
             target="_blank"
@@ -28,21 +28,21 @@ export default function Footer() {
           </a>
           <a
             aria-label="Visit Dr. Hilary Okello on TikTok"
-            className="text-white hover:text-pink-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black rounded-full p-2"
+            className="text-ink hover:text-pink-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream rounded-full p-2"
             href="https://www.tiktok.com/@drhilary_okello?_t=ZM-8vVQayDX5aZ&_r=1"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FaTiktok className="hover:text-pink-400" size={24} />
+            <FaTiktok className="hover:text-pink-600" size={24} />
           </a>
           <a
             aria-label="Visit Dr. Hilary Okello on Instagram"
-            className="text-white hover:text-purple-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black rounded-full p-2"
+            className="text-ink hover:text-purple-600 transition-colors focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream rounded-full p-2"
             href="https://www.instagram.com/drhilaryokello/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FaInstagram className="hover:text-purple-400" size={24} />
+            <FaInstagram className="hover:text-purple-600" size={24} />
           </a>
         </nav>
 

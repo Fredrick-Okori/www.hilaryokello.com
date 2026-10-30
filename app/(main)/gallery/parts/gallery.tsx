@@ -262,13 +262,13 @@ export default function Gallery() {
   }, [modalRef]);
 
   return (
-    <div ref={galleryRef} className="px-6 py-20  mx-auto bg-black min-h-screen">
+    <div ref={galleryRef} className="px-6 py-20  mx-auto bg-cream min-h-screen">
       {/* Render each gallery group with a heading */}
       {groupEntries.map(([title, imgs], gIdx) => (
         <section key={title} data-gallery-group className="mb-12">
           <h2
             data-gallery-heading
-            className="text-2xl text-left font-bold text-white py-10"
+            className="text-2xl text-left font-bold text-ink py-10"
           >
             {title}
           </h2>

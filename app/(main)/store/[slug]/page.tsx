@@ -33,19 +33,19 @@ export default function ProductPage({
   );
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-cream text-ink">
       {/* Breadcrumb */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-4">
-        <div className="flex items-center gap-2 text-white/40 text-xs">
-          <Link className="hover:text-white transition-colors" href="/store">
+        <div className="flex items-center gap-2 text-ink/40 text-xs">
+          <Link className="hover:text-ink transition-colors" href="/store">
             Store
           </Link>
           <ChevronRight className="w-3 h-3" />
-          <Link className="hover:text-white transition-colors" href="/store">
+          <Link className="hover:text-ink transition-colors" href="/store">
             {product.category}
           </Link>
           <ChevronRight className="w-3 h-3" />
-          <span className="text-white/70 truncate">{product.name}</span>
+          <span className="text-ink/70 truncate">{product.name}</span>
         </div>
       </div>
 
@@ -102,7 +102,7 @@ export default function ProductPage({
 
             {/* Name + price */}
             <div>
-              <h1 className="text-3xl sm:text-4xl font-extrabold uppercase leading-tight text-white mb-4">
+              <h1 className="text-3xl sm:text-4xl font-extrabold uppercase leading-tight text-ink mb-4">
                 {product.name}
               </h1>
               <p className="text-3xl font-extrabold text-yellow-400">
@@ -111,14 +111,14 @@ export default function ProductPage({
             </div>
 
             {/* Description */}
-            <p className="text-white/60 leading-relaxed text-sm sm:text-base">
+            <p className="text-ink/60 leading-relaxed text-sm sm:text-base">
               {product.description}
             </p>
 
             {/* Size selector */}
             {product.sizes[0] !== "ONE SIZE" && (
               <div>
-                <p className="text-white/50 text-xs font-bold tracking-[0.15em] uppercase mb-3">
+                <p className="text-ink/50 text-xs font-bold tracking-[0.15em] uppercase mb-3">
                   Select Size
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -127,8 +127,8 @@ export default function ProductPage({
                       key={size}
                       className={`w-12 h-12 rounded-full border text-sm font-bold transition-all ${
                         selectedSize === size
-                          ? "border-yellow-400 bg-yellow-400 text-black"
-                          : "border-white/20 text-white/70 hover:border-white/60"
+                          ? "border-yellow-400 bg-yellow-400 text-white"
+                          : "border-ink/20 text-ink/70 hover:border-ink/60"
                       }`}
                       onClick={() => setSelectedSize(size)}
                     >
@@ -141,7 +141,7 @@ export default function ProductPage({
 
             {/* Color selector */}
             <div>
-              <p className="text-white/50 text-xs font-bold tracking-[0.15em] uppercase mb-3">
+              <p className="text-ink/50 text-xs font-bold tracking-[0.15em] uppercase mb-3">
                 Color
               </p>
               <div className="flex gap-3">
@@ -152,7 +152,7 @@ export default function ProductPage({
                     className={`w-9 h-9 rounded-full border-2 transition-all ${
                       selectedColor === color.label
                         ? "border-yellow-400 scale-110"
-                        : "border-white/20 hover:border-white/50"
+                        : "border-ink/20 hover:border-ink/50"
                     }`}
                     style={{ backgroundColor: color.hex }}
                     title={color.label}
@@ -165,7 +165,7 @@ export default function ProductPage({
             {/* CTAs */}
             <div className="flex flex-col gap-3 mt-2">
               <a
-                className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-yellow-400 hover:bg-yellow-300 text-black font-extrabold text-sm uppercase tracking-wider transition-all hover:scale-[1.02]"
+                className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-yellow-400 hover:bg-yellow-300 text-white font-extrabold text-sm uppercase tracking-wider transition-all hover:scale-[1.02]"
                 href={`https://wa.me/256700000000?text=${waText}`}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -191,18 +191,18 @@ export default function ProductPage({
 
             {/* Delivery badges */}
             <div className="flex gap-4 mt-2">
-              <div className="flex items-center gap-3 flex-1 bg-white/5 rounded-xl px-4 py-3">
+              <div className="flex items-center gap-3 flex-1 bg-ink/5 rounded-xl px-4 py-3">
                 <Truck className="w-5 h-5 text-yellow-400 flex-shrink-0" />
                 <div>
-                  <p className="text-white text-xs font-bold">Free Shipping</p>
-                  <p className="text-white/40 text-[11px]">over UGX 200K</p>
+                  <p className="text-ink text-xs font-bold">Free Shipping</p>
+                  <p className="text-ink/40 text-[11px]">over UGX 200K</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 flex-1 bg-white/5 rounded-xl px-4 py-3">
+              <div className="flex items-center gap-3 flex-1 bg-ink/5 rounded-xl px-4 py-3">
                 <ShieldCheck className="w-5 h-5 text-yellow-400 flex-shrink-0" />
                 <div>
-                  <p className="text-white text-xs font-bold">30-Day</p>
-                  <p className="text-white/40 text-[11px]">Money Back</p>
+                  <p className="text-ink text-xs font-bold">30-Day</p>
+                  <p className="text-ink/40 text-[11px]">Money Back</p>
                 </div>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function ProductPage({
         {/* Back link */}
         <div className="mt-16">
           <Link
-            className="inline-flex items-center gap-2 text-white/40 hover:text-white text-sm transition-colors"
+            className="inline-flex items-center gap-2 text-ink/40 hover:text-ink text-sm transition-colors"
             href="/store"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -221,8 +221,8 @@ export default function ProductPage({
         </div>
 
         {/* More products */}
-        <div className="mt-8 pt-12 border-t border-white/10">
-          <h2 className="text-xl font-extrabold uppercase tracking-wide text-white mb-8">
+        <div className="mt-8 pt-12 border-t border-ink/10">
+          <h2 className="text-xl font-extrabold uppercase tracking-wide text-ink mb-8">
             More Items
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -242,7 +242,7 @@ export default function ProductPage({
                       src={p.image}
                     />
                   </div>
-                  <p className="text-white/80 text-xs font-bold uppercase tracking-wide line-clamp-1">
+                  <p className="text-ink/80 text-xs font-bold uppercase tracking-wide line-clamp-1">
                     {p.name}
                   </p>
                   <p className="text-yellow-400 text-sm font-extrabold">

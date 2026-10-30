@@ -77,11 +77,11 @@ export default async function ShowPage({
     currentIndex < SHOWS.length - 1 ? SHOWS[currentIndex + 1] : null;
 
   return (
-    <main className="text-white min-h-screen">
+    <main className="text-ink min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 pb-14">
         {/* Back link */}
         <Link
-          className="inline-flex items-center gap-1.5 text-white/60 hover:text-white transition-colors text-sm font-medium mb-8"
+          className="inline-flex items-center gap-1.5 text-ink/60 hover:text-ink transition-colors text-sm font-medium mb-8"
           href="/#shows"
         >
           <ChevronLeft className="h-4 w-4" />
@@ -92,19 +92,19 @@ export default async function ShowPage({
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-10">
           <div>
             {isSoldOut && (
-              <span className="inline-block mb-3 px-3 py-1 bg-white/10 border border-white/15 text-white/70 rounded-full text-xs font-bold tracking-wide">
+              <span className="inline-block mb-3 px-3 py-1 bg-ink/10 border border-ink/15 text-ink/70 rounded-full text-xs font-bold tracking-wide">
                 SOLD OUT
               </span>
             )}
             {show.featured && !isSoldOut && (
-              <span className="inline-block mb-3 px-3 py-1 bg-yellow-500 text-black rounded-full text-xs font-bold tracking-wide">
+              <span className="inline-block mb-3 px-3 py-1 bg-yellow-500 text-white rounded-full text-xs font-bold tracking-wide">
                 FEATURED SHOW
               </span>
             )}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-ink leading-tight">
               {show.title}
             </h1>
-            <p className="mt-2 text-white/60 text-base">
+            <p className="mt-2 text-ink/60 text-base">
               {show.city}, {show.country}
             </p>
           </div>
@@ -112,7 +112,7 @@ export default async function ShowPage({
             <span className="text-2xl sm:text-3xl font-extrabold text-yellow-500">
               {show.dateLabel}
             </span>
-            <span className="text-white/60 text-sm">{show.time}</span>
+            <span className="text-ink/60 text-sm">{show.time}</span>
           </div>
         </div>
 
@@ -137,29 +137,29 @@ export default async function ShowPage({
           {/* Right — details + description + CTAs */}
           <div className="flex flex-col gap-6">
             {/* Event details card */}
-            <div className="p-6 bg-white/5 border border-white/10 rounded-2xl flex flex-col gap-5">
+            <div className="p-6 bg-ink/5 border border-ink/10 rounded-2xl flex flex-col gap-5">
               <div className="flex items-start gap-4">
                 <Calendar className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
                 <div>
-                  <p className="text-white/50 text-xs mb-1">Date</p>
-                  <p className="text-white font-semibold">{show.dateLabel}</p>
+                  <p className="text-ink/50 text-xs mb-1">Date</p>
+                  <p className="text-ink font-semibold">{show.dateLabel}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <Clock className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
                 <div>
-                  <p className="text-white/50 text-xs mb-1">Time</p>
-                  <p className="text-white font-semibold">{show.time}</p>
+                  <p className="text-ink/50 text-xs mb-1">Time</p>
+                  <p className="text-ink font-semibold">{show.time}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <MapPin className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
                 <div>
-                  <p className="text-white/50 text-xs mb-1">Venue</p>
-                  <p className="text-white font-semibold">{show.location}</p>
-                  <p className="text-white/60 text-sm mt-0.5">
+                  <p className="text-ink/50 text-xs mb-1">Venue</p>
+                  <p className="text-ink font-semibold">{show.location}</p>
+                  <p className="text-ink/60 text-sm mt-0.5">
                     {show.city}, {show.country}
                   </p>
                 </div>
@@ -169,8 +169,8 @@ export default async function ShowPage({
                 <div className="flex items-start gap-4">
                   <Ticket className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-white/50 text-xs mb-1">Tickets</p>
-                    <p className="text-white font-semibold">
+                    <p className="text-ink/50 text-xs mb-1">Tickets</p>
+                    <p className="text-ink font-semibold">
                       {show.ticketPrice}
                     </p>
                   </div>
@@ -180,11 +180,11 @@ export default async function ShowPage({
 
             {/* Zimbabwe — WhatsApp waiting list */}
             {show.country === "Zimbabwe" && (
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 space-y-4">
-                <h2 className="text-lg font-bold text-white">
+              <div className="rounded-2xl border border-ink/10 bg-ink/5 p-6 space-y-4">
+                <h2 className="text-lg font-bold text-ink">
                   Join the Waiting List
                 </h2>
-                <p className="text-white/70 text-sm">
+                <p className="text-ink/70 text-sm">
                   Message us on WhatsApp to reserve your spot and be notified
                   when tickets go live.
                 </p>
@@ -201,10 +201,10 @@ export default async function ShowPage({
 
             {/* Description */}
             <div>
-              <h2 className="text-lg font-bold text-white mb-2">
+              <h2 className="text-lg font-bold text-ink mb-2">
                 About This Show
               </h2>
-              <p className="text-white/70 leading-relaxed text-base">
+              <p className="text-ink/70 leading-relaxed text-base">
                 {show.description}
               </p>
             </div>
@@ -215,13 +215,13 @@ export default async function ShowPage({
                 {isSoldOut ? (
                   <span
                     aria-disabled="true"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white/40 font-bold text-base rounded-full cursor-not-allowed"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-ink/5 border border-ink/10 text-ink/40 font-bold text-base rounded-full cursor-not-allowed"
                   >
                     Sold Out
                   </span>
                 ) : hasTicketLink ? (
                   <a
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-full transition-all hover:scale-105"
                     href={show.link}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -231,7 +231,7 @@ export default async function ShowPage({
                   </a>
                 ) : (
                   <a
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base rounded-full transition-all hover:scale-105"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-full transition-all hover:scale-105"
                     href={waLink}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -247,10 +247,10 @@ export default async function ShowPage({
 
         {/* Prev / Next navigation */}
         {(prevShow || nextShow) && (
-          <nav className="mt-14 pt-8 border-t border-white/10 flex justify-between gap-4">
+          <nav className="mt-14 pt-8 border-t border-ink/10 flex justify-between gap-4">
             {prevShow ? (
               <Link
-                className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm max-w-[45%]"
+                className="flex items-center gap-2 text-ink/60 hover:text-ink transition-colors text-sm max-w-[45%]"
                 href={`/shows/${prevShow.slug}`}
               >
                 <ChevronLeft className="h-4 w-4 shrink-0" />
@@ -261,7 +261,7 @@ export default async function ShowPage({
             )}
             {nextShow ? (
               <Link
-                className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm max-w-[45%] text-right"
+                className="flex items-center gap-2 text-ink/60 hover:text-ink transition-colors text-sm max-w-[45%] text-right"
                 href={`/shows/${nextShow.slug}`}
               >
                 <span className="truncate">{nextShow.title}</span>

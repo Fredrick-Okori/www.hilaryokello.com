@@ -52,7 +52,7 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, viewport-fit=cover"
           name="viewport"
         />
-        <meta content="#000000" name="theme-color" />
+        <meta content="#fff7e5" name="theme-color" />
         <meta content="telephone=no" name="format-detection" />
       </head>
       <Script
@@ -68,7 +68,7 @@ export default function RootLayout({
       </Script>
       <body
         className="font-sans antialiased"
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundColor: "#fff7e5" }}
       >
         <chat-widget
           env="prod"

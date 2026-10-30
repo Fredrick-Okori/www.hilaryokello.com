@@ -85,43 +85,43 @@ export default function CityRegistrationForm() {
   return (
     <form className="w-full" onSubmit={onSubmit}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <label className="flex flex-col gap-2 text-sm text-white/80">
+        <label className="flex flex-col gap-2 text-sm text-ink/80">
           <span>Username</span>
           <input
             required
-            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            className="w-full rounded-2xl border border-ink/15 bg-white px-4 py-3 text-base text-ink placeholder:text-ink/45 outline-none transition focus:border-yellow-400 focus:bg-white"
             placeholder="e.g. JaneDoe"
             type="text"
             value={form.username}
             onChange={(e) => update("username")(e.target.value)}
           />
         </label>
-        <label className="flex flex-col gap-2 text-sm text-white/80">
+        <label className="flex flex-col gap-2 text-sm text-ink/80">
           <span>Email</span>
           <input
             required
-            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            className="w-full rounded-2xl border border-ink/15 bg-white px-4 py-3 text-base text-ink placeholder:text-ink/45 outline-none transition focus:border-yellow-400 focus:bg-white"
             placeholder="janedoe@gmail.com"
             type="email"
             value={form.email}
             onChange={(e) => update("email")(e.target.value)}
           />
         </label>
-        <label className="flex flex-col gap-2 text-sm text-white/80">
+        <label className="flex flex-col gap-2 text-sm text-ink/80">
           <span>Country</span>
           <select
             required
-            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            className="w-full rounded-2xl border border-ink/15 bg-white px-4 py-3 text-base text-ink outline-none transition focus:border-yellow-400 focus:bg-white"
             value={form.country}
             onChange={(e) => update("country")(e.target.value)}
           >
-            <option className="bg-black text-white/45" value="">
+            <option className="bg-cream text-ink/45" value="">
               Select your country
             </option>
             {COUNTRIES.map((country) => (
               <option
                 key={country.iso2}
-                className="bg-black text-white"
+                className="bg-cream text-ink"
                 value={country.name}
               >
                 {country.name}
@@ -129,20 +129,20 @@ export default function CityRegistrationForm() {
             ))}
           </select>
         </label>
-        <label className="flex flex-col gap-2 text-sm text-white/80">
+        <label className="flex flex-col gap-2 text-sm text-ink/80">
           <span>Phone Number</span>
           <div className="flex gap-2">
             <input
               disabled
               readOnly
               aria-label="Country code"
-              className="w-20 shrink-0 rounded-2xl border border-white/15 bg-white/5 px-3 py-3 text-center text-base text-white/70 outline-none"
+              className="w-20 shrink-0 rounded-2xl border border-ink/15 bg-ink/5 px-3 py-3 text-center text-base text-ink/70 outline-none"
               placeholder="+…"
               value={dialCode}
             />
             <input
               required
-              className="w-full min-w-0 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+              className="w-full min-w-0 rounded-2xl border border-ink/15 bg-white px-4 py-3 text-base text-ink placeholder:text-ink/45 outline-none transition focus:border-yellow-400 focus:bg-white"
               placeholder="e.g. 412345678"
               type="tel"
               value={form.phone}
@@ -150,11 +150,11 @@ export default function CityRegistrationForm() {
             />
           </div>
         </label>
-        <label className="flex flex-col gap-2 text-sm text-white/80 sm:col-span-2">
+        <label className="flex flex-col gap-2 text-sm text-ink/80 sm:col-span-2">
           <span>Location / City</span>
           <input
             required
-            className="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-base text-white placeholder:text-white/45 outline-none transition focus:border-yellow-400 focus:bg-white/15"
+            className="w-full rounded-2xl border border-ink/15 bg-white px-4 py-3 text-base text-ink placeholder:text-ink/45 outline-none transition focus:border-yellow-400 focus:bg-white"
             placeholder="e.g. Melbourne"
             type="text"
             value={form.city}
@@ -165,14 +165,14 @@ export default function CityRegistrationForm() {
 
       <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
         <Button
-          className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105"
+          className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base sm:text-lg rounded-full transition-all transform hover:scale-105"
           isDisabled={!canSubmit || submitting}
           type="submit"
         >
           {submitting ? "Submitting…" : "Register your City"}
         </Button>
 
-        {status && <p className="text-sm text-white/70">{status}</p>}
+        {status && <p className="text-sm text-ink/70">{status}</p>}
       </div>
     </form>
   );

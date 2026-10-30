@@ -57,32 +57,32 @@ export default function AdminBiographyPage() {
   return (
     <div className="space-y-6 max-w-3xl">
       <div>
-        <h2 className="text-2xl font-bold text-white">Biography</h2>
-        <p className="text-sm text-zinc-400 mt-1">
+        <h2 className="text-2xl font-bold text-ink">Biography</h2>
+        <p className="text-sm text-ink/60 mt-1">
           Edit the biography displayed on the website. The first two paragraphs
           (or headings) appear next to the photo, the rest below it — separate
           paragraphs with a blank line. Start any line with{" "}
-          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+          <code className="rounded bg-white px-1 py-0.5 text-ink/75">
             #
           </code>
           ,{" "}
-          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+          <code className="rounded bg-white px-1 py-0.5 text-ink/75">
             ##
           </code>
           , or{" "}
-          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+          <code className="rounded bg-white px-1 py-0.5 text-ink/75">
             ###
           </code>{" "}
           for a heading — it doesn&apos;t need a blank line around it. Use{" "}
-          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+          <code className="rounded bg-white px-1 py-0.5 text-ink/75">
             [link text](https://example.com)
           </code>{" "}
           for a link — no space between{" "}
-          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+          <code className="rounded bg-white px-1 py-0.5 text-ink/75">
             ]
           </code>{" "}
           and{" "}
-          <code className="rounded bg-zinc-800 px-1 py-0.5 text-zinc-300">
+          <code className="rounded bg-white px-1 py-0.5 text-ink/75">
             (
           </code>
           . Bare http(s) links are also made clickable automatically.
@@ -90,13 +90,13 @@ export default function AdminBiographyPage() {
       </div>
 
       {loading ? (
-        <p className="text-zinc-500 text-sm">Loading…</p>
+        <p className="text-ink/50 text-sm">Loading…</p>
       ) : (
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
-            <label className="text-xs text-zinc-400">Biography Content</label>
+            <label className="text-xs text-ink/60">Biography Content</label>
             <textarea
-              className="w-full rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-yellow-400 focus:outline-none resize-y leading-relaxed"
+              className="w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm text-ink placeholder-zinc-500 focus:border-yellow-400 focus:outline-none resize-y leading-relaxed"
               placeholder="Write the biography here…"
               rows={16}
               value={content}
@@ -104,7 +104,7 @@ export default function AdminBiographyPage() {
             />
           </div>
           <button
-            className="flex items-center gap-2 rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-semibold text-black hover:bg-yellow-300 disabled:opacity-60 transition-colors"
+            className="flex items-center gap-2 rounded-lg bg-yellow-400 px-5 py-2.5 text-sm font-semibold text-white hover:bg-yellow-300 disabled:opacity-60 transition-colors"
             disabled={saving}
             onClick={handleSave}
           >
@@ -116,7 +116,7 @@ export default function AdminBiographyPage() {
             {saving ? "Saving…" : saved ? "Saved!" : "Save Changes"}
           </button>
           {bio?.updated_at && (
-            <p className="text-xs text-zinc-500">
+            <p className="text-xs text-ink/50">
               Last updated: {new Date(bio.updated_at).toLocaleString()}
             </p>
           )}

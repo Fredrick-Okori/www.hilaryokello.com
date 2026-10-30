@@ -136,7 +136,7 @@ export function VideoSection({ title, className }: VideoSectionProps) {
       <div className="container px-4 md:px-6">
         <h2
           data-scroll-reveal-item
-          className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-6 sm:mb-8 leading-tight"
+          className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink mb-6 sm:mb-8 leading-tight"
         >
           {title}
         </h2>
@@ -148,17 +148,17 @@ export function VideoSection({ title, className }: VideoSectionProps) {
             className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 animate-pulse"
             role="status"
           >
-            <div className="lg:col-span-2 aspect-video rounded-lg sm:rounded-xl bg-white/5" />
+            <div className="lg:col-span-2 aspect-video rounded-lg sm:rounded-xl bg-ink/5" />
             <div className="space-y-4">
               {[...Array(3)].map((_, i) => (
-                <div key={i} className="h-24 rounded-lg bg-white/5" />
+                <div key={i} className="h-24 rounded-lg bg-ink/5" />
               ))}
             </div>
           </div>
         ) : videos.length === 0 || !activeVideo ? (
           <div
             data-scroll-reveal-item
-            className="text-center text-white/60 bg-white/5 border border-white/10 rounded-xl p-10"
+            className="text-center text-ink/60 bg-ink/5 border border-ink/10 rounded-xl p-10"
             role="status"
           >
             No videos published yet. Check back soon.
@@ -208,7 +208,7 @@ export function VideoSection({ title, className }: VideoSectionProps) {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <button
                         aria-label={`Play video: ${activeVideo.title}`}
-                        className="bg-gold hover:bg-gold-light text-black rounded-full p-4 transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+                        className="bg-gold hover:bg-gold-light text-white rounded-full p-4 transition-transform duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream"
                       >
                         <Play className="h-8 w-8 fill-current" />
                       </button>
@@ -219,10 +219,10 @@ export function VideoSection({ title, className }: VideoSectionProps) {
                   </div>
                 )}
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-white">
+              <h3 className="text-lg sm:text-xl font-semibold text-ink">
                 {activeVideo.title}
               </h3>
-              <div className="flex items-center text-xs sm:text-sm text-white/70">
+              <div className="flex items-center text-xs sm:text-sm text-ink/70">
                 <span>{activeVideo.views} views</span>
                 <span className="mx-2">•</span>
                 <span>{activeVideo.uploadedAt}</span>
@@ -231,7 +231,7 @@ export function VideoSection({ title, className }: VideoSectionProps) {
 
             {/* Video Grid */}
             <div className="space-y-4 sm:space-y-6">
-              <h3 className="font-medium text-white text-base sm:text-lg">
+              <h3 className="font-medium text-ink text-base sm:text-lg">
                 Up Next
               </h3>
               {videos
@@ -243,7 +243,7 @@ export function VideoSection({ title, className }: VideoSectionProps) {
                     aria-label={`Select video: ${video.title}`}
                     className={cn(
                       "flex gap-4 cursor-pointer p-2 rounded-lg transition-colors",
-                      "hover:bg-muted focus-within:ring-2 focus-within:ring-gold focus-within:ring-offset-2 focus-within:ring-offset-black",
+                      "hover:bg-muted focus-within:ring-2 focus-within:ring-gold focus-within:ring-offset-2 focus-within:ring-offset-cream",
                     )}
                     role="button"
                     tabIndex={0}
@@ -266,10 +266,10 @@ export function VideoSection({ title, className }: VideoSectionProps) {
                       </div>
                     </div>
                     <div className="space-y-1">
-                      <h4 className="font-medium text-white line-clamp-2">
+                      <h4 className="font-medium text-ink line-clamp-2">
                         {video.title}
                       </h4>
-                      <div className="flex text-white/70 items-center text-xs">
+                      <div className="flex text-ink/70 items-center text-xs">
                         <span>{video.views} views</span>
                         <span className="mx-1">•</span>
                         <span>{video.uploadedAt}</span>

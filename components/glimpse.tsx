@@ -87,11 +87,11 @@ const CountryGlimpse: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
     <section ref={sectionRef} aria-label="Rwanda gallery" className="w-full">
       <div data-scroll-reveal-item>
-        <h4 className="text-left text-4xl text-white font-bold 4xl:text-5xl">
+        <h4 className="text-left text-4xl text-ink font-bold 4xl:text-5xl">
           Gen-Z Comedy Show: Rwanda
         </h4>
         <Button
-          className="rounded-full text-white px-4 py-2 mt-4"
+          className="rounded-full text-ink px-4 py-2 mt-4"
           variant="bordered"
         >
           <Link href="/gallery">More from Rwanda</Link>
@@ -104,7 +104,7 @@ const CountryGlimpse: React.FC<ImageCarouselProps> = ({ images }) => {
       >
         <Button
           aria-label="Previous slide"
-          className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+          className="text-ink rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream"
           disabled={isLoading}
           size="sm"
           variant="bordered"
@@ -114,7 +114,7 @@ const CountryGlimpse: React.FC<ImageCarouselProps> = ({ images }) => {
         </Button>
         <Button
           aria-label="Next slide"
-          className="text-white rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-black"
+          className="text-ink rounded-full focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream"
           disabled={isLoading}
           size="sm"
           variant="bordered"

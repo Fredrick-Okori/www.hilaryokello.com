@@ -125,13 +125,13 @@ export default function AdminStorePage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-white">Store</h2>
-          <p className="text-sm text-zinc-400 mt-1">
+          <h2 className="text-2xl font-bold text-ink">Store</h2>
+          <p className="text-sm text-ink/60 mt-1">
             {published.length} published · {drafts.length} draft
           </p>
         </div>
         <button
-          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300 transition-colors"
+          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300 transition-colors"
           onClick={() => {
             setForm(emptyDraft);
             setAdding(true);
@@ -143,20 +143,20 @@ export default function AdminStorePage() {
 
       {/* Add form */}
       {adding && (
-        <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-5 space-y-4">
+        <div className="rounded-xl border border-ink/15 bg-white p-5 space-y-4">
           <p className="text-sm font-semibold text-yellow-400">
             New Merchandise
           </p>
           <MerchForm form={form} onChange={setForm} />
           <div className="flex gap-2">
             <button
-              className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+              className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300"
               onClick={handleAdd}
             >
               <Check size={14} /> Save as Draft
             </button>
             <button
-              className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+              className="flex items-center gap-1.5 rounded-lg border border-ink/15 px-4 py-2 text-sm text-ink/60 hover:text-ink"
               onClick={() => setAdding(false)}
             >
               <X size={14} /> Cancel
@@ -166,16 +166,16 @@ export default function AdminStorePage() {
       )}
 
       {loading ? (
-        <p className="text-zinc-500 text-sm">Loading…</p>
+        <p className="text-ink/50 text-sm">Loading…</p>
       ) : items.length === 0 ? (
-        <p className="text-zinc-500 text-sm">
+        <p className="text-ink/50 text-sm">
           No merchandise yet. Add your first item above.
         </p>
       ) : (
         <div className="space-y-6">
           {published.length > 0 && (
             <section className="space-y-2">
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-green-400">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-green-700">
                 Published ({published.length})
               </h3>
               {published.map((item) =>
@@ -201,7 +201,7 @@ export default function AdminStorePage() {
 
           {drafts.length > 0 && (
             <section className="space-y-2">
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
+              <h3 className="text-xs font-semibold uppercase tracking-widest text-ink/50">
                 Drafts ({drafts.length})
               </h3>
               {drafts.map((item) =>
@@ -242,7 +242,7 @@ function MerchRow({
   onTogglePublish: () => void;
 }) {
   return (
-    <div className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3">
+    <div className="flex items-center gap-4 rounded-xl border border-ink/10 bg-white px-4 py-3">
       {/* Thumbnail */}
       {item.image ? (
         <div className="relative w-12 h-12 rounded-lg bg-white overflow-hidden shrink-0">
@@ -254,13 +254,13 @@ function MerchRow({
           />
         </div>
       ) : (
-        <div className="w-12 h-12 rounded-lg bg-zinc-800 shrink-0" />
+        <div className="w-12 h-12 rounded-lg bg-white shrink-0" />
       )}
 
       {/* Info */}
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2 flex-wrap">
-          <p className="text-sm font-semibold text-white truncate">
+          <p className="text-sm font-semibold text-ink truncate">
             {item.name}
           </p>
           {item.badge && (
@@ -269,7 +269,7 @@ function MerchRow({
             </span>
           )}
         </div>
-        <p className="text-xs text-zinc-400 mt-0.5">
+        <p className="text-xs text-ink/60 mt-0.5">
           {item.category} · {item.price} · {(item.sizes ?? []).join(", ")}
         </p>
       </div>
@@ -279,8 +279,8 @@ function MerchRow({
         <button
           className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
             item.published
-              ? "bg-green-500/15 text-green-400 hover:bg-red-500/15 hover:text-red-400"
-              : "bg-zinc-800 text-zinc-400 hover:bg-green-500/15 hover:text-green-400"
+              ? "bg-green-500/15 text-green-700 hover:bg-red-500/15 hover:text-red-600"
+              : "bg-white text-ink/60 hover:bg-green-500/15 hover:text-green-700"
           }`}
           title={item.published ? "Unpublish" : "Publish to website"}
           onClick={onTogglePublish}
@@ -296,13 +296,13 @@ function MerchRow({
           )}
         </button>
         <button
-          className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-yellow-400 transition-colors"
+          className="p-2 rounded-lg hover:bg-ink/5 text-ink/60 hover:text-yellow-400 transition-colors"
           onClick={onEdit}
         >
           <Pencil size={15} />
         </button>
         <button
-          className="p-2 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-red-400 transition-colors"
+          className="p-2 rounded-lg hover:bg-ink/5 text-ink/60 hover:text-red-600 transition-colors"
           onClick={onDelete}
         >
           <Trash2 size={15} />
@@ -333,17 +333,17 @@ function EditRow({
   });
 
   return (
-    <div className="rounded-xl border border-yellow-400/40 bg-zinc-900 p-5 space-y-4">
+    <div className="rounded-xl border border-yellow-400/40 bg-white p-5 space-y-4">
       <MerchForm form={form} onChange={setForm} />
       <div className="flex gap-2">
         <button
-          className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-black hover:bg-yellow-300"
+          className="flex items-center gap-1.5 rounded-lg bg-yellow-400 px-4 py-2 text-sm font-semibold text-white hover:bg-yellow-300"
           onClick={() => onSave(form)}
         >
           <Check size={14} /> Save
         </button>
         <button
-          className="flex items-center gap-1.5 rounded-lg border border-zinc-700 px-4 py-2 text-sm text-zinc-400 hover:text-white"
+          className="flex items-center gap-1.5 rounded-lg border border-ink/15 px-4 py-2 text-sm text-ink/60 hover:text-ink"
           onClick={onCancel}
         >
           <X size={14} /> Cancel
@@ -363,9 +363,9 @@ function MerchForm({
   function field(key: keyof MerchDraft, label: string, type = "text") {
     return (
       <div className="flex flex-col gap-1">
-        <label className="text-xs text-zinc-400">{label}</label>
+        <label className="text-xs text-ink/60">{label}</label>
         <input
-          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none"
+          className="rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink focus:border-yellow-400 focus:outline-none"
           type={type}
           value={(form[key] ?? "") as string}
           onChange={(e) => onChange({ ...form, [key]: e.target.value })}
@@ -394,9 +394,9 @@ function MerchForm({
 
         {/* Category */}
         <div className="flex flex-col gap-1">
-          <label className="text-xs text-zinc-400">Category</label>
+          <label className="text-xs text-ink/60">Category</label>
           <select
-            className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none"
+            className="rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink focus:border-yellow-400 focus:outline-none"
             value={form.category}
             onChange={(e) => onChange({ ...form, category: e.target.value })}
           >
@@ -414,15 +414,15 @@ function MerchForm({
 
       {/* Sizes */}
       <div className="flex flex-col gap-2">
-        <label className="text-xs text-zinc-400">Sizes</label>
+        <label className="text-xs text-ink/60">Sizes</label>
         <div className="flex flex-wrap gap-2">
           {allSizes.map((size) => (
             <button
               key={size}
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-colors ${
                 (form.sizes ?? []).includes(size)
-                  ? "bg-yellow-400 text-black border-yellow-400"
-                  : "border-zinc-700 text-zinc-400 hover:border-zinc-500"
+                  ? "bg-yellow-400 text-white border-yellow-400"
+                  : "border-ink/15 text-ink/60 hover:border-ink/30"
               }`}
               type="button"
               onClick={() => toggleSize(size)}
@@ -435,9 +435,9 @@ function MerchForm({
 
       {/* Description */}
       <div className="flex flex-col gap-1">
-        <label className="text-xs text-zinc-400">Description</label>
+        <label className="text-xs text-ink/60">Description</label>
         <textarea
-          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-white focus:border-yellow-400 focus:outline-none resize-y"
+          className="rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink focus:border-yellow-400 focus:outline-none resize-y"
           rows={3}
           value={form.description}
           onChange={(e) => onChange({ ...form, description: e.target.value })}

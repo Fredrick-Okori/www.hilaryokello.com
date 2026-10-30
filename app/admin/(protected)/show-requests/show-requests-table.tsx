@@ -60,41 +60,41 @@ export default function ShowRequestsTable({
     <>
       <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-white">Show Requests</h1>
-          <p className="text-sm text-white/60">
+          <h1 className="text-2xl font-bold text-ink">Show Requests</h1>
+          <p className="text-sm text-ink/60">
             Review city interest submissions and contact details.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
           <select
-            className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/80 outline-none transition focus:border-yellow-400"
+            className="rounded-full border border-ink/10 bg-ink/5 px-3 py-1.5 text-sm text-ink/80 outline-none transition focus:border-yellow-400"
             value={countryFilter}
             onChange={(e) => setCountryFilter(e.target.value)}
           >
-            <option className="bg-black text-white" value="All">
+            <option className="bg-cream text-ink" value="All">
               All countries
             </option>
             {countries.map((country) => (
               <option
                 key={country}
-                className="bg-black text-white"
+                className="bg-cream text-ink"
                 value={country}
               >
                 {country}
               </option>
             ))}
           </select>
-          <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/70">
+          <div className="inline-flex items-center rounded-full border border-ink/10 bg-ink/5 px-3 py-1.5 text-sm text-ink/70">
             {filteredRequests.length} total submissions
           </div>
           <ExportPdfButton showRequests={filteredRequests} />
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/70 shadow-2xl">
+      <div className="overflow-hidden rounded-2xl border border-ink/10 bg-white shadow-xl">
         <div className="overflow-x-auto">
-          <table className="min-w-[940px] w-full text-sm text-left text-white/80">
-            <thead className="bg-white/5 text-white/70">
+          <table className="min-w-[940px] w-full text-sm text-left text-ink/80">
+            <thead className="bg-ink/5 text-ink/70">
               <tr>
                 <th className="px-4 py-3 font-semibold">City</th>
                 <th className="px-4 py-3 font-semibold">Country</th>
@@ -109,9 +109,9 @@ export default function ShowRequestsTable({
                 paginatedRequests.map((request) => (
                   <tr
                     key={request.id}
-                    className="border-t border-white/10 bg-white/[0.02] transition-colors hover:bg-white/[0.05]"
+                    className="border-t border-ink/10 bg-ink/[0.02] transition-colors hover:bg-ink/[0.05]"
                   >
-                    <td className="px-4 py-3 font-medium text-white">
+                    <td className="px-4 py-3 font-medium text-ink">
                       {request.city}
                     </td>
                     <td className="px-4 py-3">{request.country || "—"}</td>
@@ -126,7 +126,7 @@ export default function ShowRequestsTable({
               ) : (
                 <tr>
                   <td
-                    className="px-4 py-10 text-center text-white/60"
+                    className="px-4 py-10 text-center text-ink/60"
                     colSpan={6}
                   >
                     No show requests match this filter.
@@ -138,13 +138,13 @@ export default function ShowRequestsTable({
         </div>
 
         {filteredRequests.length > PAGE_SIZE && (
-          <div className="flex items-center justify-between border-t border-white/10 px-4 py-3 text-sm text-white/70">
+          <div className="flex items-center justify-between border-t border-ink/10 px-4 py-3 text-sm text-ink/70">
             <span>
               Page {currentPage} of {pageCount}
             </span>
             <div className="flex items-center gap-2">
               <button
-                className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
+                className="inline-flex items-center gap-1 rounded-full border border-ink/10 bg-ink/5 px-3 py-1.5 transition-colors hover:bg-ink/10 disabled:cursor-not-allowed disabled:opacity-40"
                 disabled={currentPage <= 1}
                 type="button"
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
@@ -152,7 +152,7 @@ export default function ShowRequestsTable({
                 <ChevronLeft size={16} /> Prev
               </button>
               <button
-                className="inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
+                className="inline-flex items-center gap-1 rounded-full border border-ink/10 bg-ink/5 px-3 py-1.5 transition-colors hover:bg-ink/10 disabled:cursor-not-allowed disabled:opacity-40"
                 disabled={currentPage >= pageCount}
                 type="button"
                 onClick={() => setPage((p) => Math.min(pageCount, p + 1))}

@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <>
       {/* Video Section */}
-      <div className="bg-black py-16">
+      <div className="bg-cream py-16">
         <div className="max-w-7xl mx-auto px-4">
           <VideoSection title="Featured Videos" />
         </div>
