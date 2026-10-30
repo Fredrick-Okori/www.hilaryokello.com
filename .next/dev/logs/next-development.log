@@ -6623,3 +6623,9 @@ Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
+[11:31:07.023] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":277,"pageLoadTimestamp":1793400267504,"pageViews":1,"scrollDepth":50.134529147982065,"timeOnSite":1500,"urlsVisited":["/"]},"timestamp":"2026-10-30T23:10:27.899Z","triggerId":"inactivity"}
+[11:38:07.040] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":371,"pageLoadTimestamp":1793375144357,"pageViews":1,"scrollDepth":100.08305647840533,"timeOnSite":27043,"urlsVisited":["/shows/nairobi-kenya-6ec5578d/sign-up"]},"timestamp":"2026-10-30T23:17:27.902Z","triggerId":"inactivity"}
+[11:40:32.029] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":347,"pageLoadTimestamp":1793400267504,"pageViews":1,"scrollDepth":50.134529147982065,"timeOnSite":2100,"urlsVisited":["/"]},"timestamp":"2026-10-30T23:20:27.919Z","triggerId":"timeOnPage"}
+[11:40:49.332] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793400267504,"pageViews":1,"scrollDepth":50.134529147982065,"timeOnSite":2200,"urlsVisited":["/"]},"timestamp":"2026-10-30T23:21:10.060Z","triggerId":"exitIntent"}
+[11:41:07.032] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":135,"pageLoadTimestamp":1793399446098,"pageViews":2,"scrollDepth":100.23809523809524,"timeOnSite":2921,"urlsVisited":["/shows/juba-south-sudan-68a2ba7d/sign-up","/"]},"timestamp":"2026-10-30T23:20:28.003Z","triggerId":"inactivity"}
+[11:41:43.005] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1793400267504,"pageViews":1,"scrollDepth":50.134529147982065,"timeOnSite":2254,"urlsVisited":["/"]},"timestamp":"2026-10-30T23:22:02.840Z","triggerId":"inactivity"}
