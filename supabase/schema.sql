@@ -215,12 +215,17 @@ alter table public.waiting_list_entries add column if not exists tickets integer
 alter table public.waiting_list_entries enable row level security;
 
 drop policy if exists "waiting_list_entries: public read"  on public.waiting_list_entries;
+drop policy if exists "waiting_list_entries: auth read"    on public.waiting_list_entries;
 drop policy if exists "waiting_list_entries: auth insert"  on public.waiting_list_entries;
+drop policy if exists "waiting_list_entries: public insert" on public.waiting_list_entries;
 drop policy if exists "waiting_list_entries: auth delete"  on public.waiting_list_entries;
 
-create policy "waiting_list_entries: public read"
-  on public.waiting_list_entries for select using (true);
+-- Entries hold fans' contact details: only signed-in admins can read them.
+create policy "waiting_list_entries: auth read"
+  on public.waiting_list_entries for select to authenticated using (true);
 
+-- No public insert: sign-ups go through the submitShowSignUp server action
+-- (reCAPTCHA-checked), which writes with the service-role key.
 create policy "waiting_list_entries: auth insert"
   on public.waiting_list_entries for insert to authenticated with check (true);
 
@@ -252,16 +257,20 @@ alter table public.show_requests add column if not exists phone text not null de
 alter table public.show_requests enable row level security;
 
 drop policy if exists "show_requests: public read" on public.show_requests;
+drop policy if exists "show_requests: auth read" on public.show_requests;
 drop policy if exists "show_requests: public insert" on public.show_requests;
 drop policy if exists "show_requests: auth insert" on public.show_requests;
 drop policy if exists "show_requests: auth update" on public.show_requests;
 drop policy if exists "show_requests: auth delete" on public.show_requests;
 
-create policy "show_requests: public read"
-  on public.show_requests for select using (true);
+-- Requests hold fans' contact details: only signed-in admins can read them.
+create policy "show_requests: auth read"
+  on public.show_requests for select to authenticated using (true);
 
-create policy "show_requests: public insert"
-  on public.show_requests for insert to anon, authenticated with check (true);
+-- No public insert: requests go through the submitCityRequest server action
+-- (reCAPTCHA-checked), which writes with the service-role key.
+create policy "show_requests: auth insert"
+  on public.show_requests for insert to authenticated with check (true);
 
 create policy "show_requests: auth update"
   on public.show_requests for update to authenticated using (true);

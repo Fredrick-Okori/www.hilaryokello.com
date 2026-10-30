@@ -9,9 +9,17 @@ import {
   Calendar,
   Clock,
   Ticket,
+  UserPlus,
 } from "lucide-react";
 
-import { SHOWS, getShowBySlug, DEFAULT_CONTACT } from "@/lib/shows";
+import {
+  SHOWS,
+  getShowBySlug,
+  booksViaWhatsApp,
+  hasTicketLink,
+  signUpPath,
+  whatsAppBookingUrl,
+} from "@/lib/shows";
 
 // Pre-render a page for every known show at build time
 export function generateStaticParams() {
@@ -61,12 +69,9 @@ export default async function ShowPage({
 
   if (!show) notFound();
 
-  const contact = show.contactNumber ?? DEFAULT_CONTACT;
-  const waLink = `https://wa.me/${contact.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    `Hello, I'm interested in tickets for ${show.title} in ${show.city}, ${show.country}`,
-  )}`;
+  const waLink = whatsAppBookingUrl(show);
 
-  const hasTicketLink = show.link !== "#";
+  const hasTickets = hasTicketLink(show);
   const isSoldOut = show.soldOut === true;
 
   // Find adjacent shows for prev/next navigation
@@ -170,9 +175,7 @@ export default async function ShowPage({
                   <Ticket className="h-5 w-5 text-yellow-500 mt-0.5 shrink-0" />
                   <div>
                     <p className="text-ink/50 text-xs mb-1">Tickets</p>
-                    <p className="text-ink font-semibold">
-                      {show.ticketPrice}
-                    </p>
+                    <p className="text-ink font-semibold">{show.ticketPrice}</p>
                   </div>
                 </div>
               )}
@@ -219,7 +222,7 @@ export default async function ShowPage({
                   >
                     Sold Out
                   </span>
-                ) : hasTicketLink ? (
+                ) : hasTickets ? (
                   <a
                     className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-full transition-all hover:scale-105"
                     href={show.link}
@@ -229,16 +232,24 @@ export default async function ShowPage({
                     Get Tickets Now
                     <ChevronRight className="h-5 w-5" />
                   </a>
-                ) : (
+                ) : booksViaWhatsApp(show) ? (
                   <a
                     className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-full transition-all hover:scale-105"
                     href={waLink}
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Book via WhatsApp
+                    Get Tickets Now
                     <ChevronRight className="h-5 w-5" />
                   </a>
+                ) : (
+                  <Link
+                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-yellow-500 hover:bg-yellow-400 text-white font-bold text-base rounded-full transition-all hover:scale-105"
+                    href={signUpPath(show.slug)}
+                  >
+                    Sign Up Now
+                    <UserPlus className="h-5 w-5" />
+                  </Link>
                 )}
               </div>
             )}

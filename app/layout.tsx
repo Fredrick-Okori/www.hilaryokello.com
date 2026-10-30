@@ -3,6 +3,7 @@ import React from "react";
 import { Google_Sans } from "next/font/google";
 import Script from "next/script";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
@@ -86,6 +87,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

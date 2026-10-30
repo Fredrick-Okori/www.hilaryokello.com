@@ -204,3 +204,9 @@
     }
   }
 }
+
+/* Hide the floating reCAPTCHA badge; forms show Google's required text
+   disclosure instead (components/recaptcha-notice.tsx). */
+.grecaptcha-badge {
+  visibility: hidden;
+}

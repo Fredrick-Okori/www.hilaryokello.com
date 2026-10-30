@@ -4,10 +4,19 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { getImageProps } from "next/image";
 import { Goldman } from "next/font/google";
+import localFont from "next/font/local";
 
 const goldman = Goldman({
   weight: "700",
   subsets: ["latin"],
+  display: "swap",
+});
+
+// Isometra (Google Fonts, added Sept 2026) isn't in this Next.js version's
+// next/font/google list, so it's self-hosted. Latin subset; only weight 400.
+const isometra = localFont({
+  src: "../app/fonts/isometra-latin.woff2",
+  weight: "400",
   display: "swap",
 });
 
@@ -37,9 +46,9 @@ const { props: desktopImg } = getImageProps({
 const { props: mobileImg } = getImageProps({
   ...heroCommon,
   sizes: "100vw",
-  // 1400×2100 downscale of render_mobile.avif (6105×9156): sharp at 3× DPR,
-  // but ~1/19th the pixels to decode, so it paints without a visible delay.
-  src: "/render_mobile_sm.avif",
+  // 1400×2100 downscale of hilarious_tour.avif (4160×6240): sharp at 3× DPR,
+  // but ~1/13th the pixels to decode, so it paints without a visible delay.
+  src: "/hilarious_tour_sm.avif",
 });
 const desktopSrcSet = desktopImg.srcSet ?? desktopImg.src;
 const mobileSrcSet = mobileImg.srcSet ?? mobileImg.src;
@@ -85,10 +94,10 @@ export function HeroSection() {
       <div aria-hidden="true" className="absolute inset-0 bg-cream">
         {/* texture-tile.webp is Texture.png mirrored into a 2×2 tile, so the
             repeat has no visible seams. */}
-        <div className="absolute inset-0 bg-[url('/texture-tile.webp')] bg-[length:360px_auto] bg-center bg-repeat opacity-15 md:bg-[length:560px_auto]" />
+        <div className="absolute inset-0 bg-[url('/texture-tile.webp')] bg-[length:360px_auto] bg-center bg-repeat opacity-10 md:bg-[length:560px_auto]" />
         {/* Fades the texture into plain cream at the bottom, matching the
             image's own fade, so the headline sits on a clean background. */}
-        <div className="absolute inset-x-0 bottom-0 h-[35%] bg-gradient-to-t from-cream via-cream/80 to-transparent md:h-[50%]" />
+        <div className="absolute inset-x-0 bottom-0 h-[25%] bg-gradient-to-t from-cream via-cream/80 to-transparent md:h-[38%]" />
         {/* Transparent cut-out group shot. The figures occupy x 6–87% and
             y 16–76% of the canvas, so the wrapper is pushed down by the empty
             bottom band (24.3% of its height = 19.17% of its width) and shifted
@@ -98,11 +107,11 @@ export function HeroSection() {
             Portrait screens: larger, centred on the middle figure, and lifted
             so the group sits mid-screen above the headline. */}
         {/* Phones (< md) get a dedicated single-figure portrait render
-            (2:3, transparent top band, face centred ~40% across). It is
+            (2:3, transparent top band, face centred ~47% across). It is
             sized by screen height so it fills most of the viewport on every
             phone, bottom-anchored, and the face is centred horizontally. */}
         <div
-          className="absolute left-1/2 aspect-[6105/9156] -translate-x-[40%] [--hero-bottom:8svh] [--hero-mask:linear-gradient(to_top,transparent_4%,rgba(0,0,0,0.25)_12%,black_26%)] [--hero-w:max(min(100vw,85svh),68svh)] md:aspect-[13323/10512] md:[--hero-mask:linear-gradient(to_top,transparent_30%,rgba(0,0,0,0.25)_45%,black_62%)] md:-translate-x-[46.7%] md:[--hero-bottom:calc(var(--hero-w)*-0.1917)] md:[--hero-w:min(200vh,135vw)] md:portrait:-translate-x-[53%] md:portrait:[--hero-bottom:calc(var(--hero-w)*-0.1917+12svh)] md:portrait:[--hero-w:min(220vw,120svh)]"
+          className="absolute left-1/2 aspect-[2/3] -translate-x-[47%] [--hero-bottom:8svh] [--hero-mask:linear-gradient(to_top,transparent_4%,rgba(0,0,0,0.25)_12%,black_26%)] [--hero-w:max(min(100vw,85svh),68svh)] md:aspect-[13323/10512] md:[--hero-mask:linear-gradient(to_top,transparent_30%,rgba(0,0,0,0.25)_45%,black_62%)] md:-translate-x-[46.7%] md:[--hero-bottom:calc(var(--hero-w)*-0.1917)] md:[--hero-w:min(200vh,135vw)] md:portrait:-translate-x-[53%] md:portrait:[--hero-bottom:calc(var(--hero-w)*-0.1917+12svh)] md:portrait:[--hero-w:min(220vw,120svh)]"
           style={{
             width: "var(--hero-w)",
             bottom: "var(--hero-bottom)",
@@ -127,7 +136,7 @@ export function HeroSection() {
         transition={{ staggerChildren: 0.12, delayChildren: 0.1 }}
       >
         <motion.h1
-          className={`${goldman.className} flicker-text whitespace-nowrap text-[7.6vw] font-bold leading-[0.92] tracking-tight text-[#391314]`}
+          className={`${isometra.className} flicker-text whitespace-nowrap text-[6vw] font-normal leading-[0.92] tracking-tight text-[#391314]`}
           style={{ scale: headlineScale }}
           variants={item}
         >

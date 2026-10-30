@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Plus, Trash2, Pencil, X, Check, Globe, EyeOff } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
+import { WHATSAPP_BOOKING } from "@/lib/shows";
 
 type Show = {
   id: string;
@@ -327,6 +328,16 @@ function ShowForm({
   form: ShowDraft;
   onChange: (f: ShowDraft) => void;
 }) {
+  // How fans book is stored in ticket_url: a URL, empty (sign-up page), or
+  // the WhatsApp marker. An empty URL in "link" mode falls back to sign-up.
+  const [booking, setBooking] = useState(
+    form.ticket_url === WHATSAPP_BOOKING
+      ? "whatsapp"
+      : form.ticket_url
+        ? "link"
+        : "signup",
+  );
+
   function text(key: keyof ShowDraft, label: string, type = "text") {
     return (
       <div className="flex flex-col gap-1">
@@ -351,7 +362,26 @@ function ShowForm({
         {text("time", "Time (e.g. 7:30 PM)")}
         {text("location", "Venue")}
         {text("ticket_price", "Ticket Price (e.g. R250)")}
-        {text("ticket_url", "Ticket URL")}
+        <label className="flex flex-col gap-1">
+          <span className="text-xs text-ink/60">Booking</span>
+          <select
+            className="rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink focus:border-yellow-400 focus:outline-none"
+            value={booking}
+            onChange={(e) => {
+              setBooking(e.target.value);
+              onChange({
+                ...form,
+                ticket_url:
+                  e.target.value === "whatsapp" ? WHATSAPP_BOOKING : "",
+              });
+            }}
+          >
+            <option value="link">Ticketing platform link</option>
+            <option value="signup">Sign up (tickets not out yet)</option>
+            <option value="whatsapp">WhatsApp (uses WhatsApp Contact)</option>
+          </select>
+        </label>
+        {booking === "link" && text("ticket_url", "Ticket URL")}
         {text("contact_number", "WhatsApp Contact")}
         {text("badge", "Badge text (optional, e.g. Selling Fast)")}
         {text("image", "Image path (e.g. /tour/image.avif)")}

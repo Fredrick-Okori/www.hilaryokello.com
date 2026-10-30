@@ -1,66 +1,31 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MapPin, Clock, Star, ArrowUpRight, MessageCircle } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  Star,
+  ArrowUpRight,
+  MessageCircle,
+  UserPlus,
+} from "lucide-react";
 
 import CityRegistrationForm from "@/components/city-registration-form";
 import { supabase } from "@/lib/supabase";
-import { SHOWS, DEFAULT_CONTACT, type Show as StaticShow } from "@/lib/shows";
+import {
+  SHOWS,
+  booksViaWhatsApp,
+  dbShowToShow,
+  hasTicketLink,
+  whatsAppBookingUrl,
+  signUpPath,
+  type DbShow,
+  type Show as StaticShow,
+} from "@/lib/shows";
 import { useSectionReveal } from "@/components/use-section-reveal";
-
-// Row shape returned from Supabase
-type DbShow = {
-  id: string;
-  title: string;
-  date: string;
-  time: string;
-  city: string;
-  location: string;
-  country: string;
-  ticket_price: string;
-  ticket_url: string | null;
-  image: string;
-  description: string;
-  featured: boolean;
-  badge: string | null;
-  contact_number: string | null;
-  published: boolean;
-  published_at: string | null;
-};
-
-function toSlug(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-function dbShowToStaticShape(s: DbShow): StaticShow {
-  return {
-    id: parseInt(s.id.replace(/-/g, "").slice(0, 8), 16),
-    slug: `${toSlug(s.city)}-${toSlug(s.country)}-${s.id.slice(0, 8)}`,
-    title: s.title,
-    dateLabel: new Date(s.date).toLocaleDateString("en-US", {
-      month: "long",
-      day: "numeric",
-      year: "numeric",
-    }),
-    date: s.date,
-    time: s.time,
-    location: s.location,
-    country: s.country,
-    city: s.city,
-    ticketPrice: s.ticket_price,
-    image: s.image || "/tour/website_poster.png",
-    link: s.ticket_url || "#",
-    description: s.description,
-    featured: s.featured,
-    badge: s.badge ?? undefined,
-    contactNumber: s.contact_number ?? undefined,
-  };
-}
 
 // --- Date helpers ---
 const parseDate = (iso: string) => new Date(Date.parse(iso));
@@ -79,15 +44,16 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
     day: "numeric",
   });
 
-  const contact = show.contactNumber ?? DEFAULT_CONTACT;
-  const waLink = `https://wa.me/${contact.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    `Hello, I'm interested in tickets for ${show.title} in ${show.city}, ${show.country}`,
-  )}`;
+  const waLink = whatsAppBookingUrl(show);
 
   // Determine ticket action
   const isSoldOut = !!show.soldOut;
   const isWaitingList = show.badge === "Join Waiting List";
-  const hasTickets = show.link !== "#";
+  const hasTickets = hasTicketLink(show);
+  // Organiser sells tickets over WhatsApp instead of a ticketing platform.
+  const isWhatsApp = !isWaitingList && booksViaWhatsApp(show);
+  // Confirmed but tickets not out yet: collect sign-ups on our own page.
+  const isSignUp = !isWaitingList && !isWhatsApp && !hasTickets;
   const ticketUrl = hasTickets ? show.link : waLink;
   const sellingFast =
     !isSoldOut &&
@@ -234,13 +200,18 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
             <span>Sold Out</span>
           ) : isWaitingList ? (
             <>
-              <MessageCircle className="h-3.5 w-3.5" />
               <span>Join List</span>
+              <MessageCircle className="h-3.5 w-3.5" />
+            </>
+          ) : isSignUp ? (
+            <>
+              <span>Sign Up Now</span>
+              <UserPlus className="h-3.5 w-3.5" />
             </>
           ) : (
             <>
-              <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               <span>Get Tickets</span>
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </>
           )}
         </span>
@@ -259,9 +230,17 @@ const ShowCard = ({ show }: { show: StaticShow }) => {
         >
           {cardContent}
         </div>
+      ) : isSignUp ? (
+        <Link
+          aria-label={`Sign up for ${show.title} in ${show.city} on ${fullDate} at ${show.time}`}
+          className={cardClassName}
+          href={signUpPath(show.slug)}
+        >
+          {cardContent}
+        </Link>
       ) : (
         <a
-          aria-label={`${isWaitingList ? "Join waiting list" : "Get tickets"} for ${show.title} in ${show.city} on ${fullDate} at ${show.time}`}
+          aria-label={`${isWaitingList ? "Join waiting list" : isWhatsApp ? "Get tickets on WhatsApp" : "Get tickets"} for ${show.title} in ${show.city} on ${fullDate} at ${show.time}`}
           className={cardClassName}
           href={ticketUrl}
           rel="noopener noreferrer"
@@ -298,7 +277,7 @@ const UpcomingShows = () => {
       .then(
         ({ data }) => {
           if (data && data.length > 0) {
-            setDbShows((data as DbShow[]).map(dbShowToStaticShape));
+            setDbShows((data as DbShow[]).map(dbShowToShow));
           }
           setLoading(false);
         },
@@ -513,9 +492,9 @@ const UpcomingShows = () => {
                   Want Me to Perform in Your City?
                 </h3>
                 <p className="mb-5 text-sm leading-relaxed text-ink/70 sm:mb-6 sm:text-base">
-                  Join the Hilarious World Tour! Tell us
-                  where you want Dr. Okello to perform next. High-demand cities
-                  influence our tour planning!
+                  Join the Hilarious World Tour! Tell us where you want Dr.
+                  Okello to perform next. High-demand cities influence our tour
+                  planning!
                 </p>
                 <CityRegistrationForm />
                 <p className="mt-4 text-[11px] leading-relaxed text-ink/40 sm:text-xs">

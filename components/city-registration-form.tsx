@@ -3,8 +3,10 @@
 import { useMemo, useState } from "react";
 import { Button } from "@heroui/button";
 
-import { supabase } from "@/lib/supabase";
 import { COUNTRIES } from "@/lib/countries";
+import { useRecaptcha } from "@/lib/use-recaptcha";
+import { submitCityRequest } from "@/app/actions/public-forms";
+import { RecaptchaNotice } from "@/components/recaptcha-notice";
 
 type FormState = {
   username: string;
@@ -24,6 +26,8 @@ export default function CityRegistrationForm() {
   });
   const [submitting, setSubmitting] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
+  const { preload: preloadRecaptcha, getToken: getRecaptchaToken } =
+    useRecaptcha();
 
   const dialCode = useMemo(
     () => COUNTRIES.find((c) => c.name === form.country)?.dialCode ?? "",
@@ -55,16 +59,19 @@ export default function CityRegistrationForm() {
     setStatus(null);
 
     try {
-      const { error } = await supabase.from("show_requests").insert({
-        city: form.city.trim(),
-        country: form.country.trim(),
-        email: form.email.trim(),
-        name: form.username.trim(),
-        phone: `${dialCode} ${form.phone.trim()}`,
+      const result = await submitCityRequest({
+        city: form.city,
+        country: form.country,
+        email: form.email,
+        name: form.username,
+        phone: form.phone,
+        recaptchaToken: await getRecaptchaToken("city_request"),
       });
 
-      if (error) {
-        throw error;
+      if (!result.ok) {
+        setStatus(result.error);
+
+        return;
       }
 
       setForm({
@@ -83,7 +90,7 @@ export default function CityRegistrationForm() {
   };
 
   return (
-    <form className="w-full" onSubmit={onSubmit}>
+    <form className="w-full" onFocus={preloadRecaptcha} onSubmit={onSubmit}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <label className="flex flex-col gap-2 text-sm text-ink/80">
           <span>Username</span>
@@ -173,6 +180,10 @@ export default function CityRegistrationForm() {
         </Button>
 
         {status && <p className="text-sm text-ink/70">{status}</p>}
+      </div>
+
+      <div className="mt-4">
+        <RecaptchaNotice />
       </div>
     </form>
   );
