@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaYoutube, FaTiktok, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
@@ -51,6 +52,14 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} Dr. Hilary Okello. All rights
             reserved.
+          </p>
+          <p>
+            <Link
+              className="text-gold hover:text-gold-light transition-colors focus:outline-none focus:ring-2 focus:ring-gold rounded px-1"
+              href="/privacy"
+            >
+              Privacy policy
+            </Link>
           </p>
           <p>
             <a

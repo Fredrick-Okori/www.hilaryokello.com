@@ -5,6 +5,7 @@ import Script from "next/script";
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 
+import { CookieConsent } from "@/components/cookie-consent";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
 
@@ -15,24 +16,34 @@ const googleSans = Google_Sans({
   weight: ["400", "500", "700"],
 });
 
+// Pages set their own title (rendered as "<title> | Dr. Hilary Okello") and
+// their own canonical URL. Canonical isn't set here: it would be inherited by
+// every page that forgets one and point them all at the home page.
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  keywords: siteConfig.keywords,
   metadataBase: new URL("https://www.hilaryokello.com"),
+  title: {
+    default: "Dr. Hilary Okello — Uganda's Top Stand-Up Comedian",
+    template: "%s | Dr. Hilary Okello",
+  },
+  description:
+    "Official site of Dr. Hilary Okello, Uganda's top stand-up comedian and Africa's Doctor of Comedy. Tour dates, tickets, videos and booking.",
+  keywords: siteConfig.keywords,
   openGraph: {
-    title: siteConfig.name,
-    description: siteConfig.description,
     type: "website",
     locale: "en_US",
+    siteName: "Dr. Hilary Okello",
+    images: [
+      {
+        url: "/og/og-home.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Hilary Okello on stage",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
+    images: ["/og/og-home.jpg"],
   },
   robots: {
     index: true,
@@ -56,30 +67,10 @@ export default function RootLayout({
         <meta content="#fff7e5" name="theme-color" />
         <meta content="telephone=no" name="format-detection" />
       </head>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-36J4TDZWT9"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-36J4TDZWT9');`}
-      </Script>
       <body
         className="font-sans antialiased"
         style={{ backgroundColor: "#fff7e5" }}
       >
-        <chat-widget
-          env="prod"
-          project-id="6cab4e2d-7389-4443-a5a6-10100007c55d"
-        />
-        <Script
-          src="https://cdn.apollo.kayeai.com/js/chat-widget.js"
-          strategy="afterInteractive"
-          type="module"
-        />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -87,6 +78,18 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        {/* After the page content, so it isn't the first tab stop. */}
+        <chat-widget
+          env="prod"
+          project-id="6cab4e2d-7389-4443-a5a6-10100007c55d"
+        />
+        <Script
+          src="https://cdn.apollo.kayeai.com/js/chat-widget.js"
+          // Loads once the page is idle, off the critical path.
+          strategy="lazyOnload"
+          type="module"
+        />
+        <CookieConsent />
         <Analytics />
       </body>
     </html>

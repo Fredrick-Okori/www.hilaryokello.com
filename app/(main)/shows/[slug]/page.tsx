@@ -20,6 +20,7 @@ import {
   signUpPath,
   whatsAppBookingUrl,
 } from "@/lib/shows";
+import { SITE_URL, jsonLdScript, showEventJsonLd } from "@/lib/shows-server";
 
 // Pre-render a page for every known show at build time
 export function generateStaticParams() {
@@ -37,13 +38,14 @@ export async function generateMetadata({
 
   if (!show) return { title: "Show Not Found" };
 
-  const title = `${show.title} — Dr. Hilary Okello`;
+  const title = `${show.city}, ${show.dateLabel} — Tickets`;
   const description = show.description.slice(0, 155);
   const imageUrl = `https://www.hilaryokello.com${show.image}`;
 
   return {
     title,
     description,
+    alternates: { canonical: `/shows/${slug}` },
     openGraph: {
       title,
       description,
@@ -83,6 +85,14 @@ export default async function ShowPage({
 
   return (
     <main className="text-ink min-h-screen">
+      <script
+        dangerouslySetInnerHTML={{
+          __html: jsonLdScript(
+            showEventJsonLd(show, `${SITE_URL}/shows/${slug}`),
+          ),
+        }}
+        type="application/ld+json"
+      />
       <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-8 pb-14">
         {/* Back link */}
         <Link

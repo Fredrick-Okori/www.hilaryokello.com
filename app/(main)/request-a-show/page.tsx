@@ -1,12 +1,10 @@
 import { Metadata } from "next";
 
-import { siteConfig } from "@/config/site";
-
 export const metadata: Metadata = {
-  title: {
-    default: "Request a Show",
-    template: `%s - ${siteConfig.name}`,
-  },
+  title: "Request a Show",
+  alternates: { canonical: "/request-a-show" },
+  // The embedded Google Form below is still a placeholder.
+  robots: { index: false },
   description: "Want me to perform in your city? Let me know!",
 };
 

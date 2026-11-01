@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import Gallery from "./parts/gallery";
 
 export const metadata: Metadata = {
-  title: "Gallery | Dr. Hilary Okello - Uganda's Top Comedian",
+  title: "Gallery",
+  alternates: { canonical: "/gallery" },
   keywords:
     "Hilary Okello gallery, comedy photos Uganda, stand-up comedy pictures, Dr. Hilary Okello stage shots, Gulu comedy gallery, behind the scenes comedy, African comedians gallery, Uganda comedy events, live comedy show pictures",
   description:

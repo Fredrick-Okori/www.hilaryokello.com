@@ -10,22 +10,68 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Group images into titled galleries
 const galleries: Record<string, string[]> = {
-  "Gen-Z Comdy | Kigali - Rwanda": [
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_127_3_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_129_5_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_132_8_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_133_9_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_154_10_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_155_11_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_156_12_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_158_14_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_159_15_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_160_16_11zon.jpg",
-    "/Rwanda/SHEMA INNOCENT 0780 329 329_161_17_11zon.jpg",
-    "/Rwanda/rwanda_1.jpg",
+  "2 Kings One Mic | Patrick Salvado & Dr. Hilary Okello": [
+    "/gallery/two-kings-one-mic/NJJ_2833.avif",
+    "/gallery/two-kings-one-mic/NJJ_3186.avif",
+    "/gallery/two-kings-one-mic/NJJ_2763.avif",
+    "/gallery/two-kings-one-mic/NJJ_3249.avif",
+    "/gallery/two-kings-one-mic/NJJ_2828.avif",
+    "/gallery/two-kings-one-mic/NJJ_3044.avif",
+    "/gallery/two-kings-one-mic/NJJ_3192.avif",
+    "/gallery/two-kings-one-mic/NJJ_2980.avif",
+    "/gallery/two-kings-one-mic/NJJ_2653.avif",
+    "/gallery/two-kings-one-mic/NJJ_2656.avif",
+    "/gallery/two-kings-one-mic/NJJ_2658.avif",
+    "/gallery/two-kings-one-mic/NJJ_2673.avif",
+    "/gallery/two-kings-one-mic/NJJ_2743.avif",
+    "/gallery/two-kings-one-mic/NJJ_2757.avif",
+    "/gallery/two-kings-one-mic/NJJ_2761.avif",
+    "/gallery/two-kings-one-mic/NJJ_2768.avif",
+    "/gallery/two-kings-one-mic/NJJ_2780.avif",
+    "/gallery/two-kings-one-mic/NJJ_2783.avif",
+    "/gallery/two-kings-one-mic/NJJ_2788.avif",
+    "/gallery/two-kings-one-mic/NJJ_2795.avif",
+    "/gallery/two-kings-one-mic/NJJ_2812.avif",
+    "/gallery/two-kings-one-mic/NJJ_2819.avif",
+    "/gallery/two-kings-one-mic/NJJ_2852.avif",
+    "/gallery/two-kings-one-mic/NJJ_2854.avif",
+    "/gallery/two-kings-one-mic/NJJ_2857.avif",
+    "/gallery/two-kings-one-mic/NJJ_2865.avif",
+    "/gallery/two-kings-one-mic/NJJ_2897.avif",
+    "/gallery/two-kings-one-mic/NJJ_2913.avif",
+    "/gallery/two-kings-one-mic/NJJ_2922.avif",
+    "/gallery/two-kings-one-mic/NJJ_2946.avif",
+    "/gallery/two-kings-one-mic/NJJ_2952.avif",
+    "/gallery/two-kings-one-mic/NJJ_2963.avif",
+    "/gallery/two-kings-one-mic/NJJ_2966.avif",
+    "/gallery/two-kings-one-mic/NJJ_2986.avif",
+    "/gallery/two-kings-one-mic/NJJ_2987.avif",
+    "/gallery/two-kings-one-mic/NJJ_3028.avif",
+    "/gallery/two-kings-one-mic/NJJ_3062.avif",
+    "/gallery/two-kings-one-mic/NJJ_3065.avif",
+    "/gallery/two-kings-one-mic/NJJ_3072.avif",
+    "/gallery/two-kings-one-mic/NJJ_3077.avif",
+    "/gallery/two-kings-one-mic/NJJ_3085.avif",
+    "/gallery/two-kings-one-mic/NJJ_3099.avif",
+    "/gallery/two-kings-one-mic/NJJ_3109.avif",
+    "/gallery/two-kings-one-mic/NJJ_3117.avif",
+    "/gallery/two-kings-one-mic/NJJ_3160.avif",
+    "/gallery/two-kings-one-mic/NJJ_3174.avif",
+    "/gallery/two-kings-one-mic/NJJ_3189.avif",
+    "/gallery/two-kings-one-mic/NJJ_3197.avif",
+    "/gallery/two-kings-one-mic/NJJ_3205.avif",
+    "/gallery/two-kings-one-mic/NJJ_3230.avif",
+    "/gallery/two-kings-one-mic/NJJ_3236.avif",
+    "/gallery/two-kings-one-mic/NJJ_3245.avif",
+    "/gallery/two-kings-one-mic/NJJ_3256.avif",
+    "/gallery/two-kings-one-mic/NJJ_3290.avif",
+    "/gallery/two-kings-one-mic/NJJ_3294.avif",
+    "/gallery/two-kings-one-mic/NJJ_3300.avif",
+    "/gallery/two-kings-one-mic/NJJ_3307.avif",
+    "/gallery/two-kings-one-mic/NJJ_3318.avif",
+    "/gallery/two-kings-one-mic/NJJ_3335.avif",
+    "/gallery/two-kings-one-mic/NJJ_3357.avif",
+    "/gallery/two-kings-one-mic/NJJ_3413.avif",
   ],
   "State of Nation | Harare - Zimbabwe ": [
     "/harare/2fa89869aeaaa4ceb232d91ffd90502b.avif",
@@ -58,33 +104,6 @@ const galleries: Record<string, string[]> = {
     "/Botswana/DSC_9098 2_18_11zon.webp",
     "/Botswana/DSC_9100 2_19_11zon.webp",
     "/Botswana/DSC_9104 2_20_11zon.webp",
-  ],
-
-  "Kampala - Uganda": [
-    "/gallerypage/DSC_0854.webp",
-    "/gallerypage/DSC_0913.webp",
-    "/gallerypage/DSC_1041.webp",
-    "/gallerypage/DSC_9107.webp",
-    "/gallerypage/DSC_9161.webp",
-    "/gallerypage/DSC_9170.webp",
-    "/gallerypage/DSC_9173.webp",
-    "/gallerypage/DSC_8796.webp",
-    "/gallerypage/DSC_8799.webp",
-    "/gallerypage/DSC_8883.webp",
-    "/gallerypage/DSC_8976.webp",
-    "/gallerypage/DSC_9022.webp",
-    "/gallerypage/DSC_9060.webp",
-    "/gallerypage/DSC_1499.webp",
-    "/gallerypage/DSC_9178.webp",
-    "/gallerypage/DSC_9186.webp",
-    "/gallerypage/DSC_9197.webp",
-    "/gallerypage/DSC_9202.webp",
-    "/gallerypage/DSC_9205.webp",
-    "/gallerypage/DSC_9210.webp",
-    "/gallerypage/DSC_9264.webp",
-    "/gallerypage/DSC_9291.webp",
-    "/gallerypage/DSC_9304.webp",
-    "/gallerypage/DSC_9316.webp",
   ],
 };
 
@@ -262,7 +281,10 @@ export default function Gallery() {
   }, [modalRef]);
 
   return (
-    <div ref={galleryRef} className="px-6 py-20  mx-auto bg-cream min-h-screen">
+    <div ref={galleryRef} className="px-4 py-20 sm:px-6 lg:px-10 bg-cream min-h-screen">
+      <h1 className="pt-10 text-left text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+        Gallery
+      </h1>
       {/* Render each gallery group with a heading */}
       {groupEntries.map(([title, imgs], gIdx) => (
         <section key={title} data-gallery-group className="mb-12">
@@ -272,7 +294,7 @@ export default function Gallery() {
           >
             {title}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 3xl:grid-cols-4">
             {imgs.map((src, idx) => {
               const globalIdx = groupStarts[gIdx] + idx;
 
@@ -280,12 +302,8 @@ export default function Gallery() {
                 <div
                   key={globalIdx}
                   data-gallery-card
-                  className={`relative rounded-xl overflow-hidden shadow-lg cursor-pointer group ${isLoaded ? "opacity-100" : "opacity-0"}`}
+                  className={`relative aspect-[4/3] w-full rounded-xl overflow-hidden shadow-lg cursor-pointer group ${isLoaded ? "opacity-100" : "opacity-0"}`}
                   role="button"
-                  style={{
-                    height: "300px",
-                    width: "400px",
-                  }}
                   tabIndex={0}
                   onClick={() => setSelectedIndex(globalIdx)}
                   onMouseEnter={() => setHoverIndex(globalIdx)}
@@ -299,7 +317,7 @@ export default function Gallery() {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                       quality={70}
-                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                      sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, (max-width: 1919px) 33vw, 25vw"
                       src={encodeURI(src)}
                     />
                   )}
@@ -346,6 +364,7 @@ export default function Gallery() {
                 alt={`Modal image ${selectedIndex + 1}`}
                 className="object-contain  rounded-lg mx-auto"
                 quality={70}
+                sizes="(max-width: 1152px) 100vw, 1152px"
                 src={encodeURI(imagesFlat[selectedIndex])}
               />
             </div>

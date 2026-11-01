@@ -691,9 +691,9 @@ const UpcomingShows = () => {
     <section
       ref={sectionRef}
       aria-label="Upcoming Shows"
-      className="min-h-screen bg-cream font-sans text-ink"
+      className="bg-cream font-sans text-ink"
     >
-      <div className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 sm:pb-16 sm:pt-12 lg:px-8 2xl:max-w-[1440px] 2xl:pb-20 2xl:pt-16 3xl:max-w-[1680px] 3xl:pb-24 3xl:pt-20 4xl:max-w-[2400px] 4xl:pb-28 4xl:pt-24">
+      <div className="mx-auto max-w-7xl px-4 pb-6 pt-8 sm:px-6 sm:pb-8 sm:pt-12 lg:px-8 2xl:max-w-[1440px] 2xl:pb-10 2xl:pt-16 3xl:max-w-[1680px] 3xl:pb-12 3xl:pt-20 4xl:max-w-[2400px] 4xl:pb-16 4xl:pt-24">
         {/* Section Header */}
         <header data-scroll-reveal-item className="mb-6 text-center sm:mb-10">
           <span className="mb-2 inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-yellow-400 sm:mb-3 sm:text-xs">

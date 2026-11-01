@@ -85,9 +85,15 @@ function YouTubeThumbnail({
 interface VideoSectionProps {
   title: string;
   className?: string;
+  // h1 when the section is the page's main heading (the Watch page).
+  headingLevel?: "h1" | "h2";
 }
 
-export function VideoSection({ title, className }: VideoSectionProps) {
+export function VideoSection({
+  title,
+  className,
+  headingLevel: Heading = "h2",
+}: VideoSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const [videos, setVideos] = useState<Video[] | null>(null);
   const [activeVideo, setActiveVideo] = useState<Video | null>(null);
@@ -134,12 +140,12 @@ export function VideoSection({ title, className }: VideoSectionProps) {
       id="clips"
     >
       <div className="container px-4 md:px-6">
-        <h2
+        <Heading
           data-scroll-reveal-item
           className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink mb-6 sm:mb-8 leading-tight"
         >
           {title}
-        </h2>
+        </Heading>
 
         {videos === null ? (
           <div

@@ -182,7 +182,7 @@ const Zambia: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
       {/* Navigation Buttons */}
       <div
         data-scroll-reveal-item
-        className="top-0 right-0 flex py-10 justify-end space-x-2 z-10"
+        className="top-0 right-0 flex py-5 justify-end space-x-2 z-10"
       >
         <Button
           aria-label="Previous slide"

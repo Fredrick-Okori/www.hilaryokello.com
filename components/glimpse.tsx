@@ -85,22 +85,26 @@ const CountryGlimpse: React.FC<ImageCarouselProps> = ({ images }) => {
   };
 
   return (
-    <section ref={sectionRef} aria-label="Rwanda gallery" className="w-full">
+    <section
+      ref={sectionRef}
+      aria-label="2 Kings One Mic gallery"
+      className="w-full"
+    >
       <div data-scroll-reveal-item>
         <h4 className="text-left text-4xl text-ink font-bold 4xl:text-5xl">
-          Gen-Z Comedy Show: Rwanda
+          2 Kings One Mic
         </h4>
         <Button
           className="rounded-full text-ink px-4 py-2 mt-4"
           variant="bordered"
         >
-          <Link href="/gallery">More from Rwanda</Link>
+          <Link href="/gallery">More from 2 Kings One Mic</Link>
         </Button>
       </div>
 
       <div
         data-scroll-reveal-item
-        className="top-0 right-0 flex py-10 justify-end space-x-2 z-10"
+        className="top-0 right-0 flex py-5 justify-end space-x-2 z-10"
       >
         <Button
           aria-label="Previous slide"
@@ -144,7 +148,7 @@ const CountryGlimpse: React.FC<ImageCarouselProps> = ({ images }) => {
                   ) : (
                     <Image
                       fill
-                      alt={`Carousel Image ${index + 1}`}
+                      alt={image.caption ?? `Carousel Image ${index + 1}`}
                       className="rounded-2xl object-cover"
                       priority={index === 0}
                       quality={70}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { Button } from "@heroui/button";
 
 import { COUNTRIES } from "@/lib/countries";
@@ -175,6 +176,16 @@ export default function CityRegistrationForm() {
         </Button>
 
         {status && <p className="text-sm text-ink/70">{status}</p>}
+        <p className="text-xs text-ink/45">
+          We&apos;ll only use your details to plan the tour and tell you if a
+          show comes to your city.{" "}
+          <Link
+            className="underline underline-offset-2 hover:text-ink"
+            href="/privacy"
+          >
+            Privacy policy
+          </Link>
+        </p>
       </div>
     </form>
   );

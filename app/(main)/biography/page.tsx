@@ -5,7 +5,8 @@ import { Metadata } from "next";
 import ComedianBio from "./parts/biography";
 
 export const metadata: Metadata = {
-  title: "Biography | Dr. Hilary Okello - Uganda's Top Stand-Up Comedian",
+  title: "Biography",
+  alternates: { canonical: "/biography" },
   keywords:
     "Dr. Hilary Okello, Hilary Okello biography, Ugandan comedian bio, stand-up comedian Uganda, African comedy, Gulu comedian, Ugandan entertainers, comedy career Uganda, top African comedians, comedian profiles Uganda",
   description:

@@ -1,20 +1,11 @@
 {
-  "/(main)/biography/page": "app/(main)/biography/page.js",
   "/(main)/booking/page": "app/(main)/booking/page.js",
   "/(main)/gallery/page": "app/(main)/gallery/page.js",
   "/(main)/page": "app/(main)/page.js",
-  "/(main)/shows/[slug]/page": "app/(main)/shows/[slug]/page.js",
-  "/(main)/shows/[slug]/sign-up/page": "app/(main)/shows/[slug]/sign-up/page.js",
+  "/(main)/privacy/page": "app/(main)/privacy/page.js",
+  "/(main)/store/[slug]/page": "app/(main)/store/[slug]/page.js",
+  "/(main)/store/page": "app/(main)/store/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/admin/(protected)/biography/page": "app/admin/(protected)/biography/page.js",
-  "/admin/(protected)/booking/page": "app/admin/(protected)/booking/page.js",
-  "/admin/(protected)/bookings/page": "app/admin/(protected)/bookings/page.js",
-  "/admin/(protected)/gallery/page": "app/admin/(protected)/gallery/page.js",
-  "/admin/(protected)/page": "app/admin/(protected)/page.js",
-  "/admin/(protected)/show-requests/page": "app/admin/(protected)/show-requests/page.js",
   "/admin/(protected)/shows/page": "app/admin/(protected)/shows/page.js",
-  "/admin/(protected)/store/page": "app/admin/(protected)/store/page.js",
-  "/admin/(protected)/videos/page": "app/admin/(protected)/videos/page.js",
-  "/admin/(protected)/waitinglist/page": "app/admin/(protected)/waitinglist/page.js",
-  "/preview-shows/page": "app/preview-shows/page.js"
+  "/api/csp-report/route": "app/api/csp-report/route.js"
 }

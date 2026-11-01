@@ -248,6 +248,15 @@ export default function SignUpForm({ show }: { show: Show }) {
             </>
           )}
         </button>
+        <p className="text-center text-xs text-ink/45">
+          We&apos;ll only use your details to tell you about this show.{" "}
+          <Link
+            className="underline underline-offset-2 hover:text-ink"
+            href="/privacy"
+          >
+            Privacy policy
+          </Link>
+        </p>
       </form>
     </div>
   );

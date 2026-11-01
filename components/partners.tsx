@@ -12,7 +12,13 @@ const goldman = Goldman({ weight: "700", subsets: ["latin"], display: "swap" });
 
 // Logos in public/partners/clean are trimmed, transparent copies; white or
 // boxed originals are recoloured to the site's maroon so they read on cream.
-const partners = [
+// `website` is optional: partners without one show as a plain logo tile.
+const partners: {
+  name: string;
+  logo: string;
+  size: string;
+  website?: string;
+}[] = [
   {
     name: "Kayetickets",
     logo: "/partners/clean/kayetickets.webp",
@@ -44,7 +50,49 @@ const partners = [
     size: "h-16 sm:h-20",
     website: "https://x.com/JicoLeague",
   },
+  {
+    name: "Modern Tiles",
+    logo: "/partners/clean/modern-tiles.webp",
+    size: "h-12 sm:h-14",
+  },
+  {
+    name: "Suit Republic Kampala",
+    logo: "/partners/clean/suit-republic.webp",
+    size: "h-8 sm:h-10",
+  },
+  {
+    name: "Uganda Waragi",
+    logo: "/partners/clean/uganda-waragi.webp",
+    size: "h-12 sm:h-14",
+  },
 ];
+
+const TILE_CLASS =
+  "group relative flex h-32 items-center justify-center px-6 sm:h-40 sm:px-8";
+
+function PartnerTile({
+  name,
+  website,
+  children,
+}: {
+  name: string;
+  website?: string;
+  children: React.ReactNode;
+}) {
+  if (!website) return <div className={TILE_CLASS}>{children}</div>;
+
+  return (
+    <a
+      aria-label={`${name} (opens in a new tab)`}
+      className={TILE_CLASS}
+      href={website}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      {children}
+    </a>
+  );
+}
 
 export default function Partners() {
   const rootRef = useRef<HTMLElement>(null);
@@ -134,22 +182,18 @@ export default function Partners() {
           aria-hidden="true"
           className="absolute inset-x-0 top-0 h-px bg-ink/15"
         />
-        <ul className="grid grid-cols-2 gap-px bg-ink/10 pb-px md:grid-cols-5">
+        <ul className="grid grid-cols-2 gap-px bg-ink/10 pb-px md:grid-cols-4">
           {partners.map((partner, i) => (
             <li
               key={partner.name}
               className={`bg-cream ${
                 // Odd count: the last logo spans the row on phones.
-                i === partners.length - 1 ? "col-span-2 md:col-span-1" : ""
+                partners.length % 2 === 1 && i === partners.length - 1
+                  ? "col-span-2 md:col-span-1"
+                  : ""
               }`}
             >
-              <a
-                aria-label={`${partner.name} (opens in a new tab)`}
-                className="group relative flex h-32 items-center justify-center px-6 sm:h-40 sm:px-8"
-                href={partner.website}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <PartnerTile name={partner.name} website={partner.website}>
                 <span
                   data-partner-logo
                   className={`relative block w-full max-w-[190px] ${partner.size}`}
@@ -162,11 +206,13 @@ export default function Partners() {
                     src={partner.logo}
                   />
                 </span>
-                <ArrowUpRight
-                  aria-hidden="true"
-                  className="absolute right-3 top-3 h-4 w-4 -translate-x-1 translate-y-1 text-yellow-500 opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
-                />
-              </a>
+                {partner.website && (
+                  <ArrowUpRight
+                    aria-hidden="true"
+                    className="absolute right-3 top-3 h-4 w-4 -translate-x-1 translate-y-1 text-yellow-500 opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
+                  />
+                )}
+              </PartnerTile>
             </li>
           ))}
         </ul>

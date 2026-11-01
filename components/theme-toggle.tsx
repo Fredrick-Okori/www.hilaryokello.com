@@ -27,11 +27,6 @@ const menuItems: MenuItem[] = [
     gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
   },
   {
-    label: "Gallery",
-    href: "/gallery",
-    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
-  },
-  {
     label: "About",
     href: "/biography",
     gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
@@ -39,6 +34,16 @@ const menuItems: MenuItem[] = [
   {
     label: "Book",
     href: "/booking",
+    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
+  },
+  {
+    label: "Gallery",
+    href: "/gallery",
+    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
+  },
+  {
+    label: "Store",
+    href: "/store",
     gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
   },
 ];

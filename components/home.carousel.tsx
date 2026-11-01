@@ -2,11 +2,8 @@
 
 import type React from "react";
 
-import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface ImageItem {
   url: string;
@@ -35,58 +32,9 @@ const defaultBotswana: ImageItem[] = [
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
   const imgs = images ?? botswana ?? defaultBotswana;
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-    gsap.registerPlugin(ScrollTrigger);
-
-    const media = gsap.matchMedia();
-    const section = sectionRef.current;
-
-    media.add("(prefers-reduced-motion: no-preference)", () => {
-      const cards = gsap.utils.toArray<HTMLElement>(".gallery-card", section);
-      const desktop = window.matchMedia("(min-width: 768px)").matches;
-
-      gsap.fromTo(
-        cards,
-        {
-          y: (index) => (index % 2 === 0 ? 70 : -70),
-          rotate: (index) => (index % 2 === 0 ? 3 : -3),
-          scale: 0.94,
-          opacity: 0.55,
-        },
-        {
-          y: 0,
-          rotate: 0,
-          scale: 1,
-          opacity: 1,
-          stagger: 0.08,
-          ease: "none",
-          scrollTrigger: {
-            trigger: section,
-            start: desktop ? "top top+=72" : "top 80%",
-            end: desktop ? "+=110%" : "bottom 35%",
-            scrub: 0.8,
-            pin: desktop,
-            pinSpacing: true,
-            invalidateOnRefresh: true,
-          },
-        },
-      );
-    });
-
-    return () => {
-      media.revert();
-    };
-  }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      aria-labelledby="gallery-title"
-      className="w-full"
-    >
+    <section aria-labelledby="gallery-title" className="w-full">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
@@ -123,7 +71,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, botswana }) => {
           return (
             <figure
               key={`${image.url}-${index}`}
-              className={`gallery-card group relative isolate overflow-hidden rounded-sm bg-white ${tileLayout}`}
+              className={`group relative isolate overflow-hidden rounded-sm bg-white ${tileLayout}`}
             >
               <Image
                 fill

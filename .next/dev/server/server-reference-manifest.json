@@ -7,17 +7,10 @@
           "async": false,
           "exportedName": "submitCityRequest",
           "filename": "www.hilaryokello.com/app/actions/public-forms.ts"
-        },
-        "app/preview-shows/page": {
-          "moduleId": "[project]/www.hilaryokello.com/.next-internal/server/app/preview-shows/page/actions.js { ACTIONS_MODULE0 => \"[project]/www.hilaryokello.com/app/actions/public-forms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "submitCityRequest",
-          "filename": "www.hilaryokello.com/app/actions/public-forms.ts"
         }
       },
       "layer": {
-        "app/(main)/page": "action-browser",
-        "app/preview-shows/page": "action-browser"
+        "app/(main)/page": "action-browser"
       },
       "filename": "www.hilaryokello.com/app/actions/public-forms.ts",
       "exportedName": "submitCityRequest"
@@ -36,21 +29,6 @@
       },
       "filename": "www.hilaryokello.com/app/actions/public-forms.ts",
       "exportedName": "submitBookingRequest"
-    },
-    "409c85d7d0b0e1edac86e4a4fde05e0f03bc859ff9": {
-      "workers": {
-        "app/(main)/shows/[slug]/sign-up/page": {
-          "moduleId": "[project]/www.hilaryokello.com/.next-internal/server/app/(main)/shows/[slug]/sign-up/page/actions.js { ACTIONS_MODULE0 => \"[project]/www.hilaryokello.com/app/actions/public-forms.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "submitShowSignUp",
-          "filename": "www.hilaryokello.com/app/actions/public-forms.ts"
-        }
-      },
-      "layer": {
-        "app/(main)/shows/[slug]/sign-up/page": "action-browser"
-      },
-      "filename": "www.hilaryokello.com/app/actions/public-forms.ts",
-      "exportedName": "submitShowSignUp"
     }
   },
   "edge": {},

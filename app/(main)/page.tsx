@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
 import Zambia from "@/components/home.zambia";
+import { SITE_URL, jsonLdScript } from "@/lib/shows-server";
 
 // Dynamic imports with proper named/default export handling
 const HeroSection = dynamic(
@@ -41,58 +42,86 @@ const UpcomingShows = dynamic(
 );
 
 export const metadata: Metadata = {
-  title:
-    "Home | Dr. Hilary Okello | Uganda's Funniest Stand-Up Comedian & Africa's Doctor of Comedy",
+  title: { absolute: "Dr. Hilary Okello — Uganda's Top Stand-Up Comedian" },
+  description:
+    "Official site of Dr. Hilary Okello, Uganda's top stand-up comedian and Africa's Doctor of Comedy. Tour dates, tickets, stand-up clips and booking.",
   keywords:
     "Dr. Hilary Okello, Ugandan comedian, African stand-up comedy, comedy Uganda, top comedians in Africa, live comedy Uganda, comedy shows Kampala, medical comedian, funny Ugandan doctor, stand-up comedy East Africa",
-  description:
-    "Welcome to the official website of Dr. Hilary Okello, Uganda's top stand-up comedian and Africa's Doctor of Comedy. Discover hilarious stand-up clips, upcoming shows, exclusive behind-the-scenes content, and his journey from medicine to comedy stardom.",
-  metadataBase: new URL("https://www.hilaryokello.com"),
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Dr. Hilary Okello | Uganda's Top Stand-Up Comedian",
-    description:
-      "Discover hilarious stand-up clips, upcoming shows, and exclusive content from Africa's Doctor of Comedy.",
     type: "website",
+    url: "/",
+    siteName: "Dr. Hilary Okello",
+    title: "Dr. Hilary Okello — Uganda's Top Stand-Up Comedian",
+    description:
+      "Tour dates, stand-up clips and booking for Africa's Doctor of Comedy.",
     images: [
       {
-        url: "/bg_hero_edited.webp",
+        url: "/og/og-home.jpg",
         width: 1200,
         height: 630,
-        alt: "Dr. Hilary Okello",
+        alt: "Dr. Hilary Okello on stage",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Hilary Okello | Uganda's Top Stand-Up Comedian",
+    title: "Dr. Hilary Okello — Uganda's Top Stand-Up Comedian",
     description:
-      "Discover hilarious stand-up clips, upcoming shows, and exclusive content from Africa's Doctor of Comedy.",
-    images: ["/bg_hero_edited.webp"],
+      "Tour dates, stand-up clips and booking for Africa's Doctor of Comedy.",
+    images: ["/og/og-home.jpg"],
   },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Dr. Hilary Okello",
+  jobTitle: "Stand-up comedian",
+  url: SITE_URL,
+  image: `${SITE_URL}/og/og-home.jpg`,
+  sameAs: [
+    "https://www.youtube.com/@drhilaryokello",
+    "https://www.instagram.com/drhilaryokello/",
+    "https://www.tiktok.com/@drhilary_okello",
+    "https://twitter.com/DrHilaryOkello",
+  ],
 };
 
 export default function Page() {
   const images = [
     {
-      url: "/Rwanda/SHEMA INNOCENT 0780 329 329_128_4_11zon.jpg",
-      caption: "Event Photo 1284",
+      url: "/gallery/two-kings-one-mic/NJJ_2833.avif",
+      caption: "Dr. Hilary Okello on stage at 2 Kings One Mic",
     },
     {
-      url: "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg",
-      caption: "Crowd",
+      url: "/gallery/two-kings-one-mic/NJJ_3186.avif",
+      caption: "Patrick Salvado and Dr. Hilary Okello on stage",
     },
     {
-      url: "/Rwanda/SHEMA INNOCENT 0780 329 329_131_7_11zon.jpg",
-      caption: "Booking Background",
+      url: "/gallery/two-kings-one-mic/NJJ_2763.avif",
+      caption: "A packed hall at 2 Kings One Mic",
     },
     {
-      url: "/Rwanda/SHEMA INNOCENT 0780 329 329_130_6_11zon.jpg",
-      caption: "Crowd",
+      url: "/gallery/two-kings-one-mic/NJJ_3249.avif",
+      caption: "Patrick Salvado and Dr. Hilary Okello take a selfie on stage",
+    },
+    {
+      url: "/gallery/two-kings-one-mic/NJJ_3044.avif",
+      caption: "Audience members laughing",
+    },
+    {
+      url: "/gallery/two-kings-one-mic/NJJ_2980.avif",
+      caption: "The 2 Kings One Mic stage",
     },
   ];
 
   return (
     <main className="min-h-screen">
+      <script
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(personJsonLd) }}
+        type="application/ld+json"
+      />
       {/* Full screen background */}
       <div className="min-h-screen overflow-hidden relative">
         <HeroSection />
@@ -105,26 +134,26 @@ export default function Page() {
           <UpcomingShows />
         </div>
       </Suspense>
-      <div className="bg-cream py-16 4xl:py-24">
-        <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
-          <Zambia />
-        </div>
-      </div>
-      <div className="bg-cream py-16 4xl:py-24">
+      <div className="bg-cream py-8 sm:py-10 4xl:py-16">
         <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <CountryGlimpse images={images} />
         </div>
       </div>
+      <div className="bg-cream py-8 sm:py-10 4xl:py-16">
+        <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
+          <Zambia />
+        </div>
+      </div>
 
       {/* Video Section */}
-      <div className="bg-cream py-16 4xl:py-24">
+      <div className="bg-cream py-8 sm:py-10 4xl:py-16">
         <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
-          <VideoSection title="Featured Videos" />
+          <VideoSection className="py-0 sm:py-0" title="Featured Videos" />
         </div>
       </div>
 
       {/* Gallery Glimpse */}
-      <div className="bg-cream py-16 4xl:py-24">
+      <div className="bg-cream py-8 sm:py-10 4xl:py-16">
         <div className="mx-auto max-w-7xl px-4 2xl:max-w-[1440px] 3xl:max-w-[1680px] 4xl:max-w-[2400px]">
           <ImageCarousel />
         </div>

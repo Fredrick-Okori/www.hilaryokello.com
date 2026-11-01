@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Goldman } from "next/font/google";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -1146,7 +1147,13 @@ function EnquiryForm({ whatsapp }: { whatsapp: string }) {
         )}
       </button>
       <p className="mt-3 text-center text-xs text-ink/45">
-        We&apos;ll reply on WhatsApp and only use your details for this booking.
+        We&apos;ll reply on WhatsApp and only use your details for this booking.{" "}
+        <Link
+          className="underline underline-offset-2 hover:text-ink"
+          href="/privacy"
+        >
+          Privacy policy
+        </Link>
       </p>
     </form>
   );
