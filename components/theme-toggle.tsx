@@ -41,11 +41,6 @@ const menuItems: MenuItem[] = [
     href: "/gallery",
     gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
   },
-  {
-    label: "Store",
-    href: "/store",
-    gradient: "radial-gradient(circle, rgba(155,41,18,0.15), transparent)",
-  },
 ];
 
 const itemVariants = {

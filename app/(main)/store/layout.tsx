@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   description:
     "Official Dr. Hilary Okello merchandise: tees, hoodies, caps and more.",
   alternates: { canonical: "/store" },
+  // Not linked from the menu for now, so kept out of search results.
+  robots: { index: false },
 };
 
 export default function StoreLayout({
