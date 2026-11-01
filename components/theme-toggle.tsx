@@ -287,14 +287,13 @@ export function MenuBar() {
                   Hilary Okello
                 </Link>
                 <div className="flex shrink-0 items-center gap-2">
-                  <a
+                  <Link
                     className="inline-flex h-11 items-center justify-center rounded-full bg-yellow-400 px-3 text-xs font-semibold text-white transition-transform active:scale-95 sm:px-5 sm:text-sm"
-                    href="https://momoticketing.com/events/2-kings-one-mic"
-                    rel="noopener noreferrer"
-                    target="_blank"
+                    href="/#shows"
+                    onClick={() => setIsOpen(false)}
                   >
                     Get Tickets
-                  </a>
+                  </Link>
                   <button
                     aria-label="Close menu"
                     className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-white transition-transform active:scale-95"
