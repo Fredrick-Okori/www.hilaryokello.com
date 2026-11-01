@@ -4,6 +4,8 @@
 // to accept inserts from the public (anon) key.
 
 import { supabaseAdmin } from "@/lib/supabase-admin";
+import { sendBookingConfirmation } from "@/lib/whatsapp";
+import { BOOKING_AUDIENCE_SIZES, BOOKING_EVENT_TYPES } from "@/lib/booking";
 import { COUNTRIES } from "@/lib/countries";
 import { dbShowToShow, getShowBySlug, type DbShow } from "@/lib/shows";
 
@@ -118,6 +120,101 @@ export async function submitCityRequest(input: {
     return error ? { ok: false, error: GENERIC_ERROR } : { ok: true };
   } catch (err) {
     console.error("[city request]", err instanceof Error ? err.message : err);
+
+    return { ok: false, error: GENERIC_ERROR };
+  }
+}
+
+export async function submitBookingRequest(input: {
+  name: string;
+  organisation: string;
+  email: string;
+  phoneCountry: string;
+  phone: string;
+  eventType: string;
+  date: string;
+  location: string;
+  audience: string;
+  details: string;
+}): Promise<
+  { ok: true; whatsappSent: boolean } | { ok: false; error: string }
+> {
+  const name = clean(input.name, 120);
+  const organisation = clean(input.organisation, 160);
+  const email = clean(input.email, 254);
+  const phone = clean(input.phone, 20);
+  const dialCode = dialCodeFor(clean(input.phoneCountry, 80));
+  const eventType = clean(input.eventType, 60);
+  const date = clean(input.date, 10);
+  const location = clean(input.location, 160);
+  const audience = clean(input.audience, 40);
+  const details = clean(input.details, 2000);
+
+  if (
+    name.length < 2 ||
+    (email && !EMAIL_RE.test(email)) ||
+    !dialCode ||
+    !validPhone(phone) ||
+    !BOOKING_EVENT_TYPES.includes(eventType) ||
+    (date && !/^\d{4}-\d{2}-\d{2}$/.test(date)) ||
+    location.length < 2 ||
+    (audience && !BOOKING_AUDIENCE_SIZES.includes(audience))
+  ) {
+    return { ok: false, error: "Please check your details and try again." };
+  }
+
+  // A local number typed with its leading 0 (e.g. 0772…) drops the 0.
+  const fullPhone = `${dialCode}${phone.replace(/\D/g, "").replace(/^0+/, "")}`;
+
+  try {
+    const db = supabaseAdmin();
+    const { data, error } = await db
+      .from("booking_requests")
+      .insert({
+        name,
+        organisation,
+        email,
+        phone: fullPhone,
+        event_type: eventType,
+        event_date: date || null,
+        location,
+        audience,
+        details,
+      })
+      .select("id")
+      .single();
+
+    if (error) {
+      console.error("[booking] insert failed:", error.message);
+
+      return { ok: false, error: GENERIC_ERROR };
+    }
+
+    const dateLabel = date
+      ? new Date(`${date}T00:00:00Z`).toLocaleDateString("en-GB", {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+          timeZone: "UTC",
+        })
+      : "a date to be confirmed";
+    const whatsapp = await sendBookingConfirmation(fullPhone, {
+      name: name.split(/\s+/)[0],
+      eventType: eventType.toLowerCase(),
+      date: dateLabel,
+    });
+
+    if (whatsapp.startsWith("failed")) {
+      console.error("[booking] WhatsApp confirmation", whatsapp);
+    }
+    await db
+      .from("booking_requests")
+      .update({ whatsapp_status: whatsapp })
+      .eq("id", data.id);
+
+    return { ok: true, whatsappSent: whatsapp === "sent" };
+  } catch (err) {
+    console.error("[booking]", err instanceof Error ? err.message : err);
 
     return { ok: false, error: GENERIC_ERROR };
   }

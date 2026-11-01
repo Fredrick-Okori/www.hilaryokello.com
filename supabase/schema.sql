@@ -281,3 +281,44 @@ create policy "show_requests: auth delete"
 create index if not exists show_requests_created_at_idx
   on public.show_requests (created_at desc);
 
+
+
+-- ─────────────────────────────────────────────────────────────
+-- 8. BOOKING REQUESTS
+-- ─────────────────────────────────────────────────────────────
+create table if not exists public.booking_requests (
+  id              uuid primary key default gen_random_uuid(),
+  name            text not null,
+  organisation    text not null default '',
+  email           text not null default '',
+  phone           text not null,
+  event_type      text not null,
+  event_date      date,
+  location        text not null,
+  audience        text not null default '',
+  details         text not null default '',
+  status          text not null default 'new',
+  whatsapp_status text not null default '',
+  created_at      timestamptz not null default now()
+);
+
+alter table public.booking_requests enable row level security;
+
+drop policy if exists "booking_requests: auth read"   on public.booking_requests;
+drop policy if exists "booking_requests: auth update" on public.booking_requests;
+drop policy if exists "booking_requests: auth delete" on public.booking_requests;
+
+-- Enquiries hold clients' contact details: only signed-in admins can read
+-- them. No public insert: the submitBookingRequest server action writes with
+-- the service-role key.
+create policy "booking_requests: auth read"
+  on public.booking_requests for select to authenticated using (true);
+
+create policy "booking_requests: auth update"
+  on public.booking_requests for update to authenticated using (true);
+
+create policy "booking_requests: auth delete"
+  on public.booking_requests for delete to authenticated using (true);
+
+create index if not exists booking_requests_created_at_idx
+  on public.booking_requests (created_at desc);

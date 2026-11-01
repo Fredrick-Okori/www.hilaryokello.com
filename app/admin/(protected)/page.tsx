@@ -1,8 +1,21 @@
 import React from "react";
 import Link from "next/link";
-import { CalendarDays, Images, BookOpen, Phone, Video } from "lucide-react";
+import {
+  CalendarDays,
+  Images,
+  BookOpen,
+  Inbox,
+  Phone,
+  Video,
+} from "lucide-react";
 
 const sections = [
+  {
+    label: "Bookings",
+    description: "Booking requests from the website",
+    href: "/admin/bookings",
+    icon: Inbox,
+  },
   {
     label: "Shows",
     description: "Add, edit or remove upcoming shows",
@@ -56,9 +69,7 @@ export default function AdminDashboard() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-400/10 text-yellow-400 group-hover:bg-yellow-400 group-hover:text-ink transition-colors">
                 <Icon size={20} />
               </div>
-              <span className="text-base font-semibold text-ink">
-                {label}
-              </span>
+              <span className="text-base font-semibold text-ink">{label}</span>
             </div>
             <p className="text-sm text-ink/60">{description}</p>
           </Link>

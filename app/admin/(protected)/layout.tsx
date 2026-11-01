@@ -19,6 +19,7 @@ import {
   ExternalLink,
   Menu,
   List,
+  Inbox,
 } from "lucide-react";
 
 import { supabase } from "@/lib/supabase";
@@ -26,6 +27,7 @@ import { supabase } from "@/lib/supabase";
 const navItems = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
   { label: "Shows", href: "/admin/shows", icon: CalendarDays },
+  { label: "Bookings", href: "/admin/bookings", icon: Inbox },
   { label: "Waitinglist", href: "/admin/waitinglist", icon: BookOpen },
   { label: "Show Requests", href: "/admin/show-requests", icon: List },
   { label: "Gallery", href: "/admin/gallery", icon: Images },
