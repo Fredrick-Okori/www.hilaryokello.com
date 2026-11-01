@@ -2,6 +2,8 @@
 
 import React, { Suspense, lazy } from "react";
 
+import { SmoothScroll } from "@/components/smooth-scroll";
+
 const MenuBar = lazy(() =>
   import("@/components/theme-toggle").then((mod) => ({ default: mod.MenuBar })),
 );
@@ -14,6 +16,7 @@ export default function MainLayout({
 }) {
   return (
     <>
+      <SmoothScroll />
       <div className="absolute top-20 left-0 right-0 z-40 flex justify-center px-4">
         <Suspense fallback={null}>
           <MenuBar />

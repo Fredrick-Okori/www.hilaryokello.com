@@ -85,6 +85,9 @@ export function MenuBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const islandText = isScrolled ? "text-white" : "text-ink";
+  const linkText = isScrolled
+    ? "text-white group-hover:text-white"
+    : "text-muted-foreground group-hover:text-ink";
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 48);
@@ -233,7 +236,7 @@ export function MenuBar() {
                   variants={glowVariants}
                 />
                 <motion.a
-                  className={`relative z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${isScrolled ? "text-white group-hover:text-white" : "text-muted-foreground group-hover:text-ink"}`}
+                  className={`relative z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${linkText}`}
                   href={item.href}
                   style={{
                     transformStyle: "preserve-3d",
@@ -242,12 +245,10 @@ export function MenuBar() {
                   transition={sharedTransition}
                   variants={itemVariants}
                 >
-                  <span className={isScrolled ? "text-white" : "text-ink"}>
-                    {item.label}
-                  </span>
+                  <span className={islandText}>{item.label}</span>
                 </motion.a>
                 <motion.a
-                  className={`absolute inset-0 z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${isScrolled ? "text-white group-hover:text-white" : "text-muted-foreground group-hover:text-ink"}`}
+                  className={`absolute inset-0 z-10 flex items-center gap-2 rounded-xl bg-transparent px-4 py-2 transition-colors ${linkText}`}
                   href={item.href}
                   style={{
                     transformStyle: "preserve-3d",
@@ -257,9 +258,7 @@ export function MenuBar() {
                   transition={sharedTransition}
                   variants={backVariants}
                 >
-                  <span className={isScrolled ? "text-white" : "text-ink"}>
-                    {item.label}
-                  </span>
+                  <span className={islandText}>{item.label}</span>
                 </motion.a>
               </motion.div>
             </motion.li>
