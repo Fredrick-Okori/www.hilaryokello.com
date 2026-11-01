@@ -6222,3 +6222,764 @@ Failed to find font override values for font `Google Sans`
 Skipping generating a fallback font.
 
 
+[01:48:52.434] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":219,"pageLoadTimestamp":1793535426298,"pageViews":1,"scrollDepth":0,"timeOnSite":2336,"urlsVisited":["/"]},"timestamp":"2026-11-01T12:57:02.879Z","triggerId":"timeOnPage"}
+[01:49:54.582] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793535426298,"pageViews":1,"scrollDepth":0,"timeOnSite":2516,"urlsVisited":["/"]},"timestamp":"2026-11-01T12:59:04.917Z","triggerId":"exitIntent"}
+[01:55:27.004] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:28.634] Server  WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[01:55:32.832] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.832] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.832] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.832] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.832] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.832] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.833] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.833] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.911] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.911] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.911] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.912] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.912] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.912] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.912] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.912] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.920] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/\",\"referrer\":\"\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1912,\"column-number\":31,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:55:32.926] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.926] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.927] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.927] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.928] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.929] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.929] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.929] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:32.942] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/\",\"referrer\":\"\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1581,\"column-number\":89,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:55:33.831] Browser WARN    [Hero UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/heroui-inc/heroui/issues/4292 []
+[01:55:34.079] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[01:55:34.179] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.180] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.180] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.181] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.181] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.181] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.182] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.182] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:55:34.188] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/\",\"referrer\":\"\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":451,\"column-number\":29,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:55:34.334] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:55:34.334] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:55:34.334] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3"} /_vercel/insights/view
+[01:55:59.325] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.776] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.776] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.776] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.776] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.776] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.776] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.777] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.777] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.955] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.957] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.957] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.965] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"http://localhost:3000/\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1581,\"column-number\":89,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:56:00.974] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.975] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.976] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.976] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.977] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.977] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.979] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.983] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:56:00.997] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"http://localhost:3000/\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1912,\"column-number\":31,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:56:01.041] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:56:01.041] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/gallery","route":"/gallery"}
+[01:56:01.041] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3"} /_vercel/insights/view
+[01:56:03.437] Browser WARN    Image with src "/gallery/two-kings-one-mic/NJJ_2833.avif" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:57:01.243] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:01.700] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:02.618] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.463] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.463] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.464] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.464] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.464] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.464] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.469] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.470] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:04.620] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"http://localhost:3000/\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1849,\"column-number\":17,\"source-file\":\"http://localhost:3000/_next/static/chunks/turbopack-www_hilaryokello_com_24f89e3c._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:57:04.650] Server  LOG     ✓ Compiled in 0ms
+[01:57:11.789] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793538312001,"pageViews":1,"scrollDepth":0,"timeOnSite":70,"urlsVisited":["/gallery"]},"timestamp":"2026-11-01T13:06:22.121Z","triggerId":"timeOnPage"}
+[01:57:17.485] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.909] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.909] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.909] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.909] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.909] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.924] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.926] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.927] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.946] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.946] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.946] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.946] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.946] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.947] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.951] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.951] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.959] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1581,\"column-number\":89,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:57:18.962] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.962] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.963] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.963] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.963] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.963] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.963] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.963] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:57:18.969] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1912,\"column-number\":31,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:57:18.980] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:19.725] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:57:19.725] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/gallery","route":"/gallery"}
+[01:57:19.725] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","r":"","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3"} /_vercel/insights/view
+[01:57:21.077] Browser WARN    Image with src "/gallery/two-kings-one-mic/NJJ_2833.avif" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:57:29.079] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":0,"pageLoadTimestamp":1793538312001,"pageViews":1,"scrollDepth":57.14172855111392,"timeOnSite":87,"urlsVisited":["/gallery"]},"timestamp":"2026-11-01T13:06:39.404Z","triggerId":"exitIntent"}
+[01:59:39.332] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.871] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.872] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.873] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.873] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.873] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.873] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.873] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.873] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.898] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.898] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.899] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.899] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.899] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.900] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.900] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.900] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.917] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"http://localhost:3000/\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1581,\"column-number\":89,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:59:39.954] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.954] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.955] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.955] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.955] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.956] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:39.966] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"http://localhost:3000/\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1912,\"column-number\":31,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:59:40.248] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.184] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.185] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.185] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.185] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.185] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.185] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.185] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.185] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.249] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.250] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.250] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.251] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.251] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.252] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.252] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.252] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.259] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"http://localhost:3000/\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1581,\"column-number\":89,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:59:41.263] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.264] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.266] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.266] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.266] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.267] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.267] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.267] Server  WARN    ⚠ ./www.hilaryokello.com
+Failed to find font override values for font `Google Sans`
+Skipping generating a fallback font.
+
+
+[01:59:41.273] Server  WARN    [csp-report] "{\"csp-report\":{\"document-uri\":\"http://localhost:3000/gallery\",\"referrer\":\"http://localhost:3000/\",\"violated-directive\":\"script-src\",\"effective-directive\":\"script-src\",\"original-policy\":\"default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.apollo.kayeai.com https://cdn.jsdelivr.net https://www.youtube.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://flagcdn.com https://*.supabase.co https://i.ytimg.com https://img.youtube.com https://www.google-analytics.com https://*.googletagmanager.com; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://app.apollo.kayeai.com https://cdn.apollo.kayeai.com wss://app.apollo.kayeai.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; report-uri /api/csp-report\",\"disposition\":\"report\",\"blocked-uri\":\"eval\",\"line-number\":1912,\"column-number\":31,\"source-file\":\"http://localhost:3000/_next/static/chunks/ed219_next_dist_compiled_react-server-dom-turbopack_3b568665._.js\",\"status-code\":200,\"script-sample\":\"\"}}"
+[01:59:42.243] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:59:42.243] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/gallery","route":"/gallery"}
+[01:59:42.243] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3"} /_vercel/insights/view
+[01:59:42.450] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:59:42.450] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/gallery","route":"/gallery"}
+[01:59:42.450] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/gallery color: rgb(120, 120, 120) color: inherit {"dp":"/gallery","o":"http://localhost:3000/gallery","sdkn":"@vercel/analytics/next","sdkv":"2.0.1","sv":"0.1.3"} /_vercel/insights/view
+[02:01:15.529] Browser DEBUG   Proactive trigger fired: {"sessionData":{"inactiveTime":51,"pageLoadTimestamp":1793538532600,"pageViews":1,"scrollDepth":48.26196871543688,"timeOnSite":91,"urlsVisited":["/gallery"]},"timestamp":"2026-11-01T13:10:24.869Z","triggerId":"inactivity"}

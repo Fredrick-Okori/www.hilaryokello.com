@@ -281,7 +281,7 @@ export default function Gallery() {
   }, [modalRef]);
 
   return (
-    <div ref={galleryRef} className="px-4 py-20 sm:px-6 lg:px-10 bg-cream min-h-screen">
+    <div ref={galleryRef} className="px-4 py-20 sm:px-6 lg:px-10 min-h-screen">
       <h1 className="pt-10 text-left text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
         Gallery
       </h1>
